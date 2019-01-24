@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="main.js"></script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+    <!--Nav bar  -->
+    <nav class="light-blue lighten-1">
+      <div class="nav-wrapper">
+        <a href="#!"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="hide-on-med-and-down">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="scratch.html">Ages 7-12</a></li>
+          <li><a href="techimmersion.html">Ages 13-18</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="scratch.html">Ages 7-12</a></li>
+      <li><a href="techimmersion.html">Ages 13-18</a></li>
+    </ul>
+
+    <!--Scratch Lesson: Project Title -->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h4 class="projectTitle">Animate a Name</h4>
+        <p>Pick a name and use animations to bring the letters of the word to life using code. Choose a nickname, a pet’s name, an animal, a sport, a place or a hobby.</p>
+        <p class="creditLine">This lesson is provided by Google's CS First.</p>
+      </div>
+    </div>
+
+    <!--Scratch Lesson: Embedded Example Description-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h4>What you will make</h4>
+        <p>Click and drag with the mouse to draw a line with the pencil. Your objective is to stop the cats falling to their doom by creating a safe path to the exit.</p>
+      </div>
+    </div>
+
+    <!--Scratch Lesson: Embedded Example- iframe -->
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/245480964/" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!--Scratch Lesson: Directions Start Here-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h4>Get Started!</h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Open the <a href="https://scratch.mit.edu/projects/editor/?tutorial=getStarted" class="blueLink" target="_blank">starter project</a> !</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6> Title your project with the name you're going to animate.</h6>
+        </div>
+      </div>
+    </div>
+
+    <!--Collapsible Div-->
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+         <li>
+           <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>How to add a title</div>
+           <div class="collapsible-body"><span>1. Look at the top of the screen for this text box.<br> <br> <img src="nameproject.png"> <br> <br> 2. Delete the word "Untitled". <br> <br> 3. Type in a new name for your project.</span></div>
+         </li>
+        </ul>
+      </div>
+    </div>
+
+    <!--Lesson Subheading-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 style="font-weight:bold;">Letter Sprite</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>The cat sprite that you can see is the Scratch mascot. Let’s get rid of it, by right-clicking and then clicking ‘delete’.</h6>
+          <img src="catdelete.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Pick a word that you want to animate. </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Add the letters of the word that you're using. </h6>
+        </div>
+      </div>
+    </div>
+
+    <!--Collapsible Div-->
+    <div class="row">
+      <div class="col s6 offset-s2">
+          <ul class="collapsible">
+           <li>
+             <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>How to add letters</div>
+             <div class="collapsible-body"><span>1. Click to add a new sprite <br><br> <img style="width:100%; height:100%;"src="letters.png"> <br><br> 2. Click the "Letters" category <br><br> 3. Spell out your word using the letter sprites!</span></div>
+           </li>
+          </ul>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6 class="infosection">Save your project</h6>
+        </div>
+      </div>
+    </div>
+
+    <!--Collapsible Div-->
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+           <li>
+             <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>How to save your project</div>
+             <div class="collapsible-body"><span>Click "File" in the top-left corner <br> <br> <img src="file.png"> <br> <br> Click "Save Now"  <br><br><img src="savenow.png"> <br><br> Your project is now saved! </span></div>
+           </li>
+        </ul>
+      </div>
+    </div>
+
+    <!--Lesson Subheading-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 style="font-weight:bold;">Stage Backdrop</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Add a backdrop.</h6>
+        </div>
+      </div>
+    </div>
+
+    <!--Collapsible Div-->
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+           <li>
+             <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>How to add a backdrop</div>
+             <div class="collapsible-body"><span>At the moment, the stage is white, and looks pretty boring! Let’s add a backdrop to the stage, by clicking the blue icon on the right side of the screen.<br> <br> Use the picture below as a reference, if needed. <br> <br> <img src="stage.png"</span></div>
+           </li>
+        </ul>
+      </div>
+    </div>
+
+    <!--Lesson Subheading-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 style="font-weight:bold;">Animations</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Brainstorm which animations you want for each sprite <br> <br> For example, you can program your sprite to spin, talk, change different colors, etc.</h6>
+        </div>
+      </div>
+    </div>
+
+    <!--Animations Grid-->
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <div class="projectsection1">
+          <h6>Sample Animations:</h6>
+          <div class="left">
+            <p>Add Sound</p>
+            <img style="width:100%; height:100%;"src="soundletter.gif">
+          </div>
+          <div class="right">
+            <p>Change Color</p>
+            <img style="width:100%; height:100%;"src="colorletter.gif">
+          </div>
+          <div class="right">
+            <p>Growing Letter</p>
+            <img style="width:100%; height:100%;"src="grow.gif">
+          </div>
+          <div class="left">
+            <p>Spin Letter</p>
+            <img style="width:100%; height:100%;"src="spinletter.gif">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <div class="projectsection1">
+          <h6>Each animation starts with an Event.</h6>
+          <img src="event.png"> <img src="event2.png">
+          <h6>Events start your code or a set of actions.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div -->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div -->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Use at least 3 different types of Events in your project.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div -->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div -->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6 class="infosection">Save your project</h6>
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+    <!--Project Complete Banner-->
+    <div class="row blue white-text">
+      <div class="col s4 offset-s4">
+        <h5 style="text-align:center;">Congrats! Project complete!</h5>
+      </div>
+    </div>
+
+    <!--Card: Prompt - Find Another Project-->
+    <div class="row">
+      <div class="col s4 offset-s4">
+        <div class="card findanotherproject">
+          <div class="card-content">
+            <div class="cardDescription">
+              <h6>Find another project?</h6>
+              <div class="browse">
+              <br>
+                <a href="scratch.html">
+                  <button>Browse all projects</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
