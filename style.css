@@ -229,6 +229,44 @@ a:visited {
   text-align: center;
   padding-top: 10%;
 }
+
+.events{
+  color: #FFD500;
+}
+.control{
+  color: #FFAB19;
+}
+
+.motion{
+  color: #4C97FF;
+}
+.looks{
+  color: #9966FF;
+}
+
+.sound{
+  color: #D65CD6;
+}
+
+.sensing{
+  color:#4CBFE6;
+}
+
+.operators{
+  color: #40BF4A;
+}
+
+.variables{
+  color: #FF8C1A;
+}
+
+.myblocks{
+  color: #FF6680;
+}
+
+.extensions{
+  color: #0FBD8C;
+}
 /*
 .startWord {
   display: inline-block;
