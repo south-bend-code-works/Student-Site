@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="main.js"></script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+    <!--Nav bar  -->
+    <nav class="light-blue lighten-1">
+      <div class="nav-wrapper">
+        <a href="#!"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="hide-on-med-and-down">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="scratch.html">Ages 7-12</a></li>
+          <li><a href="techimmersion.html">Ages 13-18</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="scratch.html">Ages 7-12</a></li>
+      <li><a href="techimmersion.html">Ages 13-18</a></li>
+    </ul>
+
+    <!--Scratch Lesson: Project Title -->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h4 class="projectTitle">Space Invaders</h4>
+        <p>Create a project that describes you!</p>
+      </div>
+    </div>
+
+    <!--Scratch Lesson: Embedded Example Description-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h4>What you will make</h4>
+        <p>Click and drag with the mouse to draw a line with the pencil. Your objective is to stop the cats falling to their doom by creating a safe path to the exit.</p>
+      </div>
+    </div>
+
+    <!--Scratch Lesson: Embedded Example- iframe -->
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <img src="spacefinal.gif">
+      </div>
+    </div>
+
+    <!--Scratch Lesson: Directions Start Here-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h4>Get Started!</h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Open the <a href="https://scratch.mit.edu/projects/editor/?tutorial=getStarted" class="blueLink" target="_blank">starter project</a> !</h6>
+          </div>
+        </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6> Title your project.</h6>
+        </div>
+      </div>
+    </div>
+
+    <!--Collapsible Div-->
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+           <li>
+             <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>How to add a title</div>
+             <div class="collapsible-body"><span>1. Look at the top of the screen for this text box.<br> <br> <img src="nameproject.png"> <br> <br> 2. Delete the word "Untitled". <br> <br> 3. Type in a new name for your project.</span></div>
+           </li>
+        </ul>
+      </div>
+    </div>
+
+    <!--Lesson Subheading-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 style="font-weight:bold;">Sprite</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>The cat sprite that you can see is the Scratch mascot. Let’s get rid of it, by right-clicking and then clicking ‘delete’.</h6>
+          <img src="catdelete.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Add a spaceship.</h6>
+        </div>
+      </div>
+    </div>
+
+  <!--Lesson Subheading-->
+  <div class="row">
+    <div class="col s6 offset-s1">
+      <h5 style="font-weight:bold;">Stage Backdrop</h5>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Add a backdrop.</h6>
+      </div>
+    </div>
+  </div>
+
+  <!--Collapsible Div-->
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <ul class="collapsible">
+         <li>
+           <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>How to add a backdrop</div>
+           <div class="collapsible-body"><span>At the moment, the stage is white, and looks pretty boring! Let’s add a backdrop to the stage, by clicking the blue icon on the right side of the screen.<br> <br> Use the picture below as a reference, if needed. <br> <br> <img src="stage.png"</span></div>
+         </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6 class="infosection">Save your project</h6>
+      </div>
+    </div>
+  </div>
+
+  <!--Collapsible Div-->
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <ul class="collapsible">
+         <li>
+           <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>How to save your project</div>
+           <div class="collapsible-body"><span>Click "File" in the top-left corner <br> <br> <img src="file.png"> <br> <br> Click "Save Now"  <br><br><img src="savenow.png"> <br><br> Your project is now saved! </span></div>
+         </li>
+      </ul>
+    </div>
+  </div>
+
+  <!--Lesson Subheading-->
+  <div class="row">
+    <div class="col s6 offset-s1">
+      <h5 style="font-weight:bold;">Make the Spaceship Move</h5>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Scratch uses x and y coordinates to determine a character's position.</h6>
+        <h6>The x position determines the horizontal location (left-right).</h6>
+        <h6>The y position determines the vertical location (up-down).</h6>
+        <img src="space-xy.png">
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>y-coordinates move the character up-down:</h6>
+        <img style="width:90%; height:90%;"src="ycoordinate.gif">
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>x-coodinates move the character left-right:</h6>
+        <img style="width:90%; height:90%;" src="xcoordinate.gif">
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Use an Event to program your spaceship to move up, down, left, and right using the arrow keys.</h6>
+      </div>
+    </div>
+  </div>
+
+  <!--Collapsible Div-->
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <ul class="collapsible">
+         <li>
+           <div class="collapsible-header"><i class="material-icons orange-text">help</i>
+             I need a hint</div>
+           <div class="collapsible-body"><span>These are the code blocks you will use: <br><br><img style="width:70%; height:70%;" src="arrowmovement.png"></span></div>
+         </li>
+      </ul>
+    </div>
+  </div>
+
+  <!--Lesson Subheading-->
+  <div class="row">
+    <div class="col s6 offset-s1">
+      <h5 style="font-weight:bold;">Add Asteroids</h5>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Choose a Sprite that looks like an asteroid.</h6>
+      </div>
+    </div>
+  </div>
+
+  <!--Lesson Subheading-->
+  <div class="row">
+    <div class="col s6 offset-s1">
+      <h5 style="font-weight:bold;">Clone Asteroids</h5>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Add code to hide the sprite, and also to clone it every three seconds.</h6>
+        <br>
+        <img style="width:40%; height:40%;" src="clonesprite.png">
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>If you run the program now, nothing happens. <br><br>Add code to tell the sprite that when it starts as a clone, it should show and move horizontally until it touches the edge of the Stage.</h6>
+      </div>
+    </div>
+  </div>
+
+  <!--Collapsible Div-->
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <ul class="collapsible">
+         <li>
+           <div class="collapsible-header"><i class="material-icons orange-text">help</i>
+             I need a hint</div>
+           <div class="collapsible-body"><span><h6>When the sprite starts as a clone, show the sprite. Repeatedly change the sprite's x-coordinate by -2 until the sprite touches the edge of the Stage.</h6></span></div>
+         </li>
+      </ul>
+    </div>
+  </div>
+
+  <!--Collapsible Div-->
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <ul class="collapsible">
+         <li>
+           <div class="collapsible-header"><i class="material-icons orange-text">help</i>
+             I need a 2nd hint</div>
+           <div class="collapsible-body"><span><h6>Here are the code blocks you'll use:</h6><img style="width:50%; height:50%;" src="cloneblocks.png"></span></div>
+         </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Test your code to see if clones appear.</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>When the sprite reaches the edge, the clone should delete itself, making room for the other clones.</h6>
+      </div>
+    </div>
+  </div>
+
+  <!--Collapsible Div-->
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <ul class="collapsible">
+         <li>
+           <div class="collapsible-header"><i class="material-icons orange-text">help</i>
+             I need a hint</div>
+           <div class="collapsible-body"><span><h6>Here is the code block you'll use:</h6><img style="width:20%; height:20%;" src="deleteclone.png"></span></div>
+         </li>
+      </ul>
+    </div>
+  </div>
+
+    <!--Lesson Subheading-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 style="font-weight:bold;">Random Position</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Right now, the clones travel in a line.</h6>
+          <br>
+          <h6>Program the clones to show and then go to random positions.</h6>
+        </div>
+      </div>
+    </div>
+
+    <!--Collapsible Div-->
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+           <li>
+             <div class="collapsible-header"><i class="material-icons orange-text">help</i>
+               I need a hint</div>
+             <div class="collapsible-body"><span><h6>Here is the code block you'll use:</h6><img style="width:30%; height:30%;" src="randomposition.png"></span></div>
+           </li>
+        </ul>
+      </div>
+    </div>
+
+
+  <!--Lesson Subheading-->
+  <div class="row">
+    <div class="col s6 offset-s1">
+      <h5 style="font-weight:bold;">Add Lasers</h5>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Using the paint tool, draw a sprite that looks like a laser.</h6>
+        <br>
+        <img src="painttool.png">
+      </div>
+    </div>
+  </div>
+
+  <!--Lesson Subheading-->
+  <div class="row">
+    <div class="col s6 offset-s1">
+      <h5 style="font-weight:bold;">Laser Movement</h5>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Add clones of the lasers the same way that you added asteroid clones.</h6>
+      </div>
+    </div>
+  </div>
+
+  <!--Lesson Subheading-->
+  <div class="row">
+    <div class="col s6 offset-s1">
+      <h5 style="font-weight:bold;">Add a Score Variable</h5>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Use the "Costumes" tab to have one of your characters flip directions.</h6>
+        <h6>You want your characters to face each other, like this:</h6>
+        <br>
+        <img src="facingsamedirection.png">
+      </div>
+    </div>
+  </div>
+
+  <!--Lesson Subheading-->
+  <div class="row">
+    <div class="col s6 offset-s1">
+      <h5 style="font-weight:bold;">Add a Timer</h5>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Use the "Costumes" tab to have one of your characters flip directions.</h6>
+        <h6>You want your characters to face each other, like this:</h6>
+        <br>
+        <img src="facingsamedirection.png">
+      </div>
+    </div>
+  </div>
+
+  <!--Collapsible Div-->
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <ul class="collapsible">
+         <li>
+           <div class="collapsible-header"><i class="material-icons orange-text">help</i>
+             I need a hint</div>
+           <div class="collapsible-body"><span><img style="width:80%; height:80%;" src="flip.gif"></span></div>
+         </li>
+      </ul>
+    </div>
+  </div>
+
+    <!--Collapsible Div-->
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+           <li>
+             <div class="collapsible-header"><i class="material-icons orange-text">help</i>
+               I need a hint</div>
+             <div class="collapsible-body"><span><img style="width:80%; height:80%;" src="saysomething.gif"></span></div>
+           </li>
+        </ul>
+      </div>
+    </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6 class="infosection">Save your project</h6>
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+  <!--Project Complete Banner-->
+  <div class="row blue white-text">
+    <div class="col s4 offset-s4">
+      <h5 style="text-align:center;">Congrats! Project complete!</h5>
+    </div>
+  </div>
+
+  <!--Card: Prompt - Find Another Project-->
+  <div class="row">
+    <div class="col s4 offset-s4">
+      <div class="card findanotherproject">
+        <div class="card-content">
+          <div class="cardDescription">
+            <h6>Find another project?</h6>
+            <div class="browse">
+              <br>
+              <a href="scratch.html">
+                <button>Browse all projects</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </body>
+</html>
