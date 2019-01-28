@@ -81,6 +81,16 @@ a:visited {
   bottom:0 !important;
 }
 
+.startButtonUnity {
+  display: inline-block;
+  text-align: center;
+  background-color: #00BFFF;
+  width: 100%;
+  height: 40%;
+  position:relative !important;
+  bottom:0 !important;
+}
+
 /* =================================================================================================================================Scratch Lesson Cards=======================================================*/
 #aboutMeBG {background-image: url('aboutme.gif');}
 #animateMeBG {background-image: url('animatename.jpg');}
@@ -105,15 +115,55 @@ a:visited {
 #memoryyBG {background-image: url('memory.png');}
 #dotsBG {background-image: url('dots.png');}
 #htmlcssBG {background-image: url('htmlcss.jpg');}
+#burger {background-image: url('buildaburger.jpg');}
+#friend {background-image: url('friendogram.jpg');}
+#adventure {background-image: url('adventuregame.jpg');}
 #recipeBG {background-image: url('recipe.png');}
 #wantedBG {background-image: url('wanted.png');}
 .kahootBG {background-image: url('kahoot.jpeg');}
 #bdayBG {background-image: url('bday.jpg');}
 #storyBG {background-image: url('story.png');}
 #hoverBG {background-image: url('hover.gif');}
+#typing {background-image: url('typing.gif');}
+#pattern {background-image: url('pattern.gif');}
 #cloneBG {background-image: url('clone.png');}
 #logoBG {background-image: url('logo.png');}
 #bioBG {background-image: url('bio.jpg');}
+
+/*Unity images */
+#setupBG{background-image: url('unityIntro.png');}
+#terrainBG{background-image: url('unityTerrain.png');}
+#terrain2BG{background-image: url('unityTerrain2.png');}
+#characterBG{background-image: url('unityCharacter.png');}
+#organizeBG{background-image: url('unityOrganize.png');}
+#collectableBG{background-image: url('unity4.png');}
+#uiBG{background-image: url('unity5-1.png');}
+#collectable2BG{background-image: url('unityCollectable2.png');}
+#prefabBG{background-image: url('unityPrefab.png');
+background-position: center; background-size: auto;}
+#enemyBG{background-image: url('unityEnemy.png');}
+#attackBG{background-image: url('unityAttack.png');}
+#healthBG{background-image: url('unityHealthbar.png');}
+#fightBG{background-image: url('unity7d-2.png');}
+#enemyprefabBG{background-image: url('unityPrefabEnemy.png');}
+#menuBG{background-image: url('unity9-1.png');}
+#audioBG{background-image: url('unityAudio.png');
+background-position: center; background-size: auto;}
+#buildBG{background-image: url('unityBuild.png');
+background-position: center; background-size: auto;}
+#interfaceBG{background-image: url('unityNav.png');
+background-position: center; background-size: auto;}
+#movementBG{background-image: url('unityMovement.png');
+background-position: center; background-size: auto;}
+#assetBG{background-image: url('unityAssetStore.png');
+background-position: center; background-size: auto;}
+#terrain3BG{background-image: url('unityTerrain.png');}
+#collectable3BG{background-image: url('unityCollectable3.png');
+background-position: center; background-size: auto;}
+#scriptBG{background-image: url('unityScript.png');}
+#errorBG{background-image: url('unityError.png');
+background-position: center; background-size: auto;}
+
 
 /* =================================================================================================================================HOME PAGE CARD============================================================ */
 .agesHeading {
