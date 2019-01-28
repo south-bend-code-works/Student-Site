@@ -219,6 +219,15 @@ a:visited {
   height: 50px;
   margin-bottom: 10%;
 }
+
+.browse button:hover {
+text-align: center;
+color:white;
+background-color: #2196f3;
+border: 3px solid #2196f3;
+width: 160px;
+height: 50px;
+}
 .findanotherproject {
   width: 500px !important;
   height: 200px !important;
@@ -266,6 +275,23 @@ a:visited {
 
 .extensions{
   color: #0FBD8C;
+}
+
+.inlesson_kahoot {
+  text-align: center;
+  background-color: white;
+  border: 3px solid #2196f3;
+  width: 160px;
+  height: 50px;
+}
+
+.inlesson_kahoot:hover {
+  text-align: center;
+  color:white;
+  background-color: #2196f3;
+  border: 3px solid #2196f3;
+  width: 160px;
+  height: 50px;
 }
 /*
 .startWord {
