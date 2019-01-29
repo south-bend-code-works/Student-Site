@@ -361,6 +361,31 @@ height: 50px;
    width: 100%;
 
 }
+
+.pattern1{
+  width: 100%;
+  height: 40px;
+  background-image: url('bigbanganimation.gif');
+  animation: background-ScrollLeft 8s linear infinite;
+}
+
+.pattern2{
+  width: 100%;
+  height: 40px;
+  background-image: url('snowpattern.gif');
+  animation: background-ScrollRight 8s linear infinite;
+
+}
+
+@keyframes background-ScrollRight {
+from{background-position: 0, 0;}
+to{background-position: 200px, 0;}
+}
+
+@keyframes background-ScrollLeft {
+  from{background-position: 0, 0;}
+  to{background-position: -200px, 0;}
+}
 /*
 .startWord {
   display: inline-block;
