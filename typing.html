@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="main.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="SBCS_favicon.png">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Typing Animation</title>
+  </head>
+
+  <body>
+    <!--Nav bar  -->
+    <nav class="light-blue lighten-1">
+      <div class="nav-wrapper">
+        <a href="#!"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="hide-on-med-and-down">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="scratch.html">Ages 7-12</a></li>
+          <li><a href="techimmersion.html">Ages 13-18</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="scratch.html">Ages 7-12</a></li>
+      <li><a href="techimmersion.html">Ages 13-18</a></li>
+    </ul>
+
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h4 class="projectTitle">Typing Animation</h4>
+        <p>In this project, you will create a typing animation using keyframes, complete with a flashing cursor.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h4>What you will make</h4>
+        <p id="typinganimation">A typing animation. Like this one...<span id="blinkingcursor"> | </span></p>
+
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h4>Get Started!</h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Create a new folder in your project folder. Name it "Typing Animation".</h6>
+          </div>
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Create a new html file called "index.html".</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Create a new css file called "style.css".</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Link the style sheet in the header of your html file.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 style="font-weight:bold;">HTML</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Set up the doctype, html, head and body tags in your html page.</h6>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Using a &lt;p&gt; tag or any header tag (&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt; etc.), type the words that you want to be your typing animation.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+           <li>
+             <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>Example</div>
+             <div class="collapsible-body"><em>
+                    &lt;p&gt;Hello World...&lt;/p&gt;<br>
+                    &lt;h1&gt;My name is...&lt;/h1&gt;<br>
+                    </em>
+
+                </div>
+           </li>
+        </ul>
+      </div>
+    </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Add a typing I-beam within span tags. The I-beam is the same key as backslash (above the return key).</h6>
+      </div>
+    </div>
+  </div>
+
+  <!--Collapsible Div-->
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <ul class="collapsible">
+         <li>
+           <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>Hint</div>
+           <div class="collapsible-body"><em>
+                  &lt;p&gt;Hello World...&lt;span&gt;|&lt;/span&gt;&lt;/p&gt;<br></em>
+
+              </div>
+         </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Give your paragraph or heading tag an id, and give your span a different id.</h6>
+      </div>
+    </div>
+  </div>
+
+
+  <br>
+
+
+  <div class="row">
+    <div class="col s6 offset-s1">
+      <h5 style="font-weight:bold;">CSS</h5>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Call the id for your text and set the following properties:<br><br>
+          <em>White-space: nowrap </em>will push the text all on one line, so that the paragraph is continuously uncovered in pieces.<br><br>
+          <em>Overflow: hidden </em>will hide the words until the animation starts.</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Now we will write the animation for the text.</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Keyframes are CSS rules that tell our animation what to do.</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Use “@keyframes” as a new selector followed by the name of your animation and braces <br>(make sure your @keyframes is outside of the brackets for the element you’re animating!)</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>In your CSS file, create a new @keyframes called "type".</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Give your keyframe a from{ } and to{ }.</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <ul class="collapsible">
+         <li>
+           <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>Example</div>
+           <div class="collapsible-body"><em>@keyframes type { <br>
+                 from{ }<br>
+                 to{ }<br>
+                }
+              </em>
+
+              </div>
+         </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Tell the keyframe to go <em>from</em> width: 0, <em>to</em> width: 100%.</h6>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <ul class="collapsible">
+         <li>
+           <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>Example</div>
+           <div class="collapsible-body"><em>@keyframes type { <br>
+                 from{width:0; }<br>
+                 to{width: 100%; }<br>
+                }
+              </em>
+
+              </div>
+         </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Now we just need one more animation, for the blinking cursor.</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Add a new @keyframes called "blink" to your CSS file.</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <ul class="collapsible">
+         <li>
+           <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>Example</div>
+           <div class="collapsible-body"><em>@keyframes blink{ <br>
+                 from{ }<br>
+                 to { }<br>
+                }
+              </em>
+
+              </div>
+         </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>We need our I-beam to go from <em>color: transparent;</em> to <em> color: black;</em></h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <ul class="collapsible">
+         <li>
+           <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>Hint</div>
+           <div class="collapsible-body"><em>@keyframes blink{ <br>
+                 from{color: transparent;}<br>
+                 to {color: black; }<br>
+                }
+              </em>
+
+              </div>
+         </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Now call both animations in the appropriate classes using the <em>animation: </em>property.</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>If you want the animations to go forever, use the infinite argument in the animation property. Also be sure to give each animation a duration of time.</h6>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <ul class="collapsible">
+         <li>
+           <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>Hint</div>
+           <div class="collapsible-body"><em>#blinkspan{ <br>
+                 animation: blink 1.5s infinite;<br>
+                }
+              </em>
+              </div>
+         </li>
+      </ul>
+    </div>
+  </div>
+
+<br>
+
+  <div class="row blue white-text">
+    <div class="col s4 offset-s4">
+      <h5 style="text-align:center;">Congrats! Project complete!</h5>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--card 1 -->
+    <div class="col s4 offset-s4">
+      <div class="card findanotherproject">
+        <div class="card-content">
+          <div class="cardDescription">
+            <h6>Find another project?</h6>
+            <a href="techimmersion.html">
+            <div class="browse">
+              <br>
+              <a href="techimmersion.html">
+                <button>Browse all projects</button>
+              </a>
+            </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+  </body>
+</html>
