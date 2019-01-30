@@ -164,6 +164,39 @@ background-position: center; background-size: auto;}
 #errorBG{background-image: url('unityError.png');
 background-position: center; background-size: auto;}
 
+/*Python images */
+#pythonsetupBG{background-image: url('');}
+#syntaxBG{background-image: url('');}
+#functionsBG{background-image: url('');}
+#variablesBG{background-image: url('');}
+#controlsBG{background-image: url('');}
+#pythonErrorsBG{background-image: url('');}
+#loopsBG{background-image: url('');}
+#functions2BG{background-image: url('');}
+#listsBG{background-image: url('');}
+#hangmanBG{background-image: url('');}
+
+/*Graphic Design Images */
+#graphicdesignintroBG{background-image: url('');}
+#designprocessBG{background-image: url('');}
+#twoddesignBG{background-image: url('');}
+#imagesBG{background-image: url('');}
+#colortheoryBG{background-image: url('');}
+#structurespace1BG{background-image: url('');}
+#structurespace2BG{background-image: url('');}
+#typographyBG{background-image: url('');}
+#uiuxBG{background-image: url('');}
+#geometricBG{background-image: url('');}
+#interactiveBG{background-image: url('');}
+#infographicBG{background-image: url('');}
+#gifBG{background-image: url('');}
+#photomanipulationBG{background-image: url('');}
+#splashpageBG{background-image: url('');}
+#typographicposterBG{background-image: url('');}
+#gimpBG{background-image: url('');}
+#glossaryBG{background-image: url('');}
+#resourcesBG{background-image: url('');}
+
 
 /* =================================================================================================================================HOME PAGE CARD============================================================ */
 .agesHeading {
