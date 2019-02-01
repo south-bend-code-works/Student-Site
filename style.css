@@ -101,7 +101,7 @@ a:visited {
 #gettheprizeBG {background-image: url('gettheprize.gif');}
 #hideandseekBG {background-image: url('hideandseek.gif');}
 #terraBG {background-image: url('terra.gif');}
-#selectionBG {background-image: url('terra.gif');}
+#selectionBG {background-image: url('chooseadventure.png');}
 #chatbotBG {background-image: url('chatbot.png');}
 #tellastoryBG {background-image: url('tellastory.jpg');}
 #aboutmeBG {background-image: url('boolean.png');}
@@ -129,6 +129,10 @@ a:visited {
 #cloneBG {background-image: url('clone.png');}
 #logoBG {background-image: url('logo.png');}
 #bioBG {background-image: url('bio.jpg');}
+#webdevBG {background-image: url('computer.gif'); background-position: center; background-size: contain;}
+#pythonBG {background-image: url('Python.png'); background-position: center; background-size: contain;}
+#googleBG {background-image: url('google.png'); background-position: center; background-size: contain;}
+#patternBG {background-image: url('striped.gif');}
 
 /*Unity images */
 #setupBG{background-image: url('unityIntro.png');}
@@ -290,41 +294,89 @@ height: 50px;
 }
 
 .events{
-  color: #FFD500;
+  background-color: #FFD500;
+  border-radius: 2%;
+  color: white;
+  padding: 1%;
+  font-weight: bold;
 }
 .control{
-  color: #FFAB19;
+background-color: #FFAB19;
+border-radius: 2%;
+color: white;
+padding: 1%;
+font-weight: bold;
 }
 
 .motion{
-  color: #4C97FF;
+  background-color: #4C97FF;
+  border-radius: 2%;
+  color: white;
+  padding: 1%;
+  font-weight: bold;
 }
 .looks{
-  color: #9966FF;
+  background-color: #9966FF;
+  border-radius: 2%;
+  color: white;
+  padding: 1%;
+  font-weight: bold;
 }
 
 .sound{
-  color: #D65CD6;
+  background-color: #D65CD6;
+  border-radius: 2%;
+  color: white;
+  padding: 1%;
+  font-weight: bold;
 }
 
 .sensing{
-  color:#4CBFE6;
+  background-color:#4CBFE6;
+  border-radius: 2%;
+  color: white;
+  padding: 1%;
+  font-weight: bold;
 }
 
 .operators{
-  color: #40BF4A;
+  background-color: #40BF4A;
+  border-radius: 2%;
+  color: white;
+  padding: 1%;
+  font-weight: bold;
 }
 
 .variables{
-  color: #FF8C1A;
+  background-color: #FF8C1A;
+  border-radius: 2%;
+  color: white;
+  padding: 1%;
+  font-weight: bold;
 }
 
 .myblocks{
-  color: #FF6680;
+  background-color: #FF6680;
+  border-radius: 2%;
+  color: white;
+  padding: 1%;
+  font-weight: bold;
+}
+
+.pen {
+  background-color: MediumSeaGreen;
+  border-radius: 2%;
+  color: white;
+  padding: 1%;
+  font-weight: bold;
 }
 
 .extensions{
-  color: #0FBD8C;
+  background-color: #0FBD8C;
+  border-radius: 2%;
+  color: white;
+  padding: 1%;
+  font-weight: bold;
 }
 
 .inlesson_kahoot {
