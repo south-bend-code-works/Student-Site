@@ -145,7 +145,7 @@ a:visited {
 #uiBG{background-image: url('unity5-1.png');}
 #collectable2BG{background-image: url('unityCollectable2.png');}
 #prefabBG{background-image: url('unityPrefab.png');
-background-position: center; background-size: auto;}
+background-position: center; background-size: contain;}
 #enemyBG{background-image: url('unityEnemy.png');}
 #attackBG{background-image: url('unityAttack.png');}
 #healthBG{background-image: url('unityHealthbar.png');}
@@ -153,22 +153,63 @@ background-position: center; background-size: auto;}
 #enemyprefabBG{background-image: url('unityPrefabEnemy.png');}
 #menuBG{background-image: url('unity9-1.png');}
 #audioBG{background-image: url('unityAudio.png');
-background-position: center; background-size: auto;}
+background-position: center; background-size: contain;}
 #buildBG{background-image: url('unityBuild.png');
-background-position: center; background-size: auto;}
+background-position: center; background-size: contain;}
 #interfaceBG{background-image: url('unityNav.png');
-background-position: center; background-size: auto;}
+background-position: center; background-size: contain;}
 #movementBG{background-image: url('unityMovement.png');
 background-position: center; background-size: auto;}
 #assetBG{background-image: url('unityAssetStore.png');
-background-position: center; background-size: auto;}
+background-position: center; background-size: contain;}
 #terrain3BG{background-image: url('unityTerrain.png');}
 #collectable3BG{background-image: url('unityCollectable3.png');
-background-position: center; background-size: auto;}
+background-position: center; background-size: contain;}
 #scriptBG{background-image: url('unityScript.png');}
 #errorBG{background-image: url('unityError.png');
-background-position: center; background-size: auto;}
+background-position: center; background-size: contain;}
 
+/*Python images */
+#pythonsetupBG{background-image: url('');}
+#syntaxBG{background-image: url('');}
+#functionsBG{background-image: url('');}
+#variablesBG{background-image: url('');}
+#controlsBG{background-image: url('');}
+#pythonErrorsBG{background-image: url('');}
+#loopsBG{background-image: url('');}
+#functions2BG{background-image: url('');}
+#listsBG{background-image: url('');}
+#hangmanBG{background-image: url('');}
+
+/*Graphic Design Images */
+#graphicdesignintroBG{background-image: url('');}
+#designprocessBG{background-image: url('');}
+#twoddesignBG{background-image: url('');}
+#imagesBG{background-image: url('');}
+#colortheoryBG{background-image: url('');}
+#spaceBG{background-image: url('');}
+#structureBG{background-image: url('');}
+#typographyBG{background-image: url('');}
+#uiuxBG{background-image: url('');}
+#geometricBG{background-image: url('');}
+#interactiveBG{background-image: url('');}
+#infographicBG{background-image: url('');}
+#gifBG{background-image: url('');}
+#photomanipulationBG{background-image: url('');}
+#splashpageBG{background-image: url('');}
+#typographicposterBG{background-image: url('');}
+#gimpBG{background-image: url('');}
+#glossaryBG{background-image: url('');}
+#resourcesBG{background-image: url('');}
+
+
+/*JS Images */
+#codecademyBG{background-image: url('Codecademy.png');
+background-position: center; background-size: contain;}
+#learnjsBG{background-image: url('JavaScript-logo.png');
+background-position: center; background-size: contain;}
+#w3schoolsBG{background-image: url('W3Schools_logo.png');
+background-position: center; background-size: contain;}
 
 /* =================================================================================================================================HOME PAGE CARD============================================================ */
 .agesHeading {
@@ -396,6 +437,69 @@ font-weight: bold;
   width: 160px;
   height: 50px;
 }
+
+.hoverexample{
+  background-color: black;
+  color: white;
+  padding: 20px;
+  border: 2px solid green;
+  width: 100%;
+  transition: 1s;
+}
+
+.hoverexample:hover{
+   background-color: green;
+   color: black;
+   padding: 50px;
+   border: 2px solid white;
+   width: 100%;
+
+}
+
+.pattern1{
+  width: 100%;
+  height: 40px;
+  background-image: url('bigbanganimation.gif');
+  animation: background-ScrollLeft 8s linear infinite;
+}
+
+.pattern2{
+  width: 100%;
+  height: 40px;
+  background-image: url('snowpattern.gif');
+  animation: background-ScrollRight 8s linear infinite;
+
+}
+
+@keyframes background-ScrollRight {
+from{background-position: 0, 0;}
+to{background-position: 200px, 0;}
+}
+
+@keyframes background-ScrollLeft {
+  from{background-position: 0, 0;}
+  to{background-position: -200px, 0;}
+}
+
+#typinganimation{
+  animation: type 7s infinite;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#blinkingcursor{
+  animation: blink 1.5s infinite;
+}
+@keyframes type {
+  from{width:0;}
+  to{width:100%;}
+}
+
+@keyframes blink {
+  from {color: transparent;}
+  to {color: black;}
+}
+
 /*
 .startWord {
   display: inline-block;
