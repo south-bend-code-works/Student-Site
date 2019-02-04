@@ -97,7 +97,7 @@ a:visited {
 #aboutmeBG {background-image: url('boolean.png');}
 #paintBG {background-image: url('paint.png');}
 #boatBG {background-image: url('boat.png');}
-#spaceBG {background-image: url('space.gif');}
+#negspaceBG {background-image: url('negspace.gif');}
 #breakoutBG {background-image: url('breakout.gif');}
 #fallingfruitBG {background-image: url('fallingfruit.gif');}
 #monkeyBG {background-image: url('monkey.gif');}
@@ -120,6 +120,33 @@ a:visited {
 #cloneBG {background-image: url('clone.png');}
 #logoBG {background-image: url('logo.png');}
 #bioBG {background-image: url('bio.jpg');}
+#glossaryBG {background-image: url('glossaryBG.jpg');}
+#gimpBG {background-image: url('gimpBG.jpg');}
+#typographicposterBG {background-image: url('typographicposterBG.jpg');}
+#photomanipulationBG {background-image: url('photomanipulationBG.gif');}
+#spashpageBG {background-image: url('splashpageBG.jpg');}
+#gifBG {background-image: url('gifBG.gif');}
+#infographicBG {background-image: url('infographicBG.jpg');}
+#interactiveBG {background-image: url('interactiveBG.jpg');}
+#geometricBG {background-image: url('geometricBG.jpg');}
+#uiuxBG {background-image: url('uiuxBG.jpg');}
+#colortheoryBG {background-image: url('colortheoryBG.gif');}
+#imagesBG {background-image: url('imagesBG.jpg');}
+#twoddesignBG {background-image: url('twoddesignBG.jpg');}
+#designprocessBG {background-image: url('designprocessBG.jpg');}
+#graphicdesignintroBG {background-image: url('graphicdesignintroBG.jpg');}
+#resourcesBG {background-image: url('resourcesBG.jpg');}
+#topofpage {background-image: url('topofpage.gif');}
+#settingupunityBG {background-image: url('settingupunityBG.jpg');}
+#unitybreakdownBG {background-image: url('unitybreakdownBG.jpg');}
+#importingassetsBG {background-image: url('importingassetsBG.jpg');}
+#keyframssoundBG {background-image: url('keyframessoundBG.jpg');}
+#curvesandstatesBG {background-image: url('curvesandstatesBG.jpg');}
+#openingsceneBG {background-image: url('openingsceneBG.jpg');}
+#lightingBG {background-image: url('lightingBG.jpg');}
+#renderingBG {background-image: url('titlescenecutsceneBG.jpg');}
+#twodBG {background-image: url('twodBG.jpg');}
+#unlockingBG {background-image: url('unlockingBG.jpg');}
 
 /* =================================================================================================================================HOME PAGE CARD============================================================ */
 .agesHeading {
