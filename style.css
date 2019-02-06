@@ -114,22 +114,31 @@ a:visited {
 #urownworldBG {background-image: url('urownworld.png');}
 #memoryyBG {background-image: url('memory.png');}
 #dotsBG {background-image: url('dots.png');}
+
+/* HTML CSS background images */
 #htmlcssBG {background-image: url('htmlcss.jpg');}
-#burger {background-image: url('buildaburger.jpg');}
-#friend {background-image: url('friendogram.jpg');}
-#adventure {background-image: url('adventuregame.jpg');}
+#bioBG {background-image: url('bio.jpg');}
 #recipeBG {background-image: url('recipe.png');}
-#wantedBG {background-image: url('wanted.png');}
-#wrapup {background-image: url('wrapup.jpg');}
-.kahootBG {background-image: url('kahoot.jpeg');}
-#bdayBG {background-image: url('bday.jpg');}
+#adventureBG {background-image: url('adventuregame.jpg');}
 #storyBG {background-image: url('story.png');}
-#hoverBG {background-image: url('hover.gif');}
-#typing {background-image: url('typing.gif');}
+#friendBG {background-image: url('friendogram.jpg');}
+#burgerBG {background-image: url('buildaburger.jpg');}
 #pattern {background-image: url('pattern.gif');}
+#hoverBG {background-image: url('hover.gif');}
+#typingBG {background-image: url('typing.gif');}
 #cloneBG {background-image: url('clone.png');}
 #logoBG {background-image: url('logo.png');}
-#bioBG {background-image: url('bio.jpg');}
+#keyframesreviewBG{background-image: url();}
+.kahootBG {background-image: url('kahoot.jpeg');}
+/*Not used right now*/
+#wantedBG {background-image: url('wanted.png');}
+#wrapupBG {background-image: url('wrapup.jpg');}
+#bdayBG {background-image: url('bday.jpg');}
+
+
+
+
+/*Graphic Design background Images*/
 #glossaryBG {background-image: url('glossaryBG.jpg');}
 #gimpBG {background-image: url('gimpBG.jpg');}
 #typographicposterBG {background-image: url('typographicposterBG.jpg');}
@@ -147,10 +156,12 @@ a:visited {
 #graphicdesignintroBG {background-image: url('graphicdesignintroBG.jpg');}
 #resourcesBG {background-image: url('resourcesBG.jpg');}
 #topofpage {background-image: url('topofpage.gif');}
+
+/*2d/3d animation background images*/
 #settingupunityBG {background-image: url('settingupunityBG.jpg');}
 #unitybreakdownBG {background-image: url('unitybreakdownBG.jpg');}
 #importingassetsBG {background-image: url('importingassetsBG.jpg');}
-#keyframssoundBG {background-image: url('keyframessoundBG.jpg');}
+#keyframessoundBG {background-image: url('keyframessoundBG.jpg');}
 #curvesandstatesBG {background-image: url('curvesandstatesBG.jpg');}
 #openingsceneBG {background-image: url('openingsceneBG.jpg');}
 #lightingBG {background-image: url('lightingBG.jpg');}
@@ -209,6 +220,7 @@ background-position: center; background-size: contain;}
 #listsBG{background-image: url('');}
 #hangmanBG{background-image: url('');}
 
+<<<<<<< HEAD
 /*Graphic Design Images */
 #graphicdesignintroBG{background-image: url('graphicdesignintroBG.jpg');}
 #designprocessBG{background-image: url('designprocessBG.jpg');}
@@ -229,6 +241,8 @@ background-position: center; background-size: contain;}
 #gimpBG{background-image: url('gimpBG.jpg');}
 #glossaryBG{background-image: url('glossaryBG.jpg');}
 #resourcesBG{background-image: url('resourcesBG.jpg');}
+=======
+>>>>>>> kristen-dev
 
 
 /*JS Images */
