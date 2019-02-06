@@ -154,8 +154,8 @@ a:visited {
 #curvesandstatesBG {background-image: url('curvesandstatesBG.jpg');}
 #openingsceneBG {background-image: url('openingsceneBG.jpg');}
 #lightingBG {background-image: url('lightingBG.jpg');}
-#renderingBG {background-image: url('titlescenecutsceneBG.jpg');}
-#twodBG {background-image: url('twodBG.jpg');}
+#renderingBG {background-image: url('titlescenecutsceneBG.gif');}
+#twodBG {background-image: url('twodBG.gif');}
 #unlockingBG {background-image: url('unlockingBG.jpg');}
 =======
 #webdevBG {background-image: url('computer.gif'); background-position: center; background-size: contain;}
