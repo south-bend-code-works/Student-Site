@@ -154,8 +154,8 @@ a:visited {
 #curvesandstatesBG {background-image: url('curvesandstatesBG.jpg');}
 #openingsceneBG {background-image: url('openingsceneBG.jpg');}
 #lightingBG {background-image: url('lightingBG.jpg');}
-#renderingBG {background-image: url('titlescenecutsceneBG.jpg');}
-#twodBG {background-image: url('twodBG.jpg');}
+#renderingBG {background-image: url('titlescenecutsceneBG.gif');}
+#twodBG {background-image: url('twodBG.gif');}
 #unlockingBG {background-image: url('unlockingBG.jpg');}
 =======
 #webdevBG {background-image: url('computer.gif'); background-position: center; background-size: contain;}
@@ -210,25 +210,25 @@ background-position: center; background-size: contain;}
 #hangmanBG{background-image: url('');}
 
 /*Graphic Design Images */
-#graphicdesignintroBG{background-image: url('');}
-#designprocessBG{background-image: url('');}
-#twoddesignBG{background-image: url('');}
-#imagesBG{background-image: url('');}
-#colortheoryBG{background-image: url('');}
-/* #spaceBG{background-image: url('');}  */
-#structureBG{background-image: url('');}
-#typographyBG{background-image: url('');}
-#uiuxBG{background-image: url('');}
-#geometricBG{background-image: url('');}
-#interactiveBG{background-image: url('');}
-#infographicBG{background-image: url('');}
-#gifBG{background-image: url('');}
-#photomanipulationBG{background-image: url('');}
-#splashpageBG{background-image: url('');}
-#typographicposterBG{background-image: url('');}
-#gimpBG{background-image: url('');}
-#glossaryBG{background-image: url('');}
-#resourcesBG{background-image: url('');}
+#graphicdesignintroBG{background-image: url('graphicdesignintroBG.jpg');}
+#designprocessBG{background-image: url('designprocessBG.jpg');}
+#twoddesignBG{background-image: url('twoddesignBG.jpg');}
+#imagesBG{background-image: url('imagesBG.jpeg');}
+#colortheoryBG{background-image: url('colortheoryBG.jpg');}
+#negspaceBG{background-image: url('negspaceBG.jpg');}
+#structureBG{background-image: url('structureBG.jpg');}
+#typographyBG{background-image: url('typographyBG.jpg');}
+#uiuxBG{background-image: url('uiuxBG.jpg');}
+#geometricBG{background-image: url('geometricBG.jpg');}
+#interactiveBG{background-image: url('interfaceBG.jpg');}
+#infographicBG{background-image: url('infographicBG.jpg');}
+#gifBG{background-image: url('gifBG.gif');}
+#photomanipulationBG{background-image: url('photomanipulationBG.gif');}
+#splashpageBG{background-image: url('splashpageBG.jpg');}
+#typographicposterBG{background-image: url('typographicposterBG.jpg');}
+#gimpBG{background-image: url('gimpBG.jpg');}
+#glossaryBG{background-image: url('glossaryBG.jpg');}
+#resourcesBG{background-image: url('resourcesBG.jpg');}
 
 
 /*JS Images */
