@@ -157,6 +157,9 @@ a:visited {
 #resourcesBG {background-image: url('resourcesBG.jpg');}
 #topofpage {background-image: url('topofpage.gif');}
 #brandingBG {background-image: url('brandingBG.jpg');}
+#vectorrasterBG {background-image: url('vectorrasterBG.png');}
+#colorizeBG{background-image: url('colorizeBG.jpg');}
+#copyrightBG{background-image: url('copyrightBG.jpg');}
 
 /*2d/3d animation background images*/
 #settingupunityBG {background-image: url('settingupunityBG.jpg');}
@@ -224,7 +227,6 @@ background-position: center; background-size: contain;}
 <<<<<<< HEAD
 /*Graphic Design Images */
 #designprocessBG{background-image: url('designprocessBG.jpg');}
-#imagesBG{background-image: url('imagesBG.jpeg');}
 #colortheoryBG{background-image: url('colortheoryBG.jpg');}
 #negspaceBG{background-image: url('negspaceBG.jpg');}
 #structureBG{background-image: url('structureBG.jpg');}
