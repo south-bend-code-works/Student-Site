@@ -384,12 +384,19 @@ height: 50px;
   padding-top: 10%;
 }
 
+span{
+  position: relative;
+}
+
+
 .events{
   background-color: #FFD500;
   border-radius: 2%;
   color: white;
   padding: 1%;
   font-weight: bold;
+  line-height: 180%;
+
 }
 .control{
 background-color: #FFAB19;
@@ -397,6 +404,9 @@ border-radius: 2%;
 color: white;
 padding: 1%;
 font-weight: bold;
+position: relative;
+line-height: 180%;
+
 }
 
 .motion{
@@ -405,6 +415,10 @@ font-weight: bold;
   color: white;
   padding: 1%;
   font-weight: bold;
+  position: relative;
+  line-height: 180%;
+
+
 }
 .looks{
   background-color: #9966FF;
@@ -412,6 +426,8 @@ font-weight: bold;
   color: white;
   padding: 1%;
   font-weight: bold;
+  position: relative;
+  line-height: 180%;
 }
 
 .sound{
@@ -420,6 +436,8 @@ font-weight: bold;
   color: white;
   padding: 1%;
   font-weight: bold;
+  position: relative;
+  line-height: 180%;
 }
 
 .sensing{
@@ -428,6 +446,8 @@ font-weight: bold;
   color: white;
   padding: 1%;
   font-weight: bold;
+  position: relative;
+  line-height: 180%;
 }
 
 .operators{
@@ -436,6 +456,8 @@ font-weight: bold;
   color: white;
   padding: 1%;
   font-weight: bold;
+  position: relative;
+  line-height: 180%;
 }
 
 .variables{
@@ -444,6 +466,8 @@ font-weight: bold;
   color: white;
   padding: 1%;
   font-weight: bold;
+  position: relative;
+  line-height: 180%;
 }
 
 .myblocks{
@@ -452,6 +476,8 @@ font-weight: bold;
   color: white;
   padding: 1%;
   font-weight: bold;
+  position: relative;
+  line-height: 180%;
 }
 
 .pen {
@@ -460,6 +486,8 @@ font-weight: bold;
   color: white;
   padding: 1%;
   font-weight: bold;
+  position: relative;
+  line-height: 180%;
 }
 
 .extensions{
@@ -468,6 +496,8 @@ font-weight: bold;
   color: white;
   padding: 1%;
   font-weight: bold;
+  position: relative;
+  line-height: 180%;
 }
 
 .inlesson_kahoot {
