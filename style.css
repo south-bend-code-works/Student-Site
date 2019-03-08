@@ -105,15 +105,17 @@ a:visited {
 #chatbotBG {background-image: url('chatbot.png');}
 #tellastoryBG {background-image: url('tellastory.jpg');}
 #aboutmeBG {background-image: url('boolean.png');}
-#paintBG {background-image: url('paint.png');}
-#boatBG {background-image: url('boat.png');}
-#spaceBG {background-image: url('space.gif');}
+#paintBG {background-image: url('paint.gif');}
+#boatBG {background-image: url('boat.gif');}
+#BG {background-image: url('final.gif');}
 #breakoutBG {background-image: url('breakout.gif');}
 #fallingfruitBG {background-image: url('fallingfruit.gif');}
 #monkeyBG {background-image: url('monkey.gif');}
-#urownworldBG {background-image: url('urownworld.png');}
-#memoryyBG {background-image: url('memory.png');}
-#dotsBG {background-image: url('dots.png');}
+#urownworldBG {background-image: url('createyourownadventure.gif');}
+#memoryyBG {background-image: url('memory.gif');}
+#dotsBG {background-image: url('catchthedots.gif');}
+#spaceBG {background-image: url('spacefinal.gif');}
+
 
 /* HTML CSS background images */
 #htmlcssBG {background-image: url('htmlcss.jpg');}
@@ -147,7 +149,7 @@ background-position: center; background-size: contain;}
 background-position: center; background-size: contain;}
 #colortheoryBG{background-image: url('colortheoryBG.gif');
 background-position: center; background-size: contain;}
-#negspaceBG{background-image: url('negspaceBG.jpg');
+#negBG{background-image: url('negBG.jpg');
 background-position: center; background-size: contain;}
 #structureBG{background-image: url('structureBG.jpg');
 background-position: center; background-size: contain;}
@@ -564,7 +566,7 @@ to{background-position: 200px, 0;}
 
 #typinganimation{
   animation: type 7s infinite;
-  white-space: nowrap;
+  white-: nowrap;
   overflow: hidden;
 }
 
@@ -590,15 +592,15 @@ to{background-position: 200px, 0;}
   padding-bottom: 7%;
 }
 
-.moreSpace {
+.more {
   margin-bottom: 18%;
 }
 
-.moreSpace2 {
+.more2 {
   margin-bottom: 13%;
 }
 
-.moreSpace3 {
+.more3 {
   margin-bottom: 4%;
 }
 
@@ -625,7 +627,7 @@ to{background-position: 200px, 0;}
   font-weight: bold;
 }
 
-#space3 {
+#3 {
   margin-top: 1%;
 } */
 
