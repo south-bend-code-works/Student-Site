@@ -1,15 +1,45 @@
 body {
   background-color: #F7F7F7;
 }
+.startButton {
+  display: inline-block;
+  text-align: center;
+  background-color: #64dd17;
+  width: 100%;
+  height: 40%;
+  position:relative !important;
+  bottom:0 !important;
+  color: black;
+}
+
+.startButtonUnity {
+  display: inline-block;
+  text-align: center;
+  background-color: #00BFFF;
+  width: 100%;
+  height: 40%;
+  position:relative !important;
+  bottom:0 !important;
+  color: black !important;
+
+}
+
+.startButtonUnity a{
+  color: black !important;
+}
+
+.startButton a{
+  color: black !important;
+}
 
 /* =================================================================================================================================Turn all links to black text ==============================================*/
-a:link {
+/*a:link {
   color: black;
 }
 
 a:visited {
   color: black;
-}
+}*/
 
 /* =================================================================================================================================ALL PAGES: Page Heading/Titles=============================================*/
 #pageHeading {
@@ -71,25 +101,8 @@ a:visited {
   padding-bottom: 2%;
 }
 
-.startButton {
-  display: inline-block;
-  text-align: center;
-  background-color: #64dd17;
-  width: 100%;
-  height: 40%;
-  position:relative !important;
-  bottom:0 !important;
-}
 
-.startButtonUnity {
-  display: inline-block;
-  text-align: center;
-  background-color: #00BFFF;
-  width: 100%;
-  height: 40%;
-  position:relative !important;
-  bottom:0 !important;
-}
+
 
 /* =================================================================================================================================Scratch Lesson Cards=======================================================*/
 #aboutMeBG {background-image: url('aboutme.gif');}
