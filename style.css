@@ -218,6 +218,8 @@ background-position: center; background-size: contain;}
 background-position: center; background-size: contain;}
 #unlockingBG {background-image: url('unlockingBG.jpg');
 background-position: center; background-size: contain;}
+#worldbuildingBG {background-image: url('worldbuildingBG.gif');
+  background-position: center; background-size: contain;}
 
 #webdevBG {background-image: url('computer.gif'); background-position: center; background-size: contain;}
 #pythonBG {background-image: url('Python.png'); background-position: center; background-size: contain;}
