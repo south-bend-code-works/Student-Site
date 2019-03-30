@@ -1,15 +1,49 @@
 body {
   background-color: #F7F7F7;
 }
+.startButton {
+  display: inline-block;
+  text-align: center;
+  background-color: #64dd17;
+  width: 100%;
+  height: 40%;
+  position:relative !important;
+  bottom:0 !important;
+  color: black;
+}
+
+.startButtonUnity {
+  display: inline-block;
+  text-align: center;
+  background-color: #00BFFF;
+  width: 100%;
+  height: 40%;
+  position:relative !important;
+  bottom:0 !important;
+  color: black !important;
+
+}
+
+.startButtonUnity a{
+  color: black !important;
+}
+
+.startButton a{
+  color: black !important;
+}
+
+.pageTitle a{
+  color: black !important;
+}
 
 /* =================================================================================================================================Turn all links to black text ==============================================*/
-a:link {
+/*a:link {
   color: black;
 }
 
 a:visited {
   color: black;
-}
+}*/
 
 /* =================================================================================================================================ALL PAGES: Page Heading/Titles=============================================*/
 #pageHeading {
@@ -71,25 +105,8 @@ a:visited {
   padding-bottom: 2%;
 }
 
-.startButton {
-  display: inline-block;
-  text-align: center;
-  background-color: #64dd17;
-  width: 100%;
-  height: 40%;
-  position:relative !important;
-  bottom:0 !important;
-}
 
-.startButtonUnity {
-  display: inline-block;
-  text-align: center;
-  background-color: #00BFFF;
-  width: 100%;
-  height: 40%;
-  position:relative !important;
-  bottom:0 !important;
-}
+
 
 .passionprojects{
   display: inline-block;
@@ -149,45 +166,44 @@ a:visited {
 #bdayBG {background-image: url('bday.jpg');}
 
 
-/*Graphic Design Images */
-#graphicdesignintroBG{background-image: url('graphicdesignintroBG.png');
-background-position: center; background-size: contain;}
-#designprocessBG{background-image: url('designprocessBG.png');
-background-position: center; background-size: contain;}
-#twoddesignBG{background-image: url('twoddesignBG.png');
-background-position: center; background-size: contain;}
-#imagesBG{background-image: url('imagesBG.png');
-background-position: center; background-size: contain;}
-#colortheoryBG{background-image: url('colortheoryBG.gif');
-background-position: center; background-size: contain;}
-#negBG{background-image: url('negBG.jpg');
-background-position: center; background-size: contain;}
-#structureBG{background-image: url('structureBG.jpg');
-background-position: center; background-size: contain;}
-#typographyBG{background-image: url('typographyBG.png');
-background-position: center; background-size: contain;}
-#uiuxBG{background-image: url('uiuxBG.jpg');
-background-position: center; background-size: contain;}
-#geometricBG{background-image: url('geometricBG.jpg');
-background-position: center; background-size: contain;}
-#interactiveBG{background-image: url('interactiveBG.jpg');
-background-position: center; background-size: contain;}
-#infographicBG{background-image: url('infographicBG.jpg');
-background-position: center; background-size: contain;}
-#gifBG{background-image: url('gifBG.gif');
-background-position: center; background-size: contain;}
-#photomanipulationBG{background-image: url('photomanipulationBG.gif');
-background-position: center; background-size: contain;}
-#splashpageBG{background-image: url('splashpageBG.jpg');
-background-position: center; background-size: contain;}
-#typographicposterBG{background-image: url('typographicposterBG.jpg');
-background-position: center; background-size: contain;}
-#gimpBG{background-image: url('gimpBG.jpg');
-background-position: center; background-size: contain;}
-#glossaryBG{background-image: url('glossaryBG.jpg');
-background-position: center; background-size: contain;}
-#resourcesBG{background-image: url('resourcesBG.jpg');
-background-position: center; background-size: contain;}
+/*Graphic Design background Images*/
+#glossaryBG {background-image: url('glossaryBG.jpg');}
+#gimpBG {background-image: url('gimpBG.jpg');}
+#typographicposterBG {background-image: url('typographicposterBG.jpg');}
+#photomanipulationBG {background-image: url('photomanipulationBG.gif');}
+#splashpageBG {background-image: url('splashpageBG.jpg');}
+#gifBG {background-image: url('gifBG.gif');}
+#infographicBG {background-image: url('infographicBG.jpg');}
+#interactiveBG {background-image: url('interactiveBG.JPG');}
+#geometricBG {background-image: url('geometricBG.jpg');}
+#uiuxBG {background-image: url('uiuxBG.jpg');}
+#colortheoryBG {background-image: url('colortheoryBG.gif');}
+#imagesBG {background-image: url('imagesBG.jpg');}
+#twoddesignBG {background-image: url('twoddesignBG.png');}
+#designprocessBG {background-image: url('designprocessBG.jpg');}
+#gdintroBG {background-image: url('gdintroBG.png');}
+#resourcesBG {background-image: url('resourcesBG.jpg');}
+#topofpage {background-image: url('topofpage.gif');}
+#brandingBG {background-image: url('brandingBG.jpg');}
+#vectorrasterBG {background-image: url('vectorrasterBG.png');}
+#colorBG{background-image: url('colorBG.JPG');}
+#colorizeBG{background-image: url('colorizeBG.jpg');}
+#copyrightBG{background-image: url('copyrightBG.jpg');}
+#moodboardBG{background-image: url('moodboardBG.jpg');}
+#cymkrgbBG{background-image: url('cymkrgbBG.jpg');}
+#popartBG{background-image: url('popartBG.jpg');}
+#layoutcompBG{background-image: url('layoutcompBG.jpg');}
+#patternrepetitionBG{background-image: url('patternrepetitionBG.jpg');}
+#behanceBG{background-image: url('behanceBG.gif');}
+#socialmediaBG{background-image: url('socialmediaBG.jpg');}
+#curvesBG{background-image: url('curvesBG.jpg');}
+#negspaceBG{background-image: url('negspaceBG.jpg');}
+#rulesBG{background-image: url('rulesBG.jpg');}
+#gridsBG{background-image: url('gridsBG.jpg');}
+#typographyBG{background-image: url('typographyBG.png');}
+#badfontBG{background-image: url('badfontBG.jpg');}
+#typographyposterBG{background-image: url('typographyposterBG.jpg');}
+#designyourownBG{background-image: url('designyourownBG.gif');}
 
 
 /*2d/3d animation background images*/
@@ -213,6 +229,8 @@ background-position: center; background-size: contain;}
 background-position: center; background-size: contain;}
 #unlockingBG {background-image: url('unlockingBG.jpg');
 background-position: center; background-size: contain;}
+#worldbuildingBG {background-image: url('worldbuildingBG.gif');
+  background-position: center; background-size: contain;}
 
 #webdevBG {background-image: url('computer.gif'); background-position: center; background-size: contain;}
 #pythonBG {background-image: url('Python.png'); background-position: center; background-size: contain;}
