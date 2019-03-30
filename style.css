@@ -108,6 +108,17 @@ a:visited {
 
 
 
+.passionprojects{
+  display: inline-block;
+  text-align: center;
+  background-color: lightslategrey;
+  color: black;
+  width: 25%;
+  height: 60px;
+  position:relative !important;
+  bottom:0 !important;
+}
+
 /* =================================================================================================================================Scratch Lesson Cards=======================================================*/
 #aboutMeBG {background-image: url('aboutme.gif');}
 #animateMeBG {background-image: url('animatename.jpg');}
