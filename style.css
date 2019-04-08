@@ -272,16 +272,16 @@ background-position: center; background-size: contain;}
 background-position: center; background-size: contain;}
 
 /*Python images */
-#pythonsetupBG{background-image: url('');}
-#syntaxBG{background-image: url('');}
-#functionsBG{background-image: url('');}
-#variablesBG{background-image: url('');}
-#controlsBG{background-image: url('');}
-#pythonErrorsBG{background-image: url('');}
-#loopsBG{background-image: url('');}
-#functions2BG{background-image: url('');}
-#listsBG{background-image: url('');}
-#hangmanBG{background-image: url('');}
+#pythonsetupBG{background-image: url('./Python_files/replit.png');}
+#syntaxBG{background-image: url('./Python_files/syntax.jpg');}
+#functionsBG{background-image: url('./Python_files/inputoutput.jpg');}
+#variablesBG{background-image: url('./Python_files/variables.png');}
+#controlsBG{background-image: url('./Python_files/conditionals.jpg');}
+#pythonErrorsBG{background-image: url('./Python_files/error.jpg');}
+#loopsBG{background-image: url('./Python_files/loop.jpg');}
+#functions2BG{background-image: url('./Python_files/functions.jpg');}
+#listsBG{background-image: url('./Python_files/lists.jpg');}
+#hangmanBG{background-image: url('./Python_files/hangman.jpg');}
 
 /*JS Images */
 #codecademyBG{background-image: url('Codecademy.png');
