@@ -119,6 +119,22 @@ a:visited {
   bottom:0 !important;
 }
 
+.worldbuilding-tip {
+  margin-top: 50px;
+  position: relative;
+}
+.worldbuilding-tip-quote {
+  color: #333;
+  position: relative;
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Satisfy;
+  font-size: 16px;
+  box-shadow: 0 10px 10px 2px rgba(0,0,0,0.3);
+}
+
+
 /* =================================================================================================================================Scratch Lesson Cards=======================================================*/
 #aboutMeBG {background-image: url('aboutme.gif');}
 #animateMeBG {background-image: url('animatename.jpg');}
