@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="main.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="https://south-bend-code-school.github.io/Student-Site/SBCS_favicon.png">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Unity Student Guide 5 - User Interface</title>
+  </head>
+
+  <body>
+    <!--Nav bar  -->
+    <nav class="light-blue lighten-1">
+      <div class="nav-wrapper">
+        <a href="#!"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="hide-on-med-and-down">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="scratch.html">Ages 7-12</a></li>
+          <li><a href="techimmersion.html">Ages 13-18</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="scratch.html">Ages 7-12</a></li>
+      <li><a href="techimmersion.html">Ages 13-18</a></li>
+    </ul>
+
+    <!--html Lesson: Project Title -->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h4>Unity Student Guide - User Interface</h4>
+		<h5>Your User Interface. This is the bread and butter of gaming.</h5>
+		<img src="./unity_images/interface5.jpg" width="500px">
+
+		<p>From here, your player is able to see everything. You can control how much is on the screen, how cluttered or spartan you want.</p>
+		<br>
+        <p><strong>Helpful Links:</strong></p>
+		<p><a href="https://docs.unity3d.com/Manual/UISystem.html">UI Docs</a></p>
+		<p><a href="https://docs.google.com/document/d/e/2PACX-1vQyVnHna1SmlhG6qLNv6m_-43p_3b673HWCk53ZEqtubwhtZfyr_AkrXBq8GEWFbVnv4XMTF88dHmW9/pub">Error Message Cheat Sheet</a></p>
+		<br>
+	   </div>
+    </div>
+
+
+e     <div class="row">
+      <div class="col s6 offset-s1">
+        <h4>User Interface</h4>
+		<h6>Why do we play games?</h6>
+		<p>Sometimes it's a storyline that drives us as players, sometimes it's the experience. While there are a million different reasons to play video games, competition is a great motivator. Tracking points is an immersive way to provide incentive to a player to interact in your world.</p>
+		<p>Our players need a reason to pick up the collectable that we just designed. Let's give them one - points! Think of a Mario game. In a Mario game there are often coins all around that the player can pick up. You'll probably make a bunch of copies of this prize and distribute them all around. Before we make a pre-fab (a pre-fabricated model that does not require us to code it every single time), we want to make sure it works. We're going to make use a new tool here called the Unity UI.</p>
+		<p><strong>UI</strong> stands for <strong>User Interface</strong>.</p>
+		<br>
+		<p>UI covers things such as the menus a player might go through and the <strong>HUD (heads-up display)</strong>. A HUD shows the player information on the screen while the player plays the game. Returning to the Mario example, the HUD in Super Mario 64 shows Mario's lives, his health, his coins, and his stars.</p>
+		<p>We're going to add a HUD element that shows the player's score.</p>
+		<p>When building your interface, you have options.</p>
+		<p>You can make it as simple as Super Mario Bros</p>
+		  <img src="./unity_images/interface1.jpg" width="400px">
+		<p>Or as complicated as an MMORPG (Massive Multiplayer Online Role Playing Game)
+		  <img src="./unity_images/interface2.jpg" width="400px">
+		<p>Think about every thing you add to the interface. Make sure it has a distinct use and the interface isn't too cluttered.</p>
+	  </div>
+    </div>
+
+		    <!--html Lesson: Directions Start Here-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h4>Making the UI</h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+		  <p>We're going to make a new <strong>GameObject</strong> now - text that shows the score. It's been a while since we've done this. Go to the Hierarchy and hit <strong>Create</strong> at the top.</p>
+		  <p><strong>Create</strong>  →  <strong>UI</strong>  →  <strong>Text</strong>.</p>
+		  <p>This will create some new objects for us. Let's take a look at them.</p>
+		  <br>
+		  <p>You'll see a Canvas, with the text object in it. You'll also see a new object called an <strong>EventSystem</strong>. These are elements that are necessary for Unity to make the UI.</p>
+		  <img src="./unity_images/interface3.jpg" width="300px">
+		  <br>
+		  <p>This is your preliminary UI</p>
+		  <img src="./unity_images/interface4.jpg" width="300px">
+		  <p><strong>Canvas</strong> - this big white box. The Canvas has all of the UI elements on it, and it displays them on the screen when the player plays the game.</p>
+		  <p><strong>EventSystem</strong> - a manager that makes sure that UI elements and other objects in your scene work together well. We don't have to do anything with it right now, so just leave it alone.</p>
+		  <p><i>First of all, let's rename our text.</i> We might add more texts later so we want to make sure that we can tell which one this is. You can do this in the Inspector at the top. Name it <strong>ScoreText</strong>.</p>
+		  <img src="./unity_images/interface6.jpg" width="300px">
+		  <p><i>Now we want to reposition it. Double-click its name in the Hierarchy to frame-in on it.</i> It's on the Canvas, but it may not be where you want it to be.</p>
+			<div class="worldbuilding-tip">
+					<i class="pin"></i>
+						<h6><i>Worldbuilding Tip:</i><h6>
+							 <blockquote class="worldbuilding-tip-quote">
+					  			<p>Traditionally, a HUD is in a corner of the screen. Think of a place that out of the main view of the character, so that the game is still immersive, but still very interactive.</p>
+							 </blockquote>
+							 <br>
+			</div>
+			<br>
+		  <p>You can move it using its <strong>Rect Transform</strong> in the Inspector.</p>
+		  <p>Click on the target-looking thing on the left to move it around. To move it, click the area of your choice and hold SHIFT and ALT while clicking it.</p>
+		  <img src="./unity_images/interface7.jpg" width="300px">
+		  <br>
+		  <br>
+		  <img src="./unity_images/interface8.jpg" width="300px">
+		  <p>Now your text will be in the place of your choosing. Let's look at the ScoreText's other components in the Inspector. The major one is the Text (Script) component. This lets us format the text. You can make changes to the font, font-size, and color there.</p>
+		  <p>To see what it will look like in-game, go to the Game tab above the Scene view.</p>
+		  <img src="./unity_images/interface9.jpg" width="300px">
+		  <p>The Text component also allows us to change what the text says. But we want the text to update depending on the player's score! We're going to have to use a script. We're going to create a new script called the HUD_Manager.</p>
+
+	   </div>
+      </div>
+    </div>
+
+
+	    <!--html Lesson: Directions Start Here-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h4>HUD_Manager</h4>
+      </div>
+    </div>
+
+    <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+			<p>Go to the <strong>PlayerController GameObject</strong> and click <strong>Add Component</strong> in the Inspector.</p>
+			<p><strong>New Script</strong>  →  <strong>HUD_Manager</strong></p>
+			<p>Open it up. Let's get started.</p>
+			<br>
+          </div>
+        </div>
+      </div>
+
+	      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+		  <h6>Score Variable</h6>
+		  <p>We're going to have to track the player's score. We're going to make a <strong>variable</strong> to do this. In order to use a variable in your script, you have to <strong>declare</strong> it. Unity needs to know that the variable exists! We'll want to do this before any functions. Go before the Start function and write:</p>
+		  <p><i>int score;</i></p>
+		  <p>There are two parts here - the <strong>type</strong> of the variable and the <strong>name</strong> of the variable. Now Unity knows that when we write <strong>score</strong>, we are referring to this integer variable! Now we can use it.</p>
+		  <p>Look at the comment above the <strong>Start</strong> function. It says we use this for initialization. We're going to use the Start function to <strong>initialize</strong> the variable. This means to give it a starting value.</p>
+		  <p>What do we want the player's score to start at?</p>
+		  <img src="./unity_images/interface10.jpg" width="250px">
+		  <br>
+
+          </div>
+        </div>
+      </div>
+
+	  	    <!--html Lesson: Directions Start Here-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h4>Linking the UI</h4>
+      </div>
+    </div>
+
+      <div class="row">
+          <!--Lesson Checkbox Div-->
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </p>
+              </form>
+            </div>
+          </div>
+          <!--Instruction Div-->
+          <div class="col s6">
+            <div class="projectsection1">
+			<p>Now we want to use this variable to update the UI. In order to do that, we need to add a new <strong>namespace</strong>. Remember those lines beginning with <strong>using</strong> at the top of the script? Those allow us to access certain prewritten functions. We're going to add one for the UI functions:</p>
+			<p><strong>using UnityEngine.UI;</strong></p>
+			<p>This will allow us to link our HUD_Manager script to our ScoreText object. First, we need to declare it, like a variable.</p>
+			<p><strong>Text ScoreText;</strong></p>
+			<p>This is a variable of type <i>Text</i>, that we're calling <i>ScoreText</i>. This does not make the connection for Unity; we have to tell it where to find the <strong>ScoreText</strong>. We're going to make it set up this connection in the Start function.</p>
+			<img src="./unity_images/interface11.jpg" width="500px">
+			<p>Great! Now our two variables are initialized - the score and the text that will display it. <i>Next, we need to code the text to show the score!</i></p>
+			<br>
+            </div>
+          </div>
+        </div>
+	 <div class="row">
+      <div class="col s1 offset-s1">
+		<div class="worldbuilding-tip">
+					<i class="pin"></i>
+						<h6><i>Challenge Mode!</i><h6>
+							 <blockquote class="worldbuilding-tip-quote">
+					  			<p>This line makes the <strong>ScoreText</strong> show the score. Where do we put it to show 0 points at the start of the game? Put it there.</p>
+								<p><i>ScoreText.text = "Score:" + score;</i></p>
+							 </blockquote>
+							 <br>
+		</div>
+	  </div>
+ 	</div>
+
+		  	    <!--html Lesson: Directions Start Here-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h4>Increasing the Score: Framework</h4>
+      </div>
+    </div>
+
+      <div class="row">
+          <!--Lesson Checkbox Div-->
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </p>
+              </form>
+            </div>
+          </div>
+          <!--Instruction Div-->
+          <div class="col s6">
+            <div class="projectsection1">
+			<p>Time to write our first custom function - one that will update the score! Functions can have any name, but it's best to use a descriptive one. We'll start it right after the Update function.</p>
+			<p><i>void UpdateScore(){</i></p>
+			<p><i>}</i></p>
+			<p>We can set custom parameters, too. We declare the type and name of the <strong>parameter</strong> between the parentheses. We'll use an integer amount to change the score by.</p>
+			<p><i>void UpdateScore(int amount){</i></p>
+			<p><i>}</i></p>
+			<p>Now, we just have to increase the score by the amount!</p>
+			<p><i>void UpdateScore(int amount){</i></p>
+			<p><i>score = score + amount;</i></p>
+			<p><i>}</i></p>
+
+            </div>
+          </div>
+        </div>
+
+	 <div class="row">
+      <div class="col s1 offset-s1">
+		<div class="worldbuilding-tip">
+					<i class="pin"></i>
+						<h6><i>Challenge Mode!</i><h6>
+							 <blockquote class="worldbuilding-tip-quote">
+					  			<p>We need one more line in this function. Figure out what we forgot and add it in!</p>
+							 </blockquote>
+							 <br>
+		</div>
+	  </div>
+ 	</div>
+
+      <div class="row">
+          <!--Lesson Checkbox Div-->
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </p>
+              </form>
+            </div>
+          </div>
+          <!--Instruction Div-->
+          <div class="col s6">
+            <div class="projectsection1">
+	        <h4>Increasing the Score: It's happening!</h4>
+			<p>We wrote a function in the HUD_Manager script that is able to update the score. <i>We never call it, though, so the score never increases.</i> When do we want to increase the score? When the collectable is touched! We're not checking that in the HUD_Manager script though. It's in the <strong>CollectableScript</strong>. We need to <strong>call the HUD_Manager's UpdateScore function from the CollectableScript</strong>. First, we need to make the <strong>UpdateScore</strong> function public. Something that is <strong>public</strong> can be accessed by other scripts. This goes before the return type:</p>
+			<p><i>void UpdateScore(int amount){</i></p>
+			<p>// your code</p>
+			<p><i>}</i></p>
+            </div>
+          </div>
+        </div>
+
+		      <div class="row">
+          <!--Lesson Checkbox Div-->
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </p>
+              </form>
+            </div>
+          </div>
+          <!--Instruction Div-->
+          <div class="col s6">
+            <div class="projectsection1">
+	        <h4>Connecting to the HUD_Manager script.</h4>
+			<p>First, the CollectableScript has to find the HUD_Manager script. We need to <strong>declare</strong> and <strong>initialize</strong> this connection.</p>
+			<p><i><strong>HUD_Manager</strong> hudmanager;</i></p>
+			<p>We're saying that we're going to use a HUD_Manager and we're going to refer to it as <strong>hudmanager</strong> in this script. To keep it straight, <i>any time we link one script to another in this class we're going to use CamelCase for the class name and all lowercase for the name.</i></p>
+			<p>Now we have to <strong>initialize</strong> the variable - let it know where we can find the HUD_Manager we're going to use.</p>
+            </div>
+          </div>
+        </div>
+
+ <div class="row">
+      <div class="col s1 offset-s1">
+		<div class="worldbuilding-tip">
+					<i class="pin"></i>
+						<h6><i>Challenge Mode!</i><h6>
+							 <blockquote class="worldbuilding-tip-quote">
+							 <p>Where do we put this line?:</p>
+							 <p><i>hudmanager = GameObject.Find(“PlayerController”).GetComponent<HUD_Manager>();</i></p>
+							 <p>Remember that we are <strong>initializing</strong> this connection.</p>
+							 </blockquote>
+							 <br>
+		</div>
+	  </div>
+ 	</div>
+
+ <div class="row">
+      <div class="col s1 offset-s1">
+		<div class="worldbuilding-tip">
+					<i class="pin"></i>
+						<h6><i>Challenge Mode!</i><h6>
+							 <blockquote class="worldbuilding-tip-quote">
+								<p>We can now call the function! To call it, we just write the function name.</p>
+								<p>Where do we put this line:</p>
+								<p><i>hudmanager.UpdateScore();</i></p>
+								<p><strong>Go ahead and put it where you think it goes!</strong> When do we want to increase the score?</p>
+							 </blockquote>
+							 <br>
+		</div>
+	  </div>
+ 	</div>
+
+			  	    <!--html Lesson: Directions Start Here-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h4>Finishing touches</h4>
+      </div>
+    </div>
+
+		      <div class="row">
+          <!--Lesson Checkbox Div-->
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </p>
+              </form>
+            </div>
+          </div>
+          <!--Instruction Div-->
+          <div class="col s6">
+            <div class="projectsection1">
+			<p>Good work. There's a problem, though. How much will this increase the score by? Unity doesn't know. The UpdateScore function needed a parameter - the amount! Declare a new variable in the <strong>CollectableScript</strong>. Call it “points”. We're going to make this variable <strong>public</strong>. <i>Public variables can be adjusted in the Inspector</i> - this will make it easy to change the number of points on the fly.</p>
+			<p>We're going to use the points variable as the “amount” parameter when we call the UpdateScore script. What type does it need to be? Fill in the blank when you write your code:</p>
+			<p><i><strong>public</strong> ____ points;</i></p>
+			<p>Cool! Unlike the score, we don't want to initialize this variable in the code. If we do that, it's <i>hard-coded</i> in - we'd need to go change it in the script if we ever wanted to change the amount of points. Instead, we'll set it in the Inspector. Go back to the Unity editor and click on the collectable to go to the Inspector. You should see the Points variable on the <strong>CollectableScript</strong> component. Fill in the number of points you want the collectable to give you!</p>
+			<img src="./unity_images/interface12.jpg" width="500px">
+			<p>Now, all we have to do is add the points variable to the function call:</p>
+			<p><i>hudmanager.UpdateScore(points);</i></p>
+			<br>
+            </div>
+          </div>
+        </div>
+
+			  	    <!--html Lesson: Directions Start Here-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h4>Testing the Game</h4>
+      </div>
+    </div>
+
+    <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+			<h5>Try playing the game</h5>
+			<p>Does your score go up when your character grabs a collectable?</p>
+          </div>
+        </div>
+      </div>
+
+
+	  		    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Save your project</h5>
+		  <br>
+      </div>
+	  </div>
+	  </div>
+
+	  <br>
+	  <br>
+    <!--Project Complete Banner-->
+    <div class="row blue white-text">
+	<br>
+        <h5 style="text-align:center;">1UP!</h5>
+	<br>
+    </div>
+	<br>
+	<br>
+
+        <!--Card: Prompt - Find Another Project-->
+        <div class="row">
+          <div class="col s4 offset-s2">
+            <div class="card findanotherproject">
+              <div class="card-content">
+                <div class="cardDescription">
+                  <h6>Find another project?</h6>
+                  <div class="browse">
+                    <br>
+                    <a href="techimmersion.html">
+                      <button>Browse all projects</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </body>
+    </html>
