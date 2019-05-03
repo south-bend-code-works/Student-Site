@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="main.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="https://south-bend-code-school.github.io/Student-Site/SBCS_favicon.png">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Unity Student Guide 6 - Prefabs and Scene Organization</title>
+  </head>
+
+  <body>
+    <!--Nav bar  -->
+    <nav class="light-blue lighten-1">
+      <div class="nav-wrapper">
+        <a href="#!"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="hide-on-med-and-down">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="scratch.html">Ages 7-12</a></li>
+          <li><a href="techimmersion.html">Ages 13-18</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="scratch.html">Ages 7-12</a></li>
+      <li><a href="techimmersion.html">Ages 13-18</a></li>
+    </ul>
+
+    <!--html Lesson: Project Title -->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h4>Unity Student Guide 6 - Prefabs and Scene Organization</</h4>
+		<h5>Making our Game Developer life easier.</h5>
+		<br>
+        <p><strong>Helpful Links:</strong></p>
+		<p><a href="https://docs.unity3d.com/Manual/Prefabs.html">Prefabs Docs</a></p>
+		<br>
+	   </div>
+    </div>
+
+
+      <div class="row">
+      <div class="col s6 offset-s1">
+        <h4>Making Prefabricated Models</h4>
+		<h6>So far we have been using Prefabs on the Unity Asset Store.</h6>
+		<p>These are really useful because they have the model we want, as well as the script. From experience, you know that scripting can be time consuming. Making a prefab will save you time and effort because then you don't have to program each individual collectable you put in the game.</p>
+		<img src="./unity_images/prefab1.jpg" width="300px">
+		<p><i>Imagine Sonic's rings without prefabs.</i></p>
+		</div>
+    </div>
+
+		    <!--html Lesson: Directions Start Here-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h4>Making Copies</h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+		<h5>We’re ready to make copies of our collectable.</h5>
+		  <p>To do this, drag it from the Hierarchy into the Project view.</p>
+		  <p>This will make a <strong>prefab</strong>.</p>
+		  <p>It stores the object and allows us to make copies easily and make changes that affect all of those copies.</p>
+  		  <img src="./unity_images/prefab2.jpg" width="150px">
+		  <br>
+	   </div>
+      </div>
+    </div>
+
+    <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+		  <h6>Make a folder</h6>
+		  <p><strong>Right-click</strong> → <strong>Create</strong> → <strong>New Folder</strong></p>
+		  <p>Name it <strong>Prefabs</strong></p>
+		</div>
+        </div>
+      </div>
+
+	  
+    <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+		  <p>Drag your prefab into there.</p>
+		</div>
+        </div>
+      </div>
+	      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+		  <p>Click <strong>Original Prefab</strong></p>
+		  <p>Now all you have to do to make copies of it is drag the prefab into the scene.</p>
+		  <img src="./unity_images/prefab3.jpg" width="300px">
+		  <p>To organize items in your scene, you can create an empty GameObject to use like a folder.</p>
+		  <p><strong>Create</strong>  →  <strong>Create Empty</strong>
+			</div>
+        </div>
+      </div>
+
+
+	      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+		  <p>This is a GameObject with nothing on it besides a transform.</p>
+		  <p><i>Reset its transform to the default by going to the gear in the transform component and clicking <strong>reset</strong></i></p>
+   		  <img src="./unity_images/prefab4.jpg" width="300px">
+          </div>
+        </div>
+      </div>
+
+	  	      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+		  <p>Name it “Collectables” and drag each collectable onto it to make it a child. Now you can open and close it like a folder by clicking the arrow!</p>
+   		  <img src="./unity_images/prefab5.jpg" width="300px">
+			</div>
+        </div>
+      </div>
+
+	  		    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Save your project</h5>
+		  <br>
+      </div>
+	  </div>
+	  </div>
+
+	  <br>
+	  <br>
+    <!--Project Complete Banner-->
+    <div class="row blue white-text">
+	<br>
+        <h5 style="text-align:center;">That prefabricated life</h5>
+	<br>
+    </div>
+	<br>
+	<br>
+
+        <!--Card: Prompt - Find Another Project-->
+        <div class="row">
+          <div class="col s4 offset-s2">
+            <div class="card findanotherproject">
+              <div class="card-content">
+                <div class="cardDescription">
+                  <h6>Find another project?</h6>
+                  <div class="browse">
+                    <br>
+                    <a href="techimmersion.html">
+                      <button>Browse all projects</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </body>
+    </html>
