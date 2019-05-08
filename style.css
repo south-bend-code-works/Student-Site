@@ -260,25 +260,25 @@ background-position: center; background-size: contain;}
 #patternBG {background-image: url('striped.gif');}
 
 /*Unity images */
-#setupBG{background-image: url('unityIntro.png');}
-#terrainBG{background-image: url('unityTerrain.png');}
-#terrain2BG{background-image: url('unityTerrain2.png');}
-#characterBG{background-image: url('unityCharacter.png');}
-#organizeBG{background-image: url('unityOrganize.png');}
-#collectableBG{background-image: url('unity4.png');}
-#uiBG{background-image: url('unity5-1.png');}
-#collectable2BG{background-image: url('unityCollectable2.png');}
-#prefabBG{background-image: url('unityPrefab.png');
+#setupBG{background-image: url('setup.jpg');}
+#worldbuildingBG{background-image: url('worldbuilding_terrain.jpg');}
+#worldbuilding2BG{background-image: url('worldbuilding_terrain2.jpg');}
+#characterBG{background-image: url('character.gif');}
+#organizeBG{background-image: url('organize.jpg');}
+#collectableBG{background-image: url('collectable.jpg');}
+#uiBG{background-image: url('interface.gif');}
+#collectable2BG{background-image: url('collectable2.gif');}
+#prefabBG{background-image: url('prefab1.gif');
 background-position: center; background-size: contain;}
-#enemyBG{background-image: url('unityEnemy.png');}
-#attackBG{background-image: url('unityAttack.png');}
-#healthBG{background-image: url('unityHealthbar.png');}
-#fightBG{background-image: url('unity7d-2.png');}
-#enemyprefabBG{background-image: url('unityPrefabEnemy.png');}
-#menuBG{background-image: url('unity9-1.png');}
-#audioBG{background-image: url('unityAudio.png');
+#enemyBG{background-image: url('enemy.jpg');}
+#attackBG{background-image: url('enemyattacks.gif');}
+#healthBG{background-image: url('healthbar1.gif');}
+#fightBG{background-image: url('fightingenemies.gif');}
+#enemyprefabBG{background-image: url('prefabenemy.jpeg');}
+#menuBG{background-image: url('unitymenu.gif');}
+#audioBG{background-image: url('audio.jpeg');
 background-position: center; background-size: contain;}
-#buildBG{background-image: url('unityBuild.png');
+#buildBG{background-image: url('unitybuild.jpeg');
 background-position: center; background-size: contain;}
 #interfaceBG{background-image: url('unityNav.png');
 background-position: center; background-size: contain;}

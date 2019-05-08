@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="main.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="https://south-bend-code-school.github.io/Student-Site/SBCS_favicon.png">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Unity Student Guide 7b - Enemy Attacks You</title>
+  </head>
+
+  <body>
+    <!--Nav bar  -->
+    <nav class="light-blue lighten-1">
+      <div class="nav-wrapper">
+        <a href="#!"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="hide-on-med-and-down">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="scratch.html">Ages 7-12</a></li>
+          <li><a href="techimmersion.html">Ages 13-18</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="scratch.html">Ages 7-12</a></li>
+      <li><a href="techimmersion.html">Ages 13-18</a></li>
+    </ul>
+
+    <!--html Lesson: Project Title -->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h4>Unity Student Guide 7b - Enemy Attacks You</</h4>
+		<h5>While we have already added an enemy, there are no consquences to the game.</h5>
+		<p>Part of what makes a game dynamic is having an exciting component like an enemy chasing you. It adds a sense of urgency.</p>
+    <img src="./unity_images/enemyattacks1.gif" width="400px">
+    <p>We're going to make it attack you with a melee weapon. We need two things for this to work - an attacking animation and something for the enemy to hit you with.</p>
+    		<br>
+        <p><strong>Helpful Links:</strong></p>
+		<p><a href="https://docs.unity3d.com/Manual/AnimationSection.html">Animation Docs</a></p>
+		<br>
+	   </div>
+    </div>
+
+
+      <div class="row">
+        <div class="col s6 offset-s1">
+          <h4>Attacking Animation</h4>
+		    </div>
+      </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <p>We're going to use a specific pack for this, because working free animations are harder to find on the asset store. Find this pack and click <strong>download</strong>.</p>
+          <img src="./unity_images/enemyattacks2.jpg" width="500px">
+          <p>Many assets are created by a third party, so some of them have bugs or don't work correctly. You can shop around on the asset store for more, but this one for sure works.</p>
+
+	   </div>
+      </div>
+    </div>
+
+    <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+		  <p>By default, Unity will want to import all of the animations. We don't want this. On the import window, hit the checkbox next to Mixamo to <strong>deselect</strong> everything.</p>
+      <img src="./unity_images/enemyattacks3.jpg" width="400px">
+
+
+		</div>
+        </div>
+      </div>
+
+    <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+		  <p>We want one of the attack animations that use a weapon.</p>
+      <img src="./unity_images/enemyattacks4.jpg" width="400px">
+
+		</div>
+        </div>
+      </div>
+
+	      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+		  <p>Any of these will be fine to use. Import all of them into your project.</p>
+      <p>To preview them, find them in the <strong>Project</strong> view (in the Mixamo folder) and double-click one to open it in the <strong>Inspector</strong>. You'll see the preview in the bottom of the <strong>Inspector</strong>. Click the <strong>Play</strong> button to watch it. Choose one!</p>
+      <img src="./unity_images/enemyattacks6.gif" width="200px">
+
+		</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s6 offset-s1">
+          <h4>The Animator</h4>
+		    </div>
+      </div>
+
+	      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+		  <p>Let's make the enemy use the animation you chose. To do this, we're going to use something called the <strong>animator</strong>. This controls the character's animations! Some housekeeping first: right now our character and our enemy are using the same animator. If you go to them in the <strong>Inspector</strong>, you'll see they're both using the <strong>ThirdPersonAnimatorController:</strong></p>
+		  <p>Check that it is set to <strong>Humanoid</strong> and that it creates an avatar from the model</p>
+		  <img src="./unity_images/enemyattacks5.jpg" width="300px">
+      <p>This will be a problem later, so let's split them up.</p>
+			</div>
+        </div>
+      </div>
+
+
+	      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+            <p><strong>Standard Assets</strong>  →  <strong>Characters</strong>  →  <strong>ThirdPersonCharacter</strong>  →  <strong>Animator</strong></p>
+            <p>Duplicate the <strong>ThirdPersonAnimatorController</strong> (Ctrl + D)</p>
+			       </div>
+        </div>
+      </div>
+
+      <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+    <p>Rename one to <strong>PlayerAnimator</strong> and the other to <strong>EnemyAnimator</strong></p>
+    <img src="./unity_images/enemyattacks7.jpg" width="300px">
+    </div>
+      </div>
+    </div>
+
+    <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+  <p>Drag the <strong>EnemyAnimator</strong> onto the <strong>EnemyController</strong> in the Hierarchy</p>
+  </div>
+    </div>
+  </div>
+
+  <div class="row">
+  <!--Lesson Checkbox Div-->
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+      </form>
+    </div>
+  </div>
+  <!--Instruction Div-->
+  <div class="col s6">
+    <div class="projectsection1">
+<p>Drag the <strong>PlayerAnimator</strong> onto the <strong>PlayerController</strong> in the Hierarchy</p>
+</div>
+  </div>
+</div>
+
+
+
+
+	  		    <!--html Lesson: Directions Start Here-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h4>EnemyAnimator Overview</h4>
+      </div>
+    </div>
+
+	  	      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+		  <p>Double-click on the EnemyAnimator to open it up as a new tab above the scene view.</p>
+      <img src="./unity_images/enemyattacks8.jpg" width="500px">
+      <img src="./unity_images/enemyattacks9.jpg" width="500px">
+      <p>This is the Animator view.</p>
+      <p>This controls which animations are playing for our characters! This is an example of a computer science concept called a <strong>state machine</strong>.</p>
+      <p>a state machine is something that has a number of <strong>states</strong> and rules that transition between those states.</p>
+      <p><i>If you want to learn more about <strong>Animation</strong>, check out the <a href="2d3dAnimation.html">2D + 3D Animation track!</a> </i></p>
+      		      </div>
+        </div>
+      </div>
+      <div class="row">
+  <!--Lesson Checkbox Div-->
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+      </form>
+    </div>
+  </div>
+  <!--Instruction Div-->
+  <div class="col s6">
+    <div class="projectsection1">
+<p>It starts with the big green entry block. On entry, so when the enemy spawns, it goes to the <strong>Grounded</strong> state (notice the orange arrow from Entry to Grounded. The main three states in this animator are:</p>
+<p><strong>Grounded</strong> (the enemy is on the ground)</p>
+<p><strong>Airborne</strong> (the enemy is in the air)</p>
+<p><strong>Crouching</strong> (the enemy is crouching)</p>
+<p>The arrows between these states are the transitions. Try clicking on one of these arrows and scrolling down in the Inspector until you see a box that says <strong>conditions</strong>.</p>
+<img src="./unity_images/enemyattacks11.jpg" width="500px">
+<img src="./unity_images/enemyattacks10.jpg" width="500px">
+<p>For example, the transition from Grounded to Crouching happens if <strong>Crouch</strong> is <strong>true</strong>. And if you click on the arrow going back, we transition from the Crouching state to the Grounded state if <strong>Crouch</strong> is <strong>false</strong>.</p>
+<p><strong>Crouch</strong>, in this case, is called a parameter. Click <strong>Parameters</strong> at the top-left of the Animator.</p>
+<img src="./unity_images/enemyattacks12.jpg" width="200px">
+<p>These are all of the parameters that determine when the Animator changes states. <strong>These are set by scripts</strong>. In the next section, we're going to add a <strong>new state</strong> for attacking and a <strong>new parameter</strong> for determining when to switch to that state!</p>
+          </div>
+  </div>
+</div>
+
+
+
+
+	  	  		    <!--html Lesson: Directions Start Here-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h4>Attack Animation</h4>
+      </div>
+    </div>
+		  	      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+		          <p><strong>To add a new state:</strong></p>
+   		        <p>Find your chosen attack animation in the project view and drag it onto a blank area in the animator.</p>
+              <img src="./unity_images/enemyattacks13.jpg" width="400px">
+              </div>
+        </div>
+      </div>
+
+	  		  	      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+		  <p>Rename it in the Inspector to <strong>Attacking</strong> by clicking on its state in the <strong>Animator</strong>.</p>
+      <img src="./unity_images/enemyattacks14.jpg" width="400px">
+      <P>You can also change how fast the animation plays here (speed) and mirror it (so the character is left-handed) if you would like.</P>
+		      </div>
+        </div>
+      </div>
+
+
+	  	  		  	      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+            <p><strong>To add a new parameter:</strong></p>
+            <img src="./unity_images/enemyattacks15.jpg" width="300px">
+            <p>Click the<strong> + </strong>above the parameter list.</p>
+            <img src="./unity_images/enemyattacks16.jpg" width="200px">
+            <p>There are different kinds of parameters. Let's select <strong>Bool</strong>. Bool is short for boolean, which is a type of variable that can only be either true or false (think 0 or 1 in binary, if you're familiar). As our enemy either is in range to attack, or isn't, this is appropriate.</p>
+		        </div>
+        </div>
+      </div>
+
+	  	 <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+		          <p>Name the boolean <strong>IsAttacking</strong>. This parameter will determine when we change from the <strong>grounded</strong> state to the <strong>attacking</strong> state. We're going to make our own transitions!</p>
+              <p><strong>To make a transition:</strong></p>
+              <p>Right-click on the state that you want to <strong>transition from</strong>. Click <strong>make transition</strong>. An arrow will appear! Then click on the state that you want to <strong>transition to</strong>. Make a transition from grounded to attacking and vice versa.</p>
+              <p><strong>Editing transition conditions:</strong></p>
+              <p>Now we need to set conditions for both of these transitions! Select one of them and scroll down in the Inspector to the conditions section. Click the +.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+         <div class="col s1 offset-s1">
+       <div class="worldbuilding-tip">
+             <i class="pin"></i>
+               <h6><i>Challenge Mode!</i><h6>
+                  <blockquote class="worldbuilding-tip-quote">
+                     <p>Set the transitions to what they should be, based on the <strong>IsAttacking</strong> parameter.</p>
+                     <p><i>Recommendation: The box on a transition called <strong>'Has Exit Time'</strong> is important. Having exit time means that the transition takes time. You probably don’t want exit time on the transition from <strong>grounded</strong> to <strong>attacking</strong/> because the enemy will run up and pause before attacking the player!</i></p>
+                  </blockquote>
+                  <br>
+       </div>
+       </div>
+     </div>
+
+     <div class="row">
+       <!--Lesson Checkbox Div-->
+       <div class="col s1 offset-s1">
+         <div class="checkbox">
+           <form action="#">
+               <p>
+                 <label>
+                   <input type="checkbox" />
+                   <span></span>
+                 </label>
+               </p>
+           </form>
+         </div>
+       </div>
+       <!--Instruction Div-->
+       <div class="col s6">
+         <div class="projectsection1">
+           <p>We’ve done everything we need to in the editor!</p>
+           <p>Let's move onto scripting</p>
+         </div>
+       </div>
+     </div>
+
+   <!--html Lesson: Directions Start Here-->
+<div class="row">
+    <div class="col s6 offset-s1">
+        <h4>Scripting</h4>
+    </div>
+</div>
+
+<div class="row">
+ <!--Lesson Checkbox Div-->
+ <div class="col s1 offset-s1">
+   <div class="checkbox">
+     <form action="#">
+         <p>
+           <label>
+             <input type="checkbox" />
+             <span></span>
+           </label>
+         </p>
+     </form>
+   </div>
+ </div>
+ <!--Instruction Div-->
+ <div class="col s6">
+   <div class="projectsection1">
+     <p>The enemy already has a bunch of code, so we’re just going to make a few changes!</p>
+     <img src="./unity_images/enemyattacks17.jpg" width="300px">
+     <p>If you look at the NavMesh Agent component on the <strong>EnemyController</strong>, you’ll see a public variable called <strong>Stopping Distance</strong>. This how close the enemy gets to the player before it stops. We’re going to make it start attacking once it gets within that distance!</p>
+     <p>Open up the <strong>AICharacterControl</strong> script by finding it on the <strong>EnemyController</strong> and double-clicking it.</p>
+     <p>First, we need to give this script access to our animator so it can change our new parameter.</p>
+   </div>
+ </div>
+</div>
+
+<div class="row">
+   <div class="col s1 offset-s1">
+     <div class="worldbuilding-tip">
+       <i class="pin"></i>
+         <h6><i>Challenge Mode!</i><h6>
+            <blockquote class="worldbuilding-tip-quote">
+               <p>Declare a new <strong>public</strong> variable of type <strong>Animator</strong>. Give it the name <strong>anim</strong>.</p>
+               <p><i>Recommendation: The box on a transition called <strong>'Has Exit Time'</strong> is important. Having exit time means that the transition takes time. You probably don’t want exit time on the transition from <strong>grounded</strong> to <strong>attacking</strong/> because the enemy will run up and pause before attacking the player!</i></p>
+            </blockquote>
+            <br>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+ <!--Lesson Checkbox Div-->
+ <div class="col s1 offset-s1">
+   <div class="checkbox">
+     <form action="#">
+         <p>
+           <label>
+             <input type="checkbox" />
+             <span></span>
+           </label>
+         </p>
+     </form>
+   </div>
+ </div>
+ <!--Instruction Div-->
+ <div class="col s6">
+   <div class="projectsection1">
+     <p>Now we have to tell it where to find the animator.</p>
+   </div>
+ </div>
+</div>
+
+<div class="row">
+   <div class="col s1 offset-s1">
+     <div class="worldbuilding-tip">
+       <i class="pin"></i>
+         <h6><i>Challenge Mode!</i><h6>
+            <blockquote class="worldbuilding-tip-quote">
+               <p>Add this line to make the connection where you think it goes:</p>
+               <img src="./unity_images/enemyattacks18.jpg" width="300px">
+               <p><i>Hint: Where do you see lines like it?</i></p>
+            </blockquote>
+            <br>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+ <!--Lesson Checkbox Div-->
+ <div class="col s1 offset-s1">
+   <div class="checkbox">
+     <form action="#">
+         <p>
+           <label>
+             <input type="checkbox" />
+             <span></span>
+           </label>
+         </p>
+     </form>
+   </div>
+ </div>
+ <!--Instruction Div-->
+ <div class="col s6">
+   <div class="projectsection1">
+     <p>Now, we’re going to update (ahem) the Update function. Here’s what it looks like:</p>
+     <img src="./unity_images/enemyattacks19.jpg" width="500px">
+     <p>Let’s try to make sense of this. It has two if-then statements. One checks to see if there is a target (!= means does not equal. By saying target != null, it means that a target exists!).</p>
+     <p>The other checks how far the enemy is from the target. If it is far (remaining distance > stopping distance), move toward the target.</p>
+     <p>Otherwise (else), don’t move (<strong>vector3.zero</strong> means a velocity of 0).</p>
+     <p>We’re going to add some code to this second statement, so we need to restructure it a bit.</p>
+     <p><i>//C# lets you do if-then statements without brackets if there is only one line of code to execute. Since we’re going to add more, we need to add opening and closing brackets to the code that is executed under each condition.</i></p>
+     <img src="./unity_images/enemyattacks20.jpg" width="500px">
+
+   </div>
+  </div>
+</div>
+
+<div class="row">
+ <!--Lesson Checkbox Div-->
+ <div class="col s1 offset-s1">
+   <div class="checkbox">
+     <form action="#">
+         <p>
+           <label>
+             <input type="checkbox" />
+             <span></span>
+           </label>
+         </p>
+     </form>
+   </div>
+ </div>
+ <!--Instruction Div-->
+ <div class="col s6">
+   <div class="projectsection1">
+     <p>Awesome! Now we need to add these two lines of code to activate the <strong>IsAttacking</strong> parameter:</p>
+     <img src="./unity_images/enemyattacks21.jpg" width="300px">
+   </div>
+  </div>
+</div>
+
+<!--html Lesson: Directions Start Here-->
+<div class="row">
+<div class="col s6 offset-s1">
+<h4>Testing the Game</h4>
+</div>
+</div>
+
+<div class="row">
+<!--Lesson Checkbox Div-->
+<div class="col s1 offset-s1">
+<div class="checkbox">
+  <form action="#">
+      <p>
+        <label>
+          <input type="checkbox" />
+          <span></span>
+        </label>
+      </p>
+  </form>
+</div>
+</div>
+<!--Instruction Div-->
+<div class="col s6">
+<div class="projectsection1">
+<h6>Try playing the game by pressing the <strong>play</strong> button above the scene view.</h6>
+<p>
+If your enemy comes close to you and then attacks (you might have to adjust the stopping distance), you’re ready to move on! Next, we’re going to make that attack deal damage.</p>
+</div>
+</div>
+</div>
+
+	  		    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Save your project</h5>
+		  <br>
+      </div>
+	  </div>
+	  </div>
+
+	  <br>
+	  <br>
+    <!--Project Complete Banner-->
+    <div class="row blue white-text">
+	<br>
+        <h5 style="text-align:center;">Baking more than cakes</h5>
+	<br>
+    </div>
+	<br>
+	<br>
+
+        <!--Card: Prompt - Find Another Project-->
+        <div class="row">
+          <div class="col s4 offset-s2">
+            <div class="card findanotherproject">
+              <div class="card-content">
+                <div class="cardDescription">
+                  <h6>Find another project?</h6>
+                  <div class="browse">
+                    <br>
+                    <a href="techimmersion.html">
+                      <button>Browse all projects</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </body>
+    </html>

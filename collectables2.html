@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="main.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="https://south-bend-code-school.github.io/Student-Site/SBCS_favicon.png">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Unity Student Guide 5b - Collectables Extended</title>
+  </head>
+
+  <body>
+    <!--Nav bar  -->
+    <nav class="light-blue lighten-1">
+      <div class="nav-wrapper">
+        <a href="#!"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="hide-on-med-and-down">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="scratch.html">Ages 7-12</a></li>
+          <li><a href="techimmersion.html">Ages 13-18</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="scratch.html">Ages 7-12</a></li>
+      <li><a href="techimmersion.html">Ages 13-18</a></li>
+    </ul>
+
+    <!--html Lesson: Project Title -->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h4>Unity Student Guide 5b - Collectables Extended</</h4>
+		<h5>Let's delve back into collectables.</h5>
+		<br>
+        <p><strong>Helpful Links:</strong></p>
+		<p><a href="https://docs.unity3d.com/Manual/CharacterControllers.html">Character Control</a></p>
+		<br>
+	   </div>
+    </div>
+
+
+e     <div class="row">
+      <div class="col s6 offset-s1">
+        <h4>Rotating Collectables</h4>
+		<p>Game designers use animation to draw a player's eye.</p>
+		<img src="./unity_images/collectable-b2.gif" width="400px">
+		<p>Animation is a great way to breathe life into a character. Our brains respond to movement, and animations give us something to focus on. Even simple small movements can make a universe more immersive.</p>
+		<br>
+		<h6>This tutorial will focus on making our newly created collectables rotate.</h6>
+		<h6>It helps the player know that they're important and can be useful later in the game</h6>
+			<img src="./unity_images/collectable-b1.gif" width="400px">
+
+		</div>
+    </div>
+
+		    <!--html Lesson: Directions Start Here-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h4>Making the UI</h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+		<h5>Open the CollectableScript</h5>
+		  <p>We want our collectable to always be rotating, so we can use the Update() function. The Update function runs every frame!</p>
+		  <p><i>void Update(){</i></p>
+		  <p><i>}</i></p>
+		  <br>
+		  <p>In the Update function, we want to access the <strong>rotation</strong> of the collectable. Remember that the component that controls the position, scale, and rotation of a <strong>GameObject</strong> is the <i>transform</i>. We want to change the <i>rotate</i> property of the <i>transform</i>, so we write:</p>
+		  <p><i>transform.Rotate();</i></p>
+		  <br>
+		  <p>Now when we code we can't just put the collectables' name in there and expect the script to know what we want to rotate, so we are going to have to rename it. A Vector3 is basically an arrow in 3D space. We’re using that arrow as a force, pushing the rotation in the direction of the arrow. It has 3 values: (x, y, z). If we want it to rotate on the y-axis and not the others, we put a value into that slot.</p>
+		  <p><i>transform.Rotate (<strong>new Vector3 (0, 0, 60)</strong>);</i></p>
+		  <br>
+		  <p>The Update function should look like this:</p>
+		  <img src="./unity_images/collectable-b4.jpg" width="500px">
+		  <p>Go ahead and save that and run the game. You’ll notice that it’s rotating way too fast! Remember that we are using the Update function - it’s called once per frame. Games run at many frames every second, so it is rotating that much many times per second. We want to rotate every second instead. To do this, we multiply the current rotation by something called time.deltaTime. Multiplying by this converts things from frames into seconds.</p>
+		  <img src="./unity_images/collectable-b5.jpg" width="500px">
+	   </div>
+      </div>
+    </div>
+
+
+	    <!--html Lesson: Directions Start Here-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h4>Collectable that Changes Stats</h4>
+      </div>
+    </div>
+
+    <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+		  <h6>We also can make additional collectables that have a more dramatic effect</h6>
+		  <p>To make a collectable that makes you faster or able to jump higher, we need to change a few things. Follow these steps to add a new kind of collectable to your game:</p>
+		  <br>
+		  <p>Open the <strong>Asset Store</strong> and find a model that would act as a power up for your character.</p>
+		  <p>What makes sense for your game? Would a fancy fruit give you more jumping power?</p>
+		  <p>How about a potion?</p>
+		  <p>Find something though that can attract attention and give the player the idea that they should look for this collectable compared to your others.</p>
+		</div>
+        </div>
+      </div>
+	      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+		  <p>Put the model into your scene.</p>
+          </div>
+        </div>
+      </div>
+	  	      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+		  <p>Add a collider.</p>
+          </div>
+        </div>
+      </div>
+	  	  	      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+		  <p>Make it a trigger collider</p>
+          </div>
+        </div>
+      </div>
+
+	  	  	  	      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+		  <p>Add the CollectableScript.</p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+	      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+		  <p>Now we want to make some changes to the <strong>CollectableScript</strong>. We want to make it so this script can update the Player’s stats. We need to access another script to do so. Take a look at the <strong>PlayerController</strong> in the editor. It has a script on it called <strong>ThirdPersonCharacter.</strong></p>
+		  <img src="./unity_images/collectable-b6.jpg" width="400px">
+		  <br>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+          <!--Lesson Checkbox Div-->
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </p>
+              </form>
+            </div>
+          </div>
+          <!--Instruction Div-->
+          <div class="col s6">
+            <div class="projectsection1">
+			<p>This script has the variables we want to change: Jump Power and Move Speed Multiplier. We want to access that script so we can do that.</p>
+			<p>We do this very similarly to how we accessed the HUD_Manager script. First, add a public variable called <strong>ThirdPersonCharacter</strong> to the <strong>CollectableScript</strong>. This can go right after the HUD_Manager declaration:</p>
+			<img src="./unity_images/collectable-b7.jpg" width="400px">
+            </div>
+          </div>
+        </div>
+
+		      <div class="row">
+          <!--Lesson Checkbox Div-->
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </p>
+              </form>
+            </div>
+          </div>
+          <!--Instruction Div-->
+          <div class="col s6">
+            <div class="projectsection1">
+			<p>You’ll notice that it’s red. That is because we cannot access this script without a new namespace. You’ll get an error if you try! Add this line to the top of the script:</p>
+			<p>We do this very similarly to how we accessed the HUD_Manager script. First, add a public variable called <strong>ThirdPersonCharacter</strong> to the <strong>CollectableScript</strong>. This can go right after the HUD_Manager declaration:</p>
+			<p><i>using UnityStandardAssets.Characters.ThirdPerson;</i></p>
+            </div>
+          </div>
+        </div>
+		      <div class="row">
+          <!--Lesson Checkbox Div-->
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </p>
+              </form>
+            </div>
+          </div>
+          <!--Instruction Div-->
+          <div class="col s6">
+            <div class="projectsection1">
+			<p>Now let’s add two new public variables that we can set in the Inspector. These will be:</p>
+			<p><i><strong>float</strong> JumpIncrease;</i></p>
+			<p><i><strong>float</strong> SpeedIncrease;</i></p>
+			<p><strong>Floats are numbers with a decimal point.</strong> We used integer before because we didn’t want the score to be a fraction. We want to be able to fine-tune our upgrades more precisely, though, so we’re using a float here. This way we can have collectables that change these values by different amounts!</p>
+
+            </div>
+          </div>
+        </div>
+
+
+
+	 <div class="row">
+      <div class="col s1 offset-s1">
+		<div class="worldbuilding-tip">
+					<i class="pin"></i>
+						<h6><i>Challenge Mode!</i><h6>
+							 <blockquote class="worldbuilding-tip-quote">
+					  			<p>Establish a link to the ThirdPersonCharacter script. This is very similar to the way we linked to the HUD_Manager script.</p>
+							 </blockquote>
+							 <br>
+		</div>
+	  </div>
+ 	</div>
+
+      <div class="row">
+          <!--Lesson Checkbox Div-->
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </p>
+              </form>
+            </div>
+          </div>
+          <!--Instruction Div-->
+          <div class="col s6">
+            <div class="projectsection1">
+			<p>In the OnTriggerEnter() function, under the UpdateScore call, add the following lines:</p>
+			<p><i>ThirdPersonCharacter.m_MoveSpeedMultiplier += SpeedIncrease;</i></p>
+			<p><i>ThirdPersonCharacter.m_JumpPower += JumpIncrease;</i></p>
+			<br>
+			<p><strong>Note:</strong> “+=” adds what is after the equals sign to what is before it. For example, 1 += 4 is 5.</p>
+			<p>Now you’ll see that the ThirdPersonCharacter variables are in red. We forgot to make them public! Go back to the ThirdPersonCharacter script and make them public.</p>
+			<img src="./unity_images/collectable-b8.jpg" width="400px">
+			<p>Now you’ll be able to set the values in the Inspector for the JumpIncrease and SpeedIncrease.</p>
+            </div>
+          </div>
+        </div>
+
+			  	    <!--html Lesson: Directions Start Here-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h4>Testing the Game</h4>
+      </div>
+    </div>
+
+    <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+			<h5>Try grabbing the special collectable.</h5>
+			<p>Does your character have a powerup after grabbing the collectable?</p>
+          </div>
+        </div>
+      </div>
+
+
+	  		    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Save your project</h5>
+		  <br>
+      </div>
+	  </div>
+	  </div>
+
+	  <br>
+	  <br>
+    <!--Project Complete Banner-->
+    <div class="row blue white-text">
+	<br>
+        <h5 style="text-align:center;">Gotta catch 'em all!</h5>
+	<br>
+    </div>
+	<br>
+	<br>
+
+        <!--Card: Prompt - Find Another Project-->
+        <div class="row">
+          <div class="col s4 offset-s2">
+            <div class="card findanotherproject">
+              <div class="card-content">
+                <div class="cardDescription">
+                  <h6>Find another project?</h6>
+                  <div class="browse">
+                    <br>
+                    <a href="techimmersion.html">
+                      <button>Browse all projects</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </body>
+    </html>
