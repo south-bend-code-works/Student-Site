@@ -339,6 +339,12 @@ background-position: center; background-size: contain;}
   display: inline-block;
   font-weight: bold;
 }
+.challengeSubheading{
+  background-color: darkorange;
+  font-size: 30px;
+  color: white;
+
+}
 .creditLine {
   font-style: italic;
 }
