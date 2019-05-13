@@ -102,9 +102,9 @@ e     <div class="row">
 		  <p><i>transform.Rotate (<strong>new Vector3 (0, 0, 60)</strong>);</i></p>
 		  <br>
 		  <p>The Update function should look like this:</p>
-		  <img src="./unity_images/collectable-b4.jpg" width="500px">
+		  <img src="./unity_images/collectable-b4.JPG" width="500px">
 		  <p>Go ahead and save that and run the game. You’ll notice that it’s rotating way too fast! Remember that we are using the Update function - it’s called once per frame. Games run at many frames every second, so it is rotating that much many times per second. We want to rotate every second instead. To do this, we multiply the current rotation by something called time.deltaTime. Multiplying by this converts things from frames into seconds.</p>
-		  <img src="./unity_images/collectable-b5.jpg" width="500px">
+		  <img src="./unity_images/collectable-b5.JPG" width="500px">
 	   </div>
       </div>
     </div>
@@ -251,7 +251,7 @@ e     <div class="row">
         <div class="col s6">
           <div class="projectsection1">
 		  <p>Now we want to make some changes to the <strong>CollectableScript</strong>. We want to make it so this script can update the Player’s stats. We need to access another script to do so. Take a look at the <strong>PlayerController</strong> in the editor. It has a script on it called <strong>ThirdPersonCharacter.</strong></p>
-		  <img src="./unity_images/collectable-b6.jpg" width="400px">
+		  <img src="./unity_images/collectable-b6.JPG" width="400px">
 		  <br>
           </div>
         </div>
@@ -276,7 +276,7 @@ e     <div class="row">
             <div class="projectsection1">
 			<p>This script has the variables we want to change: Jump Power and Move Speed Multiplier. We want to access that script so we can do that.</p>
 			<p>We do this very similarly to how we accessed the HUD_Manager script. First, add a public variable called <strong>ThirdPersonCharacter</strong> to the <strong>CollectableScript</strong>. This can go right after the HUD_Manager declaration:</p>
-			<img src="./unity_images/collectable-b7.jpg" width="400px">
+			<img src="./unity_images/collectable-b7.JPG" width="400px">
             </div>
           </div>
         </div>
@@ -368,7 +368,7 @@ e     <div class="row">
 			<br>
 			<p><strong>Note:</strong> “+=” adds what is after the equals sign to what is before it. For example, 1 += 4 is 5.</p>
 			<p>Now you’ll see that the ThirdPersonCharacter variables are in red. We forgot to make them public! Go back to the ThirdPersonCharacter script and make them public.</p>
-			<img src="./unity_images/collectable-b8.jpg" width="400px">
+			<img src="./unity_images/collectable-b8.JPG" width="400px">
 			<p>Now you’ll be able to set the values in the Inspector for the JumpIncrease and SpeedIncrease.</p>
             </div>
           </div>

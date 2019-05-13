@@ -79,7 +79,7 @@
       <div class="col s6">
         <div class="projectsection1">
           <p>We're going to use a specific pack for this, because working free animations are harder to find on the asset store. Find this pack and click <strong>download</strong>.</p>
-          <img src="./unity_images/enemyattacks2.jpg" width="500px">
+          <img src="./unity_images/enemyattacks2.JPG" width="500px">
           <p>Many assets are created by a third party, so some of them have bugs or don't work correctly. You can shop around on the asset store for more, but this one for sure works.</p>
 
 	   </div>
@@ -104,7 +104,7 @@
         <div class="col s6">
           <div class="projectsection1">
 		  <p>By default, Unity will want to import all of the animations. We don't want this. On the import window, hit the checkbox next to Mixamo to <strong>deselect</strong> everything.</p>
-      <img src="./unity_images/enemyattacks3.jpg" width="400px">
+      <img src="./unity_images/enemyattacks3.JPG" width="400px">
 
 
 		</div>
@@ -129,7 +129,7 @@
         <div class="col s6">
           <div class="projectsection1">
 		  <p>We want one of the attack animations that use a weapon.</p>
-      <img src="./unity_images/enemyattacks4.jpg" width="400px">
+      <img src="./unity_images/enemyattacks4.JPG" width="400px">
 
 		</div>
         </div>
@@ -185,7 +185,7 @@
           <div class="projectsection1">
 		  <p>Let's make the enemy use the animation you chose. To do this, we're going to use something called the <strong>animator</strong>. This controls the character's animations! Some housekeeping first: right now our character and our enemy are using the same animator. If you go to them in the <strong>Inspector</strong>, you'll see they're both using the <strong>ThirdPersonAnimatorController:</strong></p>
 		  <p>Check that it is set to <strong>Humanoid</strong> and that it creates an avatar from the model</p>
-		  <img src="./unity_images/enemyattacks5.jpg" width="300px">
+		  <img src="./unity_images/enemyattacks5.JPG" width="300px">
       <p>This will be a problem later, so let's split them up.</p>
 			</div>
         </div>
@@ -233,7 +233,7 @@
       <div class="col s6">
         <div class="projectsection1">
     <p>Rename one to <strong>PlayerAnimator</strong> and the other to <strong>EnemyAnimator</strong></p>
-    <img src="./unity_images/enemyattacks7.jpg" width="300px">
+    <img src="./unity_images/enemyattacks7.JPG" width="300px">
     </div>
       </div>
     </div>
@@ -310,8 +310,8 @@
         <div class="col s6">
           <div class="projectsection1">
 		  <p>Double-click on the EnemyAnimator to open it up as a new tab above the scene view.</p>
-      <img src="./unity_images/enemyattacks8.jpg" width="500px">
-      <img src="./unity_images/enemyattacks9.jpg" width="500px">
+      <img src="./unity_images/enemyattacks8.JPG" width="500px">
+      <img src="./unity_images/enemyattacks9.JPG" width="500px">
       <p>This is the Animator view.</p>
       <p>This controls which animations are playing for our characters! This is an example of a computer science concept called a <strong>state machine</strong>.</p>
       <p>a state machine is something that has a number of <strong>states</strong> and rules that transition between those states.</p>
@@ -341,11 +341,11 @@
 <p><strong>Airborne</strong> (the enemy is in the air)</p>
 <p><strong>Crouching</strong> (the enemy is crouching)</p>
 <p>The arrows between these states are the transitions. Try clicking on one of these arrows and scrolling down in the Inspector until you see a box that says <strong>conditions</strong>.</p>
-<img src="./unity_images/enemyattacks11.jpg" width="500px">
-<img src="./unity_images/enemyattacks10.jpg" width="500px">
+<img src="./unity_images/enemyattacks11.JPG" width="500px">
+<img src="./unity_images/enemyattacks10.JPG" width="500px">
 <p>For example, the transition from Grounded to Crouching happens if <strong>Crouch</strong> is <strong>true</strong>. And if you click on the arrow going back, we transition from the Crouching state to the Grounded state if <strong>Crouch</strong> is <strong>false</strong>.</p>
 <p><strong>Crouch</strong>, in this case, is called a parameter. Click <strong>Parameters</strong> at the top-left of the Animator.</p>
-<img src="./unity_images/enemyattacks12.jpg" width="200px">
+<img src="./unity_images/enemyattacks12.JPG" width="200px">
 <p>These are all of the parameters that determine when the Animator changes states. <strong>These are set by scripts</strong>. In the next section, we're going to add a <strong>new state</strong> for attacking and a <strong>new parameter</strong> for determining when to switch to that state!</p>
           </div>
   </div>
@@ -379,7 +379,7 @@
           <div class="projectsection1">
 		          <p><strong>To add a new state:</strong></p>
    		        <p>Find your chosen attack animation in the project view and drag it onto a blank area in the animator.</p>
-              <img src="./unity_images/enemyattacks13.jpg" width="400px">
+              <img src="./unity_images/enemyattacks13.JPG" width="400px">
               </div>
         </div>
       </div>
@@ -402,7 +402,7 @@
         <div class="col s6">
           <div class="projectsection1">
 		  <p>Rename it in the Inspector to <strong>Attacking</strong> by clicking on its state in the <strong>Animator</strong>.</p>
-      <img src="./unity_images/enemyattacks14.jpg" width="400px">
+      <img src="./unity_images/enemyattacks14.JPG" width="400px">
       <P>You can also change how fast the animation plays here (speed) and mirror it (so the character is left-handed) if you would like.</P>
 		      </div>
         </div>
@@ -427,9 +427,9 @@
         <div class="col s6">
           <div class="projectsection1">
             <p><strong>To add a new parameter:</strong></p>
-            <img src="./unity_images/enemyattacks15.jpg" width="300px">
+            <img src="./unity_images/enemyattacks15.JPG" width="300px">
             <p>Click the<strong> + </strong>above the parameter list.</p>
-            <img src="./unity_images/enemyattacks16.jpg" width="200px">
+            <img src="./unity_images/enemyattacks16.JPG" width="200px">
             <p>There are different kinds of parameters. Let's select <strong>Bool</strong>. Bool is short for boolean, which is a type of variable that can only be either true or false (think 0 or 1 in binary, if you're familiar). As our enemy either is in range to attack, or isn't, this is appropriate.</p>
 		        </div>
         </div>
@@ -523,7 +523,7 @@
  <div class="col s6">
    <div class="projectsection1">
      <p>The enemy already has a bunch of code, so we’re just going to make a few changes!</p>
-     <img src="./unity_images/enemyattacks17.jpg" width="300px">
+     <img src="./unity_images/enemyattacks17.JPG" width="300px">
      <p>If you look at the NavMesh Agent component on the <strong>EnemyController</strong>, you’ll see a public variable called <strong>Stopping Distance</strong>. This how close the enemy gets to the player before it stops. We’re going to make it start attacking once it gets within that distance!</p>
      <p>Open up the <strong>AICharacterControl</strong> script by finding it on the <strong>EnemyController</strong> and double-clicking it.</p>
      <p>First, we need to give this script access to our animator so it can change our new parameter.</p>
@@ -574,7 +574,7 @@
          <h6><i>Challenge Mode!</i><h6>
             <blockquote class="worldbuilding-tip-quote">
                <p>Add this line to make the connection where you think it goes:</p>
-               <img src="./unity_images/enemyattacks18.jpg" width="300px">
+               <img src="./unity_images/enemyattacks18.JPG" width="300px">
                <p><i>Hint: Where do you see lines like it?</i></p>
             </blockquote>
             <br>
@@ -601,13 +601,13 @@
  <div class="col s6">
    <div class="projectsection1">
      <p>Now, we’re going to update (ahem) the Update function. Here’s what it looks like:</p>
-     <img src="./unity_images/enemyattacks19.jpg" width="500px">
+     <img src="./unity_images/enemyattacks19.JPG" width="500px">
      <p>Let’s try to make sense of this. It has two if-then statements. One checks to see if there is a target (!= means does not equal. By saying target != null, it means that a target exists!).</p>
      <p>The other checks how far the enemy is from the target. If it is far (remaining distance > stopping distance), move toward the target.</p>
      <p>Otherwise (else), don’t move (<strong>vector3.zero</strong> means a velocity of 0).</p>
      <p>We’re going to add some code to this second statement, so we need to restructure it a bit.</p>
      <p><i>//C# lets you do if-then statements without brackets if there is only one line of code to execute. Since we’re going to add more, we need to add opening and closing brackets to the code that is executed under each condition.</i></p>
-     <img src="./unity_images/enemyattacks20.jpg" width="500px">
+     <img src="./unity_images/enemyattacks20.JPG" width="500px">
 
    </div>
   </div>
@@ -631,7 +631,7 @@
  <div class="col s6">
    <div class="projectsection1">
      <p>Awesome! Now we need to add these two lines of code to activate the <strong>IsAttacking</strong> parameter:</p>
-     <img src="./unity_images/enemyattacks21.jpg" width="300px">
+     <img src="./unity_images/enemyattacks21.JPG" width="300px">
    </div>
   </div>
 </div>

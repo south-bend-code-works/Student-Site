@@ -280,17 +280,17 @@ background-position: center; background-size: contain;}
 background-position: center; background-size: contain;}
 #buildBG{background-image: url('unitybuild.jpeg');
 background-position: center; background-size: contain;}
-#interfaceBG{background-image: url('unityNav.png');
+#interfaceBG{background-image: url('interfacebasics.jpg');
 background-position: center; background-size: contain;}
-#movementBG{background-image: url('unityMovement.png');
+#movementBG{background-image: url('movementtools.gif');
 background-position: center; background-size: auto;}
-#assetBG{background-image: url('unityAssetStore.png');
+#assetBG{background-image: url('assetstore.gif');
 background-position: center; background-size: contain;}
-#terrain3BG{background-image: url('unityTerrain.png');}
-#collectable3BG{background-image: url('unityCollectable3.png');
+#terrain3BG{background-image: url('worldbuildingbasics.jpg');}
+#collectable3BG{background-image: url('collectablescheatsheet.jpg');
 background-position: center; background-size: contain;}
-#scriptBG{background-image: url('unityScript.png');}
-#errorBG{background-image: url('unityError.png');
+#scriptBG{background-image: url('scriptingbasics.gif');}
+#errorBG{background-image: url('errormessages.jpg');
 background-position: center; background-size: contain;}
 
 /*Python images */

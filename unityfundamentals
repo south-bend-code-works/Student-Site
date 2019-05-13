@@ -130,24 +130,6 @@
             </div>
             </div>
           </div>
-
-          <div class="col s3 left">
-            <div class="card">
-              <div id="wrapupBG" class="card-image cardbackground"></div>
-              <div class="card-content">
-                <div class="cardDescription">
-                  <h6 class="heading">Wrap-Up</h6>
-                  <p class="description">A Kahoot Review!</p>
-                  <a href="https://play.kahoot.it/#/?quizId=472b3918-29ee-4394-9436-fdf7f886379d" target="_blank">
-                    <div class="startButtonUnity">
-                      <h6>Start</h6>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
 
@@ -268,15 +250,14 @@
               </div>
             </div>
           </div>
-
           <div class="col s3 left">
             <div class="card">
-              <div id="wrapupBG" class="card-image cardbackground"></div>
+              <div class="card-image cardbackground kahootBG"></div>
               <div class="card-content">
                 <div class="cardDescription">
                   <h6 class="heading">Wrap-Up</h6>
                   <p class="description">A Kahoot Review!</p>
-                  <a href="https://play.kahoot.it/#/?quizId=472b3918-29ee-4394-9436-fdf7f886379d" target="_blank">
+                  <a href="https://play.kahoot.it/#/?quizId=922223d0-4549-43f1-9c6d-5d9cab3d7046" target="_blank">
                     <div class="startButtonUnity">
                       <h6>Start</h6>
                     </div>
@@ -363,7 +344,8 @@
                   <div class="cardDescription">
                     <h6 class="heading">Player Health</h6>
                     <p class="description">Give your player a health bar.</p>
-                   <a href="https://docs.google.com/document/d/e/2PACX-1vR9ErHSTZd24OkbVfPY7G0g-hMnLNXcfFe2PHhNeFBuOUDhob3dBLcghHRgE13bZ1RkGNps_8RVb0Nw/pub" target="_blank">                      <div class="startButtonUnity">
+                 <a href="https://docs.google.com/document/d/e/2PACX-1vR9ErHSTZd24OkbVfPY7G0g-hMnLNXcfFe2PHhNeFBuOUDhob3dBLcghHRgE13bZ1RkGNps_8RVb0Nw/pub" target="_blank">
+                   <div class="startButtonUnity">
                         <h6>Start</h6>
                     </a>
                     </div>
@@ -387,8 +369,7 @@
                 <div class="cardDescription">
                   <h6 class="heading">Fighting Enemies</h6>
                   <p class="description">Program your character to attack enemies.</p>
-                  <a href="https://docs.google.com/document/d/e/2PACX-1vRZfG3RB_SwkZp7Lg81nDJ7q2lmJEa4kwRv_4FIHvdtK1ufXRXy35epbqpLdSQpsdwNDDZygiE0NFfa/pub" target="_blank">
-                    <div class="startButtonUnity">
+                  <a href="https://docs.google.com/document/d/e/2PACX-1vRZfG3RB_SwkZp7Lg81nDJ7q2lmJEa4kwRv_4FIHvdtK1ufXRXy35epbqpLdSQpsdwNDDZygiE0NFfa/pub" target="_blank">                    <div class="startButtonUnity">
                       <h6>Start</h6>
                   </a>
                   </div>
@@ -439,7 +420,7 @@
               <div class="cardDescription">
                 <h6 class="heading">Menu</h6>
                 <p class="description">Add a menu scene to your game.</p>
-               <a href="https://docs.google.com/document/d/e/2PACX-1vRj86I0hz01ZGQW3g5lEBMnz2vVpRNkLc2rJTRhXHQ2Dbbob42jxhsQIqIL2KFE77IB7_jvdfCpA3UD/pub" target="_blank">
+                <a href="https://docs.google.com/document/d/e/2PACX-1vRj86I0hz01ZGQW3g5lEBMnz2vVpRNkLc2rJTRhXHQ2Dbbob42jxhsQIqIL2KFE77IB7_jvdfCpA3UD/pub" target="_blank">
                   <div class="startButtonUnity">
                     <h6>Start</h6>
                 </a>
@@ -458,8 +439,8 @@
               <div class="cardDescription">
                 <h6 class="heading">Audio</h6>
                 <p class="description">Add sound and music to your game.</p>
-               <a href="https://docs.google.com/document/d/e/2PACX-1vT9GnZdfsYzdQoIWTWNJe5DE4A7FZ1Zz9z9EvNCgO65bn1hk8ShU4DQoMTkQpYlgqk16RRwfN4vYYwT/pub" target="_blank">
-                 <div class="startButtonUnity">
+                <a href="https://docs.google.com/document/d/e/2PACX-1vT9GnZdfsYzdQoIWTWNJe5DE4A7FZ1Zz9z9EvNCgO65bn1hk8ShU4DQoMTkQpYlgqk16RRwfN4vYYwT/pub" target="_blank">
+                  <div class="startButtonUnity">
                     <h6>Start</h6>
                 </a>
                 </div>
@@ -507,8 +488,8 @@
             <div class="cardDescription">
               <h6 class="heading">Interface Basics</h6>
               <p class="description">Forgot how to work with Unity?</p>
-             <a href="https://docs.google.com/document/d/e/2PACX-1vR6K_TVgTtRn-BwJNBzVEFB0_cKPMCvfG9yBkMcgOosAOSjc9sZKLIwqsDF5sY8vS_tnIjotepIJQPY/pub" target="_blank">
-               <div class="startButtonUnity">
+              <a href="https://docs.google.com/document/d/e/2PACX-1vR6K_TVgTtRn-BwJNBzVEFB0_cKPMCvfG9yBkMcgOosAOSjc9sZKLIwqsDF5sY8vS_tnIjotepIJQPY/pub" target="_blank">
+                <div class="startButtonUnity">
                   <h6>Start</h6>
               </a>
               </div>
@@ -562,8 +543,8 @@
             <div class="cardDescription">
               <h6 class="heading">Worldbuilding Basics</h6>
               <p class="description">Helpful tips about the terrain editor.</p>
-           <a href="https://docs.google.com/document/d/e/2PACX-1vShrSaTAIG4IXWLJtw05cSE2afTjVS_veRKnmasT-69_c60iDqWslazNYNTH3qasfqnWFTBOBooMspB/pub" target="_blank">
-                <div class="startButtonUnity">
+            <a href="https://docs.google.com/document/d/e/2PACX-1vShrSaTAIG4IXWLJtw05cSE2afTjVS_veRKnmasT-69_c60iDqWslazNYNTH3qasfqnWFTBOBooMspB/pub" target="_blank">
+              <div class="startButtonUnity">
                   <h6>Start</h6>
               </a>
               </div>
@@ -607,8 +588,7 @@
             <p class="description">Stuck on a programming error?</p>
             <a href="https://docs.google.com/document/d/e/2PACX-1vQyVnHna1SmlhG6qLNv6m_-43p_3b673HWCk53ZEqtubwhtZfyr_AkrXBq8GEWFbVnv4XMTF88dHmW9/pub" target="_blank">
               <div class="startButtonUnity">
-                <h6>Start</h6>
-            </a>
+              <h6>Start</h6></a>
             </div>
           </div>
         </div>
@@ -623,9 +603,9 @@
         <div class="cardDescription">
           <h6 class="heading">Scripting Basics</h6>
           <p class="description">Need a hint for writing a script?</p>
-          <a href="https://docs.google.com/document/d/e/2PACX-1vSqo9TQ1BMTDctOg0b_oW01H2_EY_Frq4l4mA8wbxFNtqbtSYMB9M3fXR2mkF1wqlZtPhhZan0u608g/pub" target="_blank">
-            <div class="startButtonUnity">
-              <h6>Start</h6>
+          <a href="scriptingbasics.html">
+         <a href="https://docs.google.com/document/d/e/2PACX-1vSqo9TQ1BMTDctOg0b_oW01H2_EY_Frq4l4mA8wbxFNtqbtSYMB9M3fXR2mkF1wqlZtPhhZan0u608g/pub" target="_blank">
+           <h6>Start</h6>
           </a>
           </div>
         </div>
