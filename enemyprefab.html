@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="main.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="https://south-bend-code-school.github.io/Student-Site/SBCS_favicon.png">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Unity Student Guide 8 - Prefab Guide (Enemies)</title>
+  </head>
+
+  <body>
+    <!--Nav bar  -->
+    <nav class="light-blue lighten-1">
+      <div class="nav-wrapper">
+        <a href="#!"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="hide-on-med-and-down">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="scratch.html">Ages 7-12</a></li>
+          <li><a href="techimmersion.html">Ages 13-18</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="scratch.html">Ages 7-12</a></li>
+      <li><a href="techimmersion.html">Ages 13-18</a></li>
+    </ul>
+
+    <!--html Lesson: Project Title -->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h4>Unity Student Guide 8 - Prefab Guide (Enemies)</h4>
+        <h5>Bosses, Mini-Bosses, and Minions</h5>
+		      <p>Part of a game is having multiple enemies, as well as different types of enemies. While it's good to have one of a certain powerful enemy, for the all important boss fight, but it's good to have many of smaller, easier to kill enemies. I mean, bad guys have minions after all, right?</p>
+          <img src="./unity_images/enemyprefab1.gif" width="400px">
+          <p><i>Shadow Fight 3</i></p>
+          <br>
+    <br>
+        <p>We’re going to clean up a couple of things before we make a prefab of the enemy:</p>
+          <ol>
+            <li>Add an attack distance to the enemy</li>
+            <li>Make enemy <strong>AttackDamage</strong> editable from <strong>EnemyStats</strong> (optional)</li>
+            <li>Enemies drop collectables</li>
+          </ol>
+     </div>
+    </div>
+
+
+      <div class="row">
+        <div class="col s6 offset-s1">
+          <h4>Attack Distance</h4>
+		    </div>
+      </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <p>If we made copies of our enemy right now, all of the enemies would immediately start running toward the player, no matter how far away they are!</p>
+          <img src="./unity_images/enemyprefab2.gif" width="300px">
+          <p>We need to add an <strong>aggression</strong> radius to the enemy. This means that the enemy will only notice the player if they get within a certain distance. </p>
+          <p>To do this, we’re going to edit the <strong>AICharacterControl</strong> script.</p>
+         </div>
+      </div>
+    </div>
+
+    <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+            <p>Double-click and open the <strong>AICharacterControl</strong>
+            </div>
+        </div>
+      </div>
+
+    <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+            <p>First, let’s add a new public integer called <strong>AttackDistance</strong>. This is going to be the distance at which the enemy starts coming toward you.</p>
+            <p><img src="./unity_images/enemyprefab3.JPG" width="300px"></p>
+		       </div>
+        </div>
+      </div>
+
+	      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+            <p>Then we’re going to add a new if-then statement to the Update function that makes the enemy only come attack if the enemy is close enough.</p>
+            <p>So the function should look like this:</p>
+            <p><img src="./unity_images/enemyprefab4.JPG" width="600px"></p>
+            <p>The second if/else section is the part that makes the enemy attack us. We only want to start doing that if the enemy is within the AttackDistance.</p>
+		       </div>
+        </div>
+      </div>
+
+      <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <p>Add a new if-then statement before it that checks if we’re within the AttackDistance:</p>
+          <p><img src="./unity_images/enemyprefab5.JPG" width="600px"></p>
+
+         </div>
+      </div>
+    </div>
+
+    <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <p>This logic works out, but it has some unintended effects. The enemy will slide toward the player slowly! We need to add this line to the first if statement:</p>
+        <p><img src="./unity_images/enemyprefab6.JPG" width="300px"></p>
+       </div>
+    </div>
+  </div>
+
+	      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+              <p>So it looks like this (don't forget that we need to add brackets):</p>
+              <p><img src="./unity_images/enemyprefab7.JPG" width="600px"></p>
+          </div>
+        </div>
+      </div>
+
+
+	      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+            <p>This puts a halt to that. But it doesn’t allow the enemy to resume moving, so we have to undo that when we want the enemy to start moving toward the player.</p>
+            <img src="./unity_images/enemyprefab8.JPG" width="400px">
+	       </div>
+        </div>
+      </div>
+      <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Test your game</h6>
+          <p>Does it work?</p>
+          <p>Can you damage your enemies?</p>
+          <img src="./unity_images/healthbar14.JPG" width="400px">
+        </div>
+      </div>
+      </div>
+
+      <div class="row">
+        <div class="col s6 offset-s1">
+          <h4><i>Optional</i></h4>
+          <h5>Make AttackDamage adjustable on the Enemy GameObject</h5>
+		    </div>
+      </div>
+
+
+      <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <p>Right now, if we want to change our enemy’s attack damage, we have to dig and find the weapon to change the public variable in the inspector. It would be easier if we could change it on the EnemyController object. To do that, we’re going to set it up so the HitPlayer script pulls the variable from the <strong>EnemyStats</strong> script. Let’s set that up.</p>
+          <p>We will start by making an AttackDamage variable on the EnemyStats script. Declare it with the other stats (e.g. CurrentHealth).</p>
+          <img src="./unity_images/enemyprefab9.JPG" width="300px">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <p>Now, in the <strong>HitPlayer</strong> script, we need to declare a link to the EnemyStats script.</p>
+        <img src="./unity_images/enemyprefab10.JPG" width="300px">
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+  <!--Lesson Checkbox Div-->
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+      </form>
+    </div>
+  </div>
+  <!--Instruction Div-->
+  <div class="col s6">
+    <div class="projectsection1">
+      <p>Then initialize that link in the Start function.</p>
+      <img src="./unity_images/enemyprefab11.JPG" width="400px">
+      <p><i>We use <strong>GetComponentInParent</strong> because the EnemyAttack script is on the weapon while the EnemyStats script is on the AIThirdPersonController GameObject (a parent of the weapon).</i></p>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+<!--Lesson Checkbox Div-->
+<div class="col s1 offset-s1">
+  <div class="checkbox">
+    <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span></span>
+          </label>
+        </p>
+    </form>
+  </div>
+</div>
+<!--Instruction Div-->
+<div class="col s6">
+  <div class="projectsection1">
+    <p>Finally, we change the call of the UpdateHealth function in HitPlayer to read:</p>
+    <img src="./unity_images/enemyprefab12.JPG" width="400px">
+    <p>(Make sure the capitalization matches what you already have in your code!)</p>
+    <p>Now we can adjust the AttackDamage on the EnemyStats script on the EnemyController.</p>
+  </div>
+</div>
+</div>
+
+<div class="row">
+  <div class="col s6 offset-s1">
+    <h4><i>Optional</i></h4>
+    <h5>Enemies drop Collectables</h5>
+  </div>
+</div>
+
+<div class="row">
+<!--Lesson Checkbox Div-->
+<div class="col s1 offset-s1">
+  <div class="checkbox">
+    <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span></span>
+          </label>
+        </p>
+    </form>
+  </div>
+</div>
+<!--Instruction Div-->
+<div class="col s6">
+  <div class="projectsection1">
+    <p>Part of defeating really tough bosses is having epic loots! So let's give a reward to our player for killing the enemies. This is done by making the enemy drop a collectable.</p>
+    <img src="./unity_images/enemyprefab13.gif" width="400px">
+    <p><i>Overwatch</i></p>
+    <br>
+    <p>When do we want the enemy to drop the item? When the enemy dies, right? Which script is that? - <strong>EnemyStats</strong>.</p>
+    <p>In the EnemyStats script, we want to declare a new public variable. This is going to store the prefab we’re using for the drop.</p>
+    <img src="./unity_images/enemyprefab14.JPG" width="300px">
+  </div>
+</div>
+</div>
+
+<div class="row">
+<!--Lesson Checkbox Div-->
+<div class="col s1 offset-s1">
+  <div class="checkbox">
+    <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span></span>
+          </label>
+        </p>
+    </form>
+  </div>
+</div>
+<!--Instruction Div-->
+<div class="col s6">
+  <div class="projectsection1">
+      <p>Great! Now, when do we want this drop to happen? When the enemy dies - the Die() function. We’re going to use a new built-in Unity function called <strong>Instantiate</strong>. This makes an instance of a prefab. It takes three arguments:</p>
+      <img src="./unity_images/enemyprefab15.JPG" width="400px">
+      <br>
+      <p>In this case, we want to use:</p>
+      <img src="./unity_images/enemyprefab16.JPG" width="500px">
+      <p><strong>transform.position</strong> - the location of the enemy</p>
+      <p><strong>Quaternion.identity</strong> - default rotation of the gameObject. Usually upright.</p>
+      <p>Now it will drop a collectable when it dies!</p>
+      </div>
+  </div>
+</div>
+
+<div class="row">
+<!--Lesson Checkbox Div-->
+<div class="col s1 offset-s1">
+  <div class="checkbox">
+    <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span></span>
+          </label>
+        </p>
+    </form>
+  </div>
+</div>
+<!--Instruction Div-->
+<div class="col s6">
+  <div class="projectsection1">
+    <h5>Adjustments: Floating, Random Drop Chance</h5>
+      <p>If you want the collectable to float, you can adjust the location like so:</p>
+      <img src="./unity_images/enemyprefab17.JPG" width="500px">
+      <br>
+      <p>If you want there to be a random drop chance, you can use the Random function to generate a random number, and then only spawn the drop if it is a certain number.</p>
+      <img src="./unity_images/enemyprefab18.JPG" width="500px">
+      </div>
+  </div>
+</div>
+
+<div class="row">
+<!--Lesson Checkbox Div-->
+<div class="col s1 offset-s1">
+  <div class="checkbox">
+    <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span></span>
+          </label>
+        </p>
+    </form>
+  </div>
+</div>
+<!--Instruction Div-->
+<div class="col s6">
+  <div class="projectsection1">
+    <h6>Test your game</h6>
+    <p>Does it work?</p>
+    <p>Do your enemies drop collectables?</p>
+    <p>Do they float or spin?</p>
+    <img src="./unity_images/collectable-b1.gif" width="400px">
+  </div>
+</div>
+</div>
+
+<div class="row">
+  <div class="col s6 offset-s1">
+    <h4>Making a prefab</h4>
+  </div>
+</div>
+
+<div class="row">
+<!--Lesson Checkbox Div-->
+<div class="col s1 offset-s1">
+  <div class="checkbox">
+    <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span></span>
+          </label>
+        </p>
+    </form>
+  </div>
+</div>
+<!--Instruction Div-->
+<div class="col s6">
+  <div class="projectsection1">
+    <p>Drag the enemy from the Hierarchy view into your Prefab folder in the Project view. (Select Original Prefab).</p>
+    <p>Go ahead and position new enemies around your map by dragging the prefab out onto the scene.</p>
+    <p>What about having some enemies guard some of your collectables? Position new collectables and new enemies where you would like them.</p>
+    <br>
+    <p>Remember to stop and pause and think about the world you're building.</p>
+    <p>Does it all fit?</p>
+  </div>
+</div>
+</div>
+
+<div class="row">
+  <div class="col s6 offset-s1">
+    <h4>Making New Kinds of Enemies</h4>
+  </div>
+</div>
+
+<div class="row">
+<!--Lesson Checkbox Div-->
+<div class="col s1 offset-s1">
+  <div class="checkbox">
+    <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span></span>
+          </label>
+        </p>
+    </form>
+  </div>
+</div>
+<!--Instruction Div-->
+<div class="col s6">
+  <div class="projectsection1">
+      <p>To add different kinds of enemies, you just need to get a new model! Go find one in the Asset Store.</p>
+      <p><strong>Asset Store</strong>  →  <strong>3D Models</strong>  →  <strong>Characters</strong>  →  <strong>Humanoids</strong></p>
+      </div>
+  </div>
+</div>
+
+<div class="row">
+<!--Lesson Checkbox Div-->
+<div class="col s1 offset-s1">
+  <div class="checkbox">
+    <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span></span>
+          </label>
+        </p>
+    </form>
+  </div>
+</div>
+<!--Instruction Div-->
+<div class="col s6">
+  <div class="projectsection1">
+      <p>Once you find a model, you can get it ready to replace the original enemy model. First, drag one of your enemy prefabs into the scene.</p>
+      <p>To swap out the model:</p>
+      <ol>
+        <li>Delete the old model. It is a child of the controller.</li>
+        <li>Put the new model in.</li>
+        <li>Replace the avatar.</li>
+      </ol>
+      </div>
+  </div>
+</div>
+
+	  	      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+            <h6>Things you can edit on different enemies:</h6>
+            <p><strong>AttackDistance</strong> - some may be more aggressive than others</p>
+            <p><strong>AttackDamage</strong> - some may deal more damage than others</p>
+            <p><strong>Move Speed Multiplier</strong> - some may be faster!</p>
+            <p><strong>Weapons</strong></p>
+            <br>
+            <p>Try editing other values!</p>
+            <p>Once you have the enemy working how you want it, you can make a new prefab of it (you could have a prefab for each type of enemy)!</p>
+		      </div>
+        </div>
+      </div>
+      <div class="row">
+  <!--Lesson Checkbox Div-->
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+      </form>
+    </div>
+  </div>
+  <!--Instruction Div-->
+  <div class="col s6">
+    <div class="projectsection1">
+      <p>It doesn’t need any parameters and it returns null. This function will reload the level if the player dies. To do that, we need to:</p>
+        <ol>
+          <li>Add the SceneManager namespace</li>
+              <ul>
+              <li>→ Add the line <strong>using UnityEditor.SceneManagement;</strong> to the top</li>
+              </ul>
+          <li>Restart the level in the Death function</li>
+              <ul>
+                <li>→ Add the line <strong>SceneManager.LoadScene(<i>YOURLEVELNAME</i>);</strong> to the Death function.</li>
+              </ul>
+          <li>Call the death function when health is too low.</li>
+          </ol>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+   <div class="col s1 offset-s1">
+     <div class="worldbuilding-tip">
+       <i class="pin"></i>
+         <h6><i>Challenge Mode!</i><h6>
+            <blockquote class="worldbuilding-tip-quote">
+              <p>Add an if-then statement to the UpdateHealth function that checks if CurrentHealth is equal to or lower than zero (<strong><=</strong> will check that). Call the Death function if it is.</p>
+            </blockquote>
+            <br>
+    </div>
+ </div>
+</div>
+
+<div class="row">
+    <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+<!--Instruction Div-->
+  <div class="col s6">
+    <div class="projectsection1">
+      <p>The last thing we need to do is check the <strong>build settings</strong>.</p>
+    </div>
+  </div>
+</div>
+
+
+	  	  		    <!--html Lesson: Directions Start Here-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h4>Build Settings</h4>
+      </div>
+    </div>
+		  	      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+		          <p>Our players are not going to be playing this game in the editor. We’re going to <strong>build</strong> a runnable version of the game so they don’t have to see all of the code! Some functions, like the <strong>SceneManager.</strong> function, need scenes to be in the <strong>Build Settings</strong> to use.</p>
+              </div>
+        </div>
+      </div>
+
+	  		  	      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+            <p>To open the build settings, go to:</p>
+            <p><strong>File</strong> → <strong>Build Setting</strong></p>
+		      </div>
+        </div>
+      </div>
+
+
+	  	  		  	      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+            <p>Click <strong>Add Open Scenes</strong> to add your scene to the Build Settings!</p>
+            <img src="./unity_images/healthbar16.JPG" width="500px">
+	        </div>
+        </div>
+      </div>
+
+<!--html Lesson: Directions Start Here-->
+<div class="row">
+<div class="col s6 offset-s1">
+<h4>Testing the Game</h4>
+</div>
+</div>
+
+<div class="row">
+<!--Lesson Checkbox Div-->
+<div class="col s1 offset-s1">
+<div class="checkbox">
+  <form action="#">
+      <p>
+        <label>
+          <input type="checkbox" />
+          <span></span>
+        </label>
+      </p>
+  </form>
+</div>
+</div>
+<!--Instruction Div-->
+<div class="col s6">
+<div class="projectsection1">
+<h6>Try playing the game</h6>
+<p>Does your healthbar go down?</p>
+<p>Do you die?</p>
+<p>Does the game restart?</p>
+<br>
+<p>Start thinking about an ending scene for when the player dies</p>
+<p>Something simple works, or you can animate an elaborate cut scene</p>
+<img src="./unity_images/healthbar17.gif" width="300px">
+<p>Now you can die! I’m sick of letting this enemy bully us, though. In the next guide, it is time to fight back.</p>
+</div>
+</div>
+</div>
+
+	  		    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Save your project</h5>
+		  <br>
+      </div>
+	  </div>
+	  </div>
+
+	  <br>
+	  <br>
+    <!--Project Complete Banner-->
+    <div class="row blue white-text">
+	<br>
+        <h5 style="text-align:center;">Power up</h5>
+	<br>
+    </div>
+	<br>
+	<br>
+
+        <!--Card: Prompt - Find Another Project-->
+        <div class="row">
+          <div class="col s4 offset-s2">
+            <div class="card findanotherproject">
+              <div class="card-content">
+                <div class="cardDescription">
+                  <h6>Find another project?</h6>
+                  <div class="browse">
+                    <br>
+                    <a href="techimmersion.html">
+                      <button>Browse all projects</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </body>
+    </html>
