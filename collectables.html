@@ -60,7 +60,7 @@
       <div class="col s6 offset-s1">
         <h4>Let's go shopping for props</h4>
 		<h6>Just like we searched for trees, skyboxes, and players, we need to have items in our world to make the story richer.</h6>
-		  <img src="./unity_images/collectables9.jpg" width="300px">
+		  <img src="./unity_images/collectables9.JPG" width="300px">
 		  <p><i>Book of Cain - Diablo III</i></p>
 		<p>Simple items like a book, a weapon, or simply a block are good collectables. They tell the player that they need said item for an upcoming event, and can inspire excitement especially if the item is really rare.</p>
 	  </div>
@@ -86,20 +86,20 @@
 		  <h6>From here on out, we will be referring to the object as a collectable.</h6>
 		  <p>Download the model and place it in our scene.</p>
 		  <p>Rename it <strong>PointsCollectable</strong> by right clicking in the <strong>Hierarchy</strong> and pressing <strong>rename</strong></p>
-		  <img src="./unity_images/collectables1.jpg" width="400px">
+		  <img src="./unity_images/collectables1.JPG" width="400px">
 		  <br>
 		  <p>Right now, your collectable will have a transform component, likely along with a <strong>Mesh Filter</strong> and <strong>Mesh Renderer</strong>. Those components will help Unity put the model into the 3D space.</p>
 		  <p>We're going to add a new component to the collectable: a collider. Also known as a hitbox, this component detects when an object touches another object. In the <strong>Inspector</strong> for the collectable, click <strong>Add Component at the bottom</strong></p>
-		  <img src="./unity_images/collectables2.jpg" width="300px">
+		  <img src="./unity_images/collectables2.JPG" width="300px">
 		  <p><strong>Physics</strong>  →  <strong>Box Collider</strong></p>
 		  <p>You'll see a green box around your object now, this is your collider</p>
-		  <img src="./unity_images/collectables3.jpg" width="200px">
+		  <img src="./unity_images/collectables3.JPG" width="200px">
 		  <p>In the collider's settings (in the Inspector), we're going to click the box that says <strong>Is Trigger</strong>.</p>
 		  <p>When testing, the cursor will be locked. To unlock it so you can stop or pause the game, press <strong>Escape</strong></p>
-		  <p>There are two types of colliders in Unity - normal colliders and trigger colliders. <strong>In a trigger collider, the two objects register that they touch but they don't actually collide (they can go through each other without slowing down)</strong>. 
-		  <img src="./unity_images/collectables4.jpg" width="400px">
+		  <p>There are two types of colliders in Unity - normal colliders and trigger colliders. <strong>In a trigger collider, the two objects register that they touch but they don't actually collide (they can go through each other without slowing down)</strong>.
+		  <img src="./unity_images/collectables4.JPG" width="400px">
 		  <p>In Mario games, for example, if you slowed down every time you touched a coin it would be a real pain.</p>
-		  <img src="./unity_images/collectables5.jpg" width="400px">
+		  <img src="./unity_images/collectables5.JPG" width="400px">
 	   </div>
       </div>
     </div>
@@ -132,9 +132,9 @@
 			<p>We've done a lot in the Unity interface, but in order to do some things we have to use coding. The language we're using is called <strong>C#</strong> (pronounced “c sharp”). It's based on C just like C++ is, if you've heard of that. We're going to write scripts that are attached as <strong>components</strong> to our objects!</p>
 			<p>The characters that we dragged in from the Standard Assets already have some scripts on them. We've been editing the variables in those scripts to do things like change the characters' speeds. You can see these scripts in the Inspector.</p>
 			<p>But to actually write a script, we need to use a text editor. We're going to create our first script using a text editor called Atom or Visual Studio! (You may need to create a Microsoft account to use Visual Studio) Go to the collectable and click the <strong>Add Component</strong> button in the <strong>Inspector</strong>. Click <strong>New Script</strong> and name it <strong>CollectableScript</strong>. <strong>Make sure the language is set to C#</strong>.</p>
-			<img src="./unity_images/collectables7.jpg" width="400px">
+			<img src="./unity_images/collectables7.JPG" width="400px">
 			<p>Click <strong>Create and Add</strong>. It will show up in the Inspector. Double-click on the box that says <strong>CollectableScript</strong> to open it in the text editor.</p>
-			<img src="./unity_images/collectables8.jpg" width="400px">
+			<img src="./unity_images/collectables8.JPG" width="400px">
 
 			<br>
           </div>
@@ -166,7 +166,7 @@
             <div class="projectsection1">
 
 			<p>This is a default C# script in Unity. For now, we can <strong>ignore the first few lines</strong>. These are called <strong>namespaces</strong> and we will use them in a bit. The code we'll be typing begins on <strong>line 5</strong>. Every time we make a script in Unity, it makes a <strong>class</strong> with that script name. All of our code will take place in that class <strong>between the opening bracket on line 5 and the closing bracket on line 16.</strong></p>
-			<img src="./unity_images/collectables10.jpg" width="500px">
+			<img src="./unity_images/collectables10.JPG" width="500px">
 			<p>Each script also comes with two default <strong>functions</strong>. A function is a group of code (between the curly brackets after the function name) that we can execute at certain times. Unity has a bunch of functions built-in, and we can also write our own!</p>
 			<br>
 			<p>Here are the two default functions:</p>
@@ -205,9 +205,9 @@
 			<p><strong>End</strong> - the bracket at the end of the function's code.</p>
 			<p><strong>Parameters</strong> - things that the function needs to run its code.</p>
 			<p><strong>Return type</strong> - what the function spits out when it is done running</p>
-			<img src="./unity_images/collectables11.jpg" width="400px">
+			<img src="./unity_images/collectables11.JPG" width="400px">
 			<p>Don't worry about parameters and return type just yet. Just understand that a function is a section of code between two brackets that runs at certain times. <strong>Clear some space for new functions by going after the bracket that ends the Update function and pressing enter a few times.</strong></p>
-		    <img src="./unity_images/collectables12.jpg" width="400px">
+		    <img src="./unity_images/collectables12.JPG" width="400px">
 
 		   </div>
           </div>
@@ -246,9 +246,9 @@
 			<br>
 			<p>As a return type, <strong>void</strong> means it returns nothing.</p>
 			<p>This function does needs a parameter to run. <i>This parameter, called a collider, refers to the object that our collectable bumps into.</i> We're going to feed that to the function and give it a name.</p>
-			<img src="./unity_images/collectables13.jpg" width="500px">
+			<img src="./unity_images/collectables13.JPG" width="500px">
 			<p>Great! The function is all set up. There's no code in it though! So what do we want to happen when the player hits the collectable? The collectable should disappear (and the player should gain some benefit; we'll get to that later). We need to add code that makes the collectable disappear! Here's how most lines of code work in C#:</p>
-			<img src="./unity_images/collectables14.jpg" width="500px">
+			<img src="./unity_images/collectables14.JPG" width="500px">
 			<p>To make the object disappear, we need to use a function called <strong>SetActive()</strong>. This function takes a parameter (whether to turn the object on or off). This function is within the class <strong>gameObject</strong>, which is a set of functions that allow us to target the <stong>GameObject</strong> the script is on. Go ahead and add this line to your <strong>OnTriggerEnter</strong> function. It uses this function to set the <strong>GameObject</strong> (the collectable) to inactive (because of the false). <i>All lines that are not function names or logic end in a semicolon!</i></p>
 			<br>
 			<p>Great work on your first line of code! We're not quite done yet, though. Think about how this function works:</p>
@@ -265,7 +265,7 @@
       <div class="col s6 offset-s1">
         <h4>Coding Logic - If-Then Statements</h4>
 		<p>We're going to use a piece of coding logic called an <strong>if-then statement</strong>, also known as a <strong>conditional statement</strong>. This is how one works:</p>
-		<img src="./unity_images/collectables15.jpg" width="500px">
+		<img src="./unity_images/collectables15.JPG" width="500px">
 
       </div>
     </div>
@@ -289,9 +289,9 @@
           <div class="projectsection1">
 			<p>It has two parts - a condition, and code to execute if that condition is true.</p>
 			<p>So how do we fill this one in? We only want to disappear if the thing we're touching is the player:</p>
-			<img src="./unity_images/collectables16.jpg" width="500px">
+			<img src="./unity_images/collectables16.JPG" width="500px">
 			<p>Here's how an if-then statement looks in the code. Add one around the line we just wrote:</p>
-			<img src="./unity_images/collectables17.jpg" width="500px">
+			<img src="./unity_images/collectables17.JPG" width="500px">
 			<p>Just like a function, an if-then statement has parentheses and brackets. <i>The condition goes in the parentheses and the code to execute is within the brackets.</i></p>
 			<p>Every time we write code that is within a set of brackets, we want to make sure that it is one tab indented from the code before the brackets. </p>
 			<h5><i>Make sure your code is indented like this - the computer can read it either way but it's easier for humans to read it this way!</i></h5>
@@ -319,7 +319,7 @@
 			<p>Now we just need to fill in the condition! Here’s the line:</p>
 			<p><i>OtherObject.gameObject.CompareTag(“Player”);</i></p>
 			<p>We are accessing the <strong>CompareTag</strong> script from the <strong>gameObject</strong> class, and applying it to <strong>OtherObject</strong>. Remember that <strong>OtherObject</strong> is the thing we’re colliding with! We’re checking to see if it has the tag <strong>Player</strong>. Here’s the whole function, then:</p>
-			<img src="./unity_images/collectables18.jpg" width="500px">
+			<img src="./unity_images/collectables18.JPG" width="500px">
           </div>
         </div>
       </div>

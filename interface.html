@@ -44,7 +44,7 @@
       <div class="col s6 offset-s1">
         <h4>Unity Student Guide - User Interface</h4>
 		<h5>Your User Interface. This is the bread and butter of gaming.</h5>
-		<img src="./unity_images/interface5.jpg" width="500px">
+		<img src="./unity_images/interface5.JPG" width="500px">
 
 		<p>From here, your player is able to see everything. You can control how much is on the screen, how cluttered or spartan you want.</p>
 		<br>
@@ -68,9 +68,9 @@ e     <div class="row">
 		<p>We're going to add a HUD element that shows the player's score.</p>
 		<p>When building your interface, you have options.</p>
 		<p>You can make it as simple as Super Mario Bros</p>
-		  <img src="./unity_images/interface1.jpg" width="400px">
+		  <img src="./unity_images/interface1.JPG" width="400px">
 		<p>Or as complicated as an MMORPG (Massive Multiplayer Online Role Playing Game)
-		  <img src="./unity_images/interface2.jpg" width="400px">
+		  <img src="./unity_images/interface2.JPG" width="400px">
 		<p>Think about every thing you add to the interface. Make sure it has a distinct use and the interface isn't too cluttered.</p>
 	  </div>
     </div>
@@ -104,14 +104,14 @@ e     <div class="row">
 		  <p>This will create some new objects for us. Let's take a look at them.</p>
 		  <br>
 		  <p>You'll see a Canvas, with the text object in it. You'll also see a new object called an <strong>EventSystem</strong>. These are elements that are necessary for Unity to make the UI.</p>
-		  <img src="./unity_images/interface3.jpg" width="300px">
+		  <img src="./unity_images/interface3.JPG" width="300px">
 		  <br>
 		  <p>This is your preliminary UI</p>
-		  <img src="./unity_images/interface4.jpg" width="300px">
+		  <img src="./unity_images/interface4.JPG" width="300px">
 		  <p><strong>Canvas</strong> - this big white box. The Canvas has all of the UI elements on it, and it displays them on the screen when the player plays the game.</p>
 		  <p><strong>EventSystem</strong> - a manager that makes sure that UI elements and other objects in your scene work together well. We don't have to do anything with it right now, so just leave it alone.</p>
 		  <p><i>First of all, let's rename our text.</i> We might add more texts later so we want to make sure that we can tell which one this is. You can do this in the Inspector at the top. Name it <strong>ScoreText</strong>.</p>
-		  <img src="./unity_images/interface6.jpg" width="300px">
+		  <img src="./unity_images/interface6.JPG" width="300px">
 		  <p><i>Now we want to reposition it. Double-click its name in the Hierarchy to frame-in on it.</i> It's on the Canvas, but it may not be where you want it to be.</p>
 			<div class="worldbuilding-tip">
 					<i class="pin"></i>
@@ -124,13 +124,13 @@ e     <div class="row">
 			<br>
 		  <p>You can move it using its <strong>Rect Transform</strong> in the Inspector.</p>
 		  <p>Click on the target-looking thing on the left to move it around. To move it, click the area of your choice and hold SHIFT and ALT while clicking it.</p>
-		  <img src="./unity_images/interface7.jpg" width="300px">
+		  <img src="./unity_images/interface7.JPG" width="300px">
 		  <br>
 		  <br>
-		  <img src="./unity_images/interface8.jpg" width="300px">
+		  <img src="./unity_images/interface8.JPG" width="300px">
 		  <p>Now your text will be in the place of your choosing. Let's look at the ScoreText's other components in the Inspector. The major one is the Text (Script) component. This lets us format the text. You can make changes to the font, font-size, and color there.</p>
 		  <p>To see what it will look like in-game, go to the Game tab above the Scene view.</p>
-		  <img src="./unity_images/interface9.jpg" width="300px">
+		  <img src="./unity_images/interface9.JPG" width="300px">
 		  <p>The Text component also allows us to change what the text says. But we want the text to update depending on the player's score! We're going to have to use a script. We're going to create a new script called the HUD_Manager.</p>
 
 	   </div>
@@ -193,7 +193,7 @@ e     <div class="row">
 		  <p>There are two parts here - the <strong>type</strong> of the variable and the <strong>name</strong> of the variable. Now Unity knows that when we write <strong>score</strong>, we are referring to this integer variable! Now we can use it.</p>
 		  <p>Look at the comment above the <strong>Start</strong> function. It says we use this for initialization. We're going to use the Start function to <strong>initialize</strong> the variable. This means to give it a starting value.</p>
 		  <p>What do we want the player's score to start at?</p>
-		  <img src="./unity_images/interface10.jpg" width="250px">
+		  <img src="./unity_images/interface10.JPG" width="250px">
 		  <br>
 
           </div>
@@ -229,7 +229,7 @@ e     <div class="row">
 			<p>This will allow us to link our HUD_Manager script to our ScoreText object. First, we need to declare it, like a variable.</p>
 			<p><strong>Text ScoreText;</strong></p>
 			<p>This is a variable of type <i>Text</i>, that we're calling <i>ScoreText</i>. This does not make the connection for Unity; we have to tell it where to find the <strong>ScoreText</strong>. We're going to make it set up this connection in the Start function.</p>
-			<img src="./unity_images/interface11.jpg" width="500px">
+			<img src="./unity_images/interface11.JPG" width="500px">
 			<p>Great! Now our two variables are initialized - the score and the text that will display it. <i>Next, we need to code the text to show the score!</i></p>
 			<br>
             </div>
@@ -412,7 +412,7 @@ e     <div class="row">
 			<p>We're going to use the points variable as the “amount” parameter when we call the UpdateScore script. What type does it need to be? Fill in the blank when you write your code:</p>
 			<p><i><strong>public</strong> ____ points;</i></p>
 			<p>Cool! Unlike the score, we don't want to initialize this variable in the code. If we do that, it's <i>hard-coded</i> in - we'd need to go change it in the script if we ever wanted to change the amount of points. Instead, we'll set it in the Inspector. Go back to the Unity editor and click on the collectable to go to the Inspector. You should see the Points variable on the <strong>CollectableScript</strong> component. Fill in the number of points you want the collectable to give you!</p>
-			<img src="./unity_images/interface12.jpg" width="500px">
+			<img src="./unity_images/interface12.JPG" width="500px">
 			<p>Now, all we have to do is add the points variable to the function call:</p>
 			<p><i>hudmanager.UpdateScore(points);</i></p>
 			<br>

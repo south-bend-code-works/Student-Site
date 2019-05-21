@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+.JPG<!DOCTYPE html>
 <html>
   <head>
     <!-- Compiled and minified CSS -->
@@ -60,7 +60,7 @@
       <div class="col s6 offset-s1">
         <h4>Adding a Character</h4>
 		<h6>This guide will focus on teaching you how to add a character from the <strong>Standard Assets</strong>. If you choose to find your own on the <strong>Asset Store</strong> be wary. Some of those character models might be buggy, their code might not work right, or the animator might be sloppily put together.</h6>
-		<p>While third-party companies put out a wide range of awesome assets for you to download, not all of them are expertly assembled. While errors happen here and there for our students, beware using outside character models until you become familar with your code</p> 
+		<p>While third-party companies put out a wide range of awesome assets for you to download, not all of them are expertly assembled. While errors happen here and there for our students, beware using outside character models until you become familar with your code</p>
 		<p>Let's add a basic character for now and we can customize it.</p>
       </div>
     </div>
@@ -91,18 +91,18 @@
 						<h6><i>Worldbuilding Tip:</i><h6>
 							 <blockquote class="worldbuilding-tip-quote">
 					  			<p>Place your character with purpose. Instead of just dropping the character in the world, create a purpose, or a quest. This is when you can use your terrain to guide the character to a boss, loot, or other npcs (non-player characters) to interact with.</p>
-								<img src="./unity_images/character2.jpg" width="350px">
+								<img src="./unity_images/character2.JPG" width="350px">
 										   <p><i>Temple Run made with Unity</i></p>
 							 </blockquote>
 			</div>
 			<br>
 		  <p>Rename the <strong>ThirdPersonController</strong> to <strong>PlayerController</strong></p>
-		   <img src="./unity_images/character1.jpg" width="475px">
+		   <img src="./unity_images/character1.JPG" width="475px">
 		  <p>Before we test it though, we want to make sure we can see our character, so let's add our camera</p>
       </div>
 	  </div>
 	  </div>
-	  
+
     <!--html Lesson: Directions Start Here-->
     <div class="row">
       <div class="col s6 offset-s1">
@@ -133,10 +133,10 @@
 		  <br>
 		  <p>In order to play the game, Unity needs to know which camera to use. We need to tell it this is the <strong>Main Camera</strong>. We’ll do this with a tag. Select the <strong>FreeLookCameraRig</strong> and check the <strong>Inspector</strong>. Where it says <strong>Untagged</strong>, click and change that to <strong>MainCamera</strong>.</p>
 		  <br>
-		  <img src="./unity_images/character3.jpg" width="400px">
+		  <img src="./unity_images/character3.JPG" width="400px">
 		  <p>Look at the <strong>FreeLookCameraRig’s</strong> script component. It is set to <strong>Auto-target Player</strong>. This is good, but we need to tell it who the player is. Select the <strong>PlayerController</strong> and tag it as <strong>Player</strong>.</p>
-		  <img src="./unity_images/character4.jpg" width="400px">
-		  <img src="./unity_images/character5.jpg" width="400px">
+		  <img src="./unity_images/character4.JPG" width="400px">
+		  <img src="./unity_images/character5.JPG" width="400px">
 		  <p>Now the camera will follow the player! We can adjust other settings on the Camera. The most important are:</p>
 		  <p><strong>Move Speed</strong> - how fast the camera moves to follow the player.</p>
 		  <p><strong>Turn Speed</strong> - how fast the camera moves with the mouse.</p>
@@ -238,17 +238,17 @@
           <div class="col s6">
             <div class="projectsection1">
 			<p>Look for your newly downloaded/imported characters. They will be a new folder in the root of the project - the <strong>Assets</strong> folder. Your files will be in there. Go find the prefab for your object. It should be a picture of the object with a grey background, probably in a folder called <strong>prefabs</strong>.</p>
-			<img src="./unity_images/character7.jpg" width="100px">
+			<img src="./unity_images/character7.JPG" width="100px">
 			<p>First, click the arrow next to the <strong>PlayerController</strong> in the Hierarchy to open up its <strong>child objects</strong>.</p>
 			<p>The <strong>PlayerController</strong> is an object that controls all of its <strong>child objects</strong>. It applies the control settings on it to the model attached to it.</p>
-           	<img src="./unity_images/character8.jpg" width="300px">
+           	<img src="./unity_images/character8.JPG" width="300px">
 			<p>We don’t want any of Ethan’s parts, so go ahead and highlight all three of the Ethan objects and delete them. This is basically the shell of the character. You will need to open the <strong>Prefab</strong> instance and delete them from there. Then click the back arrow next to <strong>PlayerController</strong> to exit the <strong>Prefab</strong> mode.</p>
 			<br>
 			<p>Now the controller needs a new model to control. Drag the model onto the <strong>PlayerController</strong> in the hierarchy to make it a child.</p>
 			<br>
 			<p>Next, we want to make sure that it is setup to use humanoid animations. We are taking the default animations from Ethan, the default character, and using them with this new model. As Ethan is a human, we need to make sure that this model can use humanoid animations. Double-click on your model in the Project View (probably in a folder called models) to open it in the Inspector.</p>
 			<p>These are the import settings for the model. Click on <strong>Rig</strong>.</p>
-			<img src="./unity_images/character9.jpg" width="400px">
+			<img src="./unity_images/character9.JPG" width="400px">
 			<p>Set Animation Type to <strong>Humanoid</strong>, and make the avatar from the model.</p>
 		   </div>
           </div>
@@ -271,9 +271,9 @@
           <div class="col s6">
             <div class="projectsection1">
 			<p>Now we want to swap out our avatars. Click on the arrow next to your model:</p>
-			<img src="./unity_images/character7.jpg" width="100px">
+			<img src="./unity_images/character7.JPG" width="100px">
 			<p>You should see an Avatar. When a rigged model is imported into Unity, it creates an avatar that customizes the animations for that model.</p>
-           	<img src="./unity_images/character10.jpg" width="100px">
+           	<img src="./unity_images/character10.JPG" width="100px">
 			<p>Currently, our controller is set to use Ethan’s avatar. Click on the <strong>PlayerController</strong> in the Hierarchy and see that in the Inspector.</p>
 			<img src="./unity_images/character11.jpg" width="400px">
 			<p>Drag your new Avatar where it says EthanAvatar. Now play your game with your new character!</p>
