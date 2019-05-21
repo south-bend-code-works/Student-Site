@@ -266,10 +266,10 @@ input[type='checkbox'] {
 #typographicposterBG {background-image: url('typographicposterBG.jpg');}
 #photomanipulationBG {background-image: url('photomanipulationBG.gif');}
 #splashpageBG {background-image: url('splashpageBG.jpg');}
-#gifBG {background-image: url('gifBG.gif');}
+#gifBG {background-image: url('./GraphicDesignV2_files/gif14.gif');}
 #infographicBG {background-image: url('infographicBG.jpg');}
 #interactiveBG {background-image: url('interactiveBG.jpg');}
-#geometricBG {background-image: url('geometricBG.jpg');}
+#geometricBG {background-image: url('./GraphicDesignV2_files/geometric3.jpg');}
 #uiuxBG {background-image: url('uiuxBG.jpg');}
 #colortheoryBG {background-image: url('colortheoryBG.gif');}
 #imagesBG {background-image: url('imagesBG.jpg');}
@@ -279,7 +279,7 @@ input[type='checkbox'] {
 #resourcesBG {background-image: url('resourcesBG.jpg');}
 #topofpage {background-image: url('topofpage.gif');}
 #brandingBG {background-image: url('brandingBG.jpg');}
-#vectorrasterBG {background-image: url('vectorrasterBG.png');}
+#vectorrasterBG {background-image: url('./GraphicDesignV2_files/morecolorstshirts4.jpg');}
 #colorBG{background-image: url('colorBG.jpg');}
 #colorizeBG{background-image: url('colorizeBG.jpg');}
 #copyrightBG{background-image: url('copyrightBG.jpg');}
@@ -427,6 +427,12 @@ background-position: center; background-size: contain;}
   display: inline-block;
   font-weight: bold;
 }
+.challengeSubheading{
+  background-color: darkorange;
+  font-size: 30px;
+  color: white;
+
+}
 .creditLine {
   font-style: italic;
 }
@@ -460,6 +466,206 @@ background-position: center; background-size: contain;}
   width: 50%;
   padding-top: 2%;
 }
+
+.firstLogo {
+  float: left;
+  background-image: url("personalLogoOne.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 300px;
+  height: 300px;
+}
+
+.secondLogo {
+  float: left;
+  background-image: url("personalLogoTwo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 300px;
+  height: 300px;
+}
+
+.thirdLogo {
+  float: left;
+  background-image: url("personalLogoThree.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 300px;
+  height: 300px;
+}
+
+.fourthLogo {
+  float: left;
+  background-image: url("personalLogoFour.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 300px;
+  height: 300px;
+}
+
+.firstmoodboard {
+  float: left;
+  background-image: url("./GraphicDesignV2_files/moodboard1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 45%;
+  height: 500px;
+  display: inline-block;
+  background-size: cover;
+}
+
+.secondmoodboard {
+  float: right;
+  background-image: url("./GraphicDesignV2_files/moodboard2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 45%;
+  height: 400px;
+  margin-left: .5px;
+  display: inline-block;
+  background-size: cover;
+}
+
+.thirdmoodboard {
+  float: left;
+  background-image: url("./GraphicDesignV2_files/moodboard3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 500px;
+  height: 500px;
+  display: inline-block;
+}
+
+.centerthis {
+  margin-left: 70%;
+  text-align: center;
+  margin-top: 5%;
+}
+
+/* .fourthmoodboard {
+  float: right;
+  background-image: url("./GraphicDesignV2_files/moodboard4.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+  height: 400px;
+  display: inline-block;
+} */
+
+.geometric3 {
+  float: left;
+  background-image: url("./GraphicDesignV2_files/geometric3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+}
+
+.geometric2 {
+  float: left;
+  background-image: url("./GraphicDesignV2_files/geometric2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  padding-left: 40%;
+}
+
+.geometric1 {
+  float: left;
+  background-image: url("./GraphicDesignV2_files/geometric1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+}
+
+.minimalistone {
+  float: left;
+  background-image: url("./GraphicDesignV2_files/negspace1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 420px;
+  height: 420px;
+  display: inline-block;
+}
+
+.minimalisttwo {
+  float: left;
+  background-image: url("./GraphicDesignV2_files/negspace2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 400px;
+  height: 400px;
+  display: inline-block;
+}
+
+#portfolio1 {
+  float: left;
+  background-image: url("./GraphicDesignV2_files/portfolio1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 500px;
+  height: 500px;
+  display: inline-block;
+}
+
+#portfolio2 {
+  float: left;
+  margin-left: 4%;
+  background-image: url("./GraphicDesignV2_files/portfolio2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 600px;
+  height: 600px;
+  display: inline-block;
+}
+
+#portfolio3 {
+  float: left;
+  background-image: url("./GraphicDesignV2_files/portfolio7.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 400px;
+  height: 400px;
+  display: inline-block;
+}
+
+#portfolio4 {
+  float: left;
+  background-image: url("./GraphicDesignV2_files/portfolio8.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 400px;
+  height: 400px;
+  display: inline-block;
+}
+
+ .canvagif {
+   background-image: url("canva.gif");
+   width: 600px;
+   height: 600px;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: contain;
+   margin-left: 15%;
+ }
 
 .left p {
   padding-left: 5%;
@@ -704,6 +910,10 @@ to{background-position: 200px, 0;}
 @keyframes blink {
   from {color: transparent;}
   to {color: black;}
+}
+
+textarea {
+  background-color: white;
 }
 
 /*
