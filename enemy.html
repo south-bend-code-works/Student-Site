@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="main.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="https://south-bend-code-school.github.io/Student-Site/SBCS_favicon.png">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Unity Student Guide 7 - Creating Enemy and NavMesh</title>
+  </head>
+
+  <body>
+    <!--Nav bar  -->
+    <nav class="light-blue lighten-1">
+      <div class="nav-wrapper">
+        <a href="#!"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="hide-on-med-and-down">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="scratch.html">Ages 7-12</a></li>
+          <li><a href="techimmersion.html">Ages 13-18</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="scratch.html">Ages 7-12</a></li>
+      <li><a href="techimmersion.html">Ages 13-18</a></li>
+    </ul>
+
+    <!--html Lesson: Project Title -->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h4>Unity Student Guide 7 - Creating Enemy and NavMesh</</h4>
+		<h5>Enemy Guide 1 - Making an Enemy!</h5>
+		<br>
+        <p><strong>Helpful Links:</strong></p>
+		<p><a href="https://docs.unity3d.com/Manual/Navigation.html">Navigation Docs</a></p>
+		<br>
+	   </div>
+    </div>
+
+
+      <div class="row">
+      <div class="col s6 offset-s1">
+        <h4>Making an Enemy</h4>
+		<h6>The Standard Assets has just the prefab for a starter enemy.</h6>
+		<p><strong>Standard Assets</strong>  →  <strong>Characters</strong> → <strong>ThirdPersonCharacter</strong>  →  <strong>Prefabs</strong></p>
+		<img src="./unity_images/enemy1.JPG" width="100px">
+		<p>Drag the AIThirdPersonController prefab into the scene where you want your enemy to start.</p>
+		<p><i>Rename the AIThirdPersonController object to <strong>EnemyController</strong>.</i></p>
+		</div>
+    </div>
+
+		    <!--html Lesson: Directions Start Here-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h4>Swap out the Model</h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+		  <p>Download a humanoid model from the <strong>Asset Store</strong></p>
+		  <p>I especially like these models.</p>
+		<img src="./unity_images/enemy2.JPG" width="700px">
+		<br>
+		<br>
+		<img src="./unity_images/enemy3.JPG" width="700px">
+		<p>Choose your own, but pick characters with purpose that drive the story forward.</p>
+
+	   </div>
+      </div>
+    </div>
+
+    <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+		  <p>Delete the Ethan components under the <strong>EnemyController</strong> in your scene</p>
+		</div>
+        </div>
+      </div>
+
+    <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+		  <p>Drag the <strong>prefab</strong> of your model onto the EnemyController</p>
+		</div>
+        </div>
+      </div>
+
+	      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+		  <p>Click on the <strong>model</strong> you downloaded to check its import settings</p>
+
+		</div>
+        </div>
+      </div>
+
+
+	      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+		  <p>Click on <strong>Rig</strong></p>
+		  <p>Check that it is set to <strong>Humanoid</strong> and that it creates an avatar from the model</p>
+		  <img src="./unity_images/enemy4.JPG" width="300px">
+
+			</div>
+        </div>
+      </div>
+
+
+	      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+			<p>Replace the avatar on the EnemyController with the avatar of your model</p>
+			<p>Getting stuck? Reference the <a href="character.html">Adding a Character guide</a></p>
+			</div>
+        </div>
+      </div>
+
+
+	  		    <!--html Lesson: Directions Start Here-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h4>Setting the Enemy's Target</h4>
+      </div>
+    </div>
+
+	  	      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+		  <p>This enemy is just like our character, but instead of the User Control script it has an AI Control Script. This script has one public variable - a target.</p>
+   		  <img src="./unity_images/enemy5.JPG" width="250px">
+		  <p>It is programmed to run toward the target. This is our <strong>player</strong> We want to set our target in the AI Character Control script. Open it up by double-clicking on it in the greyed-out box.</p>
+		</div>
+        </div>
+      </div>
+
+
+	  	 <div class="row">
+      <div class="col s1 offset-s1">
+		<div class="worldbuilding-tip">
+					<i class="pin"></i>
+						<h6><i>Challenge Mode!</i><h6>
+							 <blockquote class="worldbuilding-tip-quote">
+					  			<p>We're going to add the following line.</p>
+								 <img src="./unity_images/enemy6.JPG" width="700px">
+								 <p>Where do you think we add this line?</p>
+
+							 </blockquote>
+							 <br>
+		</div>
+	  </div>
+ 	</div>
+
+
+	  	  		    <!--html Lesson: Directions Start Here-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h4>Creating a NavMesh</h4>
+      </div>
+    </div>
+		  	      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+		  <p>You may notice that our enemy still isn't following the player! This is because it doesn't have a <strong>NavMesh</strong>. You've made your own complex terrain and the enemy doesn't know where it can walk on it! A NavMesh, short for navigation mesh, will tell the enemy where it can walk.</p>
+   		  <p><i>//NavMeshes are how Unity handles <strong>pathfinding</strong> - the path an enemy chooses</i></p>
+		</div>
+        </div>
+      </div>
+
+	  		  	      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+		  <p>To create one, go to the menu at the top of the screen.</p>
+		  <p><strong>Window</strong>  →  <strong>AI</strong>  →  <strong>Navigation</strong></p>
+		</div>
+        </div>
+      </div>
+
+
+	  	  		  	      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+		  <p>This will open it as a tab above the Inspector. <strong>Go to the Object</strong> tab. For now, all you have to do is make sure your terrain and any other objects that impact navigation (any buildings, water, or other environmental objects) are selected. Be sure to not select any interactive items like Controllers or Collectables! To select multiple things in the Hierarchy, hold <strong>Ctrl</strong> and click <strong>each one</strong>. They will show up on the <strong>Object</strong> tab as you select them.</p>
+		</div>
+        </div>
+      </div>
+
+	  	  	  		  	      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+		  <p>Make sure they are all marked as <strong>Navigation Static</strong> then go to the Bake tab and click <strong>Bake</strong>. This process will take a bit, and then you'll see that your terrain has blue areas marked. These are the areas in which your enemy can walk.</p>
+		  <p><i>//Note: You'll have to rebake this NavMesh any time you adjust the terrain.</i></p>
+		<p>Now that your enemy has a target and a NavMesh, they'll start chasing your player! You can adjust their speed in the Third Person Character component.</p>
+		<img src="./unity_images/enemy7.JPG" width="250px">
+
+		</div>
+        </div>
+      </div>
+
+
+	  		    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Save your project</h5>
+		  <br>
+      </div>
+	  </div>
+	  </div>
+
+	  <br>
+	  <br>
+    <!--Project Complete Banner-->
+    <div class="row blue white-text">
+	<br>
+        <h5 style="text-align:center;">Baking more than cakes</h5>
+	<br>
+    </div>
+	<br>
+	<br>
+
+        <!--Card: Prompt - Find Another Project-->
+        <div class="row">
+          <div class="col s4 offset-s2">
+            <div class="card findanotherproject">
+              <div class="card-content">
+                <div class="cardDescription">
+                  <h6>Find another project?</h6>
+                  <div class="browse">
+                    <br>
+                    <a href="techimmersion.html">
+                      <button>Browse all projects</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </body>
+    </html>

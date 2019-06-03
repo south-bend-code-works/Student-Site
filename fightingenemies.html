@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="main.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="https://south-bend-code-school.github.io/Student-Site/SBCS_favicon.png">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Unity Student Guide 7d - Fighting Enemies</title>
+  </head>
+
+  <body>
+    <!--Nav bar  -->
+    <nav class="light-blue lighten-1">
+      <div class="nav-wrapper">
+        <a href="#!"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="hide-on-med-and-down">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="scratch.html">Ages 7-12</a></li>
+          <li><a href="techimmersion.html">Ages 13-18</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="scratch.html">Ages 7-12</a></li>
+      <li><a href="techimmersion.html">Ages 13-18</a></li>
+    </ul>
+
+    <!--html Lesson: Project Title -->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h4>Unity Student Guide 7d - Fighting Enemies</</h4>
+        <h5>Enemy Guide 4 - Fighting Enemies</h5>
+    <p><strong>Helpful Links:</strong></p>
+		<p><a href="cheatsheet.html">Error Messages Cheat Sheet</a></p>
+    <br>
+        <p>Let’s make the player be able to damage the enemy. This is going to follow a pretty similar flow to the last part, except we don’t need to make a health bar. Here are the steps:</p>
+          <ol>
+            <li>Add an attack animation to the player</li>
+            <li>Add a weapon to the player</li>
+            <li>Add a health system to the enemy</li>
+            <li>Detect when the player hits the enemy</li>
+          </ol>
+          <img src="./unity_images/fightingenemies1.gif" width="400px">
+          <p><i>Dark Souls 3</i></p>
+
+     </div>
+    </div>
+
+
+      <div class="row">
+        <div class="col s6 offset-s1">
+          <h4>Back to the Animator</h4>
+		    </div>
+      </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <p>Open the PlayerAnimator by double-clicking it in the Inspector for the PlayerController.</p>
+          <p>Choose another attack animation from the ones we downloaded and add it as a new state. Rename it to <strong>Attacking</strong>.</p>
+	   </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <p>Add a new parameter (the <strong>+</strong> icon under parameters). <strong>This one will be a trigger, not a bool.</strong></p>
+          <p><i>A trigger is like a bool but once it’s activated it immediately switches back to false. We wanted the enemy to keep attacking as long as it was in range, but we only want to attack once every time the player presses the key in this case. Rather than manually turning off the boolean, we can use a trigger!</i></p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+            <p>Name it <strong>IsAttacking</strong>.</p>
+            <p>Add transitions from <strong>Grounded</strong> to <strong>Attacking</strong> and vice versa.</p>
+            <p>The transition from Grounded to Attacking should have the <strong>IsAttacking</strong> parameter as condition.</p>
+            <p>The transition from Attacking to Grounded does not need a condition, but it needs exit time.</p>
+            <p><i>Transitioning from a triggered state does not require any conditions (Unity does it automatically), but it needs exit time so the player can finish their attack animation.</i></p>
+            </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s6 offset-s1">
+          <h4>Activating the Trigger</h4>
+		    </div>
+      </div>
+
+    <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+            <p>We need a script to activate the trigger. This is going to be a new script on the PlayerController. Name it <strong>PlayerScript</strong>. This script is going to take input from the player (we want to attack when the player presses a certain button).  We’ll also use it for any additional actions we want to give to the player. <strong>Before we get into the script though, let’s take a look at how we’re going to get that input!</strong></p>
+		       </div>
+        </div>
+      </div>
+
+      <div class="row">
+          <!--Lesson Checkbox Div-->
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </p>
+              </form>
+            </div>
+          </div>
+          <!--Instruction Div-->
+          <div class="col s6">
+            <div class="projectsection1">
+              <p>In the menu at the top of the editor:</p>
+              <p><strong>Edit</strong> → <strong>Project Settings</strong> → <strong>Input</strong> → <strong>Axes</strong></p>
+  		       </div>
+          </div>
+        </div>
+
+        <div class="row">
+            <!--Lesson Checkbox Div-->
+            <div class="col s1 offset-s1">
+              <div class="checkbox">
+                <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span></span>
+                      </label>
+                    </p>
+                </form>
+              </div>
+            </div>
+            <!--Instruction Div-->
+            <div class="col s6">
+              <div class="projectsection1">
+                <p>Unity uses a system called <strong>CrossPlatformInput</strong>. This means that we can set it up to take input from either keyboard or controllers without having to individually configure them! In this case, rather than setting a specific keyboard key for attacking, we can set it to <strong>Fire1</strong> and it will be compatible with controllers too. Click <strong>Fire1</strong> and you’ll see that it is activated by either left control or mouse0 (left-click). This is what we’re going to use to activate our attack!</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+              <!--Lesson Checkbox Div-->
+              <div class="col s1 offset-s1">
+                <div class="checkbox">
+                  <form action="#">
+                      <p>
+                        <label>
+                          <input type="checkbox" />
+                          <span></span>
+                        </label>
+                      </p>
+                  </form>
+                </div>
+              </div>
+              <!--Instruction Div-->
+              <div class="col s6">
+                <div class="projectsection1">
+                  <p>Open the <strong>PlayerScript</strong>. We want this script to activate the <strong>Attacking</strong> trigger when the user inputs <strong>Fire1</strong>.</p>
+                  <p>First, link the animator to the PlayerScript:</p>
+                  <p>Declare it:</p>
+                  <p><img src="./unity_images/fightingenemies2.JPG" width="300px"></p>
+
+                </div>
+              </div>
+            </div>
+          <div class="row">
+            <!--Lesson Checkbox Div-->
+            <div class="col s1 offset-s1">
+              <div class="checkbox">
+                <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span></span>
+                      </label>
+                    </p>
+                </form>
+              </div>
+            </div>
+            <!--Instruction Div-->
+            <div class="col s6">
+              <div class="projectsection1">
+                <p>Initialize it in Start:</p>
+                <p><img src="./unity_images/fightingenemies3.JPG" width="300px"></p>
+                <br>
+                <p>Now, we want to check if the player is pressing the Fire1 button. Here’s the logic:</p>
+                <p><i>if player presses fire1 then set trigger <strong>Attacking</strong></i></p>
+
+
+              </div>
+            </div>
+          </div>
+
+
+      <div class="row">
+         <div class="col s1 offset-s1">
+           <div class="worldbuilding-tip">
+             <i class="pin"></i>
+               <h6><i>Challenge Mode!</i><h6>
+                  <blockquote class="worldbuilding-tip-quote">
+                  <p>You’ve made conditional (if-then) statements before. Make one in the Update function that uses these two lines and follows the logic above:</p>
+                  <p><img src="./unity_images/fightingenemies4.JPG" width="300px"></p>
+                  </blockquote>
+                  <br>
+       </div>
+       </div>
+     </div>
+
+	      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+            <p>Now you should be able to activate the attack animations</p>
+            <p>Go ahead and get a weapon for the player and make it a child of their attacking hand</p>
+            <p>Position it so it looks like it's being held. The weapon may be comically large or tiny. It's up to you as the game designer to tweak it.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+            <p>Add a trigger collider to the weapon.</p>
+         </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h4>Enemy Health</h4>
+      </div>
+    </div>
+
+    <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+          <p>Up till now we've taught our character to attack, to take damage, and to die.</p>
+          <p>Our enemy needs to lose health when we hit it. Add a new script to the EnemyController called <strong>EnemyStats</strong>. This will hold the health!</p>
+       </div>
+    </div>
+  </div>
+
+  <div class="row">
+     <div class="col s1 offset-s1">
+   <div class="worldbuilding-tip">
+         <i class="pin"></i>
+           <h6><i>Challenge Mode!</i><h6>
+              <blockquote class="worldbuilding-tip-quote">
+                <p>This script is going to be almost exactly the same as the HUD_Manager’s health system. It needs:</p>
+                <ol>
+                  <li>Variables to hold StartingHealth and CurrentHealth</li>
+                  <li>The enemy needs to start at the StartingHealth</li>
+                  <li>A function that decreases its health</li>
+                  <li>A function that kills it if its health is too low.</li>
+                </ol>
+                <p><i>Important:</i> instead of starting the level over when we kill an enemy, we want that enemy to disappear. We can use this line for that:</p>
+                <p><img src="./unity_images/fightingenemies5.JPG" width="300px"></p>
+                <p>Have an instructor check your script when you’re done. <i>Don’t forget to set StartingHealth in the Inspector!</i></p>
+
+              </blockquote>
+              <br>
+      </div>
+   </div>
+ </div>
+
+	      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+            <p>Great! Now we need to make the weapon deal damage to the enemy (i.e. call the enemy’s UpdateHealth function). We’re going to have to make a new script on the weapon called <strong>HitEnemy</strong>. Like the <strong>HitPlayer</strong> script, it’s going to detect when the weapon hits something. Then we’ll call the EnemyStats UpdateHealth function, dealing damage.</p>
+            <p><i>In the HitEnemy script:</i></p>
+            <p>First, declare a new variable called <strong>AttackDamage</strong>. This should be editable in the Inspector.</p>
+          </div>
+        </div>
+      </div>
+
+
+	      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+            <p>Then, add an <strong>OnTriggerEnter</strong> function. We’re going to write this one a little differently. When we did the HitPlayer script, it was easy to find the HUD_Manager because there is only one. Because there will be multiple enemies (eventually), we need an easy way to get the <i>specific <strong>EnemyStats</strong></i> script that is on the enemy we’re hitting (each enemy will have their own health!).</p>
+            <p>We’re going to get the script from the thing we hit:</p>
+            <p><img src="./unity_images/fightingenemies6.JPG" width="600px"></p>
+            <p><i>Here, we’re declaring a variable within the function. We’re looking for an EnemyStats script on the enemy and calling it <strong>enemystats</strong>.</i></p>
+	       </div>
+        </div>
+      </div>
+
+      <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+            <p>But not everything we hit is going to have an EnemyStats script, right? What if I swing and hit a rock? We only want to subtract health if we hit an enemy. We’ll add an if-then statement:</p>
+            <img src="./unity_images/fightingenemies7.JPG" width="600px">
+            <p><i>Don’t forget to set AttackDamage in the Inspector! <strong>(Make it negative)</strong></i> Now you should be able to kill your enemy!</p>
+        </div>
+      </div>
+    </div>
+
+<!--html Lesson: Directions Start Here-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h4>Testing the Game</h4>
+      </div>
+    </div>
+
+    <div class="row">
+<!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+<!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Try playing the game</h6>
+          <p>Does the enemy healthbar go down?</p>
+          <p>Does it die?</p>
+          <br>
+          <p>Good job!
+        </div>
+      </div>
+    </div>
+
+	  		    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Save your project</h5>
+		  <br>
+      </div>
+	  </div>
+	  </div>
+
+	  <br>
+	  <br>
+    <!--Project Complete Banner-->
+    <div class="row blue white-text">
+	<br>
+        <h5 style="text-align:center;">One hit wonder</h5>
+	<br>
+    </div>
+	<br>
+	<br>
+
+        <!--Card: Prompt - Find Another Project-->
+        <div class="row">
+          <div class="col s4 offset-s2">
+            <div class="card findanotherproject">
+              <div class="card-content">
+                <div class="cardDescription">
+                  <h6>Find another project?</h6>
+                  <div class="browse">
+                    <br>
+                    <a href="techimmersion.html">
+                      <button>Browse all projects</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </body>
+    </html>

@@ -119,6 +119,94 @@ a:visited {
   bottom:0 !important;
 }
 
+.worldbuilding-tip {
+  margin-top: 50px;
+  position: relative;
+}
+.worldbuilding-tip-quote {
+  color: #333;
+  position: relative;
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Satisfy;
+  font-size: 16px;
+  box-shadow: 0 10px 10px 2px rgba(0,0,0,0.3);
+}
+/*collapsible =================================================================================================================================Scratch Lesson Cards=======================================================*/
+.wrap-collabsible {
+  margin-bottom: 1.2rem 0;
+}
+
+input[type='checkbox'] {
+  display: none;
+}
+
+.lbl-toggle {
+  display: block;
+
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-align: center;
+
+  padding: 1rem;
+
+  color: #000000;
+  background: #00BFFF;
+
+  cursor: pointer;
+
+  border-radius: 7px;
+  transition: all 0.25s ease-out;
+}
+
+.lbl-toggle:hover {
+  color: #7C5A0B;
+}
+
+.lbl-toggle::before {
+  content: ' ';
+  display: inline-block;
+
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid currentColor;
+  vertical-align: middle;
+  margin-right: .7rem;
+  transform: translateY(-2px);
+
+  transition: transform .2s ease-out;
+}
+
+.toggle:checked + .lbl-toggle::before {
+  transform: rotate(90deg) translateX(-3px);
+}
+
+.collapsible-content {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height .25s ease-in-out;
+}
+
+.toggle:checked + .lbl-toggle + .collapsible-content {
+  max-height: 600px;
+}
+
+.toggle:checked + .lbl-toggle {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.collapsible-content .content-inner {
+  background: rgba(250, 224, 66, .2);
+  border-bottom: 1px solid rgba(250, 224, 66, .45);
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  padding: .5rem 1rem;
+}
+
 /* =================================================================================================================================Scratch Lesson Cards=======================================================*/
 #aboutMeBG {background-image: url('aboutme.gif');}
 #animateMeBG {background-image: url('animatename.jpg');}
@@ -160,7 +248,12 @@ a:visited {
 #cloneBG {background-image: url('clone.png');}
 #logoBG {background-image: url('logo.png');}
 #keyframesreviewBG{background-image: url();}
+#portBG{background-image: url('scratchportfolio.jpg');}
+#passionBG{background-image: url('passionProject.jpg')}
 .kahootBG {background-image: url('kahoot.jpeg');}
+.challenge1{background-image: url('codingchallenge1.jpg');}
+.challenge2{background-image: url('codingchallenge2.jpg');}
+.challenge3{background-image: url('codingchallenge3.jpg');}
 /*Not used right now*/
 #wantedBG {background-image: url('wanted.png');}
 #wrapupBG {background-image: url('wrapup.jpg');}
@@ -173,10 +266,10 @@ a:visited {
 #typographicposterBG {background-image: url('typographicposterBG.jpg');}
 #photomanipulationBG {background-image: url('photomanipulationBG.gif');}
 #splashpageBG {background-image: url('splashpageBG.jpg');}
-#gifBG {background-image: url('gifBG.gif');}
+#gifBG {background-image: url('./GraphicDesignV2_files/gif14.gif');}
 #infographicBG {background-image: url('infographicBG.jpg');}
 #interactiveBG {background-image: url('interactiveBG.jpg');}
-#geometricBG {background-image: url('geometricBG.jpg');}
+#geometricBG {background-image: url('./GraphicDesignV2_files/geometric3.jpg');}
 #uiuxBG {background-image: url('uiuxBG.jpg');}
 #colortheoryBG {background-image: url('colortheoryBG.gif');}
 #imagesBG {background-image: url('imagesBG.jpg');}
@@ -186,8 +279,9 @@ a:visited {
 #resourcesBG {background-image: url('resourcesBG.jpg');}
 #topofpage {background-image: url('topofpage.gif');}
 #brandingBG {background-image: url('brandingBG.jpg');}
-#vectorrasterBG {background-image: url('vectorrasterBG.png');}
-#colorBG{background-image: url('colorbg.jpg');}
+
+#vectorrasterBG {background-image: url('./GraphicDesignV2_files/morecolorstshirts4.jpg');}
+#colorBG{background-image: url('colorBG.jpg');}
 #colorizeBG{background-image: url('colorizeBG.jpg');}
 #copyrightBG{background-image: url('copyrightBG.jpg');}
 #moodboardBG{background-image: url('moodboardBG.jpg');}
@@ -239,37 +333,37 @@ background-position: center; background-size: contain;}
 #patternBG {background-image: url('striped.gif');}
 
 /*Unity images */
-#setupBG{background-image: url('unityIntro.png');}
-#terrainBG{background-image: url('unityTerrain.png');}
-#terrain2BG{background-image: url('unityTerrain2.png');}
-#characterBG{background-image: url('unityCharacter.png');}
-#organizeBG{background-image: url('unityOrganize.png');}
-#collectableBG{background-image: url('unity4.png');}
-#uiBG{background-image: url('unity5-1.png');}
-#collectable2BG{background-image: url('unityCollectable2.png');}
-#prefabBG{background-image: url('unityPrefab.png');
+#setupBG{background-image: url('setup.jpg');}
+#worldbuildingBG{background-image: url('worldbuilding_terrain.jpg');}
+#worldbuilding2BG{background-image: url('worldbuilding_terrain2.jpg');}
+#characterBG{background-image: url('character.gif');}
+#organizeBG{background-image: url('organize.jpg');}
+#collectableBG{background-image: url('collectable.jpg');}
+#uiBG{background-image: url('interface.gif');}
+#collectable2BG{background-image: url('collectable2.gif');}
+#prefabBG{background-image: url('prefab1.gif');
 background-position: center; background-size: contain;}
-#enemyBG{background-image: url('unityEnemy.png');}
-#attackBG{background-image: url('unityAttack.png');}
-#healthBG{background-image: url('unityHealthbar.png');}
-#fightBG{background-image: url('unity7d-2.png');}
-#enemyprefabBG{background-image: url('unityPrefabEnemy.png');}
-#menuBG{background-image: url('unity9-1.png');}
-#audioBG{background-image: url('unityAudio.png');
+#enemyBG{background-image: url('enemy.jpg');}
+#attackBG{background-image: url('enemyattacks.gif');}
+#healthBG{background-image: url('healthbar1.gif');}
+#fightBG{background-image: url('fightingenemies.gif');}
+#enemyprefabBG{background-image: url('prefabenemy.jpeg');}
+#menuBG{background-image: url('unitymenu.gif');}
+#audioBG{background-image: url('audio.jpeg');
 background-position: center; background-size: contain;}
-#buildBG{background-image: url('unityBuild.png');
+#buildBG{background-image: url('unitybuild.jpeg');
 background-position: center; background-size: contain;}
-#interfaceBG{background-image: url('unityNav.png');
+#interfaceBG{background-image: url('interfacebasics.jpg');
 background-position: center; background-size: contain;}
-#movementBG{background-image: url('unityMovement.png');
+#movementBG{background-image: url('movementtools.gif');
 background-position: center; background-size: auto;}
-#assetBG{background-image: url('unityAssetStore.png');
+#assetBG{background-image: url('assetstore.gif');
 background-position: center; background-size: contain;}
-#terrain3BG{background-image: url('unityTerrain.png');}
-#collectable3BG{background-image: url('unityCollectable3.png');
+#terrain3BG{background-image: url('worldbuildingbasics.jpg');}
+#collectable3BG{background-image: url('collectablescheatsheet.jpg');
 background-position: center; background-size: contain;}
-#scriptBG{background-image: url('unityScript.png');}
-#errorBG{background-image: url('unityError.png');
+#scriptBG{background-image: url('scriptingbasics.gif');}
+#errorBG{background-image: url('errormessages.jpg');
 background-position: center; background-size: contain;}
 
 /*Python images */
@@ -334,6 +428,12 @@ background-position: center; background-size: contain;}
   display: inline-block;
   font-weight: bold;
 }
+.challengeSubheading{
+  background-color: darkorange;
+  font-size: 30px;
+  color: white;
+
+}
 .creditLine {
   font-style: italic;
 }
@@ -367,6 +467,206 @@ background-position: center; background-size: contain;}
   width: 50%;
   padding-top: 2%;
 }
+
+.firstLogo {
+  float: left;
+  background-image: url("personalLogoOne.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 300px;
+  height: 300px;
+}
+
+.secondLogo {
+  float: left;
+  background-image: url("personalLogoTwo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 300px;
+  height: 300px;
+}
+
+.thirdLogo {
+  float: left;
+  background-image: url("personalLogoThree.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 300px;
+  height: 300px;
+}
+
+.fourthLogo {
+  float: left;
+  background-image: url("personalLogoFour.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 300px;
+  height: 300px;
+}
+
+.firstmoodboard {
+  float: left;
+  background-image: url("./GraphicDesignV2_files/moodboard1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 45%;
+  height: 500px;
+  display: inline-block;
+  background-size: cover;
+}
+
+.secondmoodboard {
+  float: right;
+  background-image: url("./GraphicDesignV2_files/moodboard2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 45%;
+  height: 400px;
+  margin-left: .5px;
+  display: inline-block;
+  background-size: cover;
+}
+
+.thirdmoodboard {
+  float: left;
+  background-image: url("./GraphicDesignV2_files/moodboard3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 500px;
+  height: 500px;
+  display: inline-block;
+}
+
+.centerthis {
+  margin-left: 70%;
+  text-align: center;
+  margin-top: 5%;
+}
+
+/* .fourthmoodboard {
+  float: right;
+  background-image: url("./GraphicDesignV2_files/moodboard4.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+  height: 400px;
+  display: inline-block;
+} */
+
+.geometric3 {
+  float: left;
+  background-image: url("./GraphicDesignV2_files/geometric3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+}
+
+.geometric2 {
+  float: left;
+  background-image: url("./GraphicDesignV2_files/geometric2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  padding-left: 40%;
+}
+
+.geometric1 {
+  float: left;
+  background-image: url("./GraphicDesignV2_files/geometric1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+}
+
+.minimalistone {
+  float: left;
+  background-image: url("./GraphicDesignV2_files/negspace1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 420px;
+  height: 420px;
+  display: inline-block;
+}
+
+.minimalisttwo {
+  float: left;
+  background-image: url("./GraphicDesignV2_files/negspace2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 400px;
+  height: 400px;
+  display: inline-block;
+}
+
+#portfolio1 {
+  float: left;
+  background-image: url("./GraphicDesignV2_files/portfolio1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 500px;
+  height: 500px;
+  display: inline-block;
+}
+
+#portfolio2 {
+  float: left;
+  margin-left: 4%;
+  background-image: url("./GraphicDesignV2_files/portfolio2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 600px;
+  height: 600px;
+  display: inline-block;
+}
+
+#portfolio3 {
+  float: left;
+  background-image: url("./GraphicDesignV2_files/portfolio7.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 400px;
+  height: 400px;
+  display: inline-block;
+}
+
+#portfolio4 {
+  float: left;
+  background-image: url("./GraphicDesignV2_files/portfolio8.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 400px;
+  height: 400px;
+  display: inline-block;
+}
+
+ .canvagif {
+   background-image: url("canva.gif");
+   width: 600px;
+   height: 600px;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: contain;
+   margin-left: 15%;
+ }
 
 .left p {
   padding-left: 5%;
@@ -611,6 +911,10 @@ to{background-position: 200px, 0;}
 @keyframes blink {
   from {color: transparent;}
   to {color: black;}
+}
+
+textarea {
+  background-color: white;
 }
 
 /*
