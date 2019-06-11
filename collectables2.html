@@ -54,7 +54,7 @@
 
      <div class="row">
       <div class="col s6 offset-s1">
-        <h4>Rotating Collectables</h4>
+        <h4>Dynamic Collectables</h4>
 		<p>Game designers use animation to draw a player's eye.</p>
 		<img src="./unity_images/collectable-b2.gif" width="400px">
 		<p>Animation is a great way to breathe life into a character. Our brains respond to movement, and animations give us something to focus on. Even simple small movements can make a universe more immersive.</p>
@@ -69,7 +69,7 @@
 		    <!--html Lesson: Directions Start Here-->
     <div class="row">
       <div class="col s6 offset-s1">
-        <h4>Making the UI</h4>
+        <h4>Rotating Collectables</h4>
       </div>
     </div>
 
@@ -300,7 +300,7 @@
             <div class="projectsection1">
 			<p>You’ll notice that it’s red. That is because we cannot access this script without a new namespace. You’ll get an error if you try! Add this line to the top of the script:</p>
 			<p>We do this very similarly to how we accessed the HUD_Manager script. First, add a public variable called <strong>ThirdPersonCharacter</strong> to the <strong>CollectableScript</strong>. This can go right after the HUD_Manager declaration:</p>
-			<p><i>using UnityStandardAssets.Characters.ThirdPerson;</i></p>
+
             </div>
           </div>
         </div>
@@ -325,6 +325,7 @@
 			<p><i><strong>float</strong> JumpIncrease;</i></p>
 			<p><i><strong>float</strong> SpeedIncrease;</i></p>
 			<p><strong>Floats are numbers with a decimal point.</strong> We used integer before because we didn’t want the score to be a fraction. We want to be able to fine-tune our upgrades more precisely, though, so we’re using a float here. This way we can have collectables that change these values by different amounts!</p>
+      <img src="./unity_images/collectable-b12.JPG" width="400px">
 
             </div>
           </div>
@@ -363,8 +364,7 @@
           <div class="col s6">
             <div class="projectsection1">
 			<p>In the OnTriggerEnter() function, under the UpdateScore call, add the following lines:</p>
-			<p><i>ThirdPersonCharacter.m_MoveSpeedMultiplier += SpeedIncrease;</i></p>
-			<p><i>ThirdPersonCharacter.m_JumpPower += JumpIncrease;</i></p>
+      <img src="./unity_images/collectable-b11.JPG" width="400px">
 			<br>
 			<p><strong>Note:</strong> “+=” adds what is after the equals sign to what is before it. For example, 1 += 4 is 5.</p>
 			<p>Now you’ll see that the ThirdPersonCharacter variables are in red. We forgot to make them public! Go back to the ThirdPersonCharacter script and make them public.</p>
