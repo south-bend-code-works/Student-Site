@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="main.js"></script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Lesson 3 - Variables and Data Types</title>
+  </head>
+
+<body>
+
+  <!--Nav bar  -->
+  <nav class="light-blue lighten-1">
+    <div class="nav-wrapper">
+      <a href="#!"></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="hide-on-med-and-down">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="scratch.html">Ages 7-12</a></li>
+        <li><a href="techimmersion.html">Ages 13-18</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="home.html">Home</a></li>
+    <li><a href="scratch.html">Ages 7-12</a></li>
+    <li><a href="techimmersion.html">Ages 13-18</a></li>
+  </ul>
+
+  <!--html Lesson: Project Title -->
+  <div class="row">
+    <div class="col s6 offset-s1">
+      <h4 class="projectTitle">Lesson 3 - Variables and Data Types</h4>
+        <h5>Background Info</h5>
+        <p>There are quite a few different data types. For this lesson, we will be looking at four of them. We will study more of them later on.</p>
+        <p>Python is a loosely typed language, which means that when you define a variable, you don’t need to tell the interpreter what kind of data is being stored in the variable. The Python interpreter will just figure out what kind of variable each one is when it runs.</p>
+        <br>
+        <h5>Helpful Links</h5>
+        <p><a href="repl.it">repl.it</a> - an online interpreter that we will use for writing our Python code.</p>
+        <p><a href="https://docs.python.org/3/reference/lexical_analysis.html">https://docs.python.org/3/reference/lexical_analysis.html</a>Python 3 documentation on Strings</p>
+        <p><a href="https://repl.it/@kristenhaubold/MadLibs">https://repl.it/@kristenhaubold/MadLibs</a>Madlibs answer key</p>
+        <br>
+        <h5>End Product</h5>
+        <p>Mad Libs Game</p>
+    </div>
+  <div class="row">
+      <div class="col s6 offset-s1">
+          </div>
+    </div>
+  <br>
+
+      <!--html Lesson: Directions Start Here-->
+      <div class="row">
+          <div class="col s6 offset-s1">
+            <h4>Let's get started!</h4>
+          </div>
+        </div>
+
+        <div class="row">
+              <!--Lesson Checkbox Div-->
+              <div class="col s1 offset-s1">
+                <div class="checkbox">
+                  <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span></span>
+                      </label>
+                    </p>
+                  </form>
+                </div>
+              </div>
+              <!--Instruction Div-->
+              <div class="col s6">
+                <div class="projectsection1">
+                        <h5>First steps</h5>
+                        <p>Open up your repl on <a href="repl.it">repl.it</a>.</p>
+                        <p>In this lesson, we are going to learn about variables and what kind of information you can store in them.</p>
+                        <p>For now there are four basic types of information we will be using. These are called data types or variable types. There are many more variable types, and we will be learning more about them later!</p>
+                </div>
+            </div>
+          </div>
+      <!--html Lesson: Directions Start Here-->
+      <div class="row">
+            <div class="col s6 offset-s1">
+              <h4>Integers</h4>
+            </div>
+          </div>
+
+            <div class="row">
+              <!--Lesson Checkbox Div-->
+              <div class="col s1 offset-s1">
+                <div class="checkbox">
+                  <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span></span>
+                      </label>
+                    </p>
+                  </form>
+                </div>
+              </div>
+              <!--Instruction Div-->
+              <div class="col s6">
+                <div class="projectsection1">
+                    <h5>Let's start simple.</h5>
+                    <p>Integers are simply number that don’t have a fractional or decimal part to them. They can be positive or negative. Let’s make some integer variables. In the terminal pane, define a few integer variables.</p>
+                    <p><img src="./Python_files/variables1.JPG" width="200px"></p>
+                    <p><img src="./Python_files/variables2.JPG" width="200px"></p>
+                    <p>You can do any mathematical operation with these.</p>
+                </div>
+              </div>
+            </div>
+
+            <!--html Lesson: Directions Start Here-->
+            <div class="row">
+                  <div class="col s6 offset-s1">
+                    <h4>Floats</h4>
+                  </div>
+                </div>
+
+            <div class="row">
+              <!--Lesson Checkbox Div-->
+              <div class="col s1 offset-s1">
+                <div class="checkbox">
+                  <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span></span>
+                      </label>
+                    </p>
+                  </form>
+                </div>
+              </div>
+              <!--Instruction Div-->
+              <div class="col s6">
+                <div class="projectsection1">
+                    <h5>Floats are a lot like integers, only floats (floating point numbers), have a decimal point.</h5>
+                    <br>
+                    <p>Check out some floats below.</p>
+                    <p><img src="./Python_files/variables3.JPG"></p>
+                    <p>Try making some of your own floats.</p>
+                </div>
+            </div>
+          </div>
+      <!--html Lesson: Directions Start Here-->
+      <div class="row">
+            <div class="col s6 offset-s1">
+              <h4>Booleans</h4>
+            </div>
+          </div>
+
+          <div class="row">
+                <!--Lesson Checkbox Div-->
+                <div class="col s1 offset-s1">
+                  <div class="checkbox">
+                    <form action="#">
+                      <p>
+                        <label>
+                          <input type="checkbox" />
+                          <span></span>
+                        </label>
+                      </p>
+                    </form>
+                  </div>
+                </div>
+                <!--Instruction Div-->
+                <div class="col s6">
+                  <div class="projectsection1">
+                      <h5>Booleans have a funny name, but they are the simplest type of variable</h5>
+                      <p>A boolean is simply a value that is either True or False.</p>
+                      <p>**Syntax Note: In Python, true and false have to be capitalized for your Python interpreter to recognize them as booleans and not as variable names.</p>
+                      <img  style="width:100%; height:100%;" src="./Python_files/variables4.JPG">
+                  </div>
+              </div>
+            </div>
+
+            <div class="row">
+                    <!--Lesson Checkbox Div-->
+                    <div class="col s1 offset-s1">
+                      <div class="checkbox">
+                        <form action="#">
+                          <p>
+                            <label>
+                              <input type="checkbox" />
+                              <span></span>
+                            </label>
+                          </p>
+                        </form>
+                      </div>
+                    </div>
+                    <!--Instruction Div-->
+                    <div class="col s6">
+                      <div class="projectsection1">
+                          <h5>You try it.</h5>
+                          <p>Try defining a couple booleans for yourself. Remember to capitalize True and False.</p>
+                      </div>
+                  </div>
+                </div>
+                <!--html Lesson: Directions Start Here-->
+                <div class="row">
+                      <div class="col s6 offset-s1">
+                        <h4>Strings</h4>
+                      </div>
+                    </div>
+
+    <div class="row">
+            <!--Lesson Checkbox Div-->
+            <div class="col s1 offset-s1">
+              <div class="checkbox">
+                <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </p>
+                </form>
+              </div>
+            </div>
+            <!--Instruction Div-->
+            <div class="col s6">
+              <div class="projectsection1">
+                  <h5>Now we get to the fun stuff!</h5>
+                  <p>Now we get to the fun stuff. Strings are a variable type you’ve already seen a bit and worked with. Let’s go deeper.</p>
+                  <p>For information to be considered a string, it needs to be surrounded by quotation marks. You can use either double-quotes <strong>“</strong> or single-quotes <strong>‘</strong>, <strong>but the quotes on each end have to match!</strong></p>
+                  <br>
+                  <h5>You try it.</h5>
+                  <p>Define a couple of strings</p>
+              </div>
+          </div>
+        </div>
+
+        <div class="row">
+                <!--Lesson Checkbox Div-->
+                <div class="col s1 offset-s1">
+                  <div class="checkbox">
+                    <form action="#">
+                      <p>
+                        <label>
+                          <input type="checkbox" />
+                          <span></span>
+                        </label>
+                      </p>
+                    </form>
+                  </div>
+                </div>
+                <!--Instruction Div-->
+                <div class="col s6">
+                  <div class="projectsection1">
+                    <p>Notice that anything you put inside quotes becomes a string, even if it otherwise would have been something else.</p>
+                    <img src="./Python_files/variables5.JPG">
+                    <img src="./Python_files/variables6.JPG">
+                  </div>
+              </div>
+            </div>
+
+        <div class="row">
+                <!--Lesson Checkbox Div-->
+                <div class="col s1 offset-s1">
+                  <div class="checkbox">
+                    <form action="#">
+                      <p>
+                        <label>
+                          <input type="checkbox" />
+                          <span></span>
+                        </label>
+                      </p>
+                    </form>
+                  </div>
+                </div>
+                <!--Instruction Div-->
+                <div class="col s6">
+                  <div class="projectsection1">
+                      <h5>But what if you want to put a quote inside a string?</h5>
+                      <img src="./Python_files/variables7.JPG">
+                      <p>If we put a quote inside a string, the python interpreter thinks that the quote is ending the string, and we get an error!</p>
+                  </div>
+              </div>
+            </div>
+
+            <!--html Lesson: Directions Start Here-->
+            <div class="row">
+                  <div class="col s6 offset-s1">
+                    <h4>Escape Characters</h4>
+                  </div>
+                </div>
+
+        <div class="row">
+                <!--Lesson Checkbox Div-->
+                <div class="col s1 offset-s1">
+                  <div class="checkbox">
+                    <form action="#">
+                      <p>
+                        <label>
+                          <input type="checkbox" />
+                          <span></span>
+                        </label>
+                      </p>
+                    </form>
+                  </div>
+                </div>
+                <!--Instruction Div-->
+                <div class="col s6">
+                  <div class="projectsection1">
+                      <h5>To solve this problem, we can use something called an escape character.</h5>
+                      <p>Simply put, we can use a backslash \ in front of any special characters in a string to tell the Python interpreter to ignore the character.</p>
+                      <img src="./Python_files/variables8.JPG" width="600px">
+                      <p>There are a few other escape characters we use.</p>
+                      <img src="./Python_files/variables9.JPG">
+                  </div>
+              </div>
+            </div>
+
+            <div class="row">
+                    <!--Lesson Checkbox Div-->
+                    <div class="col s1 offset-s1">
+                      <div class="checkbox">
+                        <form action="#">
+                          <p>
+                            <label>
+                              <input type="checkbox" />
+                              <span></span>
+                            </label>
+                          </p>
+                        </form>
+                      </div>
+                    </div>
+                    <!--Instruction Div-->
+                    <div class="col s6">
+                      <div class="projectsection1">
+                          <h5>You try it.</h5>
+                          <p>Make some strings using escape sequences.</p>
+                          <p>Note that to use <strong>\n</strong> and <strong>\t</strong> you’ll need to print your strings.</p>
+                          <img src="./Python_files/variables10.JPG" width="600px">
+                          <img src="./Python_files/variables11.JPG" width="600px">
+                      </div>
+                  </div>
+                </div>
+
+            <div class="row">
+                    <div class="col s6 offset-s1">
+                      <h4>String Indices</h4>
+                    </div>
+                </div>
+
+
+        <div class="row">
+                <!--Lesson Checkbox Div-->
+                <div class="col s1 offset-s1">
+                  <div class="checkbox">
+                    <form action="#">
+                      <p>
+                        <label>
+                          <input type="checkbox" />
+                          <span></span>
+                        </label>
+                      </p>
+                    </form>
+                  </div>
+                </div>
+                <!--Instruction Div-->
+                <div class="col s6">
+                  <div class="projectsection1">
+                      <p>Another cool feature of strings is that they are iterable, which means that you can count how many items are inside a string and you can call a for loop (we will learn about these later) on a string.</p>
+                      <p>More simply, every character inside a string has a number telling you where in the sting the character is. That number is called an index.</p>
+                      <br>
+                      <p>For example:</p>
+                      <p>The string <strong>My name is Kristen</strong> has 18 characters. These each have a number starting at 0.</p>
+                      <p><i>**In computer science we almost always start counting at 0 instead of 1!**</i></p>
+                      <img src="./Python_files/variables12.JPG">
+                  </div>
+              </div>
+            </div>
+
+            <div class="row">
+                    <!--Lesson Checkbox Div-->
+                    <div class="col s1 offset-s1">
+                      <div class="checkbox">
+                        <form action="#">
+                          <p>
+                            <label>
+                              <input type="checkbox" />
+                              <span></span>
+                            </label>
+                          </p>
+                        </form>
+                      </div>
+                    </div>
+                    <!--Instruction Div-->
+                    <div class="col s6">
+                      <div class="projectsection1">
+                          <p>So if we ask the Python terminal to give us the character at index 6 of the string, we will get an <strong>e</strong>.</p>
+                          <img src="./Python_files/variables13.JPG" width="600px">
+                          <p>We use square brackets to find indices</p>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                        <!--Lesson Checkbox Div-->
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                              <p>
+                                <label>
+                                  <input type="checkbox" />
+                                  <span></span>
+                                </label>
+                              </p>
+                            </form>
+                          </div>
+                        </div>
+                        <!--Instruction Div-->
+                        <div class="col s6">
+                          <div class="projectsection1">
+                              <h5>You try it</h5>
+                              <p>You try it, find the character at index 11 using your Python terminal.</p>
+                          </div>
+                      </div>
+                    </div>
+
+
+            <div class="row">
+                    <div class="col s6 offset-s1">
+                      <h4>String Length</h4>
+                    </div>
+                </div>
+
+            <div class="row">
+                    <!--Lesson Checkbox Div-->
+                    <div class="col s1 offset-s1">
+                      <div class="checkbox">
+                        <form action="#">
+                          <p>
+                            <label>
+                              <input type="checkbox" />
+                              <span></span>
+                            </label>
+                          </p>
+                        </form>
+                      </div>
+                    </div>
+                    <!--Instruction Div-->
+                    <div class="col s6">
+                      <div class="projectsection1">
+                          <h5>There is an easy way to find the length of a string.</h5>
+                          <p>Python has a built-in function called len().</p>
+                          <p><img src="./Python_files/variables14.JPG"></p>
+                          <p>len() counts how many characters are in a string and returns that number.</p>
+                      </div>
+                  </div>
+                </div>
+                <div class="row">
+                        <!--Lesson Checkbox Div-->
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                              <p>
+                                <label>
+                                  <input type="checkbox" />
+                                  <span></span>
+                                </label>
+                              </p>
+                            </form>
+                          </div>
+                        </div>
+                        <!--Instruction Div-->
+                        <div class="col s6">
+                          <div class="projectsection1">
+                              <h5>You try it</h5>
+                              <p>Find the length of a string using len().</p>
+                          </div>
+                      </div>
+                    </div>
+
+                <div class="row">
+                  <div class="col s6 offset-s1">
+                    <h4>String Slicing</h4>
+                  </div>
+              </div>
+
+          <div class="row">
+                  <!--Lesson Checkbox Div-->
+                  <div class="col s1 offset-s1">
+                    <div class="checkbox">
+                      <form action="#">
+                        <p>
+                          <label>
+                            <input type="checkbox" />
+                            <span></span>
+                          </label>
+                        </p>
+                      </form>
+                    </div>
+                  </div>
+                  <!--Instruction Div-->
+                  <div class="col s6">
+                    <div class="projectsection1">
+                      <h5>Let’s learn one more cool thing we can do with strings. Slicing!</h5>
+                        <p>If we want to get just one part of a string, we can use indices to slice the string and get what we want.</p>
+                        <p>If I want to get only the word <strong>name</strong> from the string <strong>My name is Kristen</strong>, I have to figure out what indices are at the start and end of <strong>name</strong>. Remember to start counting at 0.</p>
+                        <p>The <strong>n</strong> is at index 3, and the <strong>e</strong> is at index 6. So to slice the string, do the following:</p>
+                        <p><img src="./Python_files/variables15.JPG"></p>
+                        <p>Wait… Why did we ust index 7 instead of 6?</p>
+                        <p>When you slice a string, the Python interpreter will slice from the first index,until the second index, but not including that character.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <!--Lesson Checkbox Div-->
+                <div class="col s1 offset-s1">
+                  <div class="checkbox">
+                    <form action="#">
+                      <p>
+                        <label>
+                          <input type="checkbox" />
+                          <span></span>
+                        </label>
+                      </p>
+                    </form>
+                  </div>
+                </div>
+                <!--Instruction Div-->
+                <div class="col s6">
+                  <div class="projectsection1">
+                      <h5>You try it</h5>
+                      <p>Slice out the word <strong>is</strong></p>
+                      <p><img src="./Python_files/variables16.JPG"></p>
+                  </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <!--Lesson Checkbox Div-->
+              <div class="col s1 offset-s1">
+                <div class="checkbox">
+                  <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span></span>
+                      </label>
+                    </p>
+                  </form>
+                </div>
+              </div>
+              <!--Instruction Div-->
+              <div class="col s6">
+                <div class="projectsection1">
+                    <p>If you want to slice a string starting at the beginning of the string, you can leave out the first index.</p>
+                    <p><img src="./Python_files/variables17.JPG"></p>
+                    <br>
+                    <p>If you want to slice a string ending at the end of the string, you can leave out the second index.</p>
+                    <p><img src="./Python_files/variables18.JPG"></p>
+                </div>
+            </div>
+          </div>
+          <div class="row">
+            <!--Lesson Checkbox Div-->
+            <div class="col s1 offset-s1">
+              <div class="checkbox">
+                <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </p>
+                </form>
+              </div>
+            </div>
+            <!--Instruction Div-->
+            <div class="col s6">
+              <div class="projectsection1">
+                  <h5>Can't get enough?</h5>
+                  <p>There’s even more to learn! Check out this <a href="https://www.digitalocean.com/community/tutorials/how-to-index-and-slice-strings-in-python-3">site</a> for even more you can do with string slicing.</p>
+              </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s6 offset-s1">
+            <h4>Concatenation</h4>
+          </div>
+      </div>
+
+  <div class="row">
+          <!--Lesson Checkbox Div-->
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+              </form>
+            </div>
+          </div>
+          <!--Instruction Div-->
+          <div class="col s6">
+            <div class="projectsection1">
+              <h5>What if we want to add strings together?</h5>
+                <p>Simple! We can just use a +.</p>
+                <p><img src="./Python_files/variables19.JPG" width="600px"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+              <h5>You try it</h5>
+              <p>Try adding a few strings together.</p>
+          </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h4>Type Conversions</h4>
+      </div>
+  </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+            <h5>So we've looked at 4 different types of data.</h5>
+            <p>Now what if we want to turn one kind of data into another?</p>
+            <p>This process is called type conversion. Sometimes Python does this automatically for us.</p>
+            <p><img src="./Python_files/variables20.JPG"></p>
+            <p>Here, the Python interpreter converted the integer 8 into a string so that it could be printed.</p>
+        </div>
+    </div>
+  </div>
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+          <h5>But if we wanted to concatenate a string and an integer, we would need to convert the integer into a string first.</h5>
+          <p><img src="./Python_files/variables21.JPG"></p>
+          <p>The <strong>str()</strong> function is a built-in function that lets us convert other data types into strings</p>
+      </div>
+  </div>
+</div>
+
+<div class="row">
+  <!--Lesson Checkbox Div-->
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span></span>
+          </label>
+        </p>
+      </form>
+    </div>
+  </div>
+  <!--Instruction Div-->
+  <div class="col s6">
+    <div class="projectsection1">
+        <h5>We can also convert strings into integers if the strings contain only numbers.</h5>
+        <p><img src="./Python_files/variables22.JPG" width="600px"></p>
+        <p>If the string contains anything other than numbers, we will get an error.</p>
+    </div>
+</div>
+</div>
+
+<div class="row">
+  <!--Lesson Checkbox Div-->
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span></span>
+          </label>
+        </p>
+      </form>
+    </div>
+  </div>
+  <!--Instruction Div-->
+  <div class="col s6">
+    <div class="projectsection1">
+        <h5>We can also turn strings or integers into floats.</h5>
+        <p><img src="./Python_files/variables23.JPG"></p>
+        <p>Now let's start putting all of this together.</p>
+    </div>
+</div>
+</div>
+
+<div class="row">
+  <div class="col s6 offset-s1">
+    <h4>Mad Libs</h4>
+  </div>
+</div>
+
+<div class="row">
+  <!--Lesson Checkbox Div-->
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span></span>
+          </label>
+        </p>
+      </form>
+    </div>
+  </div>
+  <!--Instruction Div-->
+  <div class="col s6">
+    <div class="projectsection1">
+        <h5>Let’s write a function to play Mad Libs</h5>
+        <p><img src="./Python_files/variables24.JPG" width="600px"></p>
+        <p>What is Mad Libs?</p>
+        <p>One player prompts others for a list of words to substitute for blanks in a story, before reading the – often comical or nonsensical – story aloud. </p>
+        <p>This is perfect for what we have learned to do in Python!</p>
+        <br>
+        <p>Let’s make this mad lib using the old “roses are red” poem.</p>
+        <p>Roses are <i>red</i></p>
+        <p><i>Violets</i> are blue</p>
+        <p><i>Sugar</i> is <i>sweet</i></p>
+        <p>And so are you</p>
+    </div>
+</div>
+</div>
+
+<div class="row">
+  <!--Lesson Checkbox Div-->
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span></span>
+          </label>
+        </p>
+      </form>
+    </div>
+  </div>
+  <!--Instruction Div-->
+  <div class="col s6">
+    <div class="projectsection1">
+        <h5>We will replace 4 words - two nouns and two adjectives.</h5>
+        <p>So we need to ask the user to pick those words.</p>
+    </div>
+</div>
+</div>
+
+<div class="row">
+  <!--Lesson Checkbox Div-->
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span></span>
+          </label>
+        </p>
+      </form>
+    </div>
+  </div>
+  <!--Instruction Div-->
+  <div class="col s6">
+    <div class="projectsection1">
+        <h5>Go ahead and add 4 variables and input statements as shown below:</h5>
+        <p><img src="./Python_files/variables25.JPG" width="600px"></p>
+        <p>Call the others adjective2, noun1 and noun2.</p>
+    </div>
+</div>
+</div>
+
+<div class="row">
+  <!--Lesson Checkbox Div-->
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span></span>
+          </label>
+        </p>
+      </form>
+    </div>
+  </div>
+  <!--Instruction Div-->
+  <div class="col s6">
+    <div class="projectsection1">
+        <h5>Great!</h5>
+        <p>Now that we have some words, let’s print out the mad lib for the user to read. We will replace “red”, with adjective 1, “violets” with noun1, “sugar” with noun2, and “sweet” with adjective2.</p>
+        <p>Let’s do this with 4 print statements. The first one is shown below.</p>
+        <p><img src="./Python_files/variables26.JPG" width="600px"></p>
+        <p>Finish the function by writing the other 3 print statements.</p>
+    </div>
+</div>
+</div>
+
+<div class="row">
+  <!--Lesson Checkbox Div-->
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span></span>
+          </label>
+        </p>
+      </form>
+    </div>
+  </div>
+  <!--Instruction Div-->
+  <div class="col s6">
+    <div class="projectsection1">
+        <h5>Getting stuck?</h5>
+        <p>The finished project is linked at the top</p>
+    </div>
+</div>
+</div>
+
+<div class="row">
+  <!--Lesson Checkbox Div-->
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span></span>
+          </label>
+        </p>
+      </form>
+    </div>
+  </div>
+  <!--Instruction Div-->
+  <div class="col s6">
+    <div class="projectsection1">
+        <h5>Challenge Mode!</h5>
+        <p>Create a new function called madLibs2() and make your own mad lib using a different poem or story. Find ideas <a href="http://www.teach-nology.com/worksheets/language_arts/madlibs/">here</a> if you get stuck.</p>
+    </div>
+</div>
+</div>
+
+<div class="row">
+  <!--Lesson Checkbox Div-->
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span></span>
+          </label>
+        </p>
+      </form>
+    </div>
+  </div>
+  <!--Instruction Div-->
+  <div class="col s6">
+    <div class="projectsection1">
+        <h5>Challenge Mode!</h5>
+        <p>Try out this <a href="https://play.kahoot.it/#/?quizId=cfa32a28-1a01-47f1-9bca-c85640bceeb8">Kahoot</a> to test out your knowledge!</p>
+    </div>
+</div>
+</div>
+
+
+
+    <!--Project Complete Banner-->
+    <div class="row blue white-text">
+        <br>
+        <h5 style="text-align:center;"></h5>
+        <br>
+    </div>
+
+        <!--Card: Prompt - Find Another Project-->
+        <div class="row">
+          <div class="col s4 offset-s4">
+            <div class="card findanotherproject">
+              <div class="card-content">
+                <div class="cardDescription">
+                  <h6>Find another project?</h6>
+                  <div class="browse">
+                    <br>
+                    <a href="techimmersion.html">
+                      <button>Browse all projects</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </body>
+    </html>
