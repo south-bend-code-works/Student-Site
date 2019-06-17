@@ -95,7 +95,7 @@
       <!--html Lesson: Directions Start Here-->
       <div class="row">
             <div class="col s6 offset-s1">
-              <h4>Syntax</h4>
+              <h4>Lists</h4>
             </div>
           </div>
 
@@ -116,10 +116,10 @@
               <!--Instruction Div-->
               <div class="col s6">
                 <div class="projectsection1">
-                    <h5>We’ve already written quite a few functions, but let’s review the syntax one more time.</h5>
-                    <p>All functions start with def, followed by the function name. After the function name comes a set of parentheses, surrounding the parameters, which are separated by commas. The second parenthesis is followed by a colon.</p>
-                    <p>Anything inside the function must be indented underneath the function definition.</p>
-                    <p><img src="./Python_files/morefunctions1.JPG"></p>
+                    <h5>Syntax</h5>
+                    <p>Square brackets <strong>[ ]</strong> denote a list.</p>
+                    <p>Lists are mutable, you can define them, and then change the length of the list, add items, or replace items inside the list.</p>
+                    <p><img src="./Python_files/lists1.JPG"></p>
                 </div>
               </div>
             </div>
@@ -141,11 +141,8 @@
               <!--Instruction Div-->
               <div class="col s6">
                 <div class="projectsection1">
-                    <h5>Parameters and Arguments</h5>
-                    <p>Parameters are the variables that let you pass information into the function.</p>
-                    <p>When you call a function and pass values into it, those values are called arguments.</p>
-                    <p>For example. Above, the parameters are called parameter1 and parameter2.</p>
-                    <p>If I called the function functionName(4, 6), then 4 and 6 would be arguments, the values that I’m putting into the function.</p>
+                    <h5>You can also add an item to a list by using the keyword <strong>append</strong>.</h5>
+                    <p><img src="./Python_files/lists2.JPG"></p>
                 </div>
               </div>
             </div>
@@ -167,16 +164,8 @@
               <!--Instruction Div-->
               <div class="col s6">
                 <div class="projectsection1">
-                    <h5>Output and Return</h5>
-                    <p>There are a few different ways to give information back to the user. So far we have used print() a lot to print information out onto the screen. If we want to give the user back a value that they can store in a variable, or use immediately for something else, we need to use <strong>return</strong>.</p>
-                    <p>Look at the examples below.</p>
-                    <p><img src="./Python_files/morefunctions2.JPG"></p>
-                    <p>If I called <strong>add(4, 5)</strong>, I could take the value 9 that is returned and use it again.</p>
-                    <p><img src="./Python_files/morefunctions3.JPG"></p>
-                    <p>However, if we used <strong>print()</strong> instead of <strong>return</strong>, we couldn’t use the value.</p>
-                    <p><img src="./Python_files/morefunctions4.JPG"></p>
-                    <p><img src="./Python_files/morefunctions5.JPG"></p>
-                    <p><i>**Note the difference in color also. Printed values are white in the terminal, while returned values are => green.**</i></p>
+                    <h5>To access a particular item in the list, use the index and square brackets to access a particular element.</h5>
+                    <p><img src="./Python_files/lists3.JPG"></p>
                 </div>
               </div>
             </div>
@@ -198,11 +187,8 @@
               <!--Instruction Div-->
               <div class="col s6">
                 <div class="projectsection1">
-                    <h5>Calling Functions from Functions</h5>
-                    <p>What if I want to use one function from inside another one?</p>
-                    <p><img src="./Python_files/morefunctions6.JPG"></p>
-                    <p><img src="./Python_files/morefunctions7.JPG"></p>
-                    <p>That totally works!</p>
+                    <h5>What if I want to use one function from inside another one?</h5>
+                    <p><img src="./Python_files/lists4.JPG"></p>
                 </div>
             </div>
           </div>
@@ -224,12 +210,51 @@
             <!--Instruction Div-->
             <div class="col s6">
               <div class="projectsection1">
-                  <h5>Dice Roll Simulator</h5>
-                  <p>Let’s start with a function that simulates rolling 1 6-sided die. We need to pick a random number from 1 to 6. We will use the <strong>random.randint()</strong> function again.</p>
-                  <p><img src="./Python_files/morefunctions8.JPG" width="400px"></p>
-                  <p>Then we can <strong>return</strong> the roll.</p>
-                  <p><img src="./Python_files/morefunctions9.JPG" width="400px"></p>
+                  <h5>To delete an item in a list, simply use the keyword <strong>del</strong>.</h5>
+                  <p><img src="./Python_files/lists5.JPG"></p>
+                  <p>The code above deletes the item at index 2 from the list a.</p>
+                  <p>Lists generally contain the same type of data (or homogenous data).</p>
               </div>
+          </div>
+        </div>
+        <!--html Lesson: Directions Start Here-->
+        <div class="row">
+            <div class="col s6 offset-s1">
+              <h4>Tuples</h4>
+            </div>
+          </div>
+
+        <div class="row">
+          <!--Lesson Checkbox Div-->
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+              </form>
+            </div>
+          </div>
+          <!--Instruction Div-->
+          <div class="col s6">
+            <div class="projectsection1">
+                <h5>Syntax</h5>
+                <p>Parentheses <strong>( )</strong> denote a tuple.</p>
+                <p>Tuples are immutable, meaning once you set their elements, you cannot change them.</p>
+                <p><img src="./Python_files/lists6.JPG"></p>
+                <p><img src="./Python_files/lists7.JPG"></p>
+                <p>Tuples often contain different types of data (heterogenous data).</p>
+              </div>
+        </div>
+      </div>
+
+      <!--html Lesson: Directions Start Here-->
+      <div class="row">
+          <div class="col s6 offset-s1">
+            <h4>Dictionaries</h4>
           </div>
         </div>
 
@@ -250,59 +275,61 @@
           <!--Instruction Div-->
           <div class="col s6">
             <div class="projectsection1">
-                <h5>Now let's write a function that rolls two 6-sided dice.</h5>
-                <p>Call rollDie twice inside this function.</p>
-                <p><img src="./Python_files/morefunctions10.JPG"></p>
-                <p>Next try a function that rolls n 6-sided dice.</p>
-                <p>Use a <strong>for loop</strong> to roll as many dice as you need. Call <strong>rollDie again in this function.</p>
-                <p><img src="./Python_files/morefunctions11.JPG"></p>
-            </div>
+                <h5>Syntax</h5>
+                <p>Curly braces <strong>{ }</strong> denote dictionaries.</p>
+                <p>Dictionaries are sets of key : value pairs. Think of them like a phone book. The key is a name, and the value would be a phone number.</p>
+                <p><img src="./Python_files/lists8.JPG"></p>
+                <p><img src="./Python_files/lists9.JPG"></p>
+                <p>Each part of the data pair is separated by a colon, and each data pair is separated by a comma.</p>
+                <p>Each pair is accessed by the key, rather than by a numerical index.</p>
+              </div>
         </div>
       </div>
 
-        <div class="row">
-                <!--Lesson Checkbox Div-->
-                <div class="col s1 offset-s1">
-                  <div class="checkbox">
-                    <form action="#">
-                      <p>
-                        <label>
-                          <input type="checkbox" />
-                          <span></span>
-                        </label>
-                      </p>
-                    </form>
-                  </div>
-                </div>
-                <!--Instruction Div-->
-                <div class="col s6">
-                  <div class="projectsection1">
-                      <h5>You try it!</h5>
-                  </div>
-              </div>
+      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+              <h5>You can delete items from a dictionary just like you can from a list.</h5>
+              <p><img src="./Python_files/lists10.JPG"></p>
             </div>
-<div class="row">
-  <!--Lesson Checkbox Div-->
-  <div class="col s1 offset-s1">
-    <div class="checkbox">
-      <form action="#">
-        <p>
-          <label>
-            <input type="checkbox" />
-            <span></span>
-          </label>
-        </p>
-      </form>
+      </div>
+    </div>
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+            <h5>Let’s say we got a new bae though, so we could add them to our phonebook.</h5>
+            <p><img src="./Python_files/lists11.JPG"></p>
+          </div>
     </div>
   </div>
-  <!--Instruction Div-->
-  <div class="col s6">
-    <div class="projectsection1">
-        <h5>Challenge Mode!</h5>
-        <p>Write a function to roll one n-sided die.</p>
-    </div>
-</div>
-</div>
 
 <div class="row">
   <!--Lesson Checkbox Div-->
@@ -322,11 +349,11 @@
   <div class="col s6">
     <div class="projectsection1">
         <h5>Challenge Mode!</h5>
-        <p>Write a function to roll x n-sided dice.</p>
+        <p>Want to use your new found list creating skills?</p>
+        <p>Try out <a href="ticktacktoe.html">Tick Tack Toe</a> to exercise your Python muscles!</p>
     </div>
 </div>
 </div>
-
     <!--Project Complete Banner-->
     <div class="row blue white-text">
         <br>
