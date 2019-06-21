@@ -119,7 +119,7 @@
                     <h5>Have you ever wanted to make your computer do the same thing a whole bunch of times?</h5>
                     <p>For instance, we may want to make the Python interpreter tell us how awesome we are a hundred times!</p>
                     <p><img src="./Python_files/loops1.JPG"></p>
-                    <p>Let’s break down how we did that.</p>
+                    <p>Let's break down how we did that.</p>
                 </div>
               </div>
             </div>
@@ -175,7 +175,7 @@
               <!--Instruction Div-->
               <div class="col s6">
                 <div class="projectsection1">
-                    <h5>Range() is a useful function that returns a list of numbers.</h5>
+                    <h5><strong>Range()</strong> is a useful function that returns a list of numbers.</h5>
                     <p>We can make as big or small a list as we want.</p>
                     <p>Look at the examples below.</p>
                     <p><img src="./Python_files/loops2.JPG"></p>
@@ -207,9 +207,9 @@
               <!--Instruction Div-->
               <div class="col s6">
                 <div class="projectsection1">
-                    <h5>So if we wanted to run a <strong>for loop</strong> 50 times, we would use syntax like this:</h5>
+                    <h5>So if we wanted to run a <strong>for</strong> loop 50 times, we would use syntax like this:</h5>
                     <p><img src="./Python_files/loops6.JPG" width="400px"></p>
-                    <p>We could also use a for loop to print every number from 0 to 24:</p>
+                    <p>We could also use a <strong>for</strong> loop to print every number from 0 to 24:</p>
                     <p><img src="./Python_files/loops7.JPG" width="400px"></p>
                 </div>
             </div>
@@ -293,11 +293,11 @@
         <!--Instruction Div-->
         <div class="col s6">
           <div class="projectsection1">
-              <h5>Let’s use <strong>for loops</strong> to write a function!</h5>
-              <p>Let’s say we want a quick way to find all the factors of a number.</p>
+              <h5>Let's use <strong>for</strong> loops to write a function!</h5>
+              <p>Let's say we want a quick way to find all the factors of a number.</p>
               <p><i>In math, a factor is all the numbers we can multiply together to get another number.</i></p>
               <p>We would need to take the number, and divide it repeatedly by all the numbers smaller than it. Any number that divides it evenly is a factor.</p>
-              <p>So let’s write this function. Start with a function definition.</p>
+              <p>So let's write this function. Start with a function definition.</p>
               <p>Remember how to write that? Call the function factors and give it one parameter <i>n</i>.</p>
               <p>Then we need a list to keep track of all our factors. We will learn more about lists soon, for now, just make a variable called <strong>factorList.</strong></p>
               <p><img src="./Python_files/loops10.JPG" width="600px"></p>
@@ -350,9 +350,10 @@
                 <div class="col s6">
                   <div class="projectsection1">
                       <p>We want to try and divide our number <i>n</i> by each one of these numbers, and see if there is a remainder. Do you remember a mathematical operator we can use for that?</p>
-                      <p>Modulus!</p>
+                      <p>A Modulus!</p>
+                      <p><i>**Also known as (%)**</i></p>
                       <br>
-                      <p>The modulus is a mathematical operation, sometimes described as "clock arithmetic." It really is used to wrap around cycles.</p>
+                      <p>The modulus is a mathematical operation, sometimes described as <strong>clock arithmetic</strong>. It really is used to wrap around cycles.</p>
                       <p>Think of a clock: Suppose you look at a clock in military time, where the range of times goes from 0:00 - 23.59. Now if you wanted something to happen every day at midnight, you would want the current time mod 24 to be zero:</p>
                       <p><strong>if (hour % 24 == 0):</strong></p>
                       <p>Now back to our function!</p>
@@ -401,7 +402,7 @@
             <!--Instruction Div-->
             <div class="col s6">
               <div class="projectsection1">
-                  <p>So let’s add <i>i</i> to our factorList.</p>
+                  <p>So let's add <i>i</i> to our <strong>factorList</strong>.</p>
                   <img src="./Python_files/loops13.JPG" width="600px"></>
               </div>
           </div>
@@ -479,8 +480,8 @@
                 <!--Instruction Div-->
                 <div class="col s6">
                   <div class="projectsection1">
-                    <p>So <strong>for loops</strong> are very useful if we know how many times we want a bit of code to happen. But what if we’re not sure how many times something needs to happen? We can use a <strong>while loop</strong> for this.</p>
-                    <p><strong>While loops</strong> are just like <strong>for loops</strong>, they repeat code, the difference is that <strong>while loops</strong> use a boolean expression to know when to stop.</p>
+                    <p>So <strong>for</strong> loops are very useful if we know how many times we want a bit of code to happen. But what if we're not sure how many times something needs to happen? We can use a <strong>while loop</strong> for this.</p>
+                    <p><strong>While</strong> loops are just like <strong>for</strong> loops, they repeat code, the difference is that <strong>while loops</strong> use a boolean expression to know when to stop.</p>
                     <p><i>A Boolean expression is a logical statement that is either TRUE or FALSE.</i></p>
                     <p>See the example below:</p>
                     <img src="./Python_files/loops17.JPG">
@@ -546,9 +547,9 @@
                       <h5>We can easily run into some trouble here though.</h5>
                       <p>For example:</p>
                       <img src="./Python_files/loops18.JPG">
-                      <p>Do you see the problem? We’ve just created an <strong>endless loop</strong>! (you can use the stop button at the top of your screen to stop this.)</p>
-                      <p>Because x never changes value, it’s always 0, and 0 is always less than 5, so this loop keeps going forever! (or until we stop the terminal.)</p>
-                      <p>So it is very important when using while loops, to be sure that the boolean expression will become false at some point.</p>
+                      <p>Do you see the problem? We've just created an <strong>endless</strong> loop! (you can use the stop button at the top of your screen to stop this.)</p>
+                      <p>Because x never changes value, it's always 0, and 0 is always less than 5, so this loop keeps going forever! (or until we stop the terminal.)</p>
+                      <p>So it is very important when using <strong>while</strong> loops, to be sure that the boolean expression will become false at some point.</p>
                   </div>
               </div>
             </div>
@@ -653,7 +654,7 @@
                             <!--Instruction Div-->
                             <div class="col s6">
                               <div class="projectsection1">
-                                  <h5>Let’s write a guessing game!</h5>
+                                  <h5>Let's write a guessing game!</h5>
                                   <p>We will call it <strong>guessGame</strong>, and the game will pick a number from 1 to 100, and let the user guess repeatedly until they find the right number.</p>
                                   <p>Start with a function definition. Make sure this is at the far left side of the script.</p>
                               </div>
@@ -681,7 +682,7 @@
                                           <li>Ask the user to pick a number.</li>
                                           <li>Pick a random number.</li>
                                           <li>Check to see if the user guessed right.</li>
-                                          <li>If they didn’t, tell them too high or too low.</li>
+                                          <li>If they didn't, tell them too high or too low.</li>
                                           <li>Let them guess again.</li>
                                           <li>Repeat 3 until the user guesses right.</li>
                                           <li>We will need to use input, the random module and a while loop. See what you can do!</li>
@@ -755,7 +756,7 @@
                               <div class="projectsection1">
                                   <h5>Pick a random answer.</h5>
                                   <p><img src="./Python_files/loops23.JPG" width="600px"></p>
-                                  <p>This picks a random integer (randint) from 1 to 100.</p>
+                                  <p>This picks a random integer <strong>(randint)</strong> from 1 to 100.</p>
                               </div>
                           </div>
                         </div>

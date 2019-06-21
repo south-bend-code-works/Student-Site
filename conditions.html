@@ -45,7 +45,7 @@
       <h4 class="projectTitle">Lesson 4 - Conditionals and Control Flow</h4>
         <h5>Background Info</h5>
         <p>This lesson will teach you one of the most fundamental parts of programming - boolean logic and decision branching!</p>
-        <p>Python is a loosely typed language, which means that when you define a variable, you don’t need to tell the interpreter what kind of data is being  stored in the variable. The Python interpreter will just figure out what kind of variable each one is when it runs.</p>
+        <p>Python is a loosely typed language, which means that when you define a variable, you don't need to tell the interpreter what kind of data is being  stored in the variable. The Python interpreter will just figure out what kind of variable each one is when it runs.</p>
         <br>
         <h5>Helpful Links</h5>
         <p><a href="repl.it">repl.it</a> - an online interpreter that we will use for writing our Python code.</p>
@@ -192,9 +192,9 @@
               <!--Instruction Div-->
               <div class="col s6">
                 <div class="projectsection1">
-                    <h5>If I’m writing a voting function, I’ll want a different output based on the user’s age. If the user is under 18, they can’t vote, but if they are 18 or above, they can vote.</h5>
+                    <h5>If I'm writing a voting function, I'll want a different output based on the user's age. If the user is under 18, they can't vote, but if they are 18 or above, they can vote.</h5>
                     <p>If user is 18 or more -> can vote</p>
-                    <p>If user is under 18 -> can’t vote</p>
+                    <p>If user is under 18 -> can't vote</p>
                     <br>
                     <p><i>Notice the word <strong>if</strong>! That word is very important in programming.</i></p>
                 </div>
@@ -228,7 +228,7 @@
                 <div class="projectsection1">
                     <h5>Let's write our first <strong>if</strong> statement.</h5>
                     <p>We will write a simple function that tells whether or not we can vote.</p>
-                    <p>In your repl.it script editor, define a function called canVote(age).</p>
+                    <p>In your repl.it script editor, define a function called <strong>canVote(age)</strong>.</p>
                     <p><img src="./Python_files/conditions8.JPG" width="400px"></p>
                 </div>
             </div>
@@ -252,7 +252,7 @@
             <div class="col s6">
               <div class="projectsection1">
                   <p>In this function definition, age is a parameter - a bit of data that the function is expecting to receive when it is called. We will use this age parameter to determine how to respond to the user.</p>
-                  <p>Let’s write our first if statement. Note the syntax - <strong>if</strong> <i>boolean expression:</i></p>
+                  <p>Let's write our first if statement. Note the syntax - <strong>if</strong> <i>boolean expression:</i></p>
                   <p><img src="./Python_files/conditions9.JPG" width="400px"></p>
               </div>
           </div>
@@ -298,7 +298,7 @@
         <!--Instruction Div-->
         <div class="col s6">
           <div class="projectsection1">
-              <p>Let’s run this function and test it out. Press run at the top of the page, then call the function in the terminal and give it an age.</p>
+              <p>Let's run this function and test it out. Press run at the top of the page, then call the function in the terminal and give it an age.</p>
               <p><img src="./Python_files/conditions11.JPG" width="600px"></p>
               <p>Great!</p>
           </div>
@@ -324,7 +324,7 @@
         <div class="projectsection1">
             <p>What if we try an age over 18?</p>
             <p><img src="./Python_files/conditions12.JPG"></p>
-            <p>Nothing happens! We haven’t told our function what to do if the user is over 18. We will do that next.</p>
+            <p>Nothing happens! We haven't told our function what to do if the user is over 18. We will do that next.</p>
             <p>The second part of an <strong>if, else</strong> statement is the else.</p>
         </div>
     </div>
@@ -350,7 +350,7 @@
                       <p>What do we want to happen if the age is not less than 18? Tell the user that they can vote.</p>
                       <img src="./Python_files/conditions13.JPG">
                       <p><i>**Note that if and else must be at the same indent level to be paired with each other.**</i></p>
-                      <p>So if age < 18, the function prints <strong>Sorry, you’re too young to vote.</strong>, and otherwise, it prints <strong>Congrats! You can vote.</strong></p>
+                      <p>So if age < 18, the function prints <strong>Sorry, you're too young to vote.</strong>, and otherwise, it prints <strong>Congrats! You can vote.</strong></p>
                   </div>
               </div>
             </div>
@@ -397,10 +397,10 @@
             <!--Instruction Div-->
             <div class="col s6">
               <div class="projectsection1">
-                  <h5>What if the user is exactly 18? Let’s give them a special message.</h5>
-                  <p>Elif is short for else if. If the age is under 18, the user can’t vote, but if the age is exactly 18, let’s tell them welcome to adulthood, and otherwise just say that they can vote.</p>
+                  <h5>What if the user is exactly 18? Let's give them a special message.</h5>
+                  <p>Elif is short for else if. If the age is under 18, the user can't vote, but if the age is exactly 18, let's tell them welcome to adulthood, and otherwise just say that they can vote.</p>
                   <p>The order of if, elif and else matters. <strong>If</strong> has to be first, and <strong>else</strong> has to be last.</p>
-                  <p>So if age < 18 -> You can’t vote</p>
+                  <p>So if age < 18 -> You can't vote</p>
                   <p>Else if age == 18 -> Welcome to adulthood</p>
                   <p>Else -> You can vote</p>
               </div>
@@ -590,7 +590,7 @@
                         <!--Instruction Div-->
                         <div class="col s6">
                           <div class="projectsection1">
-                              <h5>Let's put it all together and make a game of rock paper scissors!</h5>
+                              <h5>Let's put it all together and make a game of rock, paper, scissors!</h5>
                               <p>Remember how to play?</p>
                               <p>You and a friend each pick rock, paper or scissors and reveal them at the same time.</p>
                               <br>
@@ -622,7 +622,7 @@
                                   <ol>
                                     <li>We need to ask the user to choose between rock, paper and scissors.</li>
                                     <li>We need to have the computer randomly pick between rock, paper and scissors</li>
-                                    <li>We need to compare the user’s choice with the computer’s choice and see who won.</li>
+                                    <li>We need to compare the user's choice with the computer's choice and see who won.</li>
                                     <li>We need to tell the user who won and why.</li>
                                   </ol>
                               </div>
@@ -693,7 +693,7 @@
                   <!--Instruction Div-->
                   <div class="col s6">
                     <div class="projectsection1">
-                      <h5>We can store the user’s answer in a variable called userInput - which will be a String variable.</h5>
+                      <h5>We can store the user's answer in a variable called userInput - which will be a String variable.</h5>
                       <p>Now how do we get the program to pick a random option? We will use a module called random.</p>
                       <p>A module is a set of already written Python code that we can import into our Python script and use. We will be using the random module.</p>
                       <p>Imports always happen at the start of a script. </p>
@@ -720,7 +720,7 @@
                       <div class="col s6">
                         <div class="projectsection1">
                           <h5>The random module has a lot of really useful code inside it.</h5>
-                          <p>But for this lesson, we will just use one function, choice().</p>
+                          <p>But for this lesson, we will just use one function, <strong>choice()</strong>.</p>
                           <p><strong>random.choice()</strong> lets us generate a random choice from a list of options. We just need to choose <strong>r, p</strong> or <strong>s</strong>.</p>
                           <p><img src="./Python_files/conditions25.JPG" width="500px"></p>
                       </div>
@@ -744,10 +744,10 @@
                 <!--Instruction Div-->
                 <div class="col s6">
                   <div class="projectsection1">
-                      <h5>Now we need to compare the user’s choice to the computer’s choice.</h5>
-                      <p>Let’s work out what all the possibilities are.</p>
+                      <h5>Now we need to compare the user's choice to the computer's choice.</h5>
+                      <p>Let's work out what all the possibilities are.</p>
                       <p><img src="./Python_files/conditions26.JPG"></p>
-                      <p>That’s 9 different options! This is going to be a big if, elif, else statement! Can we simplify it at all?</p>
+                      <p>That's 9 different options! This is going to be a big if, elif, else statement! Can we simplify it at all?</p>
                       <p>Do you notice any patterns in the table?</p>
                   </div>
               </div>
@@ -770,8 +770,8 @@
               <!--Instruction Div-->
               <div class="col s6">
                 <div class="projectsection1">
-                  <h5>If the computer and the user choose the same tool, there’s a tie, no matter what the tool is.</h5>
-                    <p>Let’s start with that!</p>
+                  <h5>If the computer and the user choose the same tool, there's a tie, no matter what the tool is.</h5>
+                    <p>Let's start with that!</p>
                     <p>If userInput == computerChoice:</p>
                     <p><i>->Tie</i></p>
                     <p><img src="./Python_files/conditions27.JPG" width="500px"></p>
@@ -796,7 +796,7 @@
             <div class="col s6">
               <div class="projectsection1">
                   <h5>Then all we need to do is code in the other 6 possibilities.</h5>
-                  <p>I’ll do one, and you do the rest.</p>
+                  <p>I'll do one, and you do the rest.</p>
                   <p>Elif userInput == <strong>r</strong> and computerChoice == <strong>p</strong>:</p>
                   <p><i>-> Computer wins</i></p>
                   <p><img src="./Python_files/conditions28.JPG" width="500px"></p>
