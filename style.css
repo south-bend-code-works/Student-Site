@@ -378,6 +378,9 @@ background-position: center; background-size: contain;}
 #functions2BG{background-image: url('./Python_files/functions.jpg');}
 #listsBG{background-image: url('./Python_files/lists.jpg');}
 #hangmanBG{background-image: url('./Python_files/hangman.jpg');}
+#pythonadventureBG{background-image: url('./Python_files/pythonadventure.GIF');}
+#tictactoeBG{background-image: url('./Python_files/tictactoe.GIF');}
+
 
 /*JS Images */
 #codecademyBG{background-image: url('Codecademy.png');
