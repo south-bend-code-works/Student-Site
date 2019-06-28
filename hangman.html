@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="main.js"></script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Project 1 - Hangman</title>
+  </head>
+
+<body>
+
+  <!--Nav bar  -->
+  <nav class="light-blue lighten-1">
+    <div class="nav-wrapper">
+      <a href="#!"></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="hide-on-med-and-down">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="scratch.html">Ages 7-12</a></li>
+        <li><a href="techimmersion.html">Ages 13-18</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="home.html">Home</a></li>
+    <li><a href="scratch.html">Ages 7-12</a></li>
+    <li><a href="techimmersion.html">Ages 13-18</a></li>
+  </ul>
+
+  <!--html Lesson: Project Title -->
+  <div class="row">
+    <div class="col s6 offset-s1">
+      <h4 class="projectTitle">Project 1 - Hangman</h4>
+        <h5>Background Info</h5>
+        <p>Hangman is a fun letter guessing game. Play a few rounds <a href="https://hangmanwordgame.com/?fca=1&success=0#/">here</a> if you’re not familiar with how the game works.</p>
+        <br>
+        <h5>Helpful Links</h5>
+        <p><a href="repl.it">repl.it</a> - an online interpreter that we will use for writing our Python code.</p>
+        <p><a href="https://repl.it/@kristenhaubold/SimpleHangman">https://repl.it/@kristenhaubold/SimpleHangman</a>Finished game, if you get stuck.</p>
+        <br>
+        <h5>End Product</h5>
+        <p>A hangman game to play with your friends!</p>
+    </div>
+  <div class="row">
+      <div class="col s6 offset-s1">
+          </div>
+    </div>
+  <br>
+
+      <!--html Lesson: Directions Start Here-->
+      <div class="row">
+          <div class="col s6 offset-s1">
+            <h4>Let's get started!</h4>
+          </div>
+        </div>
+
+        <div class="row">
+              <!--Lesson Checkbox Div-->
+              <div class="col s1 offset-s1">
+                <div class="checkbox">
+                  <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span></span>
+                      </label>
+                    </p>
+                  </form>
+                </div>
+              </div>
+              <!--Instruction Div-->
+              <div class="col s6">
+                <div class="projectsection1">
+                        <h5>First steps</h5>
+                        <p>Open up your repl on <a href="repl.it">repl.it</a>.</p>
+                        <p>Create a new repl, name it <strong>Hangman</strong>.</p>
+                        <p>Create a words.txt file that contains a list of possible secret words, with each word being on a new line.</p>
+                        <p><img src="./Python_files/hangman1.JPG"></p>
+                </div>
+            </div>
+          </div>
+          <!--html Lesson: Directions Start Here-->
+          <div class="row">
+              <div class="col s6 offset-s1">
+                <h4>How to Code Hangman in Python:</h4>
+                <h6>Picking a random word.</h6>
+              </div>
+            </div>
+
+            <div class="row">
+              <!--Lesson Checkbox Div-->
+              <div class="col s1 offset-s1">
+                <div class="checkbox">
+                  <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span></span>
+                      </label>
+                    </p>
+                  </form>
+                </div>
+              </div>
+              <!--Instruction Div-->
+              <div class="col s6">
+                <div class="projectsection1">
+                    <p>Read in and store all of the words from your <strong>words.txt</strong> file</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <!--Lesson Checkbox Div-->
+              <div class="col s1 offset-s1">
+                <div class="checkbox">
+                  <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span></span>
+                      </label>
+                    </p>
+                  </form>
+                </div>
+              </div>
+              <!--Instruction Div-->
+              <div class="col s6">
+                <div class="projectsection1">
+                    <p>Randomly select a word from your list of words</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <!--Lesson Checkbox Div-->
+              <div class="col s1 offset-s1">
+                <div class="checkbox">
+                  <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span></span>
+                      </label>
+                    </p>
+                  </form>
+                </div>
+              </div>
+              <!--Instruction Div-->
+              <div class="col s6">
+                <div class="projectsection1">
+                    <p>Wrap this code in a <strong>function</strong> that <strong>returns</strong> the random word, with no white space at the end of the word.</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <!--Lesson Checkbox Div-->
+              <div class="col s1 offset-s1">
+                <div class="checkbox">
+                  <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span></span>
+                      </label>
+                    </p>
+                  </form>
+                </div>
+              </div>
+              <!--Instruction Div-->
+              <div class="col s6">
+                <div class="projectsection1">
+                    <p>To define the function:</p>
+                    <p><i>def getWord():</i></p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <!--Lesson Checkbox Div-->
+              <div class="col s1 offset-s1">
+                <div class="checkbox">
+                  <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span></span>
+                      </label>
+                    </p>
+                  </form>
+                </div>
+              </div>
+              <!--Instruction Div-->
+              <div class="col s6">
+                <div class="projectsection1">
+                    <p>The first step in file input is to open the file</p>
+                    <p><i>words_file = open(“words.txt”)</i></p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <!--Lesson Checkbox Div-->
+              <div class="col s1 offset-s1">
+                <div class="checkbox">
+                  <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span></span>
+                      </label>
+                    </p>
+                  </form>
+                </div>
+              </div>
+              <!--Instruction Div-->
+              <div class="col s6">
+                <div class="projectsection1">
+                    <p>The readlines function will read in each line from an opened file and store them in a list.</p>
+                    <p><i>words = words_file.readlines()</i></p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <!--Lesson Checkbox Div-->
+              <div class="col s1 offset-s1">
+                <div class="checkbox">
+                  <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span></span>
+                      </label>
+                    </p>
+                  </form>
+                </div>
+              </div>
+              <!--Instruction Div-->
+              <div class="col s6">
+                <div class="projectsection1">
+                    <p>How do I determine how many words are in my list?</p>
+                    <p><i>len(words)</i></p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <!--Lesson Checkbox Div-->
+              <div class="col s1 offset-s1">
+                <div class="checkbox">
+                  <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span></span>
+                      </label>
+                    </p>
+                  </form>
+                </div>
+              </div>
+              <!--Instruction Div-->
+              <div class="col s6">
+                <div class="projectsection1">
+                    <p>But the question is, how do you generate a random number?</p>
+                    <ol>
+                      <li>Use the random library! To use a library, you must import it at the top of your python file: import random</li>
+                      <li><i>random_number = random.randint(a, b)</i> will set the random_number variable to a random number between a and b</li>
+                    </ol>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <!--Lesson Checkbox Div-->
+              <div class="col s1 offset-s1">
+                <div class="checkbox">
+                  <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span></span>
+                      </label>
+                    </p>
+                  </form>
+                </div>
+              </div>
+              <!--Instruction Div-->
+              <div class="col s6">
+                <div class="projectsection1">
+                    <p>So, how do I access a word from the list of words? </p>
+                    <p><i>word = words[0]</i> will set the <strong>word</strong> variable to the first word in the list</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <!--Lesson Checkbox Div-->
+              <div class="col s1 offset-s1">
+                <div class="checkbox">
+                  <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span></span>
+                      </label>
+                    </p>
+                  </form>
+                </div>
+              </div>
+              <!--Instruction Div-->
+              <div class="col s6">
+                <div class="projectsection1">
+                    <p>To remove white space from a string, use <i>myString.strip()</i></p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <!--Lesson Checkbox Div-->
+              <div class="col s1 offset-s1">
+                <div class="checkbox">
+                  <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span></span>
+                      </label>
+                    </p>
+                  </form>
+                </div>
+              </div>
+              <!--Instruction Div-->
+              <div class="col s6">
+                <div class="projectsection1">
+                    <p>Finally, return the word</p>
+                    <p><i>return word</i></p>
+                </div>
+              </div>
+            </div>
+
+        <!--html Lesson: Directions Start Here-->
+        <div class="row">
+            <div class="col s6 offset-s1">
+              <h4>Running the game</h4>
+            </div>
+          </div>
+
+        <div class="row">
+          <!--Lesson Checkbox Div-->
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+              </form>
+            </div>
+          </div>
+          <!--Instruction Div-->
+          <div class="col s6">
+            <div class="projectsection1">
+                <p>Create a way to store the player’s correct guesses, a way of storing their incorrect guesses, a way of storing the number of chances they have used up, and a way of storing if the game is over or not.</p>
+                <ul>
+                  <li>Make 5 variables</li>
+                <ol>
+                  <li>A list for correct guesses</li>
+                  <li>A list for incorrect guesses</li>
+                  <li>An integer for chances</li>
+                  <li>A boolean for whether the game is over or not</li>
+                  <li>A string to store the secret word in</li>
+                </ol>
+              </ul>
+              </div>
+        </div>
+      </div>
+
+        <div class="row">
+          <!--Lesson Checkbox Div-->
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+              </form>
+            </div>
+          </div>
+          <!--Instruction Div-->
+          <div class="col s6">
+            <div class="projectsection1">
+                <p>Set the secret word using <strong>getWord()</strong></p>
+              </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+              <p>Print out an underscore ( _ ) for every letter in the secret word that you have randomly chosen from the list.</p>
+              <ol>
+                <li>Use a for loop to loop through every letter in a string.</li>
+                <ul>
+                  <li><i>for letter in myString:</i></li>
+                </ul>
+                <li>Remember, before the player has guessed any letters, you want to print out an underscore, not the letter.</li>
+                <li>Python automatically adds a new line character after each print statement. To add a space instead of a new line, you can change what is added at the end of the line like this:</li>
+                <ul>
+                  <li><i>print(“_”, end=’  ‘)</i></li>
+                </ul>
+              </ol>
+            </div>
+      </div>
+    </div>
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+            <p>Ask the player to guess a letter</p>
+            <ol>
+              <li>To collect user input, use the input function:</li>
+              <ul>
+                <li><i>user_input = input(“\nUser, give me some input: “):</i></li>
+              </ul>
+              <li>The <i>\n</i> character is called the new line character, and will add a line before the string. It’s helpful for making the text output look nicer/more organized.</li>
+          </ol>
+          </div>
+    </div>
+  </div>
+
+<div class="row">
+  <!--Lesson Checkbox Div-->
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span></span>
+          </label>
+        </p>
+      </form>
+    </div>
+  </div>
+  <!--Instruction Div-->
+  <div class="col s6">
+    <div class="projectsection1">
+      <p>After checking their guess, you will want to check if that guess made the player win the game, and end the game if it did.</p>
+      <ol>
+        <li>The number of letters that the player has correctly guessed will be equal to the number of unique letters in the secret word when they player has won.</li>
+        <li>A set is like a list, but every item is unique. A list can be converted into a set by using <strong>set(myList)</strong></li>
+        <li>To check if two things are equal in an if statement, remember to use two equals signs ( == ) instead of just one ( = )</li>
+        <ul>
+          <li>len(correct_guesses) == len(set(secret_word))</li>
+        </ul>
+    </ol>
+    </div>
+</div>
+</div>
+<div class="row">
+  <!--Lesson Checkbox Div-->
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span></span>
+          </label>
+        </p>
+      </form>
+    </div>
+  </div>
+  <!--Instruction Div-->
+  <div class="col s6">
+    <div class="projectsection1">
+      <p>Modify your code so that you print out the correct letter instead of an underscore if the player has already correctly guessed that letter. (Confused? Go back to step 3)</p>
+    </div>
+</div>
+</div>
+<div class="row">
+  <!--Lesson Checkbox Div-->
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span></span>
+          </label>
+        </p>
+      </form>
+    </div>
+  </div>
+  <!--Instruction Div-->
+  <div class="col s6">
+    <div class="projectsection1">
+      <p>Make sure that you keep asking the player to guess a letter, as long as they haven’t guessed every letter and they haven’t lost the game</p>
+    </div>
+</div>
+</div>
+<div class="row">
+  <!--Lesson Checkbox Div-->
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span></span>
+          </label>
+        </p>
+      </form>
+    </div>
+  </div>
+  <!--Instruction Div-->
+  <div class="col s6">
+    <div class="projectsection1">
+      <p>Put all your game code inside a while loop. Be sure to check the indentation!</p>
+      <p><img src="./Python_files/hangman3.JPG"></p>
+    </div>
+</div>
+</div>
+<div class="row">
+  <!--Lesson Checkbox Div-->
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span></span>
+          </label>
+        </p>
+      </form>
+    </div>
+  </div>
+  <!--Instruction Div-->
+  <div class="col s6">
+    <div class="projectsection1">
+      <h5>Try it out!</h5>
+      <p>Does it work?</p>
+    </div>
+</div>
+</div>
+
+<div class="row">
+  <!--Lesson Checkbox Div-->
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span></span>
+          </label>
+        </p>
+      </form>
+    </div>
+  </div>
+  <!--Instruction Div-->
+  <div class="col s6">
+    <div class="projectsection1">
+      <h5>Challenge Mode!</h5>
+      <p>Your game likely is only built for single letter guesses right now...try to add/modify your code to allow the player to guess the entire word!</p>
+    </div>
+</div>
+</div>
+<div class="row">
+  <!--Lesson Checkbox Div-->
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span></span>
+          </label>
+        </p>
+      </form>
+    </div>
+  </div>
+  <!--Instruction Div-->
+  <div class="col s6">
+    <div class="projectsection1">
+      <h5>Challenge Mode!</h5>
+      <p>Let's make this more like an online game. Allow the player to play multiple rounds, and keep track of wins and losses</p>
+    </div>
+</div>
+</div>
+
+    <!--Project Complete Banner-->
+    <div class="row blue white-text">
+        <br>
+        <h5 style="text-align:center;"></h5>
+        <br>
+    </div>
+
+        <!--Card: Prompt - Find Another Project-->
+        <div class="row">
+          <div class="col s4 offset-s4">
+            <div class="card findanotherproject">
+              <div class="card-content">
+                <div class="cardDescription">
+                  <h6>Find another project?</h6>
+                  <div class="browse">
+                    <br>
+                    <a href="techimmersion.html">
+                      <button>Browse all projects</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </body>
+    </html>
