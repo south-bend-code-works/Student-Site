@@ -76,7 +76,7 @@
         </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h6>Create a new folder in your project folder. Name it "Typing Animation".</h6>
+          <h6>Create a new folder in your project folder. Name it <strong>Typing Animation</strong>.</h6>
           </div>
         </div>
     </div>
@@ -96,7 +96,7 @@
         </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h6>Create a new html file called "index.html".</h6>
+          <h6>Create a new html file called <strong>index.html</strong>.</h6>
         </div>
       </div>
     </div>
@@ -116,7 +116,7 @@
         </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h6>Create a new css file called "style.css".</h6>
+          <h6>Create a new css file called <strong>style.css</strong>.</h6>
         </div>
       </div>
     </div>
@@ -137,6 +137,8 @@
       <div class="col s6">
         <div class="projectsection1">
           <h6>Link the style sheet in the header of your html file.</h6>
+          <p>Can't remember how to?</p>
+          <p>Refresh your html <a href="https://south-bend-code-school.github.io/Student-Site/introhtml.html">knowledge</a></p>
         </div>
       </div>
     </div>
@@ -184,7 +186,7 @@
         </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h6>Using a &lt;p&gt; tag or any header tag (&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt; etc.), type the words that you want to be your typing animation.</h6>
+          <h6>Using a <strong>&lt;p&gt;</strong> tag or any header tag (<strong>&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;</strong> etc.), type the words that you want to be your typing animation.</h6>
         </div>
       </div>
     </div>
@@ -221,22 +223,8 @@
     <div class="col s6">
       <div class="projectsection1">
         <h6>Add a typing I-beam within span tags. The I-beam is the same key as backslash (above the return key).</h6>
+        <p><img src="./html_images/typing1.JPG" width="600px"></p>
       </div>
-    </div>
-  </div>
-
-  <!--Collapsible Div-->
-  <div class="row">
-    <div class="col s6 offset-s2">
-      <ul class="collapsible">
-         <li>
-           <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>Hint</div>
-           <div class="collapsible-body"><em>
-                  &lt;p&gt;Hello World...&lt;span&gt;|&lt;/span&gt;&lt;/p&gt;<br></em>
-
-              </div>
-         </li>
-      </ul>
     </div>
   </div>
 
@@ -255,10 +243,26 @@
       </div>
     <div class="col s6">
       <div class="projectsection1">
-        <h6>Give your paragraph or heading tag an id, and give your span a different id.</h6>
+        <h6>Give your paragraph or heading tag an <strong>id</strong>, and give your <strong>span</strong> a different <strong>id</strong>.</h6>
       </div>
     </div>
   </div>
+
+    <!--Collapsible Div-->
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+           <li>
+             <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>Hint</div>
+             <div class="collapsible-body">
+               <p><img src="./html_images/typing11.JPG" width="300px"></p>
+               <p><img src="./html_images/typing12.JPG" width="500px"></p>
+
+                </div>
+           </li>
+        </ul>
+      </div>
+    </div>
 
 
   <br>
@@ -285,12 +289,33 @@
       </div>
     <div class="col s6">
       <div class="projectsection1">
-        <h6>Call the id for your text and set the following properties:<br><br>
+        <h6>Call the <strong>id</strong> for your text and set the following properties:<br><br>
+          <p><img src="./html_images/typing3.JPG"></p>
           <em>White-space: nowrap </em>will push the text all on one line, so that the paragraph is continuously uncovered in pieces.<br><br>
           <em>Overflow: hidden </em>will hide the words until the animation starts.</h6>
       </div>
     </div>
   </div>
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <ul class="collapsible">
+         <li>
+           <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>Hint</div>
+           <div class="collapsible-body"><em>
+             <p><img src="./html_images/typing2.JPG"></p>
+                  </em>
+
+              </div>
+         </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s6 offset-s1">
+      <h6>Next, we will write the animation for the text.</h6>
+    </div>
+  </div>
 
   <div class="row">
     <div class="col s1 offset-s1">
@@ -307,7 +332,9 @@
       </div>
     <div class="col s6">
       <div class="projectsection1">
-        <h6>Now we will write the animation for the text.</h6>
+        <h6><strong>Keyframes</strong> are CSS rules that tell our animation what to do.</h6>
+        <br>
+        <h6>Use <strong>@keyframes</strong> as a new selector followed by the name of your animation and braces <br>(make sure your @keyframes is outside of the brackets for the element you’re animating!)</h6>
       </div>
     </div>
   </div>
@@ -327,48 +354,22 @@
       </div>
     <div class="col s6">
       <div class="projectsection1">
-        <h6>Keyframes are CSS rules that tell our animation what to do.</h6>
+        <h6>In your CSS file, create a new @keyframes called <strong>type</strong>.</h6>
       </div>
     </div>
   </div>
 
   <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-            <p>
-              <label>
-                <input type="checkbox" />
-                <span></span>
-              </label>
-            </p>
-          </form>
-        </div>
-      </div>
-    <div class="col s6">
-      <div class="projectsection1">
-        <h6>Use “@keyframes” as a new selector followed by the name of your animation and braces <br>(make sure your @keyframes is outside of the brackets for the element you’re animating!)</h6>
-      </div>
-    </div>
-  </div>
+    <div class="col s6 offset-s2">
+      <ul class="collapsible">
+         <li>
+           <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>Hint</div>
+           <div class="collapsible-body">
+             <p><img src="./html_images/typing4.JPG"></p>
 
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-            <p>
-              <label>
-                <input type="checkbox" />
-                <span></span>
-              </label>
-            </p>
-          </form>
-        </div>
-      </div>
-    <div class="col s6">
-      <div class="projectsection1">
-        <h6>In your CSS file, create a new @keyframes called "type".</h6>
-      </div>
+              </div>
+         </li>
+      </ul>
     </div>
   </div>
 
@@ -397,12 +398,8 @@
       <ul class="collapsible">
          <li>
            <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>Example</div>
-           <div class="collapsible-body"><em>@keyframes type { <br>
-                 from{ }<br>
-                 to{ }<br>
-                }
-              </em>
-
+           <div class="collapsible-body">
+             <p><img src="./html_images/typing5.JPG"></p>
               </div>
          </li>
       </ul>
@@ -424,27 +421,17 @@
       </div>
     <div class="col s6">
       <div class="projectsection1">
-        <h6>Tell the keyframe to go <em>from</em> width: 0, <em>to</em> width: 100%.</h6>
+        <h6>Tell the keyframe to go</h6>
+        <p><img src="./html_images/typing6.JPG" width="200px"></p>
+        <p>and</p>
+        <p><img src="./html_images/typing7.JPG" width="200px"></p>
       </div>
     </div>
   </div>
 
-
-
   <div class="row">
-    <div class="col s6 offset-s2">
-      <ul class="collapsible">
-         <li>
-           <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>Example</div>
-           <div class="collapsible-body"><em>@keyframes type { <br>
-                 from{width:0; }<br>
-                 to{width: 100%; }<br>
-                }
-              </em>
-
-              </div>
-         </li>
-      </ul>
+    <div class="col s6 offset-s1">
+      <h6>Now we just need one more animation, for the blinking cursor.</h6>
     </div>
   </div>
 
@@ -463,27 +450,7 @@
       </div>
     <div class="col s6">
       <div class="projectsection1">
-        <h6>Now we just need one more animation, for the blinking cursor.</h6>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-            <p>
-              <label>
-                <input type="checkbox" />
-                <span></span>
-              </label>
-            </p>
-          </form>
-        </div>
-      </div>
-    <div class="col s6">
-      <div class="projectsection1">
-        <h6>Add a new @keyframes called "blink" to your CSS file.</h6>
+        <h6>Add a new <strong>@keyframes</strong> called <strong>blink</strong> to your CSS file.</h6>
       </div>
     </div>
   </div>
@@ -493,12 +460,8 @@
       <ul class="collapsible">
          <li>
            <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>Example</div>
-           <div class="collapsible-body"><em>@keyframes blink{ <br>
-                 from{ }<br>
-                 to { }<br>
-                }
-              </em>
-
+           <div class="collapsible-body">
+             <p><img src="./html_images/typing8.JPG"></p>
               </div>
          </li>
       </ul>
@@ -520,44 +483,10 @@
       </div>
     <div class="col s6">
       <div class="projectsection1">
-        <h6>We need our I-beam to go from <em>color: transparent;</em> to <em> color: black;</em></h6>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s6 offset-s2">
-      <ul class="collapsible">
-         <li>
-           <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>Hint</div>
-           <div class="collapsible-body"><em>@keyframes blink{ <br>
-                 from{color: transparent;}<br>
-                 to {color: black; }<br>
-                }
-              </em>
-
-              </div>
-         </li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-            <p>
-              <label>
-                <input type="checkbox" />
-                <span></span>
-              </label>
-            </p>
-          </form>
-        </div>
-      </div>
-    <div class="col s6">
-      <div class="projectsection1">
-        <h6>Now call both animations in the appropriate classes using the <em>animation: </em>property.</h6>
+        <h6>We need our I-beam to go from</h6>
+        <p><img src="./html_images/typing9.JPG" width="300px"></p>
+        <p>to</p>
+        <p><img src="./html_images/typing10.JPG" width="300px"></p>
       </div>
     </div>
   </div>
@@ -575,29 +504,49 @@
           </form>
         </div>
       </div>
+
     <div class="col s6">
       <div class="projectsection1">
-        <h6>If you want the animations to go forever, use the infinite argument in the animation property. Also be sure to give each animation a duration of time.</h6>
+        <h6>Now call both animations in the appropriate classes using the <strong>animation:</strong> property.</h6>
       </div>
     </div>
   </div>
 
-
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+           <li>
+             <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>Hint</div>
+             <div class="collapsible-body">
+               <p><img src="./html_images/typing13.JPG"></p>
+                </div>
+           </li>
+        </ul>
+      </div>
+    </div>
 
   <div class="row">
-    <div class="col s6 offset-s2">
-      <ul class="collapsible">
-         <li>
-           <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>Hint</div>
-           <div class="collapsible-body"><em>#blinkspan{ <br>
-                 animation: blink 1.5s infinite;<br>
-                }
-              </em>
-              </div>
-         </li>
-      </ul>
+  <!--Lesson Checkbox Div-->
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span></span>
+          </label>
+        </p>
+      </form>
     </div>
   </div>
+  <!--Instruction Div-->
+  <div class="col s6">
+    <div class="projectsection1">
+      <h5>Challenge Mode!</h5>
+      <h6>If you want the animations to go forever, use the <strong>infinite</strong> argument in the <strong>animation</strong> property. Also be sure to give each animation a duration of time.</h6>
+    </div>
+</div>
+</div>
 
 <br>
 

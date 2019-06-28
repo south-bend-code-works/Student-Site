@@ -390,6 +390,11 @@ background-position: center; background-size: contain;}
 #w3schoolsBG{background-image: url('W3Schools_logo.png');
 background-position: center; background-size: contain;}
 
+/*Career Exposure Images */
+#careertestBG{background-image: url('careertest.jpg');
+
+
+
 /* =================================================================================================================================HOME PAGE CARD============================================================ */
 .agesHeading {
   text-align: center;
@@ -907,6 +912,7 @@ to{background-position: 200px, 0;}
 #blinkingcursor{
   animation: blink 1.5s infinite;
 }
+
 @keyframes type {
   from{width:0;}
   to{width:100%;}
