@@ -379,6 +379,9 @@ background-position: center; background-size: contain;}
 #functions2BG{background-image: url('./Python_files/functions.jpg');}
 #listsBG{background-image: url('./Python_files/lists.jpg');}
 #hangmanBG{background-image: url('./Python_files/hangman.jpg');}
+#pythonadventureBG{background-image: url('./Python_files/pythonadventure.GIF');}
+#tictactoeBG{background-image: url('./Python_files/tictactoe.GIF');}
+
 
 /*JS Images */
 #codecademyBG{background-image: url('Codecademy.png');
@@ -387,6 +390,11 @@ background-position: center; background-size: contain;}
 background-position: center; background-size: contain;}
 #w3schoolsBG{background-image: url('W3Schools_logo.png');
 background-position: center; background-size: contain;}
+
+/*Career Exposure Images */
+#careertestBG{background-image: url('careertest.jpg');
+
+
 
 /* =================================================================================================================================HOME PAGE CARD============================================================ */
 .agesHeading {
@@ -905,6 +913,7 @@ to{background-position: 200px, 0;}
 #blinkingcursor{
   animation: blink 1.5s infinite;
 }
+
 @keyframes type {
   from{width:0;}
   to{width:100%;}
