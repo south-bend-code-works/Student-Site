@@ -214,14 +214,12 @@ input[type='checkbox'] {
 #rockbandBG {background-image: url('rockband.png');}
 #petBG {background-image: url('pet.gif');}
 #animationBG {background-image: url('makeurownanimation.png');}
-#imaginatorBG {background-image: url('imaginator.JPG');}
 #gettheprizeBG {background-image: url('gettheprize.gif');}
 #hideandseekBG {background-image: url('hideandseek.gif');}
 #terraBG {background-image: url('terra.gif');}
 #selectionBG {background-image: url('chooseadventure.png');}
 #chatbotBG {background-image: url('chatbot.png');}
 #tellastoryBG {background-image: url('tellastory.jpg');}
-#twotruthsBG {background-image: url('twotruths.JPG');}
 #aboutmeBG {background-image: url('boolean.png');}
 #paintBG {background-image: url('paint.gif');}
 #boatBG {background-image: url('boat.gif');}
@@ -281,7 +279,6 @@ input[type='checkbox'] {
 #resourcesBG {background-image: url('resourcesBG.jpg');}
 #topofpage {background-image: url('topofpage.gif');}
 #brandingBG {background-image: url('brandingBG.jpg');}
-
 #vectorrasterBG {background-image: url('./GraphicDesignV2_files/morecolorstshirts4.jpg');}
 #colorBG{background-image: url('colorBG.jpg');}
 #colorizeBG{background-image: url('colorizeBG.jpg');}
@@ -379,9 +376,6 @@ background-position: center; background-size: contain;}
 #functions2BG{background-image: url('./Python_files/functions.jpg');}
 #listsBG{background-image: url('./Python_files/lists.jpg');}
 #hangmanBG{background-image: url('./Python_files/hangman.jpg');}
-#pythonadventureBG{background-image: url('./Python_files/pythonadventure.GIF');}
-#tictactoeBG{background-image: url('./Python_files/tictactoe.GIF');}
-
 
 /*JS Images */
 #codecademyBG{background-image: url('Codecademy.png');
@@ -390,11 +384,6 @@ background-position: center; background-size: contain;}
 background-position: center; background-size: contain;}
 #w3schoolsBG{background-image: url('W3Schools_logo.png');
 background-position: center; background-size: contain;}
-
-/*Career Exposure Images */
-#careertestBG{background-image: url('careertest.jpg');
-
-
 
 /* =================================================================================================================================HOME PAGE CARD============================================================ */
 .agesHeading {
@@ -913,7 +902,6 @@ to{background-position: 200px, 0;}
 #blinkingcursor{
   animation: blink 1.5s infinite;
 }
-
 @keyframes type {
   from{width:0;}
   to{width:100%;}
