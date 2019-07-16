@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="main.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="SBCS_favicon.png">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Tamagotchi!</title>
+  </head>
+  <body>
+    <!--Nav bar  -->
+    <nav class="light-blue lighten-1">
+      <div class="nav-wrapper">
+        <a href="#!"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="hide-on-med-and-down">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="scratch.html">Ages 7-12</a></li>
+          <li><a href="techimmersion.html">Ages 13-18</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="scratch.html">Ages 7-12</a></li>
+      <li><a href="techimmersion.html">Ages 13-18</a></li>
+    </ul>
+
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h4 class="projectTitle">Tamagotchi!</h4>
+        <p>Want a pet but worried about all of the responsibilities?</p>
+        <p>Build a website where you can take care of your own digital pet!</p>
+        <img src="./javascript_images/tamagotchi1.gif">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h4>What you will make</h4>
+        <p>Your very own digital pet to take care of!</p>
+        <a href='./tamagotchi/index.html'><h5>Check out an example HERE!</h5></a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 style='font-weight:bold'>Brainstorming Your Website</h5>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Start to think of what kind of pet you would like to have.</h5>
+          <p>It could be anything, a type of pokemon, a pet from a video game. The sky is the limit!</p>
+          </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 style="font-weight:bold;">Your Coding Environment</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Make a new folder in the code folder on your computer.</h6>
+          <br>
+          <h6>Name the folder <span style="font-weight:bold;">"YourFirstName_Tamagotchi"</span></h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Create an HTML file.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Name the HTML file <strong>index.html</strong></h6>
+          <p>Save it in your tamagotchi folder</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Set up your HTML file (doctype, html, head, title, body)</h6>
+        </div>
+      </div>
+    </div>
+
+    <!--Collapsible-->
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+         <li>
+           <div class="collapsible-header"><i class="material-icons orange-text infosection">info</i>I need a hint</div>
+           <div class="collapsible-body"><span>&lt;!DOCTYPE html&gt;
+             <br>
+             &lt;html&gt;
+             <br>
+             <span style="padding-left:5%;">&lt;head&gt;</span>
+             <br>
+             <span style="padding-left:7%;">&lt;title&gt;</span>
+             <br>
+             <span style="padding-left:7%;">&lt;/title&gt;</span>
+             <br>
+             <span style="padding-left:5%;">&lt;/head&gt;</span>
+             <br>
+             <span style="padding-left:5%;">&lt;body&gt;</span>
+             <br>
+             <span style="padding-left:5%;">&lt;/body&gt;</span>
+             <br>
+             &lt;/html&gt;
+           </span></div>
+         </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Create a CSS file.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Name the CSS file <strong>style.css</strong>.</h6>
+          <p>Save it in your tamagotchi folder</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Link your CSS file to your HTML file.</h6>
+        </div>
+      </div>
+    </div>
+
+    <!--Collapsible-->
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+         <li>
+           <div class="collapsible-header"><i class="material-icons orange-text infosection">info</i>I need a hint</div>
+           <div class="collapsible-body"><span><img style="width:60%; height:60%;" src="linkcss.png"></span></div>
+         </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Create a JavaScript file.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Name the JavaScript file <strong>index.js</strong>.</h6>
+          <p>Save it in your tamagotchi folder</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Link your JavaScript file to your HTML file.</h6>
+        </div>
+      </div>
+    </div>
+
+    <!--Collapsible-->
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+         <li>
+           <div class="collapsible-header"><i class="material-icons orange-text infosection">info</i>I need a hint</div>
+           <div class="collapsible-body"><span><img style="width:60%; height:60%;" src="./javascript_images/tamagotchi2.JPG"></span></div>
+         </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class='col s6 offset-s1'>
+        <h5 style='font-weight:bold'>Adding a title</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Add a title to your website in the body of your HTML.</h6>
+          <p>My title is <strong>Tamagotchi!</strong></p>
+          <p>I put my title in the biggest header tag. Do you remember what that is?</p>
+        </div>
+      </div>
+    </div>
+    <!--Collapsible-->
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+         <li>
+           <div class="collapsible-header"><i class="material-icons orange-text infosection">info</i>I need a hint</div>
+           <div class="collapsible-body"><span><img src="./javascript_images/tamagotchi3.JPG"></span></div>
+         </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class='col s6 offset-s1'>
+        <h5 style='font-weight:bold'>Adding Images</h5>
+        <p>Now that we gave our pet a name, let's find a bunch of images.</p>
+        <p>Part of having a tamagotchi is seeing our pet in different states, so we will be saving multiple images for our tamagotchi.</p>
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class='col s6'>
+        <div class='projectsection1'>
+          <h6>Google search for a default image for your pet: <a class='blueLink' href='https://images.google.com/'>Google Images</a></h6>
+          <p><img src="./tamagotchi/bulba.GIF"></p>
+          <p>Rename the image, name it the same name as your pet.</p>
+          <p>Save the image into your <strong>project's folder</strong></p>
+        </div>
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class='col s6'>
+        <div class='projectsection1'>
+          <h6>Now we have to find another image, let's find one that let's us know if he's hungry, thirsty, or is bored.</h6>
+          <p>Rename the image.</p>
+          <p>Save the image into your <strong>project's folder</strong></p>
+        </div>
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class='col s6'>
+        <div class='projectsection1'>
+          <h6>Let's keep on going, we need one that let's us know if the tamagotchi is passed out. This will let us know before our pet 'dies' and we lose the game.</h6>
+          <p><img src="./tamagotchi/passedout.GIF"></p>
+          <p>Rename the image. I named it something easy to remember <strong>passedout.gif</strong></p>
+          <p>Save the image into your <strong>project's folder</strong></p>
+        </div>
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class='col s6 offset-s1'>
+        <h5 style='font-weight:bold'>Stats</h5>
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class='col s6'>
+        <div class='projectsection1'>
+          <h6>Our tamagotchi will have three main stats; <strong>eating</strong>, <strong>drinking</strong>, and <strong>exercising</strong>.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class='col s6'>
+        <div class='projectsection1'>
+          <h6>Find images for all of our stats.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class='col s6 offset-s1'>
+        <h5 style='font-weight:bold'>Jumping into the HTML</h5>
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class='col s6'>
+        <div class='projectsection1'>
+          <h6>Use the &lt;img&gt; tag and paste the image address into the image tag
+            <br>
+            Your code should look like this:
+            <br>
+            <p>&lt;img src=<span style='font-weight:bold; font-style:italic;'>"pasteImageAddressHere"</span>&gt;</p>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+           <li>
+             <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>I Need a Hint</div>
+             <div class="collapsible-body">
+               <h6>Your image address is going to be it's <span style='font-weight:bold;'>Filepath</span> (Google filepath if you're not sure!) be sure you add the correct file extention(the characters after "." in your file's name) too!</h6>
+             </div>
+           </li>
+        </ul>
+      </div>
+    </div>
+    <div class='row'>
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class='col s6'>
+        <div class='projectsection1'>
+          <h6>Save Your Code</h6>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Create a div.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Add a background color to this div.</h6>
+        </div>
+      </div>
+    </div>
+
+
+    <!--Collapsible-->
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+         <li>
+           <div class="collapsible-header"><i class="material-icons orange-text infosection">info</i>I need a hint</div>
+           <div class="collapsible-body"><span><img src="./html_images/abcs2.JPG"></span></div>
+         </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>For now, let's just keep this div as red.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>For now, let's name this div red.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Time to add a title.</h6>
+          <p>This title will tell us what letter we're on, and what we're talking about.</p>
+          <img src="./html_images/abcs3.JPG" width="600px">
+          <p>But what kind of header should we use?</p>
+          <p>For the beginning title <strong>Melina's favorite things</strong> we chose the biggest header</p>
+          <p>Let's use a smaller header for our letters.</p>
+        </div>
+      </div>
+    </div>
+
+    <!--Collapsible-->
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+         <li>
+           <div class="collapsible-header"><i class="material-icons orange-text infosection">info</i>I need a hint</div>
+           <div class="collapsible-body"><span><img src="./html_images/abcs4.JPG"></span></div>
+         </li>
+        </ul>
+      </div>
+    </div>
+
+<div class='row'>
+  <div class='col s6 offset-s1'>
+    <h4>Now for the rest of the alphabet.</h4>
+  </div>
+</div>
+
+<div class='row'>
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+  <div class='col s6'>
+    <div class='projectsection1'>
+      <h6>Repeat these steps 25 more times for every letter.</h6>
+      <p>Be creative! Look for fun, interesting images for each letter.</p>
+    </div>
+  </div>
+</div>
+
+<div class='row'>
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+  <div class='col s6'>
+    <div class='projectsection1'>
+      <h6>Adding color.</h6>
+      <p>Every letter should be a different color.</p>
+      <p><img src="./html_images/abcs5.JPG"></p>
+    </div>
+  </div>
+</div>
+
+<div class='row'>
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+  <div class='col s6'>
+    <div class='projectsection1'>
+      <h6>Not sure where to find more names of colors?</h6>
+      <p><a href="https://www.w3schools.com/colors/colors_names.asp">https://www.w3schools.com/colors/colors_names.asp</a></p>
+      <p><img src="./html_images/abcs6.JPG"></p>
+      <p>Try this website out for more colors to jazz up your website!
+    </div>
+  </div>
+</div>
+
+<div class='row'>
+  <div class='col s6 offset-s1'>
+    <h5 style='font-weight:bold'>CSS</h5>
+    <h6>Styling your website</h6>
+  </div>
+</div>
+
+<div class='row'>
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+  <div class='col s6'>
+    <div class='projectsection1'>
+      <h6>To add fonts, colors, and backgrounds to your website, you’re going to use a second coding language called CSS (aka Cascading Style Sheet).</h6>
+    </div>
+  </div>
+</div>
+
+<div class='row'>
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+  <div class='col s6'>
+    <div class='projectsection1'>
+      <h6>Open your style.css file</h6>
+    </div>
+  </div>
+</div>
+
+<div class='row'>
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+  <div class='col s6'>
+    <div class='projectsection1'>
+      <h6>Link HTML+CSS Files Together</h6>
+      <p>Can't remember how? Refresh your memory and go back to <a href="biopage.html">biopage</a></p>
+    </div>
+  </div>
+</div>
+
+<div class='row'>
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+  <div class='col s6'>
+    <div class='projectsection1'>
+      <h6>Save Your Code</h6>
+    </div>
+  </div>
+</div>
+
+<div class='row'>
+  <div class='col s6 offset-s1'>
+    <h5 style='font-weight:bold'>Start Coding With CSS</h5>
+  </div>
+</div>
+
+<div class='row'>
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+  <div class='col s6'>
+    <div class='projectsection1'>
+      <h6 style='font-weight:bold'>CSS Example</h6>
+      <br>
+      <h6> CSS looks like this:</h6>
+      <p><img src="./html_images/abcs7.JPG"></p>
+
+    </div>
+  </div>
+</div>
+
+<div class='row'>
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+  <div class='col s6'>
+    <div class='projectsection1'>
+      <h6>Let's start to add CSS to our alphabet.</h6>
+      <p>Let's start with the body.</p>
+    </div>
+  </div>
+</div>
+
+<div class='row'>
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+  <div class='col s6'>
+    <div class='projectsection1'>
+      <h6>Add a body tag</h6>
+    </div>
+  </div>
+</div>
+
+    <!--Collapsible-->
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+         <li>
+           <div class="collapsible-header"><i class="material-icons orange-text infosection">info</i>I need a hint</div>
+           <div class="collapsible-body"><span><img src="./html_images/abcs8.JPG"></span></div>
+         </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class='col s6'>
+        <div class='projectsection1'>
+          <h6>Change the background color</h6>
+          <p>I chose black because it really pops the other colors.</p>
+        </div>
+      </div>
+    </div>
+
+        <!--Collapsible-->
+        <div class="row">
+          <div class="col s6 offset-s2">
+            <ul class="collapsible">
+             <li>
+               <div class="collapsible-header"><i class="material-icons orange-text infosection">info</i>I need a hint</div>
+               <div class="collapsible-body"><span><img src="./html_images/abcs10.JPG"></span></div>
+             </li>
+            </ul>
+          </div>
+        </div>
+
+    <div class='row'>
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class='col s6'>
+        <div class='projectsection1'>
+          <h6>Change the text color</h6>
+          <p>Be careful that it's harder to see white text on lighter colors, and black text on darker colors.</p>
+        </div>
+      </div>
+    </div>
+
+        <!--Collapsible-->
+        <div class="row">
+          <div class="col s6 offset-s2">
+            <ul class="collapsible">
+             <li>
+               <div class="collapsible-header"><i class="material-icons orange-text infosection">info</i>I need a hint</div>
+               <div class="collapsible-body"><span><img src="./html_images/abcs9.JPG"></span></div>
+             </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class='row'>
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </p>
+                </form>
+              </div>
+            </div>
+          <div class='col s6'>
+            <div class='projectsection1'>
+              <h6>Change the alignment.</h6>
+              <p>To make our website a little more pleasing to the eye, we want to align all of cards to the center.</p>
+            </div>
+          </div>
+        </div>
+
+            <!--Collapsible-->
+            <div class="row">
+              <div class="col s6 offset-s2">
+                <ul class="collapsible">
+                 <li>
+                   <div class="collapsible-header"><i class="material-icons orange-text infosection">info</i>I need a hint</div>
+                   <div class="collapsible-body"><span><img src="./html_images/abcs11.JPG"></span></div>
+                 </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class='row'>
+              <div class="col s1 offset-s1">
+                <div class="checkbox">
+                  <form action="#">
+                      <p>
+                        <label>
+                          <input type="checkbox" />
+                          <span></span>
+                        </label>
+                      </p>
+                    </form>
+                  </div>
+                </div>
+              <div class='col s6'>
+                <div class='projectsection1'>
+                  <h6>Making all of our images the same size</h6>
+                  <p>Since we are saving images from all over the web, they are going to be a lot of different sizes. Some way too big, some itzsy bitzy. Let's fix that.</p>
+                  <p>Make an img tag (just like you did for your body).</p>
+                </div>
+              </div>
+            </div>
+
+                <!--Collapsible-->
+                <div class="row">
+                  <div class="col s6 offset-s2">
+                    <ul class="collapsible">
+                     <li>
+                       <div class="collapsible-header"><i class="material-icons orange-text infosection">info</i>I need a hint</div>
+                       <div class="collapsible-body"><span><img src="./html_images/abcs12.JPG"></span></div>
+                     </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class='row'>
+                  <div class="col s1 offset-s1">
+                    <div class="checkbox">
+                      <form action="#">
+                          <p>
+                            <label>
+                              <input type="checkbox" />
+                              <span></span>
+                            </label>
+                          </p>
+                        </form>
+                      </div>
+                    </div>
+                  <div class='col s6'>
+                    <div class='projectsection1'>
+                      <h6>Define your height.</h6>
+                      <p>Rather than defining both the width and the height, we're just going to pick one.</p>
+                      <p>If we define both, some our pictures might be skewed (stretched out or too flat).</p>
+                      <p>So let's just define the height.</p>
+                    </div>
+                  </div>
+                </div>
+                <!--Collapsible-->
+                <div class="row">
+                  <div class="col s6 offset-s2">
+                    <ul class="collapsible">
+                     <li>
+                       <div class="collapsible-header"><i class="material-icons orange-text infosection">info</i>I need a hint</div>
+                       <div class="collapsible-body"><span><img src="./html_images/abcs13.JPG"></span></div>
+                     </li>
+                    </ul>
+                  </div>
+                </div>
+
+            <div class='row'>
+              <div class="col s1 offset-s1">
+                <div class="checkbox">
+                  <form action="#">
+                      <p>
+                        <label>
+                          <input type="checkbox" />
+                          <span></span>
+                        </label>
+                      </p>
+                    </form>
+                  </div>
+                </div>
+              <div class='col s6'>
+                <div class='projectsection1'>
+                  <h6>Save Your Code</h6>
+                </div>
+              </div>
+            </div>
+
+<div class='row'>
+  <div class='col s6 offset-s1'>
+    <h5 style='font-weight:bold'>Coding Challenge:</h5>
+    <h6>How can we change the font?</h6>
+  </div>
+</div>
+
+<div class='row'>
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+  <div class='col s6'>
+    <div class='projectsection1'>
+      <h6>Do a little research and see what yo find!</h6>
+    </div>
+  </div>
+</div>
+
+<div class='row'>
+  <div class='col s6 offset-s1'>
+    <h5> Show and instructor your finished website!</h5>
+  </div>
+</div>
+
+<!--Project Complete Banner-->
+<div class="row blue white-text">
+  <div class="col s4 offset-s4">
+    <h5 style="text-align:center;">Congrats! Project complete!</h5>
+  </div>
+</div>
+
+<!--Card: Prompt - Find Another Project-->
+<div class="row">
+  <div class="col s4 offset-s4">
+    <div class="card findanotherproject">
+      <div class="card-content">
+        <div class="cardDescription">
+          <br>
+          <h6>Find another project?</h6>
+          <div class="browse">
+            <br>
+            <a href="scratch.html">
+              <button>Browse all projects</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </body>
+</html>
