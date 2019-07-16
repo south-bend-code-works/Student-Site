@@ -258,6 +258,11 @@ input[type='checkbox'] {
 #wantedBG {background-image: url('wanted.png');}
 #wrapupBG {background-image: url('wrapup.jpg');}
 #bdayBG {background-image: url('bday.jpg');}
+#materializeBG {background-image: url('materialize.JPG');}
+#abcsBG {background-image: url('abcs.JPG');}
+#startupBG {background-image: url('startup.JPG');}
+
+
 
 
 /*Graphic Design background Images*/
@@ -376,6 +381,9 @@ background-position: center; background-size: contain;}
 #functions2BG{background-image: url('./Python_files/functions.jpg');}
 #listsBG{background-image: url('./Python_files/lists.jpg');}
 #hangmanBG{background-image: url('./Python_files/hangman.jpg');}
+#pythonadventureBG{background-image: url('./Python_files/pythonadventure.gif');}
+#tictactoeaiBG{background-image: url('./Python_files/tictactoe.gif');}
+#tictactoe2playerBG{background-image: url('./Python_files/tictactoe2player.JPG');}
 
 /*JS Images */
 #codecademyBG{background-image: url('Codecademy.png');

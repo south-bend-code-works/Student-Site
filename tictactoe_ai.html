@@ -15,7 +15,7 @@
     <script src="main.js"></script>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Project 3 - Tic Tac Toe</title>
+    <title>Project 4 - Tic Tac Toe with AI</title>
   </head>
 
 <body>
@@ -42,18 +42,19 @@
   <!--html Lesson: Project Title -->
   <div class="row">
     <div class="col s6 offset-s1">
-      <h4 class="projectTitle">Project 3 - Tic Tac Toe</h4>
+      <h4 class="projectTitle">Project 4 - Tic Tac Toe with AI</h4>
         <h5>Background Info</h5>
         <p>Tic Tac Toe is a game usually played with two people. Players take turns placing either <strong>X</strong> or <strong>O</strong>, and the first player to get three in a row wins!</p>
+        <p>This time you will be creating a game with an AI at the end, so you can play at any time!</p>
         <p>We will also want to put a function at the end that will let us play again.</p>
         <p><img src="./Python_files/tictactoe1.JPG"></p>
         <br>
         <h5>Helpful Links</h5>
         <p><a href="repl.it">repl.it</a> - an online interpreter that we will use for writing our Python code.</p>
-        <p><a href="https://repl.it/@MelinaSapiano/TicTacToe">https://repl.it/@MelinaSapiano/TicTacToe</a>Tic Tac Toe Answer Key</p>
+        <p><a href="https://repl.it/@MelinaSapiano/TicTacToe-1-player">https://repl.it/@MelinaSapiano/TicTacToe-1-player</a>Tic Tac Toe Answer Key</p>
         <br>
         <h5>End Product</h5>
-        <p>A Tic Tac Toe game!</p>
+        <p>An online Tic Tac Toe game!</p>
     </div>
   <div class="row">
       <div class="col s6 offset-s1">
@@ -185,7 +186,7 @@
                 <!--Instruction Div-->
                 <div class="col s6">
                   <div class="projectsection1">
-                      <h5>Let's start with a def function:</h5>
+                      <h5>Let's start with a function:</h5>
                       <p>The <strong>drawBoard()</strong> function prints the game board, and the board itself is presented by the list of 10 strings. By telling it to ignore 0, the board starts at <strong>index 1</strong></p>
                       <img src="./Python_files/tictactoe5.JPG">
                   </div>
@@ -211,10 +212,32 @@
                       <div class="projectsection1">
                           <h5>Now you try it</h5>
                           <p>Add in the code for our board.</p>
-                          <p>Adjust the spaces if need be in order to get it too look right in the strings. Otherwise, your board might look funny.</p>
                       </div>
                   </div>
                 </div>
+                <div class="row">
+                        <!--Lesson Checkbox Div-->
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                              <p>
+                                <label>
+                                  <input type="checkbox" />
+                                  <span></span>
+                                </label>
+                              </p>
+                            </form>
+                          </div>
+                        </div>
+                        <!--Instruction Div-->
+                        <div class="col s6">
+                          <div class="projectsection1">
+                              <h5>Test your code</h5>
+                              <p>Does it work?</p>
+                              <p>Adjust the spaces if need be in order to get it too look right in the strings. Otherwise, your board might look funny.</p>
+                          </div>
+                      </div>
+                    </div>
 
                 <!--html Lesson: Directions Start Here-->
                 <div class="row">
@@ -240,16 +263,64 @@
             <!--Instruction Div-->
             <div class="col s6">
               <div class="projectsection1">
-                  <h5>Let's add another <strong>def</strong> function in.</h5>
+                  <h5>Let's add another function in.</h5>
                   <p>This function will choose for the player either <strong>X</strong> or <strong>O</strong></p>
                   <p><img src="./Python_files/tictactoe6.JPG"></p>
                   <p>Our <strong>inputPlayerLetter()</strong> function asks the player if they would rather be <strong>X</strong> or <strong>O</strong>.</p>
                   <p>The <strong>while</strong> loop evaluates the function like this:</p>
                   <p><img src="./Python_files/tictactoe7.JPG"></p>
-
                 </div>
           </div>
         </div>
+
+        <div class="row">
+                <!--Lesson Checkbox Div-->
+                <div class="col s1 offset-s1">
+                  <div class="checkbox">
+                    <form action="#">
+                      <p>
+                        <label>
+                          <input type="checkbox" />
+                          <span></span>
+                        </label>
+                      </p>
+                    </form>
+                  </div>
+                </div>
+                <!--Instruction Div-->
+                <div class="col s6">
+                  <div class="projectsection1">
+                      <h5>But what if our player imputs a lower case letter?</h5>
+                      <p>If our player inputs a lower case letter, our code won't work.</p>
+                      <p>So let's add some code to make sure that will automatically change the input to uppercase letters.</p>
+                      <p><img src="./Python_files/tictactoe30.JPG"></p>
+                    </div>
+              </div>
+            </div>
+            <div class="row">
+                    <!--Lesson Checkbox Div-->
+                    <div class="col s1 offset-s1">
+                      <div class="checkbox">
+                        <form action="#">
+                          <p>
+                            <label>
+                              <input type="checkbox" />
+                              <span></span>
+                            </label>
+                          </p>
+                        </form>
+                      </div>
+                    </div>
+                    <!--Instruction Div-->
+                    <div class="col s6">
+                      <div class="projectsection1">
+                          <h5>If/Else statement</h5>
+                          <p>Now for the rest of our <strong>inputPlayerLetter</strong> function</p>
+                          <p>Add in the if/else statement to your code:</p>
+                          <p><img src="./Python_files/tictactoe8.JPG"></p>
+                      </div>
+                  </div>
+                </div>
 
         <div class="row">
                 <!--Lesson Checkbox Div-->
@@ -273,30 +344,29 @@
                   </div>
               </div>
             </div>
-
-        <div class="row">
-                <!--Lesson Checkbox Div-->
-                <div class="col s1 offset-s1">
-                  <div class="checkbox">
-                    <form action="#">
-                      <p>
-                        <label>
-                          <input type="checkbox" />
-                          <span></span>
-                        </label>
-                      </p>
-                    </form>
+            <div class="row">
+                    <!--Lesson Checkbox Div-->
+                    <div class="col s1 offset-s1">
+                      <div class="checkbox">
+                        <form action="#">
+                          <p>
+                            <label>
+                              <input type="checkbox" />
+                              <span></span>
+                            </label>
+                          </p>
+                        </form>
+                      </div>
+                    </div>
+                    <!--Instruction Div-->
+                    <div class="col s6">
+                      <div class="projectsection1">
+                          <h5>Test it</h5>
+                          <p>Does it work?</p>
+                      </div>
                   </div>
                 </div>
-                <!--Instruction Div-->
-                <div class="col s6">
-                  <div class="projectsection1">
-                      <h5>If/Else statement</h5>
-                      <p>Add this function to your code:</p>
-                      <p><img src="./Python_files/tictactoe8.JPG"></p>
-                  </div>
-              </div>
-            </div>
+
 
             <div class="row">
                     <div class="col s6 offset-s1">
@@ -348,9 +418,8 @@
                         <!--Instruction Div-->
                         <div class="col s6">
                           <div class="projectsection1">
-                              <h5>You try it:</h5>
-                              <p>Add this function to your code:</p>
-                              <p><img src="./Python_files/tictactoe8.JPG"></p>
+                            <h5>Test your code</h5>
+                              <p>Does it work?</p>
                           </div>
                       </div>
                     </div>
@@ -386,29 +455,28 @@
                 </div>
               </div>
 
-                        <div class="row">
-                                <!--Lesson Checkbox Div-->
-                                <div class="col s1 offset-s1">
-                                  <div class="checkbox">
-                                    <form action="#">
-                                      <p>
-                                        <label>
-                                          <input type="checkbox" />
-                                          <span></span>
-                                        </label>
-                                      </p>
-                                    </form>
+                          <div class="row">
+                                    <!--Lesson Checkbox Div-->
+                                    <div class="col s1 offset-s1">
+                                      <div class="checkbox">
+                                        <form action="#">
+                                          <p>
+                                            <label>
+                                              <input type="checkbox" />
+                                              <span></span>
+                                            </label>
+                                          </p>
+                                        </form>
+                                      </div>
+                                    </div>
+                                    <!--Instruction Div-->
+                                    <div class="col s6">
+                                      <div class="projectsection1">
+                                        <h5>Test your code</h5>
+                                          <p>Does it work?</p>
+                                      </div>
                                   </div>
                                 </div>
-                                <!--Instruction Div-->
-                                <div class="col s6">
-                                  <div class="projectsection1">
-                                      <p>This function will reference the list, rather than the list itself. So any changes to the board in this function will also be made to the original list.</p>
-                                      <p>While the <strong>board</strong> is a local variable, the <strong>makeMove()</strong> function modifies the original list.</p>
-                                      <p>Yet the <strong>letter</strong> and <strong>move</strong> parameters are just copies of the strings and integers. Since they are copies of the values, if you change <strong>letter</strong> or <strong>move</strong> in the function, the original variables you used when you for the <strong>makeMove()</strong> aren't changed.</p>
-                                  </div>
-                              </div>
-                            </div>
 
                             <div class="row">
                               <div class="col s6 offset-s1">
@@ -462,6 +530,28 @@
                 </div>
             </div>
           </div>
+          <div class="row">
+                  <!--Lesson Checkbox Div-->
+                  <div class="col s1 offset-s1">
+                    <div class="checkbox">
+                      <form action="#">
+                        <p>
+                          <label>
+                            <input type="checkbox" />
+                            <span></span>
+                          </label>
+                        </p>
+                      </form>
+                    </div>
+                  </div>
+                  <!--Instruction Div-->
+                  <div class="col s6">
+                    <div class="projectsection1">
+                      <h5>Test your code</h5>
+                        <p>Does it work?</p>
+                    </div>
+                </div>
+              </div>
 
         <div class="row">
           <div class="col s6 offset-s1">
@@ -519,6 +609,29 @@
                     </div>
 
                     <div class="row">
+                            <!--Lesson Checkbox Div-->
+                            <div class="col s1 offset-s1">
+                              <div class="checkbox">
+                                <form action="#">
+                                  <p>
+                                    <label>
+                                      <input type="checkbox" />
+                                      <span></span>
+                                    </label>
+                                  </p>
+                                </form>
+                              </div>
+                            </div>
+                            <!--Instruction Div-->
+                            <div class="col s6">
+                              <div class="projectsection1">
+                                <h5>Test your code</h5>
+                                  <p>Does it work?</p>
+                              </div>
+                          </div>
+                        </div>
+
+                    <div class="row">
                       <div class="col s6 offset-s1">
                         <h4>How to make a move</h4>
                       </div>
@@ -548,28 +661,6 @@
                         </div>
                     </div>
                   </div>
-                  <div class="row">
-                    <!--Lesson Checkbox Div-->
-                    <div class="col s1 offset-s1">
-                      <div class="checkbox">
-                        <form action="#">
-                          <p>
-                            <label>
-                              <input type="checkbox" />
-                              <span></span>
-                            </label>
-                          </p>
-                        </form>
-                      </div>
-                    </div>
-                    <!--Instruction Div-->
-                    <div class="col s6">
-                      <div class="projectsection1">
-                          <p>We are able to write <strong>'1 2 3 4 5 6 7 8 9'.split()</strong> instead of <strong>'1' '2' '3' '4' '5' '6' '7' '8' '9'</strong> due to the <strong>.split()</strong>.</p>
-                          <p>Both are the same, it's just a lot easier to write the first rather than the second.</p>
-                      </div>
-                  </div>
-                </div>
 
                 <div class="row">
                   <!--Lesson Checkbox Div-->
@@ -595,6 +686,29 @@
                     </div>
                 </div>
               </div>
+
+              <div class="row">
+                      <!--Lesson Checkbox Div-->
+                      <div class="col s1 offset-s1">
+                        <div class="checkbox">
+                          <form action="#">
+                            <p>
+                              <label>
+                                <input type="checkbox" />
+                                <span></span>
+                              </label>
+                            </p>
+                          </form>
+                        </div>
+                      </div>
+                      <!--Instruction Div-->
+                      <div class="col s6">
+                        <div class="projectsection1">
+                          <h5>Test your code</h5>
+                            <p>Does it work?</p>
+                        </div>
+                    </div>
+                  </div>
 
               <div class="row">
                 <!--Lesson Checkbox Div-->
@@ -639,7 +753,7 @@
                   <p><img src="./Python_files/tictactoe16.JPG"></p>
                     <p>If our list isn't empty, there is at least one move possible on the board.</p>
                     <p>Though, if our list was empty, and the <strong>board</strong> parameter had all the corner spaces taken already, the <strong>possibleMoves</strong> list would be [].</p>
-                    <p>This would mean that <strong>len(possibleMoves)</strong> would equal 0, and the function values none.</p>
+                    <p>This would mean that <strong>len(possibleMoves)</strong> would equal 0, and the function returns <strong>None</strong>.</p>
                 </div>
             </div>
           </div>
@@ -673,7 +787,7 @@
                   <p>Let's run through all the things we need our AI to do:</p>
                   <p>1. Try to find a move that the computer can make to win. Then take that move. If not, go to step 2.</p>
                   <p>2. See if there's a move that the player can make that will cause the AI to lose. If so, block that move. If not, go to step 3.</p>
-                  <p>3. Check if corner spots are open, then move there. If not, move on to step 4.</p>
+                  <p>3. Check if any corner spots are open, then move there. If not, move on to step 4.</p>
                   <p>4. Check if the center is open. If not, move on to step 5.</p>
                   <p>5. Move on to any of the side spaces. There are no more steps because after steps 1-4, the side spaces are all that is left.</p>
                   <p>Now let's break these down</p>
@@ -791,6 +905,29 @@
 </div>
 
 <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+            <h5>Test your code</h5>
+              <p>Does it work?</p>
+          </div>
+      </div>
+    </div>
+
+<div class="row">
   <div class="col s6 offset-s1">
     <h4>Looping</h4>
   </div>
@@ -897,6 +1034,29 @@
 </div>
 
 <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+            <h5>Test your code</h5>
+              <p>Does it work?</p>
+          </div>
+      </div>
+    </div>
+
+<div class="row">
   <div class="col s6 offset-s1">
     <h4>Play Again?</h4>
   </div>
@@ -919,9 +1079,34 @@
   <!--Instruction Div-->
   <div class="col s6">
     <div class="projectsection1">
-      <h5>Lastly, we need to ask the player if they want to play another round</h5>
-        <p><img src="./Python_files/tictactoe29.JPG"></p>
-        <p>And that's it!</p>
+      <h5>Earlier we asked the player if they wanted to play another round</h5>
+      <p><img src="./Python_files/tictactoe25.JPG"></p>
+      <p>Now we have to finish out that function</p>
+    </div>
+</div>
+</div>
+<div class="row">
+  <!--Lesson Checkbox Div-->
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span></span>
+          </label>
+        </p>
+      </form>
+    </div>
+  </div>
+  <!--Instruction Div-->
+  <div class="col s6">
+    <div class="projectsection1">
+      <h5>We have to add in a statement at the end to finish the game if they don't want to play again.</h5>
+      <p><img src="./Python_files/tictactoe29.JPG"></p>
+      <p>It's important to finish out our code so it doesn't continuously run.</p>
+      <p>The break at the end will have our function stop at the end of a finished game.</p>
+      <p>And that's it!</p>
     </div>
 </div>
 </div>
@@ -950,6 +1135,29 @@
 </div>
 </div>
 
+<div class="row">
+  <!--Lesson Checkbox Div-->
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span></span>
+          </label>
+        </p>
+      </form>
+    </div>
+  </div>
+  <!--Instruction Div-->
+  <div class="col s6">
+    <div class="projectsection1">
+      <h5>Challenge Mode!</h5>
+      <p>In C & C++ we use Multidimensional Arrays to create rows and columns.</p>
+      <p>Can you find another way of making our tictactoe board using Multidimensional Arrays?</p>
+    </div>
+</div>
+</div>
 
 
     <!--Project Complete Banner-->
@@ -965,6 +1173,7 @@
             <div class="card findanotherproject">
               <div class="card-content">
                 <div class="cardDescription">
+                  <br>
                   <h6>Find another project?</h6>
                   <div class="browse">
                     <br>
