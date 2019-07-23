@@ -383,15 +383,20 @@ background-position: center; background-size: contain;}
 #hangmanBG{background-image: url('./Python_files/hangman.jpg');}
 #pythonadventureBG{background-image: url('./Python_files/pythonadventure.gif');}
 #tictactoeaiBG{background-image: url('./Python_files/tictactoe.gif');}
-#tictactoe2playerBG{background-image: url('./Python_files/tictactoe2player.JPG');}
+#tictactoe2playerBG{background-image: url('./Python_files/tictactoe2player.jpg');}
 
 /*JS Images */
-#codecademyBG{background-image: url('Codecademy.png');
-background-position: center; background-size: contain;}
-#learnjsBG{background-image: url('JavaScript-logo.png');
-background-position: center; background-size: contain;}
-#w3schoolsBG{background-image: url('W3Schools_logo.png');
-background-position: center; background-size: contain;}
+#codecademyBG{background-image: url('Codecademy.png');}
+#learnjsBG{background-image: url('JavaScript-logo.png');}
+#w3schoolsBG{background-image: url('W3Schools_logo.png');}
+#tamagotchiBG{background-image: url('tamagotchi.GIF');}
+#jquerysetupBG{background-image: url('jquerysetup.PNG');}
+#rainbowbuttonBG{background-image: url('rainbowbutton.GIF');}
+#tictactoeBG{background-image: url('./Python_files/tictactoe.gif');}
+#whackamoleBG{background-image: url('whackamole.JPG');}
+
+
+
 
 /* =================================================================================================================================HOME PAGE CARD============================================================ */
 .agesHeading {
