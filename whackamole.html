@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="main.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="SBCS_favicon.png">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Whack-A-Mole</title>
+  </head>
+  <body>
+    <!--Nav bar  -->
+    <nav class="light-blue lighten-1">
+      <div class="nav-wrapper">
+        <a href="#!"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="hide-on-med-and-down">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="scratch.html">Ages 7-12</a></li>
+          <li><a href="techimmersion.html">Ages 13-18</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="scratch.html">Ages 7-12</a></li>
+      <li><a href="techimmersion.html">Ages 13-18</a></li>
+    </ul>
+
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h4 class="projectTitle">Whack-A-Mole</h4>
+        <p>Play your very own game of Whack-A-Mole and see how many point you can get!</p>
+      </div>
+    </div>
+
+        <div class="row">
+          <div class="col s6 offset-s1">
+            <h4>Let's get started!</h4>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s6 offset-s1">
+            <h5 style="font-weight:bold;">Your Coding Environment</h5>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </p>
+                </form>
+              </div>
+            </div>
+          <div class="col s6">
+            <div class="projectsection1">
+              <h6>Make a new folder in the code folder on your computer.</h6>
+              <br>
+              <h6>Name the folder <span style="font-weight:bold;">"YourFirstName_whackAMole"</span></h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </p>
+                </form>
+              </div>
+            </div>
+          <div class="col s6">
+            <div class="projectsection1">
+              <h6>Create an HTML file.</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </p>
+                </form>
+              </div>
+            </div>
+          <div class="col s6">
+            <div class="projectsection1">
+              <h6>Name the HTML file <strong>index.html</strong></h6>
+              <p>Save it in your whack-a-mole folder</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </p>
+                </form>
+              </div>
+            </div>
+          <div class="col s6">
+            <div class="projectsection1">
+              <h6>Set up your HTML file (doctype, html, head, title, body)</h6>
+            </div>
+          </div>
+        </div>
+
+        <!--Collapsible-->
+        <div class="row">
+          <div class="col s6 offset-s2">
+            <ul class="collapsible">
+             <li>
+               <div class="collapsible-header"><i class="material-icons orange-text infosection">info</i>I need a hint</div>
+               <div class="collapsible-body"><span>&lt;!DOCTYPE html&gt;
+                 <br>
+                 &lt;html&gt;
+                 <br>
+                 <span style="padding-left:5%;">&lt;head&gt;</span>
+                 <br>
+                 <span style="padding-left:7%;">&lt;title&gt;</span>
+                 <br>
+                 <span style="padding-left:7%;">&lt;/title&gt;</span>
+                 <br>
+                 <span style="padding-left:5%;">&lt;/head&gt;</span>
+                 <br>
+                 <span style="padding-left:5%;">&lt;body&gt;</span>
+                 <br>
+                 <span style="padding-left:5%;">&lt;/body&gt;</span>
+                 <br>
+                 &lt;/html&gt;
+               </span></div>
+             </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </p>
+                </form>
+              </div>
+            </div>
+          <div class="col s6">
+            <div class="projectsection1">
+              <h6>Create a CSS file.</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </p>
+                </form>
+              </div>
+            </div>
+          <div class="col s6">
+            <div class="projectsection1">
+              <h6>Name the CSS file <strong>style.css</strong>.</h6>
+              <p>Save it in your whack-a-mole folder</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </p>
+                </form>
+              </div>
+            </div>
+          <div class="col s6">
+            <div class="projectsection1">
+              <h6>Link your CSS file to your HTML file.</h6>
+            </div>
+          </div>
+        </div>
+
+        <!--Collapsible-->
+        <div class="row">
+          <div class="col s6 offset-s2">
+            <ul class="collapsible">
+             <li>
+               <div class="collapsible-header"><i class="material-icons orange-text infosection">info</i>I need a hint</div>
+               <div class="collapsible-body"><span><img style="width:60%; height:60%;" src="linkcss.png"></span></div>
+             </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </p>
+                </form>
+              </div>
+            </div>
+          <div class="col s6">
+            <div class="projectsection1">
+              <h6>Create a jQuery file.</h6>
+              <p>Need a <a href="jquerysetup.html">refresher</a>?</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </p>
+                </form>
+              </div>
+            </div>
+          <div class="col s6">
+            <div class="projectsection1">
+              <h6>Name the jQuery file <strong>index.js</strong></h6>
+              <p>Save it in your whack-a-mole folder</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </p>
+                </form>
+              </div>
+            </div>
+          <div class="col s6">
+            <div class="projectsection1">
+              <h6>Don't forget to add in the CDN!</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </p>
+                </form>
+              </div>
+            </div>
+          <div class="col s6">
+            <div class="projectsection1">
+              <h6>Link the jQuery file to the HTML file</h6>
+            </div>
+          </div>
+        </div>
+
+        <!--Collapsible-->
+        <div class="row">
+          <div class="col s6 offset-s2">
+            <ul class="collapsible">
+             <li>
+               <div class="collapsible-header"><i class="material-icons orange-text infosection">info</i>I need a hint</div>
+               <div class="collapsible-body"><span><img src="./javascript_images/whackamole4.JPG"></span></div>
+             </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s6 offset-s1">
+            <h5 style='font-weight:bold'>Background</h5>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </p>
+                </form>
+              </div>
+            </div>
+          <div class="col s6">
+            <div class="projectsection1">
+              <h6>Add a cool background</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s6 offset-s1">
+            <h4>Whack-a-mole Grid</h4>
+            <h5 style='font-weight:bold'>HTML</h5>
+          </div>
+        </div>
+
+    <div class='row'>
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class='col s6'>
+        <div class='projectsection1'>
+          <h6>Just like you styled the tic-tac-toe box, you will be styling the whack-a-mole box the same way.</h6>
+          <p>Create 9 boxes</p>
+          <img src="./javascript_images/tictactoe_js1.JPG">
+          <p>What’d we use in the past to divide our page up into sections?</p>
+          <p><strong>DIV</strong>s!</p>
+          <p>Code a grid using HTML and CSS.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class='col s6'>
+        <div class='projectsection1'>
+          <h6>Not sure where to start?</h6>
+          <p>Check out this <a href="friendogram.html">refresher</a>.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class='col s6'>
+        <div class='projectsection1'>
+          <h4>Remember, if you get stuck:</h4>
+          <p><i>Ask a friend.</i></p>
+          <p><i>Google your question.</i></p>
+          <p><i>Ask an instructor.</i></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 style='font-weight:bold'>Adding Images</h5>
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class='col s6'>
+        <div class='projectsection1'>
+          <h6>Each box has 4 different images, appearing at different times depending on how the user interacts with your game.</h6>
+          <p><strong>Look up 1 image for each of the following categories AND save the images to your folder:  </strong></p>
+        </div>
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class='col s6'>
+        <div class='projectsection1'>
+          <h6>Image #1- Default Image (ex. pile of snow)</h6>
+          <img src="./javascript_images/whackamole8.JPG" width="300px">
+          <p>This is the image that appears when the page first loads. The user has not clicked or done anything on the page.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class='col s6'>
+        <div class='projectsection1'>
+          <h6>Image #2- Hover Image (ex. question mark)</h6>
+          <img src="./javascript_images/whackamole9.JPG" width="300px">
+          <p>This is the image that appears when the user hovers over each box (aka the user places their cursor on each box but does not click).</p>
+        </div>
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class='col s6'>
+        <div class='projectsection1'>
+          <h6>Image #3- Click - Good Image (ex. penguin)</h6>
+          <img src="./javascript_images/whackamole10.JPG" width="300px">
+          <p>This is the image that appears when the user clicks on a box but has not lost the game. Instead, a good image pops up when the user clicks.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Image #4- Click - Bad Image (ex. yeti)</h6>
+          <img src="./javascript_images/whackamole11.JPG" width="300px">
+          <p>This is the image that appears when the user clicks on the wrong box and will now lose the game.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 style='font-weight:bold'>Image #1- Default Image (ex. pile of snow)</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Add a background-image to each box</h6>
+        </div>
+      </div>
+    </div>
+
+        <div class="row">
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </p>
+                </form>
+              </div>
+            </div>
+          <div class="col s6">
+            <div class="projectsection1">
+              <h6><i>**Hint**</i></h6>
+              <p>Which language do we use to style our pages by adding background-images?</p>
+            </div>
+          </div>
+        </div>
+
+    <div class='row'>
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class='col s6'>
+        <div class='projectsection1'>
+          <h6><i>Remember, when you add images:</i></h6>
+          <ol>
+            <li>Save the image to the folder where your code is saved</li>
+            <li>Rename the image a single word that is simple to remember</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 style='font-weight:bold'>Image #2- Hover Image (ex. question mark)</h5>
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class='col s6'>
+        <div class='projectsection1'>
+          <h6>The <a href="hover.html">CSS hover effect</a></h6>
+          <p>By using this hover effect an image will appear when the user hovers over each box.</p>
+          <p>(Meaning that when the user places their cursor on each box but does not click.)</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+           <li>
+             <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>I Need a Hint</div>
+             <div class="collapsible-body"><img src="./javascript_images/whackamole1.JPG" width="350px">
+             </div>
+           </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 style='font-weight:bold'>Image #3- Click - Good Image (ex. penguin)</h5>
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class='col s6'>
+        <div class='projectsection1'>
+          <h6>When you click on some of the boxes on your grid, you want a “good” or positive image to appear.</h6>
+          <p>This means we have to code it for when the box is clicked or <i>active</i>.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+           <li>
+             <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>I Need a Hint</div>
+             <div class="collapsible-body"><img src="./javascript_images/whackamole2.JPG" width="350px">
+             </div>
+           </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 style='font-weight:bold'>Image #4- Click - Bad Image (ex. yeti)</h5>
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class='col s6'>
+        <div class='projectsection1'>
+          <h6>Some of the boxes should have “bad” images hidden behind them.</h6>
+          <p>When the user clicks on one of these boxes aka the “wrong box,” the “bad” image pops up and the user loses the game!</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+           <li>
+             <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>I Need a Hint</div>
+             <div class="collapsible-body"><img src="./javascript_images/whackamole3.JPG" width="350px">
+             </div>
+           </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class='col s6'>
+        <div class='projectsection1'>
+          <h6>Now add either good or bad images to each box’s active class.</h6>
+        </div>
+      </div>
+    </div>
+
+        <div class="row">
+          <div class="col s6 offset-s1">
+            <h5 style='font-weight:bold'>Coding in our jQuery</h5>
+            <h6>Set up your jQuery file with the following:</h6>
+          </div>
+        </div>
+
+        <div class='row'>
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+              </form>
+            </div>
+          </div>
+        <div class='col s6'>
+          <div class='projectsection1'>
+              <h6>Surrounding function</h6>
+              <p>All other lines of jQuery code that we add will fall in between the surrounding function.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s6 offset-s2">
+          <ul class="collapsible">
+             <li>
+               <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>I Need a Hint</div>
+               <div class="collapsible-body"><img src="./javascript_images/jquery5.JPG" width="150px">
+               </div>
+             </li>
+          </ul>
+        </div>
+      </div>
+
+          <div class='row'>
+            <div class="col s1 offset-s1">
+              <div class="checkbox">
+                <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span></span>
+                      </label>
+                    </p>
+                  </form>
+                </div>
+              </div>
+            <div class='col s6'>
+              <div class='projectsection1'>
+                <h6>Initialize function</h6>
+                <p>Our first line of code inside of the surrounding function, will be the initialize function.</p>
+                <p>This means, when the document is ready, call the function initialize.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col s6 offset-s2">
+              <ul class="collapsible">
+                 <li>
+                   <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>I Need a Hint</div>
+                   <div class="collapsible-body"><img src="./javascript_images/whackamole5.JPG" width="300px">
+                   </div>
+                 </li>
+              </ul>
+            </div>
+          </div>
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>Save Your Code</h6>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class='col s6 offset-s1'>
+                          <h5 style='font-weight:bold'>An Alert</h5>
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>When the “bad image” is clicked, we want our page to make an alert!</h6>
+                            <p>So we will add this code to make an alert:</p>
+                            <img src="./javascript_images/whackamole6.JPG">
+                            <p>This says that when the box3 is being clicked, it will run the function named rawr.</p>
+                            <p>The function rawr is defined further down.</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>Add these new line to your existing function:</h6>
+                            <img src="./javascript_images/whackamole7.JPG" width="400px">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>Test your website</h6>
+                            <p>Does it work?</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <!--Lesson Checkbox Div-->
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                              <p>
+                                <label>
+                                  <input type="checkbox" />
+                                  <span></span>
+                                </label>
+                              </p>
+                            </form>
+                          </div>
+                        </div>
+                        <!--Instruction Div-->
+                        <div class="col s6">
+                          <div class="projectsection1">
+                            <h5>Challenge Mode!</h5>
+                            <p>What if when the bad image is clicked, you want a huge image to pop up on the screen?</p>
+                          </div>
+                      </div>
+                      </div>
+
+<!--Project Complete Banner-->
+<div class="row blue white-text">
+  <div class="col s4 offset-s4">
+    <h5 style="text-align:center;">Congrats! Project complete!</h5>
+  </div>
+</div>
+
+<!--Card: Prompt - Find Another Project-->
+<div class="row">
+  <div class="col s4 offset-s4">
+    <div class="card findanotherproject">
+      <div class="card-content">
+        <div class="cardDescription">
+          <br>
+          <h6>Find another project?</h6>
+          <div class="browse">
+            <br>
+            <a href="javascript.html">
+              <button>Browse all projects</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </body>
+</html>
