@@ -89,13 +89,70 @@
           <p>Let’s add a health bar to our UI. We’re going to use a component called a <strong>Slider</strong> for this.</p>
           <p>Right-click  →  <strong>UI</strong>  →  <strong>Slider</strong></p>
           <p>Rename it <strong>PlayerHealthBar</strong>. If you go to the Canvas, you’ll see it.</p>
-          <img src="./unity_images/healthbar3.JPG" width="300px">
+	   </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <img src="./unity_images/healthbar3.JPG" width="300px">
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
           <p>You can move it using this icon in the Inspector (we used this for the text before):</p>
-          <img src="./unity_images/healthbar4.JPG" width="150px">
+	   </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <img src="./unity_images/healthbar4.JPG" width="150px">
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
           <p>Hold <strong>Alt + Shift</strong> while clicking the location you want on the pop-up window to move it there.</p>
           <p>We need to update its values. The minimum value should be zero, and the max value should be whatever your max health will be (probably 100).</p>
-          <img src="./unity_images/healthbar5.JPG" width="300px">
 	   </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <img src="./unity_images/healthbar5.JPG" width="300px">
       </div>
     </div>
 
@@ -121,12 +178,17 @@
             <p><strong>Fill</strong> - this is the color of the fill (i.e. when it is full). Fill is a child of Fill Area.</p>
             <p><strong>To fix the gap that appeared when we deleted the handle:</strong></p>
             <p>Go to the fill area and change the left and right values in the Rect Transform to 0. Then go to the fill object (child of the fill area) and change the Rect Transform width value to 0.</p>
-            <p><img src="./unity_images/healthbar6.JPG" width="200px"></p>
-            <p><img src="./unity_images/healthbar7.JPG" width="200px"></p>
-
             </div>
         </div>
       </div>
+
+      <div class="row">
+        <div class="col s6 offset-s2">
+          <p><img src="./unity_images/healthbar6.JPG" width="200px"></p>
+          <p><img src="./unity_images/healthbar7.JPG" width="200px"></p>
+        </div>
+      </div>
+
       <div class="row">
         <div class="col s6 offset-s1">
           <h4>Health System</h4>
@@ -155,6 +217,7 @@
 		       </div>
         </div>
       </div>
+
       <div class="row">
          <div class="col s1 offset-s1">
            <div class="worldbuilding-tip">
@@ -231,9 +294,13 @@
       <div class="col s6">
         <div class="projectsection1">
             <p>In the Start function, use this line to connect the healthbar variable to the <strong>PlayerHealthBar</strong>:</p>
-            <p><img src="./unity_images/healthbar8.JPG" width="500px"></p>
-
          </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <p><img src="./unity_images/healthbar8.JPG" width="500px"></p>
       </div>
     </div>
 
@@ -255,9 +322,14 @@
     <div class="col s6">
       <div class="projectsection1">
           <p>Now, use this line to update the HealthBar value to the <strong>CurrentHealth</strong>:</p>
-          <p><img src="./unity_images/healthbar9.JPG" width="300px"></p>
-          <p>Make sure you put that in the right place in the Start function.</p>
+          <p><i>**Make sure you put that in the right place in the Start function.**</i></p>
        </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <p><img src="./unity_images/healthbar9.JPG" width="300px"></p>
     </div>
   </div>
 
@@ -325,16 +397,48 @@
           <div class="projectsection1">
             <h6>To make your enemy hold the weapon:</h6>
             <p>Open the <strong>EnemyController</strong> with the arrow next to it in the Hierarchy to see its children. Then open your model. The model is actually composed of many different parts.</p>
-            <img src="./unity_images/healthbar10.JPG" width="200px">
-            <p>Now if you keep on opening up the enemy with the arrows, you will eventually find the hand. Or something like it. Depending on which hand your enemy uses <strong>make the prefab of your newly downloaded weapon a <i>child</i> of that hand</strong>. Then, use the <strong>move, rotate, and scale</strong> tools to make it look like the enemy is holding that weapon. <strong>By making it a <i>child</i>, we make it move with the hand in the attack animation</strong>.</p>
-            <p><i>Recommendation: it may be useful to switch to local mode in movement. Check the <a href="movementtools.html">movement tools cheat sheet</a>!</i></p>
-            <img src="./unity_images/healthbar11.JPG" width="200px">
-            <p>Now our enemy has a weapon! Next, we need a way to detect that the weapon is hitting the player! We need a collider. Add a box collider component to your weapon.</p>
 	       </div>
         </div>
       </div>
+
       <div class="row">
-         <div class="col s1 offset-s1">
+        <div class="col s6 offset-s2">
+          <img src="./unity_images/healthbar10.JPG" width="200px">
+        </div>
+      </div>
+
+      <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <p>Now if you keep on opening up the enemy with the arrows, you will eventually find the hand. Or something like it. Depending on which hand your enemy uses <strong>make the prefab of your newly downloaded weapon a <i>child</i> of that hand</strong>. Then, use the <strong>move, rotate, and scale</strong> tools to make it look like the enemy is holding that weapon. <strong>By making it a <i>child</i>, we make it move with the hand in the attack animation</strong>.</p>
+          <p><i>Recommendation: it may be useful to switch to local mode in movement. Check the <a href="movementtools.html">movement tools cheat sheet</a>!</i></p>
+          <p>Now our enemy has a weapon! Next, we need a way to detect that the weapon is hitting the player! We need a collider. Add a box collider component to your weapon.</p>
+       </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <img src="./unity_images/healthbar11.JPG" width="200px">
+      </div>
+    </div>
+
+    <div class="row">
+     <div class="col s1 offset-s1">
        <div class="worldbuilding-tip">
              <i class="pin"></i>
                <h6><i>Challenge Mode!</i><h6>
@@ -372,8 +476,13 @@
               <li>Call the UpdateHealth function in that function</li>
             </ol>
           <p>First, declare a variable to link the <strong>HUD_Manager</strong> (is this getting familiar yet?), and an integer variable for damage (this is going to be passed to the UpdateHealth function).</p>
-          <img src="./unity_images/healthbar12.JPG" width="300px">
         </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <img src="./unity_images/healthbar12.JPG" width="300px">
       </div>
     </div>
 
@@ -395,8 +504,13 @@
     <div class="col s6">
       <div class="projectsection1">
         <p>Then, initialize the hudmanager to finish the link in the Start function.</p>
-        <img src="./unity_images/healthbar13.JPG" width="600px">
       </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <img src="./unity_images/healthbar13.JPG" width="600px">
     </div>
   </div>
 
@@ -418,8 +532,13 @@
   <div class="col s6">
     <div class="projectsection1">
       <p>Next, add the OnTriggerEnter function (remember that it takes a parameter of the thing we’re colliding with:</p>
-      <img src="./unity_images/healthbar14.JPG" width="300px">
     </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col s6 offset-s2">
+    <img src="./unity_images/healthbar14.JPG" width="300px">
   </div>
 </div>
 
@@ -458,12 +577,9 @@
     <h6>Test your game</h6>
     <p>Does it work?</p>
     <p>If you’ve done everything right, you should have a working health bar! The only problem is that you can’t die.</p>
-    <img src="./unity_images/healthbar14.JPG" width="400px">
   </div>
 </div>
 </div>
-
-
 
 	  		    <!--html Lesson: Directions Start Here-->
     <div class="row">
@@ -490,10 +606,16 @@
         <div class="col s6">
           <div class="projectsection1">
             <p>The player should die if their health goes to zero. Go back to the HUD_Manager script. Let’s create a new function called <strong>Death</strong>.</p>
-            <img src="./unity_images/healthbar15.JPG" width="200px">
 		      </div>
         </div>
       </div>
+
+      <div class="row">
+        <div class="col s6 offset-s2">
+          <img src="./unity_images/healthbar15.JPG" width="200px">
+        </div>
+      </div>
+
       <div class="row">
   <!--Lesson Checkbox Div-->
   <div class="col s1 offset-s1">
@@ -633,49 +755,61 @@
         <div class="col s6">
           <div class="projectsection1">
             <p>Click <strong>Add Open Scenes</strong> to add your scene to the Build Settings!</p>
-            <img src="./unity_images/healthbar16.JPG" width="500px">
 	        </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s6 offset-s2">
+          <img src="./unity_images/healthbar16.JPG" width="500px">
         </div>
       </div>
 
 <!--html Lesson: Directions Start Here-->
 <div class="row">
-<div class="col s6 offset-s1">
-<h4>Testing the Game</h4>
-</div>
+  <div class="col s6 offset-s1">
+    <h4>Testing the Game</h4>
+  </div>
 </div>
 
 <div class="row">
 <!--Lesson Checkbox Div-->
-<div class="col s1 offset-s1">
-<div class="checkbox">
-  <form action="#">
-      <p>
-        <label>
-          <input type="checkbox" />
-          <span></span>
-        </label>
-      </p>
-  </form>
-</div>
-</div>
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+      </form>
+    </div>
+  </div>
+
 <!--Instruction Div-->
 <div class="col s6">
-<div class="projectsection1">
-<h6>Try playing the game</h6>
-<p>Does your healthbar go down?</p>
-<p>Do you die?</p>
-<p>Does the game restart?</p>
-<br>
-<p>Start thinking about an ending scene for when the player dies</p>
-<p>Something simple works, or you can animate an elaborate cut scene</p>
-<img src="./unity_images/healthbar17.gif" width="300px">
-<p>Now you can die! I’m sick of letting this enemy bully us, though. In the next guide, it is time to fight back.</p>
-</div>
-</div>
+  <div class="projectsection1">
+    <h6>Try playing the game</h6>
+      <p>Does your healthbar go down?</p>
+      <p>Do you die?</p>
+      <p>Does the game restart?</p>
+      <br>
+      <p>Start thinking about an ending scene for when the player dies</p>
+      <p>Something simple works, or you can animate an elaborate cut scene</p>
+      <p>Now you can die! I’m sick of letting this enemy bully us, though. In the next guide, it is time to fight back.</p>
+    </div>
+  </div>
 </div>
 
-	  		    <div class="row">
+<div class="row">
+  <div class="col s6 offset-s2">
+    <img src="./unity_images/healthbar17.gif" width="300px">
+  </div>
+</div>
+
+
+	  <div class="row">
       <!--Lesson Checkbox Div-->
       <div class="col s1 offset-s1">
         <div class="checkbox">
@@ -693,9 +827,9 @@
       <div class="col s6">
         <div class="projectsection1">
           <h5>Save your project</h5>
-		  <br>
-      </div>
-	  </div>
+    		  <br>
+        </div>
+  	  </div>
 	  </div>
 
 	  <br>

@@ -44,9 +44,9 @@
       <div class="col s6 offset-s1">
         <h4>Unity Student Guide 7d - Fighting Enemies</</h4>
         <h5>Enemy Guide 4 - Fighting Enemies</h5>
-    <p><strong>Helpful Links:</strong></p>
-		<p><a href="cheatsheet.html">Error Messages Cheat Sheet</a></p>
-    <br>
+        <p><strong>Helpful Links:</strong></p>
+    		<p><a href="cheatsheet.html">Error Messages Cheat Sheet</a></p>
+        <br>
         <p>Let’s make the player be able to damage the enemy. This is going to follow a pretty similar flow to the last part, except we don’t need to make a health bar. Here are the steps:</p>
           <ol>
             <li>Add an attack animation to the player</li>
@@ -56,7 +56,6 @@
           </ol>
           <img src="./unity_images/fightingenemies1.gif" width="400px">
           <p><i>Dark Souls 3</i></p>
-
      </div>
     </div>
 
@@ -86,7 +85,7 @@
         <div class="projectsection1">
           <p>Open the PlayerAnimator by double-clicking it in the Inspector for the PlayerController.</p>
           <p>Choose another attack animation from the ones we downloaded and add it as a new state. Rename it to <strong>Attacking</strong>.</p>
-	   </div>
+    	   </div>
       </div>
     </div>
 
@@ -231,11 +230,16 @@
                   <p>Open the <strong>PlayerScript</strong>. We want this script to activate the <strong>Attacking</strong> trigger when the user inputs <strong>Fire1</strong>.</p>
                   <p>First, link the animator to the PlayerScript:</p>
                   <p>Declare it:</p>
-                  <p><img src="./unity_images/fightingenemies2.JPG" width="300px"></p>
-
                 </div>
               </div>
             </div>
+
+            <div class="row">
+              <div class="col s6 offset-s2">
+                <p><img src="./unity_images/fightingenemies2.JPG" width="300px"></p>
+              </div>
+            </div>
+
           <div class="row">
             <!--Lesson Checkbox Div-->
             <div class="col s1 offset-s1">
@@ -254,12 +258,35 @@
             <div class="col s6">
               <div class="projectsection1">
                 <p>Initialize it in Start:</p>
-                <p><img src="./unity_images/fightingenemies3.JPG" width="300px"></p>
-                <br>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col s6 offset-s2">
+              <p><img src="./unity_images/fightingenemies3.JPG" width="300px"></p>
+            </div>
+          </div>
+
+          <div class="row">
+            <!--Lesson Checkbox Div-->
+            <div class="col s1 offset-s1">
+              <div class="checkbox">
+                <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span></span>
+                      </label>
+                    </p>
+                </form>
+              </div>
+            </div>
+            <!--Instruction Div-->
+            <div class="col s6">
+              <div class="projectsection1">
                 <p>Now, we want to check if the player is pressing the Fire1 button. Here’s the logic:</p>
                 <p><i>if player presses fire1 then set trigger <strong>Attacking</strong></i></p>
-
-
               </div>
             </div>
           </div>
@@ -272,14 +299,19 @@
                <h6><i>Challenge Mode!</i><h6>
                   <blockquote class="worldbuilding-tip-quote">
                   <p>You’ve made conditional (if-then) statements before. Make one in the Update function that uses these two lines and follows the logic above:</p>
-                  <p><img src="./unity_images/fightingenemies4.JPG" width="300px"></p>
                   </blockquote>
                   <br>
-       </div>
+            </div>
        </div>
      </div>
 
-	      <div class="row">
+     <div class="row">
+       <div class="col s1 offset-s1">
+         <p><img src="./unity_images/fightingenemies4.JPG" width="300px"></p>
+       </div>
+     </div>
+
+     <div class="row">
         <!--Lesson Checkbox Div-->
         <div class="col s1 offset-s1">
           <div class="checkbox">
@@ -303,7 +335,7 @@
         </div>
       </div>
 
-      <div class="row">
+    <div class="row">
       <!--Lesson Checkbox Div-->
       <div class="col s1 offset-s1">
         <div class="checkbox">
@@ -368,12 +400,16 @@
                   <li>A function that kills it if its health is too low.</li>
                 </ol>
                 <p><i>Important:</i> instead of starting the level over when we kill an enemy, we want that enemy to disappear. We can use this line for that:</p>
-                <p><img src="./unity_images/fightingenemies5.JPG" width="300px"></p>
                 <p>Have an instructor check your script when you’re done. <i>Don’t forget to set StartingHealth in the Inspector!</i></p>
-
               </blockquote>
               <br>
       </div>
+   </div>
+ </div>
+
+ <div class="row">
+   <div class="col s1 offset-s1">
+     <p><img src="./unity_images/fightingenemies5.JPG" width="300px"></p>
    </div>
  </div>
 
@@ -421,13 +457,18 @@
           <div class="projectsection1">
             <p>Then, add an <strong>OnTriggerEnter</strong> function. We’re going to write this one a little differently. When we did the HitPlayer script, it was easy to find the HUD_Manager because there is only one. Because there will be multiple enemies (eventually), we need an easy way to get the <i>specific <strong>EnemyStats</strong></i> script that is on the enemy we’re hitting (each enemy will have their own health!).</p>
             <p>We’re going to get the script from the thing we hit:</p>
-            <p><img src="./unity_images/fightingenemies6.JPG" width="600px"></p>
             <p><i>Here, we’re declaring a variable within the function. We’re looking for an EnemyStats script on the enemy and calling it <strong>enemystats</strong>.</i></p>
 	       </div>
         </div>
       </div>
 
       <div class="row">
+        <div class="col s6 offset-s2">
+          <p><img src="./unity_images/fightingenemies6.JPG" width="600px"></p>
+        </div>
+      </div>
+
+  <div class="row">
       <!--Lesson Checkbox Div-->
       <div class="col s1 offset-s1">
         <div class="checkbox">
@@ -445,9 +486,14 @@
       <div class="col s6">
         <div class="projectsection1">
             <p>But not everything we hit is going to have an EnemyStats script, right? What if I swing and hit a rock? We only want to subtract health if we hit an enemy. We’ll add an if-then statement:</p>
-            <img src="./unity_images/fightingenemies7.JPG" width="600px">
             <p><i>Don’t forget to set AttackDamage in the Inspector! <strong>(Make it negative)</strong></i> Now you should be able to kill your enemy!</p>
         </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <img src="./unity_images/fightingenemies7.JPG" width="600px">
       </div>
     </div>
 
