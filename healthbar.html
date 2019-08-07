@@ -49,7 +49,7 @@
     <p><i>God of War</i></p>
     <br>
     <p><strong>Helpful Links:</strong></p>
-		<p><a href="https://docs.unity3d.com/Manual/script-Slider.html">Slider Docs</a></p>
+		<p><a href="https://docs.unity3d.com/Manual/script-Slider.html" target="_blank">Slider Docs</a></p>
     <br>
         <p>In order for the enemy attack to do damage, we need to do 3 things:</p>
           <ol>
@@ -86,9 +86,9 @@
       <!--Instruction Div-->
       <div class="col s6">
         <div class="projectsection1">
-          <p>Let’s add a health bar to our UI. We’re going to use a component called a <strong>Slider</strong> for this.</p>
+          <p>Let's add a health bar to our UI. We're going to use a component called a <strong>Slider</strong> for this.</p>
           <p>Right-click  →  <strong>UI</strong>  →  <strong>Slider</strong></p>
-          <p>Rename it <strong>PlayerHealthBar</strong>. If you go to the Canvas, you’ll see it.</p>
+          <p>Rename it <strong>PlayerHealthBar</strong>. If you go to the Canvas, you'll see it.</p>
 	   </div>
       </div>
     </div>
@@ -173,7 +173,7 @@
         <!--Instruction Div-->
         <div class="col s6">
           <div class="projectsection1">
-            <p>This slider has a big handle on it (sliders are also used for UI components that players can drag with the mouse). We don’t want players to drag their health to whatever they want (or maybe you do)! Look at the slider in the Hierarchy. It has 3 children (Handle Slide Area, Background, Fill Area). <strong>Delete the Handle Slide Area.</strong> Then, you can change the colors of these:</p>
+            <p>This slider has a big handle on it (sliders are also used for UI components that players can drag with the mouse). We don't want players to drag their health to whatever they want (or maybe you do)! Look at the slider in the Hierarchy. It has 3 children (Handle Slide Area, Background, Fill Area). <strong>Delete the Handle Slide Area.</strong> Then, you can change the colors of these:</p>
             <p><strong>Background</strong> - this is the color of the background of the bar (i.e. when it is empty)</p>
             <p><strong>Fill</strong> - this is the color of the fill (i.e. when it is full). Fill is a child of Fill Area.</p>
             <p><strong>To fix the gap that appeared when we deleted the handle:</strong></p>
@@ -212,8 +212,8 @@
         <!--Instruction Div-->
         <div class="col s6">
           <div class="projectsection1">
-            <p>Now we have a health bar, but it has nothing to track. It’s time to add a health system to our player. Since the health bar is on the HUD, we’re going to use the <strong>HUD_Manager</strong> script. (Remember that this is attached to the <strong>PlayerController</strong> Object).</p>
-            <p>Open the script. We’re going to need two variables - one for the <strong>StartingHealth</strong>, and one for the <strong>CurrentHealth</strong>.</p>
+            <p>Now we have a health bar, but it has nothing to track. It's time to add a health system to our player. Since the health bar is on the HUD, we're going to use the <strong>HUD_Manager</strong> script. (Remember that this is attached to the <strong>PlayerController</strong> Object).</p>
+            <p>Open the script. We're going to need two variables - one for the <strong>StartingHealth</strong>, and one for the <strong>CurrentHealth</strong>.</p>
 		       </div>
         </div>
       </div>
@@ -225,9 +225,9 @@
                <h6><i>Challenge Mode!</i><h6>
                   <blockquote class="worldbuilding-tip-quote">
                      <p>Declare these two variables.</p>
-                     <p>We will want them to be whole numbers (no decimal points). We don’t need to access these in the Inspector.</p>
+                     <p>We will want them to be whole numbers (no decimal points). We don't need to access these in the Inspector.</p>
                      <p>Then, in the Start function, what should you set the <strong>StartingHealth</strong> to? And then, what line will we use to set <strong>CurrentHealth</strong> to the right value?</p>
-                     <p>We’re going to declare a new function. It will have the name <strong>UpdateHealth</strong>. </p>
+                     <p>We're going to declare a new function. It will have the name <strong>UpdateHealth</strong>. </p>
                      <p>We will need it to:</p>
                      <ol>
                        <li>Be accessible to other scripts</li>
@@ -371,7 +371,7 @@
         <!--Instruction Div-->
         <div class="col s6">
           <div class="projectsection1">
-              <p>Now we just need to call the <strong>UpdateHealth</strong> function when we get hit! Right now, though, there’s no way to check that.</p>
+              <p>Now we just need to call the <strong>UpdateHealth</strong> function when we get hit! Right now, though, there's no way to check that.</p>
               <p>If you want your enemy to attack with a weapon, go download the model of a melee weapon from the <strong>Asset Store</strong>.</p>
           </div>
         </div>
@@ -443,7 +443,7 @@
              <i class="pin"></i>
                <h6><i>Challenge Mode!</i><h6>
                   <blockquote class="worldbuilding-tip-quote">
-                    <p>We want the collider to detect when it touches the player, but we don’t want it to actually hit the player and affect the player’s movement. <i>What setting do we need to change on the collider for that?</i></p>
+                    <p>We want the collider to detect when it touches the player, but we don't want it to actually hit the player and affect the player's movement. <i>What setting do we need to change on the collider for that?</i></p>
                   </blockquote>
                   <br>
        </div>
@@ -468,7 +468,7 @@
       <!--Instruction Div-->
       <div class="col s6">
         <div class="projectsection1">
-          <p>Now that we have the collider all set up, it’s time to add a new script to the weapon. Call it <strong>HitPlayer</strong>.</p>
+          <p>Now that we have the collider all set up, it's time to add a new script to the weapon. Call it <strong>HitPlayer</strong>.</p>
           <p>This script will call the UpdateHealth function of the HUD_Manager when the weapon hits the player. We need:</p>
             <ol>
               <li>Link the <strong>HUD_Manager</strong> script</li>
@@ -531,7 +531,7 @@
   <!--Instruction Div-->
   <div class="col s6">
     <div class="projectsection1">
-      <p>Next, add the OnTriggerEnter function (remember that it takes a parameter of the thing we’re colliding with:</p>
+      <p>Next, add the OnTriggerEnter function (remember that it takes a parameter of the thing we're colliding with:</p>
     </div>
   </div>
 </div>
@@ -549,8 +549,8 @@
          <h6><i>Challenge Mode!</i><h6>
             <blockquote class="worldbuilding-tip-quote">
               <p>Finish the OnTriggerEnter function!</p>
-              <p><i>Hints: make sure we’re only subtracting health if we’re hitting the player! If you need help with this, check the CollectableScript’s OnTriggerEnter function (it’s very similar).</i></p>
-              <p><i>Don’t forget to set the AttackDamage in the Inspector! (Hint: make it negative)</i></p>
+              <p><i>Hints: make sure we're only subtracting health if we're hitting the player! If you need help with this, check the CollectableScript's OnTriggerEnter function (it's very similar).</i></p>
+              <p><i>Don't forget to set the AttackDamage in the Inspector! (Hint: make it negative)</i></p>
             </blockquote>
             <br>
     </div>
@@ -576,7 +576,7 @@
   <div class="projectsection1">
     <h6>Test your game</h6>
     <p>Does it work?</p>
-    <p>If you’ve done everything right, you should have a working health bar! The only problem is that you can’t die.</p>
+    <p>If you've done everything right, you should have a working health bar! The only problem is that you can't die.</p>
   </div>
 </div>
 </div>
@@ -605,7 +605,7 @@
         <!--Instruction Div-->
         <div class="col s6">
           <div class="projectsection1">
-            <p>The player should die if their health goes to zero. Go back to the HUD_Manager script. Let’s create a new function called <strong>Death</strong>.</p>
+            <p>The player should die if their health goes to zero. Go back to the HUD_Manager script. Let's create a new function called <strong>Death</strong>.</p>
 		      </div>
         </div>
       </div>
@@ -633,7 +633,7 @@
   <!--Instruction Div-->
   <div class="col s6">
     <div class="projectsection1">
-      <p>It doesn’t need any parameters and it returns null. This function will reload the level if the player dies. To do that, we need to:</p>
+      <p>It doesn't need any parameters and it returns null. This function will reload the level if the player dies. To do that, we need to:</p>
         <ol>
           <li>Add the SceneManager namespace</li>
               <ul>
@@ -708,7 +708,7 @@
         <!--Instruction Div-->
         <div class="col s6">
           <div class="projectsection1">
-		          <p>Our players are not going to be playing this game in the editor. We’re going to <strong>build</strong> a runnable version of the game so they don’t have to see all of the code! Some functions, like the <strong>SceneManager.</strong> function, need scenes to be in the <strong>Build Settings</strong> to use.</p>
+		          <p>Our players are not going to be playing this game in the editor. We're going to <strong>build</strong> a runnable version of the game so they don't have to see all of the code! Some functions, like the <strong>SceneManager.</strong> function, need scenes to be in the <strong>Build Settings</strong> to use.</p>
               </div>
         </div>
       </div>
@@ -797,7 +797,7 @@
       <br>
       <p>Start thinking about an ending scene for when the player dies</p>
       <p>Something simple works, or you can animate an elaborate cut scene</p>
-      <p>Now you can die! I’m sick of letting this enemy bully us, though. In the next guide, it is time to fight back.</p>
+      <p>Now you can die! I'm sick of letting this enemy bully us, though. In the next guide, it is time to fight back.</p>
     </div>
   </div>
 </div>

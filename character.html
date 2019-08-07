@@ -46,8 +46,8 @@
 		<h5>Worldbuilding with your player in mind</h5>
 		<br>
         <p><strong>Helpful Links:</strong></p>
-		<p><a href="https://docs.unity3d.com/Manual/class-CharacterController.html">Character Controller Documentation</a></p>
-		<p><a href="https://docs.unity3d.com/Manual/class-Camera.html">Camera How-tos</a></p>
+		<p><a href="https://docs.unity3d.com/Manual/class-CharacterController.html" target="_blank">Character Controller Documentation</a></p>
+		<p><a href="https://docs.unity3d.com/Manual/class-Camera.html" target="_blank">Camera How-tos</a></p>
 		<br>
 		<h5>Now that we've made our world for our viewer, it's time to add our player</h5>
 		<p>Keep your notes handy that you made earlier. With our terrain, we built the scene that our main character will be immersed in. But a scene would be nothing without the actors.</p>
@@ -172,11 +172,11 @@
       <!--Instruction Div-->
       <div class="col s6">
         <div class="projectsection1">
-  		  <h6>Our scene came with a camera, but we’re going to replace it with a better one that we can control with the mouse. First, click on the Main Camera that came with our scene and press the Delete key on the keyboard to delete it. To add the new one:</h6>
+  		  <h6>Our scene came with a camera, but we're going to replace it with a better one that we can control with the mouse. First, click on the Main Camera that came with our scene and press the Delete key on the keyboard to delete it. To add the new one:</h6>
   		  <p><strong>Standard Assets</strong>  →  <strong>Cameras</strong>  →  <strong>Prefabs</strong></p>
   		  <p><i>Place the FreeLookCameraRig in your scene</i></p>
   		  <br>
-  		  <p>In order to play the game, Unity needs to know which camera to use. We need to tell it this is the <strong>Main Camera</strong>. We’ll do this with a tag. Select the <strong>FreeLookCameraRig</strong> and check the <strong>Inspector</strong>. Where it says <strong>Untagged</strong>, click and change that to <strong>MainCamera</strong>.</p>
+  		  <p>In order to play the game, Unity needs to know which camera to use. We need to tell it this is the <strong>Main Camera</strong>. We'll do this with a tag. Select the <strong>FreeLookCameraRig</strong> and check the <strong>Inspector</strong>. Where it says <strong>Untagged</strong>, click and change that to <strong>MainCamera</strong>.</p>
 	     </div>
       </div>
     </div>
@@ -204,7 +204,7 @@
       <!--Instruction Div-->
       <div class="col s6">
         <div class="projectsection1">
-    		  <p>Look at the <strong>FreeLookCameraRig’s</strong> script component. It is set to <strong>Auto-target Player</strong>. This is good, but we need to tell it who the player is. Select the <strong>PlayerController</strong> and tag it as <strong>Player</strong>.</p>
+    		  <p>Look at the <strong>FreeLookCameraRig's</strong> script component. It is set to <strong>Auto-target Player</strong>. This is good, but we need to tell it who the player is. Select the <strong>PlayerController</strong> and tag it as <strong>Player</strong>.</p>
 	       </div>
       </div>
     </div>
@@ -274,7 +274,7 @@
       			<p><strong>Gravity Multiplier</strong> - the force of gravity on the player. Default 1.</p>
       			<p><strong>Run Cycle Leg Offset</strong> - Adjusts the running animation. Leave alone for now.</p>
       			<p><strong>Move Speed Multiplier</strong> - how fast the character runs. Default 1.</p>
-      			<p><strong>Anim Speed Multiplier</strong> - how fast the character’s animations play. Should be adjusted when speed is increased to look more natural.</p>
+      			<p><strong>Anim Speed Multiplier</strong> - how fast the character's animations play. Should be adjusted when speed is increased to look more natural.</p>
       			<p><strong>Ground Check Distance</strong> - how close the character needs to be to the ground to be “grounded”.</p>
       			<p>Adjust these settings until the character moves how you like!</p>
       			<br>
@@ -394,7 +394,7 @@
         <!--Instruction Div-->
         <div class="col s6">
           <div class="projectsection1">
-            <p>We don’t want any of Ethan’s parts, so go ahead and highlight all three of the Ethan objects and delete them. This is basically the shell of the character. You will need to open the <strong>Prefab</strong> instance and delete them from there. Then click the back arrow next to <strong>PlayerController</strong> to exit the <strong>Prefab</strong> mode.</p>
+            <p>We don't want any of Ethan's parts, so go ahead and highlight all three of the Ethan objects and delete them. This is basically the shell of the character. You will need to open the <strong>Prefab</strong> instance and delete them from there. Then click the back arrow next to <strong>PlayerController</strong> to exit the <strong>Prefab</strong> mode.</p>
             <br>
             <p>Now the controller needs a new model to control. Drag the model onto the <strong>PlayerController</strong> in the hierarchy to make it a child.</p>
             <br>
@@ -484,7 +484,7 @@
         <!--Instruction Div-->
         <div class="col s6">
           <div class="projectsection1">
-            <p>Currently, our controller is set to use Ethan’s avatar. Click on the <strong>PlayerController</strong> in the Hierarchy and see that in the Inspector.</p>
+            <p>Currently, our controller is set to use Ethan's avatar. Click on the <strong>PlayerController</strong> in the Hierarchy and see that in the Inspector.</p>
             <p>Drag your new Avatar where it says EthanAvatar. Now play your game with your new character!</p>
            </div>
         </div>

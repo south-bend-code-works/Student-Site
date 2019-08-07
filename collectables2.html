@@ -46,7 +46,7 @@
     		<h5>Let's delve back into collectables.</h5>
     		<br>
         <p><strong>Helpful Links:</strong></p>
-    		<p><a href="https://docs.unity3d.com/Manual/CharacterControllers.html">Character Control</a></p>
+    		<p><a href="https://docs.unity3d.com/Manual/CharacterControllers.html" target="_blank">Character Control</a></p>
     		<br>
 	   </div>
     </div>
@@ -138,7 +138,7 @@
       <div class="col s6">
         <div class="projectsection1">
       		<h5>Open the CollectableScript</h5>
-      		  <p>Now when we code we can't just put the collectables' name in there and expect the script to know what we want to rotate, so we are going to have to rename it. A Vector3 is basically an arrow in 3D space. We’re using that arrow as a force, pushing the rotation in the direction of the arrow. It has 3 values: (x, y, z). If we want it to rotate on the y-axis and not the others, we put a value into that slot.</p>
+      		  <p>Now when we code we can't just put the collectables' name in there and expect the script to know what we want to rotate, so we are going to have to rename it. A Vector3 is basically an arrow in 3D space. We're using that arrow as a force, pushing the rotation in the direction of the arrow. It has 3 values: (x, y, z). If we want it to rotate on the y-axis and not the others, we put a value into that slot.</p>
       		  <p><i>transform.Rotate (<strong>new Vector3 (0, 0, 60)</strong>);</i></p>
       		  <br>
       		  <p>The Update function should look like this:</p>
@@ -170,7 +170,7 @@
       <div class="col s6">
         <div class="projectsection1">
       		<h5>Open the CollectableScript</h5>
-      		  <p>Go ahead and save that and run the game. You’ll notice that it’s rotating way too fast! Remember that we are using the Update function - it’s called once per frame. Games run at many frames every second, so it is rotating that much many times per second. We want to rotate every second instead. To do this, we multiply the current rotation by something called time.deltaTime. Multiplying by this converts things from frames into seconds.</p>
+      		  <p>Go ahead and save that and run the game. You'll notice that it's rotating way too fast! Remember that we are using the Update function - it's called once per frame. Games run at many frames every second, so it is rotating that much many times per second. We want to rotate every second instead. To do this, we multiply the current rotation by something called time.deltaTime. Multiplying by this converts things from frames into seconds.</p>
     	   </div>
       </div>
     </div>
@@ -322,7 +322,7 @@
         <!--Instruction Div-->
         <div class="col s6">
           <div class="projectsection1">
-      		  <p>Now we want to make some changes to the <strong>CollectableScript</strong>. We want to make it so this script can update the Player’s stats. We need to access another script to do so. Take a look at the <strong>PlayerController</strong> in the editor. It has a script on it called <strong>ThirdPersonCharacter.</strong></p>
+      		  <p>Now we want to make some changes to the <strong>CollectableScript</strong>. We want to make it so this script can update the Player's stats. We need to access another script to do so. Take a look at the <strong>PlayerController</strong> in the editor. It has a script on it called <strong>ThirdPersonCharacter.</strong></p>
           </div>
         </div>
       </div>
@@ -379,7 +379,7 @@
           <!--Instruction Div-->
           <div class="col s6">
             <div class="projectsection1">
-        			<p>You’ll notice that it’s red. That is because we cannot access this script without a new namespace. You’ll get an error if you try! Add this line to the top of the script:</p>
+        			<p>You'll notice that it's red. That is because we cannot access this script without a new namespace. You'll get an error if you try! Add this line to the top of the script:</p>
         			<p>We do this very similarly to how we accessed the HUD_Manager script. First, add a public variable called <strong>ThirdPersonCharacter</strong> to the <strong>CollectableScript</strong>. This can go right after the HUD_Manager declaration:</p>
             </div>
           </div>
@@ -402,10 +402,10 @@
           <!--Instruction Div-->
           <div class="col s6">
             <div class="projectsection1">
-        			<p>Now let’s add two new public variables that we can set in the Inspector. These will be:</p>
+        			<p>Now let's add two new public variables that we can set in the Inspector. These will be:</p>
         			<p><i><strong>float</strong> JumpIncrease;</i></p>
         			<p><i><strong>float</strong> SpeedIncrease;</i></p>
-        			<p><strong>Floats are numbers with a decimal point.</strong> We used integer before because we didn’t want the score to be a fraction. We want to be able to fine-tune our upgrades more precisely, though, so we’re using a float here. This way we can have collectables that change these values by different amounts!</p>
+        			<p><strong>Floats are numbers with a decimal point.</strong> We used integer before because we didn't want the score to be a fraction. We want to be able to fine-tune our upgrades more precisely, though, so we're using a float here. This way we can have collectables that change these values by different amounts!</p>
             </div>
           </div>
         </div>
@@ -450,7 +450,7 @@
         			<p>In the OnTriggerEnter() function, under the UpdateScore call, add the following lines:</p>
         			<br>
         			<p><strong>Note:</strong> “+=” adds what is after the equals sign to what is before it. For example, 1 += 4 is 5.</p>
-        			<p>Now you’ll see that the ThirdPersonCharacter variables are in red. We forgot to make them public! Go back to the ThirdPersonCharacter script and make them public.</p>
+        			<p>Now you'll see that the ThirdPersonCharacter variables are in red. We forgot to make them public! Go back to the ThirdPersonCharacter script and make them public.</p>
             </div>
           </div>
         </div>
@@ -481,7 +481,7 @@
           			<p>In the OnTriggerEnter() function, under the UpdateScore call, add the following lines:</p>
           			<br>
           			<p><strong>Note:</strong> “+=” adds what is after the equals sign to what is before it. For example, 1 += 4 is 5.</p>
-          			<p>Now you’ll see that the ThirdPersonCharacter variables are in red. We forgot to make them public! Go back to the ThirdPersonCharacter script and make them public.</p>
+          			<p>Now you'll see that the ThirdPersonCharacter variables are in red. We forgot to make them public! Go back to the ThirdPersonCharacter script and make them public.</p>
               </div>
             </div>
           </div>
@@ -510,7 +510,7 @@
                       <!--Instruction Div-->
                       <div class="col s6">
                         <div class="projectsection1">
-                    			<p>Now you’ll be able to set the values in the Inspector for the JumpIncrease and SpeedIncrease.</p>
+                    			<p>Now you'll be able to set the values in the Inspector for the JumpIncrease and SpeedIncrease.</p>
                         </div>
                       </div>
                     </div>

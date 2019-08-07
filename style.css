@@ -18,7 +18,7 @@ body {
   background-color: #00BFFF;
   width: 100%;
   height: 40%;
-  position:relative !important;
+  position:bottom !important;
   bottom:0 !important;
   color: black !important;
 
@@ -214,11 +214,13 @@ input[type='checkbox'] {
 #rockbandBG {background-image: url('rockband.png');}
 #petBG {background-image: url('pet.gif');}
 #animationBG {background-image: url('makeurownanimation.png');}
+#imaginatorBG {background-image: url('imaginator.GIF');}
 #gettheprizeBG {background-image: url('gettheprize.gif');}
 #hideandseekBG {background-image: url('hideandseek.gif');}
 #terraBG {background-image: url('terra.gif');}
 #selectionBG {background-image: url('chooseadventure.png');}
 #chatbotBG {background-image: url('chatbot.png');}
+#twotruthsBG {background-image: url('twotruths.GIF');}
 #tellastoryBG {background-image: url('tellastory.jpg');}
 #aboutmeBG {background-image: url('boolean.png');}
 #paintBG {background-image: url('paint.gif');}
@@ -395,8 +397,8 @@ background-position: center; background-size: contain;}
 #tictactoeBG{background-image: url('./Python_files/tictactoe.gif');}
 #whackamoleBG{background-image: url('whackamole.jpg');}
 
-
-
+/*Career Exposure Images */
+#careertestBG{background-image: url('careertest.JPG');}
 
 /* =================================================================================================================================HOME PAGE CARD============================================================ */
 .agesHeading {
