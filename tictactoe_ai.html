@@ -50,8 +50,8 @@
         <p><img src="./Python_files/tictactoe1.JPG"></p>
         <br>
         <h5>Helpful Links</h5>
-        <p><a href="repl.it">repl.it</a> - an online interpreter that we will use for writing our Python code.</p>
-        <p><a href="https://repl.it/@MelinaSapiano/TicTacToe-1-player">https://repl.it/@MelinaSapiano/TicTacToe-1-player</a>Tic Tac Toe Answer Key</p>
+        <p><a href="https://repl.it" target="_blank">repl.it</a> - an online interpreter that we will use for writing our Python code.</p>
+        <p><a href="https://repl.it/@MelinaSapiano/TicTacToe-1-player" target="_blank">https://repl.it/@MelinaSapiano/TicTacToe-1-player</a>Tic Tac Toe Answer Key</p>
         <br>
         <h5>End Product</h5>
         <p>An online Tic Tac Toe game!</p>
@@ -87,7 +87,7 @@
               <div class="col s6">
                 <div class="projectsection1">
                         <h5>First steps</h5>
-                        <p>Open <a href="repl.it">repl.it</a></p>
+                        <p>Open <a href="https://repl.it" target="_blank">repl.it</a></p>
                         <p>Name it <strong>TicTacToe</strong></p>
                 </div>
             </div>
@@ -119,9 +119,34 @@
                 <div class="projectsection1">
                     <h5>Game AI</h5>
                     <p>Part of this program is working together with the AI to build the game board, so that it can look at the board and decided where and what kind of spaces to move to.</p>
-                    <img src="./Python_files/tictactoe3.JPG">
-                    <p>Think of it like this</p>
-                    <br>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col s6 offset-s2">
+                <img src="./Python_files/tictactoe3.JPG">
+              </div>
+            </div>
+
+            <div class="row">
+              <!--Lesson Checkbox Div-->
+              <div class="col s1 offset-s1">
+                <div class="checkbox">
+                  <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span></span>
+                      </label>
+                    </p>
+                  </form>
+                </div>
+              </div>
+              <!--Instruction Div-->
+              <div class="col s6">
+                <div class="projectsection1">
+                    <h5>Think of it like this</h5>
                     <p>The AI algorithm will go through these steps:</p>
                     <p>1. Try to find a move that the computer can make to win. Then take that move. If not, go to step 2.</p>
                     <p>2. See if there's a move that the player can make that will cause the AI to lose. If so, block that move. If not, go to step 3.</p>
@@ -157,8 +182,13 @@
               <div class="col s6">
                 <div class="projectsection1">
                     <h5>These are our first few lines:</h5>
-                    <img src="./Python_files/tictactoe4.JPG">
                 </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col s6 offset-s2">
+              <img src="./Python_files/tictactoe4.JPG">
             </div>
           </div>
 
@@ -188,8 +218,13 @@
                   <div class="projectsection1">
                       <h5>Let's start with a function:</h5>
                       <p>The <strong>drawBoard()</strong> function prints the game board, and the board itself is presented by the list of 10 strings. By telling it to ignore 0, the board starts at <strong>index 1</strong></p>
-                      <img src="./Python_files/tictactoe5.JPG">
                   </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col s6 offset-s2">
+                <img src="./Python_files/tictactoe5.JPG">
               </div>
             </div>
 
@@ -215,6 +250,7 @@
                       </div>
                   </div>
                 </div>
+
                 <div class="row">
                         <!--Lesson Checkbox Div-->
                         <div class="col s1 offset-s1">
@@ -265,13 +301,44 @@
               <div class="projectsection1">
                   <h5>Let's add another function in.</h5>
                   <p>This function will choose for the player either <strong>X</strong> or <strong>O</strong></p>
-                  <p><img src="./Python_files/tictactoe6.JPG"></p>
-                  <p>Our <strong>inputPlayerLetter()</strong> function asks the player if they would rather be <strong>X</strong> or <strong>O</strong>.</p>
-                  <p>The <strong>while</strong> loop evaluates the function like this:</p>
-                  <p><img src="./Python_files/tictactoe7.JPG"></p>
                 </div>
           </div>
         </div>
+
+        <div class="row">
+          <div class="col s6 offset-s2">
+            <img src="./Python_files/tictactoe6.JPG">
+          </div>
+        </div>
+
+        <div class="row">
+                <!--Lesson Checkbox Div-->
+                <div class="col s1 offset-s1">
+                  <div class="checkbox">
+                    <form action="#">
+                      <p>
+                        <label>
+                          <input type="checkbox" />
+                          <span></span>
+                        </label>
+                      </p>
+                    </form>
+                  </div>
+                </div>
+                <!--Instruction Div-->
+                <div class="col s6">
+                  <div class="projectsection1">
+                      <p>Our <strong>inputPlayerLetter()</strong> function asks the player if they would rather be <strong>X</strong> or <strong>O</strong>.</p>
+                      <p>The <strong>while</strong> loop evaluates the function like this:</p>
+                    </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col s6 offset-s2">
+                <img src="./Python_files/tictactoe7.JPG">
+              </div>
+            </div>
 
         <div class="row">
                 <!--Lesson Checkbox Div-->
@@ -293,10 +360,16 @@
                       <h5>But what if our player imputs a lower case letter?</h5>
                       <p>If our player inputs a lower case letter, our code won't work.</p>
                       <p>So let's add some code to make sure that will automatically change the input to uppercase letters.</p>
-                      <p><img src="./Python_files/tictactoe30.JPG"></p>
                     </div>
               </div>
             </div>
+
+            <div class="row">
+              <div class="col s6 offset-s2">
+                <img src="./Python_files/tictactoe30.JPG">
+              </div>
+            </div>
+
             <div class="row">
                     <!--Lesson Checkbox Div-->
                     <div class="col s1 offset-s1">
@@ -317,8 +390,13 @@
                           <h5>If/Else statement</h5>
                           <p>Now for the rest of our <strong>inputPlayerLetter</strong> function</p>
                           <p>Add in the if/else statement to your code:</p>
-                          <p><img src="./Python_files/tictactoe8.JPG"></p>
                       </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col s6 offset-s2">
+                    <img src="./Python_files/tictactoe8.JPG">
                   </div>
                 </div>
 
@@ -344,6 +422,7 @@
                   </div>
               </div>
             </div>
+
             <div class="row">
                     <!--Lesson Checkbox Div-->
                     <div class="col s1 offset-s1">
@@ -395,9 +474,14 @@
                           <p>This function will chose whether the AI or player goes first:</p>
                           <p>Our <strong>whoGoesFirst</strong> function does a coin toss to figure out who goes first.</p>
                           <p>Using a <strong>random.randint(0,1)</strong> function gives 0 and 1 each equally a 50% chance.</p>
-                          <p><img src="./Python_files/tictactoe9.JPG"></p>
                           <p>This function will use the <strong>return</strong> value to determine who will make the first move of a game.</p>
                       </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col s6 offset-s2">
+                    <img src="./Python_files/tictactoe9.JPG">
                   </div>
                 </div>
 
@@ -450,8 +534,13 @@
                     <div class="projectsection1">
                         <h5>Let's add a new function in</h5>
                         <p>The <strong>makeMove()</strong> function will reference the parameters of <strong>board</strong>, <strong>letter</strong>, and <strong>move</strong>.</p>
-                        <p><img src="./Python_files/tictactoe10.JPG"></p>
                     </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col s6 offset-s2">
+                  <img src="./Python_files/tictactoe10.JPG">
                 </div>
               </div>
 
@@ -502,9 +591,14 @@
                 <div class="col s6">
                   <div class="projectsection1">
                     <h5>How to check if our player has won is just one long <strong>return</strong> statement:</h5>
-                    <p><img src="./Python_files/tictactoe11.JPG"></p>
                     <p>The <strong>bo</strong> and <strong>le</strong> are just shortcuts for our <strong>board</strong> and <strong>letter</strong> parameters.</p>
                   </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col s6 offset-s2">
+                <img src="./Python_files/tictactoe11.JPG">
               </div>
             </div>
 
@@ -530,6 +624,7 @@
                 </div>
             </div>
           </div>
+
           <div class="row">
                   <!--Lesson Checkbox Div-->
                   <div class="col s1 offset-s1">
@@ -578,8 +673,13 @@
                             <div class="projectsection1">
                               <h5>Adding a <strong>getBoardCopy</strong> function allows you to make a copy of the 10 strings that make up our game board.</h5>
                               <p>This may seem like a given, but by duplicating the board, we are able to refresh the board but with any changes that are made, like, say after a move has been played.</p>
-                              <p><img src="./Python_files/tictactoe12.JPG"></p>
                             </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col s6 offset-s2">
+                          <img src="./Python_files/tictactoe12.JPG">
                         </div>
                       </div>
 
@@ -602,9 +702,14 @@
                           <div class="projectsection1">
                             <h5>Checking for open space on the board</h5>
                               <p>After our board has been refreshed, we need to make sure that a move is available.</p>
-                              <p><img src="./Python_files/tictactoe13.JPG"></p>
                               <p>Go ahead and add this to your code</p>
                           </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col s6 offset-s2">
+                        <img src="./Python_files/tictactoe13.JPG">
                       </div>
                     </div>
 
@@ -655,12 +760,38 @@
                       <div class="col s6">
                         <div class="projectsection1">
                           <h5>Adding a <strong>getPlayerMove()</strong> function will allow the player to enter a number for the space they want to play.</h5>
-                            <p><img src="./Python_files/tictactoe14.JPG"></p>
-                            <p>This loop will make sure that the game doesn't continue until an integer has been added.</p>
-                            <p>It also checks to make sure that the space hasn't been taken already</p>
                         </div>
                     </div>
                   </div>
+
+                  <div class="row">
+                    <div class="col s6 offset-s2">
+                      <img src="./Python_files/tictactoe14.JPG">
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <!--Lesson Checkbox Div-->
+                    <div class="col s1 offset-s1">
+                      <div class="checkbox">
+                        <form action="#">
+                          <p>
+                            <label>
+                              <input type="checkbox" />
+                              <span></span>
+                            </label>
+                          </p>
+                        </form>
+                      </div>
+                    </div>
+                    <!--Instruction Div-->
+                    <div class="col s6">
+                      <div class="projectsection1">
+                          <p>This loop will make sure that the game doesn't continue until an integer has been added.</p>
+                          <p>It also checks to make sure that the space hasn't been taken already</p>
+                      </div>
+                  </div>
+                </div>
 
                 <div class="row">
                   <!--Lesson Checkbox Div-->
@@ -681,9 +812,14 @@
                     <div class="projectsection1">
                       <h5>Busting a move</h5>
                         <p>Now we have to enable to the AI to be able to choose a move from the list of moves.</p>
-                        <p><img src="./Python_files/tictactoe15.JPG"></p>
                         <p>Add this to your code.</p>
                     </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col s6 offset-s2">
+                  <img src="./Python_files/tictactoe15.JPG">
                 </div>
               </div>
 
@@ -734,6 +870,12 @@
             </div>
 
             <div class="row">
+              <div class="col s6 offset-s2">
+                <img src="./Python_files/tictactoe16.JPG">
+              </div>
+            </div>
+
+            <div class="row">
               <!--Lesson Checkbox Div-->
               <div class="col s1 offset-s1">
                 <div class="checkbox">
@@ -750,13 +892,13 @@
               <!--Instruction Div-->
               <div class="col s6">
                 <div class="projectsection1">
-                  <p><img src="./Python_files/tictactoe16.JPG"></p>
                     <p>If our list isn't empty, there is at least one move possible on the board.</p>
                     <p>Though, if our list was empty, and the <strong>board</strong> parameter had all the corner spaces taken already, the <strong>possibleMoves</strong> list would be [].</p>
                     <p>This would mean that <strong>len(possibleMoves)</strong> would equal 0, and the function returns <strong>None</strong>.</p>
                 </div>
             </div>
           </div>
+
           <div class="row">
             <div class="col s6 offset-s1">
               <h4>Creating our AI</h4>
@@ -781,19 +923,46 @@
             <div class="col s6">
               <div class="projectsection1">
                 <h5>You guessed it! We're going to add another function.</h5>
-                  <p><img src="./Python_files/tictactoe17.JPG"></p>
-                  <p>Our first line references the <strong>board</strong> parameter while the second records if the computer uses 'X' or 'O'.</p>
-                  <br>
-                  <p>Let's run through all the things we need our AI to do:</p>
-                  <p>1. Try to find a move that the computer can make to win. Then take that move. If not, go to step 2.</p>
-                  <p>2. See if there's a move that the player can make that will cause the AI to lose. If so, block that move. If not, go to step 3.</p>
-                  <p>3. Check if any corner spots are open, then move there. If not, move on to step 4.</p>
-                  <p>4. Check if the center is open. If not, move on to step 5.</p>
-                  <p>5. Move on to any of the side spaces. There are no more steps because after steps 1-4, the side spaces are all that is left.</p>
-                  <p>Now let's break these down</p>
               </div>
           </div>
         </div>
+
+        <div class="row">
+          <div class="col s6 offset-s2">
+            <img src="./Python_files/tictactoe17.JPG">
+          </div>
+        </div>
+
+        <div class="row">
+          <!--Lesson Checkbox Div-->
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+              </form>
+            </div>
+          </div>
+          <!--Instruction Div-->
+          <div class="col s6">
+            <div class="projectsection1">
+                <p>Our first line references the <strong>board</strong> parameter while the second records if the computer uses 'X' or 'O'.</p>
+                <br>
+                <p>Let's run through all the things we need our AI to do:</p>
+                <p>1. Try to find a move that the computer can make to win. Then take that move. If not, go to step 2.</p>
+                <p>2. See if there's a move that the player can make that will cause the AI to lose. If so, block that move. If not, go to step 3.</p>
+                <p>3. Check if any corner spots are open, then move there. If not, move on to step 4.</p>
+                <p>4. Check if the center is open. If not, move on to step 5.</p>
+                <p>5. Move on to any of the side spaces. There are no more steps because after steps 1-4, the side spaces are all that is left.</p>
+                <p>Now let's break these down</p>
+            </div>
+        </div>
+      </div>
+
         <div class="row">
           <!--Lesson Checkbox Div-->
           <div class="col s1 offset-s1">
@@ -813,10 +982,13 @@
             <div class="projectsection1">
               <p><i>1. Try to find a move that the computer can make to win. Then take that move. If not, go to step 2.</i></p>
                 <p>This means, we need to make sure that if at all possible, see if the computer can win in the next move, then make that move</p>
-                <p><img src="./Python_files/tictactoe18.JPG"></p>
-                <p>This allows the computer to check any possible move 1 to 9, check the board for possible moves, and make a move.</p>
-                <p>Finally the loop ends and continues on to the next step</p>
             </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s6 offset-s2">
+          <img src="./Python_files/tictactoe18.JPG">
         </div>
       </div>
 
@@ -837,14 +1009,63 @@
         <!--Instruction Div-->
         <div class="col s6">
           <div class="projectsection1">
-            <p><i>2. See if there's a move that the player can make that will cause the AI to lose. If so, block that move. If not, go to step 3.</i></p>
-              <p><img src="./Python_files/tictactoe19.JPG"></p>
-              <p>Just like step 1, except now we are taking into account for the player's move.</p>
-              <p>And if the player can win, the AI will step in with a move to block.</p>
-              <p>If the AI cannot block the player from winning in the next move, the <strong>for</strong> loop ends, and we go on to the next step.</p>
+              <p>This allows the computer to check any possible move 1 to 9, check the board for possible moves, and make a move.</p>
+              <p>Finally the loop ends and continues on to the next step</p>
           </div>
       </div>
     </div>
+
+      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+            <p><i>2. See if there's a move that the player can make that will cause the AI to lose. If so, block that move. If not, go to step 3.</i></p>
+          </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <img src="./Python_files/tictactoe19.JPG">
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+            <p>Just like step 1, except now we are taking into account for the player's move.</p>
+            <p>And if the player can win, the AI will step in with a move to block.</p>
+            <p>If the AI cannot block the player from winning in the next move, the <strong>for</strong> loop ends, and we go on to the next step.</p>
+        </div>
+    </div>
+  </div>
 
     <div class="row">
       <!--Lesson Checkbox Div-->
@@ -869,12 +1090,13 @@
           <p>If our computer can't win, and can't block the player's next move, it will do the next best thing in tictactoe.</p>
           <p>The function references to board, and will move to a corner, center, or side space depending on which is available in that order.</p>
           <p>First the corner</p>
-          <p><img src="./Python_files/tictactoe20.JPG"></p>
-          <p>Then the center</p>
-          <p><img src="./Python_files/tictactoe21.JPG"></p>
-          <p>And finally the sides</p>
-          <p><img src="./Python_files/tictactoe22.JPG"></p>
         </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <img src="./Python_files/tictactoe20.JPG">
     </div>
   </div>
 
@@ -895,13 +1117,95 @@
     <!--Instruction Div-->
     <div class="col s6">
       <div class="projectsection1">
-        <h5>And now the last piece of the puzzle, if the board is full</h5>
-        <p>Rightly named, our last function is called <strong>isBoardFull()</strong></p>
-        <p><img src="./Python_files/tictactoe23.JPG"></p>
-        <p>This allows for the <strong>for</strong> loop to check through the indexes, 1 to 9 on the board list. If there is a space, the <strong>isBoardFull()</strong> will return <strong>false</strong>.</p>
-        <p>But if none of the spaces are free, then it will return <strong>true</strong>.</p>
+        <p>Then the center</p>
       </div>
   </div>
+</div>
+
+<div class="row">
+  <div class="col s6 offset-s2">
+    <img src="./Python_files/tictactoe21.JPG">
+  </div>
+</div>
+
+<div class="row">
+  <!--Lesson Checkbox Div-->
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span></span>
+          </label>
+        </p>
+      </form>
+    </div>
+  </div>
+  <!--Instruction Div-->
+  <div class="col s6">
+    <div class="projectsection1">
+      <p>And finally the sides</p>
+    </div>
+</div>
+</div>
+
+<div class="row">
+<div class="col s6 offset-s2">
+  <img src="./Python_files/tictactoe22.JPG">
+</div>
+</div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h5>And now the last piece of the puzzle, if the board is full</h5>
+        <p>Rightly named, our last function is called <strong>isBoardFull()</strong></p>
+      </div>
+  </div>
+</div>
+
+<div class="row">
+<div class="col s6 offset-s2">
+  <img src="./Python_files/tictactoe23.JPG">
+</div>
+</div>
+
+<div class="row">
+  <!--Lesson Checkbox Div-->
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span></span>
+          </label>
+        </p>
+      </form>
+    </div>
+  </div>
+  <!--Instruction Div-->
+  <div class="col s6">
+    <div class="projectsection1">
+      <p>This allows for the <strong>for</strong> loop to check through the indexes, 1 to 9 on the board list. If there is a space, the <strong>isBoardFull()</strong> will return <strong>false</strong>.</p>
+      <p>But if none of the spaces are free, then it will return <strong>true</strong>.</p>
+    </div>
+</div>
 </div>
 
 <div class="row">
@@ -951,14 +1255,46 @@
   <div class="col s6">
     <div class="projectsection1">
       <h5>After we have set our board, and created our AI, we need to welcome our player.</h5>
-        <p><img src="./Python_files/tictactoe24.JPG"></p>
-        <p>Then add in our <strong>while</strong> loop</p>
-        <p><img src="./Python_files/tictactoe25.JPG"></p>
-        <p>Then asking our player to choose either either X or O, and then telling the player who will go first.</p>
+    </div>
+</div>
+</div>
+
+<div class="row">
+<div class="col s6 offset-s2">
+  <img src="./Python_files/tictactoe24.JPG">
+</div>
+</div>
+
+<div class="row">
+  <!--Lesson Checkbox Div-->
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span></span>
+          </label>
+        </p>
+      </form>
+    </div>
+  </div>
+  <!--Instruction Div-->
+  <div class="col s6">
+    <div class="projectsection1">
+        <p>Add in our <strong>while</strong> loop</p>
+        <p>Asking our player to choose either either X or O first, and then telling the player who will go first.</p>
         <p>Finally, our last line in there, the <strong>gameIsPlaying</strong> variable keeps track of if the game has won, tied, or is still being played.</p>
     </div>
 </div>
 </div>
+
+<div class="row">
+<div class="col s6 offset-s2">
+  <img src="./Python_files/tictactoe25.JPG">
+</div>
+</div>
+
 <div class="row">
 <!--Lesson Checkbox Div-->
 <div class="col s1 offset-s1">
@@ -977,9 +1313,14 @@
 <div class="col s6">
   <div class="projectsection1">
     <h5>The player's turn</h5>
-    <p><img src="./Python_files/tictactoe26.JPG"></p>
     <p>This loop will keep on going back and forth between the player and the AI <i>as long as the <strong>gameIsPlaying</strong> variable is still <strong>true</strong></i>.</p>
   </div>
+</div>
+</div>
+
+<div class="row">
+<div class="col s6 offset-s2">
+  <img src="./Python_files/tictactoe26.JPG">
 </div>
 </div>
 
@@ -1001,7 +1342,33 @@
 <div class="col s6">
 <div class="projectsection1">
   <p>Once the player has made their move, our program will check if they have won or not:</i></p>
-  <p><img src="./Python_files/tictactoe27.JPG"></p>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col s6 offset-s2">
+  <img src="./Python_files/tictactoe27.JPG">
+</div>
+</div>
+
+<div class="row">
+<!--Lesson Checkbox Div-->
+<div class="col s1 offset-s1">
+<div class="checkbox">
+  <form action="#">
+    <p>
+      <label>
+        <input type="checkbox" />
+        <span></span>
+      </label>
+    </p>
+  </form>
+</div>
+</div>
+<!--Instruction Div-->
+<div class="col s6">
+<div class="projectsection1">
   <p>Our <strong>gameIsPlaying</strong> variable is set to false, hence telling the player that they have won.</p>
   <p>But if the player didn't win, the <strong>else</strong> part of our statement will allow the computer to go next.</p>
 </div>
@@ -1027,9 +1394,14 @@
 <div class="projectsection1">
   <h5>AI's turn</h5>
     <p>Similar to the turn for our player, except for the only difference is the code that references our computer's letter, <strong>getComputerMove()</strong></p>
-    <p><img src="./Python_files/tictactoe28.JPG"></p>
     <p>The last statement will check to see if the game is won or tied, and if not, let the player make another move.</p>
 </div>
+</div>
+</div>
+
+<div class="row">
+<div class="col s6 offset-s2">
+  <img src="./Python_files/tictactoe28.JPG">
 </div>
 </div>
 
@@ -1080,11 +1452,17 @@
   <div class="col s6">
     <div class="projectsection1">
       <h5>Earlier we asked the player if they wanted to play another round</h5>
-      <p><img src="./Python_files/tictactoe25.JPG"></p>
       <p>Now we have to finish out that function</p>
     </div>
 </div>
 </div>
+
+<div class="row">
+<div class="col s6 offset-s2">
+  <img src="./Python_files/tictactoe25.JPG">
+</div>
+</div>
+
 <div class="row">
   <!--Lesson Checkbox Div-->
   <div class="col s1 offset-s1">
@@ -1103,7 +1481,33 @@
   <div class="col s6">
     <div class="projectsection1">
       <h5>We have to add in a statement at the end to finish the game if they don't want to play again.</h5>
-      <p><img src="./Python_files/tictactoe29.JPG"></p>
+    </div>
+</div>
+</div>
+
+<div class="row">
+<div class="col s6 offset-s2">
+  <img src="./Python_files/tictactoe29.JPG">
+</div>
+</div>
+
+<div class="row">
+  <!--Lesson Checkbox Div-->
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span></span>
+          </label>
+        </p>
+      </form>
+    </div>
+  </div>
+  <!--Instruction Div-->
+  <div class="col s6">
+    <div class="projectsection1">
       <p>It's important to finish out our code so it doesn't continuously run.</p>
       <p>The break at the end will have our function stop at the end of a finished game.</p>
       <p>And that's it!</p>
