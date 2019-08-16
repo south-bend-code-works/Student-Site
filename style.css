@@ -133,6 +133,11 @@ a:visited {
   font-size: 16px;
   box-shadow: 0 10px 10px 2px rgba(0,0,0,0.3);
 }
+
+.column {
+  float: left;
+  flex: 50%
+}
 /*collapsible =================================================================================================================================Scratch Lesson Cards=======================================================*/
 .wrap-collabsible {
   margin-bottom: 1.2rem 0;
@@ -253,8 +258,8 @@ input[type='checkbox'] {
 #keyframesreviewBG{background-image: url();}
 #portBG{background-image: url('scratchportfolio.jpg');}
 #passionBG{background-image: url('passionProject.jpg');}
-#materializeBG {background-image: url('materialize.JPG');}
-#startupBG {background-image: url('startup.JPG');}
+#materializeBG {background-image: url('materialize.jpg');}
+#startupBG {background-image: url('startup.jpg');}
 .kahootBG {background-image: url('kahoot.jpeg');}
 .challenge1{background-image: url('codingchallenge1.jpg');}
 .challenge2{background-image: url('codingchallenge2.jpg');}
