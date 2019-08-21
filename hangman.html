@@ -47,8 +47,8 @@
         <p>Hangman is a fun letter guessing game. Play a few rounds <a href="https://hangmanwordgame.com/?fca=1&success=0#/">here</a> if you’re not familiar with how the game works.</p>
         <br>
         <h5>Helpful Links</h5>
-        <p><a href="repl.it">repl.it</a> - an online interpreter that we will use for writing our Python code.</p>
-        <p><a href="https://repl.it/@kristenhaubold/SimpleHangman">https://repl.it/@kristenhaubold/SimpleHangman</a>Finished game, if you get stuck.</p>
+        <p><a href="https://repl.it" target="_blank">repl.it</a> - an online interpreter that we will use for writing our Python code.</p>
+        <p><a href="https://repl.it/@kristenhaubold/SimpleHangman" target="_blank">https://repl.it/@kristenhaubold/SimpleHangman</a> Finished game, if you get stuck.</p>
         <br>
         <h5>End Product</h5>
         <p>A hangman game to play with your friends!</p>
@@ -84,13 +84,19 @@
               <div class="col s6">
                 <div class="projectsection1">
                         <h5>First steps</h5>
-                        <p>Open up your repl on <a href="repl.it">repl.it</a>.</p>
+                        <p>Open up your repl on <a href="https://repl.it" target="_blank">repl.it</a>.</p>
                         <p>Create a new repl, name it <strong>Hangman</strong>.</p>
                         <p>Create a words.txt file that contains a list of possible secret words, with each word being on a new line.</p>
-                        <p><img src="./Python_files/hangman1.JPG"></p>
                 </div>
             </div>
           </div>
+
+          <div class="row">
+            <div class="col s6 offset-s2">
+              <p><img src="./Python_files/hangman1.JPG" width="400px"></p>
+            </div>
+          </div>
+
           <!--html Lesson: Directions Start Here-->
           <div class="row">
               <div class="col s6 offset-s1">
@@ -180,10 +186,16 @@
               <div class="col s6">
                 <div class="projectsection1">
                     <p>To define the function:</p>
-                    <p><i>def getWord():</i></p>
                 </div>
               </div>
             </div>
+
+            <div class="row">
+              <div class="col s6 offset-s2">
+                <p><img src="./Python_files/hangman4.JPG" width="150px"></p>
+              </div>
+            </div>
+
             <div class="row">
               <!--Lesson Checkbox Div-->
               <div class="col s1 offset-s1">
@@ -202,10 +214,16 @@
               <div class="col s6">
                 <div class="projectsection1">
                     <p>The first step in file input is to open the file</p>
-                    <p><i>words_file = open(“words.txt”)</i></p>
                 </div>
               </div>
             </div>
+
+            <div class="row">
+              <div class="col s6 offset-s2">
+                <p><img src="./Python_files/hangman5.JPG" width="250px"></p>
+              </div>
+            </div>
+
             <div class="row">
               <!--Lesson Checkbox Div-->
               <div class="col s1 offset-s1">
@@ -224,10 +242,16 @@
               <div class="col s6">
                 <div class="projectsection1">
                     <p>The readlines function will read in each line from an opened file and store them in a list.</p>
-                    <p><i>words = words_file.readlines()</i></p>
                 </div>
               </div>
             </div>
+
+            <div class="row">
+              <div class="col s6 offset-s2">
+                <p><img src="./Python_files/hangman6.JPG" width="250px"></p>
+              </div>
+            </div>
+
             <div class="row">
               <!--Lesson Checkbox Div-->
               <div class="col s1 offset-s1">
@@ -246,10 +270,16 @@
               <div class="col s6">
                 <div class="projectsection1">
                     <p>How do I determine how many words are in my list?</p>
-                    <p><i>len(words)</i></p>
                 </div>
               </div>
             </div>
+
+            <div class="row">
+              <div class="col s6 offset-s2">
+                <p><img src="./Python_files/hangman7.JPG" width="150px"></p>
+              </div>
+            </div>
+
             <div class="row">
               <!--Lesson Checkbox Div-->
               <div class="col s1 offset-s1">
@@ -268,13 +298,45 @@
               <div class="col s6">
                 <div class="projectsection1">
                     <p>But the question is, how do you generate a random number?</p>
-                    <ol>
-                      <li>Use the random library! To use a library, you must import it at the top of your python file: import random</li>
-                      <li><i>random_number = random.randint(a, b)</i> will set the random_number variable to a random number between a and b</li>
-                    </ol>
+                    <p>We have a few choices:</p>
+                    <ul>
+                      <li><strong>Use the random library! To use a library, you must import it at the top of your python file: import random</strong></li>
+                    </ul>
                 </div>
               </div>
             </div>
+
+            <div class="row">
+              <!--Lesson Checkbox Div-->
+              <div class="col s1 offset-s1">
+                <div class="checkbox">
+                  <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span></span>
+                      </label>
+                    </p>
+                  </form>
+                </div>
+              </div>
+              <!--Instruction Div-->
+              <div class="col s6">
+                <div class="projectsection1">
+                  <p>Or</p>
+                    <ul>
+                      <li><strong>Create a new line of code, this will set the random_number variable to a random number between a and b</strong></li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col s6 offset-s2">
+                <p><img src="./Python_files/hangman8.JPG" width="300px"></p>
+              </div>
+            </div>
+
             <div class="row">
               <!--Lesson Checkbox Div-->
               <div class="col s1 offset-s1">
@@ -293,10 +355,16 @@
               <div class="col s6">
                 <div class="projectsection1">
                     <p>So, how do I access a word from the list of words? </p>
-                    <p><i>word = words[0]</i> will set the <strong>word</strong> variable to the first word in the list</p>
                 </div>
               </div>
             </div>
+
+            <div class="row">
+              <div class="col s6 offset-s2">
+                <p><img src="./Python_files/hangman9.JPG" width="150px"></p>
+              </div>
+            </div>
+
             <div class="row">
               <!--Lesson Checkbox Div-->
               <div class="col s1 offset-s1">
@@ -314,10 +382,40 @@
               <!--Instruction Div-->
               <div class="col s6">
                 <div class="projectsection1">
-                    <p>To remove white space from a string, use <i>myString.strip()</i></p>
+                    <p>This will set the <strong>word</strong> variable to the first word in the list</p>
                 </div>
               </div>
             </div>
+
+            <div class="row">
+              <!--Lesson Checkbox Div-->
+              <div class="col s1 offset-s1">
+                <div class="checkbox">
+                  <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span></span>
+                      </label>
+                    </p>
+                  </form>
+                </div>
+              </div>
+              <!--Instruction Div-->
+              <div class="col s6">
+                <div class="projectsection1">
+                    <p>To remove white space from a string, use:</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col s6 offset-s2">
+                <p><img src="./Python_files/hangman10.JPG" width="150px"></p>
+              </div>
+            </div>
+
+
             <div class="row">
               <!--Lesson Checkbox Div-->
               <div class="col s1 offset-s1">
@@ -336,8 +434,13 @@
               <div class="col s6">
                 <div class="projectsection1">
                     <p>Finally, return the word</p>
-                    <p><i>return word</i></p>
                 </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col s6 offset-s2">
+                <p><img src="./Python_files/hangman11.JPG" width="150px"></p>
               </div>
             </div>
 
@@ -397,8 +500,14 @@
           <!--Instruction Div-->
           <div class="col s6">
             <div class="projectsection1">
-                <p>Set the secret word using <strong>getWord()</strong></p>
+                <p>Set the secret word using:</p>
               </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s6 offset-s2">
+          <p><img src="./Python_files/hangman12.JPG" width="100px"></p>
         </div>
       </div>
 
@@ -420,20 +529,46 @@
         <div class="col s6">
           <div class="projectsection1">
               <p>Print out an underscore ( _ ) for every letter in the secret word that you have randomly chosen from the list.</p>
-              <ol>
                 <li>Use a for loop to loop through every letter in a string.</li>
-                <ul>
-                  <li><i>for letter in myString:</i></li>
-                </ul>
-                <li>Remember, before the player has guessed any letters, you want to print out an underscore, not the letter.</li>
-                <li>Python automatically adds a new line character after each print statement. To add a space instead of a new line, you can change what is added at the end of the line like this:</li>
-                <ul>
-                  <li><i>print(“_”, end=’  ‘)</i></li>
-                </ul>
-              </ol>
             </div>
       </div>
     </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <p><img src="./Python_files/hangman13.JPG" width="300px"></p>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+              <p>Remember, before the player has guessed any letters, you want to print out an underscore, not the letter.</p>
+              <p>Python automatically adds a new line character after each print statement. To add a space instead of a new line, you can change what is added at the end of the line like this:</p>
+          </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <p><img src="./Python_files/hangman14.JPG" width="300px"></p>
+    </div>
+  </div>
+
     <div class="row">
       <!--Lesson Checkbox Div-->
       <div class="col s1 offset-s1">
@@ -452,16 +587,38 @@
       <div class="col s6">
         <div class="projectsection1">
             <p>Ask the player to guess a letter</p>
-            <ol>
               <li>To collect user input, use the input function:</li>
-              <ul>
-                <li><i>user_input = input(“\nUser, give me some input: “):</i></li>
-              </ul>
-              <li>The <i>\n</i> character is called the new line character, and will add a line before the string. It’s helpful for making the text output look nicer/more organized.</li>
-          </ol>
           </div>
     </div>
   </div>
+
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <p><img src="./Python_files/hangman15.JPG" width="500px"></p>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+            <p>The <i>\n</i> character is called the new line character, and will add a line before the string. It’s helpful for making the text output look nicer/more organized.</p>
+        </div>
+  </div>
+</div>
 
 <div class="row">
   <!--Lesson Checkbox Div-->
@@ -485,13 +642,17 @@
         <li>The number of letters that the player has correctly guessed will be equal to the number of unique letters in the secret word when they player has won.</li>
         <li>A set is like a list, but every item is unique. A list can be converted into a set by using <strong>set(myList)</strong></li>
         <li>To check if two things are equal in an if statement, remember to use two equals signs ( == ) instead of just one ( = )</li>
-        <ul>
-          <li>len(correct_guesses) == len(set(secret_word))</li>
-        </ul>
     </ol>
     </div>
 </div>
 </div>
+
+<div class="row">
+  <div class="col s6 offset-s2">
+    <p><img src="./Python_files/hangman16.JPG" width="500px"></p>
+  </div>
+</div>
+
 <div class="row">
   <!--Lesson Checkbox Div-->
   <div class="col s1 offset-s1">
@@ -509,7 +670,8 @@
   <!--Instruction Div-->
   <div class="col s6">
     <div class="projectsection1">
-      <p>Modify your code so that you print out the correct letter instead of an underscore if the player has already correctly guessed that letter. (Confused? Go back to step 3)</p>
+      <p>Modify your code so that you print out the correct letter instead of an underscore if the player has already correctly guessed that letter.</p>
+      <p> (Confused? Go back to step 3)</p>
     </div>
 </div>
 </div>
@@ -552,10 +714,16 @@
   <div class="col s6">
     <div class="projectsection1">
       <p>Put all your game code inside a while loop. Be sure to check the indentation!</p>
-      <p><img src="./Python_files/hangman3.JPG"></p>
     </div>
 </div>
 </div>
+
+<div class="row">
+  <div class="col s6 offset-s2">
+    <p><img src="./Python_files/hangman3.JPG" width="500px"></p>
+  </div>
+</div>
+
 <div class="row">
   <!--Lesson Checkbox Div-->
   <div class="col s1 offset-s1">
