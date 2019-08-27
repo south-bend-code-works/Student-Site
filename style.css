@@ -6,7 +6,7 @@ body {
   text-align: center;
   background-color: #64dd17;
   width: 100%;
-  height: 40%;
+  height: 45%;
   position:relative !important;
   bottom:0 !important;
   color: black;
@@ -17,7 +17,7 @@ body {
   text-align: center;
   background-color: #00BFFF;
   width: 100%;
-  height: 40%;
+  height: 45%;
   position:bottom !important;
   bottom:0 !important;
   color: black !important;
@@ -102,6 +102,10 @@ a:visited {
 
 .description {
   text-align: center;
+  /* margin-top: 50px !important; */
+  margin-bottom: 50px !important;
+  margin-right: 50px !important;
+  margin-left: 50px !important;
   padding-bottom: 2%;
 }
 

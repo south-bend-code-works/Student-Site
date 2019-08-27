@@ -13,6 +13,7 @@
       crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <script src="main.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="SBCS_favicon.png">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Project 2 - Two player Tic Tac Toe</title>
@@ -39,33 +40,34 @@
     <li><a href="techimmersion.html">Ages 13-18</a></li>
   </ul>
 
-  <!--html Lesson: Project Title -->
   <div class="row">
-    <div class="col s6 offset-s1">
-      <h4 class="projectTitle">Project 2 - Two player Tic Tac Toe</h4>
-        <h5>Background Info</h5>
-        <p>Tic Tac Toe is a game played with two people. Players take turns placing either <strong>X</strong> or <strong>O</strong>, and the first player to get three in a row wins!</p>
-        <p>We will have functions allowing for the players to take turns on the board.</p>
-        <p>We will also want to put a function at the end that will let us play again.</p>
-        <p><img src="./Python_files/tictactoe.gif" width="300px"></p>
-        <br>
-        <h5>Helpful Links</h5>
-        <p><a href="https://repl.it" target="_blank">repl.it</a> - an online interpreter that we will use for writing our Python code.</p>
-        <p><a href="https://repl.it/@MelinaSapiano/TicTacToe-2-player" target="_blank">https://repl.it/@MelinaSapiano/TicTacToe-2-player</a>Tic Tac Toe two player Answer Key</p>
-        <br>
-        <h5>End Product</h5>
-        <p>A Tic Tac Toe game you can play with your friends!</p>
+    <div class="col s6 offset-s3">
+      <h4><center>Project 2 - Two player Tic Tac Toe!</center></h4>
     </div>
+  </div>
+
   <div class="row">
-      <div class="col s6 offset-s1">
-          </div>
+    <div class="col s6 offset-s2">
+      <h6>In this lesson you will:</h6>
+      <ol>
+        <li>Create a Tic Tac Toe game you can play with your friends!</li>
+      </ol>
+      <h5>Background Info</h5>
+      <p>Tic Tac Toe is a game played with two people. Players take turns placing either <strong>X</strong> or <strong>O</strong>, and the first player to get three in a row wins!</p>
+      <p>We will have functions allowing for the players to take turns on the board.</p>
+      <p>We will also want to put a function at the end that will let us play again.</p>
+      <p><img src="./Python_files/tictactoe.gif" width="300px"></p>
+      <br>
+      <h5 style="font-weight:bold;">Helpful Links</h5>
+      <p><a href="https://repl.it" target="_blank">repl.it</a> - an online interpreter that we will use for writing our Python code.</p>
+      <p><a href="https://repl.it/@MelinaSapiano/TicTacToe-2-player" target="_blank">https://repl.it/@MelinaSapiano/TicTacToe-2-player</a>Tic Tac Toe two player Answer Key</p>
     </div>
-  <br>
+  </div>
 
       <!--html Lesson: Directions Start Here-->
       <div class="row">
           <div class="col s6 offset-s1">
-            <h4>Let's get started!</h4>
+            <h5 style="font-weight:bold;">Let's get started!</h5>
           </div>
         </div>
 
@@ -95,7 +97,7 @@
       <!--html Lesson: Directions Start Here-->
       <div class="row">
         <div class="col s6 offset-s1">
-          <h4>Importing random</h4>
+          <h5 style="font-weight:bold;">Importing random</h5>
         </div>
       </div>
 
@@ -116,7 +118,7 @@
               <!--Instruction Div-->
               <div class="col s6">
                 <div class="projectsection1">
-                    <h5>Our first few lines start by importing the random module.</h5>
+                    <h6>Our first few lines start by importing the random module.</h6>
                     <p>This way we can call the <strong>randint()</strong> function to figure out who goes first.</p>
                 </div>
             </div>
@@ -145,7 +147,7 @@
             <!--Instruction Div-->
             <div class="col s6">
               <div class="projectsection1">
-                  <h5>Let's add in our first function:</h5>
+                  <h6>Let's add in our first function:</h6>
                   <p>This function will take the input from our player 1. We'll use that input later.</p>
               </div>
           </div>
@@ -174,7 +176,7 @@
           <!--Instruction Div-->
           <div class="col s6">
             <div class="projectsection1">
-                <h5>But what if our player puts in a random letter or number?</h5>
+                <h6>But what if our player puts in a random letter or number?</h6>
                 <p>We need a way to disregard any error speech, and we're going to do that with a new variable.</p>
                 <p><strong>NameError</strong> will filter out any player input we don't want.
             </div>
@@ -190,7 +192,7 @@
           <!--html Lesson: Directions Start Here-->
           <div class="row">
             <div class="col s6 offset-s1">
-              <h4>Teaching our code how to win</h4>
+              <h5 style="font-weight:bold;">Teaching our code how to win</h5>
             </div>
           </div>
 
@@ -211,7 +213,7 @@
                 <!--Instruction Div-->
                 <div class="col s6">
                   <div class="projectsection1">
-                      <h5>The rules of tic tac toe is simple, three in a row.</h5>
+                      <h6>The rules of tic tac toe is simple, three in a row.</h6>
                       <p>But how do we teach our computer that someone has won?</p>
                       <p>With a new function of course!</p>
               </div>
@@ -234,7 +236,7 @@
                   <!--Instruction Div-->
                   <div class="col s6">
                     <div class="projectsection1">
-                        <h5>In order to win, we have to tell the computer of the winning combinations.</h5>
+                        <h6>In order to win, we have to tell the computer of the winning combinations.</h6>
                         <p>In order to do that, let's look at this board.</p>
                         <p>The first winning combination would be <strong>1, 2, 3</strong></p>
                         <p>The second one? <strong>4, 5, 6</strong></p>
@@ -265,7 +267,7 @@
                     <!--Instruction Div-->
                     <div class="col s6">
                       <div class="projectsection1">
-                          <h5>Now it's your turn</h5>
+                          <h6>Now it's your turn</h6>
                       </div>
                   </div>
                 </div>
@@ -295,7 +297,7 @@
                       <!--Instruction Div-->
                       <div class="col s6">
                         <div class="projectsection1">
-                            <h5>You have your winning combinations, so let's add them in.</h5>
+                            <h6>You have your winning combinations, so let's add them in.</h6>
                         </div>
                     </div>
                   </div>
@@ -323,7 +325,7 @@
                         <!--Instruction Div-->
                         <div class="col s6">
                           <div class="projectsection1">
-                              <p>Here is our first line of winning combinations</p>
+                              <h6>Here is our first line of winning combinations</h6>
                               <p>Now let's add in our second:</p>
                           </div>
                       </div>
@@ -352,7 +354,7 @@
                           <!--Instruction Div-->
                           <div class="col s6">
                             <div class="projectsection1">
-                                <p>And our third line:</p>
+                                <h6>And our third line:</h6>
                             </div>
                         </div>
                       </div>
@@ -380,7 +382,7 @@
                     <!--Instruction Div-->
                     <div class="col s6">
                       <div class="projectsection1">
-                          <h5>Now keep it going!</h5>
+                          <h6>Now keep it going!</h6>
                           <p>Add in the rest of the winning combinations for our game.</p>
                           <p>How many can you come up with?</p>
                           <p><i>**Hint: There are 8 winning combinations.**</i><p>
@@ -392,7 +394,7 @@
                           <!--html Lesson: Directions Start Here-->
                           <div class="row">
                             <div class="col s6 offset-s1">
-                              <h4>Outlining the Board</h4>
+                              <h5 style="font-weight:bold;">Outlining the Board</h5>
                             </div>
                           </div>
 
@@ -413,7 +415,7 @@
                                 <!--Instruction Div-->
                                 <div class="col s6">
                                   <div class="projectsection1">
-                                      <h5>We've told our code how to win the game, now we have to set up the board.</h5>
+                                      <h6>We've told our code how to win the game, now we have to set up the board.</h6>
                                       <p>Adding in a function is a good place to start</p>
                                       <p>The <strong>drawBoard()</strong> function prints the game board, and the board itself is presented by the list of 10 strings. By telling it to ignore 0, the board starts at <strong>index 1</strong></p>
                                   </div>
@@ -443,7 +445,7 @@
                                     <!--Instruction Div-->
                                     <div class="col s6">
                                       <div class="projectsection1">
-                                          <h5>Now you try it</h5>
+                                          <h6>Now you try it</h6>
                                           <p>Add in the code for our board.</p>
                                       </div>
                                   </div>
@@ -466,7 +468,7 @@
                                         <!--Instruction Div-->
                                         <div class="col s6">
                                           <div class="projectsection1">
-                                              <h5>Test your code</h5>
+                                              <h6>Test your code</h6>
                                               <p>Does it work?</p>
                                               <p>Adjust the spaces if need be in order to get it too look right in the strings. Otherwise, your board might look funny.</p>
                                           </div>
@@ -477,7 +479,7 @@
                 <!--html Lesson: Directions Start Here-->
                 <div class="row">
                   <div class="col s6 offset-s1">
-                    <h4><strong>X</strong>s and <strong>O</strong>s</h4>
+                    <h5 style="font-weight:bold;"><strong>X</strong>s and <strong>O</strong>s</h5>
                   </div>
                 </div>
 
@@ -498,7 +500,7 @@
             <!--Instruction Div-->
             <div class="col s6">
               <div class="projectsection1">
-                  <h5>Earlier we asked for the code to ask for input.</h5>
+                  <h6>Earlier we asked for the code to ask for input.</h6>
                   <p>Now it's time to do something with that input.</p>
                   <p>Let's start with the usual, and add another function! This time we'll call it <strong>inputPlayerLetter()</strong>.</p>
                   <p>Our <strong>inputPlayerLetter()</strong> function asks the player if they would rather be <strong>X</strong> or <strong>O</strong>.</p>
@@ -529,7 +531,7 @@
                 <!--Instruction Div-->
                 <div class="col s6">
                   <div class="projectsection1">
-                      <h5>But what if our player imputs a lower case letter?</h5>
+                      <h6>But what if our player imputs a lower case letter?</h6>
                       <p>We've already added a function to disregard any error speech.</p>
                       <p>But, if our player inputs a lower case letter, our code won't work.</p>
                       <p>So let's add some code to make sure that will automatically change the input to uppercase letters.</p>
@@ -561,7 +563,7 @@
                     <!--Instruction Div-->
                     <div class="col s6">
                       <div class="projectsection1">
-                          <h5>If/Else statement</h5>
+                          <h6>If/Else statement</h6>
                           <p>Now for the rest of our <strong>inputPlayerLetter</strong> function.</p>
                           <p>For the first part of our <strong>If</strong> statement we need to tell it what to do if the player picks <strong>X</strong>.</p>
                       </div>
@@ -591,7 +593,7 @@
                 <!--Instruction Div-->
                 <div class="col s6">
                   <div class="projectsection1">
-                      <h5>Now your turn</h5>
+                      <h6>Now your turn</h6>
                       <p>How should the rest of our If/Else statement end?</p>
                       <p><i>**Hint: Player 1 will be O.**</i></p>
                   </div>
@@ -615,7 +617,7 @@
                     <!--Instruction Div-->
                     <div class="col s6">
                       <div class="projectsection1">
-                          <h5>Test it</h5>
+                          <h6>Test it</h6>
                           <p>Does it work?</p>
                       </div>
                   </div>
@@ -624,7 +626,7 @@
 
             <div class="row">
                     <div class="col s6 offset-s1">
-                      <h4>Checkpoint for wins</h4>
+                      <h5 style="font-weight:bold;">Checkpoint for wins</h5>
                     </div>
                 </div>
 
@@ -645,7 +647,7 @@
                     <!--Instruction Div-->
                     <div class="col s6">
                       <div class="projectsection1">
-                          <h5>Every time a move is made, we have to check to see if it was a winning move.</h5>
+                          <h6>Every time a move is made, we have to check to see if it was a winning move.</h6>
                           <p>Let's call this function <strong>win_check</strong>, and we want it to check the board we made.</p>
                       </div>
                   </div>
@@ -674,7 +676,7 @@
                         <!--Instruction Div-->
                         <div class="col s6">
                           <div class="projectsection1">
-                            <h5>Now we need it to check the board for any of our winning combinations that we outlined earlier.</h5>
+                            <h6>Now we need it to check the board for any of our winning combinations that we outlined earlier.</h6>
                               <p>First we'll start with <strong>return</strong> and we need it to reference our earlier function <strong>WIN_COMBINATIONS</strong>.</p>
                           </div>
                       </div>
@@ -703,7 +705,7 @@
                         <!--Instruction Div-->
                         <div class="col s6">
                           <div class="projectsection1">
-                            <h5>Test your code</h5>
+                            <h6>Test your code</h6>
                               <p>Does it work?</p>
                           </div>
                       </div>
@@ -711,7 +713,7 @@
 
                 <div class="row">
                   <div class="col s6 offset-s1">
-                    <h4>Who goes first?</h4>
+                    <h5 style="font-weight:bold;">Who goes first?</h5>
                   </div>
               </div>
 
@@ -732,7 +734,7 @@
                   <!--Instruction Div-->
                   <div class="col s6">
                     <div class="projectsection1">
-                        <h5>Back at the beginning, the first line of code we added was an <strong>import random</strong>.</h5>
+                        <h6>Back at the beginning, the first line of code we added was an <strong>import random</strong>.</h6>
                         <p>It's time to put that random in action.</p>
                         <p>First we'll start off with a function, def <strong>whoGoesFirst(players)</strong></p>
                     </div>
@@ -762,7 +764,7 @@
                       <!--Instruction Div-->
                       <div class="col s6">
                         <div class="projectsection1">
-                            <h5>Then, we will have the computer assign one player using our random.</h5>
+                            <h6>Then, we will have the computer assign one player using our random.</h6>
                             <p>We've assigned our players as player 1 and player 2 using the <strong>.randint()</strong> part of our function.</p>
                         </div>
                     </div>
@@ -791,7 +793,7 @@
                           <!--Instruction Div-->
                           <div class="col s6">
                             <div class="projectsection1">
-                                <h5>Finally ending our function with a <strong>return</strong>.</h5>
+                                <h6>Finally ending our function with a <strong>return</strong>.</h6>
                                 <p>Picking one random player to go first.</p>
                             </div>
                         </div>
@@ -804,7 +806,7 @@
 
                             <div class="row">
                               <div class="col s6 offset-s1">
-                                <h4>No Vacancy?</h4>
+                                <h5 style="font-weight:bold;">No Vacancy?</h5>
                               </div>
                           </div>
 
@@ -825,7 +827,7 @@
                 <!--Instruction Div-->
                 <div class="col s6">
                   <div class="projectsection1">
-                    <h5>Not every tictactoe game results in a win.</h5>
+                    <h6>Not every tictactoe game results in a win.</h6>
                     <p>Somtimes when playing, the board just gets filled up and no one wins.</p>
                     <p>We need to tell the computer to do an ocassional check of the board to see if it's full.</p>
                     <p>Let's make a <strong>full_check()</strong> function.</p>
@@ -856,7 +858,7 @@
               <!--Instruction Div-->
               <div class="col s6">
                 <div class="projectsection1">
-                  <h5>Using a <strong>return</strong> we can check the board, even if no one has won.</h5>
+                  <h6>Using a <strong>return</strong> we can check the board, even if no one has won.</h6>
                 </div>
             </div>
           </div>
@@ -869,7 +871,7 @@
 
         <div class="row">
           <div class="col s6 offset-s1">
-            <h4>Busting a move.</h4>
+            <h5 style="font-weight:bold;">Busting a move.</h6>
           </div>
       </div>
 
@@ -890,7 +892,7 @@
                           <!--Instruction Div-->
                           <div class="col s6">
                             <div class="projectsection1">
-                              <h5>Now that we've set up our board, defined our players, we need to ask them their move on the board.</h5>
+                              <h6>Now that we've set up our board, defined our players, we need to ask them their move on the board.</h6>
                               <p>Let's call this function <strong>getPlayerMove()</strong></p>
                             </div>
                         </div>
@@ -919,7 +921,7 @@
                         <!--Instruction Div-->
                         <div class="col s6">
                           <div class="projectsection1">
-                            <h5>Asking for input</h5>
+                            <h6>Asking for input</h6>
                               <p>But we have to ask the players for a specific kind of input.</p>
                           </div>
                       </div>
@@ -948,7 +950,7 @@
                       <!--Instruction Div-->
                       <div class="col s6">
                         <div class="projectsection1">
-                          <h5>Defining that input</h5>
+                          <h6>Defining that input</h6>
                             <p>Now we have to complete our function and tell the computer what to do with the input.</p>
                         </div>
                     </div>
@@ -977,7 +979,7 @@
                     <!--Instruction Div-->
                     <div class="col s6">
                       <div class="projectsection1">
-                        <h5>Now that we have input, how do we make sure it's good input?</h5>
+                        <h6>Now that we have input, how do we make sure it's good input?</h6>
                           <p>Just like we put in a redundancy in case the input was uppercase vs lowercase, we have to tell the computer to reject error speech.</p>
                       </div>
                   </div>
@@ -991,7 +993,7 @@
 
                 <div class="row">
                   <div class="col s6 offset-s1">
-                    <h4>Play again?</h4>
+                    <h5 style="font-weight:bold;">Play again?</h5>
                   </div>
               </div>
 
@@ -1012,7 +1014,7 @@
                   <!--Instruction Div-->
                   <div class="col s6">
                     <div class="projectsection1">
-                      <h5>We have to add in a statement asking the player if they want to play again.</h5>
+                      <h6>We have to add in a statement asking the player if they want to play again.</h6>
                       <p>We'll call this function <strong>playAgain()</strong></p>
                     </div>
                 </div>
@@ -1041,7 +1043,7 @@
                       <!--Instruction Div-->
                       <div class="col s6">
                         <div class="projectsection1">
-                          <h5>Asking for input</h5>
+                          <h6>Asking for input</h6>
                             <p>Like earlier we will start with a <strong>return</strong> and dialog to ask the player if they want to play again.</p>
                         </div>
                     </div>
@@ -1070,14 +1072,14 @@
                     <!--Instruction Div-->
                     <div class="col s6">
                       <div class="projectsection1">
-                          <p>And don't forget the <strong>.lower()</strong> on the end to make sure we correct any input that we get from our players.</p>
+                          <h6>And don't forget the <strong>.lower()</strong> on the end to make sure we correct any input that we get from our players.</h6>
                       </div>
                   </div>
                 </div>
 
           <div class="row">
             <div class="col s6 offset-s1">
-              <h4>The meat of our function</h4>
+              <h5 style="font-weight:bold;">The meat of our function</h5>
             </div>
         </div>
 
@@ -1098,7 +1100,7 @@
             <!--Instruction Div-->
             <div class="col s6">
               <div class="projectsection1">
-                <h5>You guessed it! We're going to add another function.</h5>
+                <h6>You guessed it! We're going to add another function.</h6>
                   <p>Let's call it <strong>gamePlay()</strong></p>
               </div>
           </div>
@@ -1127,7 +1129,7 @@
           <!--Instruction Div-->
           <div class="col s6">
             <div class="projectsection1">
-                <p>This function will check our board</p>
+                <h6>This function will check our board</h6>
             </div>
         </div>
       </div>
@@ -1155,7 +1157,7 @@
         <!--Instruction Div-->
         <div class="col s6">
           <div class="projectsection1">
-              <p>And tell the player, which turn it is</p>
+              <h6>And tell the player, which turn it is</h6>
           </div>
       </div>
     </div>
@@ -1183,7 +1185,7 @@
           <!--Instruction Div-->
           <div class="col s6">
             <div class="projectsection1">
-              <h5>But what if the player wins?</h5>
+              <h6>But what if the player wins?</h6>
               <p>Let's build out that <strong>if</strong> statement.</p>
             </div>
         </div>
@@ -1212,7 +1214,7 @@
         <!--Instruction Div-->
         <div class="col s6">
           <div class="projectsection1">
-            <p>The <strong>break</strong> at the end will stop the game, then start the play again dialog.</p>
+            <h6>The <strong>break</strong> at the end will stop the game, then start the play again dialog.</h6>
           </div>
       </div>
     </div>
@@ -1234,7 +1236,7 @@
         <!--Instruction Div-->
         <div class="col s6">
           <div class="projectsection1">
-            <h5>But what if there is a tie?</h5>
+            <h6>But what if there is a tie?</h6>
             <p>Let's build out that <strong>if</strong> statement.</p>
           </div>
       </div>
@@ -1263,7 +1265,7 @@
       <!--Instruction Div-->
       <div class="col s6">
         <div class="projectsection1">
-          <p>Just like before, the <strong>break</strong> at the end will stop the game, then start the play again dialog.</p>
+          <h6>Just like before, the <strong>break</strong> at the end will stop the game, then start the play again dialog.</h6>
         </div>
     </div>
   </div>
@@ -1285,7 +1287,7 @@
       <!--Instruction Div-->
       <div class="col s6">
         <div class="projectsection1">
-          <h5>But before we finish out this function, the computer needs to know what to put between the { }.</h5>
+          <h6>But before we finish out this function, the computer needs to know what to put between the { }.</h6>
           <p>This will help define our players in this function.</p>
         </div>
     </div>
@@ -1314,7 +1316,7 @@
         <!--Instruction Div-->
         <div class="col s6">
           <div class="projectsection1">
-            <h5>Test your code</h5>
+            <h6>Test your code</h6>
               <p>Does it work?</p>
           </div>
       </div>
@@ -1322,7 +1324,7 @@
 
 <div class="row">
   <div class="col s6 offset-s1">
-    <h4>Looping</h4>
+    <h5 style="font-weight:bold;">Looping</h5>
   </div>
 </div>
 
@@ -1343,7 +1345,7 @@
   <!--Instruction Div-->
   <div class="col s6">
     <div class="projectsection1">
-      <h5>After we have set our board, and built our game, we need to welcome our player.</h5>
+      <h6>After we have set our board, and built our game, we need to welcome our player.</h6>
     </div>
 </div>
 </div>
@@ -1371,7 +1373,7 @@
   <!--Instruction Div-->
   <div class="col s6">
     <div class="projectsection1">
-      <h5>Then add in our <strong>while</strong> loop</h5>
+      <h6>Then add in our <strong>while</strong> loop</h6>
       <p>So that if we are playing the game, it will run through our <strong>gamePlay</strong> function.</p>
     </div>
 </div>
@@ -1400,7 +1402,7 @@
 <!--Instruction Div-->
 <div class="col s6">
   <div class="projectsection1">
-    <h5>And if not:</h5>
+    <h6>And if not:</h6>
     <p>This loop will keep on going back and forth between the <strong>gamePlay</strong> and the <strong>playAgain</strong> function until the <strong>break</strong>.</p>
   </div>
 </div>
@@ -1429,7 +1431,7 @@
   <!--Instruction Div-->
   <div class="col s6">
     <div class="projectsection1">
-      <h5>Try it out!</h5>
+      <h6>Try it out!</h6>
       <p>Does it work?</p>
       <p>Great job!</p>
     </div>
@@ -1453,7 +1455,7 @@
   <!--Instruction Div-->
   <div class="col s6">
     <div class="projectsection1">
-      <h5>Challenge Mode!</h5>
+      <h6>Challenge Mode!</h6>
       <p>In C & C++ we use Multidimensional Arrays to create rows and columns.</p>
       <p>Can you find another way of making our tictactoe board using Multidimensional Arrays?</p>
     </div>
@@ -1463,9 +1465,9 @@
 
     <!--Project Complete Banner-->
     <div class="row blue white-text">
-        <br>
-        <h5 style="text-align:center;"></h5>
-        <br>
+      <div class="col s4 offset-s4">
+        <h5 style="text-align:center;">X marks the spot!</h5>
+      </div>
     </div>
 
         <!--Card: Prompt - Find Another Project-->

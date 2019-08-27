@@ -13,6 +13,7 @@
       crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <script src="main.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="SBCS_favicon.png">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Lesson 8 - Lists, Tuples and Dictionaries</title>
@@ -39,33 +40,34 @@
     <li><a href="techimmersion.html">Ages 13-18</a></li>
   </ul>
 
-  <!--html Lesson: Project Title -->
-  <div class="row">
-    <div class="col s6 offset-s1">
-      <h4 class="projectTitle">Lesson 8 - Lists, Tuples and Dictionaries</h4>
+    <div class="row">
+      <div class="col s6 offset-s3">
+        <h4 style="font-weight:bold;"><center>Lesson 8 - Lists, Tuples and Dictionaries</center></h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <h6>In this lesson you will:</h6>
+        <ol>
+          <li>Learn more about lists, tuples, and dictionaries</li>
+        </ol>
         <h5>Background Info</h5>
         <p>More data types. In this lesson we will look at three more data types: lists, tuples and dictionaries.</p>
         <br>
-        <h5>Helpful Links</h5>
+        <h5 style="font-weight:bold;">Helpful Links</h5>
         <p><a href="https://repl.it" target="_blank">repl.it</a> - an online interpreter that we will use for writing our Python code.</p>
         <p><a href="https://docs.python.org/3/tutorial/datastructures.html" target="_blank">https://docs.python.org/3/tutorial/datastructures.html</a> Lists documentation</p>
         <p><a href="https://docs.python.org/3.3/tutorial/datastructures.html#tuples-and-sequences" target="_blank">https://docs.python.org/3.3/tutorial/datastructures.html#tuples-and-sequences</a> Tuples documentation</p>
         <p><a href="https://docs.python.org/3.3/tutorial/datastructures.html#dictionaries" target="_blank">https://docs.python.org/3.3/tutorial/datastructures.html#dictionaries</a> Dictionary documentation</p>
         <p><a href="https://repl.it/@MelinaSapiano/JokeTellingProgram" target="_blank">https://repl.it/@MelinaSapiano/JokeTellingProgram</a> Joke Telling program answer key</p>
-        <br>
-        <h5>End Product</h5>
-        <p>Deeper understanding of lists, tuples, and dictionaries.</p>
+      </div>
     </div>
-  <div class="row">
-      <div class="col s6 offset-s1">
-          </div>
-    </div>
-  <br>
 
       <!--html Lesson: Directions Start Here-->
       <div class="row">
           <div class="col s6 offset-s1">
-            <h4>Let's get started!</h4>
+            <h5 style="font-weight:bold;">Let's get started!</h5>
           </div>
         </div>
 
@@ -86,7 +88,7 @@
               <!--Instruction Div-->
               <div class="col s6">
                 <div class="projectsection1">
-                        <h5>First steps</h5>
+                        <h6>First steps</h6>
                         <p>Open up your repl on <a href="https://repl.it" target="_blank">repl.it</a>.</p>
                         <p>Lists, tuples and dictionaries are three more data/variable types in Python.</p>
                         <p>All three are iterables, that means that they hold multiple pieces of information and can be looped over and over.</p>
@@ -96,7 +98,7 @@
       <!--html Lesson: Directions Start Here-->
       <div class="row">
             <div class="col s6 offset-s1">
-              <h4>Lists</h4>
+              <h5 style="font-weight:bold;">Lists</h5>
             </div>
           </div>
 
@@ -117,7 +119,7 @@
               <!--Instruction Div-->
               <div class="col s6">
                 <div class="projectsection1">
-                    <h5>Syntax</h5>
+                    <h6>Syntax</h6>
                     <p>Square brackets <strong>[ ]</strong> denote a list.</p>
                     <p>Lists are mutable, you can define them, and then change the length of the list, add items, or replace items inside the list.</p>
                 </div>
@@ -147,7 +149,7 @@
               <!--Instruction Div-->
               <div class="col s6">
                 <div class="projectsection1">
-                    <h5>You can also add an item to a list by using the keyword <strong>append</strong>.</h5>
+                    <h6>You can also add an item to a list by using the keyword <strong>append</strong>.</h6>
                 </div>
               </div>
             </div>
@@ -175,7 +177,7 @@
               <!--Instruction Div-->
               <div class="col s6">
                 <div class="projectsection1">
-                    <h5>To access a particular item in the list, use the index and square brackets to access a particular element.</h5>
+                    <h6>To access a particular item in the list, use the index and square brackets to access a particular element.</h6>
                 </div>
               </div>
             </div>
@@ -204,7 +206,7 @@
               <!--Instruction Div-->
               <div class="col s6">
                 <div class="projectsection1">
-                    <h5>What if I want to use one function from inside another one?</h5>
+                    <h6>What if I want to use one function from inside another one?</h6>
                 </div>
             </div>
           </div>
@@ -232,7 +234,7 @@
             <!--Instruction Div-->
             <div class="col s6">
               <div class="projectsection1">
-                  <h5>To delete an item in a list, simply use the keyword <strong>del</strong>.</h5>
+                  <h6>To delete an item in a list, simply use the keyword <strong>del</strong>.</h6>
               </div>
           </div>
         </div>
@@ -260,7 +262,7 @@
           <!--Instruction Div-->
           <div class="col s6">
             <div class="projectsection1">
-                <p>The code above deletes the item at index 2 from the list a.</p>
+                <h6>The code above deletes the item at index 2 from the list a.</h6>
                 <p>Lists generally contain the same type of data (or homogenous data).</p>
             </div>
         </div>
@@ -269,7 +271,7 @@
         <!--html Lesson: Directions Start Here-->
         <div class="row">
             <div class="col s6 offset-s1">
-              <h4>Tuples</h4>
+              <h5 style="font-weight:bold;">Tuples</h5>
             </div>
           </div>
 
@@ -290,7 +292,7 @@
           <!--Instruction Div-->
           <div class="col s6">
             <div class="projectsection1">
-                <h5>Syntax</h5>
+                <h6>Syntax</h6>
                 <p>Parentheses <strong>( )</strong> denote a tuple.</p>
                 <p>Tuples are immutable, meaning once you set their elements, you cannot change them.</p>
               </div>
@@ -321,7 +323,7 @@
         <!--Instruction Div-->
         <div class="col s6">
           <div class="projectsection1">
-              <p>Tuples often contain different types of data (heterogenous data).</p>
+              <h6>Tuples often contain different types of data (heterogenous data).</h6>
             </div>
       </div>
     </div>
@@ -329,7 +331,7 @@
       <!--html Lesson: Directions Start Here-->
       <div class="row">
           <div class="col s6 offset-s1">
-            <h4>Dictionaries</h4>
+            <h5 style="font-weight:bold;">Dictionaries</h5>
           </div>
         </div>
 
@@ -350,7 +352,7 @@
           <!--Instruction Div-->
           <div class="col s6">
             <div class="projectsection1">
-                <h5>Syntax</h5>
+                <h6>Syntax</h6>
                 <p>Curly braces <strong>{ }</strong> denote dictionaries.</p>
                 <p>Dictionaries are sets of key : value pairs. Think of them like a phone book. The key is a name, and the value would be a phone number.</p>
               </div>
@@ -381,7 +383,7 @@
         <!--Instruction Div-->
         <div class="col s6">
           <div class="projectsection1">
-              <p>Each part of the data pair is separated by a colon, and each data pair is separated by a comma.</p>
+              <h6>Each part of the data pair is separated by a colon, and each data pair is separated by a comma.</h6>
               <p>Each pair is accessed by the key, rather than by a numerical index.</p>
             </div>
       </div>
@@ -404,7 +406,7 @@
         <!--Instruction Div-->
         <div class="col s6">
           <div class="projectsection1">
-              <h5>You can delete items from a dictionary just like you can from a list.</h5>
+              <h6>You can delete items from a dictionary just like you can from a list.</h6>
             </div>
       </div>
     </div>
@@ -432,7 +434,7 @@
       <!--Instruction Div-->
       <div class="col s6">
         <div class="projectsection1">
-            <h5>Let’s say we got a new bae though, so we could add them to our phonebook.</h5>
+            <h6>Let’s say we got a new bae though, so we could add them to our phonebook.</h6>
           </div>
     </div>
   </div>
@@ -445,9 +447,9 @@
 
     <!--Project Complete Banner-->
     <div class="row blue white-text">
-        <br>
+      <div class="col s4 offset-s4">
         <h5 style="text-align:center;"></h5>
-        <br>
+      </div>
     </div>
 
         <!--Card: Prompt - Find Another Project-->
