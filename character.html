@@ -39,18 +39,32 @@
       <li><a href="techimmersion.html">Ages 13-18</a></li>
     </ul>
 
+    <div class="row">
+      <div class="col s6 offset-s3">
+        <h4 style="font-weight:bold;"><center>Unity Student Guide 2 - Adding a Character</center></h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <h6>In this lesson you will:</h6>
+        <ol>
+          <li>Worldbuild with your player in mind</li>
+          <li>Add a Character</li>
+        </ol>
+        <p><strong>Helpful Links:</strong></p>
+        <p><a href="https://docs.unity3d.com/Manual/class-CharacterController.html" target="_blank">Character Controller Documentation</a></p>
+        <p><a href="https://docs.unity3d.com/Manual/class-Camera.html" target="_blank">Camera How-tos</a></p>
+        <p>Now that we've made our world for our viewer, it's time to add our player</p>
+        <p>Keep your notes handy that you made earlier. With our terrain, we built the scene that our main character will be immersed in, but a scene would be nothing without the actors.</p>
+        <p>This guide will focus on teaching you how to add a character from the <strong>Standard Assets</strong>. If you choose to find your own on the <strong>Asset Store</strong> be wary. Some of those character models might be buggy, their code might not work right, or the animator might be sloppily put together.</p>
+        <p><i>While third-party companies put out a wide range of awesome assets for you to download, not all of them are expertly assembled. While errors happen here and there for our students, beware using outside character models until you become familar with your code.</i></p>
+      </div>
+    </div>
+
     <!--html Lesson: Project Title -->
     <div class="row">
       <div class="col s6 offset-s1">
-        <h4>Unity Student Guide 2 - Adding a Character</h4>
-		<h5>Worldbuilding with your player in mind</h5>
-		<br>
-        <p><strong>Helpful Links:</strong></p>
-		<p><a href="https://docs.unity3d.com/Manual/class-CharacterController.html" target="_blank">Character Controller Documentation</a></p>
-		<p><a href="https://docs.unity3d.com/Manual/class-Camera.html" target="_blank">Camera How-tos</a></p>
-		<br>
-		<h5>Now that we've made our world for our viewer, it's time to add our player</h5>
-		<p>Keep your notes handy that you made earlier. With our terrain, we built the scene that our main character will be immersed in. But a scene would be nothing without the actors.</p>
 		    </div>
     </div>
 
@@ -58,10 +72,8 @@
     <!--html Lesson: Directions Start Here-->
     <div class="row">
       <div class="col s6 offset-s1">
-        <h4>Adding a Character</h4>
-		<h6>This guide will focus on teaching you how to add a character from the <strong>Standard Assets</strong>. If you choose to find your own on the <strong>Asset Store</strong> be wary. Some of those character models might be buggy, their code might not work right, or the animator might be sloppily put together.</h6>
-		<p>While third-party companies put out a wide range of awesome assets for you to download, not all of them are expertly assembled. While errors happen here and there for our students, beware using outside character models until you become familar with your code</p>
-		<p>Let's add a basic character for now and we can customize it.</p>
+        <h5 style="font-weight:bold;">Adding a Character</h5>
+    		<p>Let's add a basic character for now and we can customize it.</p>
       </div>
     </div>
 
@@ -82,7 +94,7 @@
       <!--Instruction Div-->
       <div class="col s6">
         <div class="projectsection1">
-          <h5>ThirdPersonController</h5>
+          <h6>ThirdPersonController</h6>
       		  <p>Go to <strong>Standard Assets</strong>  →  <strong>Characters</strong>  →  <strong>ThirdPersonCharacter</strong>  →  <strong>Prefabs</strong></p>
       		  <br>
       		  <p><i>Place the ThirdPersonController.prefab in your scene where you want to start when you begin the game.</i></p>
@@ -136,7 +148,7 @@
     <!--Instruction Div-->
     <div class="col s6">
       <div class="projectsection1">
-          <p>Rename the <strong>ThirdPersonController</strong> to <strong>PlayerController</strong></p>
+          <h6>Rename the <strong>ThirdPersonController</strong> to <strong>PlayerController</strong></h6>
           <p>Before we test it though, we want to make sure we can see our character, so let's add our camera</p>
     </div>
    </div>
@@ -151,7 +163,7 @@
     <!--html Lesson: Directions Start Here-->
     <div class="row">
       <div class="col s6 offset-s1">
-        <h4>Camera</h4>
+        <h5 style="font-weight:bold;">Camera</h5>
       </div>
     </div>
 
@@ -204,7 +216,7 @@
       <!--Instruction Div-->
       <div class="col s6">
         <div class="projectsection1">
-    		  <p>Look at the <strong>FreeLookCameraRig's</strong> script component. It is set to <strong>Auto-target Player</strong>. This is good, but we need to tell it who the player is. Select the <strong>PlayerController</strong> and tag it as <strong>Player</strong>.</p>
+    		  <h6>Look at the <strong>FreeLookCameraRig's</strong> script component. It is set to <strong>Auto-target Player</strong>. This is good, but we need to tell it who the player is. Select the <strong>PlayerController</strong> and tag it as <strong>Player</strong>.</h6>
 	       </div>
       </div>
     </div>
@@ -233,7 +245,7 @@
       <!--Instruction Div-->
       <div class="col s6">
         <div class="projectsection1">
-  		  <p>Now the camera will follow the player! We can adjust other settings on the Camera. The most important are:</p>
+  		  <h6>Now the camera will follow the player! We can adjust other settings on the Camera. The most important are:</h6>
   		  <p><strong>Move Speed</strong> - how fast the camera moves to follow the player.</p>
   		  <p><strong>Turn Speed</strong> - how fast the camera moves with the mouse.</p>
   		  <p><strong>Lock Cursor</strong> - keep checked</p>
@@ -245,7 +257,7 @@
 	    <!--html Lesson: Directions Start Here-->
     <div class="row">
       <div class="col s6 offset-s1">
-        <h4>Testing the Game</h4>
+        <h5 style="font-weight:bold;">Testing the Game</h5>
       </div>
     </div>
 
@@ -266,7 +278,7 @@
         <!--Instruction Div-->
         <div class="col s6">
           <div class="projectsection1">
-      			<h5>Try playing the game by pressing the <strong>play</strong> button above the scene view! You can move around with the <strong>arrow</strong> keys or <strong>WASD</strong> and jump with the spacebar. Now you can explore the realm you created.</h5>
+      			<h6>Try playing the game by pressing the <strong>play</strong> button above the scene view! You can move around with the <strong>arrow</strong> keys or <strong>WASD</strong> and jump with the spacebar. Now you can explore the realm you created.</h6>
       			<p>You can also adjust the movement of the character. Under the <strong>Third Person Character</strong> script component on the <strong>PlayerController</strong>, in the Inspector, you can adjust various settings:</p>
       			<p><strong>Moving Turn Speed</strong> - how fast the character turns while in motion. Default 360.</p>
       			<p><strong>Stationary Turn Speed</strong> - how fast the character turns while standing still. Default 180.</p>
@@ -277,11 +289,31 @@
       			<p><strong>Anim Speed Multiplier</strong> - how fast the character's animations play. Should be adjusted when speed is increased to look more natural.</p>
       			<p><strong>Ground Check Distance</strong> - how close the character needs to be to the ground to be “grounded”.</p>
       			<p>Adjust these settings until the character moves how you like!</p>
-      			<br>
-      			<p><i>Frequently test your game to make sure that there are no bugs or errors. It's easier to pin-point problems if you know it was the last script you worked on, rather than testing after adding your 10th character and trying to find out where the errors are coming from.<p> </i></p>
           </div>
         </div>
       </div>
+
+      <div class="row">
+          <!--Lesson Checkbox Div-->
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </p>
+              </form>
+            </div>
+          </div>
+          <!--Instruction Div-->
+          <div class="col s6">
+            <div class="projectsection1">
+        			<h6><i>Frequently test your game to make sure that there are no bugs or errors. It's easier to pin-point problems if you know it was the last script you worked on, rather than testing after adding your 10th character and trying to find out where the errors are coming from.</i></h6>
+            </div>
+          </div>
+        </div>
 
       <div class="row">
         <div class="col s6 offset-s2">
@@ -292,7 +324,7 @@
 	  	    <!--html Lesson: Directions Start Here-->
     <div class="row">
       <div class="col s6 offset-s1">
-        <h4>Swapping out your character</h4>
+        <h5 style="font-weight:bold;">Swapping out your character</h5>
       </div>
     </div>
 
@@ -313,7 +345,7 @@
           <!--Instruction Div-->
           <div class="col s6">
             <div class="projectsection1">
-        			<p>Up until now, we have been using the same character called Ethan. Now is a good time to go into the <strong>Asset Store</strong> and find a character model that we can use.</p>
+        			<h6>Up until now, we have been using the same character called Ethan. Now is a good time to go into the <strong>Asset Store</strong> and find a character model that we can use.</h6>
         			<p>Remember how earlier we mentioned that not all character models are built the same and some have bugs? This is how we can work around that.</p>
         			<p>Find a character you like and download it, we will be working on it in the next section</p>
             </div>
@@ -337,7 +369,7 @@
           <!--Instruction Div-->
           <div class="col s6">
             <div class="projectsection1">
-        			<p>Look for your newly downloaded/imported characters. They will be a new folder in the root of the project - the <strong>Assets</strong> folder. Your files will be in there. Go find the prefab for your object. It should be a picture of the object with a grey background, probably in a folder called <strong>prefabs</strong>.</p>
+        			<h6>Look for your newly downloaded/imported characters. They will be a new folder in the root of the project - the <strong>Assets</strong> folder. Your files will be in there. Go find the prefab for your object. It should be a picture of the object with a grey background, probably in a folder called <strong>prefabs</strong>.</h6>
     		   </div>
           </div>
         </div>
@@ -365,7 +397,7 @@
          <!--Instruction Div-->
          <div class="col s6">
            <div class="projectsection1">
-             <p>First, click the arrow next to the <strong>PlayerController</strong> in the Hierarchy to open up its <strong>child objects</strong>.</p>
+             <h6>First, click the arrow next to the <strong>PlayerController</strong> in the Hierarchy to open up its <strong>child objects</strong>.</h6>
              <p>The <strong>PlayerController</strong> is an object that controls all of its <strong>child objects</strong>. It applies the control settings on it to the model attached to it.</p>
           </div>
          </div>
@@ -394,16 +426,77 @@
         <!--Instruction Div-->
         <div class="col s6">
           <div class="projectsection1">
-            <p>We don't want any of Ethan's parts, so go ahead and highlight all three of the Ethan objects and delete them. This is basically the shell of the character. You will need to open the <strong>Prefab</strong> instance and delete them from there. Then click the back arrow next to <strong>PlayerController</strong> to exit the <strong>Prefab</strong> mode.</p>
-            <br>
-            <p>Now the controller needs a new model to control. Drag the model onto the <strong>PlayerController</strong> in the hierarchy to make it a child.</p>
-            <br>
-            <p>Next, we want to make sure that it is setup to use humanoid animations. We are taking the default animations from Ethan, the default character, and using them with this new model. As Ethan is a human, we need to make sure that this model can use humanoid animations. Double-click on your model in the Project View (probably in a folder called models) to open it in the Inspector.</p>
-            <p>These are the import settings for the model. Click on <strong>Rig</strong>.</p>
-            <p>Set Animation Type to <strong>Humanoid</strong>, and make the avatar from the model.</p>
+            <h6>We don't want any of Ethan's parts, so highlight all three of the Ethan objects and delete them. This is basically the shell of the character. You will need to open the <strong>Prefab</strong> instance and delete them from there. Then click the back arrow next to <strong>PlayerController</strong> to exit the <strong>Prefab</strong> mode.</h6>
          </div>
         </div>
       </div>
+
+      <div class="row">
+       <!--Lesson Checkbox Div-->
+       <div class="col s1 offset-s1">
+         <div class="checkbox">
+           <form action="#">
+               <p>
+                 <label>
+                   <input type="checkbox" />
+                   <span></span>
+                 </label>
+               </p>
+           </form>
+         </div>
+       </div>
+       <!--Instruction Div-->
+       <div class="col s6">
+         <div class="projectsection1">
+           <h6>Now the controller needs a new model to control. Drag the model onto the <strong>PlayerController</strong> in the hierarchy to make it a child.</h6>
+        </div>
+       </div>
+     </div>
+
+      <div class="row">
+       <!--Lesson Checkbox Div-->
+       <div class="col s1 offset-s1">
+         <div class="checkbox">
+           <form action="#">
+               <p>
+                 <label>
+                   <input type="checkbox" />
+                   <span></span>
+                 </label>
+               </p>
+           </form>
+         </div>
+       </div>
+       <!--Instruction Div-->
+       <div class="col s6">
+         <div class="projectsection1">
+           <h6>Next, we want to make sure that it is setup to use humanoid animations. We are taking the default animations from Ethan, the default character, and using them with this new model. As Ethan is a human, we need to make sure that this model can use humanoid animations. Double-click on your model in the Project View (probably in a folder called models) to open it in the Inspector.</h6>
+        </div>
+       </div>
+     </div>
+
+     <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>These are the import settings for the model. Click on <strong>Rig</strong>.</h6>
+          <p>Set Animation Type to <strong>Humanoid</strong>, and make the avatar from the model.</p>
+       </div>
+      </div>
+    </div>
 
       <div class="row">
         <div class="col s6 offset-s2">
@@ -428,7 +521,7 @@
           <!--Instruction Div-->
           <div class="col s6">
             <div class="projectsection1">
-        			<p>Now we want to swap out our avatars. Click on the arrow next to your model:</p>
+        			<h6>Now we want to swap out our avatars. Click on the arrow next to your model:</h6>
       		   </div>
           </div>
         </div>
@@ -456,7 +549,7 @@
          <!--Instruction Div-->
          <div class="col s6">
            <div class="projectsection1">
-             <p>You should see an Avatar. When a rigged model is imported into Unity, it creates an avatar that customizes the animations for that model.</p>
+             <h6>You should see an Avatar. When a rigged model is imported into Unity, it creates an avatar that customizes the animations for that model.</h6>
             </div>
          </div>
        </div>
@@ -484,11 +577,32 @@
         <!--Instruction Div-->
         <div class="col s6">
           <div class="projectsection1">
-            <p>Currently, our controller is set to use Ethan's avatar. Click on the <strong>PlayerController</strong> in the Hierarchy and see that in the Inspector.</p>
-            <p>Drag your new Avatar where it says EthanAvatar. Now play your game with your new character!</p>
+            <h6>Currently, our controller is set to use Ethan's avatar. Click on the <strong>PlayerController</strong> in the Hierarchy and see that in the Inspector.</h6>
            </div>
         </div>
       </div>
+
+      <div class="row">
+       <!--Lesson Checkbox Div-->
+       <div class="col s1 offset-s1">
+         <div class="checkbox">
+           <form action="#">
+               <p>
+                 <label>
+                   <input type="checkbox" />
+                   <span></span>
+                 </label>
+               </p>
+           </form>
+         </div>
+       </div>
+       <!--Instruction Div-->
+       <div class="col s6">
+         <div class="projectsection1">
+           <h6>Drag your new Avatar where it says EthanAvatar. Now play your game with your new character!</h6>
+          </div>
+       </div>
+     </div>
 
       <div class="row">
         <div class="col s6 offset-s2">
@@ -513,7 +627,7 @@
         <!--Instruction Div-->
         <div class="col s6">
           <div class="projectsection1">
-      			<h5>Test your game</h5>
+      			<h6>Test your game</h6>
       			<p>Test your character out. Does he move like a humanoid?</p>
           </div>
         </div>
@@ -537,7 +651,7 @@
       <!--Instruction Div-->
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Save your project</h5>
+          <h6>Save your project</h6>
 		  <br>
       </div>
 	  </div>
@@ -548,12 +662,10 @@
 	  <br>
     <!--Project Complete Banner-->
     <div class="row blue white-text">
-	<br>
+      <div class="col s4 offset-s4">
         <h5 style="text-align:center;">Choose your avatar</h5>
-	<br>
     </div>
-	<br>
-	<br>
+  </div>
 
         <!--Card: Prompt - Find Another Project-->
         <div class="row">

@@ -39,11 +39,19 @@
       <li><a href="techimmersion.html">Ages 13-18</a></li>
     </ul>
 
-    <!--html Lesson: Project Title -->
     <div class="row">
-      <div class="col s6 offset-s1">
-        <h4>Unity Student Guide 10 - Audio</h4>
-        <p>This tutorial will cover two important parts of audio in your video game, <strong>background music</strong> and <strong>sound effects</strong>.</p>
+      <div class="col s6 offset-s3">
+        <h4 style="font-weight:bold;"><center>Unity Student Guide 10 - Audio</center></h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <h6>In this lesson you will:</h6>
+        <ol>
+          <li>Learn how to add background music</li>
+          <li>Learn how to add sound effects</li>
+        </ol>
         <p><strong>Helpful Links:</strong></p>
         <p><a href="https://docs.unity3d.com/Manual/Audio.html" target="_blank">Audio Docs</a></p>
         <br>
@@ -88,13 +96,13 @@
             </ul>
           </li>
         </ol>
-     </div>
+      </div>
     </div>
 
 
       <div class="row">
         <div class="col s6 offset-s1">
-          <h4>Background Music</h4>
+          <h5 style="font-weight:bold;">Background Music</h5>
 		    </div>
       </div>
 
@@ -115,7 +123,7 @@
       <!--Instruction Div-->
       <div class="col s6">
         <div class="projectsection1">
-          <p>Let's add background music! This is pretty easy. All you have to do once you've found one is add an Audio Source to the scene.</p>
+          <h6>Let's add background music! This is pretty easy. All you have to do once you've found one is add an Audio Source to the scene.</h6>
           <p><strong>Create</strong>  →  <strong>Audio</strong>  →  <strong>Audio Source</strong></strong>.</p>
          </div>
       </div>
@@ -138,7 +146,7 @@
         <!--Instruction Div-->
         <div class="col s6">
           <div class="projectsection1">
-            <p>An audio source emits the sound of your choice. Drag the clip into the Audio clip slot in the Inspector..</p>
+            <h6>An audio source emits the sound of your choice. Drag the clip into the Audio clip slot in the Inspector.</h6>
             </div>
         </div>
       </div>
@@ -166,16 +174,37 @@
         <!--Instruction Div-->
         <div class="col s6">
           <div class="projectsection1">
-            <p>Once you've done that, you just have to check a few settings in the Inspector:</p>
+            <h6>Once you've done that, you just have to check a few settings in the Inspector:</h6>
             <ul>
               <li>Check <strong>Play on Awake</strong> - This starts the song as soon as the scene is loaded</li>
               <li>Check <strong>Loop</strong> - This makes the music loop - it'd be really awkward if the music just stopped after one play!</li>
               <li><strong>Spatial Blend is set all the way to 2D</strong>. It should be this way by default, but if it isn't, change it. Unity supports 3D sound, which means that sounds are quieter as you get further from them. We don't want that to happen to the background music!</li>
             </ul>
-            <p>Great, you're all good. You can do this for multiple scenes with different songs, if you want!
 		       </div>
         </div>
       </div>
+
+      <div class="row">
+          <!--Lesson Checkbox Div-->
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </p>
+              </form>
+            </div>
+          </div>
+          <!--Instruction Div-->
+          <div class="col s6">
+            <div class="projectsection1">
+              <h6>Great, you're all good. You can do this for multiple scenes with different songs, if you want!</h6>
+  		       </div>
+          </div>
+        </div>
 
       <div class="row">
         <div class="col s6 offset-s2">
@@ -185,7 +214,7 @@
 
       <div class="row">
         <div class="col s6 offset-s1">
-          <h4>Sound Effects with the Asset Store</h4>
+          <h5 style="font-weight:bold;">Sound Effects with the Asset Store</h5>
 		    </div>
       </div>
 
@@ -206,7 +235,7 @@
         <!--Instruction Div-->
         <div class="col s6">
           <div class="projectsection1">
-            <p>Sound effects are added to prefabs just like your background music except you add them to your prefabs</p>
+            <h6>Sound effects are added to prefabs just like your background music except you add them to your prefabs</h6>
             <p>Want your enemies to have footsteps as they're walking past? Your ancient artifact collectables to hum with forgotten power? This is where you add them.</p>
             <br>
             <p>I wanted to add a moo-ing sound to my cow prefabs. In the Project window, open the <strong>Assets</strong>  →  <strong>RW</strong>  →  <strong>Prefabs</strong> window and select the cow prefab.</p>
@@ -237,7 +266,7 @@
       <!--Instruction Div-->
       <div class="col s6">
         <div class="projectsection1">
-          <p>The prefab needs an <strong>AudioSource</strong> to play sound.</p>
+          <h6>The prefab needs an <strong>AudioSource</strong> to play sound.</h6>
           <p>In the <strong>Inspector</strong>, click <strong>Add Component</strong> and type in <strong>Audio Source</strong>.</p>
           <p>Select, and next it's time to add in our clip</p>
          </div>
@@ -267,7 +296,7 @@
     <!--Instruction Div-->
     <div class="col s6">
       <div class="projectsection1">
-        <p>Currently your audio is empty. Just like how with the background music we dragged in our audio, let's do that again.</p>
+        <h6>Currently your audio is empty. Just like how with the background music we dragged in our audio, let's do that again.</h6>
        </div>
     </div>
   </div>
@@ -323,7 +352,7 @@
 <!--Instruction Div-->
 <div class="col s6">
   <div class="projectsection1">
-    <h5>Test your game</h5>
+    <h6>Test your game</h6>
     <p>Play your game</p>
     <p>Does the background music play?</p>
   </div>
@@ -364,8 +393,7 @@
       <!--Instruction Div-->
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Save your project</h5>
-		  <br>
+          <h6>Save your project</h6>
       </div>
 	  </div>
 	  </div>
@@ -374,9 +402,9 @@
 	  <br>
     <!--Project Complete Banner-->
     <div class="row blue white-text">
-	<br>
+      <div class="col s4 offset-s4">
         <h5 style="text-align:center;">What voice does your world have?</h5>
-	<br>
+      </div>
     </div>
 	<br>
 	<br>

@@ -39,14 +39,19 @@
       <li><a href="techimmersion.html">Ages 13-18</a></li>
     </ul>
 
-    <!--html Lesson: Project Title -->
     <div class="row">
-      <div class="col s6 offset-s1">
-        <h4>Unity Student Guide 7d - Fighting Enemies</</h4>
-        <h5>Enemy Guide 4 - Fighting Enemies</h5>
-        <p><strong>Helpful Links:</strong></p>
-    		<p><a href="cheatsheet.html" target="_blank">Error Messages Cheat Sheet</a></p>
-        <br>
+      <div class="col s6 offset-s3">
+        <h4 style="font-weight:bold;"><center>Unity Student Guide 7d - Fighting Enemies</center></h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <h6>In this lesson you will:</h6>
+        <ol>
+          <li>Give an attack animation to our player</li>
+          <li>Give our enemy health</li>
+        </ol>
         <p>Let's make the player be able to damage the enemy. This is going to follow a pretty similar flow to the last part, except we don't need to make a health bar. Here are the steps:</p>
           <ol>
             <li>Add an attack animation to the player</li>
@@ -56,13 +61,12 @@
           </ol>
           <img src="./unity_images/fightingenemies1.gif" width="400px">
           <p><i>Dark Souls 3</i></p>
-     </div>
+      </div>
     </div>
-
 
       <div class="row">
         <div class="col s6 offset-s1">
-          <h4>Back to the Animator</h4>
+          <h5 style="font-weight:bold;">Back to the Animator</h5>
 		    </div>
       </div>
 
@@ -83,7 +87,7 @@
       <!--Instruction Div-->
       <div class="col s6">
         <div class="projectsection1">
-          <p>Open the PlayerAnimator by double-clicking it in the Inspector for the PlayerController.</p>
+          <h6>Open the PlayerAnimator by double-clicking it in the Inspector for the PlayerController.</h6>
           <p>Choose another attack animation from the ones we downloaded and add it as a new state. Rename it to <strong>Attacking</strong>.</p>
     	   </div>
       </div>
@@ -106,7 +110,7 @@
       <!--Instruction Div-->
       <div class="col s6">
         <div class="projectsection1">
-          <p>Add a new parameter (the <strong>+</strong> icon under parameters). <strong>This one will be a trigger, not a bool.</strong></p>
+          <h6>Add a new parameter (the <strong>+</strong> icon under parameters). <strong>This one will be a trigger, not a bool.</strong></h6>
           <p><i>A trigger is like a bool but once it's activated it immediately switches back to false. We wanted the enemy to keep attacking as long as it was in range, but we only want to attack once every time the player presses the key in this case. Rather than manually turning off the boolean, we can use a trigger!</i></p>
         </div>
       </div>
@@ -130,7 +134,7 @@
         <!--Instruction Div-->
         <div class="col s6">
           <div class="projectsection1">
-            <p>Name it <strong>IsAttacking</strong>.</p>
+            <h6>Name it <strong>IsAttacking</strong>.</h6>
             <p>Add transitions from <strong>Grounded</strong> to <strong>Attacking</strong> and vice versa.</p>
             <p>The transition from Grounded to Attacking should have the <strong>IsAttacking</strong> parameter as condition.</p>
             <p>The transition from Attacking to Grounded does not need a condition, but it needs exit time.</p>
@@ -140,7 +144,7 @@
       </div>
       <div class="row">
         <div class="col s6 offset-s1">
-          <h4>Activating the Trigger</h4>
+          <h5 style="font-weight:bold;">Activating the Trigger</h5>
 		    </div>
       </div>
 
@@ -161,7 +165,8 @@
         <!--Instruction Div-->
         <div class="col s6">
           <div class="projectsection1">
-            <p>We need a script to activate the trigger. This is going to be a new script on the PlayerController. Name it <strong>PlayerScript</strong>. This script is going to take input from the player (we want to attack when the player presses a certain button).  We'll also use it for any additional actions we want to give to the player. <strong>Before we get into the script though, let's take a look at how we're going to get that input!</strong></p>
+            <h6>We need a script to activate the trigger. This is going to be a new script on the PlayerController. Name it <strong>PlayerScript</strong>.</h6>
+            <p>This script is going to take input from the player (we want to attack when the player presses a certain button).  We'll also use it for any additional actions we want to give to the player. <strong>Before we get into the script though, let's take a look at how we're going to get that input!</strong></p>
 		       </div>
         </div>
       </div>
@@ -183,7 +188,7 @@
           <!--Instruction Div-->
           <div class="col s6">
             <div class="projectsection1">
-              <p>In the menu at the top of the editor:</p>
+              <h6>In the menu at the top of the editor:</h6>
               <p><strong>Edit</strong> → <strong>Project Settings</strong> → <strong>Input</strong> → <strong>Axes</strong></p>
   		       </div>
           </div>
@@ -206,7 +211,8 @@
             <!--Instruction Div-->
             <div class="col s6">
               <div class="projectsection1">
-                <p>Unity uses a system called <strong>CrossPlatformInput</strong>. This means that we can set it up to take input from either keyboard or controllers without having to individually configure them! In this case, rather than setting a specific keyboard key for attacking, we can set it to <strong>Fire1</strong> and it will be compatible with controllers too. Click <strong>Fire1</strong> and you'll see that it is activated by either left control or mouse0 (left-click). This is what we're going to use to activate our attack!</p>
+                <h6>Unity uses a system called <strong>CrossPlatformInput</strong>.</h6>
+                <p>This means that we can set it up to take input from either keyboard or controllers without having to individually configure them! In this case, rather than setting a specific keyboard key for attacking, we can set it to <strong>Fire1</strong> and it will be compatible with controllers too. Click <strong>Fire1</strong> and you'll see that it is activated by either left control or mouse0 (left-click). This is what we're going to use to activate our attack!</p>
               </div>
             </div>
           </div>
@@ -227,7 +233,7 @@
               <!--Instruction Div-->
               <div class="col s6">
                 <div class="projectsection1">
-                  <p>Open the <strong>PlayerScript</strong>. We want this script to activate the <strong>Attacking</strong> trigger when the user inputs <strong>Fire1</strong>.</p>
+                  <h6>Open the <strong>PlayerScript</strong>. We want this script to activate the <strong>Attacking</strong> trigger when the user inputs <strong>Fire1</strong>.</h6>
                   <p>First, link the animator to the PlayerScript:</p>
                   <p>Declare it:</p>
                 </div>
@@ -257,7 +263,7 @@
             <!--Instruction Div-->
             <div class="col s6">
               <div class="projectsection1">
-                <p>Initialize it in Start:</p>
+                <h6>Initialize it in Start:</h6>
               </div>
             </div>
           </div>
@@ -285,7 +291,7 @@
             <!--Instruction Div-->
             <div class="col s6">
               <div class="projectsection1">
-                <p>Now, we want to check if the player is pressing the Fire1 button. Here's the logic:</p>
+                <h6>Now, we want to check if the player is pressing the Fire1 button. Here's the logic:</h6>
                 <p><i>if player presses fire1 then set trigger <strong>Attacking</strong></i></p>
               </div>
             </div>
@@ -328,7 +334,7 @@
         <!--Instruction Div-->
         <div class="col s6">
           <div class="projectsection1">
-            <p>Now you should be able to activate the attack animations</p>
+            <h6>Now you should be able to activate the attack animations</h6>
             <p>Go ahead and get a weapon for the player and make it a child of their attacking hand</p>
             <p>Position it so it looks like it's being held. The weapon may be comically large or tiny. It's up to you as the game designer to tweak it.</p>
           </div>
@@ -352,14 +358,14 @@
       <!--Instruction Div-->
       <div class="col s6">
         <div class="projectsection1">
-            <p>Add a trigger collider to the weapon.</p>
+            <h6>Add a trigger collider to the weapon.</h6>
          </div>
       </div>
     </div>
 
     <div class="row">
       <div class="col s6 offset-s1">
-        <h4>Enemy Health</h4>
+        <h5 style="font-weight:bold;">Enemy Health</h5>
       </div>
     </div>
 
@@ -380,7 +386,7 @@
     <!--Instruction Div-->
     <div class="col s6">
       <div class="projectsection1">
-          <p>Up till now we've taught our character to attack, to take damage, and to die.</p>
+          <h6>Up till now we've taught our character to attack, to take damage, and to die.</h6>
           <p>Our enemy needs to lose health when we hit it. Add a new script to the EnemyController called <strong>EnemyStats</strong>. This will hold the health!</p>
        </div>
     </div>
@@ -430,12 +436,34 @@
         <!--Instruction Div-->
         <div class="col s6">
           <div class="projectsection1">
-            <p>Great! Now we need to make the weapon deal damage to the enemy (i.e. call the enemy's UpdateHealth function). We're going to have to make a new script on the weapon called <strong>HitEnemy</strong>. Like the <strong>HitPlayer</strong> script, it's going to detect when the weapon hits something. Then we'll call the EnemyStats UpdateHealth function, dealing damage.</p>
-            <p><i>In the HitEnemy script:</i></p>
-            <p>First, declare a new variable called <strong>AttackDamage</strong>. This should be editable in the Inspector.</p>
+            <h6>Great! Now we need to make the weapon deal damage to the enemy (i.e. call the enemy's UpdateHealth function).</h6>
+            <p>We're going to have to make a new script on the weapon called <strong>HitEnemy</strong>. Like the <strong>HitPlayer</strong> script, it's going to detect when the weapon hits something. Then we'll call the EnemyStats UpdateHealth function, dealing damage.</p>
           </div>
         </div>
       </div>
+
+      <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6><i>In the HitEnemy script:</i></h6>
+          <p>First, declare a new variable called <strong>AttackDamage</strong>. This should be editable in the Inspector.</p>
+        </div>
+      </div>
+    </div>
 
 
 	      <div class="row">
@@ -455,7 +483,8 @@
         <!--Instruction Div-->
         <div class="col s6">
           <div class="projectsection1">
-            <p>Then, add an <strong>OnTriggerEnter</strong> function. We're going to write this one a little differently. When we did the HitPlayer script, it was easy to find the HUD_Manager because there is only one. Because there will be multiple enemies (eventually), we need an easy way to get the <i>specific <strong>EnemyStats</strong></i> script that is on the enemy we're hitting (each enemy will have their own health!).</p>
+            <h6>Then, add an <strong>OnTriggerEnter</strong> function. We're going to write this one a little differently.</h6>
+            <p>When we did the HitPlayer script, it was easy to find the HUD_Manager because there is only one. Because there will be multiple enemies (eventually), we need an easy way to get the <i>specific <strong>EnemyStats</strong></i> script that is on the enemy we're hitting (each enemy will have their own health!).</p>
             <p>We're going to get the script from the thing we hit:</p>
             <p><i>Here, we're declaring a variable within the function. We're looking for an EnemyStats script on the enemy and calling it <strong>enemystats</strong>.</i></p>
 	       </div>
@@ -485,7 +514,7 @@
       <!--Instruction Div-->
       <div class="col s6">
         <div class="projectsection1">
-            <p>But not everything we hit is going to have an EnemyStats script, right? What if I swing and hit a rock? We only want to subtract health if we hit an enemy. We'll add an if-then statement:</p>
+            <h6>But not everything we hit is going to have an EnemyStats script, right? What if I swing and hit a rock? We only want to subtract health if we hit an enemy. We'll add an if-then statement:</h6>
             <p><i>Don't forget to set AttackDamage in the Inspector! <strong>(Make it negative)</strong></i> Now you should be able to kill your enemy!</p>
         </div>
       </div>
@@ -500,7 +529,7 @@
 <!--html Lesson: Directions Start Here-->
     <div class="row">
       <div class="col s6 offset-s1">
-        <h4>Testing the Game</h4>
+        <h5 style="font-weight:bold;">Testing the Game</h5>
       </div>
     </div>
 
@@ -547,8 +576,7 @@
       <!--Instruction Div-->
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Save your project</h5>
-		  <br>
+          <h6>Save your project</h6>
       </div>
 	  </div>
 	  </div>
@@ -557,9 +585,9 @@
 	  <br>
     <!--Project Complete Banner-->
     <div class="row blue white-text">
-	<br>
+      <div class="col s4 offset-s4">
         <h5 style="text-align:center;">One hit wonder</h5>
-	<br>
+      </div>
     </div>
 	<br>
 	<br>
