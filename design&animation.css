@@ -8,11 +8,124 @@ p.slide {
 @keyframes slidein {
   from {
     margin-left: 100%;
-    width: 300%;
+    width: 200%;
   }
 
   to {
     margin-left: 0%;
-    width: 100%;
+    width: 150%;
   }
+}
+
+.body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotateZ(0);
+	}
+	25% {
+		transform: rotateZ(30deg);
+	}
+	50% {
+		transform: rotateZ(270deg);
+	}
+	75% {
+		transform: rotateZ(180deg);
+	}
+	100% {
+		transform: rotateZ(360deg);
+	}
+}
+
+.container {
+	animation: spin 10s linear infinite;
+}
+
+.circle {
+	border-radius: 50%;
+	left: calc(50% - 6.25em);
+	top: calc(50% - 12.5em);
+	transform-origin: 50% 12.5em;
+	width: 12.5em;
+	height: 12.5em;
+	position: absolute;
+	box-shadow: 0 1em 2em rgba(0, 0, 0, .5);
+}
+
+.one,
+.three,
+.five {
+	background: rgba(0, 191, 255, .75);
+}
+
+.two,
+.four,
+.six {
+	background: rgba(247, 147, 30, .75);
+}
+
+
+.one {
+	transform: rotateZ(0);
+}
+
+.two {
+	transform: rotateZ(60deg);
+}
+
+.three {
+	transform: rotateZ(-120deg);
+}
+
+.four {
+	transform: rotateZ(180deg);
+}
+
+.five {
+	transform: rotateZ(120deg);
+}
+
+.six {
+	transform: rotateZ(-60deg);
+}
+
+.bodyflip {
+  font: 600 30px/40px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
+  margin: 12px 0;
+}
+.cardflip-container {
+  cursor: pointer;
+  height: 400px;
+  perspective: 600;
+  position: relative;
+  width: 400px;
+}
+.cardflip {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 100%;
+}
+.cardflip:hover {
+  transform: rotateY(180deg);
+}
+.cardflip .side {
+  backface-visibility: hidden;
+  border-radius: 6px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+.cardflip .back {
+  background: #eaeaed;
+  color: #0087cc;
+  line-height: 150px;
+  text-align: center;
+  transform: rotateY(180deg);
 }
