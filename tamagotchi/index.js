@@ -107,7 +107,7 @@ window.onload= function(){
 
     //visual pet status
     if(food >=50 && water >=50 && lift >=50 ){
-      document.getElementById('petDiv').innerHTML=("<img src='bulba.GIF'>");
+      document.getElementById('petDiv').innerHTML=("<img src='bulba.gif'>");
       if(food >=65 && water >=65 && lift >=65){
       document.getElementById('petDiv').innerHTML=("<img src='interestedbulba.GIF'>");
         if (food >=75 && water >=75 && lift >=75){
