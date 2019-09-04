@@ -16,7 +16,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="SBCS_favicon.png">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Adding VR to a Unity Game</title>
+    <title>Teleportation</title>
   </head>
   <body>
     <!--Nav bar  -->
@@ -40,7 +40,7 @@
 
     <div class="row">
       <div class="col s6 offset-s3">
-        <h4 style="font-weight:bold;"><center>Adding VR to a Unity Game</center></h4>
+        <h4 style="font-weight:bold;"><center>Teleportation</center></h4>
       </div>
     </div>
 
@@ -48,19 +48,19 @@
       <div class="col s6 offset-s2">
         <h6>In this lesson you will:</h6>
         <ol>
-          <li>Create a new Unity Project</li>
-          <li>Utilize the SteamVR plugin to add VR support to your project</li>
-          <li>Test out your first VR game!</li>
+          <li>Import SteamVR into a project</li>
+          <li>Add a player</li>
+          <li>Add the ability to teleport around a map</li>
         </ol>
         <h4 class="projectTitle">What You Will Make</h4>
-        <p>A working VR project!</p>
+        <p>There are two types of teleporting you can add. The character can teleport around a space, using a teleport area, and from one spot to another, using teleport points. You can also use both in the same scene. </p>
         <!-- <a href='https://github.com/github/explore' target="_blank"><h5>Check out an example HERE!</h5></a> -->
       </div>
     </div>
 
     <div class="row">
       <div class="col s6 offset-s1">
-        <h5 style='font-weight:bold'>Getting Started</h5>
+        <h5 style='font-weight:bold'>Teleport Area</h5>
     </div>
     </div>
     <div class="row">
@@ -78,8 +78,8 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Open Unity Hub and sign into Unity.</h5>
-          <h6>Choose Unity version 2018.3 when you select a new project.</h6>
+          <h5>Sign into Unity</h5>
+          <h6>Create a Unity project. It should have only directional light, and the SteamVR plugin should be imported into it.</h6>
         </div>
       </div>
     </div>
@@ -99,8 +99,8 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Go to the Asset Store tab inyour new project and enter "SteamVR" into the search field at the top.</h5>
-          <h6>Download and import the SteamVR Plugin into your project.</h6>
+          <h5>Create a plane and size it how you wish.</h5>
+          <h6>Hierarchy -> Create -> 3D Object -> Plane</h6>
         </div>
       </div>
     </div>
@@ -120,8 +120,7 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>At the end of the import, you may see a prompt that reads "API update required". Click on "I made a backup, go ahead!"</h5>
-          <h6>You'll see another prompt titled "SteamVR_Settings". Click "Accept All".</h6>
+          <h5>Name the plane "Floor"</h5>
         </div>
       </div>
     </div>
@@ -141,7 +140,8 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Delete the Main Camera from your scene.</h5>
+          <h5>Duplicate the Floor</h5>
+          <h6>Right click on Floor -> Duplicate</h6>
         </div>
       </div>
     </div>
@@ -161,14 +161,127 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Save the scene and your project. You now have a project ready to develop for the HTC Vive!</h5>
+          <h5>Rename this plane "Teleport Plane"</h5>
+          <h6>Move Teleport Plane up slightly, give it a y transform value of 0.05</h6>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Add a component to the Teleport Plane.</h5>
+          <h6>Search for "Teleport", and select Teleport Area</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Uncheck the Mesh Renderer for Teleport Plane - this will make the plane invisible.</h5>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 style='font-weight:bold'>Teleport Points</h5>
+    </div>
+    </div>
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Create a plane and size it as you wish</h5>
+          <h6>Hierarchy -> Create -> 3D Object -> Plane</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Name the plane "Floor"</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Add teleport points around your scene.</h5>
+          <h6>Assets -> SteamVR -> InteractionSystem -> Teleport -> Prefabs -> TeleportPoint</h6>
         </div>
       </div>
     </div>
 
     <div class="row">
       <div class="col s6 offset-s1">
-        <h5 style='font-weight:bold'>Testing a game with SteamVR</h5>
+        <h5 style='font-weight:bold'>Both Methods</h5>
     </div>
     </div>
     <div class="row">
@@ -186,202 +299,8 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Open SteamVR from your Desktop.</h5>
-          <h6>Be sure that your headset is plugged into the box and that the sensors and controllers are on.</h6>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h5>The SteamVR window should show that all components are detected and active.</h5>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h5>Press Play on your game.</h5>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h5>The first time you run a game you should get this error:</h5>
-
-          <h6>Click "Yes"</h6>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h5>You'll then get this dialogue box:</h5>
-
-          <h6>Click "Yes" again.</h6>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h5>You'll see the SteamVR Input window open now</h5>
-
-          <h6>Click "Save and generate"</h6>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h5>We will use the binding UI later to connect controller actions to actions in our games.</h5>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h5>If you haven't saved your changes, you'll now be prompted to. Make sure to click Save.</h5>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h5>You can now close the SteamVR Input window and run your game.</h5>
-          <h6>Be sure to sign out of Unity when you're done!</h6>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s6 offset-s1">
-        <h5 style='font-weight:bold'>Recalibrating the Room</h5>
-    </div>
-    </div>
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h5>Open the SteamVR application</h5>
-
-          <h6>Click on the hamburger menu</h6>
+          <h5>Now add the Teleporting Prefab to your Scene</h5>
+          <h6>Assets -> SteamVR -> InteractionSystem -> Teleport -> Prefabs -> Teleporting</h6>
 
         </div>
       </div>
@@ -402,10 +321,68 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Select "Room Setup" from the menu, and follow the directions.</h5>
+          <h5>Add the Player to your scene</h5>
+          <h6>Assets -> SteamVR -> InteractionSystem -> Core -> Prefabs -> Player</h6>
         </div>
       </div>
     </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Now you can test out your game! Press play.</h5>
+          <h6>Use the touchpads to teleport around the plane.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Be sure to sign out of Unity when you're done!</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Notes:</h5>
+          <ul>
+            <li><em>You can place a plane just above a terrain and use the plane as a teleport area.</em></li>
+            <li><em>The default size of a terrain is 100x the size of a plane. So to make an appropriately sized plane, change the x and z scale in the transform</em></li>
+            <li><em>You cannot use a terrain as a teleport area.</em></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
 
 
 <div class='row'>
