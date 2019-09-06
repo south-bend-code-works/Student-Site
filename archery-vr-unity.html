@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="main.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="SBCS_favicon.png">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Archery Game</title>
+  </head>
+  <body>
+    <!--Nav bar  -->
+    <nav class="light-blue lighten-1">
+      <div class="nav-wrapper">
+        <a href="#!"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="hide-on-med-and-down">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="scratch.html">Ages 7-12</a></li>
+          <li><a href="techimmersion.html">Ages 13-18</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="scratch.html">Ages 7-12</a></li>
+      <li><a href="techimmersion.html">Ages 13-18</a></li>
+    </ul>
+
+    <div class="row">
+      <div class="col s6 offset-s3">
+        <h4 style="font-weight:bold;"><center>Archery Game</center></h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <h6>In this lesson you will:</h6>
+        <ol>
+          <li>Add a teleport plane</li>
+          <li>Allow the player to pick up and shoot a bow and arrow</li>
+          <li> Add targets for the player to shoot at</li>
+        </ol>
+        <h4 class="projectTitle">What You Will Make</h4>
+        <p>Let’s put together what we’ve learned so far, and introduce one new object! We will build an archery game, using teleportation, interactable objects, and the built in bow and arrow asset.</p>
+        <br>
+        <p>Before starting this project, you should have completed the following lessons:</p>
+        <ol>
+          <li>Adding VR to a Unity Game</li>
+          <li>Teleportation</li>
+          <li>Interacting with Objects</li>
+        </ol>
+        <!-- <a href='https://github.com/github/explore' target="_blank"><h5>Check out an example HERE!</h5></a> -->
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 style='font-weight:bold'>Getting started</h5>
+    </div>
+    </div>
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Sign into Unity</h5>
+          <h6>Create your scene and delete the main camera</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Let's download some assets to use for our scene.</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Go to the Asset Store and search for "Nature Starter Kit."</h5>
+          <h6> Select, download, and import Nature Starter Kit 2.</h6>
+          <p>you may get an error message about obsolete APIs. Click "I made a backup, Go Ahead! "
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Download and import Unity's Standard Assets as well.</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Add a terrain, shape and style it as you choose.</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Add the required components for teleportation. You could use only teleportation points, just add a teleport area, or use both!</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Add your player character</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Test your game to make sure everything works and looks good.</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 style='font-weight:bold'>Archery</h5>
+    </div>
+    </div>
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Let's add the archery component.</h5>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>First add a 3D cube to serve as a table for the bow to sit on.</h5>
+          <h6>Add this near the player, and make it about half the height of the player.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Now we'll make the longbow itself.</h5>
+          <h6>Add an empty game object, and place it on top of the cube that is our table.</h6>
+          <p>Name the object "Longbow".
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Add the following components:</h5>
+          <h6><ol>
+            <li>Interactable Script</li>
+            <li>Item Package Spawn Script</li>
+            <li>Sphere Collider</li>
+          </ol></h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Now on the Item Package Spawn Script, check "Require Grab Action", "Show Trigger Hint", and "Take Back Item".</h5>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Now we'll give the Longbow an Item Package.</h5>
+          <h6>From Assets -> SteamVR -> InteractionSystem -> Longbow -> Prefabs, drag the LongBowItemPackage into the Item Package box on the Item Package Spawn Script.</h6>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Finally, drag a Longbow Preview from the Longbow Prefabs folder into the Longbow Game Object, so that the Preview is a child of the Longbow game object.</h5>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Let's add some targets to shoot at.</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>In the Longbow Prefabs folder, there is a prefab called Archery Weeble. Drag a few of these into your scene and then test out shooting arrows at them!</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>What if we want our arrows to be on fire?</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Let's check out the torch prefab!</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Drag a Torch prefab into your scene and rotate it until it's upright.</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Test your game! Now if you hold an arrow into the flame, it will catch on fire. Try shooting flaming arrows at the weebles.</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 style='font-weight:bold'>More things to shoot at</h5>
+    </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Let's add a stack of blocks to shoot at.</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Create a 3D Cube away from the player character. This will act as a table for our blocks.</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Now make smaller 3D Cubes that are Interactable and Throwable.</h5>
+          <em>Tip: Make one, then duplicate it!</em>
+          <h6>Stack the cubes in a creative pattern on the table.</h6>
+          <p>don't forget that you can organize this in an empty game object.</p>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Now you can add more targets, torches, and interactables to build out your game!</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Be sure to sign out of Unity when you're done!</h5>
+        </div>
+      </div>
+    </div>
+
+
+
+<div class='row'>
+  <div class='col s6 offset-s1'>
+    <h5> Show an instructor your finished project!</h5>
+  </div>
+</div>
+
+<!--Project Complete Banner-->
+<div class="row blue white-text">
+  <div class="col s4 offset-s4">
+    <h5 style="text-align:center;">Congrats! Project complete!</h5>
+  </div>
+</div>
+
+<!--Card: Prompt - Find Another Project-->
+<div class="row">
+  <div class="col s4 offset-s4">
+    <div class="card findanotherproject">
+      <div class="card-content">
+        <div class="cardDescription">
+          <br>
+          <h6>Find another project?</h6>
+          <div class="browse">
+            <br>
+            <a href="ar-vr.html">
+              <button>Browse all projects</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </bIArchey Game
