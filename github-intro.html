@@ -168,6 +168,7 @@
       <div class="col s6">
         <div class="projectsection1">
           <h5>Next to the word 'Repositories', look for a green button labeled "New" and click on it.</h5>
+          <img src="git_images/new-repo-button.png">
           <h6>You'll see fields for your repository's name, a description of it, its privacy, and a choice of adding a readme file.</h6>
           <p>Readme files usually contain information that the developer wants readers to know about their project. They tend to be written using Markdown, a language that's very similar to plain text and HTML. <a target='_blank' href='https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf'>Learn more about Markdown here</a></p>
         </div>
@@ -278,7 +279,8 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h6>If Git isn't installed, we'll need to install it. Head to <a href='https://git-scm.com/downloads'>the Git downloads page</a> and download the version that matches the machine you're using. </h6>
+          <h6>If Git isn't installed, we'll need to install it. Head to <a target="_blank" href='https://git-scm.com/downloads'>the Git downloads page</a> and download the version that matches the machine you're using. </h6>
+          <img style="width:25vw;"src="git_images/git-download.png">
           <p>The site will usually be able to auto-detect your operating system(OS), the software that controls your computer's basic funtions.</p>
         </div>
       </div>
@@ -321,6 +323,7 @@
         <div class="projectsection1">
           <h6>Open up your CLI.</h6>
           <p>If you aren't sure where to find your CLI, try typing its name into the search bar on your machine's desktop.</p>
+          <img style="width:25vw;" src='git_images/cli-search.png'>
         </div>
       </div>
     </div>
@@ -341,7 +344,8 @@
       <div class="col s6">
         <div class="projectsection1">
           <h6>On Windows, we'll need to edit our PATH variable to use git commands with Powershell.</h6>
-          <p>Use Windows Explorer to navigate to your Git installation (it's probably in C:/program files).
+          <p>Use Windows Explorer to navigate to your Git installation (it's probably in C:/program files).</p>
+          <img src='git_images/file-explorer.png'>
         </div>
       </div>
     </div>
@@ -402,6 +406,7 @@
       <div class="col s6">
         <div class="projectsection1">
           <h6>Copy the full path of the bin folder.</h6>
+          <p>Right click the folder -> properties -> location</p>
         </div>
       </div>
     </div>
@@ -422,6 +427,7 @@
       <div class="col s6">
         <div class="projectsection1">
           <h6>Open up control panel</h6>
+          <img style="height:35vh;"src="git_images/control-panel.png">
         </div>
       </div>
     </div>
@@ -441,7 +447,7 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h6>Navigate to System And Security > System > Advanced System Settings</h6>
+          <h6>Navigate to System And Security -> System -> Advanced System Settings</h6>
         </div>
       </div>
     </div>
@@ -482,6 +488,7 @@
       <div class="col s6">
         <div class="projectsection1">
           <h6>Click on environment variables</h6>
+          <img style="height:35vh;"src="git_images/environment-variables.png">
         </div>
       </div>
     </div>
@@ -501,8 +508,9 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h6>Select the path variable.</h6>
-          <p>We're going to be editing the "user" variables version of PATH, so make sure you've selected that one.
+          <h6>Select the path variable by double-clicking on it.</h6>
+          <p>We're going to be editing the "user" variables version of PATH, so make sure you've selected that one, NOT system variables.</p>
+            <img src="git_images/user-variables.png">
         </div>
       </div>
     </div>
@@ -545,6 +553,9 @@
         <div class="projectsection1">
           <h6>Open up PowerShell and type 'git' into the console. Hit enter.</h6>
           <p>If a list of options for Git appears, you're all set!</p>
+          <img style="height:35vh;"src="git_images/git.png">
+          <br>
+          <em>Feel free to read through the options list! It may come in handy</em>
         </div>
       </div>
     </div>
@@ -720,7 +731,8 @@
       <div class="col s6">
         <div class="projectsection1">
           <h6>On your GitHub repository page, click the green button labeled "clone or download". </h6>
-          <p>Make sure your option says "clone with https". Copy the link it gives you in the box.</p>
+          <p>Make sure your prompt says "clone with https". Copy the link it gives you in the box.</p>
+          <img src="git_images/clone-repo.png">
         </div>
       </div>
     </div>
@@ -836,7 +848,7 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>After we've staged our changes (run "git add .") we need to "commit" them</h5>
+          <h5>After we've staged our changes (using "git add .") we need to "commit" them</h5>
           <h6>The concept of the "commit" can be a little hard to wrap your head around at first. It isn't actually saving the project to our remote version in github yet.</h6>
           <p>What it IS doing is bundling up our staged changes in a nice way that allows us to better track and manipulate changes to our codebase. Think of this as more of a labeling process. First you staged your code by grabbing all of the changes that were made when you ran the command "git add .". Now you'll label those changes so they're easy to find in all of the changes that have happened and will happen to the project's code.</p>
         </div>
@@ -860,6 +872,7 @@
         <div class="projectsection1">
           <h6>As mentioned, part of this commit process is labeling your code. In other words, adding a message.</h6>
           <p>Our Git command reflects that. To commit, enter `git commit -m"a message describing what changes were made to your code"` into your CLI. The "git commit" part of this is fairly straightforward. The "-m" part stands for message, and it will stamp the message we put inside of the quotation marks on all of the files we staged in our project.</p>
+          <img src='git_images/commit.png'>
         </div>
       </div>
     </div>
