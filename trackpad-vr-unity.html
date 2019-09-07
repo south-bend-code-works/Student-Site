@@ -143,7 +143,7 @@
           <h5>We need to keep the CameraRig from rotating so our players don't get motion sick.</h5>
           <h6>In the inspector, add a RigidBody Component.</h6>
           <p> Within the RigidBody section of the inspector, select "Freeze Rotation" for X, Y, and Z. (You may need to click on the triangle to expand the Constraints section.)</p>
-
+          <img style="height:25vh;"src='vr_images/rigidbody.png'>
         </div>
       </div>
     </div>
@@ -236,7 +236,7 @@
       <div class="col s6">
         <div class="projectsection1">
           <h5>Open the SteamVR Input Window from Window -> SteamVR Input</h5>
-
+          <img style="height:25vh;"src='vr_images/steamvr-input-window.png'>
         </div>
       </div>
     </div>
@@ -258,8 +258,8 @@
         <div class="projectsection1">
           <h5>Click the + to add another Action</h5>
           <h6>Name this action "MovementAxis"</h6>
-          <p>Choose "vector2" as the type, then choosed "suggested" the 'Required:' menu </p>
-
+          <p>Choose "vector2" as the type, then choosed "suggested" from the 'Required:' menu </p>
+          <img style="height:25vh;"src='vr_images/movementaxis.png'>
         </div>
       </div>
     </div>
@@ -284,7 +284,7 @@
             <li>Name the Action "Jump"</li>
             <li>Set the type to boolean</li>
             <li>Set the Required to suggested</li>
-
+            <img style="height:25vh;"src='vr_images/jump.png'>
           </ol></h6>
         </div>
       </div>
@@ -326,7 +326,7 @@
       <div class="col s6">
         <div class="projectsection1">
           <h5>Now click "Open binding UI", and you'll see this open in your browser:</h5>
-
+          <img style="height:25vh;"src='vr_images/binding-ui.png'>
         </div>
       </div>
     </div>
@@ -368,8 +368,9 @@
         <div class="projectsection1">
           <h5>We're going to bind the Movement Axis to the 'Trackpad' action of the trackpad.</h5>
           <h6>Click the + on the Trackpad</h6>
-
+          <img style="height:25vh;"src='vr_images/trackpad.png'>
           <p>Select trackpad, and delete the "Use as Button" box for trackpad.</p>
+          <img style="height:25vh;"src='vr_images/trackpad-role.png'>
         </div>
       </div>
     </div>
@@ -391,7 +392,7 @@
         <div class="projectsection1">
           <h5>Edit the "Use as Trackpad box"</h5>
           <h6>Select "Position"</h6>
-
+          <img style="height:25vh;"src='vr_images/position-movementaxis.png'>
           <p>Choose movementaxis</p>
         </div>
       </div>
@@ -414,6 +415,7 @@
         <div class="projectsection1">
           <h5>Next, we'll bind "Jump" to clicking the trackpad.</h5>
           <h6> Choose the "Click" Option under Trackpad</h6>
+          <img style="height:25vh;"src='vr_images/trackpad-click.png'>
           <p>Choose "Jump"</p>
         </div>
       </div>
@@ -455,9 +457,9 @@
       <div class="col s6">
         <div class="projectsection1">
           <h5>Click "Replace Default Binding"</h5>
-
+          <img style="height:15vh;"src='vr_images/replace-binding.png'>
           <h6>You'll then see this window:</h6>
-
+          <img style="height:25vh;"src='vr_images/save-binding.png'>
           <p>Click Save</p>
         </div>
       </div>
@@ -567,7 +569,7 @@
       <div class="col s6">
         <div class="projectsection1">
           <h5>Let's define the variables we need for this script. There are quite a few.</h5>
-
+          <img style="height:25vh;"src='vr_images/move-variables.png'>
         </div>
       </div>
     </div>
@@ -608,7 +610,7 @@
       <div class="col s6">
         <div class="projectsection1">
           <h5>Inside the Start function, we need to connect CapCollider to the CapsuleCollider on the CameraRig.</h5>
-
+          <img style="height:15vh;"src='vr_images/move-start.png'>
         </div>
       </div>
     </div>
@@ -650,7 +652,7 @@
         <div class="projectsection1">
           <h5>First create a private void updateCollider() function.</h5>
           <h6>Inside, we'll set the height and center of the CapCollider.</h6>
-
+          <img style="height:15vh;"src='vr_images/update-collider.png'>
           <h6>This code will reset the position of the capsule collider based on the position of the user's head.</h6>
         </div>
       </div>
@@ -673,7 +675,7 @@
         <div class="projectsection1">
           <h5>Create a private void updateInput() function.</h5>
           <h6>Inside, we'll connect the trackpad variable to the Trackpad Action.</h6>
-
+          <img style="height:15vh;"src='vr_images/update-input.png'>
           <h6>This will get the trackpad position from whichever hand is using the trackpad.</h6>
         </div>
       </div>
@@ -696,7 +698,7 @@
         <div class="projectsection1">
           <h5>Create a private void OnCollisonEnter(Collision collision) function.</h5>
           <h6>Inside, increment GroundCount by 1.</h6>
-
+          <img style="height:15vh;"src='vr_images/on-collision-enter.png'>
           <h6>We'll use this to keep track of if we are on the ground or not.</h6>
         </div>
       </div>
@@ -719,7 +721,7 @@
         <div class="projectsection1">
           <h5>Now make a private void OnCollisionExit(Collision collision) funtion.</h5>
           <h6>Here, we'll decrement GroundCount by 1.</h6>
-
+          <img style="height:15vh;"src='vr_images/on-collision-exit.png'>
         </div>
       </div>
     </div>
@@ -741,7 +743,7 @@
         <div class="projectsection1">
           <h5>One more helper funtion. Create a public static float angle (Vector2 p_vector2)</h5>
           <h6>Inside of this we need the following code:</h6>
-
+          <img style="height:25vh;"src='vr_images/float-variable.png'>
           <h6>This code helps get the angle of the touch and correct it for the rotation of the controller.</h6>
         </div>
       </div>
@@ -764,16 +766,16 @@
         <div class="projectsection1">
           <h5>Our last function will be the Update function.</h5>
           <h6>First call updateInput();, then call updateCollider();</h6>
-
+          <img style="height:25vh;"src='vr_images/move-update.png'>
           <h6>Next we'll set the moveDirection:</h6>
-
+          <img style="height:5vh;"src='vr_images/move-direction.png'>
           <h6>This gets the angle of the touch and corrects it for the rotation of the controller.</h6>
           <h6>Now we'll connect our Rigidbody to RBody</h6>
-
+          <img style="height:5vh;"src='vr_images/rigidbody-rbody.png'>
           <h6>Then we'll set a velocity Vector3(0, 0, 0,)</h6>
-
+          <img style="height:5vh;"src='vr_images/vector3-velocity.png'>
           <h6>Almost done! now we'll code the movement.</h6>
-
+          <img style="height:25vh;"src='vr_images/movement-code.png'>
         </div>
       </div>
     </div>
@@ -794,7 +796,7 @@
       <div class="col s6">
         <div class="projectsection1">
           <h5>Now we need to save the script and go back to the Inspector to assign all our variables.</h5>
-
+          <img style="height:25vh;"src='vr_images/movement-script.png'>
           <h6>Set the Movement Hand to whichever hand you want to control the movement.</h6>
           <h6>Set Trackpad Action to MovementAxis</h6>
           <h6>Set Jump Action to Jump</h6>
@@ -804,7 +806,6 @@
           <h6>Drag the Camera from inside CameraRig to the Head variable</h6>
           <h6>Drag the Controller that you chose for Movement Hand from the CameraRig to the Axis Hand variable.</h6>
           <h6>We need to create two materials for No Friction and Friction Materials</h6>
-
         </div>
       </div>
     </div>
@@ -826,7 +827,8 @@
         <div class="projectsection1">
           <h5>Inside the Project window, right click and select Create -> Physic Material.</h5>
           <h6>We'll name it PlayerFriction, and set the variables for it as follows:</h6>
-
+          <img style="height:25vh;"src='vr_images/player-friction.png'>
+          <img style="height:25vh;"src='vr_images/player-friction-parameters.png'>
         </div>
       </div>
     </div>
@@ -847,7 +849,7 @@
       <div class="col s6">
         <div class="projectsection1">
           <h5>Now make another Physic Material called PlayerNoFriction, and set the variables as follows:</h5>
-
+          <img style="height:25vh;"src='vr_images/player-no-friction-parameters.png'>
         </div>
       </div>
     </div>
@@ -869,7 +871,7 @@
       <div class="col s6">
         <div class="projectsection1">
           <h5>Drag these two materials to the appropriate variable spots in the Movement script on CameraRig.</h5>
-
+          <img style="height:25vh;"src='vr_images/movement-script-set.png'>
         </div>
       </div>
     </div>
