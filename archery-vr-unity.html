@@ -16,7 +16,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="SBCS_favicon.png">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Firebase: Set</title>
+    <title>Archery Game</title>
   </head>
   <body>
     <!--Nav bar  -->
@@ -40,24 +40,34 @@
 
     <div class="row">
       <div class="col s6 offset-s3">
-        <h4 style="font-weight:bold;"><center>Firebase: Set</center></h4>
+        <h4 style="font-weight:bold;"><center>Archery Game</center></h4>
       </div>
     </div>
 
     <div class="row">
       <div class="col s6 offset-s2">
         <h6>In this lesson you will:</h6>
-          <p>Create your first database, and send data to it</p>
+        <ol>
+          <li>Add a teleport plane</li>
+          <li>Allow the player to pick up and shoot a bow and arrow</li>
+          <li> Add targets for the player to shoot at</li>
+        </ol>
         <h4 class="projectTitle">What You Will Make</h4>
-        <p>Firebase Realtime Database is Firebase’s original database product. It’s a cloud-hosted NoSQL database that can store and sync data in real time for the user. FIrebase is also a Google owned product.
-          One basic way to add data to our Realtime Database is Firebase’s ‘set’ method, which we’ll be using in this lesson!</p>
+        <p>Let’s put together what we’ve learned so far, and introduce one new object! We will build an archery game, using teleportation, interactable objects, and the built in bow and arrow asset.</p>
+        <br>
+        <p>Before starting this project, you should have completed the following lessons:</p>
+        <ol>
+          <li>Adding VR to a Unity Game</li>
+          <li>Teleportation</li>
+          <li>Interacting with Objects</li>
+        </ol>
         <!-- <a href='https://github.com/github/explore' target="_blank"><h5>Check out an example HERE!</h5></a> -->
       </div>
     </div>
 
     <div class="row">
       <div class="col s6 offset-s1">
-        <h5 style='font-weight:bold'>HTML</h5>
+        <h5 style='font-weight:bold'>Getting started</h5>
     </div>
     </div>
     <div class="row">
@@ -75,7 +85,8 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>On your computer, create a new folder for your project. Give it a name that reminds you that it is a Firebase project.</h5>
+          <h5>Sign into Unity</h5>
+          <h6>Create your scene and delete the main camera</h6>
         </div>
       </div>
     </div>
@@ -95,9 +106,7 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Open your text editor and create a new HTML file.</h5>
-          <h6> Give your html file 3-4 input fields. We'll grab the data for our database from what the user enters into these.</h6>
-          <p>Give each input field a different id, based on the type of information you want the user to put into it. For example, we could give an id of "name" to a field that we want the user to enter their name into. </p>
+          <h5>Let's download some assets to use for our scene.</h5>
         </div>
       </div>
     </div>
@@ -117,7 +126,9 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Give each field placeholder text that also matches the information you'd like the user to enter into it</h5>
+          <h5>Go to the Asset Store and search for "Nature Starter Kit."</h5>
+          <h6> Select, download, and import Nature Starter Kit 2.</h6>
+          <p>you may get an error message about obsolete APIs. Click "I made a backup, Go Ahead! "
         </div>
       </div>
     </div>
@@ -137,63 +148,7 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Create a button underneath your input fields. We'll use this to submit our data to the database.</h5>
-          <h6>Give the button an id, "submit" works fine.</h6>
-          <p>Give the button a <em>"type=button"</em> attribute. This will stop the button from reloading the page when we click on it.</p>
-          <img style='height:35vh;' src='database_images/set-page.png'>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="row">
-      <div class="col s6 offset-s1">
-        <h5 style='font-weight:bold'>Javascript</h5>
-    </div>
-    </div>
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h5>Create a new JS file, and link it to your html</h5>
-          <h6> We'll wrap all of our code in a inside of a window.onload</h6>
-          <img src='database_images/window-onload.png'>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s6 offset-s1">
-        <h5 style='font-weight:bold'>Firebase Console</h5>
-    </div>
-    </div>
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h5>Open up your web browser</h5>
+          <h5>Download and import Unity's Standard Assets as well.</h5>
         </div>
       </div>
     </div>
@@ -213,7 +168,7 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Navigate to the <a target="_blank" href="https://firebase.google.com/">Firebase Console</a></h5>
+          <h5>Add a terrain, shape and style it as you choose.</h5>
         </div>
       </div>
     </div>
@@ -233,8 +188,7 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>You'll need a google account to use Firebase. If you already have one, go ahead and sign into it. If not, you can create one</h5>
-          <h6>Let's confirm that we're using the correct account. In the top-right corner of the screen, you'll see the first initial of your account name. Click on it to display the account you're using.</h6>
+          <h5>Add the required components for teleportation. You could use only teleportation points, just add a teleport area, or use both!</h5>
         </div>
       </div>
     </div>
@@ -254,7 +208,7 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Next to your account icon, you'll see a "Go to console" button. Click on it</h5>
+          <h5>Add your player character</h5>
         </div>
       </div>
     </div>
@@ -274,314 +228,15 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>The console will show you all of the Firebase projects associated with your account.</h5>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h5>Click on the "Add Project" button</h5>
-          <h6>Give your project a name</h6>
-          <p>When asked about google analytics, click "not right now", then click continue</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h5>We're now on your Project's Overview page.</h5>
-          <h6>On the left side of the screen, we'll see a list of our project options. The first of these is your Develop tab.</h6>
-          <img style="height:25vh" src="database_images/develop.png">
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h5>Select database.</h5>
-          <h6>You’ll be asked if you’d like to use Cloud Firestore, Firebase’s new database service, or Realtime Database. Firestore is very similar to Realtime Database, but is built to scale to larger projects more easily and stores data differently. We’ll scroll down the page and select “create database” on the Realtime Database panel.</h6>
-          <img style="height: 25vh" src="database_images/realtime.png">
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h5>Select test mode. We wouldn't use test mode on a production project, because anyone can access our database in this mode. Since we're learning right now though, we're all good!</h5>
-          <h6>We'll be taken to our database, and we can dismiss the watning we'll get about being in test mode.</h6>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="row">
-      <div class="col s6 offset-s1">
-        <h5 style='font-weight:bold'>Connecting to the database</h5>
-    </div>
-    </div>
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h5>Navigate back to the project overview</h5>
-          <h6>You'll see platform icons sitting above text that reads "Add an app to get started". We're making a web application, so select web.</h6>
-          <img style='height:15vh' src='database_images/add-app.png'>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h5>You'll be prompted to make a nickname for your app, so create one</h5>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h5>Now we'll add Firebase to our app.</h5>
-          <h6>Grab the entirety of the first script tag, and paste it into the head of your HTML. Note the comment from above the script tag when we copied it. This means that we need to put this script tag in above any other script tags we might have, including the JS file we made.</h6>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h5>Next, we'll copy everything that's inside of the second script tag, leaving out the opening and closing tags.</h5>
-          <h6> We won’t need them because we’ll be pasting this script into the top of our JS file. This second script tag contains our project’s unique data from firebase. Think of it as the key or ID to our database. Once this is done, we’re ready to start writing our JS!</h6>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h5>Everything in Javascript is considered to be an object.</h5>
-          <h6>As a result of this, we can create our own objects. We can even create objects that exist to shorthand our code! As an example of this, we're going to create a variable called "database"</h6>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h5>We'll set database equal to "firebase.database()".</h5>
-          <h6>firebase.database is a built-in firebase method that we use to access our database through our JS. Now whenever we need to use it, we can just say "database" instead!</h6>
-          <img style="height:25vh" src="database_images/database-var.png">
-          <h6>Here's what our JS should look like so far.</h6>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h5>Next, we're going to create the function that'll send our data. Create a function called "setUserData".</h5>
-          <h6>Back outside of our setUserData function, we'll tie running the function to the submit button we made in our html through its ID.</h6>
-          <img style="height:3vh;" src="database_images/onclick.png">
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h5>Remember how we made input fields and gave them ids? We’re going to use those to create variables inside of our setUserData function, and set their values to the database.</h5>
-          <h6>Make variables for each input field you created, and set them equal to the value of your input field.</h6>
-          <em>Example:</em>
-          <br>
-          <img style="height:10vh;" src="database_images/value-variable.png">
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h5>Once we've created our variables, we'll use our database variable to reference and set our data:</h5>
-          <img style="height:15vh;" src="database_images/set-code.png">
-          <ul>
-          <li>.ref is another method, and it’s short for reference. When we use it here, we’re essentially saying “here is my database, I want to reference it"</li>
-          <br>
-          <li>‘users/’ is the path that we’ll want to access within our database. If the path we specified doesn’t exist, .set will create one that matches.</li>
-          <br>
-          <li>“+” signs in JS are used for concatenation. Concatenation is the joining of strings together. Here we’re concatenating a variable called ‘userName’ onto the end of our ‘users/’ path. This means that whenever a new user is made, an object with a name that matches their user name will be created with all their attributes under the ‘users’ path.</li>
-          <br>
-          <li>The red strings before the colons are the names our users’ attributes will have in the database. Note that each one is assigned to one of the variables that we made to track our input fields.</li>
-          <br>
-          <li>Separate each attribute with a comma, the comma after the final attribute is optional.</li>
-          </ul>
+          <h5>Test your game to make sure everything works and looks good.</h5>
         </div>
       </div>
     </div>
 
     <div class="row">
       <div class="col s6 offset-s1">
-        <h5 style='font-weight:bold'>Completion Callbacks</h5>
-      </div>
+        <h5 style='font-weight:bold'>Archery</h5>
+    </div>
     </div>
     <div class="row">
       <div class="col s1 offset-s1">
@@ -598,18 +253,270 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>We can set conditionals to trigger based on whether or not </h5>
-          <img style="height:25vh" src="database_images/completion-callback.png">
-          <h6>Try entering similar code at the end of your setUserData function!</h6>
+          <h5>Let's add the archery component.</h5>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>First add a 3D cube to serve as a table for the bow to sit on.</h5>
+          <h6>Add this near the player, and make it about half the height of the player.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Now we'll make the longbow itself.</h5>
+          <h6>Add an empty game object, and place it on top of the cube that is our table.</h6>
+          <p>Name the object "Longbow".
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Add the following components:</h5>
+          <h6><ol>
+            <li>Interactable Script</li>
+            <li>Item Package Spawn Script</li>
+            <li>Sphere Collider</li>
+          </ol></h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Now on the Item Package Spawn Script, check "Require Grab Action", "Show Trigger Hint", and "Take Back Item".</h5>
+          <img style="height:25vh;"src='vr_images/item-spawn.png'>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Now we'll give the Longbow an Item Package.</h5>
+          <h6>From Assets -> SteamVR -> InteractionSystem -> Longbow -> Prefabs, drag the LongBowItemPackage into the Item Package box on the Item Package Spawn Script.</h6>
+          <img style="height:25vh;"src='vr_images/longbow-item.png'>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Finally, drag a Longbow Preview from the Longbow Prefabs folder into the Longbow Game Object, so that the Preview is a child of the Longbow game object.</h5>
+          <img style="height:15vh;"src='vr_images/longbow-preview.png'>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Let's add some targets to shoot at.</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>In the Longbow Prefabs folder, there is a prefab called Archery Weeble. Drag a few of these into your scene and then test out shooting arrows at them!</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>What if we want our arrows to be on fire?</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Let's check out the torch prefab!</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Drag a Torch prefab into your scene and rotate it until it's upright.</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Test your game! Now if you hold an arrow into the flame, it will catch on fire. Try shooting flaming arrows at the weebles.</h5>
         </div>
       </div>
     </div>
 
     <div class="row">
       <div class="col s6 offset-s1">
-        <h5 style='font-weight:bold'>Testing</h5>
-      </div>
+        <h5 style='font-weight:bold'>More things to shoot at</h5>
     </div>
+    </div>
+
     <div class="row">
       <div class="col s1 offset-s1">
         <div class="checkbox">
@@ -625,7 +532,7 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Save all of your code, and fill in the input fields on your HTML page.</h5>
+          <h5>Let's add a stack of blocks to shoot at.</h5>
         </div>
       </div>
     </div>
@@ -645,11 +552,78 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Click your submit button</h5>
-          <h6> open up the database section of your Develop tab in the firebase console. You should see all your data there!</h6>
+          <h5>Create a 3D Cube away from the player character. This will act as a table for our blocks.</h5>
         </div>
       </div>
     </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Now make smaller 3D Cubes that are Interactable and Throwable.</h5>
+          <em>Tip: Make one, then duplicate it!</em>
+          <h6>Stack the cubes in a creative pattern on the table.</h6>
+          <img style="height:25vh;"src='vr_images/cubes.png'>
+          <p>don't forget that you can organize this in an empty game object.</p>
+          <img style="height:25vh;"src='vr_images/cubes-group.png'>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Now you can add more targets, torches, and interactables to build out your game!</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Be sure to sign out of Unity when you're done!</h5>
+        </div>
+      </div>
+    </div>
+
+
 
 <div class='row'>
   <div class='col s6 offset-s1'>
@@ -674,7 +648,7 @@
           <h6>Find another project?</h6>
           <div class="browse">
             <br>
-            <a href="firebase.html">
+            <a href="ar-vr.html">
               <button>Browse all projects</button>
             </a>
           </div>
@@ -683,5 +657,6 @@
     </div>
   </div>
 </div>
+
 </body>
 </html>
