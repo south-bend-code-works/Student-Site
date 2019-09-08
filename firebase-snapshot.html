@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="main.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="SBCS_favicon.png">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Firebase: Snapshot</title>
+  </head>
+  <body>
+    <!--Nav bar  -->
+    <nav class="light-blue lighten-1">
+      <div class="nav-wrapper">
+        <a href="#!"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="hide-on-med-and-down">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="scratch.html">Ages 7-12</a></li>
+          <li><a href="techimmersion.html">Ages 13-18</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="scratch.html">Ages 7-12</a></li>
+      <li><a href="techimmersion.html">Ages 13-18</a></li>
+    </ul>
+
+    <div class="row">
+      <div class="col s6 offset-s3">
+        <h4 style="font-weight:bold;"><center>Firebase: Snapshot</center></h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <h6>In this lesson you will:</h6>
+          <p>Retrieve data from your database</p>
+        <h4 class="projectTitle">What You Will Make</h4>
+        <p>In our last lesson we learned how to add data to our Realtime database using set. Now we'll learn a way to retrieve data, using Firebase's Snapshot!</p>
+        <em>Note: You'll want to create a Database and add data to it before attempting this lesson. Check out the <a target="_blank" href='firebase-set.html'>Firebase Set Lesson</a> to get started!</em>
+        <!-- <a href='https://github.com/github/explore' target="_blank"><h5>Check out an example HERE!</h5></a> -->
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 style='font-weight:bold'>Getting started</h5>
+    </div>
+    </div>
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Open up your HTML and JS pages that you used in the Set lesson</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>On your HTML page, create a new div.</h5>
+          <h6>We'll be using this div to display the data we're grabbing from our database, so give it an ID that reflects that!</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Create a new button next to your set button</h5>
+          <h6>We'll be using this button to call our data-retrieving function, so give it a matching ID as well</h6>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 style='font-weight:bold'>Javascript</h5>
+    </div>
+    </div>
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Create a JS function called retrieve.</h5>
+          <h6>Add the following line:</h6>
+          <img style='height:10vh;' src='database_images/snapshot-ref.png'>
+          <h6>This will make a call to the database at the path we specified (users) using database.ref. Once it finds the contents in the database, it will take what our users path looks like at the time(snapshot) and return it to us once(.once)</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Looking at the data we have, it is like an array that's full of smaller arrays. We'll need to loop through it in order to find the data we want.</h5>
+          <h6>To see what the data looks like, we can log it to our console.</h6>
+          <img style="height:10vh" src="database_images/snapshot-log.png">
+          <h6>We'll also need to tell our JS when to run our function! Under the onclick you made for your set button, make an onclick for your retrieve button. Have it run your retrieve function when clicked.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Back inside our retrieve function, we'll need a forEach function. We'll put it inside of the {} after our snapshot</h5>
+          <img style="height:10vh" src="database_images/forEach.png">
+          <h6>Our forEach will loop through our data for us</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Inside of our forEach's {}, we'll tell our JS what to do with each bit of information in the childSnapshot.</h5>
+          <h6>Make a new variable to hold each item from the snapshot</h6>
+          <img style="height:5vh;" src="database_images/child-snapshot.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Now we can pull specific data from the childData object!</h5>
+          <h6>For example, childData.Name will give us the value of what's stored under Name in our database.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>We still need to display our data on our html page.</h5>
+          <h6> To do this, we'll use document.createElement, document.createTextNode, and appendChild.</h6>
+          <img style="height:15vh" src="database_images/database-to-html.png">
+          <h6>Here's an example. You can replace "Name" with whichever data you're accessing at the time, and name your variables accordingly.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Once we've had JS create our HTML elements, we need to tell it where to add them. Remember the div we added to our HTML?</h5>
+          <img style="height:3vh" src="database_images/snapshot-display.png">
+          <h6>We'll use getElementById to select our div, and .appendChild to insert our data into it. Repeat this for all of the fields you've made.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Now, you should be able to display the information from your database on your html page with a button click!</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Tips</h5>
+          <ul>
+            <li>Use console.log() throughout your code to test the values of your variables</li>
+            <br>
+            <li>Open your browser's developer tools and look at the console to see the output</li>
+            <br>
+            <li>Make sure you're putting actual data in your database, not empty fields!</li>
+            <br>
+            <li>Save and test often</li>
+            <br>
+            <li>Ask your neighbors for help</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+<div class='row'>
+  <div class='col s6 offset-s1'>
+    <h5> Show an instructor your finished project!</h5>
+  </div>
+</div>
+
+<!--Project Complete Banner-->
+<div class="row blue white-text">
+  <div class="col s4 offset-s4">
+    <h5 style="text-align:center;">Congrats! Project complete!</h5>
+  </div>
+</div>
+
+<!--Card: Prompt - Find Another Project-->
+<div class="row">
+  <div class="col s4 offset-s4">
+    <div class="card findanotherproject">
+      <div class="card-content">
+        <div class="cardDescription">
+          <br>
+          <h6>Find another project?</h6>
+          <div class="browse">
+            <br>
+            <a href="firebase.html">
+              <button>Browse all projects</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
