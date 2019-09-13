@@ -39,10 +39,18 @@
       <li><a href="techimmersion.html">Ages 13-18</a></li>
     </ul>
 
-    <!--html Lesson: Project Title -->
     <div class="row">
-      <div class="col s6 offset-s1">
-        <h4>Unity Student Guide 8 - Prefab Guide (Enemies)</h4>
+      <div class="col s6 offset-s3">
+        <h4 style="font-weight:bold;"><center>Unity Student Guide 8 - Prefab Guide (Enemies)</center></h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <h6>In this lesson you will:</h6>
+        <ol>
+          <li>Create a prefab enemy</li>
+        </ol>
         <h5>Bosses, Mini-Bosses, and Minions</h5>
 		      <p>Part of a game is having multiple enemies, as well as different types of enemies. While it's good to have one of a certain powerful enemy, for the all important boss fight, but it's good to have many of smaller, easier to kill enemies. I mean, bad guys have minions after all, right?</p>
           <img src="./unity_images/enemyprefab1.gif" width="400px">
@@ -55,13 +63,12 @@
             <li>Make enemy <strong>AttackDamage</strong> editable from <strong>EnemyStats</strong> (optional)</li>
             <li>Enemies drop collectables</li>
           </ol>
-     </div>
+      </div>
     </div>
-
 
       <div class="row">
         <div class="col s6 offset-s1">
-          <h4>Attack Distance</h4>
+          <h5 style="font-weight:bold;">Attack Distance</h5>
 		    </div>
       </div>
 
@@ -82,7 +89,7 @@
       <!--Instruction Div-->
       <div class="col s6">
         <div class="projectsection1">
-          <p>If we made copies of our enemy right now, all of the enemies would immediately start running toward the player, no matter how far away they are!</p>
+          <h6>If we made copies of our enemy right now, all of the enemies would immediately start running toward the player, no matter how far away they are!</h6>
           <p>We need to add an <strong>aggression</strong> radius to the enemy. This means that the enemy will only notice the player if they get within a certain distance. </p>
           <p>To do this, we're going to edit the <strong>AICharacterControl</strong> script.</p>
          </div>
@@ -112,7 +119,7 @@
         <!--Instruction Div-->
         <div class="col s6">
           <div class="projectsection1">
-            <p>Double-click and open the <strong>AICharacterControl</strong>
+            <h6>Double-click and open the <strong>AICharacterControl</strong></h6>
             </div>
         </div>
       </div>
@@ -134,7 +141,7 @@
         <!--Instruction Div-->
         <div class="col s6">
           <div class="projectsection1">
-            <p>First, let's add a new public integer called <strong>AttackDistance</strong>. This is going to be the distance at which the enemy starts coming toward you.</p>
+            <h6>First, let's add a new public integer called <strong>AttackDistance</strong>. This is going to be the distance at which the enemy starts coming toward you.</h6>
 		       </div>
         </div>
       </div>
@@ -162,7 +169,7 @@
         <!--Instruction Div-->
         <div class="col s6">
           <div class="projectsection1">
-            <p>Then we're going to add a new if-then statement to the Update function that makes the enemy only come attack if the enemy is close enough.</p>
+            <h6>Then we're going to add a new if-then statement to the Update function that makes the enemy only come attack if the enemy is close enough.</h6>
             <p>So the function should look like this:</p>
 		       </div>
         </div>
@@ -191,7 +198,7 @@
         <!--Instruction Div-->
         <div class="col s6">
           <div class="projectsection1">
-            <p>The second if/else section is the part that makes the enemy attack us. We only want to start doing that if the enemy is within the AttackDistance.</p>
+            <h6>The second if/else section is the part that makes the enemy attack us. We only want to start doing that if the enemy is within the AttackDistance.</h6>
 		       </div>
         </div>
       </div>
@@ -213,7 +220,7 @@
       <!--Instruction Div-->
       <div class="col s6">
         <div class="projectsection1">
-          <p>Add a new if-then statement before it that checks if we're within the AttackDistance:</p>
+          <h6>Add a new if-then statement before it that checks if we're within the AttackDistance:</h6>
          </div>
       </div>
     </div>
@@ -241,7 +248,7 @@
     <!--Instruction Div-->
     <div class="col s6">
       <div class="projectsection1">
-        <p>This logic works out, but it has some unintended effects. The enemy will slide toward the player slowly! We need to add this line to the first if statement:</p>
+        <h6>This logic works out, but it has some unintended effects. The enemy will slide toward the player slowly! We need to add this line to the first if statement:</h6>
        </div>
     </div>
   </div>
@@ -269,7 +276,7 @@
         <!--Instruction Div-->
         <div class="col s6">
           <div class="projectsection1">
-              <p>So it looks like this (don't forget that we need to add brackets):</p>
+              <h6>So it looks like this (don't forget that we need to add brackets):</h6>
           </div>
         </div>
       </div>
@@ -297,7 +304,7 @@
         <!--Instruction Div-->
         <div class="col s6">
           <div class="projectsection1">
-            <p>This puts a halt to that. But it doesn't allow the enemy to resume moving, so we have to undo that when we want the enemy to start moving toward the player.</p>
+            <h6>This puts a halt to that. But it doesn't allow the enemy to resume moving, so we have to undo that when we want the enemy to start moving toward the player.</h6>
 	       </div>
         </div>
       </div>
@@ -340,9 +347,30 @@
 
       <div class="row">
         <div class="col s6 offset-s1">
-          <h4><i>Optional</i></h4>
-          <h5>Make AttackDamage adjustable on the Enemy GameObject</h5>
+          <h5 style="font-weight:bold;"><i>Optional</i></h5>
 		    </div>
+      </div>
+
+      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+            <h6>Make AttackDamage adjustable on the Enemy GameObject</h6>
+          </div>
+        </div>
       </div>
 
 
@@ -363,7 +391,8 @@
       <!--Instruction Div-->
       <div class="col s6">
         <div class="projectsection1">
-          <p>Right now, if we want to change our enemy's attack damage, we have to dig and find the weapon to change the public variable in the inspector. It would be easier if we could change it on the EnemyController object. To do that, we're going to set it up so the HitPlayer script pulls the variable from the <strong>EnemyStats</strong> script. Let's set that up.</p>
+          <h6>Right now, if we want to change our enemy's attack damage, we have to dig and find the weapon to change the public variable in the inspector.</h6>
+          <p>It would be easier if we could change it on the EnemyController object. To do that, we're going to set it up so the HitPlayer script pulls the variable from the <strong>EnemyStats</strong> script. Let's set that up.</p>
           <p>We will start by making an AttackDamage variable on the EnemyStats script. Declare it with the other stats (e.g. CurrentHealth).</p>
         </div>
       </div>
@@ -392,9 +421,14 @@
     <!--Instruction Div-->
     <div class="col s6">
       <div class="projectsection1">
-        <p>Now, in the <strong>HitPlayer</strong> script, we need to declare a link to the EnemyStats script.</p>
-        <img src="./unity_images/enemyprefab10.JPG" width="300px">
+        <h6>Now, in the <strong>HitPlayer</strong> script, we need to declare a link to the EnemyStats script.</h6>
       </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <p><img src="./unity_images/enemyprefab10.JPG" width="300px"></p>
     </div>
   </div>
 
@@ -415,7 +449,7 @@
   <!--Instruction Div-->
   <div class="col s6">
     <div class="projectsection1">
-      <p>Then initialize that link in the Start function.</p>
+      <h6>Then initialize that link in the Start function.</h6>
     </div>
   </div>
 </div>
@@ -443,7 +477,7 @@
   <!--Instruction Div-->
   <div class="col s6">
     <div class="projectsection1">
-      <p><i>We use <strong>GetComponentInParent</strong> because the EnemyAttack script is on the weapon while the EnemyStats script is on the AIThirdPersonController GameObject (a parent of the weapon).</i></p>
+      <h6><i>We use <strong>GetComponentInParent</strong> because the EnemyAttack script is on the weapon while the EnemyStats script is on the AIThirdPersonController GameObject (a parent of the weapon).</i></h6>
     </div>
   </div>
 </div>
@@ -465,7 +499,7 @@
 <!--Instruction Div-->
 <div class="col s6">
   <div class="projectsection1">
-      <p>Finally, we change the call of the UpdateHealth function in HitPlayer to read:</p>
+      <h6>Finally, we change the call of the UpdateHealth function in HitPlayer to read:</h6>
     </div>
   </div>
 </div>
@@ -493,7 +527,7 @@
 <!--Instruction Div-->
 <div class="col s6">
   <div class="projectsection1">
-      <p>(Make sure the capitalization matches what you already have in your code!)</p>
+      <h6>(Make sure the capitalization matches what you already have in your code!)</h6>
       <p>Now we can adjust the AttackDamage on the EnemyStats script on the EnemyController.</p>
     </div>
   </div>
@@ -501,8 +535,29 @@
 
 <div class="row">
   <div class="col s6 offset-s1">
-    <h4><i>Optional</i></h4>
-    <h5>Enemies drop Collectables</h5>
+    <h5 style="font-weight:bold;"><i>Optional</i></h5>
+  </div>
+</div>
+
+<div class="row">
+<!--Lesson Checkbox Div-->
+<div class="col s1 offset-s1">
+  <div class="checkbox">
+    <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span></span>
+          </label>
+        </p>
+    </form>
+  </div>
+</div>
+<!--Instruction Div-->
+<div class="col s6">
+  <div class="projectsection1">
+    <p>Enemies drop Collectables</p>
+    </div>
   </div>
 </div>
 
@@ -523,7 +578,7 @@
   <!--Instruction Div-->
     <div class="col s6">
       <div class="projectsection1">
-        <p>Part of defeating really tough bosses is having epic loots! So let's give a reward to our player for killing the enemies. This is done by making the enemy drop a collectable.</p>
+        <h6>Part of defeating really tough bosses is having epic loots! So let's give a reward to our player for killing the enemies. This is done by making the enemy drop a collectable.</h6>
       </div>
     </div>
   </div>
@@ -552,7 +607,7 @@
   <!--Instruction Div-->
     <div class="col s6">
       <div class="projectsection1">
-        <p>When do we want the enemy to drop the item? When the enemy dies, right? Which script is that? - <strong>EnemyStats</strong>.</p>
+        <h6>When do we want the enemy to drop the item? When the enemy dies, right? Which script is that? - <strong>EnemyStats</strong>.</h6>
         <p>In the EnemyStats script, we want to declare a new public variable. This is going to store the prefab we're using for the drop.</p>
       </div>
     </div>
@@ -581,7 +636,7 @@
 <!--Instruction Div-->
 <div class="col s6">
   <div class="projectsection1">
-      <p>Great! Now, when do we want this drop to happen? When the enemy dies - the Die() function. We're going to use a new built-in Unity function called <strong>Instantiate</strong>. This makes an instance of a prefab. It takes three arguments:</p>
+      <h6>Great! Now, when do we want this drop to happen? When the enemy dies - the Die() function. We're going to use a new built-in Unity function called <strong>Instantiate</strong>. This makes an instance of a prefab. It takes three arguments:</h6>
       </div>
   </div>
 </div>
@@ -609,7 +664,7 @@
 <!--Instruction Div-->
 <div class="col s6">
   <div class="projectsection1">
-      <p>In this case, we want to use:</p>
+      <h6>In this case, we want to use:</h6>
       </div>
   </div>
 </div>
@@ -637,7 +692,7 @@
 <!--Instruction Div-->
 <div class="col s6">
   <div class="projectsection1">
-      <p><strong>transform.position</strong> - the location of the enemy</p>
+      <h6><strong>transform.position</strong> - the location of the enemy</h6>
       <p><strong>Quaternion.identity</strong> - default rotation of the gameObject. Usually upright.</p>
       <p>Now it will drop a collectable when it dies!</p>
       </div>
@@ -661,7 +716,7 @@
 <!--Instruction Div-->
 <div class="col s6">
   <div class="projectsection1">
-    <h5>Adjustments: Floating, Random Drop Chance</h5>
+    <h6>Adjustments: Floating, Random Drop Chance</h6>
       <p>If you want the collectable to float, you can adjust the location like so:</p>
     </div>
   </div>
@@ -690,7 +745,7 @@
 <!--Instruction Div-->
 <div class="col s6">
   <div class="projectsection1">
-      <p>If you want there to be a random drop chance, you can use the Random function to generate a random number, and then only spawn the drop if it is a certain number.</p>
+      <h6>If you want there to be a random drop chance, you can use the Random function to generate a random number, and then only spawn the drop if it is a certain number.</h6>
       </div>
   </div>
 </div>
@@ -734,7 +789,7 @@
 
 <div class="row">
   <div class="col s6 offset-s1">
-    <h4>Making a prefab</h4>
+    <h5 style="font-weight:bold;">Making a prefab</h5>
   </div>
 </div>
 
@@ -755,11 +810,31 @@
   <!--Instruction Div-->
   <div class="col s6">
     <div class="projectsection1">
-      <p>Drag the enemy from the Hierarchy view into your Prefab folder in the Project view. (Select Original Prefab).</p>
+      <h6>Drag the enemy from the Hierarchy view into your Prefab folder in the Project view. (Select Original Prefab).</h6>
       <p>Go ahead and position new enemies around your map by dragging the prefab out onto the scene.</p>
       <p>What about having some enemies guard some of your collectables? Position new collectables and new enemies where you would like them.</p>
-      <br>
-      <p>Remember to stop and pause and think about the world you're building.</p>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <!--Lesson Checkbox Div-->
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+      </form>
+    </div>
+  </div>
+  <!--Instruction Div-->
+  <div class="col s6">
+    <div class="projectsection1">
+      <h6>Remember to stop and pause and think about the world you're building.</h6>
       <p>Does it all fit?</p>
     </div>
   </div>
@@ -767,7 +842,7 @@
 
 <div class="row">
   <div class="col s6 offset-s1">
-    <h4>Making New Kinds of Enemies</h4>
+    <h5 style="font-weight:bold;">Making New Kinds of Enemies</h5>
   </div>
 </div>
 
@@ -788,7 +863,7 @@
   <!--Instruction Div-->
   <div class="col s6">
     <div class="projectsection1">
-        <p>To add different kinds of enemies, you just need to get a new model! Go find one in the Asset Store.</p>
+        <h6>To add different kinds of enemies, you just need to get a new model! Go find one in the Asset Store.</h6>
         <p><strong>Asset Store</strong>  →  <strong>3D Models</strong>  →  <strong>Characters</strong>  →  <strong>Humanoids</strong></p>
         </div>
     </div>
@@ -811,7 +886,7 @@
 <!--Instruction Div-->
 <div class="col s6">
   <div class="projectsection1">
-      <p>Once you find a model, you can get it ready to replace the original enemy model. First, drag one of your enemy prefabs into the scene.</p>
+      <h6>Once you find a model, you can get it ready to replace the original enemy model. First, drag one of your enemy prefabs into the scene.</h6>
       <p>To swap out the model:</p>
       <ol>
         <li>Delete the old model. It is a child of the controller.</li>
@@ -844,14 +919,11 @@
             <p><strong>AttackDamage</strong> - some may deal more damage than others</p>
             <p><strong>Move Speed Multiplier</strong> - some may be faster!</p>
             <p><strong>Weapons</strong></p>
-            <br>
-            <p>Try editing other values!</p>
-            <p>Once you have the enemy working how you want it, you can make a new prefab of it (you could have a prefab for each type of enemy)!</p>
 		      </div>
         </div>
       </div>
 
-<div class="row">
+      <div class="row">
   <!--Lesson Checkbox Div-->
   <div class="col s1 offset-s1">
     <div class="checkbox">
@@ -868,177 +940,9 @@
   <!--Instruction Div-->
   <div class="col s6">
     <div class="projectsection1">
-      <p>It doesn't need any parameters and it returns null. This function will reload the level if the player dies. To do that, we need to:</p>
-        <ol>
-          <li>Add the SceneManager namespace</li>
-              <ul>
-              <li>→ Add the line <strong>using UnityEditor.SceneManagement;</strong> to the top</li>
-              </ul>
-          <li>Restart the level in the Death function</li>
-              <ul>
-                <li>→ Add the line <strong>SceneManager.LoadScene(<i>YOURLEVELNAME</i>);</strong> to the Death function.</li>
-              </ul>
-          <li>Call the death function when health is too low.</li>
-          </ol>
+      <h6>Try editing other values!</h6>
+      <p>Once you have the enemy working how you want it, you can make a new prefab of it (you could have a prefab for each type of enemy)!</p>
     </div>
-  </div>
-</div>
-
-<div class="row">
-   <div class="col s1 offset-s1">
-     <div class="worldbuilding-tip">
-       <i class="pin"></i>
-         <h6><i>Challenge Mode!</i><h6>
-            <blockquote class="worldbuilding-tip-quote">
-              <p>Add an if-then statement to the UpdateHealth function that checks if CurrentHealth is equal to or lower than zero (<strong><=</strong> will check that). Call the Death function if it is.</p>
-            </blockquote>
-            <br>
-    </div>
- </div>
-</div>
-
-<div class="row">
-    <!--Lesson Checkbox Div-->
-      <div class="col s1 offset-s1">
-          <div class="checkbox">
-            <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-        </div>
-<!--Instruction Div-->
-  <div class="col s6">
-    <div class="projectsection1">
-      <p>The last thing we need to do is check the <strong>build settings</strong>.</p>
-    </div>
-  </div>
-</div>
-
-
-	  	  		    <!--html Lesson: Directions Start Here-->
-    <div class="row">
-      <div class="col s6 offset-s1">
-        <h4>Build Settings</h4>
-      </div>
-    </div>
-		  	      <div class="row">
-        <!--Lesson Checkbox Div-->
-        <div class="col s1 offset-s1">
-          <div class="checkbox">
-            <form action="#">
-                <p>
-                  <label>
-                    <input type="checkbox" />
-                    <span></span>
-                  </label>
-                </p>
-            </form>
-          </div>
-        </div>
-        <!--Instruction Div-->
-        <div class="col s6">
-          <div class="projectsection1">
-		          <p>Our players are not going to be playing this game in the editor. We're going to <strong>build</strong> a runnable version of the game so they don't have to see all of the code! Some functions, like the <strong>SceneManager.</strong> function, need scenes to be in the <strong>Build Settings</strong> to use.</p>
-              </div>
-        </div>
-      </div>
-
-	  		  	      <div class="row">
-        <!--Lesson Checkbox Div-->
-        <div class="col s1 offset-s1">
-          <div class="checkbox">
-            <form action="#">
-                <p>
-                  <label>
-                    <input type="checkbox" />
-                    <span></span>
-                  </label>
-                </p>
-            </form>
-          </div>
-        </div>
-        <!--Instruction Div-->
-        <div class="col s6">
-          <div class="projectsection1">
-            <p>To open the build settings, go to:</p>
-            <p><strong>File</strong> → <strong>Build Setting</strong></p>
-		      </div>
-        </div>
-      </div>
-
-
-      <div class="row">
-        <!--Lesson Checkbox Div-->
-        <div class="col s1 offset-s1">
-          <div class="checkbox">
-            <form action="#">
-                <p>
-                  <label>
-                    <input type="checkbox" />
-                    <span></span>
-                  </label>
-                </p>
-            </form>
-          </div>
-        </div>
-        <!--Instruction Div-->
-        <div class="col s6">
-          <div class="projectsection1">
-            <p>Click <strong>Add Open Scenes</strong> to add your scene to the Build Settings!</p>
-	        </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col s6 offset-s2">
-          <img src="./unity_images/healthbar16.JPG" width="500px">
-        </div>
-      </div>
-
-<!--html Lesson: Directions Start Here-->
-<div class="row">
-  <div class="col s6 offset-s1">
-    <h4>Testing the Game</h4>
-  </div>
-</div>
-
-<div class="row">
-  <!--Lesson Checkbox Div-->
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-          </form>
-        </div>
-        </div>
-        <!--Instruction Div-->
-        <div class="col s6">
-        <div class="projectsection1">
-        <h6>Try playing the game</h6>
-        <p>Does your healthbar go down?</p>
-        <p>Do you die?</p>
-        <p>Does the game restart?</p>
-        <br>
-        <p>Start thinking about an ending scene for when the player dies</p>
-        <p>Something simple works, or you can animate an elaborate cut scene</p>
-      <p>Now you can die! I'm sick of letting this enemy bully us, though. In the next guide, it is time to fight back.</p>
-    </div>
-  </div>
-</div>
-
-<div class="row">
-  <div class="col s6 offset-s2">
-    <img src="./unity_images/healthbar17.gif" width="300px">
   </div>
 </div>
 
@@ -1059,8 +963,7 @@
       <!--Instruction Div-->
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Save your project</h5>
-		  <br>
+          <h6>Save your project</h6>
       </div>
 	  </div>
 	  </div>
@@ -1069,9 +972,9 @@
 	  <br>
     <!--Project Complete Banner-->
     <div class="row blue white-text">
-	<br>
+      <div class="col s4 offset-s4">
         <h5 style="text-align:center;">Power up</h5>
-	<br>
+      </div>
     </div>
 	<br>
 	<br>
