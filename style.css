@@ -228,6 +228,7 @@ input[type='checkbox'] {
 #gettheprizeBG {background-image: url('gettheprize.gif');}
 #hideandseekBG {background-image: url('hideandseek.gif');}
 #terraBG {background-image: url('terra.gif');}
+#mazeBG {background-image: url('maze.GIF');}
 #selectionBG {background-image: url('chooseadventure.png');}
 #chatbotBG {background-image: url('chatbot.png');}
 #twotruthsBG {background-image: url('twotruths.gif');}
@@ -237,6 +238,7 @@ input[type='checkbox'] {
 #paintBG {background-image: url('paint.gif');}
 #boatBG {background-image: url('boat.gif');}
 #BG {background-image: url('final.gif');}
+#launcherBG {background-image: url('launcher.GIF');}
 #breakoutBG {background-image: url('breakout.gif');}
 #fallingfruitBG {background-image: url('fallingfruit.gif');}
 #monkeyBG {background-image: url('monkey.gif');}
