@@ -109,11 +109,11 @@ window.onload= function(){
     if(food >=50 && water >=50 && lift >=50 ){
       document.getElementById('petDiv').innerHTML=("<img src='bulba.gif'>");
       if(food >=65 && water >=65 && lift >=65){
-      document.getElementById('petDiv').innerHTML=("<img src='interestedbulba.GIF'>");
+      document.getElementById('petDiv').innerHTML=("<img src='interestedbulba.gif'>");
         if (food >=75 && water >=75 && lift >=75){
-          document.getElementById('petDiv').innerHTML=("<img src='sleepybulba.GIF'>");
+          document.getElementById('petDiv').innerHTML=("<img src='sleepybulba.gif'>");
           if (food >=85 && water >=85 && lift >=85){
-            document.getElementById('petDiv').innerHTML=("<img src='happy.GIF'>");
+            document.getElementById('petDiv').innerHTML=("<img src='happy.gif'>");
           }
         }
       }
