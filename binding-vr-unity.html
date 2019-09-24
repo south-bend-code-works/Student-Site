@@ -16,7 +16,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="SBCS_favicon.png">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Firebase: Set</title>
+    <title>Binding UI Actions</title>
   </head>
   <body>
     <!--Nav bar  -->
@@ -40,24 +40,29 @@
 
     <div class="row">
       <div class="col s6 offset-s3">
-        <h4 style="font-weight:bold;"><center>Firebase: Set</center></h4>
+        <h4 style="font-weight:bold;"><center>Binding UI Actions</center></h4>
       </div>
     </div>
 
     <div class="row">
       <div class="col s6 offset-s2">
         <h6>In this lesson you will:</h6>
-          <p>Create your first database, and send data to it</p>
+          <p>Edit vive's default keybindings</p>
         <h4 class="projectTitle">What You Will Make</h4>
-        <p>Firebase Realtime Database is Firebase’s original database product. It’s a cloud-hosted NoSQL database that can store and sync data in real time for the user. FIrebase is also a Google owned product.
-          One basic way to add data to our Realtime Database is Firebase’s ‘set’ method, which we’ll be using in this lesson!</p>
+        <p>SteamVR for Unity comes with built in actions that you can use in your game like Teleport, Grab, Pinch, etc…
+          <br>
+          However, if we want to use the controller actions to do some other action in our game, we will need to bind this action to the particular function.
+          <br>
+          There are three things we need to do.
+          <br>
+          Sign into your Unity account to access your games.</p>
         <!-- <a href='https://github.com/github/explore' target="_blank"><h5>Check out an example HERE!</h5></a> -->
       </div>
     </div>
 
     <div class="row">
       <div class="col s6 offset-s1">
-        <h5 style='font-weight:bold'>HTML</h5>
+        <h5 style='font-weight:bold'>Creating Actions</h5>
     </div>
     </div>
     <div class="row">
@@ -75,7 +80,9 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>On your computer, create a new folder for your project. Give it a name that reminds you that it is a Firebase project.</h5>
+          <h5>Open the SteamVR Input Window</h5>
+          <h6>Window Menu -> SteamVR Input</h6>
+          <img style="height:25vh;"src='vr_images/steamvr-input-window.png'>
         </div>
       </div>
     </div>
@@ -95,9 +102,7 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Open your text editor and create a new HTML file.</h5>
-          <h6> Give your html file 3-4 input fields. We'll grab the data for our database from what the user enters into these.</h6>
-          <p>Give each input field a different id, based on the type of information you want the user to put into it. For example, we could give an id of "name" to a field that we want the user to enter their name into. </p>
+          <h5>There are four built in action sets, default, platformer, buggy, and mixedreality. For now we will just edit the default set. Later on, you could create your own action set, or use a different built in set.</h5>
         </div>
       </div>
     </div>
@@ -117,7 +122,8 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Give each field placeholder text that also matches the information you'd like the user to enter into it</h5>
+          <h5>To add a new action, click the + button under the "In" list</h5>
+          <img style="height:25vh;"src='vr_images/new-actions.png'>
         </div>
       </div>
     </div>
@@ -137,63 +143,7 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Create a button underneath your input fields. We'll use this to submit our data to the database.</h5>
-          <h6>Give the button an id, "submit" works fine.</h6>
-          <p>Give the button a <em>"type=button"</em> attribute. This will stop the button from reloading the page when we click on it.</p>
-          <img style='height:35vh;' src='database_images/set-page.png'>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="row">
-      <div class="col s6 offset-s1">
-        <h5 style='font-weight:bold'>Javascript</h5>
-    </div>
-    </div>
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h5>Create a new JS file, and link it to your html</h5>
-          <h6> We'll wrap all of our code in a inside of a window.onload</h6>
-          <img src='database_images/window-onload.png'>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s6 offset-s1">
-        <h5 style='font-weight:bold'>Firebase Console</h5>
-    </div>
-    </div>
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h5>Open up your web browser</h5>
+          <h5>You will need to name your action. Make sure to use a descriptive name.</h5>
         </div>
       </div>
     </div>
@@ -213,7 +163,15 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Navigate to the <a target="_blank" href="https://firebase.google.com/">Firebase Console</a></h5>
+          <h5>There are six action types you can choose from:</h5>
+          <ol>
+            <li>Boolean - an action that is on or off, like a button click</li>
+            <li>Vector1 - an action that will return a single value, like how far the trigger is pulled</li>
+            <li>Vector2 - an action that will return an x,y pair of values like a planar location</li>
+            <li>Vector3 - an action that will return an x,y,z triple of values like a 3D location</li>
+            <li>Pose - this action captures the pose that the user’s hand is in at the moment. Particular poses can be programmed for items depending on the shape and how the user should interact with them.</li>
+            <li>Skeleton - this action captures the skeleton of the users hands, for use in hand/object animations. Depending on the controller/input device used, this can be very simple data or very complex data</li>
+          </ol>
         </div>
       </div>
     </div>
@@ -233,357 +191,121 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>You'll need a google account to use Firebase. If you already have one, go ahead and sign into it. If not, you can create one</h5>
-          <h6>Let's confirm that we're using the correct account. In the top-right corner of the screen, you'll see the first initial of your account name. Click on it to display the account you're using.</h6>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h5>Next to your account icon, you'll see a "Go to console" button. Click on it</h5>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h5>The console will show you all of the Firebase projects associated with your account.</h5>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h5>Click on the "Add Project" button</h5>
-          <h6>Give your project a name</h6>
-          <p>When asked about google analytics, click "not right now", then click continue</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h5>We're now on your Project's Overview page.</h5>
-          <h6>On the left side of the screen, we'll see a list of our project options. The first of these is your Develop tab.</h6>
-          <img style="height:25vh" src="database_images/develop.png">
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h5>Select database.</h5>
-          <h6>You’ll be asked if you’d like to use Cloud Firestore, Firebase’s new database service, or Realtime Database. Firestore is very similar to Realtime Database, but is built to scale to larger projects more easily and stores data differently. We’ll scroll down the page and select “create database” on the Realtime Database panel.</h6>
-          <img style="height: 25vh" src="database_images/realtime.png">
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h5>Select test mode. We wouldn't use test mode on a production project, because anyone can access our database in this mode. Since we're learning right now though, we're all good!</h5>
-          <h6>We'll be taken to our database, and we can dismiss the watning we'll get about being in test mode.</h6>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="row">
-      <div class="col s6 offset-s1">
-        <h5 style='font-weight:bold'>Connecting to the database</h5>
-    </div>
-    </div>
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h5>Navigate back to the project overview</h5>
-          <h6>You'll see platform icons sitting above text that reads "Add an app to get started". We're making a web application, so select web.</h6>
-          <img style='height:15vh' src='database_images/add-app.png'>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h5>You'll be prompted to make a nickname for your app, so create one</h5>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h5>Now we'll add Firebase to our app.</h5>
-          <h6>Grab the entirety of the first script tag, and paste it into the head of your HTML. Note the comment from above the script tag when we copied it. This means that we need to put this script tag in above any other script tags we might have, including the JS file we made.</h6>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h5>Next, we'll copy everything that's inside of the second script tag, leaving out the opening and closing tags.</h5>
-          <h6> We won’t need them because we’ll be pasting this script into the top of our JS file. This second script tag contains our project’s unique data from firebase. Think of it as the key or ID to our database. Once this is done, we’re ready to start writing our JS!</h6>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h5>Everything in Javascript is considered to be an object.</h5>
-          <h6>As a result of this, we can create our own objects. We can even create objects that exist to shorthand our code! As an example of this, we're going to create a variable called "database"</h6>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h5>We'll set database equal to "firebase.database()".</h5>
-          <h6>firebase.database is a built-in firebase method that we use to access our database through our JS. Now whenever we need to use it, we can just say "database" instead!</h6>
-          <img style="height:25vh" src="database_images/database-var.png">
-          <h6>Here's what our JS should look like so far.</h6>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h5>Next, we're going to create the function that'll send our data. Create a function called "setUserData".</h5>
-          <h6>Back outside of our setUserData function, we'll tie running the function to the submit button we made in our html through its ID.</h6>
-          <img style="height:3vh;" src="database_images/onclick.png">
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h5>Remember how we made input fields and gave them ids? We’re going to use those to create variables inside of our setUserData function, and set their values to the database.</h5>
-          <h6>Make variables for each input field you created, and set them equal to the value of your input field.</h6>
-          <em>Example:</em>
-          <br>
-          <img style="height:10vh;" src="database_images/value-variable.png">
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h5>Once we've created our variables, we'll use our database variable to reference and set our data:</h5>
-          <img style="height:15vh;" src="database_images/set-code.png">
+          <h5>For our purposes, we can keep the Required option set to suggested.</h5>
           <ul>
-          <li>.ref is another method, and it’s short for reference. When we use it here, we’re essentially saying “here is my database, I want to reference it"</li>
-          <br>
-          <li>‘users/’ is the path that we’ll want to access within our database. If the path we specified doesn’t exist, .set will create one that matches.</li>
-          <br>
-          <li>“+” signs in JS are used for concatenation. Concatenation is the joining of strings together. Here we’re concatenating a variable called ‘userName’ onto the end of our ‘users/’ path. This means that whenever a new user is made, an object with a name that matches their user name will be created with all their attributes under the ‘users’ path.</li>
-          <br>
-          <li>The red strings before the colons are the names our users’ attributes will have in the database. Note that each one is assigned to one of the variables that we made to track our input fields.</li>
-          <br>
-          <li>Separate each attribute with a comma, the comma after the final attribute is optional.</li>
+            <li>Mandatory means that this action must be bound to a user input for the game to compile and run.</li>
+            <li>Suggested means that this action should be bound to a user input for the game to run.</li>
+            <li>Optional means that this action is optional and won't affect gameplay.</li>
+          </ul>
+          <h6>Once you've created your action, be sure to press "Save and Generate!"</h6>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 style='font-weight:bold'>Binding the Actions to Controls</h5>
+    </div>
+    </div>
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>From inside the SteamVR Input window, open the binding UI</h5>
+          <img style="height:5vh;"src='vr_images/open-binding-ui.png'>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>This will open the binding interface in your web browser.</h5>
+          <img style="height:25vh;"src='vr_images/binding-ui-2.png'>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Edit the vive_controller in Current Binding.</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>By default, the following bindings are in place, and are mirrored(the same on both controllers)</h5>
+          <ul>
+            <h6>Grip: Use as Button</h6>
+            &nbsp; Click -> Grab Grip
+            <h6>Menu and Skeleton are empty</h6>
+            <h6>Trigger: Use as Button, Use as Button, and Use as Trigger</h6>
+            &nbsp; Click -> Interact with UI
+            <br>
+            &nbsp; Click - > Grab Pinch
+            <br>
+            &nbsp; Pull -> Squeeze
+            <br>
+            <h6>Trackpad: Use as Button</h6>
+            &nbsp; Click -> Teleport
+
           </ul>
         </div>
       </div>
     </div>
 
     <div class="row">
-      <div class="col s6 offset-s1">
-        <h5 style='font-weight:bold'>Completion Callbacks</h5>
-      </div>
-    </div>
-    <div class="row">
       <div class="col s1 offset-s1">
         <div class="checkbox">
           <form action="#">
@@ -598,34 +320,7 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>We can set conditionals to trigger based on whether or not </h5>
-          <img style="height:25vh" src="database_images/completion-callback.png">
-          <h6>Try entering similar code at the end of your setUserData function!</h6>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s6 offset-s1">
-        <h5 style='font-weight:bold'>Testing</h5>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h5>Save all of your code, and fill in the input fields on your HTML page.</h5>
+          <h5>You can remove any of these bindings, replace them, or add your own as well.</h5>
         </div>
       </div>
     </div>
@@ -645,11 +340,212 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Click your submit button</h5>
-          <h6> open up the database section of your Develop tab in the firebase console. You should see all your data there!</h6>
+          <h5>Here are the inputs that each controller feature can accept.</h5>
+          <h6> Grip Button</h6>
+            &nbsp;Boolean
+            <br>
+            &nbsp;Vector1(but only 0 or 1, no intermediate values.)
+
+          <h6>Menu Button</h6>
+          &nbsp;Boolean
+          <br>
+          &nbsp;Vector1(see above)
+
+          <h6>Trigger</h6>
+          &nbsp;Boolean
+          <br>
+          &nbsp;Vector1(range of values)
+
+          <h6>Trackpad as Trackpad</h6>
+          &nbsp;Click -> Boolean, or Vector1
+          <br>
+          &nbsp;Touch -> Boolean, or Vector1
+
+          <h6>Trackpad as Dpad</h6>
+          &nbsp;North, East, South, West, and Center all accept Boolean or Vector1
+
+          <h6>System Button</h6>
+          &nbsp;Boolean
+          <br>
+          &nbsp;Vector1
         </div>
       </div>
     </div>
+
+
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 style='font-weight:bold'>Getting Input from the Controls in a Script</h5>
+    </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Once you've created the Action in the SteamVR Input, and bound it to the appropriate controller action, you are ready to get values from that action!</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>You need to open whatever script you're using to get the input values.</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Inside that script, you will declare a variable that will recieve the input from the controller.</h5>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>The variable type will match whatever action type you defined.</h5>
+          <h6>For example, if you created a boolean, you will make your variable of type SteamVR_Action_Boolean.</h6>
+          <p>Each type will be SteamVR_Action_******, where ****** is whatever type you've used.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>For boolean actions, to get the value, you will call <em>varName.GetStateDown(InputSource)</em></h5>
+          <h6>The input source can be a specific object, like a hand, or it can be set to Any</h6>
+          <h6>Use <em>SteamVR_Input_Sources.Any</em> to get input from any source.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>For Vector2 actions, to get the value you will call <em>varName.GetAxis(InputSource)</em>.</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Then you can use the values you have to move your character, or perform some other action in the game.</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Be sure to sign out of Unity when you're done!</h5>
+        </div>
+      </div>
+    </div>
+
+
+
 
 <div class='row'>
   <div class='col s6 offset-s1'>
@@ -674,7 +570,7 @@
           <h6>Find another project?</h6>
           <div class="browse">
             <br>
-            <a href="firebase.html">
+            <a href="ar-vr.html">
               <button>Browse all projects</button>
             </a>
           </div>
@@ -683,5 +579,6 @@
     </div>
   </div>
 </div>
+
 </body>
-</html>
+<html>
