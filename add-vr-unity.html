@@ -16,7 +16,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="SBCS_favicon.png">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Firebase: Snapshot</title>
+    <title>Adding VR to a Unity Game</title>
   </head>
   <body>
     <!--Nav bar  -->
@@ -40,24 +40,27 @@
 
     <div class="row">
       <div class="col s6 offset-s3">
-        <h4 style="font-weight:bold;"><center>Firebase: Snapshot</center></h4>
+        <h4 style="font-weight:bold;"><center>Adding VR to a Unity Game</center></h4>
       </div>
     </div>
 
     <div class="row">
       <div class="col s6 offset-s2">
         <h6>In this lesson you will:</h6>
-          <p>Retrieve data from your database</p>
+        <ol>
+          <li>Create a new Unity Project</li>
+          <li>Utilize the SteamVR plugin to add VR support to your project</li>
+          <li>Test out your first VR game!</li>
+        </ol>
         <h4 class="projectTitle">What You Will Make</h4>
-        <p>In our last lesson we learned how to add data to our Realtime database using set. Now we'll learn a way to retrieve data, using Firebase's Snapshot!</p>
-        <em>Note: You'll want to create a Database and add data to it before attempting this lesson. Check out the <a target="_blank" href='firebase-set.html'>Firebase Set Lesson</a> to get started!</em>
+        <p>A working VR project!</p>
         <!-- <a href='https://github.com/github/explore' target="_blank"><h5>Check out an example HERE!</h5></a> -->
       </div>
     </div>
 
     <div class="row">
       <div class="col s6 offset-s1">
-        <h5 style='font-weight:bold'>Getting started</h5>
+        <h5 style='font-weight:bold'>Getting Started</h5>
     </div>
     </div>
     <div class="row">
@@ -75,7 +78,9 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Open up your HTML and JS pages that you used in the Set lesson</h5>
+          <h5>Open Unity Hub and sign into Unity.</h5>
+          <img style="height:15vh;"src='vr_images/unity-hub.png'>
+          <h6>Choose Unity version 2018.3 when you select a new project.</h6>
         </div>
       </div>
     </div>
@@ -95,8 +100,9 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>On your HTML page, create a new div.</h5>
-          <h6>We'll be using this div to display the data we're grabbing from our database, so give it an ID that reflects that!</h6>
+          <h5>Go to the Asset Store tab inyour new project and enter "SteamVR" into the search field at the top.</h5>
+          <img style="height:25vh;"src='vr_images/steamvr-plugin.png'>
+          <h6>Download and import the SteamVR Plugin into your project.</h6>
         </div>
       </div>
     </div>
@@ -116,16 +122,55 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Create a new button next to your set button</h5>
-          <h6>We'll be using this button to call our data-retrieving function, so give it a matching ID as well</h6>
+          <h5>At the end of the import, you may see a prompt that reads "API update required". Click on "I made a backup, go ahead!"</h5>
+          <h6>You'll see another prompt titled "SteamVR_Settings". Click "Accept All".</h6>
         </div>
       </div>
     </div>
 
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Delete the Main Camera from your scene.</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Save the scene and your project. You now have a project ready to develop for the HTC Vive!</h5>
+        </div>
+      </div>
+    </div>
 
     <div class="row">
       <div class="col s6 offset-s1">
-        <h5 style='font-weight:bold'>Javascript</h5>
+        <h5 style='font-weight:bold'>Testing a game with SteamVR</h5>
     </div>
     </div>
     <div class="row">
@@ -143,10 +188,9 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Create a JS function called retrieve.</h5>
-          <h6>Add the following line:</h6>
-          <img style='height:10vh;' src='database_images/snapshot-ref.png'>
-          <h6>This will make a call to the database at the path we specified (users) using database.ref. Once it finds the contents in the database, it will take what our users path looks like at the time(snapshot) and return it to us once(.once)</h6>
+          <h5>Open SteamVR from your Desktop.</h5>
+          <img style="height:25vh;"src='vr_images/steamvr-desktop.png'>
+          <h6>Be sure that your headset is plugged into the box and that the sensors and controllers are on.</h6>
         </div>
       </div>
     </div>
@@ -166,10 +210,8 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Looking at the data we have, it is like an array that's full of smaller arrays. We'll need to loop through it in order to find the data we want.</h5>
-          <h6>To see what the data looks like, we can log it to our console.</h6>
-          <img style="height:10vh" src="database_images/snapshot-log.png">
-          <h6>We'll also need to tell our JS when to run our function! Under the onclick you made for your set button, make an onclick for your retrieve button. Have it run your retrieve function when clicked.</h6>
+          <h5>The SteamVR window should show that all components are detected and active.</h5>
+          <img style="height:25vh;"src='vr_images/steamvr-home.png'>
         </div>
       </div>
     </div>
@@ -189,9 +231,7 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Back inside our retrieve function, we'll need a forEach function. We'll put it inside of the {} after our snapshot</h5>
-          <img style="height:10vh" src="database_images/forEach.png">
-          <h6>Our forEach will loop through our data for us</h6>
+          <h5>Press Play on your game.</h5>
         </div>
       </div>
     </div>
@@ -211,9 +251,9 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Inside of our forEach's {}, we'll tell our JS what to do with each bit of information in the childSnapshot.</h5>
-          <h6>Make a new variable to hold each item from the snapshot</h6>
-          <img style="height:5vh;" src="database_images/child-snapshot.png">
+          <h5>The first time you run a game you should get this error:</h5>
+            <img style="height:25vh;"src='vr_images/generate-actions.png'>
+          <h6>Click "Yes"</h6>
         </div>
       </div>
     </div>
@@ -233,8 +273,9 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Now we can pull specific data from the childData object!</h5>
-          <h6>For example, childData.Name will give us the value of what's stored under Name in our database.</h6>
+          <h5>You'll then get this dialogue box:</h5>
+          <img style="height:25vh;"src='vr_images/actions-json.png'>
+          <h6>Click "Yes" again.</h6>
         </div>
       </div>
     </div>
@@ -254,10 +295,9 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>We still need to display our data on our html page.</h5>
-          <h6> To do this, we'll use document.createElement, document.createTextNode, and appendChild.</h6>
-          <img style="height:15vh" src="database_images/database-to-html.png">
-          <h6>Here's an example. You can replace "Name" with whichever data you're accessing at the time, and name your variables accordingly.</h6>
+          <h5>You'll see the SteamVR Input window open now</h5>
+          <img style="height:25vh;"src='vr_images/steamvr-input-window.png'>
+          <h6>Click "Save and generate"</h6>
         </div>
       </div>
     </div>
@@ -277,9 +317,7 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Once we've had JS create our HTML elements, we need to tell it where to add them. Remember the div we added to our HTML?</h5>
-          <img style="height:3vh" src="database_images/snapshot-display.png">
-          <h6>We'll use getElementById to select our div, and .appendChild to insert our data into it. Repeat this for all of the fields you've made.</h6>
+          <h5>We will use the binding UI later to connect controller actions to actions in our games.</h5>
         </div>
       </div>
     </div>
@@ -299,7 +337,8 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Now, you should be able to display the information from your database on your html page with a button click!</h5>
+          <h5>If you haven't saved your changes, you'll now be prompted to. Make sure to click Save.</h5>
+          <img style="height:25vh;"src='vr_images/save-prompt.png'>
         </div>
       </div>
     </div>
@@ -319,18 +358,56 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Tips</h5>
-          <ul>
-            <li>Use console.log() throughout your code to test the values of your variables</li>
-            <br>
-            <li>Open your browser's developer tools and look at the console to see the output</li>
-            <br>
-            <li>Make sure you're putting actual data in your database, not empty fields!</li>
-            <br>
-            <li>Save and test often</li>
-            <br>
-            <li>Ask your neighbors for help</li>
-          </ul>
+          <h5>You can now close the SteamVR Input window and run your game.</h5>
+          <h6>Be sure to sign out of Unity when you're done!</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 style='font-weight:bold'>Recalibrating the Room</h5>
+    </div>
+    </div>
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Open the SteamVR application</h5>
+          <img style="height:25vh;"src='vr_images/steamvr-desktop.png'>
+          <h6>Click on the hamburger menu</h6>
+          <img style="height:15vh;"src='vr_images/steamvr-hamburger.png'>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Select "Room Setup" from the menu, and follow the directions.</h5>
         </div>
       </div>
     </div>
@@ -359,7 +436,7 @@
           <h6>Find another project?</h6>
           <div class="browse">
             <br>
-            <a href="firebase.html">
+            <a href="ar-vr.html">
               <button>Browse all projects</button>
             </a>
           </div>
@@ -368,5 +445,6 @@
     </div>
   </div>
 </div>
-</body>
+
+  </body>
 </html>

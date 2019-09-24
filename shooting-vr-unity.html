@@ -16,7 +16,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="SBCS_favicon.png">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Pushing to GitHub</title>
+    <title>Firing Objects From the Controller</title>
   </head>
   <body>
     <!--Nav bar  -->
@@ -40,30 +40,24 @@
 
     <div class="row">
       <div class="col s6 offset-s3">
-        <h4 style="font-weight:bold;"><center>Intro to Git, GitHub, and CLI</center></h4>
+        <h4 style="font-weight:bold;"><center>Firing Objects From the Controller</center></h4>
       </div>
     </div>
 
     <div class="row">
       <div class="col s6 offset-s2">
         <h6>In this lesson you will:</h6>
-        <ol>
-          <li>Create a GitHub account</li>
-          <li>Create a GitHub repository</li>
-          <li>Install Git onto your computer</li>
-          <li>Learn the basics of navigating a CLI</li>
-          <li>Push a project up onto your repository</li>
-        </ol>
+          <p>Give the player the ability to fire objects from their hands</p>
         <h4 class="projectTitle">What You Will Make</h4>
-        <p>A working GitHub repository!</p>
-        <a href='https://github.com/github/explore' target="_blank"><h5>Check out an example HERE!</h5></a>
+        <p>In some games, we may want the ability to fire objects from the controller. We will need a couple of things to make this happen: a player, an object to fire, a UI action, and a couple of scripts to connect things.</p>
+        <!-- <a href='https://github.com/github/explore' target="_blank"><h5>Check out an example HERE!</h5></a> -->
       </div>
     </div>
 
     <div class="row">
       <div class="col s6 offset-s1">
-        <h5 style='font-weight:bold'>GitHub Account</h5>
-      </div>
+        <h5 style='font-weight:bold'>Getting Started</h5>
+    </div>
     </div>
     <div class="row">
       <div class="col s1 offset-s1">
@@ -80,28 +74,7 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>What is GitHub?</h5>
-          <p>GitHub is a very widely used platform for sharing projects and collaborating with other developers. Head over to <a target='_blank' href='https://github.com/'>GitHub</a>!</p>
-          </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h6>Click "sign up" if you don't already have an account. Sign in if you've already made one.</h6>
+          <h5>Sign into Unity</h5>
         </div>
       </div>
     </div>
@@ -121,15 +94,76 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h6>Fill in the fields (be sure to verify your email address if you're making a new account!) and submit</h6>
+          <h5>Create a new game, or open the game you'd like to add this feature to.</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Create a Terrain, and get rid of the Main Camera.</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Add the [CameraRig] to the game.</h5>
+          <h6>Assets -> SteamVR -> Prefabs -> CameraRig</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Rename CameraRig to PlayerRig</h5>
         </div>
       </div>
     </div>
 
     <div class="row">
       <div class="col s6 offset-s1">
-        <h5 style='font-weight:bold'>Creating a Repository</h5>
-      </div>
+        <h5 style='font-weight:bold'>Fire Action UI</h5>
+    </div>
     </div>
     <div class="row">
       <div class="col s1 offset-s1">
@@ -146,31 +180,7 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>After you've signed into your account, you'll be on your dashboard. Think of this as your account's homepage</h5>
-          <p>On the left side of your dashboard, you'll see a list of your repositories. Repositories are containers that store your project files and their edit histories.</p>
-          </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h5>Next to the word 'Repositories', look for a green button labeled "New" and click on it.</h5>
-          <img src="git_images/new-repo-button.png">
-          <h6>You'll see fields for your repository's name, a description of it, its privacy, and a choice of adding a readme file.</h6>
-          <p>Readme files usually contain information that the developer wants readers to know about their project. They tend to be written using Markdown, a language that's very similar to plain text and HTML. <a target='_blank' href='https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf'>Learn more about Markdown here</a></p>
+          <h5>Open the SteamVR Input Window (Window -> SteamVR Input)</h5>
         </div>
       </div>
     </div>
@@ -190,8 +200,8 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h6>We'll leave the privacy as public, and we'll want to check the box labeled "Initialize this project with a README". </h6>
-          <p>We can use this option to allow others to clone our repository, so that they can collaborate with us.</p>
+          <h5>Create a boolean action called fire.</h5>
+          <img style="height:25vh;"src='vr_images/fire.png'>
         </div>
       </div>
     </div>
@@ -211,36 +221,55 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h6>Once everything is filled out, click the "create repository" button. Congratulations, we've made our first repository! </h6>
+          <h5>Save and generate the inputs, then open the binding UI</h5>
         </div>
       </div>
     </div>
 
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Change the Trigger pull action to fire. You can also use a different controller action here. See <a target ="_blank" href="binding-vr-unity.html">Binding UI Actions</a> for more help.</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Click "Replace Default Bindings" to save this change.</h5>
+        </div>
+      </div>
+    </div>
 
     <div class="row">
       <div class="col s6 offset-s1">
-        <h5 style='font-weight:bold'>Git installation/Getting started with our CLI</h5>
-      </div>
+        <h5 style='font-weight:bold'>Making the Ammo</h5>
     </div>
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h5>CLI stands for "Command Line Interface". It's a more direct way to interact with your machine than a GUI(Graphical User Interface), which many users are more accustomed to.</h5>
-          <p>On Windows Machines, we'll be using Powershell as our CLI. For OSX and Linux, we'll use Terminal.</p>
-          </div>
-      </div>
     </div>
 
     <div class="row">
@@ -258,8 +287,7 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Git itself is a version control system, and it makes up the backbone of GitHub.</h5>
-          <h6>Version control is a system that tracks changes in files over time, so that a user can change projects over to different states without having to manually edit their files each time.</h6>
+          <h5>Choose a 3D object that you want to make into your ammo. I'll be using a 3D Sphere.</h5>
         </div>
       </div>
     </div>
@@ -279,9 +307,7 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h6>If Git isn't installed, we'll need to install it. Head to <a target="_blank" href='https://git-scm.com/downloads'>the Git downloads page</a> and download the version that matches the machine you're using. </h6>
-          <img style="width:25vw;"src="git_images/git-download.png">
-          <p>The site will usually be able to auto-detect your operating system(OS), the software that controls your computer's basic funtions.</p>
+          <h5>Create one of these, then style it as you wish.</h5>
         </div>
       </div>
     </div>
@@ -301,7 +327,7 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h6>Open up the installer and follow the steps, the default settings are fine. When asked if you'd like to install Git Bash, select "no". When asked to use Vim as the default editor, choose Atom or VS Code, whichever you prefer.</h6>
+          <h5>Add a Rigidbody component to your ammo.</h5>
         </div>
       </div>
     </div>
@@ -321,9 +347,7 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h6>Open up your CLI.</h6>
-          <p>If you aren't sure where to find your CLI, try typing its name into the search bar on your machine's desktop.</p>
-          <img style="width:25vw;" src='git_images/cli-search.png'>
+          <h5>Once you are satisfied with your ammo, create a Prefabs folder inside Assets (if one does not exist already).</h5>
         </div>
       </div>
     </div>
@@ -343,9 +367,8 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h6>On Windows, we'll need to edit our PATH variable to use git commands with Powershell.</h6>
-          <p>Use Windows Explorer to navigate to your Git installation (it's probably in C:/program files).</p>
-          <img src='git_images/file-explorer.png'>
+          <h5>Drag the Ammo Object into the Prefabs folder to create a prefab. Then delete the original object.</h5>
+          <img style="height:25vh;"src='vr_images/ammo.png'>
         </div>
       </div>
     </div>
@@ -365,206 +388,15 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h6>Inside of the Git folder, find the mingw32 (or mingw64) folder</h6>
+          <h5>Now create an empty GameObject and call it GameManager.</h5>
         </div>
       </div>
     </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h6>Inside of the mingw folder, find the bin folder.</h6>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h6>Copy the full path of the bin folder.</h6>
-          <p>Right click the folder -> properties -> location</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h6>Open up control panel</h6>
-          <img style="height:35vh;"src="git_images/control-panel.png">
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h6>Navigate to System And Security -> System -> Advanced System Settings</h6>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h6>Select the "Advanced" tab</h6>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h6>Click on environment variables</h6>
-          <img style="height:35vh;"src="git_images/environment-variables.png">
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h6>Select the path variable by double-clicking on it.</h6>
-          <p>We're going to be editing the "user" variables version of PATH, so make sure you've selected that one, NOT system variables.</p>
-            <img src="git_images/user-variables.png">
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h6>Click on the "new" button, and paste your bin directory into the text box.</h6>
-          <p>Once you've done that, go ahead and confirm your changes.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h6>Open up PowerShell and type 'git' into the console. Hit enter.</h6>
-          <p>If a list of options for Git appears, you're all set!</p>
-          <img style="height:35vh;"src="git_images/git.png">
-          <br>
-          <em>Feel free to read through the options list! It may come in handy</em>
-        </div>
-      </div>
-    </div>
-
 
     <div class="row">
       <div class="col s6 offset-s1">
-        <h5 style='font-weight:bold'>CLI basics</h5>
-      </div>
+        <h5 style='font-weight:bold'>Scripting</h5>
+    </div>
     </div>
     <div class="row">
       <div class="col s1 offset-s1">
@@ -581,7 +413,7 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h6>We use commands to tell our CLI what we want it to do.</h6>
+          <h5>On the GameManager object, add a new script called GameManager.</h5>
         </div>
       </div>
     </div>
@@ -601,9 +433,8 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>To move around our machine's filesystem, we'll use the "cd" (change directory) command</h5>
-          <h6>To use the cd command, we'll type "cd" into our CLI, followed by the path of the place we want to go (ex. If I want to go to my default documents folder on windows, I'll type "cd documents") and hit enter.</h6>
-          <p>If the folder you're trying to access has a space in its name, you'll need to put quotation marks around it (ex. cd "my folder"). If you need to go back up a level in the diretory, you can run "cd .." to do so.</p>
+          <h5>We need two variables</h5>
+          <img style="height:5vh;"src='vr_images/fire-variables.png'>
         </div>
       </div>
     </div>
@@ -623,16 +454,239 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h6>Other useful commands are "ls", which will show you all the files in your current directory, and "pwd", which will tell you what directory you're currently in</h6>
+          <h5>We need just one function inside this script, it will be called <em>private void Awake()</em></h5>
+          <img style="height:15vh;"src='vr_images/awake.png'>
         </div>
       </div>
     </div>
 
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>This will help us manage the ammo objects. Save and close this script. The Awake function will be called once all the objects are created. The if statement checks to make sure there is only one instance of the GameManager, so that there aren’t multiple GameMangers spawning prefabs of the ammo object. </h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Drag the ammo prefab object into the ammoPrefab variable in inspector.</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Now Open up the PlayerRig Object.</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Add a new Script to the Right Controller inside PlayerRig. Call this script Shoot.</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Open up the Shoot script to edit it.</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Add <em>using Valve.VR</em> to the namespaces.</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Inside the script we need just a couple of variables. One to connect our fire action, and one to decide how fast the ammo should fire.</h5>
+          <img style="height:5vh;"src='vr_images/fire-variables-2.png'>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Add a private void FixedUpdate() function</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Inside the function, let's add code to create instances of the ammo when we pull the trigger.</h5>
+          <img style="height:15vh;"src='vr_images/fixed-update-fire.png'>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Save the script, and run the game to test for errors.</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Now set the Ammo Force, and select your fire action for the Fire dropdown in the Inspector.</h5>
+        </div>
+      </div>
+    </div>
 
     <div class="row">
       <div class="col s6 offset-s1">
-        <h5 style='font-weight:bold'>Initializing Git</h5>
-      </div>
+        <h5 style='font-weight:bold'>Deleting the Ammo</h5>
+    </div>
     </div>
     <div class="row">
       <div class="col s1 offset-s1">
@@ -649,7 +703,7 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h6>Now that we've made our repository, we'll need to create our files and initialize Git inside of our project.</h6>
+          <h5>Right now our ammo hangs around forever, it;s never deleted! We don't want this to happen.</h5>
         </div>
       </div>
     </div>
@@ -669,8 +723,7 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h6>In your CLI, navigate to your project's root folder.</h6>
-          <p>Your root is the bottom level of your project, that all other files and folders in the project are contained inside of.</p>
+          <h5>There are a variety of ways we may want to delete our ammo. For now, we'll just delete it when it falls off the edge of the terrain.</h5>
         </div>
       </div>
     </div>
@@ -690,7 +743,8 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h6>In your root, run "git init". This will initialize Git within your project.</h6>
+          <h5>Add a new script to the Ammo prefab. You'll need to open the prefab to do this.</h5>
+          <h6>Call this script "AmmoControl"</h6>
         </div>
       </div>
     </div>
@@ -710,7 +764,8 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h6>Next, we'll need to point our local repo at its remote counterpart.</h6>
+          <h5>Inside the Update function, write an if statement that checks the position of the ammo.</h5>
+          <h6>transform.position.y&lt;0</h6>
         </div>
       </div>
     </div>
@@ -730,9 +785,8 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h6>On your GitHub repository page, click the green button labeled "clone or download". </h6>
-          <p>Make sure your prompt says "clone with https". Copy the link it gives you in the box.</p>
-          <img src="git_images/clone-repo.png">
+          <h5>If the position is less than 0, the object has fallen off the edge, and we can destroy it.</h5>
+          <h6>Destroy(gameObject);</h6>
         </div>
       </div>
     </div>
@@ -752,41 +806,7 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h6>In your CLI, we'll type "git remote add origin" followed by the link we just copied.</h6>
-          <p>Once the confirmation pops up, we're all set to start pushing!</p>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="row">
-      <div class="col s6 offset-s1">
-        <h5 style='font-weight:bold'>Commiting and pushing</h5>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h6>When it comes to pushing code to GitHub, we can usually follow an outline that goes as follows:</h6>
-          <em>
-            <ul>
-              <li>git add .</li>
-              <li>git commit -m "commit message"</li>
-              <li>git push</li>
-            </ul>
-          </em>
+          <h5>Optionally, you can also destroy the ammo after a certain amount of time.</h5>
         </div>
       </div>
     </div>
@@ -806,7 +826,8 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h6>Let's break down what's happening here. This is the equivalent of saving a word document, but with code. Unlike saving a word document where we just click a "save" button, using git is distinct because it allows us to use version control. We can specify what files we want to update, what version of the project we want to update them on, and more! </h6>
+          <h5>To do this, use Destroy(gameObject, amount of time as a float)</h5>
+          <h6>Destroy(gameObject, 3,0f);</h6>
         </div>
       </div>
     </div>
@@ -826,9 +847,7 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h6>The first step to saving our code is to stage it on our local machine so that we can push the changes us to the remote (on GitHub) version of the project.</h6>
-          <p>The command that does this is "git add .". The period at the end of the command tells git to look through all of our files for changes to stage for saving. We can even specify as far as individual portions of files, but we'll cover that a bit later.</p>
-          <em>Side Note: Git is actually its own language. You're learning another language! Yay!</em>
+          <h5>Save your game and test it out!</h5>
         </div>
       </div>
     </div>
@@ -848,70 +867,14 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>After we've staged our changes (using "git add .") we need to "commit" them</h5>
-          <h6>The concept of the "commit" can be a little hard to wrap your head around at first. It isn't actually saving the project to our remote version in github yet.</h6>
-          <p>What it IS doing is bundling up our staged changes in a nice way that allows us to better track and manipulate changes to our codebase. Think of this as more of a labeling process. First you staged your code by grabbing all of the changes that were made when you ran the command "git add .". Now you'll label those changes so they're easy to find in all of the changes that have happened and will happen to the project's code.</p>
+          <h5>Be sure to sign out of Unity when you're done!</h5>
         </div>
       </div>
     </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h6>As mentioned, part of this commit process is labeling your code. In other words, adding a message.</h6>
-          <p>Our Git command reflects that. To commit, enter `git commit -m"a message describing what changes were made to your code"` into your CLI. The "git commit" part of this is fairly straightforward. The "-m" part stands for message, and it will stamp the message we put inside of the quotation marks on all of the files we staged in our project.</p>
-          <img src='git_images/commit.png'>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h6>Now that we've staged our changes and packaged them up nicely with a commit message, we actually have to push them up to the remote (on GitHub). We do this by running the command "git push". Now our changes should be on GitHub!</h6>
-          <em>Bonus: Comparing local and remote
-            <br>
-            What if we're not sure where our local branch stands in relation to remote? We can run "git branch -av" To see a list of recent commits!
-          </em>
-        </div>
-      </div>
-    </div>
-
-
-
-
-
-
-
-
 
 <div class='row'>
   <div class='col s6 offset-s1'>
-    <h5> Show an instructor your finished repository!</h5>
+    <h5> Show an instructor your finished project!</h5>
   </div>
 </div>
 
@@ -932,7 +895,7 @@
           <h6>Find another project?</h6>
           <div class="browse">
             <br>
-            <a href="git-github-cli.html">
+            <a href="ar-vr.html">
               <button>Browse all projects</button>
             </a>
           </div>
@@ -940,7 +903,4 @@
       </div>
     </div>
   </div>
-</div>
-
-  </body>
-</html>
+</divFlying

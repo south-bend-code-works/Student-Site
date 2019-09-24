@@ -16,7 +16,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="SBCS_favicon.png">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Pushing to GitHub</title>
+    <title>Walking and Jumping with the Trackpad</title>
   </head>
   <body>
     <!--Nav bar  -->
@@ -40,7 +40,7 @@
 
     <div class="row">
       <div class="col s6 offset-s3">
-        <h4 style="font-weight:bold;"><center>Intro to Git, GitHub, and CLI</center></h4>
+        <h4 style="font-weight:bold;"><center>Walking and Jumping with the Trackpad</center></h4>
       </div>
     </div>
 
@@ -48,22 +48,20 @@
       <div class="col s6 offset-s2">
         <h6>In this lesson you will:</h6>
         <ol>
-          <li>Create a GitHub account</li>
-          <li>Create a GitHub repository</li>
-          <li>Install Git onto your computer</li>
-          <li>Learn the basics of navigating a CLI</li>
-          <li>Push a project up onto your repository</li>
+          <li>Edit vive's default keybindings</li>
+          <li>Allow a player to move using the vive controller's trackpad</li>
+          <li>Allow a player to jump using the vive controller's trackpad</li>
         </ol>
         <h4 class="projectTitle">What You Will Make</h4>
-        <p>A working GitHub repository!</p>
-        <a href='https://github.com/github/explore' target="_blank"><h5>Check out an example HERE!</h5></a>
+        <p>A project that allows the player to move with the controller's trackpad</p>
+        <!-- <a href='https://github.com/github/explore' target="_blank"><h5>Check out an example HERE!</h5></a> -->
       </div>
     </div>
 
     <div class="row">
       <div class="col s6 offset-s1">
-        <h5 style='font-weight:bold'>GitHub Account</h5>
-      </div>
+        <h5 style='font-weight:bold'>Getting started</h5>
+    </div>
     </div>
     <div class="row">
       <div class="col s1 offset-s1">
@@ -80,28 +78,8 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>What is GitHub?</h5>
-          <p>GitHub is a very widely used platform for sharing projects and collaborating with other developers. Head over to <a target='_blank' href='https://github.com/'>GitHub</a>!</p>
-          </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h6>Click "sign up" if you don't already have an account. Sign in if you've already made one.</h6>
+          <h5>Sign into Unity</h5>
+          <h6>Create your scene and delete the main camera</h6>
         </div>
       </div>
     </div>
@@ -121,56 +99,7 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h6>Fill in the fields (be sure to verify your email address if you're making a new account!) and submit</h6>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s6 offset-s1">
-        <h5 style='font-weight:bold'>Creating a Repository</h5>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h5>After you've signed into your account, you'll be on your dashboard. Think of this as your account's homepage</h5>
-          <p>On the left side of your dashboard, you'll see a list of your repositories. Repositories are containers that store your project files and their edit histories.</p>
-          </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h5>Next to the word 'Repositories', look for a green button labeled "New" and click on it.</h5>
-          <img src="git_images/new-repo-button.png">
-          <h6>You'll see fields for your repository's name, a description of it, its privacy, and a choice of adding a readme file.</h6>
-          <p>Readme files usually contain information that the developer wants readers to know about their project. They tend to be written using Markdown, a language that's very similar to plain text and HTML. <a target='_blank' href='https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf'>Learn more about Markdown here</a></p>
+          <h5>Add a plane or terrain, shape and style it as you choose.</h5>
         </div>
       </div>
     </div>
@@ -190,8 +119,8 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h6>We'll leave the privacy as public, and we'll want to check the box labeled "Initialize this project with a README". </h6>
-          <p>We can use this option to allow others to clone our repository, so that they can collaborate with us.</p>
+          <h5>This time we need to add the Camera Rig instead of the Player.</h5>
+          <h6>Assets -> SteamVR -> Prefabs -> [Camera Rig]</h6>
         </div>
       </div>
     </div>
@@ -211,7 +140,51 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h6>Once everything is filled out, click the "create repository" button. Congratulations, we've made our first repository! </h6>
+          <h5>We need to keep the CameraRig from rotating so our players don't get motion sick.</h5>
+          <h6>In the inspector, add a RigidBody Component.</h6>
+          <p> Within the RigidBody section of the inspector, select "Freeze Rotation" for X, Y, and Z. (You may need to click on the triangle to expand the Constraints section.)</p>
+          <img style="height:25vh;"src='vr_images/rigidbody.png'>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Add a Capsule Collider to the CameraRig.</h5>
+          <h6>Set the radius to 0.1</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Now our CameraRig is ready to go!</h5>
         </div>
       </div>
     </div>
@@ -219,8 +192,8 @@
 
     <div class="row">
       <div class="col s6 offset-s1">
-        <h5 style='font-weight:bold'>Git installation/Getting started with our CLI</h5>
-      </div>
+        <h5 style='font-weight:bold'>Binding UI Actions</h5>
+    </div>
     </div>
     <div class="row">
       <div class="col s1 offset-s1">
@@ -237,335 +210,267 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>CLI stands for "Command Line Interface". It's a more direct way to interact with your machine than a GUI(Graphical User Interface), which many users are more accustomed to.</h5>
-          <p>On Windows Machines, we'll be using Powershell as our CLI. For OSX and Linux, we'll use Terminal.</p>
-          </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h5>Git itself is a version control system, and it makes up the backbone of GitHub.</h5>
-          <h6>Version control is a system that tracks changes in files over time, so that a user can change projects over to different states without having to manually edit their files each time.</h6>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h6>If Git isn't installed, we'll need to install it. Head to <a target="_blank" href='https://git-scm.com/downloads'>the Git downloads page</a> and download the version that matches the machine you're using. </h6>
-          <img style="width:25vw;"src="git_images/git-download.png">
-          <p>The site will usually be able to auto-detect your operating system(OS), the software that controls your computer's basic funtions.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h6>Open up the installer and follow the steps, the default settings are fine. When asked if you'd like to install Git Bash, select "no". When asked to use Vim as the default editor, choose Atom or VS Code, whichever you prefer.</h6>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h6>Open up your CLI.</h6>
-          <p>If you aren't sure where to find your CLI, try typing its name into the search bar on your machine's desktop.</p>
-          <img style="width:25vw;" src='git_images/cli-search.png'>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h6>On Windows, we'll need to edit our PATH variable to use git commands with Powershell.</h6>
-          <p>Use Windows Explorer to navigate to your Git installation (it's probably in C:/program files).</p>
-          <img src='git_images/file-explorer.png'>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h6>Inside of the Git folder, find the mingw32 (or mingw64) folder</h6>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h6>Inside of the mingw folder, find the bin folder.</h6>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h6>Copy the full path of the bin folder.</h6>
-          <p>Right click the folder -> properties -> location</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h6>Open up control panel</h6>
-          <img style="height:35vh;"src="git_images/control-panel.png">
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h6>Navigate to System And Security -> System -> Advanced System Settings</h6>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h6>Select the "Advanced" tab</h6>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h6>Click on environment variables</h6>
-          <img style="height:35vh;"src="git_images/environment-variables.png">
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h6>Select the path variable by double-clicking on it.</h6>
-          <p>We're going to be editing the "user" variables version of PATH, so make sure you've selected that one, NOT system variables.</p>
-            <img src="git_images/user-variables.png">
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h6>Click on the "new" button, and paste your bin directory into the text box.</h6>
-          <p>Once you've done that, go ahead and confirm your changes.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h6>Open up PowerShell and type 'git' into the console. Hit enter.</h6>
-          <p>If a list of options for Git appears, you're all set!</p>
-          <img style="height:35vh;"src="git_images/git.png">
+          <h5>For this project, we will need to bind two new UI actions:</h5>
+          <h6>MovementAxis, a Vector2
           <br>
-          <em>Feel free to read through the options list! It may come in handy</em>
+          Jump, a boolean
+          </h6>
         </div>
       </div>
     </div>
 
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Open the SteamVR Input Window from Window -> SteamVR Input</h5>
+          <img style="height:25vh;"src='vr_images/steamvr-input-window.png'>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Click the + to add another Action</h5>
+          <h6>Name this action "MovementAxis"</h6>
+          <p>Choose "vector2" as the type, then choosed "suggested" from the 'Required:' menu </p>
+          <img style="height:25vh;"src='vr_images/movementaxis.png'>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Click + again to add another action</h5>
+          <h6><ol>
+            <li>Name the Action "Jump"</li>
+            <li>Set the type to boolean</li>
+            <li>Set the Required to suggested</li>
+            <img style="height:25vh;"src='vr_images/jump.png'>
+          </ol></h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Click "Save and Generate"</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Now click "Open binding UI", and you'll see this open in your browser:</h5>
+          <img style="height:25vh;"src='vr_images/binding-ui.png'>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Select "edit for the current binding"</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>We're going to bind the Movement Axis to the 'Trackpad' action of the trackpad.</h5>
+          <h6>Click the + on the Trackpad</h6>
+          <img style="height:25vh;"src='vr_images/trackpad.png'>
+          <p>Select trackpad, and delete the "Use as Button" box for trackpad.</p>
+          <img style="height:25vh;"src='vr_images/trackpad-role.png'>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Edit the "Use as Trackpad box"</h5>
+          <h6>Select "Position"</h6>
+          <img style="height:25vh;"src='vr_images/position-movementaxis.png'>
+          <p>Choose movementaxis</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Next, we'll bind "Jump" to clicking the trackpad.</h5>
+          <h6> Choose the "Click" Option under Trackpad</h6>
+          <img style="height:25vh;"src='vr_images/trackpad-click.png'>
+          <p>Choose "Jump"</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Great work! We've connected these actions to the trackpad input.</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Click "Replace Default Binding"</h5>
+          <img style="height:15vh;"src='vr_images/replace-binding.png'>
+          <h6>You'll then see this window:</h6>
+          <img style="height:25vh;"src='vr_images/save-binding.png'>
+          <p>Click Save</p>
+        </div>
+      </div>
+    </div>
 
     <div class="row">
       <div class="col s6 offset-s1">
-        <h5 style='font-weight:bold'>CLI basics</h5>
-      </div>
+        <h5 style='font-weight:bold'>Scripting</h5>
     </div>
+    </div>
+
     <div class="row">
       <div class="col s1 offset-s1">
         <div class="checkbox">
@@ -581,7 +486,7 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h6>We use commands to tell our CLI what we want it to do.</h6>
+          <h5>Let's write the code that'll connect our UI actions to movement and jumping!</h5>
         </div>
       </div>
     </div>
@@ -601,9 +506,8 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>To move around our machine's filesystem, we'll use the "cd" (change directory) command</h5>
-          <h6>To use the cd command, we'll type "cd" into our CLI, followed by the path of the place we want to go (ex. If I want to go to my default documents folder on windows, I'll type "cd documents") and hit enter.</h6>
-          <p>If the folder you're trying to access has a space in its name, you'll need to put quotation marks around it (ex. cd "my folder"). If you need to go back up a level in the diretory, you can run "cd .." to do so.</p>
+          <h5>Create a new script on the [CamerRig] object.</h5>
+          <h6>Name this script "Movement"</h6>
         </div>
       </div>
     </div>
@@ -623,16 +527,379 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h6>Other useful commands are "ls", which will show you all the files in your current directory, and "pwd", which will tell you what directory you're currently in</h6>
+          <h5>Open up the Movement script you just made.</h5>
         </div>
       </div>
     </div>
 
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Add "using Valve.VR" to the namespaces at the top.</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Let's define the variables we need for this script. There are quite a few.</h5>
+          <img style="height:25vh;"src='vr_images/move-variables.png'>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Now we can define a few functions.</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Inside the Start function, we need to connect CapCollider to the CapsuleCollider on the CameraRig.</h5>
+          <img style="height:15vh;"src='vr_images/move-start.png'>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Now we will make a couple of helper functions.</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>First create a private void updateCollider() function.</h5>
+          <h6>Inside, we'll set the height and center of the CapCollider.</h6>
+          <img style="height:15vh;"src='vr_images/update-collider.png'>
+          <h6>This code will reset the position of the capsule collider based on the position of the user's head.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Create a private void updateInput() function.</h5>
+          <h6>Inside, we'll connect the trackpad variable to the Trackpad Action.</h6>
+          <img style="height:15vh;"src='vr_images/update-input.png'>
+          <h6>This will get the trackpad position from whichever hand is using the trackpad.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Create a private void OnCollisonEnter(Collision collision) function.</h5>
+          <h6>Inside, increment GroundCount by 1.</h6>
+          <img style="height:15vh;"src='vr_images/on-collision-enter.png'>
+          <h6>We'll use this to keep track of if we are on the ground or not.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Now make a private void OnCollisionExit(Collision collision) funtion.</h5>
+          <h6>Here, we'll decrement GroundCount by 1.</h6>
+          <img style="height:15vh;"src='vr_images/on-collision-exit.png'>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>One more helper funtion. Create a public static float angle (Vector2 p_vector2)</h5>
+          <h6>Inside of this we need the following code:</h6>
+          <img style="height:25vh;"src='vr_images/float-variable.png'>
+          <h6>This code helps get the angle of the touch and correct it for the rotation of the controller.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Our last function will be the Update function.</h5>
+          <h6>First call updateInput();, then call updateCollider();</h6>
+          <img style="height:25vh;"src='vr_images/move-update.png'>
+          <h6>Next we'll set the moveDirection:</h6>
+          <img style="height:5vh;"src='vr_images/move-direction.png'>
+          <h6>This gets the angle of the touch and corrects it for the rotation of the controller.</h6>
+          <h6>Now we'll connect our Rigidbody to RBody</h6>
+          <img style="height:5vh;"src='vr_images/rigidbody-rbody.png'>
+          <h6>Then we'll set a velocity Vector3(0, 0, 0,)</h6>
+          <img style="height:5vh;"src='vr_images/vector3-velocity.png'>
+          <h6>Almost done! now we'll code the movement.</h6>
+          <img style="height:25vh;"src='vr_images/movement-code.png'>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Now we need to save the script and go back to the Inspector to assign all our variables.</h5>
+          <img style="height:25vh;"src='vr_images/movement-script.png'>
+          <h6>Set the Movement Hand to whichever hand you want to control the movement.</h6>
+          <h6>Set Trackpad Action to MovementAxis</h6>
+          <h6>Set Jump Action to Jump</h6>
+          <h6>Set the Jump Height to whatever you like. Around 10 is pretty good</h6>
+          <h6>Set the Movement Speed to whatever you like. Around 10 is pretty good.</h6>
+          <h6>Set the Deadzone to .1</h6>
+          <h6>Drag the Camera from inside CameraRig to the Head variable</h6>
+          <h6>Drag the Controller that you chose for Movement Hand from the CameraRig to the Axis Hand variable.</h6>
+          <h6>We need to create two materials for No Friction and Friction Materials</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Inside the Project window, right click and select Create -> Physic Material.</h5>
+          <h6>We'll name it PlayerFriction, and set the variables for it as follows:</h6>
+          <img style="height:25vh;"src='vr_images/player-friction.png'>
+          <img style="height:25vh;"src='vr_images/player-friction-parameters.png'>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Now make another Physic Material called PlayerNoFriction, and set the variables as follows:</h5>
+          <img style="height:25vh;"src='vr_images/player-no-friction-parameters.png'>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Drag these two materials to the appropriate variable spots in the Movement script on CameraRig.</h5>
+          <img style="height:25vh;"src='vr_images/movement-script-set.png'>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Test out your game!</h5>
+        </div>
+      </div>
+    </div>
 
     <div class="row">
       <div class="col s6 offset-s1">
-        <h5 style='font-weight:bold'>Initializing Git</h5>
-      </div>
+        <h5 style='font-weight:bold'>Build Obstacles and Platforms</h5>
+    </div>
     </div>
     <div class="row">
       <div class="col s1 offset-s1">
@@ -649,7 +916,11 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h6>Now that we've made our repository, we'll need to create our files and initialize Git inside of our project.</h6>
+          <h5>Now that you can move and jump, you'll want to add some objects to jump onto/over. You could:</h5>
+          <ul>
+            <li>Create some 3D Cubes, resize them, and arrange them to make things for your player to jump onto or over.</li>
+            <li>make a maze, or a staircuse, or some kind of obstacle course.</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -669,249 +940,17 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h6>In your CLI, navigate to your project's root folder.</h6>
-          <p>Your root is the bottom level of your project, that all other files and folders in the project are contained inside of.</p>
+          <h5>Be sure to sign out of Unity when you're done!</h5>
         </div>
       </div>
     </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h6>In your root, run "git init". This will initialize Git within your project.</h6>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h6>Next, we'll need to point our local repo at its remote counterpart.</h6>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h6>On your GitHub repository page, click the green button labeled "clone or download". </h6>
-          <p>Make sure your prompt says "clone with https". Copy the link it gives you in the box.</p>
-          <img src="git_images/clone-repo.png">
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h6>In your CLI, we'll type "git remote add origin" followed by the link we just copied.</h6>
-          <p>Once the confirmation pops up, we're all set to start pushing!</p>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="row">
-      <div class="col s6 offset-s1">
-        <h5 style='font-weight:bold'>Commiting and pushing</h5>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h6>When it comes to pushing code to GitHub, we can usually follow an outline that goes as follows:</h6>
-          <em>
-            <ul>
-              <li>git add .</li>
-              <li>git commit -m "commit message"</li>
-              <li>git push</li>
-            </ul>
-          </em>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h6>Let's break down what's happening here. This is the equivalent of saving a word document, but with code. Unlike saving a word document where we just click a "save" button, using git is distinct because it allows us to use version control. We can specify what files we want to update, what version of the project we want to update them on, and more! </h6>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h6>The first step to saving our code is to stage it on our local machine so that we can push the changes us to the remote (on GitHub) version of the project.</h6>
-          <p>The command that does this is "git add .". The period at the end of the command tells git to look through all of our files for changes to stage for saving. We can even specify as far as individual portions of files, but we'll cover that a bit later.</p>
-          <em>Side Note: Git is actually its own language. You're learning another language! Yay!</em>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h5>After we've staged our changes (using "git add .") we need to "commit" them</h5>
-          <h6>The concept of the "commit" can be a little hard to wrap your head around at first. It isn't actually saving the project to our remote version in github yet.</h6>
-          <p>What it IS doing is bundling up our staged changes in a nice way that allows us to better track and manipulate changes to our codebase. Think of this as more of a labeling process. First you staged your code by grabbing all of the changes that were made when you ran the command "git add .". Now you'll label those changes so they're easy to find in all of the changes that have happened and will happen to the project's code.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h6>As mentioned, part of this commit process is labeling your code. In other words, adding a message.</h6>
-          <p>Our Git command reflects that. To commit, enter `git commit -m"a message describing what changes were made to your code"` into your CLI. The "git commit" part of this is fairly straightforward. The "-m" part stands for message, and it will stamp the message we put inside of the quotation marks on all of the files we staged in our project.</p>
-          <img src='git_images/commit.png'>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h6>Now that we've staged our changes and packaged them up nicely with a commit message, we actually have to push them up to the remote (on GitHub). We do this by running the command "git push". Now our changes should be on GitHub!</h6>
-          <em>Bonus: Comparing local and remote
-            <br>
-            What if we're not sure where our local branch stands in relation to remote? We can run "git branch -av" To see a list of recent commits!
-          </em>
-        </div>
-      </div>
-    </div>
-
-
-
-
-
 
 
 
 
 <div class='row'>
   <div class='col s6 offset-s1'>
-    <h5> Show an instructor your finished repository!</h5>
+    <h5> Show an instructor your finished project!</h5>
   </div>
 </div>
 
@@ -932,7 +971,7 @@
           <h6>Find another project?</h6>
           <div class="browse">
             <br>
-            <a href="git-github-cli.html">
+            <a href="ar-vr.html">
               <button>Browse all projects</button>
             </a>
           </div>
@@ -942,5 +981,5 @@
   </div>
 </div>
 
-  </body>
+</body>
 </html>

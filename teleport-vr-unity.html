@@ -16,7 +16,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="SBCS_favicon.png">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Firebase: Snapshot</title>
+    <title>Teleportation</title>
   </head>
   <body>
     <!--Nav bar  -->
@@ -40,24 +40,27 @@
 
     <div class="row">
       <div class="col s6 offset-s3">
-        <h4 style="font-weight:bold;"><center>Firebase: Snapshot</center></h4>
+        <h4 style="font-weight:bold;"><center>Teleportation</center></h4>
       </div>
     </div>
 
     <div class="row">
       <div class="col s6 offset-s2">
         <h6>In this lesson you will:</h6>
-          <p>Retrieve data from your database</p>
+        <ol>
+          <li>Import SteamVR into a project</li>
+          <li>Add a player</li>
+          <li>Add the ability to teleport around a map</li>
+        </ol>
         <h4 class="projectTitle">What You Will Make</h4>
-        <p>In our last lesson we learned how to add data to our Realtime database using set. Now we'll learn a way to retrieve data, using Firebase's Snapshot!</p>
-        <em>Note: You'll want to create a Database and add data to it before attempting this lesson. Check out the <a target="_blank" href='firebase-set.html'>Firebase Set Lesson</a> to get started!</em>
+        <p>There are two types of teleporting you can add. The character can teleport around a space, using a teleport area, and from one spot to another, using teleport points. You can also use both in the same scene. </p>
         <!-- <a href='https://github.com/github/explore' target="_blank"><h5>Check out an example HERE!</h5></a> -->
       </div>
     </div>
 
     <div class="row">
       <div class="col s6 offset-s1">
-        <h5 style='font-weight:bold'>Getting started</h5>
+        <h5 style='font-weight:bold'>Teleport Area</h5>
     </div>
     </div>
     <div class="row">
@@ -75,7 +78,8 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Open up your HTML and JS pages that you used in the Set lesson</h5>
+          <h5>Sign into Unity</h5>
+          <h6>Create a Unity project. It should have only directional light, and the SteamVR plugin should be imported into it.</h6>
         </div>
       </div>
     </div>
@@ -95,8 +99,8 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>On your HTML page, create a new div.</h5>
-          <h6>We'll be using this div to display the data we're grabbing from our database, so give it an ID that reflects that!</h6>
+          <h5>Create a plane and size it how you wish.</h5>
+          <h6>Hierarchy -> Create -> 3D Object -> Plane</h6>
         </div>
       </div>
     </div>
@@ -116,8 +120,94 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Create a new button next to your set button</h5>
-          <h6>We'll be using this button to call our data-retrieving function, so give it a matching ID as well</h6>
+          <h5>Name the plane "Floor"</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Duplicate the Floor</h5>
+          <h6>Right click on Floor -> Duplicate</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Rename this plane "Teleport Plane"</h5>
+          <h6>Move Teleport Plane up slightly, give it a y transform value of 0.05</h6>
+          <img style="height:25vh;"src='vr_images/teleport-plane-y.png'>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Add a component to the Teleport Plane.</h5>
+          <img style="height:15vh;"src='vr_images/add-component.png'>
+          <h6>Search for "Teleport", and select Teleport Area</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Uncheck the Mesh Renderer for Teleport Plane - this will make the plane invisible.</h5>
+          <img style="height:25vh;"src='vr_images/teleport-mesh.png'>
         </div>
       </div>
     </div>
@@ -125,7 +215,7 @@
 
     <div class="row">
       <div class="col s6 offset-s1">
-        <h5 style='font-weight:bold'>Javascript</h5>
+        <h5 style='font-weight:bold'>Teleport Points</h5>
     </div>
     </div>
     <div class="row">
@@ -143,10 +233,8 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Create a JS function called retrieve.</h5>
-          <h6>Add the following line:</h6>
-          <img style='height:10vh;' src='database_images/snapshot-ref.png'>
-          <h6>This will make a call to the database at the path we specified (users) using database.ref. Once it finds the contents in the database, it will take what our users path looks like at the time(snapshot) and return it to us once(.once)</h6>
+          <h5>Create a plane and size it as you wish</h5>
+          <h6>Hierarchy -> Create -> 3D Object -> Plane</h6>
         </div>
       </div>
     </div>
@@ -166,10 +254,7 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Looking at the data we have, it is like an array that's full of smaller arrays. We'll need to loop through it in order to find the data we want.</h5>
-          <h6>To see what the data looks like, we can log it to our console.</h6>
-          <img style="height:10vh" src="database_images/snapshot-log.png">
-          <h6>We'll also need to tell our JS when to run our function! Under the onclick you made for your set button, make an onclick for your retrieve button. Have it run your retrieve function when clicked.</h6>
+          <h5>Name the plane "Floor"</h5>
         </div>
       </div>
     </div>
@@ -189,9 +274,35 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Back inside our retrieve function, we'll need a forEach function. We'll put it inside of the {} after our snapshot</h5>
-          <img style="height:10vh" src="database_images/forEach.png">
-          <h6>Our forEach will loop through our data for us</h6>
+          <h5>Add teleport points around your scene.</h5>
+          <h6>Assets -> SteamVR -> InteractionSystem -> Teleport -> Prefabs -> TeleportPoint</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 style='font-weight:bold'>Both Methods</h5>
+    </div>
+    </div>
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Now add the Teleporting Prefab to your Scene</h5>
+          <h6>Assets -> SteamVR -> InteractionSystem -> Teleport -> Prefabs -> Teleporting</h6>
+          <img style="height:25vh;"src='vr_images/teleport-prefab.png'>
         </div>
       </div>
     </div>
@@ -211,9 +322,9 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Inside of our forEach's {}, we'll tell our JS what to do with each bit of information in the childSnapshot.</h5>
-          <h6>Make a new variable to hold each item from the snapshot</h6>
-          <img style="height:5vh;" src="database_images/child-snapshot.png">
+          <h5>Add the Player to your scene</h5>
+          <h6>Assets -> SteamVR -> InteractionSystem -> Core -> Prefabs -> Player</h6>
+          <img style="height:15vh;"src='vr_images/steamvr-player.png'>
         </div>
       </div>
     </div>
@@ -233,8 +344,8 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Now we can pull specific data from the childData object!</h5>
-          <h6>For example, childData.Name will give us the value of what's stored under Name in our database.</h6>
+          <h5>Now you can test out your game! Press play.</h5>
+          <h6>Use the touchpads to teleport around the plane.</h6>
         </div>
       </div>
     </div>
@@ -254,86 +365,26 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>We still need to display our data on our html page.</h5>
-          <h6> To do this, we'll use document.createElement, document.createTextNode, and appendChild.</h6>
-          <img style="height:15vh" src="database_images/database-to-html.png">
-          <h6>Here's an example. You can replace "Name" with whichever data you're accessing at the time, and name your variables accordingly.</h6>
+          <h5>Be sure to sign out of Unity when you're done!</h5>
         </div>
       </div>
     </div>
 
     <div class="row">
       <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Once we've had JS create our HTML elements, we need to tell it where to add them. Remember the div we added to our HTML?</h5>
-          <img style="height:3vh" src="database_images/snapshot-display.png">
-          <h6>We'll use getElementById to select our div, and .appendChild to insert our data into it. Repeat this for all of the fields you've made.</h6>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h5>Now, you should be able to display the information from your database on your html page with a button click!</h5>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-      </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h5>Tips</h5>
+          <h5>Notes:</h5>
           <ul>
-            <li>Use console.log() throughout your code to test the values of your variables</li>
-            <br>
-            <li>Open your browser's developer tools and look at the console to see the output</li>
-            <br>
-            <li>Make sure you're putting actual data in your database, not empty fields!</li>
-            <br>
-            <li>Save and test often</li>
-            <br>
-            <li>Ask your neighbors for help</li>
+            <li><em>You can place a plane just above a terrain and use the plane as a teleport area.</em></li>
+            <li><em>The default size of a terrain is 100x the size of a plane. So to make an appropriately sized plane, change the x and z scale in the transform</em></li>
+            <li><em>You cannot use a terrain as a teleport area.</em></li>
           </ul>
         </div>
       </div>
     </div>
+
 
 
 <div class='row'>
@@ -359,7 +410,7 @@
           <h6>Find another project?</h6>
           <div class="browse">
             <br>
-            <a href="firebase.html">
+            <a href="ar-vr.html">
               <button>Browse all projects</button>
             </a>
           </div>
@@ -368,5 +419,6 @@
     </div>
   </div>
 </div>
-</body>
+
+  </body>
 </html>
