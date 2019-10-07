@@ -422,6 +422,8 @@ background-position: center; background-size: contain;}
 #pythonadventureBG{background-image: url('./Python_files/pythonadventure.gif');}
 #tictactoeaiBG{background-image: url('./Python_files/tictactoe.gif');}
 #tictactoe2playerBG{background-image: url('./Python_files/tictactoe2player.jpg');}
+#turtlebasicsBG{background-image: url('./Python_files/turtlebasics.JPG');}
+
 
 /*JS Images */
 #codecademyBG{background-image: url('Codecademy.png');}
