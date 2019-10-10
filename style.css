@@ -427,9 +427,9 @@ background-position: center; background-size: contain;}
 #pythonwritingBG{background-image: url('typing.GIF');}
 #turtleshapesBG{background-image: url('./Python_files/turtleshapes.GIF');}
 #turtleraceBG{background-image: url('./Python_files/turtlerace.JPG');}
-#interactiveturtlesBG{background-image: url('./Python_files/turtlebasics.JPG');}
-#clickingturtlesBG{background-image: url('./Python_files/turtlebasics.JPG');}
-#pythonhideseekBG{background-image: url('./Python_files/turtlebasics.JPG');}
+#interactiveturtlesBG{background-image: url('./Python_files/interactiveturtles.JPG');}
+#clickingturtlesBG{background-image: url('./Python_files/clickingturtles.JPG');}
+#pythonhideseekBG{background-image: url('./Python_files/pythonhideseek.JPG');}
 
 /*JS Images */
 #codecademyBG{background-image: url('Codecademy.png');}
