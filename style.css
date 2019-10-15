@@ -268,6 +268,7 @@ input[type='checkbox'] {
 #urownworldBG {background-image: url('createyourownadventure.gif');}
 #memoryyBG {background-image: url('memory.gif');}
 #dotsBG {background-image: url('catchthedots.gif');}
+#sidescrollerBG {background-image: url('sidescroller.JPG');}
 #spaceBG {background-image: url('spacefinal.gif');}
 #gothedistanceBG{background-image: url(./ScratchProjects/gothedistanceBG.jpg);}
 
@@ -423,7 +424,13 @@ background-position: center; background-size: contain;}
 #tictactoeaiBG{background-image: url('./Python_files/tictactoe.gif');}
 #tictactoe2playerBG{background-image: url('./Python_files/tictactoe2player.jpg');}
 #turtlebasicsBG{background-image: url('./Python_files/turtlebasics.JPG');}
-
+#pythonshapesBG{background-image: url('./Python_files/pythonshapes.GIF');}
+#pythonwritingBG{background-image: url('typing.GIF');}
+#turtleshapesBG{background-image: url('./Python_files/turtleshapes.GIF');}
+#turtleraceBG{background-image: url('./Python_files/turtlerace.JPG');}
+#interactiveturtlesBG{background-image: url('./Python_files/interactiveturtles.JPG');}
+#clickingturtlesBG{background-image: url('./Python_files/clickingturtles.JPG');}
+#pythonhideseekBG{background-image: url('./Python_files/pythonhideseek.JPG');}
 
 /*JS Images */
 #codecademyBG{background-image: url('Codecademy.png');}
