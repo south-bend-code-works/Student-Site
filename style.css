@@ -268,7 +268,7 @@ input[type='checkbox'] {
 #urownworldBG {background-image: url('createyourownadventure.gif');}
 #memoryyBG {background-image: url('memory.gif');}
 #dotsBG {background-image: url('catchthedots.gif');}
-#sidescrollerBG {background-image: url('sidescroller.JPG');}
+#sidescrollerBG {background-image: url('sidescroller.jpg');}
 #spaceBG {background-image: url('spacefinal.gif');}
 #gothedistanceBG{background-image: url(./ScratchProjects/gothedistanceBG.jpg);}
 
@@ -424,13 +424,12 @@ background-position: center; background-size: contain;}
 #tictactoeaiBG{background-image: url('./Python_files/tictactoe.gif');}
 #tictactoe2playerBG{background-image: url('./Python_files/tictactoe2player.jpg');}
 #turtlebasicsBG{background-image: url('./Python_files/turtlebasics.JPG');}
-#pythonshapesBG{background-image: url('./Python_files/pythonshapes.GIF');}
-#pythonwritingBG{background-image: url('typing.GIF');}
-#turtleshapesBG{background-image: url('./Python_files/turtleshapes.GIF');}
-#turtleraceBG{background-image: url('./Python_files/turtlerace.JPG');}
-#interactiveturtlesBG{background-image: url('./Python_files/interactiveturtles.JPG');}
-#clickingturtlesBG{background-image: url('./Python_files/clickingturtles.JPG');}
-#pythonhideseekBG{background-image: url('./Python_files/pythonhideseek.JPG');}
+#pythonshapesBG{background-image: url('./Python_files/pythonshapes.gif');}
+#pythonwritingBG{background-image: url('typing.gif');}
+#turtleraceBG{background-image: url('./Python_files/turtlerace.jpg');}
+#interactiveturtlesBG{background-image: url('./Python_files/interactiveturtles.jpg');}
+#clickingturtlesBG{background-image: url('./Python_files/clickingturtles.jpg');}
+#pythonhideseekBG{background-image: url('./Python_files/pythonhideseek.jpg');}
 
 /*JS Images */
 #codecademyBG{background-image: url('Codecademy.png');}
@@ -444,6 +443,15 @@ background-position: center; background-size: contain;}
 
 /*Career Exposure Images */
 #careertestBG{background-image: url('careertest.jpg');}
+
+/*ARVR Images */
+#arunityBG{background-image: url('arunity.JPG');}
+#teleportingBG{background-image: url('teleporting.JPG');}
+#interactingBG{background-image: url('interacting.JPG');}
+#archeryBG{background-image: url('archery.JPG');}
+
+
+
 
 /* =================================================================================================================================HOME PAGE CARD============================================================ */
 .agesHeading {
