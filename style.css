@@ -13,6 +13,17 @@ body {
   color: black;
 }
 
+.reviewstartButton {
+  display: inline-block;
+  text-align: center;
+  background-color: #00BFFF;
+  width: 100%;
+  height: 150%;
+  position:relative !important;
+  bottom:0 !important;
+  color: black;
+}
+
 .startButtonUnity {
   display: inline-block;
   text-align: center;
@@ -90,6 +101,12 @@ a:visited {
   height: 410px;
 }
 
+.reviewcard {
+  width: 150%;
+  margin: .5rem 5% 1rem 5%;
+  height: 210px;
+}
+
 .card-image img {
   height: 75%;
   width: auto;
@@ -100,6 +117,13 @@ a:visited {
   color: black !important;
   width: 100%;
   height: 100%;
+}
+
+.reviewcard-content {
+  text-align: center !important;
+  color: black !important;
+  width: 50%;
+  height: 50%;
 }
 
 .cardbackground {
@@ -268,7 +292,7 @@ input[type='checkbox'] {
 #urownworldBG {background-image: url('createyourownadventure.gif');}
 #memoryyBG {background-image: url('memory.gif');}
 #dotsBG {background-image: url('catchthedots.gif');}
-#sidescrollerBG {background-image: url('sidescroller.JPG');}
+#sidescrollerBG {background-image: url('sidescroller.jpg');}
 #spaceBG {background-image: url('spacefinal.gif');}
 #gothedistanceBG{background-image: url(./ScratchProjects/gothedistanceBG.jpg);}
 
@@ -424,13 +448,12 @@ background-position: center; background-size: contain;}
 #tictactoeaiBG{background-image: url('./Python_files/tictactoe.gif');}
 #tictactoe2playerBG{background-image: url('./Python_files/tictactoe2player.jpg');}
 #turtlebasicsBG{background-image: url('./Python_files/turtlebasics.JPG');}
-#pythonshapesBG{background-image: url('./Python_files/pythonshapes.GIF');}
-#pythonwritingBG{background-image: url('typing.GIF');}
-#turtleshapesBG{background-image: url('./Python_files/turtleshapes.GIF');}
-#turtleraceBG{background-image: url('./Python_files/turtlerace.JPG');}
-#interactiveturtlesBG{background-image: url('./Python_files/interactiveturtles.JPG');}
-#clickingturtlesBG{background-image: url('./Python_files/clickingturtles.JPG');}
-#pythonhideseekBG{background-image: url('./Python_files/pythonhideseek.JPG');}
+#pythonshapesBG{background-image: url('./Python_files/pythonshapes.gif');}
+#pythonwritingBG{background-image: url('typing.gif');}
+#turtleraceBG{background-image: url('./Python_files/turtlerace.jpg');}
+#interactiveturtlesBG{background-image: url('./Python_files/interactiveturtles.jpg');}
+#clickingturtlesBG{background-image: url('./Python_files/clickingturtles.jpg');}
+#pythonhideseekBG{background-image: url('./Python_files/pythonhideseek.jpg');}
 
 /*JS Images */
 #codecademyBG{background-image: url('Codecademy.png');}
@@ -444,6 +467,20 @@ background-position: center; background-size: contain;}
 
 /*Career Exposure Images */
 #careertestBG{background-image: url('careertest.jpg');}
+
+/*ARVR Images */
+#arunityBG{background-image: url('arunity.jpg');}
+#teleportingBG{background-image: url('teleporting.jpg');}
+#interactingBG{background-image: url('interacting.jpg');}
+#archeryBG{background-image: url('archery.jpg');}
+#trackpadBG{background-image: url('trackpad.jpg');}
+#uiactionsBG{background-image: url('uiactions.jpg');}
+#flyingBG{background-image: url('flying.jpg');}
+#firingobjectsBG{background-image: url('firingobjects.jpg');}
+
+
+
+
 
 /* =================================================================================================================================HOME PAGE CARD============================================================ */
 .agesHeading {
