@@ -329,43 +329,43 @@ input[type='checkbox'] {
 
 
 /*Graphic Design background Images*/
-#glossaryBG {background-image: url('glossaryBG.jpg');}
-#gimpBG {background-image: url('gimpBG.jpg');}
-#typographicposterBG {background-image: url('typographicposterBG.jpg');}
-#photomanipulationBG {background-image: url('photomanipulationBG.gif');}
-#splashpageBG {background-image: url('splashpageBG.jpg');}
-#gifBG {background-image: url('./GraphicDesignV2_files/gif14.gif');}
-#infographicBG {background-image: url('infographicBG.jpg');}
-#interactiveBG {background-image: url('interactiveBG.jpg');}
-#geometricBG {background-image: url('./GraphicDesignV2_files/geometric3.jpg');}
-#uiuxBG {background-image: url('uiuxBG.jpg');}
-#colortheoryBG {background-image: url('colortheoryBG.gif');}
-#imagesBG {background-image: url('imagesBG.jpg');}
-#twoddesignBG {background-image: url('twoddesignBG.png');}
-#designprocessBG {background-image: url('designprocessBG.jpg');}
-#gdintroBG {background-image: url('gdintroBG.png');}
-#resourcesBG {background-image: url('resourcesBG.jpg');}
-#topofpage {background-image: url('topofpage.gif');}
-#brandingBG {background-image: url('brandingBG.jpg');}
-#vectorrasterBG {background-image: url('./GraphicDesignV2_files/morecolorstshirts4.jpg');}
-#colorBG{background-image: url('colorBG.jpg');}
-#colorizeBG{background-image: url('colorizeBG.jpg');}
-#copyrightBG{background-image: url('copyrightBG.jpg');}
-#moodboardBG{background-image: url('moodboardBG.jpg');}
-#cymkrgbBG{background-image: url('cymkrgbBG.jpg');}
-#popartBG{background-image: url('popartBG.jpg');}
-#layoutcompBG{background-image: url('layoutcompBG.jpg');}
-#patternrepetitionBG{background-image: url('patternrepetitionBG.jpg');}
-#behanceBG{background-image: url('behanceBG.gif');}
-#socialmediaBG{background-image: url('socialmediaBG.jpg');}
-#curvesBG{background-image: url('curvesBG.jpg');}
-#negspaceBG{background-image: url('negspaceBG.jpg');}
-#rulesBG{background-image: url('rulesBG.jpg');}
-#gridsBG{background-image: url('gridsBG.jpg');}
-#typographyBG{background-image: url('typographyBG.png');}
-#badfontBG{background-image: url('badfontBG.jpg');}
-#typographyposterBG{background-image: url('typographyposterBG.jpg');}
-#designyourownBG{background-image: url('designyourownBG.gif');}
+#glossaryBG {background-image: url('./graphicdesign/glossaryBG.jpg');}
+#gimpBG {background-image: url('./graphicdesign/gimpBG.jpg');}
+#typographicposterBG {background-image: url('./graphicdesign/typographicposterBG.jpg');}
+#photomanipulationBG {background-image: url('./graphicdesign/photomanipulationBG.gif');}
+#splashpageBG {background-image: url('./graphicdesign/splashpageBG.jpg');}
+#gifBG {background-image: url('./graphicdesign/graphicdesign-images/gif14.gif');}
+#infographicBG {background-image: url('./graphicdesign/infographicBG.jpg');}
+#interactiveBG {background-image: url('./graphicdesign/interactiveBG.jpg');}
+#geometricBG {background-image: url('./graphicdesign/graphicdesign-images/geometric3.jpg');}
+#uiuxBG {background-image: url('./graphicdesign/uiuxBG.jpg');}
+#colortheoryBG {background-image: url('./graphicdesign/colortheoryBG.gif');}
+#imagesBG {background-image: url('./graphicdesign/imagesBG.jpg');}
+#twoddesignBG {background-image: url('./graphicdesign/twoddesignBG.png');}
+#designprocessBG {background-image: url('./graphicdesign/designprocessBG.jpg');}
+#gdintroBG {background-image: url('./graphicdesign/gdintroBG.png');}
+#resourcesBG {background-image: url('./graphicdesign/resourcesBG.jpg');}
+#topofpage {background-image: url('./graphicdesign/topofpage.gif');}
+#brandingBG {background-image: url('./graphicdesign/brandingBG.jpg');}
+#vectorrasterBG {background-image: url('./graphicdesign/graphicdesign-images/morecolorstshirts4.jpg');}
+#colorBG{background-image: url('./graphicdesign/colorBG.jpg');}
+#colorizeBG{background-image: url('./graphicdesign/colorizeBG.jpg');}
+#copyrightBG{background-image: url('./graphicdesign/copyrightBG.jpg');}
+#moodboardBG{background-image: url('./graphicdesign/moodboardBG.jpg');}
+#cymkrgbBG{background-image: url('./graphicdesign/cymkrgbBG.jpg');}
+#popartBG{background-image: url('./graphicdesign/popartBG.jpg');}
+#layoutcompBG{background-image: url('./graphicdesign/layoutcompBG.jpg');}
+#patternrepetitionBG{background-image: url('./graphicdesign/patternrepetitionBG.jpg');}
+#behanceBG{background-image: url('./graphicdesign/behanceBG.gif');}
+#socialmediaBG{background-image: url('./graphicdesign/socialmediaBG.jpg');}
+#curvesBG{background-image: url('./graphicdesign/curvesBG.jpg');}
+#negspaceBG{background-image: url('./graphicdesign/negspaceBG.jpg');}
+#rulesBG{background-image: url('./graphicdesign/rulesBG.jpg');}
+#gridsBG{background-image: url('./graphicdesign/gridsBG.jpg');}
+#typographyBG{background-image: url('./graphicdesign/typographyBG.png');}
+#badfontBG{background-image: url('./graphicdesign/badfontBG.jpg');}
+#typographyposterBG{background-image: url('./graphicdesign/typographyposterBG.jpg');}
+#designyourownBG{background-image: url('./graphicdesign/designyourownBG.gif');}
 
 
 /*2d/3d animation background images*/
@@ -466,17 +466,17 @@ background-position: center; background-size: contain;}
 #whackamoleBG{background-image: url('whackamole.jpg');}
 
 /*Career Exposure Images */
-#careertestBG{background-image: url('careertest.jpg');}
+#careertestBG{background-image: url('./careerexposure/careertest.jpg');}
 
 /*ARVR Images */
-#arunityBG{background-image: url('arunity.jpg');}
-#teleportingBG{background-image: url('teleporting.jpg');}
-#interactingBG{background-image: url('interacting.jpg');}
-#archeryBG{background-image: url('archery.jpg');}
-#trackpadBG{background-image: url('trackpad.jpg');}
-#uiactionsBG{background-image: url('uiactions.jpg');}
-#flyingBG{background-image: url('flying.jpg');}
-#firingobjectsBG{background-image: url('firingobjects.jpg');}
+#arunityBG{background-image: url('./vr/vr-images/arunity.jpg');}
+#teleportingBG{background-image: url('./vr/vr-images/teleporting.jpg');}
+#interactingBG{background-image: url('./vr/vr-images/interacting.jpg');}
+#archeryBG{background-image: url('./vr/vr-images/archery.jpg');}
+#trackpadBG{background-image: url('./vr/vr-images/trackpad.jpg');}
+#uiactionsBG{background-image: url('./vr/vr-images/uiactions.jpg');}
+#flyingBG{background-image: url('./vr/vr-images/flying.jpg');}
+#firingobjectsBG{background-image: url('./vr/vr-images/firingobjects.jpg');}
 
 
 
@@ -604,7 +604,7 @@ background-position: center; background-size: contain;}
 
 .firstmoodboard {
   float: left;
-  background-image: url("./GraphicDesignV2_files/moodboard1.jpg");
+  background-image: url("./graphicdesign/graphicdesign-images/moodboard1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   width: 45%;
@@ -615,7 +615,7 @@ background-position: center; background-size: contain;}
 
 .secondmoodboard {
   float: right;
-  background-image: url("./GraphicDesignV2_files/moodboard2.jpg");
+  background-image: url("./graphicdesign/graphicdesign-images/moodboard2.jpg");
   background-repeat: no-repeat;
   background-position: center;
   width: 45%;
@@ -627,7 +627,7 @@ background-position: center; background-size: contain;}
 
 .thirdmoodboard {
   float: left;
-  background-image: url("./GraphicDesignV2_files/moodboard3.jpg");
+  background-image: url("./graphicdesign/graphicdesign-images/moodboard3.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -644,7 +644,7 @@ background-position: center; background-size: contain;}
 
 /* .fourthmoodboard {
   float: right;
-  background-image: url("./GraphicDesignV2_files/moodboard4.jpg");
+  background-image: url("./graphicdesign-images/moodboard4.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -655,7 +655,7 @@ background-position: center; background-size: contain;}
 
 .geometric3 {
   float: left;
-  background-image: url("./GraphicDesignV2_files/geometric3.jpg");
+  background-image: url("./graphicdesign/graphicdesign-images/geometric3.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -666,7 +666,7 @@ background-position: center; background-size: contain;}
 
 .geometric2 {
   float: left;
-  background-image: url("./GraphicDesignV2_files/geometric2.jpg");
+  background-image: url("./graphicdesign/graphicdesign-images/geometric2.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -678,7 +678,7 @@ background-position: center; background-size: contain;}
 
 .geometric1 {
   float: left;
-  background-image: url("./GraphicDesignV2_files/geometric1.jpg");
+  background-image: url("./graphicdesign/graphicdesign-images/geometric1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -689,7 +689,7 @@ background-position: center; background-size: contain;}
 
 .minimalistone {
   float: left;
-  background-image: url("./GraphicDesignV2_files/negspace1.jpg");
+  background-image: url("./graphicdesign/graphicdesign-images/negspace1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -700,7 +700,7 @@ background-position: center; background-size: contain;}
 
 .minimalisttwo {
   float: left;
-  background-image: url("./GraphicDesignV2_files/negspace2.jpg");
+  background-image: url("./graphicdesign/graphicdesign-images/negspace2.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -711,7 +711,7 @@ background-position: center; background-size: contain;}
 
 #portfolio1 {
   float: left;
-  background-image: url("./GraphicDesignV2_files/portfolio1.jpg");
+  background-image: url("./graphicdesign/graphicdesign-images/portfolio1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -723,7 +723,7 @@ background-position: center; background-size: contain;}
 #portfolio2 {
   float: left;
   margin-left: 4%;
-  background-image: url("./GraphicDesignV2_files/portfolio2.jpg");
+  background-image: url("./graphicdesign/graphicdesign-images/portfolio2.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -734,7 +734,7 @@ background-position: center; background-size: contain;}
 
 #portfolio3 {
   float: left;
-  background-image: url("./GraphicDesignV2_files/portfolio7.jpg");
+  background-image: url("./graphicdesign/graphicdesign-images/portfolio7.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -745,7 +745,7 @@ background-position: center; background-size: contain;}
 
 #portfolio4 {
   float: left;
-  background-image: url("./GraphicDesignV2_files/portfolio8.jpg");
+  background-image: url("./graphicdesign/graphicdesign-images/portfolio8.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
