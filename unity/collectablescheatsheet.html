@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="../main.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="https://south-bend-code-school.github.io/Student-Site/SBCS_favicon.png">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Unity Cheat Sheet - Collectables</title>
+  </head>
+
+  <body>
+    <!--Nav bar  -->
+    <nav class="light-blue lighten-1">
+      <div class="nav-wrapper">
+        <a href="#!"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="hide-on-med-and-down">
+          <li><a href="../home.html">Home</a></li>
+          <li><a href="../scratch.html">Ages 7-12</a></li>
+          <li><a href="../techimmersion.html">Ages 13-18</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="../home.html">Home</a></li>
+      <li><a href="../scratch.html">Ages 7-12</a></li>
+      <li><a href="../techimmersion.html">Ages 13-18</a></li>
+    </ul>
+
+    <!--html Lesson: Project Title -->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h4>Unity Cheat Sheet - Collectables</h4>
+        <h5>Forgot stuff? It happens!</h5>
+     </div>
+    </div>
+    <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+            <p>Download the model and place it in our scene.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+          <!--Lesson Checkbox Div-->
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </p>
+              </form>
+            </div>
+          </div>
+          <!--Instruction Div-->
+          <div class="col s6">
+            <div class="projectsection1">
+              <p>Rename it <strong>PointsCollectable</strong> by right clicking in the <strong>Hierarchy</strong> and pressing <strong>rename</strong></p>
+            </div>
+          </div>
+        </div>
+
+      <div class="row">
+          <!--Lesson Checkbox Div-->
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+              </form>
+            </div>
+          </div>
+          <!--Instruction Div-->
+          <div class="col s6">
+            <div class="projectsection1">
+              <p>Right now, your collectable will have a transform component, likely along with a <strong>Mesh Filter</strong> and <strong>Mesh Renderer</strong>. Those components will help Unity put the model into the 3D space.</p>
+        		  <p>We're going to add a new component to the collectable: a collider. Also known as a hitbox, this component detects when an object touches another object. In the <strong>Inspector</strong> for the collectable, click <strong>Add Component at the bottom</strong></p>
+             </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s6 offset-s2">
+            <img src="./unity-images/collectables2.JPG" width="300px">
+          </div>
+        </div>
+
+      <div class="row">
+        <!--Lesson Checkbox Div -->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div -->
+        <div class="col s6">
+          <div class="projectsection1">
+            <p><strong>Physics</strong>  →  <strong>Box Collider</strong></p>
+      		  <p>You'll see a green box around your object now, this is your collider</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s6 offset-s2">
+          <img src="./unity-images/collectables3.JPG" width="200px">
+        </div>
+      </div>
+
+      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+            <p>In the collider's settings (in the Inspector), we're going to click the box that says <strong>Is Trigger</strong>.</p>
+      		  <p>When testing, the cursor will be locked. To unlock it so you can stop or pause the game, press <strong>Escape</strong></p>
+      		  <p>There are two types of colliders in Unity - normal colliders and trigger colliders. <strong>In a trigger collider, the two objects register that they touch but they don't actually collide (they can go through each other without slowing down)</strong>.</p>
+  	   </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <img src="./unity-images/collectables4.JPG" width="400px">
+    </div>
+  </div>
+
+      <div class="row">
+          <!--Lesson Checkbox Div-->
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </p>
+              </form>
+            </div>
+          </div>
+          <!--Instruction Div-->
+          <div class="col s6">
+            <div class="projectsection1">
+  			      <p>Adjust any values in the CollectableScript (points, etc.)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+            <!--Lesson Checkbox Div-->
+            <div class="col s1 offset-s1">
+              <div class="checkbox">
+                <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span></span>
+                      </label>
+                    </p>
+                </form>
+              </div>
+            </div>
+            <!--Instruction Div-->
+            <div class="col s6">
+              <div class="projectsection1">
+  				        <p>Make a new prefab of your new collectable type.</a></p>
+              </div>
+            </div>
+          </div>
+
+      <!--html Lesson: Directions Start Here-->
+      <div class="row">
+        <div class="col s6 offset-s1">
+          <h4>Cool Collectable Ideas</h4>
+        </div>
+      </div>
+
+        <div class="row">
+            <!--Lesson Checkbox Div-->
+            <div class="col s1 offset-s1">
+              <div class="checkbox">
+                <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </p>
+                </form>
+              </div>
+            </div>
+            <!--Instruction Div-->
+            <div class="col s6">
+              <div class="projectsection1">
+                <h5>Traps (decrease score / health)</h5>
+               </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col s6 offset-s2">
+              <img src="./unity-images/collectablecheatsheet1.gif" width="400px">
+              <p><i>Horizon Zero Dawn</i></p>
+            </div>
+          </div>
+
+		    <div class="row">
+          <!--Lesson Checkbox Div-->
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+              </form>
+            </div>
+          </div>
+          <!--Instruction Div-->
+          <div class="col s6">
+            <div class="projectsection1">
+              <h5>Health collectables (restore health)</h5>
+          </div>
+    	  </div>
+  	  </div>
+
+      <div class="row">
+        <div class="col s6 offset-s2">
+          <img src="./unity-images/collectablecheatsheet2.gif" width="400px">
+          <p><i>Witch It</i></p>
+        </div>
+      </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Damage boost collectables</h5>
+      </div>
+    </div>
+  </div>
+
+<div class="row">
+  <div class="col s6 offset-s2">
+    <img src="./unity-images/collectablecheatsheet3.gif" width="400px">
+    <p><i>Heroes of the Storm</i></p>
+  </div>
+</div>
+
+	  <br>
+	  <br>
+    <!--Project Complete Banner-->
+    <div class="row blue white-text">
+	<br>
+        <h5 style="text-align:center;">Gotta catch 'em all!</h5>
+	<br>
+    </div>
+	<br>
+	<br>
+
+        <!--Card: Prompt - Find Another Project-->
+        <div class="row">
+          <div class="col s4 offset-s2">
+            <div class="card findanotherproject">
+              <div class="card-content">
+                <div class="cardDescription">
+                  <h6>Find another project?</h6>
+                  <div class="browse">
+                    <br>
+                    <a href="../unity/unityfundamentals.html">
+                      <button>Browse all projects</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </body>
+    </html>

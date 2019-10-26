@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="../main.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="../SBCS_favicon.png">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Lesson 8 - Lists, Tuples and Dictionaries</title>
+  </head>
+
+<body>
+
+  <!--Nav bar  -->
+  <nav class="light-blue lighten-1">
+    <div class="nav-wrapper">
+      <a href="#!"></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="hide-on-med-and-down">
+        <li><a href="../home.html">Home</a></li>
+        <li><a href="../scratch.html">Ages 7-12</a></li>
+        <li><a href="../techimmersion.html">Ages 13-18</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="../home.html">Home</a></li>
+    <li><a href="../scratch.html">Ages 7-12</a></li>
+    <li><a href="../techimmersion.html">Ages 13-18</a></li>
+  </ul>
+
+    <div class="row">
+      <div class="col s6 offset-s3">
+        <h4 style="font-weight:bold;"><center>Lesson 8 - Lists, Tuples and Dictionaries</center></h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <h6>In this lesson you will:</h6>
+        <ol>
+          <li>Learn more about lists, tuples, and dictionaries</li>
+        </ol>
+        <h5>Background Info</h5>
+        <p>More data types. In this lesson we will look at three more data types: lists, tuples and dictionaries.</p>
+        <br>
+        <h5 style="font-weight:bold;">Helpful Links</h5>
+        <p><a href="https://repl.it" target="_blank">repl.it</a> - an online interpreter that we will use for writing our Python code.</p>
+        <p><a href="https://docs.python.org/3/tutorial/datastructures.html" target="_blank">https://docs.python.org/3/tutorial/datastructures.html</a> Lists documentation</p>
+        <p><a href="https://docs.python.org/3.3/tutorial/datastructures.html#tuples-and-sequences" target="_blank">https://docs.python.org/3.3/tutorial/datastructures.html#tuples-and-sequences</a> Tuples documentation</p>
+        <p><a href="https://docs.python.org/3.3/tutorial/datastructures.html#dictionaries" target="_blank">https://docs.python.org/3.3/tutorial/datastructures.html#dictionaries</a> Dictionary documentation</p>
+        <p><a href="https://repl.it/@MelinaSapiano/JokeTellingProgram" target="_blank">https://repl.it/@MelinaSapiano/JokeTellingProgram</a> Joke Telling program answer key</p>
+      </div>
+    </div>
+
+      <!--html Lesson: Directions Start Here-->
+      <div class="row">
+          <div class="col s6 offset-s1">
+            <h5 style="font-weight:bold;">Let's get started!</h5>
+          </div>
+        </div>
+
+        <div class="row">
+              <!--Lesson Checkbox Div-->
+              <div class="col s1 offset-s1">
+                <div class="checkbox">
+                  <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span></span>
+                      </label>
+                    </p>
+                  </form>
+                </div>
+              </div>
+              <!--Instruction Div-->
+              <div class="col s6">
+                <div class="projectsection1">
+                        <h6>First steps</h6>
+                        <p>Open up your repl on <a href="https://repl.it" target="_blank">repl.it</a>.</p>
+                        <p>Lists, tuples and dictionaries are three more data/variable types in Python.</p>
+                        <p>All three are iterables, that means that they hold multiple pieces of information and can be looped over and over.</p>
+                </div>
+            </div>
+          </div>
+      <!--html Lesson: Directions Start Here-->
+      <div class="row">
+            <div class="col s6 offset-s1">
+              <h5 style="font-weight:bold;">Lists</h5>
+            </div>
+          </div>
+
+            <div class="row">
+              <!--Lesson Checkbox Div-->
+              <div class="col s1 offset-s1">
+                <div class="checkbox">
+                  <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span></span>
+                      </label>
+                    </p>
+                  </form>
+                </div>
+              </div>
+              <!--Instruction Div-->
+              <div class="col s6">
+                <div class="projectsection1">
+                    <h6>Syntax</h6>
+                    <p>Square brackets <strong>[ ]</strong> denote a list.</p>
+                    <p>Lists are mutable, you can define them, and then change the length of the list, add items, or replace items inside the list.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col s6 offset-s2">
+                <p><img src="./python-images/lists1.JPG" width="200px"></p>
+              </div>
+            </div>
+
+            <div class="row">
+              <!--Lesson Checkbox Div-->
+              <div class="col s1 offset-s1">
+                <div class="checkbox">
+                  <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span></span>
+                      </label>
+                    </p>
+                  </form>
+                </div>
+              </div>
+              <!--Instruction Div-->
+              <div class="col s6">
+                <div class="projectsection1">
+                    <h6>You can also add an item to a list by using the keyword <strong>append</strong>.</h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col s6 offset-s2">
+                <p><img src="./python-images/lists2.JPG" width="200px"></p>
+              </div>
+            </div>
+
+            <div class="row">
+              <!--Lesson Checkbox Div-->
+              <div class="col s1 offset-s1">
+                <div class="checkbox">
+                  <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span></span>
+                      </label>
+                    </p>
+                  </form>
+                </div>
+              </div>
+              <!--Instruction Div-->
+              <div class="col s6">
+                <div class="projectsection1">
+                    <h6>To access a particular item in the list, use the index and square brackets to access a particular element.</h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col s6 offset-s2">
+                <p><img src="./python-images/lists3.JPG" width="150px"></p>
+              </div>
+            </div>
+
+            <div class="row">
+              <!--Lesson Checkbox Div-->
+              <div class="col s1 offset-s1">
+                <div class="checkbox">
+                  <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span></span>
+                      </label>
+                    </p>
+                  </form>
+                </div>
+              </div>
+
+              <!--Instruction Div-->
+              <div class="col s6">
+                <div class="projectsection1">
+                    <h6>What if I want to use one function from inside another one?</h6>
+                </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col s6 offset-s2">
+              <p><img src="./python-images/lists4.JPG" width="200px"></p>
+            </div>
+          </div>
+
+          <div class="row">
+            <!--Lesson Checkbox Div-->
+            <div class="col s1 offset-s1">
+              <div class="checkbox">
+                <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </p>
+                </form>
+              </div>
+            </div>
+            <!--Instruction Div-->
+            <div class="col s6">
+              <div class="projectsection1">
+                  <h6>To delete an item in a list, simply use the keyword <strong>del</strong>.</h6>
+              </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s6 offset-s2">
+            <p><img src="./python-images/lists5.JPG" width="200px"></p>
+          </div>
+        </div>
+
+        <div class="row">
+          <!--Lesson Checkbox Div-->
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+              </form>
+            </div>
+          </div>
+          <!--Instruction Div-->
+          <div class="col s6">
+            <div class="projectsection1">
+                <h6>The code above deletes the item at index 2 from the list a.</h6>
+                <p>Lists generally contain the same type of data (or homogenous data).</p>
+            </div>
+        </div>
+      </div>
+
+        <!--html Lesson: Directions Start Here-->
+        <div class="row">
+            <div class="col s6 offset-s1">
+              <h5 style="font-weight:bold;">Tuples</h5>
+            </div>
+          </div>
+
+        <div class="row">
+          <!--Lesson Checkbox Div-->
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+              </form>
+            </div>
+          </div>
+          <!--Instruction Div-->
+          <div class="col s6">
+            <div class="projectsection1">
+                <h6>Syntax</h6>
+                <p>Parentheses <strong>( )</strong> denote a tuple.</p>
+                <p>Tuples are immutable, meaning once you set their elements, you cannot change them.</p>
+              </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s6 offset-s2">
+          <p><img src="./python-images/lists6.JPG" width="450px"></p>
+          <p><img src="./python-images/lists7.JPG" width="450px"></p>
+        </div>
+      </div>
+
+      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+              <h6>Tuples often contain different types of data (heterogenous data).</h6>
+            </div>
+      </div>
+    </div>
+
+      <!--html Lesson: Directions Start Here-->
+      <div class="row">
+          <div class="col s6 offset-s1">
+            <h5 style="font-weight:bold;">Dictionaries</h5>
+          </div>
+        </div>
+
+        <div class="row">
+          <!--Lesson Checkbox Div-->
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+              </form>
+            </div>
+          </div>
+          <!--Instruction Div-->
+          <div class="col s6">
+            <div class="projectsection1">
+                <h6>Syntax</h6>
+                <p>Curly braces <strong>{ }</strong> denote dictionaries.</p>
+                <p>Dictionaries are sets of key : value pairs. Think of them like a phone book. The key is a name, and the value would be a phone number.</p>
+              </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s6 offset-s2">
+          <p><img src="./python-images/lists8.JPG" width="400px"></p>
+          <p><img src="./python-images/lists9.JPG" width="400px"></p>
+        </div>
+      </div>
+
+      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+              <h6>Each part of the data pair is separated by a colon, and each data pair is separated by a comma.</h6>
+              <p>Each pair is accessed by the key, rather than by a numerical index.</p>
+            </div>
+      </div>
+    </div>
+
+      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+              <h6>You can delete items from a dictionary just like you can from a list.</h6>
+            </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <p><img src="./python-images/lists10.JPG" width="500px"></p>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+            <h6>Let’s say we got a new bae though, so we could add them to our phonebook.</h6>
+          </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <p><img src="./python-images/lists11.JPG" width="500px"></p>
+    </div>
+  </div>
+
+    <!--Project Complete Banner-->
+    <div class="row blue white-text">
+      <div class="col s4 offset-s4">
+        <h5 style="text-align:center;"></h5>
+      </div>
+    </div>
+
+        <!--Card: Prompt - Find Another Project-->
+        <div class="row">
+          <div class="col s4 offset-s4">
+            <div class="card findanotherproject">
+              <div class="card-content">
+                <div class="cardDescription">
+                  <h6>Find another project?</h6>
+                  <div class="browse">
+                    <br>
+                    <a href="python.html">
+                      <button>Browse all projects</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </body>
+    </html>

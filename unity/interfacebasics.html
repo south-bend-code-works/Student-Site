@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="../main.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="https://south-bend-code-school.github.io/Student-Site/SBCS_favicon.png">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Unity Cheat Sheet - Interface Basics</title>
+  </head>
+
+  <body>
+    <!--Nav bar  -->
+    <nav class="light-blue lighten-1">
+      <div class="nav-wrapper">
+        <a href="#!"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="hide-on-med-and-down">
+          <li><a href="../home.html">Home</a></li>
+          <li><a href="../scratch.html">Ages 7-12</a></li>
+          <li><a href="../techimmersion.html">Ages 13-18</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="../home.html">Home</a></li>
+      <li><a href="../scratch.html">Ages 7-12</a></li>
+      <li><a href="../techimmersion.html">Ages 13-18</a></li>
+    </ul>
+
+    <!--html Lesson: Project Title -->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h4>Unity Cheat Sheet - Interface Basics</h4>
+        <h5>Forgot stuff? It happens!</h5>
+     </div>
+    </div>
+
+    <div class="wrap-collabsible">
+      <input id="collapsible" class="toggle" type="checkbox">
+      <label for="collapsible" class="lbl-toggle">Scene Window</label>
+      <div class="collapsible-content">
+        <div class="content-inner">
+          <h5>Navigating the Scene View</h5>
+          <p><strong>To pan</strong> the view: <strong>hold down</strong> the <strong>middle button</strong> (scroll wheel)</p>
+          <p>To rotate the view: hold ALT and hold the left mouse button</p>
+          <p>To zoom: scroll wheel</p>
+          <p><img src="./unity-images/interfacebasics1.JPG" width="600px"></p>
+
+          <br>
+        </div>
+      </div>
+    </div>
+
+<br>
+    <div class="wrap-collabsible">
+      <input id="collapsible1" class="toggle" type="checkbox">
+      <label for="collapsible1" class="lbl-toggle">Hierarchy</label>
+      <div class="collapsible-content">
+        <div class="content-inner">
+          <h5>Parent/Child Relationships</h5>
+          <p><img src="./unity-images/interfacebasics3.JPG" width="400px"></p>
+          <p>Lists all objects in the scene. Click arrows next to an object to see its children. Click <strong>Create</strong> to make new <strong>GameObjects</strong>.</p>
+          <p>When an object is nested under another, it's known as a child.</p>
+          <p><img src="./unity-images/interfacebasics2.JPG" width="400px"></p>
+
+          <br>
+        </div>
+      </div>
+    </div>
+    <br>
+        <div class="wrap-collabsible">
+          <input id="collapsible2" class="toggle" type="checkbox">
+          <label for="collapsible2" class="lbl-toggle">Project Window</label>
+          <div class="collapsible-content">
+            <div class="content-inner">
+              <p>Holds all assets in your game. All assets are in subfolders under the big <strong>Assets</strong> folder. Can zoom in and out on the bottom right.</p>
+              <p><img src="./unity-images/interfacebasics4.JPG" width="800px"></p>
+              <br>
+            </div>
+          </div>
+        </div>
+        <br>
+            <div class="wrap-collabsible">
+              <input id="collapsible3" class="toggle" type="checkbox">
+              <label for="collapsible3" class="lbl-toggle">Inspector Window</label>
+              <div class="collapsible-content">
+                <div class="content-inner">
+                  <p>Shows all the components on the selected GameObject. Can adjust:</p>
+                  <br>
+                  <p><strong>Name</strong> -  Edit the box at the top.</p>
+                  <p><strong>Tag</strong> - Click the box next to the word <strong>Tag</strong></p>
+                  <p><strong>Active State</strong> - Whether the object appears in the game. Click the checkbox next to the name.</p>
+                  <br>
+                    <p>Components:</p>
+                    <ul>
+                      <li><strong>Transform</strong> - This is where it is in the Scene view. You can adjust the position, rotation, and scale here. All GameObjects have a transform component.</li>
+                      <li><strong>Collider</strong> - The <i>Hitbox</i> of the object. This detects whether it touches other objects.</p>
+                      <li><strong>Scripts</strong> - Custom components. Public variables in scripts can be adjusted in here.</li>
+                      <li><i>Different types of GameObjects have different unique components (Camera, Lights, etc.)</i></li>
+                    </ul>
+                      <p><img src="./unity-images/interfacebasics5.JPG" width="400px"></p>
+                  <br>
+                </div>
+              </div>
+            </div>
+
+
+
+	  <br>
+    <!--Project Complete Banner-->
+    <div class="row blue white-text">
+	<br>
+        <h5 style="text-align:center;">Happy Building!</h5>
+	<br>
+    </div>
+	<br>
+	<br>
+
+        <!--Card: Prompt - Find Another Project-->
+        <div class="row">
+          <div class="col s4 offset-s2">
+            <div class="card findanotherproject">
+              <div class="card-content">
+                <div class="cardDescription">
+                  <h6>Find another project?</h6>
+                  <div class="browse">
+                    <br>
+                    <a href="../unity/unityfundamentals.html">
+                      <button>Browse all projects</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </body>
+    </html>

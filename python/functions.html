@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="../main.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="../SBCS_favicon.png">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Lesson 2 - Functions, Input/Output</title>
+  </head>
+
+<body>
+
+  <!--Nav bar  -->
+  <nav class="light-blue lighten-1">
+    <div class="nav-wrapper">
+      <a href="#!"></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="hide-on-med-and-down">
+        <li><a href="../home.html">Home</a></li>
+        <li><a href="../scratch.html">Ages 7-12</a></li>
+        <li><a href="../techimmersion.html">Ages 13-18</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="../home.html">Home</a></li>
+    <li><a href="../scratch.html">Ages 7-12</a></li>
+    <li><a href="../techimmersion.html">Ages 13-18</a></li>
+  </ul>
+
+  <div class="row">
+    <div class="col s6 offset-s3">
+      <h4 style="font-weight:bold;"><center>Lesson 2 - Functions, Input/Output</center></h4>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <h6>In this lesson you will:</h6>
+      <ol>
+        <li>Create a biography function</li>
+        <li>Teach your code to ask for input</li>
+      </ol>
+      <h5>Background Info</h5>
+      <p><strong>Print</strong> is a built-in python function, which means it's already defined for us. To use the print function, we just need to put whatever we want to print inside the parenthesis. If we are printing strings, remember to put quotes around them.</p>
+      <p>Variables are like empty boxes to store information in that we want to use later. We can name them almost anything, but it is helpful to give variables logical names that describe what they are holding. It's like labeling boxes!</p>
+      <p>A function is a group of code. Using functions is a quick and easy way to group a bunch of code together to be able to use whenever we want.</p>
+      <br>
+      <h5 style="font-weight:bold;">Helpful Links</h5>
+      <p><a href="https://repl.it" target="_blank">repl.it</a> - an online interpreter that we will use for writing our Python code.</p>
+      <p><a href="https://docs.python.org/3/library/functions.html" target="_blank">https://docs.python.org/3/library/functions.html</a>list of Python 3 built in functions.</p>
+    </div>
+  </div>
+
+      <!--html Lesson: Directions Start Here-->
+      <div class="row">
+          <div class="col s6 offset-s1">
+            <h5 style="font-weight:bold;">Let's get started!</h5>
+          </div>
+        </div>
+
+        <div class="row">
+              <!--Lesson Checkbox Div-->
+              <div class="col s1 offset-s1">
+                <div class="checkbox">
+                  <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span></span>
+                      </label>
+                    </p>
+                  </form>
+                </div>
+              </div>
+              <!--Instruction Div-->
+              <div class="col s6">
+                <div class="projectsection1">
+                        <h6>First steps</h6>
+                        <p>Open <a href="https://repl.it" target="_blank">repl.it</a> again and navigate back to the repl you saved from the last lesson.</p>
+                        <p>You should see main.py open in the script editor.</p>
+                </div>
+            </div>
+          </div>
+      <!--html Lesson: Directions Start Here-->
+      <div class="row">
+            <div class="col s6 offset-s1">
+              <h5 style="font-weight:bold;">Functions</h5>
+            </div>
+          </div>
+
+            <div class="row">
+              <!--Lesson Checkbox Div-->
+              <div class="col s1 offset-s1">
+                <div class="checkbox">
+                  <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span></span>
+                      </label>
+                    </p>
+                  </form>
+                </div>
+              </div>
+              <!--Instruction Div-->
+              <div class="col s6">
+                <div class="projectsection1">
+                    <h6>Let's write our first function.</h6>
+                    <p>A function is bunch of code grouped together and given a name. When you call that name, all the code inside the function will run, in sequential order (from top to bottom).</p>
+                    <p>To define a function, you need a special keyword called def. Your function definition should look like this:</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col s6 offset-s2">
+                <img src="./python-images/functions1.JPG" width="400px">
+              </div>
+            </div>
+
+            <div class="row">
+              <!--Lesson Checkbox Div-->
+              <div class="col s1 offset-s1">
+                <div class="checkbox">
+                  <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span></span>
+                      </label>
+                    </p>
+                  </form>
+                </div>
+              </div>
+              <!--Instruction Div-->
+              <div class="col s6">
+                <div class="projectsection1">
+                    <h6>There are a couple important things happening here. First, you need to use the def keyword.</h6>
+                    <br>
+                    <p>Second comes the name of your function, followed by parenthesis. After all that we need a colon.</p>
+                    <p>Anything you want inside the function needs to be indented 4 spaces. In repl.it you can use 4 spaces, or hit tab twice.</p>
+                </div>
+            </div>
+          </div>
+      <!--html Lesson: Directions Start Here-->
+      <div class="row">
+            <div class="col s6 offset-s1">
+              <h5 style="font-weight:bold;">Input</h5>
+            </div>
+          </div>
+
+          <div class="row">
+                <!--Lesson Checkbox Div-->
+                <div class="col s1 offset-s1">
+                  <div class="checkbox">
+                    <form action="#">
+                      <p>
+                        <label>
+                          <input type="checkbox" />
+                          <span></span>
+                        </label>
+                      </p>
+                    </form>
+                  </div>
+                </div>
+                <!--Instruction Div-->
+                <div class="col s6">
+                  <div class="projectsection1">
+                      <h6>So what do we want our function to do? Let's ask the user for some information.</h6>
+                      <p>To get user input, we use a built-in function called <strong>input</strong>. Let's practice first in the terminal.</p>
+                  </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col s6 offset-s2">
+                <img src="./python-images/functions2.JPG" width="400px">
+              </div>
+            </div>
+
+            <div class="row">
+                    <!--Lesson Checkbox Div-->
+                    <div class="col s1 offset-s1">
+                      <div class="checkbox">
+                        <form action="#">
+                          <p>
+                            <label>
+                              <input type="checkbox" />
+                              <span></span>
+                            </label>
+                          </p>
+                        </form>
+                      </div>
+                    </div>
+                    <!--Instruction Div-->
+                    <div class="col s6">
+                      <div class="projectsection1">
+                          <h6>You try it.</h6>
+                          <p>Whatever you put inside the <strong>input()</strong> parenthesis will show up as a prompt for the user to answer. Make sure to use quotes around your prompt!</p>
+                          <p><i>**Note that whatever we get back from input will always be a String! More on this in future lessons.**</i></p>
+                      </div>
+                  </div>
+                </div>
+
+    <div class="row">
+            <!--Lesson Checkbox Div-->
+            <div class="col s1 offset-s1">
+              <div class="checkbox">
+                <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </p>
+                </form>
+              </div>
+            </div>
+            <!--Instruction Div-->
+            <div class="col s6">
+              <div class="projectsection1">
+                  <h6>Let's make our function ask the user for some basic information.</h6>
+                  <p>Inside the function definition in our script, we will ask the user their name, age, and favorite color.</p>
+              </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s6 offset-s2">
+            <img src="./python-images/functions3.JPG" width="400px">
+          </div>
+        </div>
+
+        <div class="row">
+                <!--Lesson Checkbox Div-->
+                <div class="col s1 offset-s1">
+                  <div class="checkbox">
+                    <form action="#">
+                      <p>
+                        <label>
+                          <input type="checkbox" />
+                          <span></span>
+                        </label>
+                      </p>
+                    </form>
+                  </div>
+                </div>
+                <!--Instruction Div-->
+                <div class="col s6">
+                  <div class="projectsection1">
+                      <h6>Now let's run our function!</h6>
+                      <p>At the top of the screen, press the <strong>green</strong> run button.</p>
+                      <p>Nothing happens yet, because we need to <strong>call</strong> our function.</p>
+                      <p>To do this, go to the terminal and type in <strong>biography()</strong> and hit <strong>enter</strong></p>
+                  </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col s6 offset-s2">
+                <img src="./python-images/functions4.JPG" width="400px">
+              </div>
+            </div>
+
+        <div class="row">
+                <!--Lesson Checkbox Div-->
+                <div class="col s1 offset-s1">
+                  <div class="checkbox">
+                    <form action="#">
+                      <p>
+                        <label>
+                          <input type="checkbox" />
+                          <span></span>
+                        </label>
+                      </p>
+                    </form>
+                  </div>
+                </div>
+                <!--Instruction Div-->
+                <div class="col s6">
+                  <div class="projectsection1">
+                      <h6>Go ahead and answer the questions.</h6>
+                      <p>What happens when you finish?</p>
+                      <p>Nothing! We haven't told our function what to do with the information we just entered.</p>
+                      <br>
+                      <p>Let's give the user a welcoming message. To do so, we need some way to store the user's answers to the questions.</p>
+                  </div>
+              </div>
+            </div>
+
+            <div class="row">
+                    <div class="col s6 offset-s1">
+                      <h5 style="font-weight:bold;">Variables</h5>
+                    </div>
+                </div>
+
+
+        <div class="row">
+                <!--Lesson Checkbox Div-->
+                <div class="col s1 offset-s1">
+                  <div class="checkbox">
+                    <form action="#">
+                      <p>
+                        <label>
+                          <input type="checkbox" />
+                          <span></span>
+                        </label>
+                      </p>
+                    </form>
+                  </div>
+                </div>
+                <!--Instruction Div-->
+                <div class="col s6">
+                  <div class="projectsection1">
+                      <h6>We will use something called a <strong>variable</strong>.</h6>
+                      <p>Variables are like empty boxes that we can store stuff inside. We are going to store the user's answers in three boxes. Let's call the variables name, age and color.</p>
+                  </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col s6 offset-s2">
+                <img src="./python-images/functions5.JPG" width="400px">
+              </div>
+            </div>
+
+            <div class="row">
+                    <!--Lesson Checkbox Div-->
+                    <div class="col s1 offset-s1">
+                      <div class="checkbox">
+                        <form action="#">
+                          <p>
+                            <label>
+                              <input type="checkbox" />
+                              <span></span>
+                            </label>
+                          </p>
+                        </form>
+                      </div>
+                    </div>
+                    <!--Instruction Div-->
+                    <div class="col s6">
+                      <div class="projectsection1">
+                          <h6>When we define new variables, the variable name has to go on the left side, followed by an equals, then whatever value we want to put into our variable.</h6>
+                          <p><i>**Don't worry about the green underline right now. It just means that we've defined variables, but haven't used them yet. We will soon!**</i></p>
+                      </div>
+                  </div>
+                </div>
+
+
+            <div class="row">
+                    <div class="col s6 offset-s1">
+                      <h5 style="font-weight:bold;">Naming Conventions</h5>
+                      <p>When we name variables, we will follow a naming convention called <strong>camelCase</strong>. This just means that the first letter of a variable name will be lowercase, and the first letter of every other word in the name will be capitalized. For example:</p>
+                            <p>firstName</p>
+                            <p>lastName</p>
+                            <p>streetAddress</p>
+                            <p>thisAwesomeName</p>
+                    </div>
+                </div>
+
+            <div class="row">
+                    <!--Lesson Checkbox Div-->
+                    <div class="col s1 offset-s1">
+                      <div class="checkbox">
+                        <form action="#">
+                          <p>
+                            <label>
+                              <input type="checkbox" />
+                              <span></span>
+                            </label>
+                          </p>
+                        </form>
+                      </div>
+                    </div>
+                    <!--Instruction Div-->
+                    <div class="col s6">
+                      <div class="projectsection1">
+                          <h6>Variable names must start with a letter or underscore, and cannot contain anything other than letters, numbers, and underscores.</h6>
+                          <p>Let's practice creating some variables now. In the terminal, define a few variables and give them values as shown below.</p>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col s6 offset-s2">
+                    <img src="./python-images/functions6.JPG" width="150px">
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col s6 offset-s2">
+                    <img src="./python-images/functions7.JPG" width="200px">
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col s6 offset-s2">
+                    <img src="./python-images/functions8.JPG" width="200px">
+                  </div>
+                </div>
+
+                <div class="row">
+                        <!--Lesson Checkbox Div-->
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                              <p>
+                                <label>
+                                  <input type="checkbox" />
+                                  <span></span>
+                                </label>
+                              </p>
+                            </form>
+                          </div>
+                        </div>
+                        <!--Instruction Div-->
+                        <div class="col s6">
+                          <div class="projectsection1">
+                              <h6><i>**Note that you can overwrite a variable as many times as you want.**</i></h6>
+                          </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col s6 offset-s2">
+                        <img src="./python-images/functions9.JPG" width="200px">
+                      </div>
+                    </div>
+
+                <div class="row">
+                  <div class="col s6 offset-s1">
+                    <h5 style="font-weight:bold;">Output</h5>
+                    <p>Now that we've stored our user's answers, let's make our function give some output.</p>
+                  </div>
+              </div>
+
+          <div class="row">
+                  <!--Lesson Checkbox Div-->
+                  <div class="col s1 offset-s1">
+                    <div class="checkbox">
+                      <form action="#">
+                        <p>
+                          <label>
+                            <input type="checkbox" />
+                            <span></span>
+                          </label>
+                        </p>
+                      </form>
+                    </div>
+                  </div>
+                  <!--Instruction Div-->
+                  <div class="col s6">
+                    <div class="projectsection1">
+                        <h6>After our variable definitions, let's add some print statements to welcome the user.</h6>
+                        <p>Inside the print function, we can print more than one thing. Simply separate all the different things you want to print with a comma, and the print function will print them all together, separated by spaces.</p>
+                    </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col s6 offset-s2">
+                  <img src="./python-images/functions10.JPG" width="500px">
+                </div>
+              </div>
+
+              <div class="row">
+                <!--Lesson Checkbox Div-->
+                <div class="col s1 offset-s1">
+                  <div class="checkbox">
+                    <form action="#">
+                      <p>
+                        <label>
+                          <input type="checkbox" />
+                          <span></span>
+                        </label>
+                      </p>
+                    </form>
+                  </div>
+                </div>
+                <!--Instruction Div-->
+                <div class="col s6">
+                  <div class="projectsection1">
+                      <h6>Try running the function now and see what happens!</h6>
+                  </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <!--Lesson Checkbox Div-->
+              <div class="col s1 offset-s1">
+                <div class="checkbox">
+                  <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span></span>
+                      </label>
+                    </p>
+                  </form>
+                </div>
+              </div>
+              <!--Instruction Div-->
+              <div class="col s6">
+                <div class="projectsection1">
+                    <h6>Add more questions to your biography function, and then add output for the user to see!</h6>
+                </div>
+            </div>
+          </div>
+
+    <!--Project Complete Banner-->
+    <div class="row blue white-text">
+      <div class="col s4 offset-s4">
+        <h5 style="text-align:center;">Conjunction Junction, what's your function?</h5>
+      </div>
+    </div>
+
+        <!--Card: Prompt - Find Another Project-->
+        <div class="row">
+          <div class="col s4 offset-s4">
+            <div class="card findanotherproject">
+              <div class="card-content">
+                <div class="cardDescription">
+                  <h6>Find another project?</h6>
+                  <div class="browse">
+                    <br>
+                    <a href="python.html">
+                      <button>Browse all projects</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </body>
+    </html>

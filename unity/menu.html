@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="../main.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="https://south-bend-code-school.github.io/Student-Site/SBCS_favicon.png">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Unity Student Guide 9 - Main Menu</title>
+  </head>
+
+  <body>
+    <!--Nav bar  -->
+    <nav class="light-blue lighten-1">
+      <div class="nav-wrapper">
+        <a href="#!"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="hide-on-med-and-down">
+          <li><a href="../home.html">Home</a></li>
+          <li><a href="../scratch.html">Ages 7-12</a></li>
+          <li><a href="../techimmersion.html">Ages 13-18</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="../home.html">Home</a></li>
+      <li><a href="../scratch.html">Ages 7-12</a></li>
+      <li><a href="../techimmersion.html">Ages 13-18</a></li>
+    </ul>
+
+    <div class="row">
+      <div class="col s6 offset-s3">
+        <h4 style="font-weight:bold;"><center>Unity Student Guide 9 - Main Menu</center></h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <h6>In this lesson you will:</h6>
+        <ol>
+          <li>Create a working menu</li>
+        </ol>
+        <p><strong>Helpful Links:</strong></p>
+        <p><a href="https://docs.unity3d.com/Manual/CreatingScenes.html" target="_blank">Scene Docs</a></p>
+        <br>
+        <h4>Menu</h4>
+        <p>In interfaces we covered the importance of having elegant design. After all, menus and interfaces are something that your player will be looking at a lot, so you want them to look forward to it.</p>
+        <p>Your menu should match your game.</p>
+        <p><strong>8-bit 2D game?</strong> Use retro fonts and your 8-bit characters.</p>
+        <p><strong>Medieval game?</strong> Use Medieval style caligraphy, and give it plenty of style to make it look like an old book.</p>
+        <p>Whether it's simple</p>
+        <img src="./unity-images/menu1.gif" width="500px">
+        <p>Or complex</p>
+        <img src="./unity-images/menu2.gif" width="500px">
+        <p>Think about the experience of the viewer, about the parts of design you like with games you currently play</p>
+        <img src="./unity-images/menu3.gif" width="500px">
+        <p>And design your heart out.</p>
+        <img src="./unity-images/menu4.gif" width="500px">
+      </div>
+    </div>
+
+      <div class="row">
+        <div class="col s6 offset-s1">
+          <h5 style="font-weight:bold;">New Scene</h5>
+		    </div>
+      </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Great work with your game so far!</h6>
+          <p>Now it's time to add a little bit of polish, a main menu.<strong> Make sure to save your current scene before you do this</strong>.</p>
+         </div>
+      </div>
+    </div>
+
+    <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+            <h6>Then go to <strong>File</strong>  →  <strong>Save</strong> and call it <strong>MainMenu</strong>.</h6>
+            <p>This scene will be the UI for our main menu!</p>
+            </div>
+        </div>
+      </div>
+
+    <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+            <h6>To start, make the scene 2D by pressing the <strong>2D button</strong> on the <strong>Scene</strong> view.</h6>
+		       </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col s6 offset-s2">
+          <p><img src="./unity-images/menu5.JPG" width="300px"></p>
+        </div>
+      </div>
+
+      <div class="row">
+          <!--Lesson Checkbox Div-->
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </p>
+              </form>
+            </div>
+          </div>
+          <!--Instruction Div-->
+          <div class="col s6">
+            <div class="projectsection1">
+              <h6>Try to think of this menu as place cards in front of a camera. The 3D space is still there, it's just being covered, or intercepted by the menu.</h6>
+  		       </div>
+          </div>
+        </div>
+
+      <div class="row">
+        <div class="col s6 offset-s1">
+          <h5 style="font-weight:bold;">Button</h5>
+		    </div>
+      </div>
+
+	      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+            <h6>In the Hierarchy, go to <strong>Create</strong>  →  <strong>UI</strong>  →  <strong>Button</strong>.</h6>
+            <p>Buttons have things like an OnClick function by defult, so you won't have to manually code this.</p>
+		       </div>
+        </div>
+      </div>
+
+      <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>The button has various features you can edit:</h6>
+          <ol>
+            <li>Text on the button(the text is a child of the button)</li>
+            <li>Color</li>
+            <li>Hovering color</li>
+            <li>Clicked color</li>
+          </ol>
+         </div>
+      </div>
+    </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>If you scroll down on the Button's components in the Inspector, you'll see a box that says <strong>On Click ()</strong>.</h6>
+        <p>This box allows the button to call a function when it is clicked. In this case, we want it to call a function that loads the first level. To do this, we need to make that function on a script. Let's make a new empty GameObject called <strong>MenuManager</strong> that will hold the script.</p>
+        <p>In the Hierarchy, press <strong>Create</strong>  →  <strong>Empty</strong>.</p>
+       </div>
+    </div>
+  </div>
+
+	    <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+              <h6>Now go onto the MenuManager empty GameObject and click <strong>Add Component</strong>  →  <strong>New Script</strong>.</h6>
+              <p>Name it <strong>MenuManager</strong>. Open it up in the code editor.</p>
+          </div>
+        </div>
+      </div>
+
+	    <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+            <h6>Remember that we are using this script to make a function that loads a level.  In order to load a level, we need to add the SceneManagement namespace.</h6>
+	       </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s6 offset-s2">
+          <img src="./unity-images/menu6.JPG" width="300px">
+        </div>
+      </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Now let's get into the script proper. Erase the Start and Update functions and make a new public function called .<strong>LoadLevel</strong>.</h6>
+        </div>
+      </div>
+    </div>
+
+      <div class="row">
+        <div class="col s6 offset-s2">
+          <img src="./unity-images/menu7.JPG" width="300px">
+        </div>
+      </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>The function needs something to load. Let's give it an argument.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <img src="./unity-images/menu8.JPG" width="300px">
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6><i>A “string” is another variable type! It can contain numbers and text (like a level name!)</i></h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Great! That's really the whole script. Now we just have to assign it. Go to the StartButton GameObject in the <strong>Inspector</strong> and click the plus button in the OnClick () box. Drag the MenuManager GameObject into where it says <strong>None</strong>.</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <img src="./unity-images/menu9.JPG" width="300px">
+    </div>
+  </div>
+
+  <div class="row">
+  <!--Lesson Checkbox Div-->
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+      </form>
+    </div>
+  </div>
+  <!--Instruction Div-->
+  <div class="col s6">
+    <div class="projectsection1">
+      <h6>Click the <strong>drop-down</strong>  →  <strong>MenuManager</strong>  →  <strong>LoadLevel(string)</strong>.</h6>
+      <p>The box that appears is where we put the string of the level. Put the name of your first level there.</i></p>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col s6 offset-s2">
+    <img src="./unity-images/menu9.JPG" width="300px">
+  </div>
+</div>
+
+<div class="row">
+  <!--Lesson Checkbox Div-->
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+      </form>
+    </div>
+  </div>
+  <!--Instruction Div-->
+  <div class="col s6">
+    <div class="projectsection1">
+      <h6><strong>Save</strong> the scene you're on and then play the game and try the button! It should load your first level. <i>Make sure the scene you're trying to load is in the Build Settings!</i></h6>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col s6 offset-s1">
+    <h5 style="font-weight:bold;">Text</h5>
+  </div>
+</div>
+
+<div class="row">
+  <!--Lesson Checkbox Div-->
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+      </form>
+    </div>
+  </div>
+  <!--Instruction Div-->
+  <div class="col s6">
+    <div class="projectsection1">
+      <h6>Text boxes are good for titles and instructions. Text is even easier to make than buttons!</h6>
+      <p><strong>Hierarchy</strong>  →  <strong>Create</strong>  →  <strong>UI</strong>  →  <strong>Text</strong></p>
+      <p>The box can be moved around on the canvas with the normal movement tools. If you want to change the size, use the <strong>RectTransform</strong> tool (the furthest right on the movement tool). The text can be entered into the Text component in the Inspector.</p>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <!--Lesson Checkbox Div-->
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+      </form>
+    </div>
+  </div>
+  <!--Instruction Div-->
+  <div class="col s6">
+    <div class="projectsection1">
+      <h6>This is when you can use your highly refined skills of worldbuilding, and <strong>make a great title for your game</strong>.</h6>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col s6 offset-s1">
+    <h5 style="font-weight:bold;">Menu Background: Solid Color</h5>
+  </div>
+</div>
+
+<div class="row">
+  <!--Lesson Checkbox Div-->
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+      </form>
+    </div>
+  </div>
+  <!--Instruction Div-->
+  <div class="col s6">
+    <div class="projectsection1">
+        <h6>You can make the menu have a solid background by editing the Main Camera in the Inspector.</h6>
+        <p>Set <strong>Clear Flags</strong> to <strong>Solid Color</strong></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <img src="./unity-images/menu10.JPG" width="300px">
+    </div>
+  </div>
+
+<div class="row">
+  <div class="col s6 offset-s1">
+    <h5 style="font-weight:bold;">Menu Background: Background Image</h5>
+  </div>
+</div>
+
+<div class="row">
+<!--Lesson Checkbox Div-->
+<div class="col s1 offset-s1">
+  <div class="checkbox">
+    <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span></span>
+          </label>
+        </p>
+    </form>
+  </div>
+</div>
+<!--Instruction Div-->
+<div class="col s6">
+  <div class="projectsection1">
+        <h6>Create an image (<a href="https://www.piskelapp.com/" target="_blank">Piskel</a> or the <strong>GIMP</strong> software installed on your computer are great tools to create your own background image)</h6>
+      </div>
+  </div>
+</div>
+
+<div class="row">
+<!--Lesson Checkbox Div-->
+<div class="col s1 offset-s1">
+  <div class="checkbox">
+    <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span></span>
+          </label>
+        </p>
+    </form>
+  </div>
+</div>
+<!--Instruction Div-->
+<div class="col s6">
+  <div class="projectsection1">
+        <h6>Drag that image into the Project view to import it</h6>
+      </div>
+  </div>
+</div>
+
+<div class="row">
+<!--Lesson Checkbox Div-->
+<div class="col s1 offset-s1">
+  <div class="checkbox">
+    <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span></span>
+          </label>
+        </p>
+    </form>
+  </div>
+</div>
+<!--Instruction Div-->
+<div class="col s6">
+  <div class="projectsection1">
+        <h6>Click on the image in the Project view to open its import settings in the Inspector.</h6>
+      </div>
+  </div>
+</div>
+
+<div class="row">
+<!--Lesson Checkbox Div-->
+<div class="col s1 offset-s1">
+  <div class="checkbox">
+    <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span></span>
+          </label>
+        </p>
+    </form>
+  </div>
+</div>
+<!--Instruction Div-->
+<div class="col s6">
+  <div class="projectsection1">
+        <h6>Change the texture type to <strong>Sprite (2D and UI)</strong>.</h6>
+      </div>
+  </div>
+</div>
+
+<div class="row">
+<!--Lesson Checkbox Div-->
+<div class="col s1 offset-s1">
+  <div class="checkbox">
+    <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span></span>
+          </label>
+        </p>
+    </form>
+  </div>
+</div>
+<!--Instruction Div-->
+<div class="col s6">
+  <div class="projectsection1">
+        <h6>We're going to make that the texture of a UI image component. Create one:</h6>
+        <p><strong>Create</strong>  →  <strong>UI</strong>  →  <strong>Image</strong></p>
+      </div>
+  </div>
+</div>
+
+<div class="row">
+<!--Lesson Checkbox Div-->
+<div class="col s1 offset-s1">
+  <div class="checkbox">
+    <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span></span>
+          </label>
+        </p>
+    </form>
+  </div>
+</div>
+<!--Instruction Div-->
+<div class="col s6">
+  <div class="projectsection1">
+        <h6>In the Inspector for the Image, drag the sprite you imported to the Sprite variable.</h6>
+      </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col s6 offset-s2">
+    <img src="./unity-images/menu11.JPG" width="300px">
+    <br>
+    <img src="./unity-images/menu12.JPG" width="300px">
+  </div>
+</div>
+
+<div class="row">
+<!--Lesson Checkbox Div-->
+<div class="col s1 offset-s1">
+  <div class="checkbox">
+    <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span></span>
+          </label>
+        </p>
+    </form>
+  </div>
+</div>
+<!--Instruction Div-->
+<div class="col s6">
+  <div class="projectsection1">
+        <h6>Click <strong>preserve aspect</strong> to make sure that the image isn't stretched strangely. You can then click <strong>native size</strong> to make the image object and the sprite the same size. Use the rectangle transform tool to resize it! Finally, make sure that the image is <i>the first child</i> of the canvas. This will make it render first (the text and button will render in front of it so the player can see them!</h6>
+      </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col s6 offset-s2">
+    <img src="./unity-images/menu13.JPG" width="200px">
+  </div>
+</div>
+
+<div class="row">
+<!--Lesson Checkbox Div-->
+<div class="col s1 offset-s1">
+  <div class="checkbox">
+    <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span></span>
+          </label>
+        </p>
+    </form>
+  </div>
+</div>
+<!--Instruction Div-->
+<div class="col s6">
+  <div class="projectsection1">
+    <h6>Test your game</h6>
+    <p>Does your menu work?</p>
+    <p>Are the buttons clickable?</p>
+    <p>Is it clean and easy to use?</p>
+  </div>
+</div>
+</div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Save your project</h6>
+      </div>
+	  </div>
+	  </div>
+
+	  <br>
+	  <br>
+    <!--Project Complete Banner-->
+    <div class="row blue white-text">
+      <div class="col s4 offset-s4">
+        <h5 style="text-align:center;">Worldbuilding level up!</h5>
+      </div>
+    </div>
+	<br>
+	<br>
+
+        <!--Card: Prompt - Find Another Project-->
+        <div class="row">
+          <div class="col s4 offset-s2">
+            <div class="card findanotherproject">
+              <div class="card-content">
+                <div class="cardDescription">
+                  <h6>Find another project?</h6>
+                  <div class="browse">
+                    <br>
+                    <a href="../unity/unityfundamentals.html">
+                      <button>Browse all projects</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </body>
+    </html>

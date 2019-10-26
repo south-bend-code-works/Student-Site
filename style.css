@@ -369,30 +369,18 @@ input[type='checkbox'] {
 
 
 /*2d/3d animation background images*/
-#settingupunityBG {background-image: url('settingupunityBG.jpg');
-background-position: center; background-size: contain;}
-#unitybreakdownBG {background-image: url('unitybreakdownBG.jpg');
-background-position: center; background-size: contain;}
-#importingassetsBG {background-image: url('importingassetsBG.jpg');
-background-position: center; background-size: contain;}
-#keyframessoundBG {background-image: url('keyframessoundBG.jpg');
-background-position: center; background-size: contain;}
-#curvesandstatesBG {background-image: url('curvesandstatesBG.jpg');
-background-position: center; background-size: contain;}
-#openingsceneBG {background-image: url('openingsceneBG.jpg');
-background-position: center; background-size: contain;}
-#lightingBG {background-image: url('lightingBG.jpg');
-background-position: center; background-size: contain;}
-#renderingBG {background-image: url('renderBG.jpg');
-background-position: center; background-size: contain;}
-#titleSceneBG{background-image: url('titlescenecutsceneBG.gif');
-background-position: center; background-size: contain;}
-#twodBG {background-image: url('twodBG.gif');
-background-position: center; background-size: contain;}
-#unlockingBG {background-image: url('unlockingBG.jpg');
-background-position: center; background-size: contain;}
-#worldbuildingBG {background-image: url('worldbuildingBG.gif');
-  background-position: center; background-size: contain;}
+#settingupunityBG {background-image: url('./animations/animation-images/settingupunityBG.jpg');}
+#unitybreakdownBG {background-image: url('./animations/animation-images/unitybreakdownBG.jpg');}
+#importingassetsBG {background-image: url('./animations/animation-images/importingassetsBG.jpg');}
+#keyframessoundBG {background-image: url('./animations/animation-images/keyframessoundBG.jpg');}
+#curvesandstatesBG {background-image: url('./animations/animation-images/curvesandstatesBG.jpg');}
+#openingsceneBG {background-image: url('./animations/animation-images/openingsceneBG.jpg');}
+#lightingBG {background-image: url('./animations/animation-images/lightingBG.jpg');}
+#renderingBG {background-image: url('./animations/animation-images/renderBG.jpg');}
+#titleSceneBG{background-image: url('./animations/animation-images/titlescenecutsceneBG.gif');}
+#twodBG {background-image: url('./animations/animation-images/twodBG.gif');}
+#unlockingBG {background-image: url('./animations/animation-images/unlockingBG.jpg');}
+#worldbuilding3BG {background-image: url('./animations/animation-images/worldbuildingBG.gif'); background-position: center; background-size: contain;}
 
 #webdevBG {background-image: url('computer.gif'); background-position: center; background-size: contain;}
 #pythonBG {background-image: url('Python.png'); background-position: center; background-size: contain;}
@@ -400,60 +388,60 @@ background-position: center; background-size: contain;}
 #patternBG {background-image: url('striped.gif');}
 
 /*Unity images */
-#setupBG{background-image: url('setup.jpg');}
-#worldbuildingBG{background-image: url('worldbuilding_terrain.jpg');}
-#worldbuilding2BG{background-image: url('worldbuilding_terrain2.jpg');}
-#characterBG{background-image: url('character.gif');}
-#organizeBG{background-image: url('organize.jpg');}
-#collectableBG{background-image: url('collectable.jpg');}
-#uiBG{background-image: url('interface.gif');}
-#collectable2BG{background-image: url('collectable2.gif');}
-#prefabBG{background-image: url('prefab1.gif');
+#setupBG{background-image: url('./unity/unity-images/setup.jpg');}
+#worldbuildingBG{background-image: url('./unity/unity-images/worldbuilding_terrain.jpg');}
+#worldbuilding2BG{background-image: url('./unity/unity-images/worldbuilding_terrain2.jpg');}
+#characterBG{background-image: url('./unity/unity-images/character.gif');}
+#organizeBG{background-image: url('./unity/unity-images/organize.jpg');}
+#collectableBG{background-image: url('./unity/unity-images/collectable.jpg');}
+#uiBG{background-image: url('./unity/unity-images/interface.gif');}
+#collectable2BG{background-image: url('./unity/unity-images/collectable2.gif');}
+#prefabBG{background-image: url('./unity/unity-images/prefab1.gif');
 background-position: center; background-size: contain;}
-#enemyBG{background-image: url('enemy.jpg');}
-#attackBG{background-image: url('enemyattacks.gif');}
-#healthBG{background-image: url('healthbar1.gif');}
-#fightBG{background-image: url('fightingenemies.gif');}
-#enemyprefabBG{background-image: url('prefabenemy.jpeg');}
-#menuBG{background-image: url('unitymenu.gif');}
-#audioBG{background-image: url('audio.jpeg');
+#enemyBG{background-image: url('./unity/unity-images/enemy.jpg');}
+#attackBG{background-image: url('./unity/unity-images/enemyattacks.gif');}
+#healthBG{background-image: url('./unity/unity-images/healthbar.gif');}
+#fightBG{background-image: url('./unity/unity-images/fightingenemies.gif');}
+#enemyprefabBG{background-image: url('./unity/unity-images/prefabenemy.jpeg');}
+#menuBG{background-image: url('./unity/unity-images/unitymenu.gif');}
+#audioBG{background-image: url('./unity/unity-images/audio.jpeg');
 background-position: center; background-size: contain;}
-#buildBG{background-image: url('unitybuild.jpeg');
+#buildBG{background-image: url('./unity/unity-images/unitybuild.jpeg');
 background-position: center; background-size: contain;}
-#interfaceBG{background-image: url('interfacebasics.jpg');
+#interfaceBG{background-image: url('./unity/unity-images/interfacebasics.jpg');
 background-position: center; background-size: contain;}
-#movementBG{background-image: url('movementtools.gif');
+#movementBG{background-image: url('./unity/unity-images/movementtools.gif');
 background-position: center; background-size: auto;}
-#assetBG{background-image: url('assetstore.gif');
+#assetBG{background-image: url('./unity/unity-images/assetstore.gif');
 background-position: center; background-size: contain;}
-#terrain3BG{background-image: url('worldbuildingbasics.jpg');}
-#collectable3BG{background-image: url('collectablescheatsheet.jpg');
+#terrain3BG{background-image: url('./unity/unity-images/worldbuildingbasics.jpg');}
+#collectable3BG{background-image: url('./unity/unity-images/collectablescheatsheet.jpg');
 background-position: center; background-size: contain;}
-#scriptBG{background-image: url('scriptingbasics.gif');}
-#errorBG{background-image: url('errormessages.jpg');
+#scriptBG{background-image: url('./unity/unity-images/scriptingbasics.gif');}
+#errorBG{background-image: url('./unity/unity-images/errormessages.jpg');
 background-position: center; background-size: contain;}
 
 /*Python images */
-#pythonsetupBG{background-image: url('./Python_files/replit.png');}
-#syntaxBG{background-image: url('./Python_files/syntax.jpg');}
-#functionsBG{background-image: url('./Python_files/inputoutput.jpg');}
-#variablesBG{background-image: url('./Python_files/variables.png');}
-#controlsBG{background-image: url('./Python_files/conditionals.jpg');}
-#pythonErrorsBG{background-image: url('./Python_files/error.jpg');}
-#loopsBG{background-image: url('./Python_files/loop.jpg');}
-#functions2BG{background-image: url('./Python_files/functions.jpg');}
-#listsBG{background-image: url('./Python_files/lists.jpg');}
-#hangmanBG{background-image: url('./Python_files/hangman.jpg');}
-#pythonadventureBG{background-image: url('./Python_files/pythonadventure.gif');}
-#tictactoeaiBG{background-image: url('./Python_files/tictactoe.gif');}
-#tictactoe2playerBG{background-image: url('./Python_files/tictactoe2player.jpg');}
-#turtlebasicsBG{background-image: url('./Python_files/turtlebasics.JPG');}
-#pythonshapesBG{background-image: url('./Python_files/pythonshapes.gif');}
+#pythonsetupBG{background-image: url('./python/python-images/replit.png');}
+#syntaxBG{background-image: url('./python/python-images/syntax.jpg');}
+#functionsBG{background-image: url('./python/python-images/inputoutput.jpg');}
+#variablesBG{background-image: url('./python/python-images/variables.png');}
+#controlsBG{background-image: url('./python/python-images/conditionals.jpg');}
+#pythonErrorsBG{background-image: url('./python/python-images/error.jpg');}
+#loopsBG{background-image: url('./python/python-images/loop.jpg');}
+#functions2BG{background-image: url('./python/python-images/functions.jpg');}
+#listsBG{background-image: url('./python/python-images/lists.jpg');}
+#hangmanBG{background-image: url('./python/python-images/hangman.jpg');}
+#pythonadventureBG{background-image: url('./python/python-images/pythonadventure.gif');}
+#tictactoeaiBG{background-image: url('./python/python-images/tictactoe.gif');}
+#tictactoe2playerBG{background-image: url('./python/python-images/tictactoe2player.jpg');}
+#turtlebasicsBG{background-image: url('./python/python-images/turtlebasics.JPG');}
+#pythonshapesBG{background-image: url('./python/python-images/pythonshapes.gif');}
 #pythonwritingBG{background-image: url('typing.gif');}
-#turtleraceBG{background-image: url('./Python_files/turtlerace.jpg');}
-#interactiveturtlesBG{background-image: url('./Python_files/interactiveturtles.jpg');}
-#clickingturtlesBG{background-image: url('./Python_files/clickingturtles.jpg');}
-#pythonhideseekBG{background-image: url('./Python_files/pythonhideseek.jpg');}
+#turtleraceBG{background-image: url('./python/python-images/turtlerace.jpg');}
+#interactiveturtlesBG{background-image: url('./python/python-images/interactiveturtles.jpg');}
+#clickingturtlesBG{background-image: url('./python/python-images/clickingturtles.jpg');}
+#pythonhideseekBG{background-image: url('./python/python-images/pythonhideseek.jpg');}
 
 /*JS Images */
 #codecademyBG{background-image: url('Codecademy.png');}
@@ -462,7 +450,7 @@ background-position: center; background-size: contain;}
 #tamagotchiBG{background-image: url('tamagotchi.gif');}
 #jquerysetupBG{background-image: url('jquerysetup.png');}
 #rainbowbuttonBG{background-image: url('rainbowbutton.gif');}
-#tictactoeBG{background-image: url('./Python_files/tictactoe.gif');}
+#tictactoeBG{background-image: url('./python/python-images/tictactoe.gif');}
 #whackamoleBG{background-image: url('whackamole.jpg');}
 
 /*Career Exposure Images */
