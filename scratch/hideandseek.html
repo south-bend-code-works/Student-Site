@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="../main.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="../SBCS_favicon.png">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Hide and Seek</title>
+  </head>
+
+  <body>
+    <!--Nav bar  -->
+    <nav class="light-blue lighten-1">
+      <div class="nav-wrapper">
+        <a href="#!"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="hide-on-med-and-down">
+          <li><a href="../home.html">Home</a></li>
+          <li><a href="../scratch.html">Ages 7-12</a></li>
+          <li><a href="../techimmersion.html">Ages 13-18</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="../home.html">Home</a></li>
+      <li><a href="../scratch.html">Ages 7-12</a></li>
+      <li><a href="../techimmersion.html">Ages 13-18</a></li>
+    </ul>
+
+    <div class="row">
+      <div class="col s6 offset-s3">
+        <h4 style="font-weight:bold;"><center>Hide and Seek</center></h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <h6>In this lesson you will:</h6>
+        <ol>
+          <li>Create a simple hide and seek game in Scratch.</li>
+        </ol>
+        <p>Click the sprite when it appears to gain points.</p>
+      </div>
+    </div>
+
+    <!--Scratch Lesson: Embedded Example- iframe -->
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/228575551/" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!--Scratch Lesson: Directions Start Here-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 class="lessonSubheading">Let's get started!</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Open the <a class="blueLink" href="https://scratch.mit.edu/projects/editor/?tutorial=getStarted" target="_blank">starter project</a> !</h6>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+            <h6> Log into your Scratch account.</h6>
+
+          </div>
+        </div>
+      </div>
+      <!--Collapsible Div-->
+      <div class="row">
+        <div class="col s6 offset-s2">
+          <ul class="collapsible">
+             <li>
+               <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>How to sign in</div>
+               <div class="collapsible-body"><img src="./scratch-images/scratchsignin.png"></div>
+             </li>
+          </ul>
+        </div>
+      </div>
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6> Title your project.</h6>
+        </div>
+      </div>
+    </div>
+
+    <!--Collapsible Div-->
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+           <li>
+             <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>How to add a title</div>
+             <div class="collapsible-body"><span>1. Look at the top of the screen for this text box.<br> <br> <img src="./scratch-images/nameproject.png"> <br> <br> 2. Delete the word "Untitled". <br> <br> 3. Type in a new name for your project.</span></div>
+           </li>
+        </ul>
+      </div>
+    </div>
+
+    <!--Lesson Subheading-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 class="lessonSubheading">Characters</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>The cat sprite that you can see is the Scratch mascot. Let’s get rid of it, by clicking the x in the corner of the cat icon.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <img src="./scratch-images/deletecat.png">
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Add the character you want to play hide and seek with to your project.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Collapsible Div-->
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+           <li>
+             <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>How to add characters</div>
+             <div class="collapsible-body"><span><img src="./scratch-images/howtoaddcharacter.png"></span></div>
+           </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6 class="infosection">Save your project</h6>
+        </div>
+      </div>
+    </div>
+
+    <!--Collapsible -->
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+           <li>
+             <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>How to save your project</div>
+             <div class="collapsible-body"><span>Click "File" in the top-left corner <br> <br> <img src="./scratch-images/file.png"> <br> <br> Click "Save Now"  <br><br><img src="./scratch-images/savenow.png"> <br><br> Your project is now saved! </span></div>
+           </li>
+        </ul>
+      </div>
+    </div>
+
+    <!--Lesson Subheading-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 class="lessonSubheading">Stage Backdrop</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div -->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Add a backdrop.</h6>
+        </div>
+      </div>
+    </div>
+
+    <!--Collapsible-->
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+         <li>
+           <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>How to add a backdrop</div>
+           <div class="collapsible-body"><span>At the moment, the stage is white, and looks pretty boring! Let’s add a backdrop to the stage, by clicking the blue icon on the right side of the screen.<br> <br> Use the picture below as a reference, if needed. <br> <br> <img src="./scratch-images/stage.png"</span></div>
+         </li>
+        </ul>
+      </div>
+    </div>
+
+    <!--Lesson Subheading-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 class="lessonSubheading">Coding!</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div -->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div -->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Code your character to <span class="looks">disappear</span> and <span class="looks">reappear</span> in a <span class="motion">random position</span> throughout the game.</h6>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>You will need an <span class="events">Event</span> block to trigger your code, a <span class="control">Loop </span>and a <span class="control">wait</span> block,</span> a <span class="motion">Motion block</span> to make the sprite <span class="motion">move randomly</span>, and two <span class="looks">Looks</span> blocks to make it disappear and reappear.</h6>
+        </div>
+      </div>
+    </div>
+
+    <!--Lesson Subheading-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 class="lessonSubheading">Keeping Score</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div -->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div -->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Add a <span class="variables">variable</span> called <span class="variables">score</span>.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div -->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div -->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>   <span class="variables">Set the score to 0</span> <span class="events">when the green flag is clicked</span>.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div -->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div -->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>   <span class="variables">Add 1 to score</span> <span class="events">when the sprite is clicked</span>.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div -->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div -->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Add a cool <span class="sound">sound</span> that plays <span class="events">when you click on your character</span>.</h6>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="row">
+      <!--Lesson Checkbox Div -->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div -->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Add a <span class="looks">message</span> that appears <span class="events">when you click on the character.</h6>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6 class="infosection">Save your project</h6>
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+    <!--Project Complete Banner-->
+    <div class="row blue white-text">
+      <div class="col s4 offset-s4">
+        <h5 style="text-align:center;">Congrats! Project complete!</h5>
+      </div>
+    </div>
+
+    <!--Card: Prompt - Find Another Project-->
+    <div class="row">
+      <div class="col s4 offset-s4">
+        <div class="card findanotherproject">
+          <div class="card-content">
+            <div class="cardDescription">
+              <h6>Find another project?</h6>
+              <div class="browse">
+                <br>
+                <a href="scratch.html">
+                  <button>Browse all projects</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

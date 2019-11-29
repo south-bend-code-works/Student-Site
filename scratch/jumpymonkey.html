@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="../main.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="../SBCS_favicon.png">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Jumpy Monkey- Practice using Gravity</title>
+  </head>
+
+  <body>
+    <!--Nav bar  -->
+    <nav class="light-blue lighten-1">
+      <div class="nav-wrapper">
+        <a href="#!"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="hide-on-med-and-down">
+          <li><a href="../home.html">Home</a></li>
+          <li><a href="../scratch.html">Ages 7-12</a></li>
+          <li><a href="../techimmersion.html">Ages 13-18</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="../home.html">Home</a></li>
+      <li><a href="../scratch.html">Ages 7-12</a></li>
+      <li><a href="../techimmersion.html">Ages 13-18</a></li>
+    </ul>
+
+    <div class="row">
+      <div class="col s6 offset-s3">
+        <h4 style="font-weight:bold;"><center>Jumpy Monkey- Practice using Gravity</center></h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <h6>In this lesson you will:</h6>
+        <ol>
+          <li>Create a collection game and we know just the jumpy monkey to do help!</li>
+        </ol>
+        <p>Your character will move with the arrow keys, move him around to pick up the prizes and avoid the octopus.</p>
+      </div>
+    </div>
+
+    <!--Scratch Lesson: Embedded Example- iframe -->
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/323378034/" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!--Scratch Lesson: Directions Start Here-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 class="lessonSubheading">Let's get started!</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Open the <a href="https://scratch.mit.edu/projects/editor/?tutorial=getStarted" class="blueLink" target="_blank">starter project</a>!</h6>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+            <h6> Log into your Scratch account.</h6>
+
+          </div>
+        </div>
+      </div>
+      <!--Collapsible Div-->
+      <div class="row">
+        <div class="col s6 offset-s2">
+          <ul class="collapsible">
+             <li>
+               <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>How to sign in</div>
+               <div class="collapsible-body"><img src="./scratch-images/scratchsignin.png"></div>
+             </li>
+          </ul>
+        </div>
+      </div>
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6> Title your project.</h6>
+        </div>
+      </div>
+    </div>
+
+    <!--Collapsible Div-->
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+           <li>
+             <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>How to add a title</div>
+             <div class="collapsible-body"><span>1. Look at the top of the screen for this text box.<br> <br> <img src="./scratch-images/nameproject.png"> <br> <br> 2. Delete the word "Untitled". <br> <br> 3. Type in a new name for your project.</span></div>
+           </li>
+        </ul>
+      </div>
+    </div>
+
+    <!--Lesson Subheading-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 class="lessonSubheading">Characters</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>The cat sprite that you can see is the Scratch mascot. Let’s get rid of it, by clicking the blue x in the corner.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <img src="./scratch-images/deletecat.png">
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Add a character like our Monkey for you to control. <br>This will be the character you control to collect prizes.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Collapsible Div-->
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+           <li>
+             <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>How to add characters</div>
+             <div class="collapsible-body"><span><img src="./scratch-images/howtoaddcharacter.png"></span></div>
+           </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Add a prize sprite.</h6>
+          <p>I chose a banana</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Add an arrow.</h6>
+          <p>We will use this arrow to tell the character which direction to jump.</p>
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6 class="infosection">Save your project</h6>
+        </div>
+      </div>
+    </div>
+
+    <!--Collapsible -->
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+           <li>
+             <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>How to save your project</div>
+             <div class="collapsible-body"><span>Click "File" in the top-left corner <br> <br> <img src="./scratch-images/file.png"> <br> <br> Click "Save Now"  <br><br><img src="./scratch-images/savenow.png"> <br><br> Your project is now saved! </span></div>
+           </li>
+        </ul>
+      </div>
+    </div>
+
+    <!--Lesson Subheading-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 class="lessonSubheading">Stage Backdrop</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div -->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Add a backdrop.</h6>
+        </div>
+      </div>
+    </div>
+
+    <!--Collapsible-->
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+         <li>
+           <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>How to add a backdrop</div>
+           <div class="collapsible-body"><span>At the moment, the stage is white, and looks pretty boring! Let’s add a backdrop to the stage, by clicking the blue icon on the right side of the screen.<br> <br> Use the picture below as a reference, if needed. <br> <br> <img src="./scratch-images/stage.png"</span></div>
+         </li>
+        </ul>
+      </div>
+    </div>
+
+    <!--Lesson Subheading-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 class="lessonSubheading">Creating variables</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div -->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Click on the <span class="variables">variables</span> tab and create 5 variables:</h6>
+          <ol>
+            <li>Prize</li>
+            <li>Fall Speed</li>
+            <li>Launch Distance</li>
+            <li>Gravity</li>
+            <li>Launches</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <img src="./scratch-images/jumpy1.JPG">
+      </div>
+    </div>
+
+    <!--Lesson Subheading-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 class="lessonSubheading">Set the position of the Arrow.</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div -->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div -->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Position the arrow in the bottom, left corner of your game.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div -->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div -->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Using the <span class="motion">go to</span> block, add code so that your arrow starts and stays in the same place in the game, as well as staying in <span class="looks">front</span> of our monkey when we start.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Also <span class="variables">set your Launch Distance</span> variable to 10. Add a <span class="events">when the green flag is clicked</span> to the start of our code.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Then code the arrow to <span class="motion">point in direction</span> set at 45 degrees.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Collapsible Div-->
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+           <li>
+             <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>Hint</div>
+             <div class="collapsible-body"><span><img src="./scratch-images/jumpy2.JPG"></span></div>
+           </li>
+        </ul>
+      </div>
+    </div>
+
+    <!--Lesson Subheading-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 class="lessonSubheading">Coding the arrow to rotate.</h5>
+      </div>
+    </div>
+
+<div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Your arrow keys are going to be used for rotating the arrow right and left.</h6>
+        <p>You will rotate the arrow to launch your character in the best direction into the air.</p>
+      </div>
+    </div>
+  </div>
+
+
+<div class="row">
+  <!--Lesson Checkbox Div-->
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span></span>
+          </label>
+        </p>
+      </form>
+    </div>
+  </div>
+  <!--Instruction Div-->
+  <div class="col s6">
+    <div class="projectsection1">
+      <h6>Code your left and right arrow keys to <span class="motion">turn 5 degrees</span> when <span class="events">green flag is clicked.</span></h6>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <!--Collapsible Div-->
+  <div class="col s6 offset-s2">
+    <ul class="collapsible">
+       <li>
+         <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>Hint</div>
+         <div class="collapsible-body"><span><img src="./scratch-images/jumpy3.JPG"></span></div>
+       </li>
+    </ul>
+  </div>
+</div>
+
+<div class="row">
+  <!--Lesson Checkbox Div-->
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span></span>
+          </label>
+        </p>
+      </form>
+    </div>
+  </div>
+  <!--Instruction Div-->
+  <div class="col s6">
+    <div class="projectsection1">
+      <h6>Code the <span class="events">up arrow key when pressed</span> to <span class="variables">change the fall speed</span> with an <span class="control">if/then block</span>.</h6>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <!--Lesson Checkbox Div-->
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span></span>
+          </label>
+        </p>
+      </form>
+    </div>
+  </div>
+  <!--Instruction Div-->
+  <div class="col s6">
+    <div class="projectsection1">
+      <h6> Let's do the same thing to decrease the launch distance. Code the <span class="events">down arrow key when pressed</span> to <span class="variables">change the fall speed</span> with an <span class="control">if/then block</span>.</h6>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <!--Collapsible Div-->
+  <div class="col s6 offset-s2">
+    <ul class="collapsible">
+       <li>
+         <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>Hint</div>
+         <div class="collapsible-body"><span><img src="./scratch-images/jumpy4.JPG"></span></div>
+       </li>
+    </ul>
+  </div>
+</div>
+
+<div class="row">
+  <!--Lesson Checkbox Div-->
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span></span>
+          </label>
+        </p>
+      </form>
+    </div>
+  </div>
+  <!--Instruction Div-->
+  <div class="col s6">
+    <div class="projectsection1">
+      <h6>Lastly, for the arrow, we want our <span class="variables">launch speed</span> to reset when <span class="events">green flag is clicked</span>.</h6>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <!--Collapsible Div-->
+  <div class="col s6 offset-s2">
+    <ul class="collapsible">
+       <li>
+         <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>Hint</div>
+         <div class="collapsible-body"><span><img src="./scratch-images/jumpy5.JPG"></span></div>
+       </li>
+    </ul>
+  </div>
+</div>
+
+    <!--Lesson Subheading-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 class="lessonSubheading">Coding your character to launch</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Click on your monkey, first we want <span class="events">when green flag is clicked</span>, our monkey to be <span class="looks">set size to 50%</span>. That will make him easier to throw!</h6>
+          <p>Make sure we <span class="motion">set rotation style to don't rotate</span> and <span class="variables">set fall speed to 0</span>.</p>
+        </div>
+      </div>
+      </div>
+
+      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+            <h6>Still under our monkey, add a <span class="events">when space key pressed</span> block.</h6>
+            <p>Add a <span class="motion">go to Launcher</span>block, then a <span class="looks">show</span> block.</p>
+            <p>And at the end of this line of code, we'll add our last block, <span class="variables">change Launches by -1.</span>
+            <p>This let's us change the jumping power of our monkey.</p>
+          </div>
+        </div>
+        </div>
+
+        <div class="row">
+          <!--Collapsible Div-->
+          <div class="col s6 offset-s2">
+            <ul class="collapsible">
+               <li>
+                 <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>Hint</div>
+                 <div class="collapsible-body"><span><img src="./scratch-images/jumpy8.JPG"></span></div>
+               </li>
+            </ul>
+          </div>
+        </div>
+
+      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+            <h6>While still on our monkey, we need to add another <span class="events">when space key pressed</span> block.</h6>
+            <p>We can add a <span class="motion">go to Launcher</span> and a <span class="motion">point in direction</span><span class="sensing">direction of launcher</span> while we <span class="variables">set Fall Speed to 0</span>.</p>
+            <p>But we want this to repeat, so we need to add a <span class="control">repeat until</span> block. In that block, we'll add an <span class="operators">or</span> block with <span class="sensing">touching edge</span> and <span class="sensing">touching trees</span> on either side.</h6>
+            <p>In that <span class="control">repeat until block</span> we will add our variables.</p>
+          </div>
+        </div>
+        </div>
+
+        <div class="row">
+          <!--Collapsible Div-->
+          <div class="col s6 offset-s2">
+            <ul class="collapsible">
+               <li>
+                 <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>Hint</div>
+                 <div class="collapsible-body"><span><img src="./scratch-images/jumpy6.JPG"></span></div>
+               </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <!--Lesson Checkbox Div-->
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+              </form>
+            </div>
+          </div>
+
+          <!--Instruction Div-->
+          <div class="col s6">
+            <div class="projectsection1">
+              <h6>While still in our repeat block, add a <span class="motion">move</span> <span class="variables">Launch Distance</span> <span class="motion">steps</span> block.</h6>
+              <p>A <span class="motion">change y by</span> <span class="variables">Fall Speed</span> block.</p>
+              <p>Then a <span class="variables">change Fall Speed by ___</span> block, and add in our <span class="variables">Gravity</span> block.</p>
+              <p>Top it all off at the end by adding a <span class="motion">go to Launcher</span> and <span class="variables">change Launches by 1</span> at the bottom.</p>
+            </div>
+          </div>
+          </div>
+
+          <div class="row">
+            <!--Collapsible Div-->
+            <div class="col s6 offset-s2">
+              <ul class="collapsible">
+                 <li>
+                   <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>Hint</div>
+                   <div class="collapsible-body"><span><img src="./scratch-images/jumpy7.JPG"></span></div>
+                 </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row">
+            <!--Lesson Checkbox Div-->
+            <div class="col s1 offset-s1">
+              <div class="checkbox">
+                <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </p>
+                </form>
+              </div>
+            </div>
+            <!--Instruction Div-->
+            <div class="col s6">
+              <div class="projectsection1">
+                <h6>Test your project, does it work?</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <!--Lesson Checkbox Div-->
+            <div class="col s1 offset-s1">
+              <div class="checkbox">
+                <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </p>
+                </form>
+              </div>
+            </div>
+            <!--Instruction Div-->
+            <div class="col s6">
+              <div class="projectsection1">
+                <h6 class="infosection">Save your project</h6>
+              </div>
+            </div>
+          </div>
+
+    <!--Lesson Subheading-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 class="lessonSubheading">Cloning our Bananas</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>We need to code our bananas.</h6>
+          <p>Click on your prize, add a <span class="events">when green flag is clicked</span>, then we'll need a <span class="looks">hide</span>, make sure we <span class="variables">set prize to 3</span>.</p>
+        </div>
+      </div>
+      </div>
+
+      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+            <h6>Next we're going to add a <span class="control">repeat</span> block, with our prize in the __.</h6>
+            <p>In our <span class="control">repeat</span> block, we will be <span class="control">create clone of myself</span></p>
+          </div>
+        </div>
+        </div>
+
+        <div class="row">
+          <!--Collapsible Div-->
+          <div class="col s6 offset-s2">
+            <ul class="collapsible">
+               <li>
+                 <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>Hint</div>
+                 <div class="collapsible-body"><span><img src="./scratch-images/jumpy9.JPG"></span></div>
+               </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <!--Lesson Checkbox Div-->
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+              </form>
+            </div>
+          </div>
+
+          <!--Instruction Div-->
+          <div class="col s6">
+            <div class="projectsection1">
+              <h6>Now we have our bananas set to appear and disappear.</h6>
+              <p>Next we're going to move on to cloning our bananas.</p>
+            </div>
+          </div>
+          </div>
+
+          <div class="row">
+            <!--Lesson Checkbox Div-->
+            <div class="col s1 offset-s1">
+              <div class="checkbox">
+                <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </p>
+                </form>
+              </div>
+            </div>
+
+            <!--Instruction Div-->
+            <div class="col s6">
+              <div class="projectsection1">
+                <h6>First we need to add a <span class="events">when I start as a clone</span> block. Have the clone <span class="motion">go to x:</span><span class="operators">pick random 1 to 200</span><span class="motion">y:</span><span class="operators">pick random -140 to 140</span>.</h6>
+                <p>Then <span class="looks">set size to</span><span class="operators">pick random 50 to 100</span><span class="looks">%</span>.</p>
+              </div>
+            </div>
+            </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Go to the looks block and <span class="looks">set color effect to </span><span class="operators">pick random -10 to 20</span></h6>
+          <p>Then attach to your code a <span class="looks">show</span> block.</p>
+          <p>This will display a few more bananas for our monkey to catch.</p>
+        </div>
+      </div>
+      </div>
+
+      <div class="row">
+        <!--Collapsible Div-->
+        <div class="col s6 offset-s2">
+          <ul class="collapsible">
+             <li>
+               <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>Hint</div>
+               <div class="collapsible-body"><span><img src="./scratch-images/jumpy10.JPG"></span></div>
+             </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+            <h6>Test your project, does it work?</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+            <h6 class="infosection">Save your project</h6>
+          </div>
+        </div>
+      </div>
+
+      <!--Lesson Subheading-->
+      <div class="row">
+        <div class="col s6 offset-s1">
+          <h5 class="lessonSubheading">Adding in a Score</h5>
+        </div>
+      </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>But wait, if our monkey touches the bananas, nothing happens. Let's fix that.</h6>
+        </div>
+      </div>
+      </div>
+
+      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+            <h6>In our same line of code in the banana that starts with <span class="events">When I start as a clone</span>, add a <span class="control">wait until</span><span class="sensing">touching Monkey</span>.</h6>
+            <p>Then we need to <span class="variables">change prize by -1</span>, and add in an <span class="control">if/then</span> block.</p>
+          </div>
+        </div>
+        </div>
+
+        <div class="row">
+          <!--Collapsible Div-->
+          <div class="col s6 offset-s2">
+            <ul class="collapsible">
+               <li>
+                 <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>Hint</div>
+                 <div class="collapsible-body"><span><img src="./scratch-images/jumpy11.JPG" width="500px"></span></div>
+               </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <!--Lesson Checkbox Div-->
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+              </form>
+            </div>
+          </div>
+
+          <!--Instruction Div-->
+          <div class="col s6">
+            <div class="projectsection1">
+              <h6>In our <span class="control">if/then</span> block, we'll make our <span class="variables">prize</span><span class="operators">= 0</span>.</h6>
+              <p>Within our <span class="control">if/then</span> block, we need to <span class="events">broadcast gameover</span>.</p>
+              <p>Lastly, outside of our <span class="control">if/then</span> block, we need to <span class="control">delete this clone</span>.</p>
+            </div>
+          </div>
+          </div>
+
+          <div class="row">
+            <!--Collapsible Div-->
+            <div class="col s6 offset-s2">
+              <ul class="collapsible">
+                 <li>
+                   <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>Hint</div>
+                   <div class="collapsible-body"><span><img src="./scratch-images/jumpy12.JPG" width="500px"></span></div>
+                 </li>
+              </ul>
+            </div>
+          </div>
+
+            <!--Lesson Subheading-->
+            <div class="row">
+              <div class="col s6 offset-s1">
+                <h5 class="lessonSubheading">You won!</h5>
+              </div>
+            </div>
+
+            <div class="row">
+              <!--Lesson Checkbox Div-->
+              <div class="col s1 offset-s1">
+                <div class="checkbox">
+                  <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span></span>
+                      </label>
+                    </p>
+                  </form>
+                </div>
+              </div>
+
+            <!--Instruction Div-->
+            <div class="col s6">
+              <div class="projectsection1">
+                <h6>When our player has collected all of the bananas, let's give them a reward banner.</h6>
+                <p>Make a new sprite, and put some fun text on there. I put <strong>You Won!</strong></p>
+              </div>
+            </div>
+            </div>
+
+            <div class="row">
+              <div class="col s6 offset-s2">
+                <img src="./scratch-images/jumpy13.JPG" width="300px">
+              </div>
+            </div>
+
+            <div class="row">
+              <!--Lesson Checkbox Div-->
+              <div class="col s1 offset-s1">
+                <div class="checkbox">
+                  <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span></span>
+                      </label>
+                    </p>
+                  </form>
+                </div>
+              </div>
+
+              <!--Instruction Div-->
+              <div class="col s6">
+                <div class="projectsection1">
+                  <h6>Add a <span class="events">When green flag clicked</span>, <span class="variables">set Launches to 0</span>, <span class="variables">hide variable Launches</span> and <span class="looks">hide</span>.</h6>
+                  <p>This will hide the variable.</p>
+                </div>
+              </div>
+              </div>
+
+              <div class="row">
+                <!--Lesson Checkbox Div-->
+                <div class="col s1 offset-s1">
+                  <div class="checkbox">
+                    <form action="#">
+                      <p>
+                        <label>
+                          <input type="checkbox" />
+                          <span></span>
+                        </label>
+                      </p>
+                    </form>
+                  </div>
+                </div>
+
+                <!--Instruction Div-->
+                <div class="col s6">
+                  <div class="projectsection1">
+                    <h6>Use a <span class="events">When I recieve gameover</span> block, this will tell the computer if the player has won or not.</h6>
+                    <p>Add a <span class="motion">go to x:__ y:__</span>. I chose the center.</p>
+                    <p>Since we want the message to be on the top layer, add a <span class="looks">go to front layer</span> and <span class="looks">show</span>.</p>
+                    <p>Next, we need to<span class="variables">show variable Launches</span>, ended with a <span class="events">stop all</span>.</p>
+                  </div>
+                </div>
+                </div>
+
+                <div class="row">
+                  <!--Collapsible Div-->
+                  <div class="col s6 offset-s2">
+                    <ul class="collapsible">
+                       <li>
+                         <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>Hint</div>
+                         <div class="collapsible-body"><span><img src="./scratch-images/jumpy14.JPG" width="300px"></span></div>
+                       </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <!--Lesson Checkbox Div-->
+                  <div class="col s1 offset-s1">
+                    <div class="checkbox">
+                      <form action="#">
+                        <p>
+                          <label>
+                            <input type="checkbox" />
+                            <span></span>
+                          </label>
+                        </p>
+                      </form>
+                    </div>
+                  </div>
+
+                  <!--Instruction Div-->
+                  <div class="col s6">
+                    <div class="projectsection1">
+                      <h6>Finally, while still under our <strong>You Won!</strong> sprite, we need to add a <span class="events">When space key pressed</span> event block.</h6>
+                      <p>Then, attach to it, a <span class="variables">change Launches by 1</span> block, then <span class="variables">change the score by 1</span>.</h6>
+                    </div>
+                  </div>
+                  </div>
+
+    <!--Lesson Subheading-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 class="lessonSubheading">Sound</h5>
+        <h6>If you want, add some sound to your project!</h6>
+        <p>Think about adding sound:</p>
+
+      </div>
+    </div>
+
+      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+            <h6>When you launch your character.</h6>
+          </div>
+        </div>
+        </div>
+
+
+        <div class="row">
+          <!--Lesson Checkbox Div-->
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+              </form>
+            </div>
+          </div>
+
+          <!--Instruction Div-->
+          <div class="col s6">
+            <div class="projectsection1">
+              <h6>When your character collects prizes</h6>
+            </div>
+          </div>
+          </div>
+
+          <div class="row">
+            <!--Lesson Checkbox Div-->
+            <div class="col s1 offset-s1">
+              <div class="checkbox">
+                <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </p>
+                </form>
+              </div>
+            </div>
+
+            <!--Instruction Div-->
+            <div class="col s6">
+              <div class="projectsection1">
+                <h6>When the game ends.</h6>
+              </div>
+            </div>
+            </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6 class="infosection">Save your project</h6>
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+
+    <!--Project Complete Banner-->
+    <div class="row blue white-text">
+      <div class="col s4 offset-s4">
+        <h5 style="text-align:center;">Congrats! Project complete!</h5>
+      </div>
+    </div>
+
+    <!--Card: Prompt - Find Another Project-->
+    <div class="row">
+      <div class="col s4 offset-s4">
+        <div class="card findanotherproject">
+          <div class="card-content">
+            <div class="cardDescription">
+              <h6>Find another project?</h6>
+              <div class="browse">
+                <br>
+                <a href="scratch.html">
+                  <button>Browse all projects</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

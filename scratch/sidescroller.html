@@ -1,0 +1,1601 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="../main.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="../SBCS_favicon.png">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Side Scroller</title>
+  </head>
+
+  <body>
+    <!--Nav bar  -->
+    <nav class="light-blue lighten-1">
+      <div class="nav-wrapper">
+        <a href="#!"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="hide-on-med-and-down">
+          <li><a href="../home.html">Home</a></li>
+          <li><a href="../scratch.html">Ages 7-12</a></li>
+          <li><a href="../techimmersion.html">Ages 13-18</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="../home.html">Home</a></li>
+      <li><a href="../scratch.html">Ages 7-12</a></li>
+      <li><a href="../techimmersion.html">Ages 13-18</a></li>
+    </ul>
+
+    <div class="row">
+      <div class="col s6 offset-s3">
+        <h4 style="font-weight:bold;"><center>Side Scroller</center></h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <h6>In this lesson you will:</h6>
+        <ol>
+          <li>Build a side-scrolling game where you navigate around obstacles to get a prize!</li>
+        </ol>
+      </div>
+    </div>
+
+    <!--Scratch Lesson: Embedded Example- iframe -->
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/249915249" frameborder="0" allowfullscreen></iframe>
+        <p>Use the right/left arrows to move and the up arrow to jump!</p>
+      </div>
+    </div>
+
+    <!--Scratch Lesson: Directions Start Here-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 class="lessonSubheading">Let's get started!</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Go to <a href="https://scratch.mit.edu/projects/331652736/editor/" class="blueLink" target="_blank">starter project</a> !</h6>
+          <p>This project has a lot of resources you will be using, including a sprite as well as a track we will program.</p>
+          </div>
+        </div>
+    </div>
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Log into your Scratch account.</h6>
+        </div>
+      </div>
+    </div>
+    <!--Collapsible Div-->
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+           <li>
+             <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>How to sign in</div>
+             <div class="collapsible-body"><img src="./scratch-images/scratchsignin.png"></div>
+           </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Title your project.</h6>
+        </div>
+      </div>
+    </div>
+
+    <!--Collapsible Div-->
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+           <li>
+             <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>How to add a title</div>
+             <div class="collapsible-body"><span>1. Look at the top of the screen for this text box.<br> <br> <img src="./scratch-images/nameproject.png"> <br> <br> 2. Delete the word "Untitled". <br> <br> 3. Type in a new name for your project.</span></div>
+           </li>
+        </ul>
+      </div>
+    </div>
+
+    <!--Lesson Subheading-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 style="font-weight:bold;">Sprite</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>You can change your sprite, but keep in mind that you need a sprite that has a lot of costumes.</h6>
+          <p>I used a Mario sprite, with all of the different costumes, the avatar has a lot of dynamic movement.</p>
+        </div>
+      </div>
+    </div>
+
+  <!--Lesson Subheading-->
+  <div class="row">
+    <div class="col s6 offset-s1">
+      <h5 style="font-weight:bold;">Stage Backdrop</h5>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6 class="infosection">Save your project</h6>
+      </div>
+    </div>
+  </div>
+
+  <!--Collapsible Div-->
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <ul class="collapsible">
+         <li>
+           <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>How to save your project</div>
+           <div class="collapsible-body"><span>Click "File" in the top-left corner <br> <br> <img src="./scratch-images/file.png"> <br> <br> Click "Save Now"  <br><br><img src="./scratch-images/savenow.png"> <br><br> Your project is now saved! </span></div>
+         </li>
+      </ul>
+    </div>
+  </div>
+
+  <!--Lesson Subheading-->
+  <div class="row">
+    <div class="col s6 offset-s1">
+      <h5 style="font-weight:bold;">Side Scrolling</h5>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Part of what makes this game so much fun, and pretty unique, is the side scrolling terrain that Mario walks on.</h6>
+        <p>It looks like it goes on forever, but in fact you will see there are several sprites that are different sizes and shapes that make up what Mario walks on.</p>
+        <p>Our first step will be to program these sprites.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <p><img src="./scratch-images/sidescroller5.JPG" width="300px"></p>
+      <p><img src="./scratch-images/sidescroller6.JPG" width="300px"></p>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Click on the first sprite, <strong>Sprite1</strong>, start with a <span class="events">when green flag clicked</span> and a <span class="motion">go to x: 0 y: 0</span>.</h6>
+        <p>This way whenever the green flag is clicked, our terrain will start in the very corner of the screen, x: 0 y: 0</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Now grab a <span class="looks">show</span> block and a <span class="control">forever</span> block. Attach this below our <span class="motion">go to x: 0 y: 0</span> block.</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Inside our <span class="control">forever</span> block, grab a <span class="motion">set x to ____</span> block.</h6>
+        <p>This is where our magic happens, we want the sprite to scroll along our x plane.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>In order for our sprite to scroll across our x plane, we'll grab a <span class="operators">__ + __</span> block to place inside the <span class="motion">set x to ____</span> block.</h6>
+        <p>Now, grab a <span class="operators">__ * __</span> block and place that on the right side of our <span class="operators">__ + __</span> block. Set that block to be <span class="operators">480 * 0</span></h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>For the left side of the <span class="operators">__ + __</span> block we will be making our first <span class="variables">variable</span>.</h6>
+        <p>Go to Make a Variable, and name it <strong>scrollx</strong>.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <p><img src="./scratch-images/sidescroller7.JPG" width="300px"></p>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Now take your freshly made variable and place it on the left side of our <span class="operators">__ + __</span>.</h6>
+        <p>Your code should look like this for your first sprite:</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <p><img src="./scratch-images/sidescroller8.JPG" width="300px"></p>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Now that you finished your code for your first sprite in the terrain, let's code the rest.</h6>
+        <p>Right click on your code and click <strong>duplicate</strong>, this will allow you to drag all of the code we just created to a new sprite.</p>
+        <p>Do this for all of them.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <p><img src="./scratch-images/sidescroller9.JPG" width="300px"></p>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>But hold on, if we pressed our green flag, all of the sprites for our terrain would run at once. There's an easy fix for this</h6>
+        <p>For <strong>Sprite2</strong>, change the last line to <span class="motion">set x to</span><span class="operators"> </span><span class="variables">scrollx</span><span class="operators"> + </span><span class="operators"> 480 * 1</span></p>
+        <p>For <strong>Sprite3</strong>, change the last line to <span class="motion">set x to</span><span class="operators"> </span><span class="variables">scrollx</span><span class="operators"> + </span><span class="operators"> 480 * 2</span></p>
+        <p>For <strong>Sprite4</strong>, change the last line to <span class="motion">set x to</span><span class="operators"> </span><span class="variables">scrollx</span><span class="operators"> + </span><span class="operators"> 480 * 3</span></p>
+        <p>And keep on going for all of them!</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Wait, for our last sprite, <strong>Sprite13</strong>, it's a little different.</h6>
+        <p>Remove everything inside our <span class="control">forever</span> block, we want this sprite to always show.</p>
+      </div>
+    </div>
+  </div>
+
+  <!--Lesson Subheading-->
+  <div class="row">
+    <div class="col s6 offset-s1">
+      <h5 style="font-weight:bold;">Creating a Hitbox</h5>
+      <p>A hitbox is a box used in video games to let the computer know the character has been hit.</p>
+      <p>We will be using a hitbox in our project, this is an easier way to let the computer know where our sprite is that's more efficent and runs smoother.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Our hit box will be four of the <strong>T</strong> like shapes.</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <img src="./scratch-images/sidescroller10.JPG">
+    </div>
+  </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Click on the first one, <strong>topHitTest</strong></h6>
+        <p>We'll start out simple, add a <span class="events">when green flag clicked</span>, a <span class="looks">set size to __%</span>, and a <span class="looks">set color effect to 0</span></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>For our <span class="looks">set size to __%</span> block, I changed the size to 50%. We want it to the be same size, or close to our sprite.</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>But wait, we don't want these big ugly lines to show all the time through our game, let's fix that. Take our <span class="looks">set color effect to 0</span>, change <span class="looks">color</span>in our dropdown to <span class="looks">ghost</span>, and make it 100 instead of 0.</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Now let's create our hitbox, snag a <span class="motion">go to player</span> block, then an <span class="control">if/then/else</span> block.</h6>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row">
+  <!--Lesson Checkbox Div-->
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span></span>
+          </label>
+        </p>
+      </form>
+    </div>
+  </div>
+  <!--Instruction Div-->
+  <div class="col s6">
+    <div class="projectsection1">
+      <h6>Within our <span class="control">if</span> conditional, we'll put a <span class="sensing">touching color</span> block, then change it to the color of our terrain.</h6>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col s6 offset-s2">
+    <img src="./scratch-images/sidescroller2.JPG" width="300px">
+  </div>
+</div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Let's finish with our conditional, but first we need to make a variable. This will tell the computer that our character is still scrolling through the terrain.</h6>
+        <p>Name this new variable <strong>hitTest</strong>.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Take your fancy new variable and place it within our <span class="control">if/then/else</span> block twice, the first time we'll set it to 1 but the second time we'll set it to 0.</h6>
+        <p>That way the computer knows if our character isn't touching the floor color since we just created our fancy new hitbox.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>But hold on, we're missing one more thing. Right now the computer will only test our hitbox once to see if we're touching the terrain. We need to add a <span class="control">forever</span> around our <span class="control">if/then/else</span> block.</h6>
+      </div>
+    </div>
+  </div>
+
+  <!--Collapsible Div-->
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <ul class="collapsible">
+         <li>
+           <div class="collapsible-header"><i class="material-icons orange-text infosection">info</i>I need a hint</div>
+           <div class="collapsible-body"><span><img src="./scratch-images/sidescroller11.JPG"></span></div>
+         </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Now that we've built our code for our hitbox, right click on your code and click <strong>duplicate</strong>, this will allow you to drag all of the code we just created to the rest of the <strong>T</strong> sprites.</h6>
+        <p>Do this for all of them.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Test your code</h6>
+      </div>
+    </div>
+  </div>
+
+
+    <!--Lesson Subheading-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 style="font-weight:bold;">Programming our sprite's costume</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>We're going to start by programming a costume change.</h6>
+          <p>Click on our sprite.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Grab a <span class="events">When green flag clicked</span> block, then two <span class="looks">switch costume ___</span> blocks.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Grab two <span class="control">if/then</span> blocks, let's put a costume change in each one.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>For the first <span class="control">if/then</span> block, we're going to make it so that if our sprite is touching the floor, we will switch the costume to the walk position.</h6>
+          <p>Look for a <span class="sensing">touching color</span> block and place inside our first <span class="control">if/then</span> block. Then set the color to the floor color.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <img src="./scratch-images/sidescroller2.JPG" width="300px">
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Now for our second <span class="control">if/then</span> block, we're going to make it so that if our sprite jumps, we will switch the costume to the air position.</h6>
+          <p>Look for a <span class="sensing">key ___ pressed</span> block, select up arrow form the drop down. Now place inside our second <span class="control">if/then</span> block.</p>
+        </div>
+      </div>
+    </div>
+
+    <!--Collapsible Div-->
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+           <li>
+             <div class="collapsible-header"><i class="material-icons orange-text infosection">info</i>I need a hint</div>
+             <div class="collapsible-body"><span><img src="./scratch-images/sidescroller3.JPG"></span></div>
+           </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Now let's add our first <span class="variables">variable</span> block, click <strong>make a variable</strong>, and name this one <strong>yVelocity</strong>.</h6>
+          <p>This will be for when our sprite jumps.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <img src="./scratch-images/sidescroller1.JPG" width="300px">
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Grab two <span class="variable">set yVelocity to __</span> blocks, change the first one to 1, and the second block to 15.</h6>
+          <p>Go ahead and place them in our code, one under each <span class="control">if/then</span> block.</p>
+        </div>
+      </div>
+    </div>
+
+    <!--Collapsible Div-->
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+           <li>
+             <div class="collapsible-header"><i class="material-icons orange-text infosection">info</i>I need a hint</div>
+             <div class="collapsible-body"><span><img src="./scratch-images/sidescroller4.JPG"></span></div>
+           </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Test your code!</h6>
+        </div>
+      </div>
+    </div>
+
+  <!--Lesson Subheading-->
+  <div class="row">
+    <div class="col s6 offset-s1">
+      <h5 style="font-weight:bold;">Building on our code</h5>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Now let's build on the hitbox we just made.</h6>
+        <p>Create two new variables, <strong>scrollX</strong>, and <strong>scrollY</strong></p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>When we start a new game, we want all of our variables to be 0.</h6>
+        <p>Grab three <span class="variables">set ___ to 0</span> blocks and program them for our current variables: <strong>scrollX</strong>, <strong>scrollY</strong>, and <strong>yVelocity</strong>.</p>
+        <p>Place them right under the <span class="events">when green flag clicked</span> block.</p>
+      </div>
+    </div>
+  </div>
+
+  <!--Collapsible Div-->
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <ul class="collapsible">
+         <li>
+           <div class="collapsible-header"><i class="material-icons orange-text">help</i>I need a hint</div>
+           <div class="collapsible-body"><span><img src="./scratch-images/sidescroller12.JPG"></span></div>
+         </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Next, we want our conditional to happen forever, so let's grab a <span class="control">forever</span> block.</h6>
+        <p>From now on, every conditional we have on our sprite, will be in this forever block.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Now let's code our Mario to move back and forth using the arrow keys. Grab two <span class="control">if/then/else</span> blocks and place them in our <span class="control">forever</span>block.</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>But we have to make them work with our new hitbox, so look for a <span class="operators">__ = __</span> block, input a 1 on the right side of this block, and for the left side a <span class="sensing">___ of ___</span>block.</h6>
+        <p>Go through the drop downs and change it to <span class="sensing">hitTest of rightHitTest</span>. Hint: select <strong>rightHitTest</strong> first, then you can select <strong>hitTest</strong></p>
+        <p>Place this code in the beginning of our <span class="control">if/then/else</span> block.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Now let's do the same for our next <span class="control">if/then/else</span> block, but this time for the left side.</h6>
+      </div>
+    </div>
+  </div>
+
+  <!--Collapsible Div-->
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <ul class="collapsible">
+         <li>
+           <div class="collapsible-header"><i class="material-icons orange-text">help</i>I need a hint</div>
+           <div class="collapsible-body"><span><img src="./scratch-images/sidescroller13.JPG"></span></div>
+         </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Awesome! It's coming along, for our then portions of the <span class="control">if/then/else</span> block, we'll add a <span class="control">change __ by 1.</span></h6>
+        <p>Go through the dropdown and select <strong>scrollx</strong>, and let's change our value instead of 1, to 10.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Let's do this for the left side as well, but if we just duplicate <span class="control">change scrollx by 10</span>, it will just go the right.</h6>
+        <p>If our <span class="control">change scrollx by 10.</span> block went to the right, how do we change it to go left?</p>
+      </div>
+    </div>
+  </div>
+
+  <!--Collapsible Div-->
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <ul class="collapsible">
+         <li>
+           <div class="collapsible-header"><i class="material-icons orange-text">help</i>I need a hint</div>
+           <div class="collapsible-body"><span><img src="./scratch-images/sidescroller14.JPG"></span></div>
+         </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Now let's program in our right arrow button. Grab a <span class="control">if/then</span> block, let's place it in our else portion of our first <span class="control">if/then/else</span> block.</h6>
+        <p>Add a <span class="sensing">key ___ pressed</span> block in the if portion of our <span class="control">if/then</span> block.</p>
+        <p>Now select right arrow from the dropdown so it reads <span class="sensing">key right arrow pressed</span>.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Time to add movement in, get a <span class="variables">change ___ by 1</span> block, and program it to say <span class="variables">change scrollx by -10</span> and place it in our then portion of the <span class="control">if/then</span> block.</h6>
+        <p>But, one more thing. We have to make sure it always faces the right direction. Add a <span class="motion">point in direction __</span> block, program it to point -90, and place it underneath our <span class="variables">change scrollx by -10</span>.</p>
+      </div>
+    </div>
+  </div>
+
+  <!--Collapsible Div-->
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <ul class="collapsible">
+         <li>
+           <div class="collapsible-header"><i class="material-icons orange-text">help</i>I need a hint</div>
+           <div class="collapsible-body"><span><img src="./scratch-images/sidescroller15.JPG"></span></div>
+         </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Now it's time to do the same for the left, duplicate your code and program it for the left side.</h6>
+        <p>Don't forget to change your numbers at the same time so that the right arrow goes right, and the left arrow goes left.</p>
+      </div>
+    </div>
+  </div>
+
+  <!--Collapsible Div-->
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <ul class="collapsible">
+         <li>
+           <div class="collapsible-header"><i class="material-icons orange-text">help</i>I need a hint</div>
+           <div class="collapsible-body"><span><img src="./scratch-images/sidescroller16.JPG"></span></div>
+         </li>
+      </ul>
+    </div>
+  </div>
+
+  <!--Lesson Subheading-->
+  <div class="row">
+    <div class="col s6 offset-s1">
+      <h5 style="font-weight:bold;">Last Steps</h5>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>While still on your sprite, while still in our <span class="control">forever</span> conditional, add a <span class="motion">change y by</span><span class="variables">yVelocity</span><span class="motion"> </span>.</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Add another conditional, this one will be our last. Add a <span class="control">if/then</span>block, and for our if we'll , add a <span class="operators"> </span><span class="sensing">hitTest of bottomhitTest</span><span class="operators"> = 1 </span>.</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Inside of our <span class="control">if/then</span>block, and the then, add a <span class="operators">change scrollY by -5</span>.</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Underneath the <span class="control">if/then</span>block, we need to add two more variable blocks so that our player will stay on the track. Snag a <span class="variables">change yVelocity by -1</span> and <span class="variables">change scrollY by</span> <span class="operators"> </span><span class="variables">yVelocity</span> <span class="operators"> * -1</span>.</h6>
+      </div>
+    </div>
+  </div>
+
+  <!--Collapsible Div-->
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <ul class="collapsible">
+         <li>
+           <div class="collapsible-header"><i class="material-icons orange-text">help</i>I need a hint</div>
+           <div class="collapsible-body"><span><img src="./scratch-images/sidescroller17.JPG"></span></div>
+         </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Test your code!</h6>
+        <p>Can you scroll through the course?</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6 class="infosection">Save your project</h6>
+      </div>
+    </div>
+  </div>
+
+  <!--Lesson Subheading-->
+  <div class="row">
+    <div class="col s6 offset-s1">
+      <h5 style="font-weight:bold;">Challenges</h5>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Add sounds when you reach the goal!</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>How about a limited amount of times you can touch the obstacles (when Lives = 0)?</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>How about gold coins to collect?</h6>
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6 class="infosection">Test your game until you are happy with it.</h6>
+      </div>
+    </div>
+  </div>
+
+  <!--Project Complete Banner-->
+  <div class="row blue white-text">
+    <div class="col s4 offset-s4">
+      <h5 style="text-align:center;">Congrats! Project complete!</h5>
+    </div>
+  </div>
+
+  <!--Card: Prompt - Find Another Project-->
+  <div class="row">
+    <div class="col s4 offset-s4">
+      <div class="card findanotherproject">
+        <div class="card-content">
+          <div class="cardDescription">
+            <h6>Find another project?</h6>
+            <div class="browse">
+              <br>
+              <a href="scratch.html">
+                <button>Browse all projects</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </body>
+</html>
