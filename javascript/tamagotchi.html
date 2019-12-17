@@ -1,0 +1,2600 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="../main.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="SBCS_favicon.png">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Tamagotchi!</title>
+  </head>
+  <body>
+    <!--Nav bar  -->
+    <nav class="light-blue lighten-1">
+      <div class="nav-wrapper">
+        <a href="#!"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="hide-on-med-and-down">
+          <li><a href="../home.html">Home</a></li>
+          <li><a href=".././scratch/scratch.html">Ages 7-12</a></li>
+          <li><a href="../techimmersion.html">Ages 13-18</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="../home.html">Home</a></li>
+      <li><a href=".././scratch/scratch.html">Ages 7-12</a></li>
+      <li><a href="../techimmersion.html">Ages 13-18</a></li>
+    </ul>
+
+    <div class="row">
+      <div class="col s6 offset-s3">
+        <h4 style="font-weight:bold;"><center>Tamagotchi!</center></h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <h6>In this lesson you will:</h6>
+        <ol>
+          <li>Build a website where you can take care of your own digital pet!</li>
+          <img src="tamagotchi.gif">
+        </ol>
+        <h4 class="projectTitle">What You Will Make</h4>
+        <p>Your very own digital pet to take care of!</p>
+        <a href='./tamagotchi/index.html' target="_blank"><h5>Check out an example HERE!</h5></a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 style='font-weight:bold'>Brainstorming Your Website</h5>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Start to think of what kind of pet you would like to have.</h5>
+          <p>It could be anything, a type of pokemon, a pet from a video game. The sky is the limit!</p>
+          </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 style="font-weight:bold;">Your Coding Environment</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Make a new folder in the code folder on your computer.</h6>
+          <br>
+          <h6>Name the folder <span style="font-weight:bold;">"YourFirstName_Tamagotchi"</span></h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Create an HTML file.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Name the HTML file <strong>index.html</strong></h6>
+          <p>Save it in your tamagotchi folder</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Set up your HTML file (doctype, html, head, title, body)</h6>
+        </div>
+      </div>
+    </div>
+
+    <!--Collapsible-->
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+         <li>
+           <div class="collapsible-header"><i class="material-icons orange-text infosection">info</i>I need a hint</div>
+           <div class="collapsible-body"><span>&lt;!DOCTYPE html&gt;
+             <br>
+             &lt;html&gt;
+             <br>
+             <span style="padding-left:5%;">&lt;head&gt;</span>
+             <br>
+             <span style="padding-left:7%;">&lt;title&gt;</span>
+             <br>
+             <span style="padding-left:7%;">&lt;/title&gt;</span>
+             <br>
+             <span style="padding-left:5%;">&lt;/head&gt;</span>
+             <br>
+             <span style="padding-left:5%;">&lt;body&gt;</span>
+             <br>
+             <span style="padding-left:5%;">&lt;/body&gt;</span>
+             <br>
+             &lt;/html&gt;
+           </span></div>
+         </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Create a CSS file.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Name the CSS file <strong>style.css</strong>.</h6>
+          <p>Save it in your tamagotchi folder</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Link your CSS file to your HTML file.</h6>
+        </div>
+      </div>
+    </div>
+
+    <!--Collapsible-->
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+         <li>
+           <div class="collapsible-header"><i class="material-icons orange-text infosection">info</i>I need a hint</div>
+           <div class="collapsible-body"><span><img style="width:60%; height:60%;" src="../html/html-images/linkcss.png"></span></div>
+         </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Create a JavaScript file.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Name the JavaScript file <strong>index.js</strong>.</h6>
+          <p>Save it in your tamagotchi folder</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Link your JavaScript file to your HTML file.</h6>
+        </div>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col s6 offset-s1'>
+        <h5 style='font-weight:bold'>Adding Images</h5>
+        <p>Now that we gave our pet a name, let's find a bunch of images.</p>
+        <p>Part of having a tamagotchi is seeing our pet in different states, so we will be saving multiple images for our tamagotchi.</p>
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class='col s6'>
+        <div class='projectsection1'>
+          <h6>Google search for a default image for your pet: <a class='blueLink' href='https://images.google.com/' target="_blank">Google Images</a></h6>
+          <p>Rename the image, name it the same name as your pet.</p>
+          <p>Save the image into your <strong>project's folder</strong></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <p><img src="./tamagotchi/bulba.gif"></p>
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class='col s6'>
+        <div class='projectsection1'>
+          <h6>Now we have to find another image, let's find one that let's us know if he's hungry, thirsty, or is bored.</h6>
+          <p>Rename the image.</p>
+          <p>Save the image into your <strong>project's folder</strong></p>
+        </div>
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class='col s6'>
+        <div class='projectsection1'>
+          <h6>Let's keep on going, we need one that let's us know if the tamagotchi is passed out. This will let us know before our pet 'dies' and we lose the game.</h6>
+          <p>Rename the image. I named it something easy to remember <strong>passedout.gif</strong></p>
+          <p>Save the image into your <strong>project's folder</strong></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <p><img src="./tamagotchi/passedout.gif"></p>
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class='col s6 offset-s1'>
+        <h5 style='font-weight:bold'>Stats</h5>
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class='col s6'>
+        <div class='projectsection1'>
+          <h6>Our tamagotchi will have three main stats; <strong>eating</strong>, <strong>drinking</strong>, and <strong>exercising</strong>.</h6>
+          <h6>Find images for all of our stats.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class='col s6 offset-s1'>
+        <h5 style='font-weight:bold'>Jumping into the HTML</h5>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Later on we will be coding our Javascript, but for now, we have to create the foundation in HTML</h6>
+          <p>Change your <strong> < body > </strong> tag into <strong> < body.container > </strong>.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <img src="./javascript-images/tamagotchi4.JPG">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Since we want all of our buttons and title to be in a grid, let's add a div. We'll call this our Heads Up Display.</h6>
+          <p>We'll add our other buttons in there later too.</p>
+          <p>For now, let's give our div an id and call our grid <strong>HUDgrid</strong>.</p>
+        </div>
+      </div>
+    </div>
+
+    <!--Collapsible-->
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+         <li>
+           <div class="collapsible-header"><i class="material-icons orange-text infosection">info</i>I need a hint</div>
+           <div class="collapsible-body"><span><img src="./javascript-images/tamagotchi5.JPG"></span></div>
+         </li>
+        </ul>
+      </div>
+    </div>
+
+        <div class="row">
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </p>
+                </form>
+              </div>
+            </div>
+          <div class="col s6">
+            <div class="projectsection1">
+              <h6>Add a title to your website in the body of your HTML.</h6>
+              <p>My title is <strong>Tamagotchi!</strong></p>
+              <p>Create a div for your title too. Call the id, you guessed it, <strong>title</strong></p>
+            </div>
+          </div>
+        </div>
+
+        <!--Collapsible-->
+        <div class="row">
+          <div class="col s6 offset-s2">
+            <ul class="collapsible">
+             <li>
+               <div class="collapsible-header"><i class="material-icons orange-text infosection">info</i>I need a hint</div>
+               <div class="collapsible-body"><span><img src="./javascript-images/tamagotchi6.JPG"></span></div>
+             </li>
+            </ul>
+          </div>
+        </div>
+
+    <div class='row'>
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class='col s6'>
+        <div class='projectsection1'>
+          <h6>Your digital pet needs three things to survive: food, water, and exercise.</h6>
+          <p>In your body paragraph, make three seperate <strong>< div ></strong>s</p>
+          <p>All three of these will be the same id, let's call it <strong>iconDiv</strong></p>
+        </div>
+      </div>
+    </div>
+    <!--Collapsible-->
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+         <li>
+           <div class="collapsible-header"><i class="material-icons orange-text infosection">info</i>I need a hint</div>
+           <div class="collapsible-body"><span><img src="./javascript-images/tamagotchi7.JPG"></span></div>
+         </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class='col s6'>
+        <div class='projectsection1'>
+          <h6>Making our stats interactive</h6>
+          <p>Rather than just having a static number for eating/drinking/exercise, we want our stats to go up and down. The way to do that is to create an id for the Javascript to look for.</p>
+          <p>First, let's create our food stat.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class='col s6'>
+        <div class='projectsection1'>
+          <p>Within our first <strong>iconDiv</strong>Create an image id.</p>
+          <p>Let's call it <strong>food</strong>.</p>
+          <p>Within this image id, let's also link in our picture that we grabbed earlier.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+           <li>
+             <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>I Need a Hint</div>
+             <div class="collapsible-body"><img src="./javascript-images/tamagotchi8.JPG" width="400px">
+             </div>
+           </li>
+        </ul>
+      </div>
+    </div>
+    <div class='row'>
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class='col s6'>
+        <div class='projectsection1'>
+          <h6>This is the interactive portion.</h6>
+          <p>Within our first <strong>iconDiv</strong>, create a paragraph id.</p>
+          <p>Let's call it <strong>foodStat</strong>.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+           <li>
+             <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>I Need a Hint</div>
+             <div class="collapsible-body"><img src="./javascript-images/tamagotchi9.JPG" width="400px">
+             </div>
+           </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class='col s6'>
+        <div class='projectsection1'>
+          <h6>Now we have our first stat</h6>
+          <p>Build your code for our water and exercise stats.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+           <li>
+             <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>I Need a Hint</div>
+             <div class="collapsible-body"><img src="./javascript-images/tamagotchi10.JPG" width="400px">
+             </div>
+           </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class='col s6'>
+        <div class='projectsection1'>
+          <h6>Save Your Code</h6>
+        </div>
+      </div>
+    </div>
+
+          <div class='row'>
+            <div class='col s6 offset-s1'>
+              <h5 style='font-weight:bold'>Making our images responsive</h5>
+            </div>
+          </div>
+
+          <div class='row'>
+            <div class="col s1 offset-s1">
+              <div class="checkbox">
+                <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span></span>
+                      </label>
+                    </p>
+                  </form>
+                </div>
+              </div>
+            <div class='col s6'>
+              <div class='projectsection1'>
+                <h6>Just like we made our stats interactive, our images have to change depending on our pet's needs.</h6>
+                <p>This tells our user what our pet needs.</p>
+                <p>So let's add a new <strong>< div ></strong> and give it an id, we'll call this <strong>petDiv</strong>.</p>
+                <p>This will still be in our body tag, but outside of our <strong>HUDgrid</strong>.</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col s6 offset-s2">
+                <ul class="collapsible">
+                   <li>
+                     <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>I Need a Hint</div>
+                     <div class="collapsible-body"><img src="./javascript-images/tamagotchi11.JPG" width="200px">
+                     </div>
+                   </li>
+                </ul>
+              </div>
+            </div>
+            <div class='row'>
+              <div class='col s6 offset-s1'>
+                <h5 style='font-weight:bold'>Adding Buttons</h5>
+              </div>
+            </div>
+
+            <div class='row'>
+              <div class="col s1 offset-s1">
+                <div class="checkbox">
+                  <form action="#">
+                      <p>
+                        <label>
+                          <input type="checkbox" />
+                          <span></span>
+                        </label>
+                      </p>
+                    </form>
+                  </div>
+                </div>
+              <div class='col s6'>
+                <div class='projectsection1'>
+                  <h6>Now that we need to add buttons so that later we can make them interactive in JavaScript.</h6>
+                  <p>Below our <strong>petDiv</strong>, let's add a new div and give it a class cleverly named <strong>inputs</strong>.</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col s6 offset-s2">
+                  <ul class="collapsible">
+                     <li>
+                       <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>I Need a Hint</div>
+                       <div class="collapsible-body"><img src="./javascript-images/tamagotchi12.JPG" width="200px">
+                       </div>
+                     </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class='row'>
+                <div class="col s1 offset-s1">
+                  <div class="checkbox">
+                    <form action="#">
+                        <p>
+                          <label>
+                            <input type="checkbox" />
+                            <span></span>
+                          </label>
+                        </p>
+                      </form>
+                    </div>
+                  </div>
+                <div class='col s6'>
+                  <div class='projectsection1'>
+                    <h6>Inside that div let's make our buttons.</h6>
+                    <p>First we'll start with the food button.</p>
+                    <p>With the food button, we need to create a class and an id. We'll use that later in our Javascript.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col s6 offset-s2">
+                  <img src="./javascript-images/tamagotchi13.JPG" width="400px">
+                </div>
+              </div>
+
+                <div class='row'>
+                  <div class="col s1 offset-s1">
+                    <div class="checkbox">
+                      <form action="#">
+                          <p>
+                            <label>
+                              <input type="checkbox" />
+                              <span></span>
+                            </label>
+                          </p>
+                        </form>
+                      </div>
+                    </div>
+                  <div class='col s6'>
+                    <div class='projectsection1'>
+                      <h6>Go ahead and create two more buttons in our <strong>inputs</strong> div.</h6>
+                      <p>Create two more buttons, one for drinking, the other for exercising.</p>
+                    </div>
+                  </div>
+                </div>
+
+                  <div class="row">
+                    <div class="col s6 offset-s2">
+                      <ul class="collapsible">
+                         <li>
+                           <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>I Need a Hint</div>
+                           <div class="collapsible-body"><img src="./javascript-images/tamagotchi14.JPG" width="400px">
+                           </div>
+                         </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class='row'>
+                    <div class="col s1 offset-s1">
+                      <div class="checkbox">
+                        <form action="#">
+                            <p>
+                              <label>
+                                <input type="checkbox" />
+                                <span></span>
+                              </label>
+                            </p>
+                          </form>
+                        </div>
+                      </div>
+                    <div class='col s6'>
+                      <div class='projectsection1'>
+                        <h6>But what if we accidentally kill our digital pet?</h6>
+                        <p>Let's put a reset button in for our user just in case!</p>
+                        <p>First let's make a seperate <strong>< div ></strong> for this new button.</p>
+                        <p>We'll give this div an id, we'll call it <strong>optionsDiv</strong></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='row'>
+                    <div class="col s1 offset-s1">
+                      <div class="checkbox">
+                        <form action="#">
+                            <p>
+                              <label>
+                                <input type="checkbox" />
+                                <span></span>
+                              </label>
+                            </p>
+                          </form>
+                        </div>
+                      </div>
+                    <div class='col s6'>
+                      <div class='projectsection1'>
+                        <h6>Now to make the actual button</h6>
+                        <p><i>**Hint: Make a button just like you did for the food, water, exercising, but in this case, call it <strong>resetButton</strong></i></p>
+                      </div>
+                    </div>
+                  </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>Save Your Code</h6>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class='col s6 offset-s1'>
+                          <h5 style='font-weight:bold'>Giving our CSS a whirl</h5>
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>CSS is a great way to make your website look professional and pop.</h6>
+                            <p>Open your CSS file</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>This is when all of the class and id making you did in HTML will really start to help.</h6>
+                            <p>Start by styling your <strong>HUDgrid</strong></p>
+                            <p>Styling your <strong>HUDgrid</strong> makes your tamagotchi project user friendly and fun to use.</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col s6 offset-s2">
+                          <img src="./javascript-images/tamagotchi15.JPG" width="400px">
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>Style your project as much or as little as you want.</h6>
+                            <p>Don't like your retro buttons? Change them!</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col s6 offset-s2">
+                          <img src="./javascript-images/tamagotchi16.JPG" width="300px">
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>Style your project as much or as little as you want.</h6>
+                            <p>Don't like your retro buttons? Change them!</p>
+                            <p>Want a different background color? Different font? Do it!</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col s6 offset-s2">
+                          <img src="./javascript-images/tamagotchi17.JPG" width="300px">
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <p>Finish up your styling up before moving onto the next step.</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>Save Your Code</h6>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class='col s6 offset-s1'>
+                          <h5 style='font-weight:bold'>Jumping onto the JavaScript Train</h5>
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>Javascript is a programming language, which distinguishes it from markup (like HTML) and styling (like CSS). We can use Javascript to add user interactivity to our pages.</h6>
+                            <p>Javascript is loosely typed, meaning the rules that govern it aren’t very strict.</p>
+                            <p>Remember sequencing and the fact that JS runs top down is very important, and can easily be the difference between code working or not</p>
+                            <p>Open your JavaScript file</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>Javascript runs fast.</h6>
+                            <p>So fast, it might load faster than your HTML, to avoid this, the first thing we’ll put in our js document is:</p>
+                            <p>window.onload runs <strong>onload</strong> of the <strong>window</strong>, or when the window finishes loading, preventing javascript from loading before your HTML.</p>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="row">
+                        <div class="col s6 offset-s2">
+                          <img src="./javascript-images/tamagotchi18.JPG" width="150px">
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>Now we'll set window.onload</h6>
+                            <p>We’ll put all of our JS inside of this function (inside of the <strong>{   }</strong>.)</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col s6 offset-s2">
+                          <img src="./javascript-images/tamagotchi19.JPG" width="300px">
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class='col s6 offset-s1'>
+                          <h5 style='font-weight:bold'>Creating variables</h5>
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>Let's start with each individual stat</h6>
+                            <p>Our first step will be to create variables for each of our stats. This is our food stat.</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col s6 offset-s2">
+                          <img src="./javascript-images/tamagotchi20.JPG" width="350px">
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>Go ahead and write out the other two</h6>
+                            <p>var <strong>stat</strong> = localStorage.getItem("<strong>stat</strong>Track");</p>
+                            <p>This line starts by saying <strong>var</strong>, which is short for variable.  Then we name our variable right after that, either food, water, or exercise.  We then put an equals sign to show what the variable starts as.  The next part, <strong>localStorage.getItem("tatTrack")</strong>;  access the local storage of the computer and gets the item in parentheses and quotes.</p>
+                            <p>Local storage will help us to come back to our pet over time, even if the tab or window is closed.</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>Now that we've added variables for our stats, we need to add timers for each.</h6>
+                            <p>Let's start with food.</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col s6 offset-s2">
+                          <img src="./javascript-images/tamagotchi21.JPG" width="350px">
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>Go ahead and create water and exercise</h6>
+                            <p>var <strong>stat</strong>Timer=setInterval(<strong>stat</strong>Decay,);</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col s6 offset-s2">
+                          <ul class="collapsible">
+                             <li>
+                               <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>I Need a Hint</div>
+                               <div class="collapsible-body"><img src="./javascript-images/tamagotchi22.JPG" width="400px">
+                               </div>
+                             </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>But before we continue, we have to give each stat a value.</h6>
+                            <p>We want each stat to be different, if not, the game can seem slow/boring.</p>
+                            <p>Assign high values to each stat. This is what I used for mine</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col s6 offset-s2">
+                          <img src="./javascript-images/tamagotchi23.JPG" width="250px">
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>Later we will be using functions to check our stats.</h6>
+                            <p>We want to create a function that will check our health variable, this is like a status check, making sure we're still in the game.</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col s6 offset-s2">
+                          <img src="./javascript-images/tamagotchi24.JPG" width="350px">
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>Go ahead and create one for each stat.</h6>
+                            <p>We want functions for water and exercise, but also create one for <strong>Health</strong></p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col s6 offset-s2">
+                          <ul class="collapsible">
+                             <li>
+                               <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>I Need a Hint</div>
+                               <div class="collapsible-body"><img src="./javascript-images/tamagotchi25.JPG" width="400px">
+                               </div>
+                             </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>Test your website</h6>
+                            <p>Does it work?</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class='col s6 offset-s1'>
+                          <h5 style='font-weight:bold'>Even more functions!</h5>
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <p>Create a <strong>function</strong> that <strong>check</strong>s our hungry levels</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col s6 offset-s2">
+                          <ul class="collapsible">
+                             <li>
+                               <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>I Need a Hint</div>
+                               <div class="collapsible-body"><img src="./javascript-images/tamagotchi26.JPG" width="400px">
+                               </div>
+                             </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>Next, our If/Else</h6>
+                            <p>Create a function that checks our hungry levels.</p>
+                            <p>Start by adding if/else to our function.</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col s6 offset-s2">
+                          <img src="./javascript-images/tamagotchi27.JPG" width="400px">
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <p>Define your food</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col s6 offset-s2">
+                          <img src="./javascript-images/tamagotchi28.JPG" width="400px">
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <p>Then we need to reference back to our localStorage</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col s6 offset-s2">
+                          <img src="./javascript-images/tamagotchi29.JPG" width="400px">
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <p>Finally finishing out our else statement</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col s6 offset-s2">
+                          <img src="./javascript-images/tamagotchi30.JPG" width="400px">
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>Go ahead and create two more functions for our water and exercising levels.</h6>
+                          </div>
+                        </div>
+                      </div>
+
+                        <div class='row'>
+                          <div class='col s6 offset-s1'>
+                            <h5 style='font-weight:bold'>Interactive Buttons</h5>
+                          </div>
+                        </div>
+
+                        <div class='row'>
+                          <div class="col s1 offset-s1">
+                            <div class="checkbox">
+                              <form action="#">
+                                  <p>
+                                    <label>
+                                      <input type="checkbox" />
+                                      <span></span>
+                                    </label>
+                                  </p>
+                                </form>
+                              </div>
+                            </div>
+                          <div class='col s6'>
+                            <div class='projectsection1'>
+                              <h6>Earlier we created our buttons, then defined them, now let's make them do something.</h6>
+                              <p>First we need to make it reference our food button</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col s6 offset-s2">
+                            <img src="./javascript-images/tamagotchi31.JPG" width="300px">
+                          </div>
+                        </div>
+
+                        <div class='row'>
+                          <div class="col s1 offset-s1">
+                            <div class="checkbox">
+                              <form action="#">
+                                  <p>
+                                    <label>
+                                      <input type="checkbox" />
+                                      <span></span>
+                                    </label>
+                                  </p>
+                                </form>
+                              </div>
+                            </div>
+                          <div class='col s6'>
+                            <div class='projectsection1'>
+                              <p>Then when we click on it, it should display our food levels</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col s6 offset-s2">
+                            <img src="./javascript-images/tamagotchi32.JPG" width="200px">
+                          </div>
+                        </div>
+
+                        <div class='row'>
+                          <div class="col s1 offset-s1">
+                            <div class="checkbox">
+                              <form action="#">
+                                  <p>
+                                    <label>
+                                      <input type="checkbox" />
+                                      <span></span>
+                                    </label>
+                                  </p>
+                                </form>
+                              </div>
+                            </div>
+                          <div class='col s6'>
+                            <div class='projectsection1'>
+                              <h6>Now keep it going and create these for each stat button.</h6>
+                              <p>As well as our reset button with the following statement</p>
+                              <p>document.getElementById('<strong>stat</strong>Button').onclick = <strong>stat</strong>;</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col s6 offset-s2">
+                            <ul class="collapsible">
+                               <li>
+                                 <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>I Need a Hint</div>
+                                 <div class="collapsible-body"><img src="./javascript-images/tamagotchi33.JPG" width="400px">
+                                 </div>
+                               </li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <div class='row'>
+                          <div class="col s1 offset-s1">
+                            <div class="checkbox">
+                              <form action="#">
+                                  <p>
+                                    <label>
+                                      <input type="checkbox" />
+                                      <span></span>
+                                    </label>
+                                  </p>
+                                </form>
+                              </div>
+                            </div>
+                          <div class='col s6'>
+                            <div class='projectsection1'>
+                              <h6>Test your website</h6>
+                              <p>Does it work?</p>
+                            </div>
+                          </div>
+                        </div>
+
+                      <div class='row'>
+                        <div class='col s6 offset-s1'>
+                          <h5 style='font-weight:bold'>Game logic</h5>
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>Don't you get thirsty after you exercise a lot?</h6>
+                            <p>We want our pet to be the same way.</p>
+                            <p>We need the stat we push to go up, while the others go down.</p>
+                            <p>Create a function that checks our hungry levels.</p>
+                            <p>We'll start with eating.</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col s6 offset-s2">
+                          <img src="./javascript-images/tamagotchi34.JPG" width="200px">
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>We'll add to our food stat</h6>
+                            <p>But subtract from our lifting stat</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col s6 offset-s2">
+                          <img src="./javascript-images/tamagotchi35.JPG" width="200px">
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>Finally finishing the function out by checking our health</h6>
+                            <p>That way we know if we're still in the game or did too much of one stat or the other.</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col s6 offset-s2">
+                          <img src="./javascript-images/tamagotchi36.JPG" width="200px">
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>Now keep it going and create a function for water just like you did for eating.</h6>
+                            <p>We'll raise water levels and decrease our exercising stat.</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col s6 offset-s2">
+                          <img src="./javascript-images/tamagotchi37.JPG" width="200px">
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>And finish out the function by checking our health just like we did for eating.</h6>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>Create a function out for exercising.</h6>
+                            <p>But this time, have the function decrease both eating and drinking.</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col s6 offset-s2">
+                          <img src="./javascript-images/tamagotchi38.JPG" width="200px">
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>Now we create a function for resetting.</h6>
+                            <p>This one will be a little different.</p>
+                            <p>Just like we did before, create a function, we'll call it <strong>reset</strong>.</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>We don't need to start with checking health, but instead of subtracting from a stat, we'll just start off the user at the default level, then we'll check the health.</h6>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col s6 offset-s2">
+                          <img src="./javascript-images/tamagotchi39.JPG" width="500px">
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <p>We use <strong>document.getElementById()</strong> to attach event handlers to each button, reference function that goes with button.</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>Test your website</h6>
+                            <p>Does it work?</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class='col s6 offset-s1'>
+                          <h5 style='font-weight:bold'>checkHealth Function</h5>
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>Our last function will be a big one, let's call it <strong>checkHealth</strong></h6>
+                            <p>Start out this function like our other stat functions.</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>Inside that function, we'll start with our <strong>localStorage</strong>.</h6>
+                            <p>Create another line for exercising, and another for water.</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col s6 offset-s2">
+                          <img src="./javascript-images/tamagotchi40.JPG" width="300px">
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>And also reference our <strong>innerHTML</strong></h6>
+                            <p>Create another line for exercising, and another for water.</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col s6 offset-s2">
+                          <img src="./javascript-images/tamagotchi41.JPG" width="450px">
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class='col s6 offset-s1'>
+                          <h5 style='font-weight:bold'>Buried in if statements</h5>
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>Test your website</h6>
+                            <p>Does it work?</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>Still within the stat checker, create conditionals (if, else if, else) for different stat values</h6>
+                            <p>These if/then statements are going to be clues to us as to how our pet is doing.</p>
+                            <p>We will be creating multiple ifs with one else statements. This will allow for our viewer to see the digital pet at <strong>multiple levels of happiness</strong>, instead of just <strong>happy</strong> and <strong>dead</strong>.</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>We'll start with a default image for our pet</h6>
+                            <p>Make this <strong>if</strong> statement for if our <strong>food</strong>, <strong>water</strong>, and <strong>exercising</strong> at 50</p>
+                            <p>Then link our default image</p>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="row">
+                        <div class="col s6 offset-s2">
+                          <ul class="collapsible">
+                             <li>
+                               <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>I Need a Hint</div>
+                               <div class="collapsible-body"><img src="./javascript-images/tamagotchi42.JPG" width="500px">
+                               </div>
+                             </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>If you haven't already, look for versions of your image at various levels of happiness.</h6>
+                            <p>Make the next if statement if our food, water, and exercising is a little higher, like 65</p>
+                            <p>Then link our next image</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col s6 offset-s2">
+                          <ul class="collapsible">
+                             <li>
+                               <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>I Need a Hint</div>
+                               <div class="collapsible-body"><img src="./javascript-images/tamagotchi43.JPG" width="500px">
+                               </div>
+                             </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <p>Make another if statement if our food, water, and exercising is a even a little higher, like 75</p>
+                            <p>Then link our next image</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col s6 offset-s2">
+                          <ul class="collapsible">
+                             <li>
+                               <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>I Need a Hint</div>
+                               <div class="collapsible-body"><img src="./javascript-images/tamagotchi44.JPG" width="500px">
+                               </div>
+                             </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <p>Now for our highest if statement if our food, water, and exercising is a even a little higher, like 85</p>
+                            <p>Then link our next image, this should be one where our pet is the happiest and the most content.</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col s6 offset-s2">
+                          <ul class="collapsible">
+                             <li>
+                               <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>I Need a Hint</div>
+                               <div class="collapsible-body"><img src="./javascript-images/tamagotchi45.JPG" width="500px">
+                               </div>
+                             </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <p>End these if statements with the closing curly brackets.</p>
+                            <p><i>**Hint: you should have four.**</i></p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>Now for our <strong>else</strong> statement</h6>
+                            <p>Now we're going to be going in the opposite direction.</p>
+                            <p>Instead of going progressively higher, we're going to make a condition if our stats go down.</p>
+                            <p>Start out by creating an <strong>else if</strong> statement.</p>
+                            <p>Set our stats at 40.</p>
+                            <p>And change your image to help our user.</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col s6 offset-s2">
+                          <ul class="collapsible">
+                             <li>
+                               <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>I Need a Hint</div>
+                               <div class="collapsible-body"><img src="./javascript-images/tamagotchi46.JPG" width="500px">
+                               </div>
+                             </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>Create another if statement</h6>
+                            <p>Set our stats at 20.</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col s6 offset-s2">
+                          <ul class="collapsible">
+                             <li>
+                               <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>I Need a Hint</div>
+                               <div class="collapsible-body"><img src="./javascript-images/tamagotchi47.JPG" width="500px">
+                               </div>
+                             </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>And now for our last if statement, but this one is a little more complicated.</h6>
+                            <p>Set our stats at 0.</p>
+                            <p>Add a new line before we change our image:</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col s6 offset-s2">
+                          <img src="./javascript-images/tamagotchi48.JPG" width="200px">
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>The <strong>console.log()</strong> is a function in JavaScript which is used to print any kind of variables defined before in it or to just print any message that needs to be displayed to the user.</h6>
+                            <p>We're going to use it when the user loses the game.</p>
+                            <p>If the user loses the game, we don't want our stats or stat buttons to show, just the reset button.</p>
+                            <p>We tell the computer to hide this information with:</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col s6 offset-s2">
+                          <img src="./javascript-images/tamagotchi49.JPG" width="600px">
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>Keep on going and hiding the rest of the buttons, except the reset button.</h6>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>Now let's hide the stats</h6>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col s6 offset-s2">
+                          <img src="./javascript-images/tamagotchi50.JPG" width="600px">
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>Keep it going and hide the water and exercise stat as well.</h6>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <p>End these if statements with the closing curly brackets.</p>
+                            <p><i>**Hint: you should have four.**</i></p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>Test your website</h6>
+                            <p>Does it work?</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class='col s6 offset-s1'>
+                          <h5 style='font-weight:bold'>Decay</h5>
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>But what if our user loads the page and just sits there?</h6>
+                            <p>We want our game to be interactive, and to make our users have to push buttons.</p>
+                            <p>This makes for a more dynamic game and more interesting game play.</p>
+                            <p>Let's do this by creating another function, we'll start with food. Let's call it <strong>foodDecay</strong></p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>Have these functions reduce stats by a set amount</h6>
+                            <p>Then end the function with a checkHealth to make sure that the user is still in the game.</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col s6 offset-s2">
+                          <ul class="collapsible">
+                             <li>
+                               <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>I Need a Hint</div>
+                               <div class="collapsible-body"><img src="./javascript-images/tamagotchi51.JPG" width="300px">
+                               </div>
+                             </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>Keep it going and create a decay for water and exercising</h6>
+                            <p>Then end the function with a checkHealth to make sure that the user is still in the game.</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <p>Our last step is to add a final curly bracket because our whole JavaScript function needs to be inside:</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col s6 offset-s2">
+                          <p><img src="./javascript-images/tamagotchi18.JPG" width="200px"></p>
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>Test your website</h6>
+                            <p>Does it work?</p>
+                            <p>Great job!</p>
+                          </div>
+                        </div>
+                      </div>
+
+<div class='row'>
+  <div class='col s6 offset-s1'>
+    <h5> Show an instructor your finished website!</h5>
+  </div>
+</div>
+
+<!--Project Complete Banner-->
+<div class="row blue white-text">
+  <div class="col s4 offset-s4">
+    <h5 style="text-align:center;">Congrats! Project complete!</h5>
+  </div>
+</div>
+
+<!--Card: Prompt - Find Another Project-->
+<div class="row">
+  <div class="col s4 offset-s4">
+    <div class="card findanotherproject">
+      <div class="card-content">
+        <div class="cardDescription">
+          <br>
+          <h6>Find another project?</h6>
+          <div class="browse">
+            <br>
+            <a href="javascript.html">
+              <button>Browse all projects</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </body>
+</html>

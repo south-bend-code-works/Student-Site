@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="../main.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="SBCS_favicon.png">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Turtle Shapes with For Loops</title>
+  </head>
+
+<body>
+
+  <!--Nav bar  -->
+  <nav class="light-blue lighten-1">
+    <div class="nav-wrapper">
+      <a href="#!"></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="hide-on-med-and-down">
+        <li><a href="../home.html">Home</a></li>
+        <li><a href="../scratch/scratch.html">Ages 7-12</a></li>
+        <li><a href="../techimmersion.html">Ages 13-18</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="../home.html">Home</a></li>
+    <li><a href="../scratch/scratch.html">Ages 7-12</a></li>
+    <li><a href="../techimmersion.html">Ages 13-18</a></li>
+  </ul>
+
+  <div class="row">
+    <div class="col s6 offset-s3">
+      <h4 style="font-weight:bold;"><center>Turtle Shapes with For Loops</center></h4>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <h6>In this lesson you will:</h6>
+      <ol>
+        <li>Create turtles using loops!</li>
+      </ol>
+      <h5>Background Info</h5>
+      <p>We can have our turtles do more than just draw shapes, but now let's do that with For Loops.</p>
+      <h5 style="font-weight:bold;">Helpful Links</h5>
+      <p><a href="https://repl.it" target="_blank">repl.it</a> - an online interpreter that we will use for writing our Python code.</p>
+    </div>
+  </div>
+
+      <!--html Lesson: Directions Start Here-->
+      <div class="row">
+          <div class="col s6 offset-s1">
+            <h5 style="font-weight:bold;">Let's get started!</h5>
+          </div>
+        </div>
+
+        <div class="row">
+              <!--Lesson Checkbox Div-->
+              <div class="col s1 offset-s1">
+                <div class="checkbox">
+                  <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span></span>
+                      </label>
+                    </p>
+                  </form>
+                </div>
+              </div>
+              <!--Instruction Div-->
+              <div class="col s6">
+                <div class="projectsection1">
+                        <h6>First steps</h6>
+                        <p>Open <a href="https://repl.it" target="_blank">repl.it</a></p>
+                        <p>Name it <strong>TurtleLoops</strong></p>
+                        <p>Make sure you create this new Repl using Python (with Turtle)
+                </div>
+            </div>
+          </div>
+
+            <div class="row">
+              <!--Lesson Checkbox Div-->
+              <div class="col s1 offset-s1">
+                <div class="checkbox">
+                  <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span></span>
+                      </label>
+                    </p>
+                  </form>
+                </div>
+              </div>
+              <!--Instruction Div-->
+              <div class="col s6">
+                <div class="projectsection1">
+                    <h6>Make a new turtle named <strong>t</strong> using <strong>turtle.Turtle()</strong></h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <!--Lesson Checkbox Div-->
+              <div class="col s1 offset-s1">
+                <div class="checkbox">
+                  <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span></span>
+                      </label>
+                    </p>
+                  </form>
+                </div>
+              </div>
+              <!--Instruction Div-->
+              <div class="col s6">
+                <div class="projectsection1">
+                    <h6>We can draw simple shapes by just using <strong>t.forward()</strong> and <strong>t.right()</strong>, and <strong>t.circle()</strong>. But what if we want to make some patterns?</h6>
+                </div>
+            </div>
+          </div>
+
+          <div class="row">
+                <!--Lesson Checkbox Div-->
+                <div class="col s1 offset-s1">
+                  <div class="checkbox">
+                    <form action="#">
+                      <p>
+                        <label>
+                          <input type="checkbox" />
+                          <span></span>
+                        </label>
+                      </p>
+                    </form>
+                  </div>
+                </div>
+                <!--Instruction Div-->
+                <div class="col s6">
+                  <div class="projectsection1">
+                      <h6>We can use a for loop to repeat code a number of times.</h6>
+                  </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col s6 offset-s2">
+                <img src="./python-images/turtleshapeloops1.JPG" width="300px">
+              </div>
+            </div>
+
+            <div class="row">
+                  <!--Lesson Checkbox Div-->
+                  <div class="col s1 offset-s1">
+                    <div class="checkbox">
+                      <form action="#">
+                        <p>
+                          <label>
+                            <input type="checkbox" />
+                            <span></span>
+                          </label>
+                        </p>
+                      </form>
+                    </div>
+                  </div>
+                  <!--Instruction Div-->
+                  <div class="col s6">
+                    <div class="projectsection1">
+                        <h6>This code repeats 4 times, and tells the turtle to go forward 100 and then turn right 90. </h6>
+                    </div>
+                </div>
+              </div>
+
+              <div class="row">
+                    <!--Lesson Checkbox Div-->
+                    <div class="col s1 offset-s1">
+                      <div class="checkbox">
+                        <form action="#">
+                          <p>
+                            <label>
+                              <input type="checkbox" />
+                              <span></span>
+                            </label>
+                          </p>
+                        </form>
+                      </div>
+                    </div>
+                    <!--Instruction Div-->
+                    <div class="col s6">
+                      <div class="projectsection1">
+                          <h6>See if you can use similar code to make a triangle!</h6>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                      <!--Lesson Checkbox Div-->
+                      <div class="col s1 offset-s1">
+                        <div class="checkbox">
+                          <form action="#">
+                            <p>
+                              <label>
+                                <input type="checkbox" />
+                                <span></span>
+                              </label>
+                            </p>
+                          </form>
+                        </div>
+                      </div>
+                      <!--Instruction Div-->
+                      <div class="col s6">
+                        <div class="projectsection1">
+                            <h6>Can you make a hexagon?</h6>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                        <!--Lesson Checkbox Div-->
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                              <p>
+                                <label>
+                                  <input type="checkbox" />
+                                  <span></span>
+                                </label>
+                              </p>
+                            </form>
+                          </div>
+                        </div>
+                        <!--Instruction Div-->
+                        <div class="col s6">
+                          <div class="projectsection1">
+                              <h6>An octagon?</h6>
+                          </div>
+                      </div>
+                    </div>
+
+            <div class="row">
+                    <!--Lesson Checkbox Div-->
+                    <div class="col s1 offset-s1">
+                      <div class="checkbox">
+                        <form action="#">
+                          <p>
+                            <label>
+                              <input type="checkbox" />
+                              <span></span>
+                            </label>
+                          </p>
+                        </form>
+                      </div>
+                    </div>
+                    <!--Instruction Div-->
+                    <div class="col s6">
+                      <div class="projectsection1">
+                          <h6>What about a 20-gon</h6>
+                      </div>
+                  </div>
+                </div>
+
+            <div class="row">
+                    <!--Lesson Checkbox Div-->
+                    <div class="col s1 offset-s1">
+                      <div class="checkbox">
+                        <form action="#">
+                          <p>
+                            <label>
+                              <input type="checkbox" />
+                              <span></span>
+                            </label>
+                          </p>
+                        </form>
+                      </div>
+                    </div>
+                    <!--Instruction Div-->
+                    <div class="col s6">
+                      <div class="projectsection1">
+                          <h6><strong>Hint</strong>: to find the angle, divide 360 by the number of sides you want.</h6>
+                      </div>
+                  </div>
+                </div>
+
+                <!--html Lesson: Directions Start Here-->
+                <div class="row">
+                    <div class="col s6 offset-s1">
+                      <h5 style="font-weight:bold;">More complex shapes</h5>
+                    </div>
+                  </div>
+
+    <div class="row">
+            <!--Lesson Checkbox Div-->
+            <div class="col s1 offset-s1">
+              <div class="checkbox">
+                <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </p>
+                </form>
+              </div>
+            </div>
+            <!--Instruction Div-->
+            <div class="col s6">
+              <div class="projectsection1">
+                  <h6>Let’s draw some stars!</h6>
+                </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s6 offset-s2">
+            <img src="./python-images/turtleshapeloops2.JPG">
+          </div>
+        </div>
+
+        <div class="row">
+                <!--Lesson Checkbox Div-->
+                <div class="col s1 offset-s1">
+                  <div class="checkbox">
+                    <form action="#">
+                      <p>
+                        <label>
+                          <input type="checkbox" />
+                          <span></span>
+                        </label>
+                      </p>
+                    </form>
+                  </div>
+                </div>
+                <!--Instruction Div-->
+                <div class="col s6">
+                  <div class="projectsection1">
+                      <h6>Use the 144 degree turn and any number of forward steps to make a 5 pointed star.</h6>
+                    </div>
+              </div>
+            </div>
+
+            <div class="row">
+                    <!--Lesson Checkbox Div-->
+                    <div class="col s1 offset-s1">
+                      <div class="checkbox">
+                        <form action="#">
+                          <p>
+                            <label>
+                              <input type="checkbox" />
+                              <span></span>
+                            </label>
+                          </p>
+                        </form>
+                      </div>
+                    </div>
+                    <!--Instruction Div-->
+                    <div class="col s6">
+                      <div class="projectsection1">
+                          <h6><strong>Challenge</strong>: Can you make a starry night?</h6>
+                        </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                        <!--Lesson Checkbox Div-->
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                              <p>
+                                <label>
+                                  <input type="checkbox" />
+                                  <span></span>
+                                </label>
+                              </p>
+                            </form>
+                          </div>
+                        </div>
+                        <!--Instruction Div-->
+                        <div class="col s6">
+                          <div class="projectsection1">
+                              <h6>Use <strong>begin_fill()</strong> and <strong>end_fill()</strong> to fill in your stars.</h6>
+                            </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                            <!--Lesson Checkbox Div-->
+                            <div class="col s1 offset-s1">
+                              <div class="checkbox">
+                                <form action="#">
+                                  <p>
+                                    <label>
+                                      <input type="checkbox" />
+                                      <span></span>
+                                    </label>
+                                  </p>
+                                </form>
+                              </div>
+                            </div>
+                            <!--Instruction Div-->
+                            <div class="col s6">
+                              <div class="projectsection1">
+                                  <h6>Try using a for loop to make more complex repeated figures. Can you make a star like this?</h6>
+                                </div>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col s6 offset-s2">
+                            <img src="./python-images/turtleshapeloops3.JPG">
+                          </div>
+                        </div>
+
+                        <div class="row">
+                                <!--Lesson Checkbox Div-->
+                                <div class="col s1 offset-s1">
+                                  <div class="checkbox">
+                                    <form action="#">
+                                      <p>
+                                        <label>
+                                          <input type="checkbox" />
+                                          <span></span>
+                                        </label>
+                                      </p>
+                                    </form>
+                                  </div>
+                                </div>
+                                <!--Instruction Div-->
+                                <div class="col s6">
+                                  <div class="projectsection1">
+                                      <h6>Try this helix pattern! Make some changes to it and see what you can do!</h6>
+                                    </div>
+                              </div>
+                            </div>
+
+                            <div class="row">
+                              <div class="col s6 offset-s2">
+                                <img src="./python-images/turtleshapeloops4.JPG">
+                              </div>
+                            </div>
+
+                            <div class="row">
+                                    <!--Lesson Checkbox Div-->
+                                    <div class="col s1 offset-s1">
+                                      <div class="checkbox">
+                                        <form action="#">
+                                          <p>
+                                            <label>
+                                              <input type="checkbox" />
+                                              <span></span>
+                                            </label>
+                                          </p>
+                                        </form>
+                                      </div>
+                                    </div>
+                                    <!--Instruction Div-->
+                                    <div class="col s6">
+                                      <div class="projectsection1">
+                                          <h6><strong>Challenge</strong>: See if you can change it from a hexagon to a square or triangle!</h6>
+                                        </div>
+                                  </div>
+                                </div>
+
+                                <div class="row">
+                                  <div class="col s6 offset-s2">
+                                    <img src="./python-images/turtleshapeloops5.JPG">
+                                  </div>
+                                </div>
+
+                                <!--Project Complete Banner-->
+                                <div class="row blue white-text">
+                                  <div class="col s4 offset-s4">
+                                    <h5 style="text-align:center;">Starry Night, now with more python</h5>
+                                  </div>
+                                </div>
+
+        <!--Card: Prompt - Find Another Project-->
+        <div class="row">
+          <div class="col s4 offset-s4">
+            <div class="card findanotherproject">
+              <div class="card-content">
+                <div class="cardDescription">
+                  <h6>Find another project?</h6>
+                  <div class="browse">
+                    <br>
+                    <a href="python.html">
+                      <button>Browse all projects</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </body>
+    </html>

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="../main.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="https://south-bend-code-school.github.io/Student-Site/SBCS_favicon.png">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Unity Student Guide 11 - Game Building</title>
+  </head>
+
+  <body>
+    <!--Nav bar  -->
+    <nav class="light-blue lighten-1">
+      <div class="nav-wrapper">
+        <a href="#!"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="hide-on-med-and-down">
+          <li><a href="../home.html">Home</a></li>
+          <li><a href="../scratch/scratch.html">Ages 7-12</a></li>
+          <li><a href="../techimmersion.html">Ages 13-18</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="../home.html">Home</a></li>
+      <li><a href="../scratch/scratch.html">Ages 7-12</a></li>
+      <li><a href="../techimmersion.html">Ages 13-18</a></li>
+    </ul>
+
+    <div class="row">
+      <div class="col s6 offset-s3">
+        <h4 style="font-weight:bold;"><center>Unity Student Guide 11 - Game Building</center></h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <h6>In this lesson you will:</h6>
+        <ol>
+          <li>Build your finished game</li>
+        </ol>
+        <p><strong>Helpful Links:</strong></p>
+        <p><a href="https://docs.unity3d.com/Manual/BuildSettings.html" target="_blank">Build Settings Docs</a></p>
+        <br>
+        <p>This tutorial is for <i>after</i> you are done creating your game. If you have no more changes, let's build it so you can share it and show your friends!</p>
+        <p>Besides sharing with your friend group, there are other areas you can share your video game with. We'll get into that later. For now, let's build your game.</p>
+      </div>
+    </div>
+
+
+      <div class="row">
+        <div class="col s6 offset-s1">
+          <h5 style="font-weight:bold;">Adding All Levels</h5>
+		    </div>
+      </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>We need to be sure that all of the scenes you've created get built in the game.</h6>
+          <p>Open the Build Settings, go to <strong>File</strong>  →  <strong>Build Settings</strong>.</p>
+         </div>
+      </div>
+    </div>
+
+    <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+            <h6>Add any scenes that aren't in the list, and then drag them into the proper order. Make sure that if you have a menu scene, it's first in the list.</h6>
+            </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s6 offset-s2">
+          <p><img src="./unity-images/gamebuilding1.JPG" width="500px"></p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s6 offset-s1">
+          <h5 style="font-weight:bold;">Building The Game</h5>
+		    </div>
+      </div>
+
+	      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+            <h6>Choose the platform you want to build for. For this guide, we will build for PC, Mac & Linux Standalone.</h6>
+		       </div>
+        </div>
+      </div>
+
+      <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Choose PC, Mac & Linux, and then choose the <strong>Target Platform</strong> to be Windows (unless you're building for a Mac or Linux machine, then choose appropriately).</h6>
+         </div>
+      </div>
+    </div>
+
+    <div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Click <strong>Build</strong>!</h6>
+       </div>
+    </div>
+  </div>
+
+	      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+              <h6>Select the folder you want to save your built game in, and press <strong>Select Folder</strong>.</h6>
+          </div>
+        </div>
+      </div>
+
+
+<div class="row">
+  <!--Lesson Checkbox Div-->
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+      </form>
+    </div>
+  </div>
+  <!--Instruction Div-->
+  <div class="col s6">
+    <div class="projectsection1">
+      <h6>Depending on how many assets and how large your game is, building could take a little while.</h6>
+    </div>
+  </div>
+</div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>If you want to build for a different platform, just go back to <strong>Build Settings</strong> and select the platform you want, then click <strong>Build</strong>!</h6>
+      </div>
+	  </div>
+  </div>
+
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h6>Where to publish your game</h6>
+        <p>Yes, you've built your game, but where do you share your hard earned work?</p>
+        <p>Your immediate friends are great. Social media can be a good place, but it's not really designed for that.</p>
+        <p>Plus, there's something more you need as a new Video Game developer, <strong>constructive criticism</strong>. Some critiques and reviews are not helpful obviously, but a lot of them can be.</p>
+        <p>Getting a new pair of eyes on your game is part of the industry, this is why big games have <strong>beta testing</strong>, to work out the quirks before the big launch. Plus constructive criticism is a great way to learn what works, and what doesn't.</p>
+        <p>Indie gamers (independent game designers) have many platforms to share their work, here are a few.
+          <br>
+          <ol>
+            <li><a href="https://itch.io/" target="_blank">Itch.io</a>
+              <ul>
+                <li>Itch is an indie game developer heaven. This is a great place to get reviews on your newly created game plus critiques on how to progress and grow as a developer. Not only is it free to publish your games, but you can actually sell your game, and have a lot of control over what happens to your game. You can set your price, adjust revenue splits, you name it. It's also a great place to check out up and coming games, even before they are released on other platforms.</li>
+              </ul>
+            </li>
+            <br>
+            <li><a href="https://gamejolt.com/" target="_blank">Game Jolt</a>
+            <ul>
+              <li>Game jolt is another great platform where you can upload your game for free, set your price, and go off your merry way. Though the community isn't as big as itch.io, it is just as customizable.</li>
+            </ul>
+          </li>
+        </ol>
+        <p>There are many more platforms out there like Steam, or Google Play and the Apple store, but Indie game platforms are specifically aimed for <strong>you</strong> in mind. You won't get the quality reviews, great community, or free to upload benefits with the big names.</p>
+      </div>
+    </div>
+
+
+
+	  <br>
+	  <br>
+    <!--Project Complete Banner-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 style="text-align:center;">Happy Building!</h5>
+      </div>
+    </div>
+	<br>
+	<br>
+
+        <!--Card: Prompt - Find Another Project-->
+        <div class="row">
+          <div class="col s4 offset-s2">
+            <div class="card findanotherproject">
+              <div class="card-content">
+                <div class="cardDescription">
+                  <h6>Find another project?</h6>
+                  <div class="browse">
+                    <br>
+                    <a href="../unity/unityfundamentals.html">
+                      <button>Browse all projects</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </body>
+    </html>

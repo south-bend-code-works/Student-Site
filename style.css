@@ -13,6 +13,17 @@ body {
   color: black;
 }
 
+.reviewstartButton {
+  display: inline-block;
+  text-align: center;
+  background-color: #00BFFF;
+  width: 100%;
+  height: 150%;
+  position:relative !important;
+  bottom:0 !important;
+  color: black;
+}
+
 .startButtonUnity {
   display: inline-block;
   text-align: center;
@@ -90,6 +101,12 @@ a:visited {
   height: 410px;
 }
 
+.reviewcard {
+  width: 150%;
+  margin: .5rem 5% 1rem 5%;
+  height: 210px;
+}
+
 .card-image img {
   height: 75%;
   width: auto;
@@ -100,6 +117,13 @@ a:visited {
   color: black !important;
   width: 100%;
   height: 100%;
+}
+
+.reviewcard-content {
+  text-align: center !important;
+  color: black !important;
+  width: 50%;
+  height: 50%;
 }
 
 .cardbackground {
@@ -241,57 +265,77 @@ input[type='checkbox'] {
 }
 
 /* =================================================================================================================================Scratch Lesson Cards=======================================================*/
-#aboutMeBG {background-image: url('aboutme.gif');}
-#animateMeBG {background-image: url('animatename.jpg');}
-#fivethingsMeBG {background-image: url('fivethings.gif');}
-#rockbandBG {background-image: url('rockband.png');}
-#petBG {background-image: url('pet.gif');}
-#animationBG {background-image: url('makeurownanimation.png');}
-#imaginatorBG {background-image: url('imaginator.gif');}
-#gettheprizeBG {background-image: url('gettheprize.gif');}
-#hideandseekBG {background-image: url('hideandseek.gif');}
-#terraBG {background-image: url('terra.gif');}
-#mazeBG {background-image: url('maze.gif');}
-#selectionBG {background-image: url('chooseadventure.png');}
-#chatbotBG {background-image: url('chatbot.png');}
-#twotruthsBG {background-image: url('twotruths.gif');}
-#platformBG {background-image: url('platform.gif');}
-#tellastoryBG {background-image: url('tellastory.jpg');}
-#aboutmeBG {background-image: url('boolean.png');}
-#paintBG {background-image: url('paint.gif');}
-#boatBG {background-image: url('boat.gif');}
-#BG {background-image: url('final.gif');}
-#launcherBG {background-image: url('launcher.gif');}
-#breakoutBG {background-image: url('breakout.gif');}
-#fallingfruitBG {background-image: url('fallingfruit.gif');}
-#monkeyBG {background-image: url('monkey.gif');}
-#urownworldBG {background-image: url('createyourownadventure.gif');}
-#memoryyBG {background-image: url('memory.gif');}
-#dotsBG {background-image: url('catchthedots.gif');}
-#spaceBG {background-image: url('spacefinal.gif');}
-#gothedistanceBG{background-image: url(./ScratchProjects/gothedistanceBG.jpg);}
+#aboutMeBG {background-image: url('./scratch/scratch-images/aboutme.gif');}
+#animateMeBG {background-image: url('./scratch/scratch-images/animatename.jpg');}
+#fivethingsMeBG {background-image: url('./scratch/scratch-images/fivethings.gif');}
+#rockbandBG {background-image: url('./scratch/scratch-images/rockband.png');}
+#petBG {background-image: url('./scratch/scratch-images/pet.gif');}
+#animationBG {background-image: url('./scratch/scratch-images/makeurownanimation.png');}
+#imaginatorBG {background-image: url('./scratch/scratch-images/imaginator.gif');}
+#gettheprizeBG {background-image: url('./scratch/scratch-images/gettheprize.gif');}
+#hideandseekBG {background-image: url('./scratch/scratch-images/hideandseek.gif');}
+#terraBG {background-image: url('./scratch/scratch-images/terra.gif');}
+#mazeBG {background-image: url('./scratch/scratch-images/maze.gif');}
+#selectionBG {background-image: url('./scratch/scratch-images/chooseadventure.png');}
+#chatbotBG {background-image: url('./scratch/scratch-images/chatbot.png');}
+#twotruthsBG {background-image: url('./scratch/scratch-images/twotruths.gif');}
+#platformBG {background-image: url('./scratch/scratch-images/platform.gif');}
+#tellastoryBG {background-image: url('./scratch/scratch-images/tellastory.jpg');}
+#aboutmeBG {background-image: url('./scratch/scratch-images/boolean.png');}
+#paintBG {background-image: url('./scratch/scratch-images/paint.gif');}
+#boatBG {background-image: url('./scratch/scratch-images/boat.gif');}
+#BG {background-image: url('./scratch/scratch-images/final.gif');}
+#launcherBG {background-image: url('./scratch/scratch-images/launcher.gif');}
+#breakoutBG {background-image: url('./scratch/scratch-images/breakout.gif');}
+#fallingfruitBG {background-image: url('./scratch/scratch-images/fallingfruit.gif');}
+#monkeyBG {background-image: url('./scratch/scratch-images/monkey.gif');}
+#urownworldBG {background-image: url('./scratch/scratch-images/createyourownadventure.gif');}
+#memoryyBG {background-image: url('./scratch/scratch-images/memory.gif');}
+#dotsBG {background-image: url('./scratch/scratch-images/catchthedots.gif');}
+#sidescrollerBG {background-image: url('./scratch/scratch-images/sidescroller.jpg');}
+#spaceBG {background-image: url('./scratch/scratch-images/spacefinal.gif');}
+#googleBG {background-image: url('./scratch/scratch-images/google.png'); background-position: center; background-size: contain;}
+#kahootBG {background-image: url('kahoot.jpeg');}
+#gothedistanceBG {background-image: url('./scratch/scratch-images/gothedistance.jpg');}
+
+/* HTML CSS background images */
+#htmlcssBG {background-image: url('./html/html-images/htmlcss.jpg');}
+#bioBG {background-image: url('./html/html-images/bio.jpg');}
+#recipeBG {background-image: url('./html/html-images/recipe.png');}
+#adventureBG {background-image: url('./html/html-images/adventuregame.jpg');}
+#storyBG {background-image: url('./html/html-images/story.png');}
+#friendBG {background-image: url('./html/html-images/friendogram.jpg');}
+#burgerBG {background-image: url('./html/html-images/buildaburger.jpg');}
+#abcsBG {background-image: url('./html/html-images/abcs.jpg');}
+#pattern {background-image: url('./html/html-images/pattern.gif');}
+#hoverBG {background-image: url('./html/html-images/hover.gif');}
+#typingBG {background-image: url('./html/html-images/typing.gif');}
+#cloneBG {background-image: url('./html/html-images/clone.png');}
+#logoBG {background-image: url('./html/html-images/logo.png');}
+#portBG{background-image: url('./html/html-images/scratchportfolio.jpg');}
+#passionBG{background-image: url('passionProject.jpg');}
+#materializeBG {background-image: url('./html/html-images/materialize.JPG');}
+#startupBG {background-image: url('./html/html-images/startup.jpg');}
+=======
 
 
 /* HTML CSS background images */
-#htmlcssBG {background-image: url('htmlcss.jpg');}
-#bioBG {background-image: url('bio.jpg');}
-#recipeBG {background-image: url('recipe.png');}
-#adventureBG {background-image: url('adventuregame.jpg');}
-#storyBG {background-image: url('story.png');}
-#friendBG {background-image: url('friendogram.jpg');}
-#burgerBG {background-image: url('buildaburger.jpg');}
-#abcsBG {background-image: url('abcs.jpg');}
-#pattern {background-image: url('pattern.gif');}
-#hoverBG {background-image: url('hover.gif');}
-#typingBG {background-image: url('typing.gif');}
-#cloneBG {background-image: url('clone.png');}
-#logoBG {background-image: url('logo.png');}
+#htmlcssBG {background-image: url('./html/html-images/htmlcss.jpg');}
+#bioBG {background-image: url('./html/html-images/bio.jpg');}
+#adventureBG {background-image: url('./html/html-images/adventuregame.jpg');}
+#storyBG {background-image: url('./html/html-images/story.png');}
+#friendBG {background-image: url('./html/html-images/friendogram.jpg');}
+#burgerBG {background-image: url('./html/html-images/buildaburger.jpg');}
+#abcsBG {background-image: url('./html/html-images/abcs.jpg');}
+#pattern {background-image: url('./html/html-images/pattern.gif');}
+#hoverBG {background-image: url('./html/html-images/hover.gif');}
+#typingBG {background-image: url('./html/html-images/typing.gif');}
+#cloneBG {background-image: url('./html/html-images/clone.png');}
+#logoBG {background-image: url('./html/html-images/logo.png');}
 #keyframesreviewBG{background-image: url();}
-#portBG{background-image: url('scratchportfolio.jpg');}
-#passionBG{background-image: url('passionProject.jpg');}
-#materializeBG {background-image: url('materialize.JPG');}
-#startupBG {background-image: url('startup.jpg');}
-.kahootBG {background-image: url('kahoot.jpeg');}
+#portBG{background-image: url('./html/html-images/scratchportfolio.jpg');}
+#materializeBG {background-image: url('./html/html-images/materialize.JPG');}
+#startupBG {background-image: url('./html/html-images/startup.jpg');}
 .challenge1{background-image: url('codingchallenge1.jpg');}
 .challenge2{background-image: url('codingchallenge2.jpg');}
 .challenge3{background-image: url('codingchallenge3.jpg');}
@@ -304,137 +348,145 @@ input[type='checkbox'] {
 
 
 /*Graphic Design background Images*/
-#glossaryBG {background-image: url('glossaryBG.jpg');}
-#gimpBG {background-image: url('gimpBG.jpg');}
-#typographicposterBG {background-image: url('typographicposterBG.jpg');}
-#photomanipulationBG {background-image: url('photomanipulationBG.gif');}
-#splashpageBG {background-image: url('splashpageBG.jpg');}
-#gifBG {background-image: url('./GraphicDesignV2_files/gif14.gif');}
-#infographicBG {background-image: url('infographicBG.jpg');}
-#interactiveBG {background-image: url('interactiveBG.jpg');}
-#geometricBG {background-image: url('./GraphicDesignV2_files/geometric3.jpg');}
-#uiuxBG {background-image: url('uiuxBG.jpg');}
-#colortheoryBG {background-image: url('colortheoryBG.gif');}
-#imagesBG {background-image: url('imagesBG.jpg');}
-#twoddesignBG {background-image: url('twoddesignBG.png');}
-#designprocessBG {background-image: url('designprocessBG.jpg');}
-#gdintroBG {background-image: url('gdintroBG.png');}
-#resourcesBG {background-image: url('resourcesBG.jpg');}
-#topofpage {background-image: url('topofpage.gif');}
-#brandingBG {background-image: url('brandingBG.jpg');}
-#vectorrasterBG {background-image: url('./GraphicDesignV2_files/morecolorstshirts4.jpg');}
-#colorBG{background-image: url('colorBG.jpg');}
-#colorizeBG{background-image: url('colorizeBG.jpg');}
-#copyrightBG{background-image: url('copyrightBG.jpg');}
-#moodboardBG{background-image: url('moodboardBG.jpg');}
-#cymkrgbBG{background-image: url('cymkrgbBG.jpg');}
-#popartBG{background-image: url('popartBG.jpg');}
-#layoutcompBG{background-image: url('layoutcompBG.jpg');}
-#patternrepetitionBG{background-image: url('patternrepetitionBG.jpg');}
-#behanceBG{background-image: url('behanceBG.gif');}
-#socialmediaBG{background-image: url('socialmediaBG.jpg');}
-#curvesBG{background-image: url('curvesBG.jpg');}
-#negspaceBG{background-image: url('negspaceBG.jpg');}
-#rulesBG{background-image: url('rulesBG.jpg');}
-#gridsBG{background-image: url('gridsBG.jpg');}
-#typographyBG{background-image: url('typographyBG.png');}
-#badfontBG{background-image: url('badfontBG.jpg');}
-#typographyposterBG{background-image: url('typographyposterBG.jpg');}
-#designyourownBG{background-image: url('designyourownBG.gif');}
+#glossaryBG {background-image: url('./graphicdesign/glossaryBG.jpg');}
+#gimpBG {background-image: url('./graphicdesign/gimpBG.jpg');}
+#typographicposterBG {background-image: url('./graphicdesign/typographicposterBG.jpg');}
+#photomanipulationBG {background-image: url('./graphicdesign/photomanipulationBG.gif');}
+#splashpageBG {background-image: url('./graphicdesign/splashpageBG.jpg');}
+#gifBG {background-image: url('./graphicdesign/graphicdesign-images/gif14.gif');}
+#infographicBG {background-image: url('./graphicdesign/infographicBG.jpg');}
+#interactiveBG {background-image: url('./graphicdesign/interactiveBG.jpg');}
+#geometricBG {background-image: url('./graphicdesign/graphicdesign-images/geometric3.jpg');}
+#uiuxBG {background-image: url('./graphicdesign/uiuxBG.jpg');}
+#colortheoryBG {background-image: url('./graphicdesign/colortheoryBG.gif');}
+#imagesBG {background-image: url('./graphicdesign/imagesBG.jpg');}
+#twoddesignBG {background-image: url('./graphicdesign/twoddesignBG.png');}
+#designprocessBG {background-image: url('./graphicdesign/designprocessBG.jpg');}
+#gdintroBG {background-image: url('./graphicdesign/gdintroBG.png');}
+#resourcesBG {background-image: url('./graphicdesign/resourcesBG.jpg');}
+#topofpage {background-image: url('./graphicdesign/topofpage.gif');}
+#brandingBG {background-image: url('./graphicdesign/brandingBG.jpg');}
+#vectorrasterBG {background-image: url('./graphicdesign/graphicdesign-images/morecolorstshirts4.jpg');}
+#colorBG{background-image: url('./graphicdesign/colorBG.jpg');}
+#colorizeBG{background-image: url('./graphicdesign/colorizeBG.jpg');}
+#copyrightBG{background-image: url('./graphicdesign/copyrightBG.jpg');}
+#moodboardBG{background-image: url('./graphicdesign/moodboardBG.jpg');}
+#cymkrgbBG{background-image: url('./graphicdesign/cymkrgbBG.jpg');}
+#popartBG{background-image: url('./graphicdesign/popartBG.jpg');}
+#layoutcompBG{background-image: url('./graphicdesign/layoutcompBG.jpg');}
+#patternrepetitionBG{background-image: url('./graphicdesign/patternrepetitionBG.jpg');}
+#behanceBG{background-image: url('./graphicdesign/behanceBG.gif');}
+#socialmediaBG{background-image: url('./graphicdesign/socialmediaBG.jpg');}
+#curvesBG{background-image: url('./graphicdesign/curvesBG.jpg');}
+#negspaceBG{background-image: url('./graphicdesign/negspaceBG.jpg');}
+#rulesBG{background-image: url('./graphicdesign/rulesBG.jpg');}
+#gridsBG{background-image: url('./graphicdesign/gridsBG.jpg');}
+#typographyBG{background-image: url('./graphicdesign/typographyBG.png');}
+#badfontBG{background-image: url('./graphicdesign/badfontBG.jpg');}
+#typographyposterBG{background-image: url('./graphicdesign/typographyposterBG.jpg');}
+#designyourownBG{background-image: url('./graphicdesign/designyourownBG.gif');}
 
 
 /*2d/3d animation background images*/
-#settingupunityBG {background-image: url('settingupunityBG.jpg');
-background-position: center; background-size: contain;}
-#unitybreakdownBG {background-image: url('unitybreakdownBG.jpg');
-background-position: center; background-size: contain;}
-#importingassetsBG {background-image: url('importingassetsBG.jpg');
-background-position: center; background-size: contain;}
-#keyframessoundBG {background-image: url('keyframessoundBG.jpg');
-background-position: center; background-size: contain;}
-#curvesandstatesBG {background-image: url('curvesandstatesBG.jpg');
-background-position: center; background-size: contain;}
-#openingsceneBG {background-image: url('openingsceneBG.jpg');
-background-position: center; background-size: contain;}
-#lightingBG {background-image: url('lightingBG.jpg');
-background-position: center; background-size: contain;}
-#renderingBG {background-image: url('renderBG.jpg');
-background-position: center; background-size: contain;}
-#titleSceneBG{background-image: url('titlescenecutsceneBG.gif');
-background-position: center; background-size: contain;}
-#twodBG {background-image: url('twodBG.gif');
-background-position: center; background-size: contain;}
-#unlockingBG {background-image: url('unlockingBG.jpg');
-background-position: center; background-size: contain;}
-#worldbuildingBG {background-image: url('worldbuildingBG.gif');
-  background-position: center; background-size: contain;}
+#settingupunityBG {background-image: url('./animations/animation-images/settingupunityBG.jpg');}
+#unitybreakdownBG {background-image: url('./animations/animation-images/unitybreakdownBG.jpg');}
+#importingassetsBG {background-image: url('./animations/animation-images/importingassetsBG.jpg');}
+#keyframessoundBG {background-image: url('./animations/animation-images/keyframessoundBG.jpg');}
+#curvesandstatesBG {background-image: url('./animations/animation-images/curvesandstatesBG.jpg');}
+#openingsceneBG {background-image: url('./animations/animation-images/openingsceneBG.jpg');}
+#lightingBG {background-image: url('./animations/animation-images/lightingBG.jpg');}
+#renderingBG {background-image: url('./animations/animation-images/renderBG.jpg');}
+#titleSceneBG{background-image: url('./animations/animation-images/titlescenecutsceneBG.gif');}
+#twodBG {background-image: url('./animations/animation-images/twodBG.gif');}
+#unlockingBG {background-image: url('./animations/animation-images/unlockingBG.jpg');}
+#worldbuilding3BG {background-image: url('./animations/animation-images/worldbuildingBG.gif'); background-position: center; background-size: contain;}
 
 #webdevBG {background-image: url('computer.gif'); background-position: center; background-size: contain;}
-#pythonBG {background-image: url('Python.png'); background-position: center; background-size: contain;}
-#googleBG {background-image: url('google.png'); background-position: center; background-size: contain;}
+#pythonBG {background-image: url('./python/python-images/Python.png'); background-position: center; background-size: contain;}
 #patternBG {background-image: url('striped.gif');}
 
 /*Unity images */
-#setupBG{background-image: url('setup.jpg');}
-#worldbuildingBG{background-image: url('worldbuilding_terrain.jpg');}
-#worldbuilding2BG{background-image: url('worldbuilding_terrain2.jpg');}
-#characterBG{background-image: url('character.gif');}
-#organizeBG{background-image: url('organize.jpg');}
-#collectableBG{background-image: url('collectable.jpg');}
-#uiBG{background-image: url('interface.gif');}
-#collectable2BG{background-image: url('collectable2.gif');}
-#prefabBG{background-image: url('prefab1.gif');
+#setupBG{background-image: url('./unity/unity-images/setup.jpg');}
+#worldbuildingBG{background-image: url('./unity/unity-images/worldbuilding_terrain.jpg');}
+#worldbuilding2BG{background-image: url('./unity/unity-images/worldbuilding_terrain2.jpg');}
+#characterBG{background-image: url('./unity/unity-images/character.gif');}
+#organizeBG{background-image: url('./unity/unity-images/organize.jpg');}
+#collectableBG{background-image: url('./unity/unity-images/collectable.jpg');}
+#uiBG{background-image: url('./unity/unity-images/interface.gif');}
+#collectable2BG{background-image: url('./unity/unity-images/collectable2.gif');}
+#prefabBG{background-image: url('./unity/unity-images/prefab1.gif');
 background-position: center; background-size: contain;}
-#enemyBG{background-image: url('enemy.jpg');}
-#attackBG{background-image: url('enemyattacks.gif');}
-#healthBG{background-image: url('healthbar1.gif');}
-#fightBG{background-image: url('fightingenemies.gif');}
-#enemyprefabBG{background-image: url('prefabenemy.jpeg');}
-#menuBG{background-image: url('unitymenu.gif');}
-#audioBG{background-image: url('audio.jpeg');
+#enemyBG{background-image: url('./unity/unity-images/enemy.jpg');}
+#attackBG{background-image: url('./unity/unity-images/enemyattacks.gif');}
+#healthBG{background-image: url('./unity/unity-images/healthbar.gif');}
+#fightBG{background-image: url('./unity/unity-images/fightingenemies.gif');}
+#enemyprefabBG{background-image: url('./unity/unity-images/prefabenemy.jpeg');}
+#menuBG{background-image: url('./unity/unity-images/unitymenu.gif');}
+#audioBG{background-image: url('./unity/unity-images/audio.jpeg');
 background-position: center; background-size: contain;}
-#buildBG{background-image: url('unitybuild.jpeg');
+#buildBG{background-image: url('./unity/unity-images/unitybuild.jpeg');
 background-position: center; background-size: contain;}
-#interfaceBG{background-image: url('interfacebasics.jpg');
+#interfaceBG{background-image: url('./unity/unity-images/interfacebasics.jpg');
 background-position: center; background-size: contain;}
-#movementBG{background-image: url('movementtools.gif');
+#movementBG{background-image: url('./unity/unity-images/movementtools.gif');
 background-position: center; background-size: auto;}
-#assetBG{background-image: url('assetstore.gif');
+#assetBG{background-image: url('./unity/unity-images/assetstore.gif');
 background-position: center; background-size: contain;}
-#terrain3BG{background-image: url('worldbuildingbasics.jpg');}
-#collectable3BG{background-image: url('collectablescheatsheet.jpg');
+#terrain3BG{background-image: url('./unity/unity-images/worldbuildingbasics.jpg');}
+#collectable3BG{background-image: url('./unity/unity-images/collectablescheatsheet.jpg');
 background-position: center; background-size: contain;}
-#scriptBG{background-image: url('scriptingbasics.gif');}
-#errorBG{background-image: url('errormessages.jpg');
+#scriptBG{background-image: url('./unity/unity-images/scriptingbasics.gif');}
+#errorBG{background-image: url('./unity/unity-images/errormessages.jpg');
 background-position: center; background-size: contain;}
 
 /*Python images */
-#pythonsetupBG{background-image: url('./Python_files/replit.png');}
-#syntaxBG{background-image: url('./Python_files/syntax.jpg');}
-#functionsBG{background-image: url('./Python_files/inputoutput.jpg');}
-#variablesBG{background-image: url('./Python_files/variables.png');}
-#controlsBG{background-image: url('./Python_files/conditionals.jpg');}
-#pythonErrorsBG{background-image: url('./Python_files/error.jpg');}
-#loopsBG{background-image: url('./Python_files/loop.jpg');}
-#functions2BG{background-image: url('./Python_files/functions.jpg');}
-#listsBG{background-image: url('./Python_files/lists.jpg');}
-#hangmanBG{background-image: url('./Python_files/hangman.jpg');}
-#pythonadventureBG{background-image: url('./Python_files/pythonadventure.gif');}
-#tictactoeaiBG{background-image: url('./Python_files/tictactoe.gif');}
-#tictactoe2playerBG{background-image: url('./Python_files/tictactoe2player.jpg');}
+#pythonsetupBG{background-image: url('./python/python-images/replit.png');}
+#syntaxBG{background-image: url('./python/python-images/syntax.jpg');}
+#functionsBG{background-image: url('./python/python-images/inputoutput.jpg');}
+#variablesBG{background-image: url('./python/python-images/variables.png');}
+#controlsBG{background-image: url('./python/python-images/conditionals.jpg');}
+#pythonErrorsBG{background-image: url('./python/python-images/error.jpg');}
+#loopsBG{background-image: url('./python/python-images/loop.jpg');}
+#functions2BG{background-image: url('./python/python-images/functions.jpg');}
+#listsBG{background-image: url('./python/python-images/lists.jpg');}
+#hangmanBG{background-image: url('./python/python-images/hangman.jpg');}
+#pythonadventureBG{background-image: url('./python/python-images/pythonadventure.gif');}
+#tictactoeaiBG{background-image: url('./python/python-images/tictactoe.gif');}
+#tictactoe2playerBG{background-image: url('./python/python-images/tictactoe2player.jpg');}
+#turtlebasicsBG{background-image: url('./python/python-images/turtlebasics.JPG');}
+#pythonshapesBG{background-image: url('./python/python-images/pythonshapes.gif');}
+#pythonwritingBG{background-image: url('typing.gif');}
+#turtleraceBG{background-image: url('./python/python-images/turtlerace.jpg');}
+#interactiveturtlesBG{background-image: url('./python/python-images/interactiveturtles.jpg');}
+#clickingturtlesBG{background-image: url('./python/python-images/clickingturtles.jpg');}
+#pythonhideseekBG{background-image: url('./python/python-images/pythonhideseek.jpg');}
 
 /*JS Images */
-#codecademyBG{background-image: url('Codecademy.png');}
-#learnjsBG{background-image: url('JavaScript-logo.png');}
-#w3schoolsBG{background-image: url('W3Schools_logo.png');}
-#tamagotchiBG{background-image: url('tamagotchi.gif');}
-#jquerysetupBG{background-image: url('jquerysetup.png');}
-#rainbowbuttonBG{background-image: url('rainbowbutton.gif');}
-#tictactoeBG{background-image: url('./Python_files/tictactoe.gif');}
-#whackamoleBG{background-image: url('whackamole.jpg');}
+#codecademyBG{background-image: url('./javascript/Codecademy.png');}
+#learnjsBG{background-image: url('./javascript/JavaScript-logo.png');}
+#w3schoolsBG{background-image: url('./javascript/W3Schools_logo.png');}
+#tamagotchiBG{background-image: url('./javascript/tamagotchi.gif');}
+#jquerysetupBG{background-image: url('./javascript/jquerysetup.png');}
+#rainbowbuttonBG{background-image: url('./javascript/rainbowbutton.gif');}
+#tictactoeBG{background-image: url('./python/python-images/tictactoe.gif');}
+#whackamoleBG{background-image: url('./javascript/whackamole.jpg');}
 
 /*Career Exposure Images */
-#careertestBG{background-image: url('careertest.jpg');}
+#careertestBG{background-image: url('./careerexposure/careertest.jpg');}
+
+/*ARVR Images */
+#arunityBG{background-image: url('./vr/vr-images/arunity.jpg');}
+#teleportingBG{background-image: url('./vr/vr-images/teleporting.jpg');}
+#interactingBG{background-image: url('./vr/vr-images/interacting.jpg');}
+#archeryBG{background-image: url('./vr/vr-images/archery.jpg');}
+#trackpadBG{background-image: url('./vr/vr-images/trackpad.jpg');}
+#uiactionsBG{background-image: url('./vr/vr-images/uiactions.jpg');}
+#flyingBG{background-image: url('./vr/vr-images/flying.jpg');}
+#firingobjectsBG{background-image: url('./vr/vr-images/firingobjects.jpg');}
+
+
+
+
 
 /* =================================================================================================================================HOME PAGE CARD============================================================ */
 .agesHeading {
@@ -558,7 +610,7 @@ background-position: center; background-size: contain;}
 
 .firstmoodboard {
   float: left;
-  background-image: url("./GraphicDesignV2_files/moodboard1.jpg");
+  background-image: url("./graphicdesign/graphicdesign-images/moodboard1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   width: 45%;
@@ -569,7 +621,7 @@ background-position: center; background-size: contain;}
 
 .secondmoodboard {
   float: right;
-  background-image: url("./GraphicDesignV2_files/moodboard2.jpg");
+  background-image: url("./graphicdesign/graphicdesign-images/moodboard2.jpg");
   background-repeat: no-repeat;
   background-position: center;
   width: 45%;
@@ -581,7 +633,7 @@ background-position: center; background-size: contain;}
 
 .thirdmoodboard {
   float: left;
-  background-image: url("./GraphicDesignV2_files/moodboard3.jpg");
+  background-image: url("./graphicdesign/graphicdesign-images/moodboard3.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -598,7 +650,7 @@ background-position: center; background-size: contain;}
 
 /* .fourthmoodboard {
   float: right;
-  background-image: url("./GraphicDesignV2_files/moodboard4.jpg");
+  background-image: url("./graphicdesign-images/moodboard4.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -609,7 +661,7 @@ background-position: center; background-size: contain;}
 
 .geometric3 {
   float: left;
-  background-image: url("./GraphicDesignV2_files/geometric3.jpg");
+  background-image: url("./graphicdesign/graphicdesign-images/geometric3.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -620,7 +672,7 @@ background-position: center; background-size: contain;}
 
 .geometric2 {
   float: left;
-  background-image: url("./GraphicDesignV2_files/geometric2.jpg");
+  background-image: url("./graphicdesign/graphicdesign-images/geometric2.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -632,7 +684,7 @@ background-position: center; background-size: contain;}
 
 .geometric1 {
   float: left;
-  background-image: url("./GraphicDesignV2_files/geometric1.jpg");
+  background-image: url("./graphicdesign/graphicdesign-images/geometric1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -643,7 +695,7 @@ background-position: center; background-size: contain;}
 
 .minimalistone {
   float: left;
-  background-image: url("./GraphicDesignV2_files/negspace1.jpg");
+  background-image: url("./graphicdesign/graphicdesign-images/negspace1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -654,7 +706,7 @@ background-position: center; background-size: contain;}
 
 .minimalisttwo {
   float: left;
-  background-image: url("./GraphicDesignV2_files/negspace2.jpg");
+  background-image: url("./graphicdesign/graphicdesign-images/negspace2.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -665,7 +717,7 @@ background-position: center; background-size: contain;}
 
 #portfolio1 {
   float: left;
-  background-image: url("./GraphicDesignV2_files/portfolio1.jpg");
+  background-image: url("./graphicdesign/graphicdesign-images/portfolio1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -677,7 +729,7 @@ background-position: center; background-size: contain;}
 #portfolio2 {
   float: left;
   margin-left: 4%;
-  background-image: url("./GraphicDesignV2_files/portfolio2.jpg");
+  background-image: url("./graphicdesign/graphicdesign-images/portfolio2.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -688,7 +740,7 @@ background-position: center; background-size: contain;}
 
 #portfolio3 {
   float: left;
-  background-image: url("./GraphicDesignV2_files/portfolio7.jpg");
+  background-image: url("./graphicdesign/graphicdesign-images/portfolio7.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -699,7 +751,7 @@ background-position: center; background-size: contain;}
 
 #portfolio4 {
   float: left;
-  background-image: url("./GraphicDesignV2_files/portfolio8.jpg");
+  background-image: url("./graphicdesign/graphicdesign-images/portfolio8.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
