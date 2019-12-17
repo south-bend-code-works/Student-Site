@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="../main.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="https://south-bend-code-school.github.io/Student-Site/SBCS_favicon.png">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Unity Cheat Sheet - Scripting Basics</title>
+  </head>
+
+  <body>
+    <!--Nav bar  -->
+    <nav class="light-blue lighten-1">
+      <div class="nav-wrapper">
+        <a href="#!"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="hide-on-med-and-down">
+          <li><a href="../home.html">Home</a></li>
+          <li><a href="../scratch/scratch.html">Ages 7-12</a></li>
+          <li><a href="../techimmersion.html">Ages 13-18</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="../home.html">Home</a></li>
+      <li><a href="../scratch/scratch.html">Ages 7-12</a></li>
+      <li><a href="../techimmersion.html">Ages 13-18</a></li>
+    </ul>
+
+    <!--html Lesson: Project Title -->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h4>Unity Cheat Sheet - Scripting Basics</h4>
+        <h5>Scripting got you down? Try this on for size</h5>
+     </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5>Anatomy of a Script</h5>
+        <img src="./unity-images/scripting1.JPG" width="600px">
+     </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5>Variables</h5>
+        <p>A variable is like a container. We can put different things (values) into the container. Some important aspects of variables:</p>
+     </div>
+    </div>
+
+    <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+            <h6>Name and Value</h6>
+            <p>A variable has a name and a value. We use the name to refer to the variable. The value is whatever is in the container!</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+          <!--Lesson Checkbox Div-->
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </p>
+              </form>
+            </div>
+          </div>
+          <!--Instruction Div-->
+          <div class="col s6">
+            <div class="projectsection1">
+              <h6>Type</h6>
+              <p>All variables have a type. If a variable is a container, then the type is what kind of container it is - what kind of things it can hold. Some common types:<p>
+                <ul>
+                  <li><strong>Integer</strong> - A number without a decimal point</li>
+                  <li><strong>Float</strong> - A number with a decimal point</li>
+                  <li><strong>Boolean</strong> - either true or false</li>
+                  <li><strong>String</strong> - can contain letters and numbers</li>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+            <!--Lesson Checkbox Div-->
+            <div class="col s1 offset-s1">
+              <div class="checkbox">
+                <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span></span>
+                      </label>
+                    </p>
+                </form>
+              </div>
+            </div>
+            <!--Instruction Div-->
+            <div class="col s6">
+              <div class="projectsection1">
+                <h6>Public/Private</h6>
+                <p>Variables also have a private/public/protected status. By default, a variable is <strong>private</strong> which means it can't be accessed outside of the script it is in. A <strong>public</strong> variable can be changed by other scripts and <strong>can be changed in the Inspector</strong>.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+              <!--Lesson Checkbox Div-->
+              <div class="col s1 offset-s1">
+                <div class="checkbox">
+                  <form action="#">
+                      <p>
+                        <label>
+                          <input type="checkbox" />
+                          <span></span>
+                        </label>
+                      </p>
+                  </form>
+                </div>
+              </div>
+              <!--Instruction Div-->
+              <div class="col s6">
+                <div class="projectsection1">
+                  <h6>Declaring and Initializing a variable</h6>
+                  <p><strong>Declaring a variable</strong> means giving it a name, type, and public/private status. To declare a public boolean called “jumping”, you'd write:</p>
+                  <p><i>public bool jumping;</i></p>
+                  <p><strong>Initializing a variable</strong> means giving it a starting value. We usually do this in the Start function:</p>
+                  <p><i>jumping = false;</i></p>
+
+                </div>
+              </div>
+            </div>
+
+              <div class="row">
+                  <!--Lesson Checkbox Div-->
+                  <div class="col s1 offset-s1">
+                    <div class="checkbox">
+                      <form action="#">
+                          <p>
+                            <label>
+                              <input type="checkbox" />
+                              <span></span>
+                            </label>
+                          </p>
+                      </form>
+                    </div>
+                  </div>
+                  <!--Instruction Div-->
+                  <div class="col s6">
+                    <div class="projectsection1">
+                      <h6>Variable Scope</h6>
+                      <p>The scope of a variable is where it exists. A <strong>global</strong> variable can be used by all the functions in a script. A <strong>local</strong> variable only exists to part of a script. This depends on where it is declared. A variable declared at the beginning of the script, before all the functions, is <strong>global</strong>. A variable declared inside of a function is <strong>local</strong>.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col s6 offset-s1">
+                    <h5>Functions</h5>
+                    <p>Let's talk about the anatomy of a function! A function has basically 5 parts:</p>
+                    <ul>
+                      <li><strong>Name</strong> - the name of the function!</li>
+                      <li><strong>start</strong> - the bracket at the beginning of the function's code.</li>
+                      <li><strong>End</strong> - the bracket at the end of the function's code.</li>
+                      <li><strong>Parameters</strong> - things that the function needs to run its code.</li>
+                      <li><strong>Return type</strong> - what the function spits out when it is done running.</li>
+                    </ul>
+                    <img src="./unity-images/scripting2.JPG" width="500px">
+
+                 </div>
+                </div>
+
+                <div class="row">
+                  <div class="col s6 offset-s1">
+                    <h5>Coding Logic - If-Then Statements</h5>
+                    <p>We're going to use a piece of coding logic called an <strong>if-then statement</strong>, also known as a <strong>conditional statement</strong>. This is how one works:</p>
+                    <img src="./unity-images/scripting3.JPG" width="500px">
+                    <p>It has two parts - a condition, and code to execute if that condition is true.</p>
+                    <img src="./unity-images/scripting4.JPG" width="500px">
+                 </div>
+                </div>
+
+                <div class="row">
+                  <div class="col s6 offset-s1">
+                    <h5>Parameters and Return Type</h5>
+                 </div>
+                </div>
+
+                <div class="row">
+                    <!--Lesson Checkbox Div-->
+                    <div class="col s1 offset-s1">
+                      <div class="checkbox">
+                        <form action="#">
+                            <p>
+                              <label>
+                                <input type="checkbox" />
+                                <span></span>
+                              </label>
+                            </p>
+                        </form>
+                      </div>
+                    </div>
+                    <!--Instruction Div-->
+                    <div class="col s6">
+                      <div class="projectsection1">
+                        <h6>Parameters</h6>
+                        <p>Some functions need outside information to run. It may be helpful to think of a function as a blender - it needs ingredients in order to make a smoothie.</p>
+                        <p>OnTriggerEnter, for example, needs a parameter of type “Collider”:</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col s6 offset-s2">
+                      <img src="./unity-images/scripting6.JPG" width="400px">
+                    </div>
+                  </div>
+
+      <div class="row">
+          <!--Lesson Checkbox Div-->
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </p>
+              </form>
+            </div>
+          </div>
+          <!--Instruction Div-->
+          <div class="col s6">
+            <div class="projectsection1">
+              <h6>Return Type</h6>
+              <p>If a function is a blender, then the return type is the thing that it produces - smoothie, etc.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s6 offset-s2">
+            <img src="./unity-images/scripting7.JPG" width="400px">
+          </div>
+        </div>
+
+        <div class="row">
+            <!--Lesson Checkbox Div-->
+            <div class="col s1 offset-s1">
+              <div class="checkbox">
+                <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span></span>
+                      </label>
+                    </p>
+                </form>
+              </div>
+            </div>
+            <!--Instruction Div-->
+            <div class="col s6">
+              <div class="projectsection1">
+                <p>In this case, the return type is an <strong>integer</strong>. Here's how the function would work. We would call the function, which makes it run once through each of its lines of code. The Add function takes two parameters (integers Number1 and Number 2) which it then adds together and returns the sum! To call the function, we write the name:</p>
+                <p><i>Add();</i></p>
+                <br>
+                <p>But if a function takes parameters, you have to give it the parameters or it won't work! This function can't add numbers together if it isn't given any numbers to work with.</p>
+                <p><i>Add (3, 5);</i></p>
+                <p>The function would then <trong>return 8</strong>, which is an integer!</p>
+              </div>
+            </div>
+          </div>
+
+
+	  <br>
+	  <br>
+    <!--Project Complete Banner-->
+    <div class="row blue white-text">
+	     <br>
+        <h5 style="text-align:center;">Scripting, and scripting, and scripting, and scripting...</h5>
+	     <br>
+    </div>
+	<br>
+	<br>
+
+        <!--Card: Prompt - Find Another Project-->
+        <div class="row">
+          <div class="col s4 offset-s2">
+            <div class="card findanotherproject">
+              <div class="card-content">
+                <div class="cardDescription">
+                  <h6>Find another project?</h6>
+                  <div class="browse">
+                    <br>
+                    <a href="../unity/unityfundamentals.html">
+                      <button>Browse all projects</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </body>
+    </html>
