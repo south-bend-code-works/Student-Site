@@ -295,8 +295,9 @@ input[type='checkbox'] {
 #sidescrollerBG {background-image: url('./scratch/scratch-images/sidescroller.jpg');}
 #spaceBG {background-image: url('./scratch/scratch-images/spacefinal.gif');}
 #googleBG {background-image: url('./scratch/scratch-images/google.png'); background-position: center; background-size: contain;}
-#kahootBG {background-image: url('kahoot.jpeg');}
+#kahootBG {background-image: url('../kahoot.jpeg');}
 #gothedistanceBG {background-image: url('./scratch/scratch-images/gothedistance.jpg');}
+.kahootBG{background-image: url('./kahoot.jpeg');}
 
 /* HTML CSS background images */
 #htmlcssBG {background-image: url('./html/html-images/htmlcss.jpg');}
@@ -455,11 +456,12 @@ background-position: center; background-size: contain;}
 #tictactoe2playerBG{background-image: url('./python/python-images/tictactoe2player.jpg');}
 #turtlebasicsBG{background-image: url('./python/python-images/turtlebasics.JPG');}
 #pythonshapesBG{background-image: url('./python/python-images/pythonshapes.gif');}
-#pythonwritingBG{background-image: url('typing.gif');}
+#pythonwritingBG{background-image: url('./html/html-images/typing.gif');}
 #turtleraceBG{background-image: url('./python/python-images/turtlerace.jpg');}
 #interactiveturtlesBG{background-image: url('./python/python-images/interactiveturtles.jpg');}
 #clickingturtlesBG{background-image: url('./python/python-images/clickingturtles.jpg');}
 #pythonhideseekBG{background-image: url('./python/python-images/pythonhideseek.jpg');}
+#turtleshapesBG{background-image: url('./python/python-images/turtleshapes.gif');}
 
 /*JS Images */
 #codecademyBG{background-image: url('./javascript/Codecademy.png');}
