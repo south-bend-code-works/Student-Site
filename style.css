@@ -455,11 +455,12 @@ background-position: center; background-size: contain;}
 #tictactoe2playerBG{background-image: url('./python/python-images/tictactoe2player.jpg');}
 #turtlebasicsBG{background-image: url('./python/python-images/turtlebasics.JPG');}
 #pythonshapesBG{background-image: url('./python/python-images/pythonshapes.gif');}
-#pythonwritingBG{background-image: url('typing.gif');}
+#pythonwritingBG{background-image: url('./html/html-images/typing.gif');}
 #turtleraceBG{background-image: url('./python/python-images/turtlerace.jpg');}
 #interactiveturtlesBG{background-image: url('./python/python-images/interactiveturtles.jpg');}
 #clickingturtlesBG{background-image: url('./python/python-images/clickingturtles.jpg');}
 #pythonhideseekBG{background-image: url('./python/python-images/pythonhideseek.jpg');}
+#turtleshapesBG{background-image: url('./python/python-images/turtleshapes.gif');}
 
 /*JS Images */
 #codecademyBG{background-image: url('./javascript/Codecademy.png');}
