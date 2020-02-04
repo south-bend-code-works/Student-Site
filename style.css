@@ -486,7 +486,11 @@ background-position: center; background-size: contain;}
 #flyingBG{background-image: url('./vr/vr-images/flying.jpg');}
 #firingobjectsBG{background-image: url('./vr/vr-images/firingobjects.jpg');}
 
+/*Database Images*/
+#firebaseBG{background-image: url('./databases/database-images/firebase-logo.png');}
 
+/*Git Images*/
+#gitBG{background-image: url('./git/git-images/github-logo.png');}
 
 
 
