@@ -265,6 +265,11 @@ input[type='checkbox'] {
 }
 
 /* =================================================================================================================================Scratch Lesson Cards=======================================================*/
+#sequenceBG{background-image: url('./scratch/scratch-images/sequence-how-to.png');}
+#eventsBG{background-image: url('./scratch/scratch-images/events-how-to.png');}
+#loops-scratchBG{background-image: url('./scratch/scratch-images/loops-how-to.png');}
+#conditionalsBG{background-image: url('./scratch/scratch-images/conditionals-how-to.png');}
+#functions-scratchBG{background-image: url('./scratch/scratch-images/functions-how-to.png');}
 #aboutMeBG {background-image: url('./scratch/scratch-images/aboutme.gif');}
 #animateMeBG {background-image: url('./scratch/scratch-images/animatename.jpg');}
 #fivethingsMeBG {background-image: url('./scratch/scratch-images/fivethings.gif');}
@@ -297,6 +302,8 @@ input[type='checkbox'] {
 #googleBG {background-image: url('./scratch/scratch-images/google.png'); background-position: center; background-size: contain;}
 #kahootBG {background-image: url('../kahoot.jpeg');}
 #gothedistanceBG {background-image: url('./scratch/scratch-images/gothedistance.jpg');}
+#dodgeBG{background-image: url('./scratch/scratch-images/decorative-dodgeball.png');}
+#turkeyBG{background-image: url('./scratch/scratch-images/turkey-trouble.png');}
 .kahootBG{background-image: url('./kahoot.jpeg');}
 
 /* HTML CSS background images */
