@@ -265,6 +265,11 @@ input[type='checkbox'] {
 }
 
 /* =================================================================================================================================Scratch Lesson Cards=======================================================*/
+#sequenceBG{background-image: url('./scratch/scratch-images/sequence-how-to.png');}
+#eventsBG{background-image: url('./scratch/scratch-images/events-how-to.png');}
+#loops-scratchBG{background-image: url('./scratch/scratch-images/loops-how-to.png');}
+#conditionalsBG{background-image: url('./scratch/scratch-images/conditionals-how-to.png');}
+#functions-scratchBG{background-image: url('./scratch/scratch-images/functions-how-to.png');}
 #aboutMeBG {background-image: url('./scratch/scratch-images/aboutme.gif');}
 #animateMeBG {background-image: url('./scratch/scratch-images/animatename.jpg');}
 #fivethingsMeBG {background-image: url('./scratch/scratch-images/fivethings.gif');}
@@ -295,8 +300,11 @@ input[type='checkbox'] {
 #sidescrollerBG {background-image: url('./scratch/scratch-images/sidescroller.jpg');}
 #spaceBG {background-image: url('./scratch/scratch-images/spacefinal.gif');}
 #googleBG {background-image: url('./scratch/scratch-images/google.png'); background-position: center; background-size: contain;}
-#kahootBG {background-image: url('kahoot.jpeg');}
+#kahootBG {background-image: url('../kahoot.jpeg');}
 #gothedistanceBG {background-image: url('./scratch/scratch-images/gothedistance.jpg');}
+#dodgeBG{background-image: url('./scratch/scratch-images/decorative-dodgeball.png');}
+#turkeyBG{background-image: url('./scratch/scratch-images/turkey-trouble.png');}
+.kahootBG{background-image: url('./kahoot.jpeg');}
 
 /* HTML CSS background images */
 #htmlcssBG {background-image: url('./html/html-images/htmlcss.jpg');}
@@ -314,7 +322,7 @@ input[type='checkbox'] {
 #logoBG {background-image: url('./html/html-images/logo.png');}
 #portBG{background-image: url('./html/html-images/scratchportfolio.jpg');}
 #passionBG{background-image: url('passionProject.jpg');}
-#materializeBG {background-image: url('./html/html-images/materialize.JPG');}
+#materializeBG {background-image: url('./html/html-images/materialize.jpg');}
 #startupBG {background-image: url('./html/html-images/startup.jpg');}
 =======
 
@@ -334,7 +342,7 @@ input[type='checkbox'] {
 #logoBG {background-image: url('./html/html-images/logo.png');}
 #keyframesreviewBG{background-image: url();}
 #portBG{background-image: url('./html/html-images/scratchportfolio.jpg');}
-#materializeBG {background-image: url('./html/html-images/materialize.JPG');}
+#materializeBG {background-image: url('./html/html-images/materialize.jpg');}
 #startupBG {background-image: url('./html/html-images/startup.jpg');}
 .challenge1{background-image: url('codingchallenge1.jpg');}
 .challenge2{background-image: url('codingchallenge2.jpg');}
@@ -453,13 +461,14 @@ background-position: center; background-size: contain;}
 #pythonadventureBG{background-image: url('./python/python-images/pythonadventure.gif');}
 #tictactoeaiBG{background-image: url('./python/python-images/tictactoe.gif');}
 #tictactoe2playerBG{background-image: url('./python/python-images/tictactoe2player.jpg');}
-#turtlebasicsBG{background-image: url('./python/python-images/turtlebasics.JPG');}
+#turtlebasicsBG{background-image: url('./python/python-images/turtlebasics.jpg');}
 #pythonshapesBG{background-image: url('./python/python-images/pythonshapes.gif');}
-#pythonwritingBG{background-image: url('typing.gif');}
+#pythonwritingBG{background-image: url('./html/html-images/typing.gif');}
 #turtleraceBG{background-image: url('./python/python-images/turtlerace.jpg');}
 #interactiveturtlesBG{background-image: url('./python/python-images/interactiveturtles.jpg');}
 #clickingturtlesBG{background-image: url('./python/python-images/clickingturtles.jpg');}
 #pythonhideseekBG{background-image: url('./python/python-images/pythonhideseek.jpg');}
+#turtleshapesBG{background-image: url('./python/python-images/turtleshapes.gif');}
 
 /*JS Images */
 #codecademyBG{background-image: url('./javascript/Codecademy.png');}
@@ -484,7 +493,11 @@ background-position: center; background-size: contain;}
 #flyingBG{background-image: url('./vr/vr-images/flying.jpg');}
 #firingobjectsBG{background-image: url('./vr/vr-images/firingobjects.jpg');}
 
+/*Database Images*/
+#firebaseBG{background-image: url('./databases/database-images/firebase-logo.png');}
 
+/*Git Images*/
+#gitBG{background-image: url('./git/git-images/github-logo.png');}
 
 
 
