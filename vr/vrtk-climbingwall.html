@@ -48,8 +48,8 @@
       <div class="col s6 offset-s2">
         <h4 class="projectTitle">In this lesson you will:</h4>
         <ol>
-          <li>Learn to use <a href = "https://vrtoolkit.readme.io/docs" target="_blank">VRTK Documentation</a></li>
-          <li>Add new movement features.</li>
+          <li>Use the Setup Interactable Objects menu.</a></li>
+          <li>Build a new project.</li>
         </ol>
         <h4 class="projectTitle">What You Will Make</h4>
         <p>A climbing wall game.</p>
@@ -96,8 +96,8 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Let’s use the documentation to learn to add a new ability, Slingshot Jump!</h5>
-          <h6>This allows us to use the controllers to slingshot the player around.</h6>
+          <h5>Add whatever type of locomotion you'd like to use.</h5>
+          <h6>Teleportation is a good option.</h6>
         </div>
       </div>
     </div>
@@ -117,8 +117,7 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Navigate to the documentation for <a href = "https://vrtoolkit.readme.io/docs/vrtk_slingshotjump" target="_blank">Slingshot Jump</a>.</h5>
-          <img src='vr-images/vrtk_teleport1.png'>
+          <h5>Start by making a wall out of a cube, resizing it to be a tall wall.</h5>
         </div>
       </div>
     </div>
@@ -138,8 +137,10 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Take a read through what's here.</h5>
-          <img src='vr-images/vrtk_docs1.png'>
+          <h5>Make a small sphere, make it a different color, climbable, and then duplicate and sprinkle them across the cube, making them protrude from the surface of the cube.</h5>
+          <h6>Tip: Ctrl+D will duplicate an item.</h6>
+          <img src='vr-images/vrtk_wall1.png'>
+          <img src='vr-images/vrtk_wall3.png'>
         </div>
       </div>
     </div>
@@ -159,7 +160,8 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Note that there are two required components (also scripts) that must be attached to the same object.</h5>
+          <h5>Tip: Store all the climbing holds in an empty game object to keep your game organized.</h5>
+          <img src="vr-images/vrtk_wall2.png" alt="">
         </div>
       </div>
     </div>
@@ -182,7 +184,7 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Add both of these components to an empty game object called PlayArea.</h5>
+          <h5>Add VRTK_BodyPhysics to the PlayArea so that the player can fall from the wall.</h5>
         </div>
       </div>
     </div>
@@ -202,8 +204,8 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Now we just need to add the VRTK_SlingshotJump script to the PlayArea.</h5>
-          <img src="vr-images/vrtk_docs2.png" alt="">
+          <h5>To add hand costumes instead of the default controllers, Go to Assets -> VRTK -> Prefabs -> AvatarHands -> BasicHands, and add VRTK_BasicHand prefab as a child of LeftController and RightController.</h5>
+          <img src="vr-images/vrtk_wall4.png" alt="">
         </div>
       </div>
     </div>
@@ -223,7 +225,8 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Test your game to make sure that Slingshot Jump works.</h5>
+          <h5>Adjust the Digital Finger settings on the BasicHands so that Thumb, Index, and Three Finger Axis are all controlled by either the trigger or grip, whichever you are using for climbing.</h5>
+          <img src="vr-images/vrtk_wall5.png" alt="">
         </div>
       </div>
     </div>
@@ -265,8 +268,7 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Play with the parameters to see how they affect the game.</h5>
-          <img src='vr-images/vrtk_docs3.png'>
+          <h5>Test out your game!</h5>
         </div>
       </div>
     </div>
@@ -286,8 +288,7 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Try adding the optional components to the PlayArea to see how they affect game play.</h5>
-          <img src="vr-images/vrtk_docs4.png" alt="">
+          <h5>Add a skybox and scenery to make your game more realistic. </h5>
         </div>
       </div>
     </div>
@@ -307,11 +308,16 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Now try implementing the <a href="https://vrtoolkit.readme.io/docs/vrtk_moveinplace" target="_blank">MoveInPlace</a> script!</h5>
+          <h5>Other ideas: </h5>
+          <h6><ul>
+            <li>Add multiple walls</li>
+            <li>Make hand holds of different colors to create different routes.</li>
+            <li>Create a whole world to climb around.</li>
+            <li>Import a city asset and make the buildings climbable.</li>
+          </ul></h6>
         </div>
       </div>
     </div>
-
 
 
 <div class='row'>
