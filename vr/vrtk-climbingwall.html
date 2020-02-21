@@ -16,7 +16,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="../SBCS_favicon.png">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>VRTK Teleportation</title>
+    <title>VRTK Climbing Wall Game</title>
   </head>
   <body>
     <!--Nav bar  -->
@@ -40,7 +40,7 @@
 
     <div class="row">
       <div class="col s6 offset-s3">
-        <h4 style="font-weight:bold;"><center>VRTK Teleportation</center></h4>
+        <h4 style="font-weight:bold;"><center>VRTK Climbing Wall</center></h4>
       </div>
     </div>
 
@@ -48,11 +48,11 @@
       <div class="col s6 offset-s2">
         <h4 class="projectTitle">In this lesson you will:</h4>
         <ol>
-          <li>Learn to use VRTK Teleportation</li>
-          <li>Enable gravity in your VR game!</li>
+          <li>Learn to use <a href = "https://vrtoolkit.readme.io/docs" target="_blank">VRTK Documentation</a></li>
+          <li>Add new movement features.</li>
         </ol>
         <h4 class="projectTitle">What You Will Make</h4>
-        <p>A working VR project with VRTK!</p>
+        <p>A climbing wall game.</p>
       </div>
     </div>
 
@@ -76,7 +76,7 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Open your existing VRTK game.</h5>
+          <h5>Set up a new VRTK project using the steps in <a href= "vrtk-setup.html" target="_blank">setup</a>.</h5>
         </div>
       </div>
     </div>
@@ -96,8 +96,8 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Add a plane or cube for you to stand on in the game.</h5>
-          <h6>Size and style this however you like.</h6>
+          <h5>Let’s use the documentation to learn to add a new ability, Slingshot Jump!</h5>
+          <h6>This allows us to use the controllers to slingshot the player around.</h6>
         </div>
       </div>
     </div>
@@ -117,7 +117,7 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Create an Empty Game Object and name it PlayArea. </h5>
+          <h5>Navigate to the documentation for <a href = "https://vrtoolkit.readme.io/docs/vrtk_slingshotjump" target="_blank">Slingshot Jump</a>.</h5>
           <img src='vr-images/vrtk_teleport1.png'>
         </div>
       </div>
@@ -138,9 +138,8 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Add the script VRTK_Basic Teleport to the PlayArea object.</h5>
-          <img src='vr-images/vrtk_teleport2.png'>
-          <h6>Feel free to adjust the Blink To Color.</h6>
+          <h5>Take a read through what's here.</h5>
+          <img src='vr-images/vrtk_docs1.png'>
         </div>
       </div>
     </div>
@@ -160,18 +159,14 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Test the game. Now you can teleport!</h5>
+          <h5>Note that there are two required components (also scripts) that must be attached to the same object.</h5>
         </div>
       </div>
     </div>
 
 
 
-    <div class="row">
-      <div class="col s6 offset-s1">
-        <h5 style='font-weight:bold'>Multiple ways to teleport.</h5>
-    </div>
-    </div>
+
     <div class="row">
       <div class="col s1 offset-s1">
         <div class="checkbox">
@@ -187,9 +182,7 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Use VRTK_Dash Teleport or VRTK_HeightAdjustTeleport for other teleporting options.</h5>
-          <h6>Dash Teleport fades the screen briefly when teleporting.</h6>
-          <h6>Height Adjust Teleport allows for changing heights when teleporting.</h6>
+          <h5>Add both of these components to an empty game object called PlayArea.</h5>
         </div>
       </div>
     </div>
@@ -209,7 +202,8 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>To enable gravity, add the VRTK_BodyPhysics Script to the PlayArea.</h5>
+          <h5>Now we just need to add the VRTK_SlingshotJump script to the PlayArea.</h5>
+          <img src="vr-images/vrtk_docs2.png" alt="">
         </div>
       </div>
     </div>
@@ -229,7 +223,7 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Try out different forms of teleportation.</h5>
+          <h5>Test your game to make sure that Slingshot Jump works.</h5>
         </div>
       </div>
     </div>
@@ -271,8 +265,8 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>To add a teleportation point, go to Assets -> VRTK -> Prefabs -> DestinationPoint. Drag a DestinationPoint onto the scene.</h5>
-          <img src='vr-images/vrtk_teleport3.png'>
+          <h5>Play with the parameters to see how they affect the game.</h5>
+          <img src='vr-images/vrtk_docs3.png'>
         </div>
       </div>
     </div>
@@ -292,7 +286,8 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Add some cubes and other objects to teleport onto!</h5>
+          <h5>Try adding the optional components to the PlayArea to see how they affect game play.</h5>
+          <img src="vr-images/vrtk_docs4.png" alt="">
         </div>
       </div>
     </div>
@@ -312,9 +307,7 @@
       </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h5>Once you've enabled VRTK_HeightAdjustTeleport and VRTK_BodyPhysics, teleport onto an object, move to the edge, and then move your head off the edge to fall.</h5>
-          <h6>Be careful if you get motion sick!</h6>
-          <h6>Take a break if you start to feel sick.</h6>
+          <h5>Now try implementing the <a href="https://vrtoolkit.readme.io/docs/vrtk_moveinplace" target="_blank">MoveInPlace</a> script!</h5>
         </div>
       </div>
     </div>
