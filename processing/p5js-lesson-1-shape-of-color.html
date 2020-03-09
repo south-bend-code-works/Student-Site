@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="../main.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="../SBCS_favicon.png">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Adding VR to a Unity Game</title>
+  </head>
+  <body>
+    <!--Nav bar  -->
+    <nav class="light-blue lighten-1">
+      <div class="nav-wrapper">
+        <a href="#!"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="hide-on-med-and-down">
+          <li><a href="../home.html">Home</a></li>
+          <li><a href="../scratch/scratch.html">Ages 7-12</a></li>
+          <li><a href="../techimmersion.html">Ages 13-18</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="../home.html">Home</a></li>
+      <li><a href="../scratch/scratch.html">Ages 7-12</a></li>
+      <li><a href="../techimmersion.html">Ages 13-18</a></li>
+    </ul>
+
+    <div class="row">
+      <div class="col s6 offset-s3">
+        <h4 style="font-weight:bold;"><center>The Shape of Color</center></h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <h6>In this lesson you will:</h6>
+        <ol>
+          <li>Get to know the default code</li>
+          <li>Learn how to color shapes, lines, and the background</li>
+          <li>Make some mistakes and fix them</li>
+        </ol>
+        <h4 class="projectTitle">Background Info</h4>
+        <p>
+          Processing — the father of p5.js — is a coding environment designed for artists and musicians with little to no experience programming. if you are new to this, we’ll get you making something awesome by the end of this lesson. p5.js is the JavaScript version with the added benefit of running natively on the web. The online editor is easy to use right in the browser with nothing to install.
+        </p>
+        <h4 class="projectTitle">Helpful Links</h4>
+        <p>
+          <a href="">Editor</a>: the online p5.js editor<br />
+          <a href="">Reference</a>: documentation for all things in p5.js
+        </p>
+
+        <!-- <a href='https://github.com/github/explore' target="_blank"><h5>Check out an example HERE!</h5></a> -->
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h4 style='font-weight:bold'>Steps</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 style='font-weight:bold'>Getting Started</h5>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>The first thing that we need to do is log in so our code is saved automagically and can be accessed from anywhere.
+          </h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>
+            <a href="">Lesson 0</a> covers getting started with sign up and log in as well as a quick tour of the editor with some tips and tricks to help you as you go.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>
+            Once you are logged in, you should see a window that looks much   like this, greeting you by your username…
+          </h6>
+          <img style="height:25vh;"src="">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>
+            There are a couple <b>functions</b> defined in the middle on the left and a preview window on the right that looks pretty empty to me.
+          </h6>
+          <h5>
+            Let’s change that.
+          </h5>
+          <h6>
+            In the upper left is a play button that will run the code. Click it.
+            Did anything change?
+          </h6>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 style='font-weight:bold'>Definition Follows Function</h5>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>At the end of the import, you may see a prompt that reads "API update required". Click on "I made a backup, go ahead!"</h5>
+          <h6>You'll see another prompt titled "SteamVR_Settings". Click "Accept All".</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Delete the Main Camera from your scene.</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Save the scene and your project. You now have a project ready to develop for the HTC Vive!</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 style='font-weight:bold'>Testing a game with SteamVR</h5>
+    </div>
+    </div>
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Open SteamVR from your Desktop.</h5>
+          <img style="height:25vh;"src='vr-images/steamvr-desktop.png'>
+          <h6>Be sure that your headset is plugged into the box and that the sensors and controllers are on.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>The SteamVR window should show that all components are detected and active.</h5>
+          <img style="height:25vh;"src='vr-images/steamvr-home.png'>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Press Play on your game.</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>The first time you run a game you should get this error:</h5>
+            <img style="height:25vh;"src='vr-images/generate-actions.png'>
+          <h6>Click "Yes"</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>You'll then get this dialogue box:</h5>
+          <img style="height:25vh;"src='vr-images/actions-json.png'>
+          <h6>Click "Yes" again.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>You'll see the SteamVR Input window open now</h5>
+          <img style="height:25vh;"src='vr-images/steamvr-input-window.png'>
+          <h6>Click "Save and generate"</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>We will use the binding UI later to connect controller actions to actions in our games.</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>If you haven't saved your changes, you'll now be prompted to. Make sure to click Save.</h5>
+          <img style="height:25vh;"src='vr-images/save-prompt.png'>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>You can now close the SteamVR Input window and run your game.</h5>
+          <h6>Be sure to sign out of Unity when you're done!</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 style='font-weight:bold'>Recalibrating the Room</h5>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Open the SteamVR application</h5>
+          <img style="height:25vh;"src='vr-images/steamvr-desktop.png'>
+          <h6>Click on the hamburger menu</h6>
+          <img style="height:15vh;"src='vr-images/steamvr-hamburger.png'>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h5>Select "Room Setup" from the menu, and follow the directions.</h5>
+        </div>
+      </div>
+    </div>
+
+
+    <div class='row'>
+      <div class='col s6 offset-s1'>
+        <h5> Show an instructor your finished project!</h5>
+      </div>
+    </div>
+
+    <!--Project Complete Banner-->
+    <div class="row blue white-text">
+      <div class="col s4 offset-s4">
+        <h5 style="text-align:center;">Congrats! Project complete!</h5>
+      </div>
+    </div>
+
+    <!--Card: Prompt - Find Another Project-->
+    <div class="row">
+      <div class="col s4 offset-s4">
+        <div class="card findanotherproject">
+          <div class="card-content">
+            <div class="cardDescription">
+              <br>
+              <h6>Find another project?</h6>
+              <div class="browse">
+                <br>
+                <a href="ar-vr.html">
+                  <button>Browse all projects</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--Collapsible Div-->
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+           <li>
+             <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>How to add a backdrop</div>
+             <div class="collapsible-body"><span>At the moment, the stage is white, and looks pretty boring! Let’s add a backdrop to the stage, by clicking the blue icon on the right side of the screen.<br> <br> Use the picture below as a reference, if needed. <br> <br> <img src="./scratch-images/stage.png"</span></div>
+           </li>
+        </ul>
+      </div>
+    </div> <!-- end Collapsible Div-->
+
+  </body>
+</html>
