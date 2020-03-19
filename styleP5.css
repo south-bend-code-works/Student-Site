@@ -1,0 +1,1792 @@
+body {
+  background-color: #F7F7F7;
+}
+
+.startButton {
+  display: inline-block;
+  text-align: center;
+  background-color: #64dd17;
+  width: 100%;
+  height: 45%;
+  position: relative !important;
+  bottom: 0 !important;
+  color: black;
+}
+
+.reviewstartButton {
+  display: inline-block;
+  text-align: center;
+  background-color: #00BFFF;
+  width: 100%;
+  height: 150%;
+  position: relative !important;
+  bottom: 0 !important;
+  color: black;
+}
+
+.startButtonUnity {
+  display: inline-block;
+  text-align: center;
+  background-color: #00BFFF;
+  width: 100%;
+  height: 45%;
+  position: bottom !important;
+  bottom: 0 !important;
+  color: black !important;
+}
+
+.startButtonUnity a {
+  color: black !important;
+}
+
+.startButton a {
+  color: black !important;
+}
+
+.pageTitle a {
+  color: black !important;
+}
+
+/* =================================================================================================================================Turn all links to black text ==============================================*/
+/*a:link {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}*/
+/* =================================================================================================================================ALL PAGES: Page Heading/Titles=============================================*/
+#pageHeading {
+  margin-bottom: 3%;
+}
+
+.pageTitle {
+  font-family: 'Crete Round', serif;
+  text-align: center;
+}
+
+.pageParagraph {
+  font-size: 17px;
+  text-align: center;
+}
+
+/* =================================================================================================================================ALL CARDS: Card Contents===================================================*/
+.cardGrid {
+  display: grid;
+  grid-template-columns: [card1] 1fr [card2] 1fr [card3] 1fr [card4] 1fr;
+  height: 500px;
+}
+
+.card1 {
+  grid-column-start: card1;
+  grid-column-end: card2;
+}
+
+.card2 {
+  grid-column-start: card2;
+}
+
+.card3 {
+  grid-column-start: card3;
+}
+
+.card4 {
+  grid-column-start: card4;
+}
+
+.card {
+  width: 90%;
+  margin: .5rem 5% 1rem 5%;
+  height: 410px;
+}
+
+.reviewcard {
+  width: 150%;
+  margin: .5rem 5% 1rem 5%;
+  height: 210px;
+}
+
+.card-image img {
+  height: 75%;
+  width: auto;
+}
+
+.card-content {
+  text-align: center !important;
+  color: black !important;
+  width: 100%;
+  height: 100%;
+}
+
+.reviewcard-content {
+  text-align: center !important;
+  color: black !important;
+  width: 50%;
+  height: 50%;
+}
+
+.cardbackground {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 75%;
+}
+
+.card .card-content {
+  padding: 0;
+}
+
+.cardDescription {
+  width: 100%;
+  height: 25%;
+}
+
+.cardHeading {
+  text-align: center;
+}
+
+.description {
+  text-align: center;
+  /* margin-top: 50px !important; */
+  margin-bottom: 50px !important;
+  margin-right: 50px !important;
+  margin-left: 50px !important;
+  padding-bottom: 2%;
+}
+
+.passionprojects {
+  display: inline-block;
+  text-align: center;
+  background-color: lightslategrey;
+  color: black;
+  width: 25%;
+  height: 60px;
+  position: relative !important;
+  bottom: 0 !important;
+}
+
+.worldbuilding-tip {
+  margin-top: 50px;
+  position: relative;
+}
+
+.worldbuilding-tip-quote {
+  color: #333;
+  position: relative;
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Satisfy;
+  font-size: 16px;
+  box-shadow: 0 10px 10px 2px rgba(0, 0, 0, 0.3);
+}
+
+.column {
+  float: left;
+  flex: 50%
+}
+
+/*collapsible =================================================================================================================================Scratch Lesson Cards=======================================================*/
+.wrap-collabsible {
+  margin-bottom: 1.2rem 0;
+}
+
+input[type='checkbox'] {
+  display: none;
+}
+
+.lbl-toggle {
+  display: block;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1rem;
+  color: #000000;
+  background: #00BFFF;
+  cursor: pointer;
+  border-radius: 7px;
+  transition: all 0.25s ease-out;
+}
+
+.lbl-toggle:hover {
+  color: #7C5A0B;
+}
+
+.lbl-toggle::before {
+  content: ' ';
+  display: inline-block;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid currentColor;
+  vertical-align: middle;
+  margin-right: .7rem;
+  transform: translateY(-2px);
+  transition: transform .2s ease-out;
+}
+
+.toggle:checked+.lbl-toggle::before {
+  transform: rotate(90deg) translateX(-3px);
+}
+
+.collapsible-content {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height .25s ease-in-out;
+}
+
+.toggle:checked+.lbl-toggle+.collapsible-content {
+  max-height: 600px;
+}
+
+.toggle:checked+.lbl-toggle {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.collapsible-content .content-inner {
+  background: rgba(250, 224, 66, .2);
+  border-bottom: 1px solid rgba(250, 224, 66, .45);
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  padding: .5rem 1rem;
+}
+
+/* =================================================================================================================================Scratch Lesson Cards=======================================================*/
+#sequenceBG {
+  background-image: url('./scratch/scratch-images/sequence-how-to.png');
+}
+
+#eventsBG {
+  background-image: url('./scratch/scratch-images/events-how-to.png');
+}
+
+#loops-scratchBG {
+  background-image: url('./scratch/scratch-images/loops-how-to.png');
+}
+
+#conditionalsBG {
+  background-image: url('./scratch/scratch-images/conditionals-how-to.png');
+}
+
+#functions-scratchBG {
+  background-image: url('./scratch/scratch-images/functions-how-to.png');
+}
+
+#aboutMeBG {
+  background-image: url('./scratch/scratch-images/aboutme.gif');
+}
+
+#animateMeBG {
+  background-image: url('./scratch/scratch-images/animatename.jpg');
+}
+
+#fivethingsMeBG {
+  background-image: url('./scratch/scratch-images/fivethings.gif');
+}
+
+#rockbandBG {
+  background-image: url('./scratch/scratch-images/rockband.png');
+}
+
+#petBG {
+  background-image: url('./scratch/scratch-images/pet.gif');
+}
+
+#animationBG {
+  background-image: url('./scratch/scratch-images/makeurownanimation.png');
+}
+
+#imaginatorBG {
+  background-image: url('./scratch/scratch-images/imaginator.gif');
+}
+
+#gettheprizeBG {
+  background-image: url('./scratch/scratch-images/gettheprize.gif');
+}
+
+#hideandseekBG {
+  background-image: url('./scratch/scratch-images/hideandseek.gif');
+}
+
+#terraBG {
+  background-image: url('./scratch/scratch-images/terra.gif');
+}
+
+#mazeBG {
+  background-image: url('./scratch/scratch-images/maze.gif');
+}
+
+#selectionBG {
+  background-image: url('./scratch/scratch-images/chooseadventure.png');
+}
+
+#chatbotBG {
+  background-image: url('./scratch/scratch-images/chatbot.png');
+}
+
+#twotruthsBG {
+  background-image: url('./scratch/scratch-images/twotruths.gif');
+}
+
+#platformBG {
+  background-image: url('./scratch/scratch-images/platform.gif');
+}
+
+#tellastoryBG {
+  background-image: url('./scratch/scratch-images/tellastory.jpg');
+}
+
+#aboutmeBG {
+  background-image: url('./scratch/scratch-images/boolean.png');
+}
+
+#paintBG {
+  background-image: url('./scratch/scratch-images/paint.gif');
+}
+
+#boatBG {
+  background-image: url('./scratch/scratch-images/boat.gif');
+}
+
+#BG {
+  background-image: url('./scratch/scratch-images/final.gif');
+}
+
+#launcherBG {
+  background-image: url('./scratch/scratch-images/launcher.gif');
+}
+
+#breakoutBG {
+  background-image: url('./scratch/scratch-images/breakout.gif');
+}
+
+#fallingfruitBG {
+  background-image: url('./scratch/scratch-images/fallingfruit.gif');
+}
+
+#monkeyBG {
+  background-image: url('./scratch/scratch-images/monkey.gif');
+}
+
+#urownworldBG {
+  background-image: url('./scratch/scratch-images/createyourownadventure.gif');
+}
+
+#memoryyBG {
+  background-image: url('./scratch/scratch-images/memory.gif');
+}
+
+#dotsBG {
+  background-image: url('./scratch/scratch-images/catchthedots.gif');
+}
+
+#sidescrollerBG {
+  background-image: url('./scratch/scratch-images/sidescroller.jpg');
+}
+
+#spaceBG {
+  background-image: url('./scratch/scratch-images/spacefinal.gif');
+}
+
+#googleBG {
+  background-image: url('./scratch/scratch-images/google.png');
+  background-position: center;
+  background-size: contain;
+}
+
+#kahootBG {
+  background-image: url('../kahoot.jpeg');
+}
+
+#gothedistanceBG {
+  background-image: url('./scratch/scratch-images/gothedistance.jpg');
+}
+
+#dodgeBG {
+  background-image: url('./scratch/scratch-images/decorative-dodgeball.png');
+}
+
+#turkeyBG {
+  background-image: url('./scratch/scratch-images/turkey-trouble.png');
+}
+
+#heartBG {
+  background-image: url('./scratch/scratch-images/valentines.png');
+}
+
+#patBG {
+  background-image: url('./scratch/scratch-images/st-pat.png');
+}
+
+.kahootBG {
+  background-image: url('./kahoot.jpeg');
+}
+
+/* HTML CSS background images */
+#htmlcssBG {
+  background-image: url('./html/html-images/htmlcss.jpg');
+}
+
+#bioBG {
+  background-image: url('./html/html-images/bio.jpg');
+}
+
+#recipeBG {
+  background-image: url('./html/html-images/recipe.png');
+}
+
+#adventureBG {
+  background-image: url('./html/html-images/adventuregame.jpg');
+}
+
+#storyBG {
+  background-image: url('./html/html-images/story.png');
+}
+
+#friendBG {
+  background-image: url('./html/html-images/friendogram.jpg');
+}
+
+#burgerBG {
+  background-image: url('./html/html-images/buildaburger.jpg');
+}
+
+#abcsBG {
+  background-image: url('./html/html-images/abcs.jpg');
+}
+
+#pattern {
+  background-image: url('./html/html-images/pattern.gif');
+}
+
+#hoverBG {
+  background-image: url('./html/html-images/hover.gif');
+}
+
+#typingBG {
+  background-image: url('./html/html-images/typing.gif');
+}
+
+#cloneBG {
+  background-image: url('./html/html-images/clone.png');
+}
+
+#logoBG {
+  background-image: url('./html/html-images/logo.png');
+}
+
+#portBG {
+  background-image: url('./html/html-images/scratchportfolio.jpg');
+}
+
+#passionBG {
+  background-image: url('passionProject.jpg');
+}
+
+#materializeBG {
+  background-image: url('./html/html-images/materialize.jpg');
+}
+
+#startupBG {
+  background-image: url('./html/html-images/startup.jpg');
+}
+
+=======
+
+/* HTML CSS background images */
+#htmlcssBG {
+  background-image: url('./html/html-images/htmlcss.jpg');
+}
+
+#bioBG {
+  background-image: url('./html/html-images/bio.jpg');
+}
+
+#adventureBG {
+  background-image: url('./html/html-images/adventuregame.jpg');
+}
+
+#storyBG {
+  background-image: url('./html/html-images/story.png');
+}
+
+#friendBG {
+  background-image: url('./html/html-images/friendogram.jpg');
+}
+
+#burgerBG {
+  background-image: url('./html/html-images/buildaburger.jpg');
+}
+
+#abcsBG {
+  background-image: url('./html/html-images/abcs.jpg');
+}
+
+#pattern {
+  background-image: url('./html/html-images/pattern.gif');
+}
+
+#hoverBG {
+  background-image: url('./html/html-images/hover.gif');
+}
+
+#typingBG {
+  background-image: url('./html/html-images/typing.gif');
+}
+
+#cloneBG {
+  background-image: url('./html/html-images/clone.png');
+}
+
+#logoBG {
+  background-image: url('./html/html-images/logo.png');
+}
+
+#keyframesreviewBG {
+  background-image: url();
+}
+
+#portBG {
+  background-image: url('./html/html-images/scratchportfolio.jpg');
+}
+
+#materializeBG {
+  background-image: url('./html/html-images/materialize.jpg');
+}
+
+#startupBG {
+  background-image: url('./html/html-images/startup.jpg');
+}
+
+.challenge1 {
+  background-image: url('codingchallenge1.jpg');
+}
+
+.challenge2 {
+  background-image: url('codingchallenge2.jpg');
+}
+
+.challenge3 {
+  background-image: url('codingchallenge3.jpg');
+}
+
+/*Not used right now*/
+#wantedBG {
+  background-image: url('wanted.png');
+}
+
+#wrapupBG {
+  background-image: url('wrapup.jpg');
+}
+
+#bdayBG {
+  background-image: url('bday.jpg');
+}
+
+/*Graphic Design background Images*/
+#glossaryBG {
+  background-image: url('./graphicdesign/glossaryBG.jpg');
+}
+
+#gimpBG {
+  background-image: url('./graphicdesign/gimpBG.jpg');
+}
+
+#typographicposterBG {
+  background-image: url('./graphicdesign/typographicposterBG.jpg');
+}
+
+#photomanipulationBG {
+  background-image: url('./graphicdesign/photomanipulationBG.gif');
+}
+
+#splashpageBG {
+  background-image: url('./graphicdesign/splashpageBG.jpg');
+}
+
+#gifBG {
+  background-image: url('./graphicdesign/graphicdesign-images/gif14.gif');
+}
+
+#infographicBG {
+  background-image: url('./graphicdesign/infographicBG.jpg');
+}
+
+#interactiveBG {
+  background-image: url('./graphicdesign/interactiveBG.jpg');
+}
+
+#geometricBG {
+  background-image: url('./graphicdesign/graphicdesign-images/geometric3.jpg');
+}
+
+#uiuxBG {
+  background-image: url('./graphicdesign/uiuxBG.jpg');
+}
+
+#colortheoryBG {
+  background-image: url('./graphicdesign/colortheoryBG.gif');
+}
+
+#imagesBG {
+  background-image: url('./graphicdesign/imagesBG.jpg');
+}
+
+#twoddesignBG {
+  background-image: url('./graphicdesign/twoddesignBG.png');
+}
+
+#designprocessBG {
+  background-image: url('./graphicdesign/designprocessBG.jpg');
+}
+
+#gdintroBG {
+  background-image: url('./graphicdesign/gdintroBG.png');
+}
+
+#resourcesBG {
+  background-image: url('./graphicdesign/resourcesBG.jpg');
+}
+
+#topofpage {
+  background-image: url('./graphicdesign/topofpage.gif');
+}
+
+#brandingBG {
+  background-image: url('./graphicdesign/brandingBG.jpg');
+}
+
+#vectorrasterBG {
+  background-image: url('./graphicdesign/graphicdesign-images/morecolorstshirts4.jpg');
+}
+
+#colorBG {
+  background-image: url('./graphicdesign/colorBG.jpg');
+}
+
+#colorizeBG {
+  background-image: url('./graphicdesign/colorizeBG.jpg');
+}
+
+#copyrightBG {
+  background-image: url('./graphicdesign/copyrightBG.jpg');
+}
+
+#moodboardBG {
+  background-image: url('./graphicdesign/moodboardBG.jpg');
+}
+
+#cymkrgbBG {
+  background-image: url('./graphicdesign/cymkrgbBG.jpg');
+}
+
+#popartBG {
+  background-image: url('./graphicdesign/popartBG.jpg');
+}
+
+#layoutcompBG {
+  background-image: url('./graphicdesign/layoutcompBG.jpg');
+}
+
+#patternrepetitionBG {
+  background-image: url('./graphicdesign/patternrepetitionBG.jpg');
+}
+
+#behanceBG {
+  background-image: url('./graphicdesign/behanceBG.gif');
+}
+
+#socialmediaBG {
+  background-image: url('./graphicdesign/socialmediaBG.jpg');
+}
+
+#curvesBG {
+  background-image: url('./graphicdesign/curvesBG.jpg');
+}
+
+#negspaceBG {
+  background-image: url('./graphicdesign/negspaceBG.jpg');
+}
+
+#rulesBG {
+  background-image: url('./graphicdesign/rulesBG.jpg');
+}
+
+#gridsBG {
+  background-image: url('./graphicdesign/gridsBG.jpg');
+}
+
+#typographyBG {
+  background-image: url('./graphicdesign/typographyBG.png');
+}
+
+#badfontBG {
+  background-image: url('./graphicdesign/badfontBG.jpg');
+}
+
+#typographyposterBG {
+  background-image: url('./graphicdesign/typographyposterBG.jpg');
+}
+
+#designyourownBG {
+  background-image: url('./graphicdesign/designyourownBG.gif');
+}
+
+/*2d/3d animation background images*/
+#settingupunityBG {
+  background-image: url('./animations/animation-images/settingupunityBG.jpg');
+}
+
+#unitybreakdownBG {
+  background-image: url('./animations/animation-images/unitybreakdownBG.jpg');
+}
+
+#importingassetsBG {
+  background-image: url('./animations/animation-images/importingassetsBG.jpg');
+}
+
+#keyframessoundBG {
+  background-image: url('./animations/animation-images/keyframessoundBG.jpg');
+}
+
+#curvesandstatesBG {
+  background-image: url('./animations/animation-images/curvesandstatesBG.jpg');
+}
+
+#openingsceneBG {
+  background-image: url('./animations/animation-images/openingsceneBG.jpg');
+}
+
+#lightingBG {
+  background-image: url('./animations/animation-images/lightingBG.jpg');
+}
+
+#renderingBG {
+  background-image: url('./animations/animation-images/renderBG.jpg');
+}
+
+#titleSceneBG {
+  background-image: url('./animations/animation-images/titlescenecutsceneBG.gif');
+}
+
+#twodBG {
+  background-image: url('./animations/animation-images/twodBG.gif');
+}
+
+#unlockingBG {
+  background-image: url('./animations/animation-images/unlockingBG.jpg');
+}
+
+#worldbuilding3BG {
+  background-image: url('./animations/animation-images/worldbuildingBG.gif');
+  background-position: center;
+  background-size: contain;
+}
+
+#webdevBG {
+  background-image: url('computer.gif');
+  background-position: center;
+  background-size: contain;
+}
+
+#pythonBG {
+  background-image: url('./python/python-images/Python.png');
+  background-position: center;
+  background-size: contain;
+}
+
+#patternBG {
+  background-image: url('striped.gif');
+}
+
+/*Unity images */
+#setupBG {
+  background-image: url('./unity/unity-images/setup.jpg');
+}
+
+#worldbuildingBG {
+  background-image: url('./unity/unity-images/worldbuilding_terrain.jpg');
+}
+
+#worldbuilding2BG {
+  background-image: url('./unity/unity-images/worldbuilding_terrain2.jpg');
+}
+
+#characterBG {
+  background-image: url('./unity/unity-images/character.gif');
+}
+
+#organizeBG {
+  background-image: url('./unity/unity-images/organize.jpg');
+}
+
+#collectableBG {
+  background-image: url('./unity/unity-images/collectable.jpg');
+}
+
+#uiBG {
+  background-image: url('./unity/unity-images/interface.gif');
+}
+
+#collectable2BG {
+  background-image: url('./unity/unity-images/collectable2.gif');
+}
+
+#prefabBG {
+  background-image: url('./unity/unity-images/prefab1.gif');
+  background-position: center;
+  background-size: contain;
+}
+
+#enemyBG {
+  background-image: url('./unity/unity-images/enemy.jpg');
+}
+
+#attackBG {
+  background-image: url('./unity/unity-images/enemyattacks.gif');
+}
+
+#healthBG {
+  background-image: url('./unity/unity-images/healthbar.gif');
+}
+
+#fightBG {
+  background-image: url('./unity/unity-images/fightingenemies.gif');
+}
+
+#enemyprefabBG {
+  background-image: url('./unity/unity-images/prefabenemy.jpeg');
+}
+
+#menuBG {
+  background-image: url('./unity/unity-images/unitymenu.gif');
+}
+
+#audioBG {
+  background-image: url('./unity/unity-images/audio.jpeg');
+  background-position: center;
+  background-size: contain;
+}
+
+#buildBG {
+  background-image: url('./unity/unity-images/unitybuild.jpeg');
+  background-position: center;
+  background-size: contain;
+}
+
+#interfaceBG {
+  background-image: url('./unity/unity-images/interfacebasics.jpg');
+  background-position: center;
+  background-size: contain;
+}
+
+#movementBG {
+  background-image: url('./unity/unity-images/movementtools.gif');
+  background-position: center;
+  background-size: auto;
+}
+
+#assetBG {
+  background-image: url('./unity/unity-images/assetstore.gif');
+  background-position: center;
+  background-size: contain;
+}
+
+#terrain3BG {
+  background-image: url('./unity/unity-images/worldbuildingbasics.jpg');
+}
+
+#collectable3BG {
+  background-image: url('./unity/unity-images/collectablescheatsheet.jpg');
+  background-position: center;
+  background-size: contain;
+}
+
+#scriptBG {
+  background-image: url('./unity/unity-images/scriptingbasics.gif');
+}
+
+#errorBG {
+  background-image: url('./unity/unity-images/errormessages.jpg');
+  background-position: center;
+  background-size: contain;
+}
+
+/*Python images */
+#pythonsetupBG {
+  background-image: url('./python/python-images/replit.png');
+}
+
+#syntaxBG {
+  background-image: url('./python/python-images/syntax.jpg');
+}
+
+#functionsBG {
+  background-image: url('./python/python-images/inputoutput.jpg');
+}
+
+#variablesBG {
+  background-image: url('./python/python-images/variables.png');
+}
+
+#controlsBG {
+  background-image: url('./python/python-images/conditionals.jpg');
+}
+
+#pythonErrorsBG {
+  background-image: url('./python/python-images/error.jpg');
+}
+
+#loopsBG {
+  background-image: url('./python/python-images/loop.jpg');
+}
+
+#functions2BG {
+  background-image: url('./python/python-images/functions.jpg');
+}
+
+#listsBG {
+  background-image: url('./python/python-images/lists.jpg');
+}
+
+#hangmanBG {
+  background-image: url('./python/python-images/hangman.jpg');
+}
+
+#pythonadventureBG {
+  background-image: url('./python/python-images/pythonadventure.gif');
+}
+
+#tictactoeaiBG {
+  background-image: url('./python/python-images/tictactoe.gif');
+}
+
+#tictactoe2playerBG {
+  background-image: url('./python/python-images/tictactoe2player.jpg');
+}
+
+#turtlebasicsBG {
+  background-image: url('./python/python-images/turtlebasics.jpg');
+}
+
+#pythonshapesBG {
+  background-image: url('./python/python-images/pythonshapes.gif');
+}
+
+#pythonwritingBG {
+  background-image: url('./html/html-images/typing.gif');
+}
+
+#turtleraceBG {
+  background-image: url('./python/python-images/turtlerace.jpg');
+}
+
+#interactiveturtlesBG {
+  background-image: url('./python/python-images/interactiveturtles.jpg');
+}
+
+#clickingturtlesBG {
+  background-image: url('./python/python-images/clickingturtles.jpg');
+}
+
+#pythonhideseekBG {
+  background-image: url('./python/python-images/pythonhideseek.jpg');
+}
+
+#turtleshapesBG {
+  background-image: url('./python/python-images/turtleshapes.gif');
+}
+
+/*JS Images */
+#codecademyBG {
+  background-image: url('./javascript/Codecademy.png');
+}
+
+#learnjsBG {
+  background-image: url('./javascript/JavaScript-logo.png');
+}
+
+#w3schoolsBG {
+  background-image: url('./javascript/W3Schools_logo.png');
+}
+
+#tamagotchiBG {
+  background-image: url('./javascript/tamagotchi.gif');
+}
+
+#jquerysetupBG {
+  background-image: url('./javascript/jquerysetup.png');
+}
+
+#rainbowbuttonBG {
+  background-image: url('./javascript/rainbowbutton.gif');
+}
+
+#tictactoeBG {
+  background-image: url('./python/python-images/tictactoe.gif');
+}
+
+#whackamoleBG {
+  background-image: url('./javascript/whackamole.jpg');
+}
+
+/*Career Exposure Images */
+#careertestBG {
+  background-image: url('./careerexposure/careertest.jpg');
+}
+
+/*ARVR Images */
+#arunityBG {
+  background-image: url('./vr/vr-images/arunity.jpg');
+}
+
+#teleportingBG {
+  background-image: url('./vr/vr-images/teleporting.jpg');
+}
+
+#interactingBG {
+  background-image: url('./vr/vr-images/interacting.jpg');
+}
+
+#archeryBG {
+  background-image: url('./vr/vr-images/archery.jpg');
+}
+
+#trackpadBG {
+  background-image: url('./vr/vr-images/trackpad.jpg');
+}
+
+#uiactionsBG {
+  background-image: url('./vr/vr-images/uiactions.jpg');
+}
+
+#flyingBG {
+  background-image: url('./vr/vr-images/flying.jpg');
+}
+
+#firingobjectsBG {
+  background-image: url('./vr/vr-images/firingobjects.jpg');
+}
+
+/*Database Images*/
+#firebaseBG {
+  background-image: url('./databases/database-images/firebase-logo.png');
+}
+
+/*Git Images*/
+#gitBG {
+  background-image: url('./git/git-images/github-logo.png');
+}
+
+/* =================================================================================================================================HOME PAGE CARD============================================================ */
+.agesHeading {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 0%;
+  padding-top: 20%;
+  color: black;
+  margin-bottom: 7%;
+  font-family: 'Crete Round', serif;
+}
+
+.projectTitle {
+  font-weight: bold;
+}
+
+/* =================================================================================================================================Lesson Instructions========================================================*/
+.blueLink {
+  color: #42a5f5 !important;
+}
+
+.projectsection1 {
+  background-color: white;
+  /* height: 20%; */
+  padding: 2%;
+}
+
+.collapsible {
+  border-radius: 5%;
+  background-color: white;
+  height: 20%;
+  font-size: 18px;
+  box-shadow: none;
+  border: none;
+}
+
+.collapsible-header {
+  font-weight: bold;
+}
+
+.lessonSubheading {
+  font-weight: bold;
+}
+
+.infosection {
+  display: inline-block;
+  font-weight: bold;
+}
+
+.challengeSubheading {
+  background-color: darkorange;
+  font-size: 30px;
+  color: white;
+}
+
+.creditLine {
+  font-style: italic;
+}
+
+#dataText {
+  color: darkorange;
+  font-weight: bold;
+}
+
+.checkbox {
+  border-radius: 5%;
+  text-align: center;
+}
+
+[type="checkbox"]+span:not(.lever):before, [type="checkbox"]:not(.filled-in)+span:not(.lever):after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  z-index: 0;
+  border: 4px solid #e0e0e0;
+  border-radius: 1px;
+  margin-top: 2px;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+/* =================================================================================================================================Animations Grid============================================================*/
+.left {
+  float: left;
+  width: 50%;
+  padding-top: 2%;
+}
+
+.firstLogo {
+  float: left;
+  background-image: url("personalLogoOne.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 300px;
+  height: 300px;
+}
+
+.secondLogo {
+  float: left;
+  background-image: url("personalLogoTwo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 300px;
+  height: 300px;
+}
+
+.thirdLogo {
+  float: left;
+  background-image: url("personalLogoThree.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 300px;
+  height: 300px;
+}
+
+.fourthLogo {
+  float: left;
+  background-image: url("personalLogoFour.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 300px;
+  height: 300px;
+}
+
+.firstmoodboard {
+  float: left;
+  background-image: url("./graphicdesign/graphicdesign-images/moodboard1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 45%;
+  height: 500px;
+  display: inline-block;
+  background-size: cover;
+}
+
+.secondmoodboard {
+  float: right;
+  background-image: url("./graphicdesign/graphicdesign-images/moodboard2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 45%;
+  height: 400px;
+  margin-left: .5px;
+  display: inline-block;
+  background-size: cover;
+}
+
+.thirdmoodboard {
+  float: left;
+  background-image: url("./graphicdesign/graphicdesign-images/moodboard3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 500px;
+  height: 500px;
+  display: inline-block;
+}
+
+.centerthis {
+  margin-left: 70%;
+  text-align: center;
+  margin-top: 5%;
+}
+
+/* .fourthmoodboard {
+  float: right;
+  background-image: url("./graphicdesign-images/moodboard4.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+  height: 400px;
+  display: inline-block;
+} */
+.geometric3 {
+  float: left;
+  background-image: url("./graphicdesign/graphicdesign-images/geometric3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+}
+
+.geometric2 {
+  float: left;
+  background-image: url("./graphicdesign/graphicdesign-images/geometric2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  padding-left: 40%;
+}
+
+.geometric1 {
+  float: left;
+  background-image: url("./graphicdesign/graphicdesign-images/geometric1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+}
+
+.minimalistone {
+  float: left;
+  background-image: url("./graphicdesign/graphicdesign-images/negspace1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 420px;
+  height: 420px;
+  display: inline-block;
+}
+
+.minimalisttwo {
+  float: left;
+  background-image: url("./graphicdesign/graphicdesign-images/negspace2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 400px;
+  height: 400px;
+  display: inline-block;
+}
+
+#portfolio1 {
+  float: left;
+  background-image: url("./graphicdesign/graphicdesign-images/portfolio1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 500px;
+  height: 500px;
+  display: inline-block;
+}
+
+#portfolio2 {
+  float: left;
+  margin-left: 4%;
+  background-image: url("./graphicdesign/graphicdesign-images/portfolio2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 600px;
+  height: 600px;
+  display: inline-block;
+}
+
+#portfolio3 {
+  float: left;
+  background-image: url("./graphicdesign/graphicdesign-images/portfolio7.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 400px;
+  height: 400px;
+  display: inline-block;
+}
+
+#portfolio4 {
+  float: left;
+  background-image: url("./graphicdesign/graphicdesign-images/portfolio8.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 400px;
+  height: 400px;
+  display: inline-block;
+}
+
+.canvagif {
+  background-image: url("canva.gif");
+  width: 600px;
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 15%;
+}
+
+.left p {
+  padding-left: 5%;
+}
+
+.right {
+  float: right;
+  width: 50%;
+  padding-top: 2%;
+  padding-left: 2%;
+}
+
+.right p {
+  padding-left: 5%;
+}
+
+/* =================================================================================================================================Find Another Project Card==================================================*/
+.browse {
+  text-align: center;
+}
+
+.browse button {
+  text-align: center;
+  background-color: white;
+  border: 3px solid #2196f3;
+  width: 160px;
+  height: 50px;
+  margin-bottom: 10%;
+}
+
+.browse button:hover {
+  text-align: center;
+  color: white;
+  background-color: #2196f3;
+  border: 3px solid #2196f3;
+  width: 160px;
+  height: 50px;
+}
+
+.findanotherproject {
+  width: 500px !important;
+  height: 200px !important;
+}
+
+.findanotherproject h6 {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 10%;
+}
+
+span {
+  position: relative;
+}
+
+.events {
+  background-color: #FFD500;
+  border-radius: 2%;
+  color: white;
+  padding: 1%;
+  font-weight: bold;
+  line-height: 180%;
+}
+
+.control {
+  background-color: #FFAB19;
+  border-radius: 2%;
+  color: white;
+  padding: 1%;
+  font-weight: bold;
+  position: relative;
+  line-height: 180%;
+}
+
+.motion {
+  background-color: #4C97FF;
+  border-radius: 2%;
+  color: white;
+  padding: 1%;
+  font-weight: bold;
+  position: relative;
+  line-height: 180%;
+}
+
+.looks {
+  background-color: #9966FF;
+  border-radius: 2%;
+  color: white;
+  padding: 1%;
+  font-weight: bold;
+  position: relative;
+  line-height: 180%;
+}
+
+.sound {
+  background-color: #D65CD6;
+  border-radius: 2%;
+  color: white;
+  padding: 1%;
+  font-weight: bold;
+  position: relative;
+  line-height: 180%;
+}
+
+.sensing {
+  background-color: #4CBFE6;
+  border-radius: 2%;
+  color: white;
+  padding: 1%;
+  font-weight: bold;
+  position: relative;
+  line-height: 180%;
+}
+
+.operators {
+  background-color: #40BF4A;
+  border-radius: 2%;
+  color: white;
+  padding: 1%;
+  font-weight: bold;
+  position: relative;
+  line-height: 180%;
+}
+
+.variables {
+  background-color: #FF8C1A;
+  border-radius: 2%;
+  color: white;
+  padding: 1%;
+  font-weight: bold;
+  position: relative;
+  line-height: 180%;
+}
+
+.myblocks {
+  background-color: #FF6680;
+  border-radius: 2%;
+  color: white;
+  padding: 1%;
+  font-weight: bold;
+  position: relative;
+  line-height: 180%;
+}
+
+.pen {
+  background-color: MediumSeaGreen;
+  border-radius: 2%;
+  color: white;
+  padding: 1%;
+  font-weight: bold;
+  position: relative;
+  line-height: 180%;
+}
+
+.extensions {
+  background-color: #0FBD8C;
+  border-radius: 2%;
+  color: white;
+  padding: 1%;
+  font-weight: bold;
+  position: relative;
+  line-height: 180%;
+}
+
+.inlesson_kahoot {
+  text-align: center;
+  background-color: white;
+  border: 3px solid #2196f3;
+  width: 160px;
+  height: 50px;
+  margin-bottom: 3%;
+  margin-left: 5%;
+}
+
+.inlesson_kahoot:hover {
+  text-align: center;
+  color: white;
+  background-color: #2196f3;
+  border: 3px solid #2196f3;
+  width: 160px;
+  height: 50px;
+}
+
+.hoverexample {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  border: 2px solid green;
+  width: 100%;
+  transition: 1s;
+}
+
+.hoverexample:hover {
+  background-color: green;
+  color: black;
+  padding: 50px;
+  border: 2px solid white;
+  width: 100%;
+}
+
+.pattern1 {
+  width: 100%;
+  height: 40px;
+  background-image: url('bigbanganimation.gif');
+  animation: background-ScrollLeft 8s linear infinite;
+}
+
+.pattern2 {
+  width: 100%;
+  height: 40px;
+  background-image: url('snowpattern.gif');
+  animation: background-ScrollRight 8s linear infinite;
+}
+
+@keyframes background-ScrollRight {
+  from {
+    background-position: 0, 0;
+  }
+
+  to {
+    background-position: 200px, 0;
+  }
+}
+
+@keyframes background-ScrollLeft {
+  from {
+    background-position: 0, 0;
+  }
+
+  to {
+    background-position: -200px, 0;
+  }
+}
+
+#typinganimation {
+  animation: type 7s infinite;
+  white-: nowrap;
+  overflow: hidden;
+}
+
+#blinkingcursor {
+  animation: blink 1.5s infinite;
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  from {
+    color: transparent;
+  }
+
+  to {
+    color: black;
+  }
+}
+
+textarea {
+  background-color: white;
+}
+
+code {
+  /* background-color: #35B7F4; */
+  color: #EB285F;
+}
+
+strong {
+  font-weight: bold;
+  /* color: #EB285F; */
+}
+
+h4 {
+  line-height: 1.25em;
+}
+
+h5 {
+  line-height: 1.35em;
+}
+
+h6 {
+  line-height: 1.45em;
+}
+
+p {
+  line-height: 1.6em;
+}
+
+.maintitle {
+  font-weight: bold;
+}
+
+.p5header {
+  font-weight: bold;
+  color: #EB285F;
+}
+
+.infoheader {
+  font-weight: bold;
+  color: #0088ff;
+}
+
+.hintheader {
+  color: #f7f7f7;
+  display: block;
+}
+
+.revealhint {
+  cursor: wait;
+  background-color: #FD9827;
+  color: #FD982700;
+  padding: 2%;
+}
+
+.revealhint:hover {
+  color: #f7f7f7ff;
+  transition: 60s;
+  transition-timing-function: ease;
+  /* cubic-bezier(0.01, 0.01, 0.25, 1); */
+}
+
+.maxwidth {
+  display: block;
+  margin: auto;
+  min-width: 640px;
+  max-width: 1080px;
+}
+
+.inlineexamples {
+  width: 80vw;
+  min-width: 512px;
+  max-width: 864px;
+}
+
+.inlineinfo {
+  width: 100%;
+  padding: 5%;
+  padding-bottom: 0;
+}
+
+.inlineinfo img {
+  width: 100%;
+}
+
+.findanotherproject2 {
+  width: 60vw;
+  min-width: 384px;
+  max-width: 648px;
+  height: 200px;
+}
+
+.findanotherproject2 h6 {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 3%;
+}
+
+/*
+.startWord {
+  display: inline-block;
+}
+
+.listItems {
+  padding-bottom: 7%;
+}
+
+.more {
+  margin-bottom: 18%;
+}
+
+.more2 {
+  margin-bottom: 13%;
+}
+
+.more3 {
+  margin-bottom: 4%;
+}
+
+.example {
+  margin-top: 5%;
+  font-weight: bold;
+}
+
+.eventsText {
+  color:peru;
+  font-weight: bold;
+}
+
+.ifthen {
+  font-weight: bold;
+}
+
+.controls {
+  color: goldenrod;
+}
+
+.motionText {
+  color: blue;
+  font-weight: bold;
+}
+
+#3 {
+  margin-top: 1%;
+} */
+/* i.material-icons.sideArrow {
+  display: inline-block;
+} */
+/* .codingConcepts {
+  text-align: center;
+  font-style: italic;
+  border-top: 2px dashed grey;
+  padding-top: 4%;
+} */
