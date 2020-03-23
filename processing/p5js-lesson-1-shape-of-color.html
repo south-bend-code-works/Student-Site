@@ -1,8 +1,8 @@
-</em> </em>
 <!DOCTYPE html>
 <html>
 
 <head>
+  <meta charset="utf-8" />
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
   <link rel="stylesheet" href="../styleP5.css">
@@ -39,1153 +39,1149 @@
   </ul>
 
 
-<div class="maxwidth">
+  <div class="contentwidth">
 
-  <!-- THE SHAPE OF COLOR -->
-  <div class="row">
-    <div class="col s8 offset-s1">
-      <h3 class="maintitle">The Shape of Color</h3>
-      <h5 class="p5header">&nbsp; p5.js &nbsp; LESSON 1</h5>
+    <!-- THE SHAPE OF COLOR -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h3 class="maintitle">The Shape of Color</h3>
+        <h5 class="p5header">&nbsp; p5.js &nbsp; LESSON 1</h5>
+      </div>
     </div>
-  </div>
 
-  <!-- LESSON 1 -->
-  <div class="row">
-    <div class="col s8 offset-s2">
-      <h6>In this lesson you will:</h6>
-      <ol>
-        <li>Get to know the default code</li>
-        <li>Learn how to color shapes, lines, and the background</li>
-        <li>Make some mistakes and fix them</li>
-      </ol>
+    <!-- LESSON 1 -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <h6>In this lesson you will:</h6>
+        <ol>
+          <li>Get to know the default code</li>
+          <li>Learn how to color shapes, lines, and the background</li>
+          <li>Make some mistakes and fix them</li>
+        </ol>
 
-      <!-- BACKGROUND INFO -->
-      <h4 class="projectTitle">Background Info</h4>
-      <p>
-        Processing — the parent of p5.js — is a coding environment designed for artists and musicians with little to no experience programming. p5.js is the JavaScript version with the added benefit of running natively in the browser. The online
-        editor is easy to use right in the browser with nothing to install. If you are new to writing code, we’ll get you making something awesome by the end of these lessons.
-      </p>
+        <!-- BACKGROUND INFO -->
+        <h4 class="projectTitle">Background Info</h4>
+        <p>
+          Processing &mdash; the parent of p5.js &mdash; is a coding environment designed for artists and musicians with little to no experience programming. p5.js is the JavaScript version with the added benefit of running natively in the browser.
+          The online
+          editor is easy to use right in the browser with nothing to install. If you are new to writing code, we&rsquo;ll get you making something awesome by the end of these lessons.
+        </p>
 
-      <!-- HELPFUL LINKS -->
-      <h4 class="projectTitle">Helpful Links</h4>
-      <p>
-        <a href="https://editor.p5js.org/">Editor</a>: the online p5.js editor<br />
-        <a href="https://p5js.org/reference/">Reference</a>: documentation for all things in p5.js
-      </p>
+        <!-- HELPFUL LINKS -->
+        <h4 class="projectTitle">Helpful Links</h4>
+        <p>
+          <a href="https://editor.p5js.org/">Editor</a>: the online p5.js editor
+          <br>
+          <a href="https://p5js.org/reference/">Reference</a>: documentation for all things in p5.js
+        </p>
+      </div>
+    </div>
 
-      <!-- <a href='https://github.com/github/explore' target="_blank"><h5>Check out an example HERE!</h5></a> -->
+    <!-- GETTING STARTED -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h4 class="largeheading">Getting Started</h4>
+      </div>
     </div>
-  </div>
 
-  <!-- GETTING STARTED -->
-  <div class="row">
-    <div class="col s8 offset-s1">
-      <h4 style="font-weight:bold">Getting Started</h4>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-          <p>
-            <label>
-              <input type="checkbox" />
-              <span></span>
-            </label>
-          </p>
-        </form>
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
       </div>
-    </div>
-    <div class="col s8">
-      <div class="projectsection1">
-        <h5>
-          The first thing that we need to do is log in so our code is saved automagically and can be accessed from anywhere.
-        </h5>
-        <h6>
-          <a href="p5js-lesson-0-setup.html">Lesson 0</a> covers getting started with sign up and log in as well as a quick tour of the editor with some tips and tricks to help you as you go.
-        </h6>
-        <h6>
-          Once you are logged in, you should see a window that looks much like this, greeting you by your username…
-        </h6>
-      </div>
-    </div>
-  </div>
-
-
-  <!-- IMAGE -->
-  <div class="row">
-    <div class="col s8 offset-s1">
-      <div>
-        <img class="inlineexamples" src="p5images/L01/defaultCode.png">
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-          <p>
-            <label>
-              <input type="checkbox" />
-              <span></span>
-            </label>
-          </p>
-        </form>
-      </div>
-    </div>
-    <div class="col s8">
-      <div class="projectsection1">
-        <h6>
-          There are a couple <strong>functions</strong> defined in the middle on the left and a preview window on the right that looks pretty empty to me.
-        </h6>
-        <h5>
-          Let’s change that.
-        </h5>
-        <h6>
-          In the upper left is a play button that will run the code. Click it.
-          Did anything change?
-        </h6>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s8 offset-s2">
-      <div class="projectsection1" style="background-color: #E2F2FB">
-        <h6>
-          <strong>Functions</strong> are the verbs of programming — they perform actions such as <em>drawing</em>, <em>printing</em>, <em>calculating</em>, and so forth.
-        </h6>
-      </div>
-    </div>
-  </div>
-
-  <!-- DEFINITION FOLLOWS FUNCTION -->
-  <div class="row">
-    <div class="col s8 offset-s1">
-      <h4 style='font-weight:bold'>Definition Follows Function</h4>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s8 offset-s2">
-      <div class="projectsection1">
-        <h6>In the area beneath the play button, we see numbers along the left side telling us which line we are on, and those two groups of code beginning with <code>function</code> starting on lines 1 and 5, respectively.
-        </h6>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s8 offset-s2">
-      <div class="projectsection1" style="background-color: #E2F2FB">
-        <h5 class="infoheader">
-          <strong>Formatting used in these lessons</strong>
-        </h5>
-        <h6>
-          <span class="infoheader">Light Blue Background</span>: for definitions and extra information
-        </h6>
-        <h6>
-          <strong>bold</strong>: for important steps and when introducing words that have a specific meaning in programming
-        </h6>
-        <h6>
-          <em>italics</em>: for emphasis and names of variables and functions in our code
-        </h6>
-        <h6>
-          <code>monospaced text</code>: for actual code
-          and values
-        </h6>
-        <h6>
-          Functions will always be written with the trailing parentheses when just talking about them, so <em>background()</em> can refer to <code>background(100)</code> or <code>background(200,20,200,20)</code> or anything in between
-        </h6>
-      </div>
-    </div>
-  </div>
-
-  <!-- The setup function -->
-  <div class="row">
-    <div class="col s8 offset-s1">
-      <h5 style='font-weight:italic'>The setup function</h5>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-          <p>
-            <label>
-              <input type="checkbox" />
-              <span></span>
-            </label>
-          </p>
-        </form>
-      </div>
-    </div>
-    <div class="col s8">
-      <div class="projectsection1">
-        <h6>The first one called <em>setup()</em> does what it says on the tin: <em>sets up the scene</em>. This is where we put the code that needs to happen at the beginning. It will only run one time. The last thing on line 1 and the only thing on line 3 are the <em>curly brackets</em> <code>{</code> <code>}</code> (aka <em>braces</em> or <em>curlies</em>). These enclose the body of the function. Everything inside is run when the function is called.</h6>
-      </div>
-    </div>
-  </div>
-  <!-- IMAGE -->
-  <div class="row">
-    <div class="col s8 offset-s1">
-      <div>
-        <img class="inlineexamples" src="p5images/L01/createCanvas.png">
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-          <p>
-            <label>
-              <input type="checkbox" />
-              <span></span>
-            </label>
-          </p>
-        </form>
-      </div>
-    </div>
-    <div class="col s8">
-      <div class="projectsection1">
-        <h6>What do you think <code>createCanvas(400,400)</code> does?
-          Try changing the first number to <code>600</code>. What happened?</h6>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-          <p>
-            <label>
-              <input type="checkbox" />
-              <span></span>
-            </label>
-          </p>
-        </form>
-      </div>
-    </div>
-    <div class="col s8">
-      <div class="projectsection1">
-        <h6>
-          Now we get to break something. Select all of line 2 and cut it by holding down <strong>Control</strong> and pressing <strong>X</strong> ( <strong>Command+X</strong> on macOS) and paste it with <strong>Ctrl+V</strong> ( <strong>Cmd+V</strong>
-          ) on line 4.
-        </h6>
-      </div>
-    </div>
-  </div>
-
-  <!-- IMAGE -->
-  <div class="row">
-    <div class="col s8 offset-s1">
-      <div>
-        <img class="inlineexamples" src="p5images/L01/error.png">
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s8 offset-s2">
-      <div class="projectsection1">
-        <h5>
-          CONGRATULATIONS! You just created an Uncaught ReferenceError! And it highlighted the line in pink!
-        </h5>
-        <h6>
-          The truth is, making mistakes is part of learning how to make things. So when the pink highlights come, be encouraged, because you can fix these kinds of mistakes.
-        </h6>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-          <p>
-            <label>
-              <input type="checkbox" />
-              <span></span>
-            </label>
-          </p>
-        </form>
-      </div>
-    </div>
-    <div class="col s8">
-      <div class="projectsection1">
-        <h6>
-          You can start by fixing this one. Use the shortcut for <em>undo</em>. Try hitting <strong>Ctrl+Z</strong> and then press <strong>play</strong>. Do this until it works again.
-        </h6>
-      </div>
-    </div>
-  </div>
-
-  <!-- <div class="row">
-    <div class="col s8 offset-s2">
-      <div class="revealHint">
-        <h6 class="hintheader">
-          Hover to reveal hint
-        </h6>
-        <h5>
-          Try hitting <strong>Ctrl+Z</strong> and then press <strong>play</strong>.
-        </h5>
-      </div>
-    </div>
-  </div> -->
-
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-          <p>
-            <label>
-              <input type="checkbox" />
-              <span></span>
-            </label>
-          </p>
-        </form>
-      </div>
-    </div>
-    <div class="col s8">
-      <div class="projectsection1">
-        <h6>
-          Try calling <em>createCanvas()</em> without a comma separating the <strong>parameters</strong>, the values inside the parentheses. Try calling it with just one number in the <strong>parameter list</strong>. Try calling it with three numbers. Every error is slightly
-          different. Read the messages. And then undo them to get it running again.
-        </h6>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s8 offset-s2">
-      <div class="projectsection1" style="background-color: #E2F2FB">
-        <h6>
-          <strong>Parameters</strong> are the inputs to a function. Sometimes a function takes no parameters. Sometimes it takes many. However many parameters there are is the <strong>parameter list</strong>, the value of each separated by commas.
-        </h6>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-          <p>
-            <label>
-              <input type="checkbox" />
-              <span></span>
-            </label>
-          </p>
-        </form>
-      </div>
-    </div>
-    <div class="col s8">
-      <div class="projectsection1">
-        <h6>
-          You’ve probably figured out what <em>createCanvas()</em> does. So what do you think might happen if we commented it out — that is, made it so that the environment ignores it when run? Click anywhere in line 2 and press <strong>Ctrl+/</strong>
-          ( <strong>Cmd+/</strong> ).
-        </h6>
-      </div>
-    </div>
-  </div>
-
-  <!-- IMAGE -->
-  <div class="row">
-    <div class="col s8 offset-s1">
-      <div>
-        <img class="inlineexamples" src="p5images/L01/comments.png">
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-          <p>
-            <label>
-              <input type="checkbox" />
-              <span></span>
-            </label>
-          </p>
-        </form>
-      </div>
-    </div>
-    <div class="col s8">
-      <div class="projectsection1">
-        <h6>
-          Notice how two slashes appear at the beginning of the line and the color changed to a faded grey. Run it and observe what happens. Then uncomment the line by placing the cursor back in line 2 and pressing <strong>Ctrl+/</strong> again.
-        </h6>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-          <p>
-            <label>
-              <input type="checkbox" />
-              <span></span>
-            </label>
-          </p>
-        </form>
-      </div>
-    </div>
-    <div class="col s8">
-      <div class="projectsection1">
-        <h6>
-          This may seem a bit silly, but quickly commenting sections of code is a great way to test different scenarios while not deleting code entirely.
-        </h6>
-      </div>
-    </div>
-  </div>
-
-  <!-- The draw function -->
-  <div class="row">
-    <div class="col s8 offset-s1">
-      <h5 style='font-weight:italic'>The draw function</h5>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-          <p>
-            <label>
-              <input type="checkbox" />
-              <span></span>
-            </label>
-          </p>
-        </form>
-      </div>
-    </div>
-    <div class="col s8">
-      <div class="projectsection1">
-        <h6>
-          Guess what the second function definition called <em>draw()</em> does. Yeah, it <em>draws</em> stuff on the canvas, usually 60 times a second.
-        </h6>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-          <p>
-            <label>
-              <input type="checkbox" />
-              <span></span>
-            </label>
-          </p>
-        </form>
-      </div>
-    </div>
-    <div class="col s8">
-      <div class="projectsection1">
-        <h6>
-          We will demonstrate that in a bit, but for now, let’s focus on the <strong>body</strong> of <em>draw()</em>, the part in the curly braces. We see exactly one function being called inside draw(). One guess what it does?
-        </h6>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s8 offset-s2">
-      <div class="projectsection1" style="background-color: #E2F2FB">
-        <h6>
-          The <strong>body</strong> of a function is where we define what it <em>does</em>. In Javascript, we put the definition inside curly brackets <code>{</code> <code>}</code>. This is known as a <strong>code block</strong> (or simply <strong>block</strong>), a set of statements grouped together.
-        </h6>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-          <p>
-            <label>
-              <input type="checkbox" />
-              <span></span>
-            </label>
-          </p>
-        </form>
-      </div>
-    </div>
-    <div class="col s8">
-      <div class="projectsection1">
-        <h6>
-          Catching on to the naming scheme? This function fills the <strong>background</strong> with a color of our choice. And our choice is <code>220</code>, apparently. I don’t really care for this choice. Let’s try a smaller number, like <code>24</code>.
-        </h6>
-      </div>
-    </div>
-  </div>
-
-  <!-- IMAGE -->
-  <div class="row">
-    <div class="col s8 offset-s1">
-      <div>
-        <img class="inlineexamples" src="p5images/L01/background24.png">
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-          <p>
-            <label>
-              <input type="checkbox" />
-              <span></span>
-            </label>
-          </p>
-        </form>
-      </div>
-    </div>
-    <div class="col s8">
-      <div class="projectsection1">
-        <h6>
-          That’s dark. Can we get darker? Try <code>0</code>.
-        </h6>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-          <p>
-            <label>
-              <input type="checkbox" />
-              <span></span>
-            </label>
-          </p>
-        </form>
-      </div>
-    </div>
-    <div class="col s8">
-      <div class="projectsection1">
-        <h6>
-          Can we get even darker? Try <code>-100000000000000000</code> just in case.
-        </h6>
-      </div>
-    </div>
-  </div>
-
-  <!-- IMAGE -->
-  <div class="row">
-    <div class="col s8 offset-s1">
-      <div>
-        <img class="inlineexamples" src="p5images/L01/background1000.png">
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s8 offset-s2">
-      <div class="projectsection1">
-        <h6>
-          It was worth a shot, but <code>-100000000000000000</code> is no darker than <code>0</code>. By the same token <code>100000000000000000</code> is no lighter than <code>255</code>.
-        </h6>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s8 offset-s2">
-      <div class="projectsection1" style="background-color: #E2F2FB">
-        <h6>
-          There are exactly 256 possible values (<code>1</code> through <code>255</code> plus one more for <code>0</code>) for this parameter. Anything bigger gets set to <code>255</code>, anything smaller to <code>0</code>. And with only one value, it’s always black, white, or grey.
-        </h6>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-          <p>
-            <label>
-              <input type="checkbox" />
-              <span></span>
-            </label>
-          </p>
-        </form>
-      </div>
-    </div>
-    <div class="col s8">
-      <div class="projectsection1">
-        <h6>
-          What if we put three values in there separated by commas? Try it.
-        </h6>
-      </div>
-    </div>
-  </div>
-
-  <!-- IMAGE -->
-  <div class="row">
-    <div class="col s8 offset-s1">
-      <div>
-        <img class="inlineexamples" src="p5images/L01/backgroundBlue.png">
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-          <p>
-            <label>
-              <input type="checkbox" />
-              <span></span>
-            </label>
-          </p>
-        </form>
-      </div>
-    </div>
-    <div class="col s8">
-      <div class="projectsection1">
-        <h6>
-          That’s a nice sky blue there. Did you try different values? What happens if all three values are the same? What happens if two values are <code>0</code> and the other <code>255</code> and vice versa?
-        </h6>
-      </div>
-    </div>
-  </div>
-
-  <!-- PAINT BY NUMBER -->
-  <div class="row">
-    <div class="col s8 offset-s1">
-      <h5 style='font-weight:bold'>Paint By Number</h5>
-    </div>
-  </div>
-
-
-  <div class="row">
-    <div class="col s8 offset-s2">
-      <div class="projectsection1">
-        <h6>
-          Maybe you have seen <strong>Hex color codes</strong> on the web, something that looked like this: <code>#64c8fa</code>. Kind of weird. Why are numbers cavorting with letters like that 🤭
-        </h6>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s8 offset-s2">
-      <div class="projectsection1">
-        <h6>
-          Hex is actually short for <em>hexadecimal</em> which is just a hoity-toity way of saying sixteen (literally <em>six and ten</em>). Each digit can have one of sixteen values, so with two digits, you can have 16 times 16 values, which is
-          256. <code>#64c8fa</code> is <code>64</code>, <code>c8</code>, <code>fa</code>, which is <code>100</code>, <code>200</code>, <code>250</code>, the <strong>RGB values</strong> for that sky blue.
-        </h6>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="row">
-    <div class="col s8 offset-s2">
-      <div class="projectsection1" style="background-color: #E2F2FB">
-        <h6>
-          <strong>RGB values</strong> are a way to define colors by telling the computer how bright to light the Red, Green, and Blue subpixels. If we look at a typical pixel in a typical screen, we can see the subpixels. The higher the number, the brighter the subpixel glows.
-        </h6>
-        <div class="inlineinfo">
-          <img src="p5images/L01/RGBpixels.jpg">
-          <p>
-            <a href="https://en.wikipedia.org/wiki/File:Pixel_geometry_01_Pengo.jpg" style="color: grey">Source: Wikimedia Commons</a>
-          </p>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h5>
+            The first thing that we need to do is log in so our code is saved automagically and can be accessed from anywhere.
+          </h5>
+          <h6>
+            <a href="p5js-lesson-0-setup.html">Lesson 0</a> covers getting started with sign up and log in as well as a quick tour of the editor with some tips and tricks to help you as you go.
+          </h6>
+          <h6>
+            Once you are logged in, you should see a window that looks much like this, greeting you by your username&hellip;
+          </h6>
         </div>
       </div>
     </div>
-  </div>
-
-  <div class="row">
-    <div class="col s8 offset-s2">
-      <div class="projectsection1">
-        <h6>
-          There’s another parameter we can add called <strong>alpha</strong>, which tells us the opacity. Think of opacity as how well a layer blocks the layer behind it from being seen. The higher the number, the less visible the next layer.
-        </h6>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-          <p>
-            <label>
-              <input type="checkbox" />
-              <span></span>
-            </label>
-          </p>
-        </form>
-      </div>
-    </div>
-    <div class="col s8">
-      <div class="projectsection1">
-        <h6>
-          Add a fourth parameter to <em>background()</em>. Try <code>255</code> first.
-        </h6>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-          <p>
-            <label>
-              <input type="checkbox" />
-              <span></span>
-            </label>
-          </p>
-        </form>
-      </div>
-    </div>
-    <div class="col s8">
-      <div class="projectsection1">
-        <h6>
-          Now try <code>0</code>. How did it change?
-        </h6>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s8 offset-s2">
-      <div class="projectsection1">
-        <h6><em>background()</em> with all the <em>nesses</em>:</h6>
-        <h6><code>background(brightness)</code></h6>
-        <h6><code>background(brightness, opaqueness)</code></h6>
-        <h6><code>background(redness, greenness, blueness)</code></h6>
-        <h6><code>background(redness, greenness, blueness, opaqueness)</code></h6>
-      </div>
-    </div>
-  </div>
-
-  <!-- GETTING INTO SHAPE -->
-  <div class="row">
-    <div class="col s8 offset-s1">
-      <h5 style='font-weight:bold'>Getting into Shape</h5>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s8 offset-s2">
-      <div class="projectsection1">
-        <h6>
-          The background isn’t the only thing we can color. There are two more functions that we can call with those same parameter lists: <em>fill()</em> and <em>stroke()</em>. But to use them, we need a shape.
-        </h6>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-          <p>
-            <label>
-              <input type="checkbox" />
-              <span></span>
-            </label>
-          </p>
-        </form>
-      </div>
-    </div>
-    <div class="col s8">
-      <div class="projectsection1">
-        <h6>
-          We will start with the simplest of shapes: The humble circle. Go ahead and place <code>circle(200,200,200);</code> on line 8.
-        </h6>
-      </div>
-    </div>
-  </div>
-
-  <!-- IMAGE -->
-  <div class="row">
-    <div class="col s8 offset-s1">
-      <div>
-        <img class="inlineexamples" src="p5images/L01/whiteCircle.png">
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-          <p>
-            <label>
-              <input type="checkbox" />
-              <span></span>
-            </label>
-          </p>
-        </form>
-      </div>
-    </div>
-    <div class="col s8">
-      <div class="projectsection1">
-        <h6>
-          We see that the default color for <em>fill()</em> is white while the default for <em>stroke()</em> is black. Before we use our knowledge of how to change the colors, why don’t we change the thickness of the stroke. Put <code>strokeWeight(10);</code>
-          on line 9.</h6>
-      </div>
-    </div>
-  </div>
-
-  <!-- IMAGE -->
-  <div class="row">
-    <div class="col s8 offset-s1">
-      <div>
-        <img class="inlineexamples" src="p5images/L01/strokeWeight10.png">
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-          <p>
-            <label>
-              <input type="checkbox" />
-              <span></span>
-            </label>
-          </p>
-        </form>
-      </div>
-    </div>
-    <div class="col s8">
-      <div class="projectsection1">
-        <h6>
-          That’s nice and thick. Now call <em>stroke()</em> and <em>fill()</em> with the colors of your choice. This example shows a sunny yellow and a muted orange.
-        </h6>
-      </div>
-    </div>
-  </div>
-
-  <!-- IMAGE -->
-  <div class="row">
-    <div class="col s8 offset-s1">
-      <div>
-        <img class="inlineexamples" src="p5images/L01/sunny.png">
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-          <p>
-            <label>
-              <input type="checkbox" />
-              <span></span>
-            </label>
-          </p>
-        </form>
-      </div>
-    </div>
-    <div class="col s8">
-      <div class="projectsection1">
-        <h6>
-          Now that we have different parts of the object displaying, what happens if we change the alpha to <code>160</code> by adding it to the list of parameters for <em>stroke()</em>?
-        </h6>
-      </div>
-    </div>
-  </div>
-
-  <!-- IMAGE -->
-  <div class="row">
-    <div class="col s8 offset-s1">
-      <div>
-        <img class="inlineexamples" src="p5images/L01/strokeAlpha.png">
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-          <p>
-            <label>
-              <input type="checkbox" />
-              <span></span>
-            </label>
-          </p>
-        </form>
-      </div>
-    </div>
-    <div class="col s8">
-      <div class="projectsection1">
-        <h6>
-          See how both the background and fill colors bleed through the stroke? What happens if you do the same for <em>fill()</em>? For <em>background()</em>?
-        </h6>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-          <p>
-            <label>
-              <input type="checkbox" />
-              <span></span>
-            </label>
-          </p>
-        </form>
-      </div>
-    </div>
-    <div class="col s8">
-      <div class="projectsection1">
-        <h6>
-          Now try setting the alpha for <em>background()</em>, <em>fill()</em>, and <em>stroke()</em> to <code>8</code>.
-        </h6>
-      </div>
-    </div>
-  </div>
-
-  <!-- IMAGE -->
-  <div class="row">
-    <div class="col s8 offset-s1">
-      <div>
-        <img class="inlineexamples" src="p5images/L01/fillAlpha.png">
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s8 offset-s2">
-      <div class="projectsection1">
-        <h6>
-          Notice how it fades in over time? That is each layer being drawn over the last but never quite being able to completely block what came before.
-        </h6>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-          <p>
-            <label>
-              <input type="checkbox" />
-              <span></span>
-            </label>
-          </p>
-        </form>
-      </div>
-    </div>
-    <div class="col s8">
-      <div class="projectsection1">
-        <h6>
-          And for our last trick, let’s prevent p5.js from looping at all. In <em>setup()</em>, put <code>noLoop();</code> in line 3. Before you click <em>run</em>, what do you think will happen?
-        </h6>
-      </div>
-    </div>
-  </div>
-
-  <!-- IMAGE -->
-  <div class="row">
-    <div class="col s8 offset-s1">
-      <div>
-        <img class="inlineexamples" src="p5images/L01/noLoop.png">
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-          <p>
-            <label>
-              <input type="checkbox" />
-              <span></span>
-            </label>
-          </p>
-        </form>
-      </div>
-    </div>
-    <div class="col s8">
-      <div class="projectsection1">
-        <h6>
-          Now run it and see.
-        </h6>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s8 offset-s2">
-      <div class="projectsection1">
-        <h6>
-          <em>What!?</em> Why did <em>that</em> happen? We will return to this question in the next lesson…
-        </h6>
-      </div>
-    </div>
-  </div>
 
 
-  <!-- TIME TO TINKER -->
-  <div class="row">
-    <div class="col s8 offset-s1">
-      <h4 style='font-weight:bold'>Time to Tinker</h4>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-          <p>
-            <label>
-              <input type="checkbox" />
-              <span></span>
-            </label>
-          </p>
-        </form>
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="p5images/L01/defaultCode.png">
+        </div>
       </div>
     </div>
-    <div class="col s8">
-      <div class="projectsection1">
-        <h6>
-          You have learned quite a bit in this lesson. Before moving on, we encourage you to experiment. You may want to comment out <em>noLoop()</em> using <strong>Ctrl+/</strong> ( <strong>Cmd+/</strong> ).
-        </h6>
-      </div>
-    </div>
-  </div>
 
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-          <p>
-            <label>
-              <input type="checkbox" />
-              <span></span>
-            </label>
-          </p>
-        </form>
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            There are a couple <strong>functions</strong> defined in the middle on the left and a preview window on the right that looks pretty empty to me.
+          </h6>
+          <h5>
+            Let&rsquo;s change that.
+          </h5>
+          <h6>
+            In the upper left is a play button that will run the code. Click it.
+            Did anything change?
+          </h6>
+        </div>
       </div>
     </div>
-    <div class="col s8">
-      <div class="projectsection1">
-        <h6>
-          Can you make more than one circle?
-        </h6>
-        <h6>
-          Try copying and pasting the <em>circle()</em> and changing the values in the parameter list.
-        </h6>
-      </div>
-    </div>
-  </div>
 
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-          <p>
-            <label>
-              <input type="checkbox" />
-              <span></span>
-            </label>
-          </p>
-        </form>
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="infocontent">
+          <h6>
+            <strong>Functions</strong> are the verbs of programming &mdash; they perform actions such as <em>drawing</em>, <em>printing</em>, <em>calculating</em>, and so forth.
+          </h6>
+        </div>
       </div>
     </div>
-    <div class="col s8">
-      <div class="projectsection1">
-        <h6>
-          Can you make the circles different colors, with different thickness of the stroke?
-        </h6>
-      </div>
-    </div>
-  </div>
 
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-          <p>
-            <label>
-              <input type="checkbox" />
-              <span></span>
-            </label>
-          </p>
-        </form>
+    <!-- DEFINITION FOLLOWS FUNCTION -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h4 class="largeheading">Definition Follows Function</h4>
       </div>
     </div>
-    <div class="col s8">
-      <div class="projectsection1">
-        <h6>
-          Can you arrange the circles into a flower shape maybe with somewhat transparent petals?
-        </h6>
-      </div>
-    </div>
-  </div>
 
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-          <p>
-            <label>
-              <input type="checkbox" />
-              <span></span>
-            </label>
-          </p>
-        </form>
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>In the area beneath the play button, we see numbers along the left side telling us which line we are on, and those two groups of code beginning with <code>function</code> starting on lines 1 and 5, respectively.
+          </h6>
+        </div>
       </div>
     </div>
-    <div class="col s8">
-      <div class="projectsection1">
-        <h6>
-          Can you place a small circle in the center of a large, opaque one and still see it?
-        </h6>
-      </div>
-    </div>
-  </div>
 
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-          <p>
-            <label>
-              <input type="checkbox" />
-              <span></span>
-            </label>
-          </p>
-        </form>
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="infocontent">
+          <h5 class="infoheader">
+            <strong>Formatting used in these lessons</strong>
+          </h5>
+          <h6>
+            <span class="infoheader">Light Blue Background</span>: for definitions and extra information
+          </h6>
+          <h6>
+            <strong>bold</strong>: for important steps and when introducing words that have a specific meaning in programming
+          </h6>
+          <h6>
+            <em>italics</em>: for emphasis and names of variables and functions in our code
+          </h6>
+          <h6>
+            <code>monospaced text</code>: for actual code
+            and values
+          </h6>
+          <h6>
+            Functions will always be written with the trailing parentheses when just talking about them, so <em>background()</em> can refer to <code>background(100)</code> or <code>background(200,20,200,20)</code> or anything in between
+          </h6>
+        </div>
       </div>
     </div>
-    <div class="col s8">
-      <div class="projectsection1">
-        <h6>
-          Can you make something that looks like the full moon with some craters?
-        </h6>
-      </div>
-    </div>
-  </div>
 
-</div> <!--end maxwidth-->
+    <!-- The setup function -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h5 class="subheading">the setup function</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>The first one called <em>setup()</em> does what it says on the tin: <em>sets up the scene</em>. This is where we put the code that needs to happen at the beginning. It will only run one time. The last thing on line 1 and the only thing
+            on line 3 are the <em>curly brackets</em> <code>{</code> <code>}</code> (aka <em>braces</em> or <em>curlies</em>). These enclose the body of the function. Everything inside is run when the function is called.</h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="p5images/L01/createCanvas.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>What do you think <code>createCanvas(400,400)</code> does?
+            Try changing the first number to <code>600</code>. What happened?</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Now we get to break something. Select all of line 2 and cut it by holding down <strong>Control</strong> and pressing <strong>X</strong> ( <strong>Command+X</strong> on macOS) and paste it with <strong>Ctrl+V</strong> ( <strong>Cmd+V</strong>
+            ) on line 4.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="p5images/L01/error.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h5>
+            CONGRATULATIONS! You just created an Uncaught ReferenceError! And it highlighted the line in pink!
+          </h5>
+          <h6>
+            The truth is, making mistakes is part of learning how to make things. So when the pink highlights come, be encouraged, because you can fix these kinds of mistakes.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            You can start by fixing this one. Use the shortcut for <em>undo</em>. Try hitting <strong>Ctrl+Z</strong> and then press <strong>play</strong>. Do this until it works again.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Try calling <em>createCanvas()</em> without a comma separating the <strong>parameters</strong>, the values inside the parentheses. Try calling it with just one number in the <strong>parameter list</strong>. Try calling it with three
+            numbers. Every error is slightly
+            different. Read the messages. And then undo them to get it running again.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="infocontent">
+          <h6>
+            <strong>Parameters</strong> are the inputs to a function. Sometimes a function takes no parameters. Sometimes it takes many. However many parameters there are is the <strong>parameter list</strong>, the value of each separated by commas.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            You&rsquo;ve probably figured out what <em>createCanvas()</em> does. So what do you think might happen if we commented it out &mdash; that is, made it so that the environment ignores it when run? Click anywhere in line 2 and press
+            <strong>Ctrl+/</strong>
+            ( <strong>Cmd+/</strong> ).
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="p5images/L01/comments.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Notice how two slashes appear at the beginning of the line and the color changed to a faded grey. Run it and observe what happens. Then uncomment the line by placing the cursor back in line 2 and pressing <strong>Ctrl+/</strong> again.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            This may seem a bit silly, but quickly commenting sections of code is a great way to test different scenarios while not deleting code entirely.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- The draw function -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h5 class="subheading">the draw function</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Guess what the second function definition called <em>draw()</em> does. Yeah, it <em>draws</em> stuff on the canvas, usually 60 times a second.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            We will demonstrate that in a bit, but for now, let&rsquo;s focus on the <strong>body</strong> of <em>draw()</em>, the part in the curly braces. We see exactly one function being called inside draw(). One guess what it does?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="infocontent">
+          <h6>
+            The <strong>body</strong> of a function is where we define what it <em>does</em>. In Javascript, we put the definition inside curly brackets <code>{</code> <code>}</code>. This is known as a <strong>code block</strong>, or put simply, a <strong>block</strong>, <em>a set of statements grouped together</em>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Catching on to the naming scheme? This function fills the <strong>background</strong> with a color of our choice. And our choice is <code>220</code>, apparently. I don&rsquo;t really care for this choice. Let&rsquo;s try a smaller
+            number, like <code>24</code>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="p5images/L01/background24.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            That&rsquo;s dark. Can we get darker? Try <code>0</code>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Can we get even darker? Try <code>-100000000000000000</code> just in case.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="p5images/L01/background1000.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            It was worth a shot, but <code>-100000000000000000</code> is no darker than <code>0</code>. By the same token <code>100000000000000000</code> is no lighter than <code>255</code>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="infocontent">
+          <h6>
+            There are exactly 256 possible values (<code>1</code> through <code>255</code> plus one more for <code>0</code>) for this parameter. Anything bigger gets set to <code>255</code>, anything smaller to <code>0</code>. And with only one
+            value, it&rsquo;s always black, white, or grey.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            What if we put three values in there separated by commas? Try it.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="p5images/L01/backgroundBlue.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            That&rsquo;s a nice sky blue there. Did you try different values? What happens if all three values are the same? What happens if two values are <code>0</code> and the other <code>255</code> and vice versa?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAINT BY NUMBER -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h5 class="smallheading">Paint By Number</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Maybe you have seen <strong>Hex color codes</strong> on the web, something that looked like this: <code>#64c8fa</code>. Kind of weird. Why are numbers cavorting with letters like that 🤭
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Hex is actually short for <em>hexadecimal</em> which is just a hoity-toity way of saying sixteen (literally <em>six and ten</em>). Each digit can have one of sixteen values, so with two digits, you can have 16 times 16 values, which is
+            256. <code>#64c8fa</code> is <code>64</code>, <code>c8</code>, <code>fa</code>, which is <code>100</code>, <code>200</code>, <code>250</code>, the <strong>RGB values</strong> for that sky blue.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="infocontent">
+          <h6>
+            <strong>RGB values</strong> are a way to define colors by telling the computer how bright to light the Red, Green, and Blue subpixels. If we look at a typical pixel in a typical screen, we can see the subpixels. The higher the number,
+            the brighter the subpixel glows.
+          </h6>
+          <div class="inlineinfo">
+            <img src="p5images/L01/RGBpixels.jpg">
+            <p>
+              A close-up of different screens displaying the color white
+              <br>
+              <a class="source" href="https://en.wikipedia.org/wiki/File:Pixel_geometry_01_Pengo.jpg">wikimedia commons: peter halasz</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            There&rsquo;s another parameter we can add called <strong>alpha</strong>, which tells us the opacity. Think of opacity as how well a layer blocks the layer behind it from being seen. The higher the number, the less visible the next
+            layer.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Add a fourth parameter to <em>background()</em>. Try <code>255</code> first.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Now try <code>0</code>. How did it change?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6><em>background()</em> with all the <em>nesses</em>:</h6>
+          <h6><code>background(brightness)</code></h6>
+          <h6><code>background(brightness, opaqueness)</code></h6>
+          <h6><code>background(redness, greenness, blueness)</code></h6>
+          <h6><code>background(redness, greenness, blueness, opaqueness)</code></h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- GETTING INTO SHAPE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h5 class="smallheading">Getting into Shape</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            The background isn&rsquo;t the only thing we can color. There are two more functions that we can call with those same parameter lists: <em>fill()</em> and <em>stroke()</em>. But to use them, we need a shape.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            We will start with the simplest of shapes: The humble circle. Go ahead and place <code>circle(200,200,200);</code> on line 8.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="p5images/L01/whiteCircle.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            We see that the default color for <em>fill()</em> is white while the default for <em>stroke()</em> is black. Before we use our knowledge of how to change the colors, why don&rsquo;t we change the thickness of the stroke. Put <code>strokeWeight(10);</code>
+            on line 9.</h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="p5images/L01/strokeWeight10.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            That&rsquo;s nice and thick. Now call <em>stroke()</em> and <em>fill()</em> with the colors of your choice. This example shows a sunny yellow and a muted orange.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="p5images/L01/sunny.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Now that we have different parts of the object displaying, what happens if we change the alpha to <code>160</code> by adding it to the list of parameters for <em>stroke()</em>?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="p5images/L01/strokeAlpha.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            See how both the background and fill colors bleed through the stroke? What happens if you do the same for <em>fill()</em>? For <em>background()</em>?
+          </h6>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Now try setting the alpha for <em>background()</em>, <em>fill()</em>, and <em>stroke()</em> to <code>8</code>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="p5images/L01/fillAlpha.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Notice how it fades in over time? That is each layer being drawn over the last but never quite being able to completely block what came before.
+          </h6>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            And for our last trick, let&rsquo;s prevent p5.js from looping at all. In <em>setup()</em>, put <code>noLoop();</code> in line 3. Before you click <em>run</em>, what do you think will happen?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="p5images/L01/noLoop.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Now run it and see.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            <em>What!?</em> Why did <em>that</em> happen? We will return to this question in the next lesson&hellip;
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- TIME TO TINKER -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h4 class="largeheading">Time to Tinker</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            You have learned quite a bit in this lesson. Before moving on, we encourage you to experiment. You may want to comment out <em>noLoop()</em> using <strong>Ctrl+/</strong> ( <strong>Cmd+/</strong> ).
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Can you make more than one circle?
+          </h6>
+          <h6>
+            Try copying and pasting the <em>circle()</em> and changing the values in the parameter list.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Can you make the circles different colors, with different thickness of the stroke?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Can you arrange the circles into a flower shape maybe with somewhat transparent petals?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Can you place a small circle in the center of a large, opaque one and still see it?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Can you make something that looks like the full moon with some craters?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!--end contentwidth-->
 
 
   <!--Project Complete Banner-->
@@ -1196,25 +1192,26 @@
   </div>
 
   <!--Card: Prompt - Find Another Project-->
-<div class="maxwidth">
-  <div class="row">
-    <div class="col s2 offset-s2">
-      <div class="card findanotherproject2">
-        <div class="card-content">
-          <div class="cardDescription">
-            <br>
-            <h6>Find another project?</h6>
-            <div class="browse">
-              <a href="p5js.html">
-                <button>Browse all projects</button>
-              </a>
+  <div class="contentwidth">
+    <div class="row">
+      <div class="col s2 offset-s2">
+        <div class="card findanotherproject2">
+          <div class="card-content">
+            <div class="cardDescription">
+              <br>
+              <h6>Find another project?</h6>
+              <div class="browse">
+                <a href="p5js.html">
+                  <button>Browse all projects</button>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div> <!--end maxwidth-->
+  <!--end contentwidth-->
 </body>
 
 </html>

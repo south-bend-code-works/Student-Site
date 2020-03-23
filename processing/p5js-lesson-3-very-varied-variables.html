@@ -1,0 +1,1899 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <link rel="stylesheet" href="../styleP5.css">
+  <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script src="../main.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="../SBCS_favicon.png">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Very Varied Variables</title>
+</head>
+
+<body>
+  <!--Nav bar  -->
+  <nav class="light-blue lighten-1">
+    <div class="nav-wrapper">
+      <a href="#!"></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="hide-on-med-and-down">
+        <li><a href="../home.html">Home</a></li>
+        <li><a href="../scratch/scratch.html">Ages 7-12</a></li>
+        <li><a href="../techimmersion.html">Ages 13-18</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="../home.html">Home</a></li>
+    <li><a href="../scratch/scratch.html">Ages 7-12</a></li>
+    <li><a href="../techimmersion.html">Ages 13-18</a></li>
+  </ul>
+
+
+  <div class="contentwidth">
+
+    <!-- VERY VARIED VARIABLES -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h3 class="maintitle">Very Varied Variables</h3>
+        <h5 class="p5header">&nbsp; p5.js &nbsp; LESSON 3</h5>
+      </div>
+    </div>
+
+    <!-- LESSON 3 -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <h6>In this lesson you will:</h6>
+        <ol>
+          <li>Learn about environment variables that tell us about the mouse and the canvas</li>
+          <li>Create our own variables to make coding easier and our drawing interactive</li>
+          <li>Use these tools to make a character guaranteed to make you smile</li>
+        </ol>
+
+        <!-- WHERE WE LEFT OFF -->
+        <h4 class="projectTitle">Where We Left Off</h4>
+        <p>
+          <a href="p5js-lesson-2-functions-of-form.html">Last lesson</a>, we learned about the coordinate system in p5.js, how to draw basic shapes, and how to control their order and placement.
+        </p>
+
+        <!-- HELPFUL LINKS -->
+        <h4 class="projectTitle">Helpful Links</h4>
+        <p>
+          <a href="https://editor.p5js.org/">Editor</a>: the online p5.js editor
+          <br>
+          <a href="https://p5js.org/reference/">Reference</a>: documentation for all things in p5.js
+        </p>
+      </div>
+    </div>
+
+    <!-- GETTING STARTED -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h4 style="font-weight:bold">Getting Started</h4>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Let&rsquo;s begin this lesson with a clean slate. As before, when you first navigate to the editor, it should start you with the default code, but you can go to <em>File &mdash;> New</em> to get it if you have something else open.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            We are going to use some of this code in later projects, but for now, we can just name it <em>Lesson 3</em>. Set <em>background()</em>, <em>fill()</em>, and <em>stroke()</em>, if you like. We will play with them a bit later in the
+            lesson.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- Agents of Change -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h5 class="smallheading">
+          Agents of Change
+        </h5>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Let&rsquo;s say that we want something to move around on the screen with the mouse? What would we need? Something to tell is where the mouse is, right?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Given what you know about placing circles and squares on the canvas, how many values do you think we need to get the exact position of the mouse pointer?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            p5.js has some built-in <strong>variables</strong>, one of which is <code>mouseX</code>. A <strong>variable</strong> tells us a value something has. In this case, <em>positionX</em> of the mouse.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Try calling <em>ellipse()</em> with <code>mouseX</code> as the first parameters and <code>100</code> for all of the others. Notice how the color of <em>mouseX</em> is magenta &mdash; that tells you it&rsquo;s built-in. Hit <em>run</em>
+            and move the
+            mouse in the preview window.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L03/ellipseMouseX.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L03/mouseXx.gif">
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Try it again with the second, third, and fourth parameters and <code>100</code> for the others.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L03/mouseXy.gif">
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L03/mouseXw.gif">
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L03/mouseXh.gif">
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            The first one makes sense, but the others are a bit weird, especially the second and fourth.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Let&rsquo;s see what&rsquo;s going on using the console. Put <code>print(mouseX);</code> after <em>ellipse()</em> in the body of <em>draw()</em>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="p5images/L03/printMouseX.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Now we can see how the value of <code>mouseX</code> changes as we move around the canvas. Note that it stops changing when we move over the code or out of the browser window completely.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Both <em>ellipse()</em> and <em>rect()</em> take position as the first two parameters and size as the next two <code>(</em>positionX</em>, <em>positionY</em>, <em>sizeX</em>, <em>sizeY</em>)</code>. Knowing that, along with seeing the
+            value of <code>mouseX</code> in the console, can you see why
+            subbing
+            it in for <em>positionY</em> and <em>sizeY</em> seem less natural than <em>positionX</em> and <em>sizeX</em>?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Do you think there is another really obvious built-in variable to get the value of the mouse in <em>y</em>?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- HINT -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="hintcontent">
+          <h6 class="hintheader">
+            Hover for a while to reveal a hint
+          </h6>
+          <h5>
+            Put a capital <code>Y</code> in place of the <code>X</code> in <code>mouseX</code>.
+          </h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Try using it in <em>positionY</em> and <em>sizeY</em>. You can print out this other mouse variable like we did the other one.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- Size Matters (and Varies) -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h5 class="smallheading">
+          Size Matters (and Varies)
+        </h5>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Let&rsquo;s look at two other important built-in variables. What would you guess are the common names of <em>sizeX</em> and <em>sizeY</em>, one telling how wide, the other how tall?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            That&rsquo;s right, the <strong>width</strong> and the <strong>height</strong>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Try calling <code>ellipse(width,height,100,100);</code>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L03/printMouseY.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Why would this code place a quarter of a circle in the lower right?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- HINT -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="hintcontent">
+          <h6 class="hintheader">
+            Hover for a while to reveal a hint
+          </h6>
+          <h5>
+            Recall that increasing <em>x</em> moves <em>right</em> while increasing <em>y</em> moves down. That puts the center of the circle in the lower right so only the top left shows.
+          </h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Let&rsquo;s use the console to see what the values of <code>width</code> and <code>height</code> are. Put <code>print(width + ", " + height);</code> in place of the previous <em>print()</em>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- INFO -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="infocontent">
+          <h6>
+            In <code>print(width + ", " + height);</code> we are giving print a number followed by a character string (a comma and space here) then another number. The <code>+</code> operator <em>adds</em> them onto the end of the string that gets
+            printed. This is called
+            <strong>concatenation</strong>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L03/printWidthHeight.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            If you change the values in <em>createCanvas()</em>, do these also change?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            With these two variables, we know all four bounds of our canvas: <code>0</code> and <code>width</code> in <em>x</em> for the left and right edges, <code>0</code> and <code>height</code> in <em>y</em> for the top and bottom edges.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Let&rsquo;s try to draw our ellipse in the center of the preview window. With <code>createCanvas(400,400)</code> in <em>setup()</em>, what are the coordinates of the center of the canvas?
+          </h6>
+          <h6>
+            So that means I can put <code>ellipse(200,200,400,400)</code> and have a circle that exactly touches every edge of the preview.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L03/ellipse400x400.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            But what if I want a different-sized window, one that isn&rsquo;t square, and I want my ellipse to touch every edge?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            If I put <code>createCanvas(500,300)</code> in place of the previous one, I am not drawing from the center, not touching the right edge and way past the bottom.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L03/createCanvas500x300.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            I need to tweak my code to <code>ellipse(250,150,500,300)</code>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L03/ellipse500x300.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            But what if I want a canvas that&rsquo;s 900 by 600? Or 1280 by 720? Or whatever?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Ugh. Tiresome and finicky tedium. How can we solve this problem using very simple math with <code>width</code> and <code>height</code>?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- HINT -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="hintcontent">
+          <h6 class="hintheader">
+            Hover for a while to reveal a hint
+          </h6>
+          <h5>
+            Try calling <em>ellipse()</em> with <code>(width/2, height/2, width, height)</code>
+          </h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Not only do we have variables to tell us the value something has, but we also have them so we don&rsquo;t have to manually adjust tons of code after a slight change in the environment.
+          </h6>
+          <h6>
+            <strong>Variables give us dynamic flexibility.</strong>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- Grey Skies Are Gonna Clear Up -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h5 class="smallheading">
+          Grey Skies Are Gonna Clear Up
+        </h5>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Let&rsquo;s put on a happy face. We&rsquo;ll start with a circle in the center of a 400 by 400 canvas. You can use either <em>circle()</em> or <em>ellipse()</em>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            This time, instead of touching every edge, let&rsquo;s give it a size of 300 &mdash; big enough to do some fine measurements.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L03/ellipse300x300.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="altinfosection">
+          <h6>
+            But hold on a second. What if we don&rsquo;t want our face to <em>always</em> be in the center of the canvas? So far, we have used <strong>environment variables</strong> &mdash; those that give us information on the size of the canvas
+            and where the
+            mouse is located,
+            but
+            we also want some variables independent of the mouse and the canvas.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Instead of putting <code>ellipse(width/2,height/2,300,300);</code>, what if we were to put <code>ellipse(x,y,w,h);</code>? (If you use <em>circle()</em>, which parameter do you <em>not</em> need?)
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            What happens when you try to run it with these new variables we conjured out of thin air?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Error: <strong>Uncaught ReferenceError: x is not defined (sketch: line 8)</strong>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L03/errorVariablesNotDefined.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Not only do these not exist, what kind of values would <code>x,y,w,h</code> even have if we don&rsquo;t set them?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            We could assume that <code>mouseX</code> and <code>height</code> had values because the p5 environment has already defined them and given them values. But these others have never even been defined.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- Let There Be Variables -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h5 class="subheading">
+          Let There Be Variables
+        </h5>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            So let&rsquo;s define them by first declaring they exist.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Javascript is rather permissive when it comes to <strong>variable declaration</strong>, but for our purposes, we are going to declare them at the very top of our script. Place <code>let x, y, w, h;</code> on the very first line. (Omit
+            one of them for
+            <em>circle()</em>,
+            if that&rsquo;s the route you took.)
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            While it&rsquo;s often a good idea to give variables values right when we declare them, since these are going to be set to environment variables, we have to wait until <em>setup()</em>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            At the end of the body of <em>setup()</em>, put <code>x = width/2;</code> on its own line.
+
+
+
+
+
+            This is called <strong>assignment</strong>. Since it is the <em>first</em> assignment, we call it <strong>initialization</strong>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Can you do the same for <em>y</em>, <em>w</em>, and <em>h</em>?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- HINT -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="hintcontent">
+          <h6 class="hintheader">
+            Hover for a while to reveal a hint
+          </h6>
+          <h5>
+            It should look something like this:
+          </h5>
+          <div class="hintinline">
+            <a href="p5images/L03/ellipseXYWH.png" target="_blank" style="target-new: tab;">
+              <img src="p5images/L03/ellipseXYWH.png">
+            </a>
+            <p>
+              <br>
+            </p>
+          </div>
+          <p class="hintheader">
+            Click when image appears to open in a new tab
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Do you still get errors when you run the script? If so, make sure you read the error message and if the highlighted line is fine, check to make sure that nothing is missing on the line above.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            We want this circle to be that yellow color from Lesson 2. If you recall, the code appeared like so <code>fill(246, 220, 94);</code>. Remembering the values <code>246, 220, 94</code> to plug into <em>fill()</em> would get really tedious
+            and error-prone if we had to
+            change colors back and forth. Wouldn&rsquo;t it be easier to just write <code>fill(yellow);</code>?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Go back to the top of the script and place <code>let yellow = [246, 220, 94];</code> on its own line. Then put <code>fill(yellow);</code>
+
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L03/fillYellow.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Well-named variables make programming easier to understand and write. From now on, instead of just putting numbers in for colors, let&rsquo;s use variables that are meaningful even when a single number will do.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Put <code>let black = 16;</code> below the declaration of <em>yellow</em>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Now we can set the stroke color to be almost black without having to remember the exact number. We can do the same for the sky blue or whatever color you would like the background to be: <code>let skyblue = [100, 200, 250];</code>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Now we can call <em>background()</em> with <em>skyblue</em>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L03/fillSkyblue.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Though <em>black</em> and <em>yellow</em> are both being used as colors, they are both quite different under the covers. Notice that when there are three numbers, we have to place it inside these square brackets <code>[ ]</code>, but we
+            didn&rsquo;t when there
+            was just one. We&rsquo;ll get into that in a later lesson.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- When You&rsquo;re Smilin&rsquo; -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h5 class="subheading">
+          When You&rsquo;re Smilin&rsquo;
+        </h5>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Because there is a lot of rather specialized code for making a smiley face, rather then walk through it step by step, place this code in the body of <em>draw()</em>:
+          </h6>
+          <h6>
+            <pre>
+  background(skyblue);
+
+  push();
+  translate(x, y);
+  scale(w / 300);
+
+  strokeWeight(4);
+  stroke(black);
+  fill(yellow);
+  circle(0, 0, 300);
+
+  fill(black);
+  ellipse(-50, -15, 30, 40);
+  ellipse(50, -15, 30, 40);
+
+  arc(0, 20, 200, 150, 20, 160);
+  fill(yellow);
+  arc(0, 15, 220, 130, 19, 161);
+  pop();
+
+  //print(mouseX + ", " + mouseY);
+  
+</pre>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L03/harveyDent.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            😱 Does it look rather freakish? 👀
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Let&rsquo;s fix that. The span of an arc is written in either <strong>radians</strong> or <strong>degrees</strong> with the former being the default. We need to change it to <strong>degrees</strong> for this code.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Put <code>angleMode(DEGREES);</code> in <em>setup()</em>. I like to put it after <em>createCanvas()</em> but it doesn&rsquo;t really matter.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L03/angleModeDegrees.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- Agents of Interaction -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h5 style='font-weight:bold'>Agents of Interaction</h5>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Making shapes of different colors is nice and all, but we want the shapes to <em>do</em> something. How about track with the mouse pointer?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            We learned about the <strong>environment variables</strong> for the position of the mouse above. Take a moment to remember what those were without looking.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- HINT -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="hintcontent">
+          <h6 class="hintheader">
+            Hover for a while to reveal a hint
+          </h6>
+          <h5>
+            They were <code>mouseX</code> for the horizontal position, <code>mouseY</code> for the vertical position.
+          </h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            If we look in <em>draw()</em>, the second bunch of lines we encounter is <em>push()</em> followed by <em>translate()</em> and <em>scale()</em>. What parameters is <em>translate()</em> taking?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- HINT -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="hintcontent">
+          <h6 class="hintheader">
+            Hover for a while to reveal a hint
+          </h6>
+          <h5>
+            They are the <code>x</code> and <code>y</code> variables we created.
+          </h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            The function <em>translate()</em> moves the coordinate (0,0) to whatever values we give it. What values did it get?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- HINT -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="hintcontent">
+          <h6 class="hintheader">
+            Hover for a while to reveal a hint
+          </h6>
+          <h5>
+            It got the values we assigned to <code>x</code> and <code>y</code> to &mdash; that is <code>width/2</code> and <code>height/2</code>, the center of the canvas.
+          </h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            What if we were to set the <code>x</code> and <code>y</code> variables to <code>mouseX</code> and <code>mouseY</code>?
+          </h6>
+          <h6>
+            Try it.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Does the smiley follow the mouse?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L03/xMouseXyMouseYsetup.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            That would be a no.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Recall that the function <em>setup()</em> happens only once at the very beginning. The mouse cursor was off the screen so the smiley was translated to the coordinates (0,0). Never again do we update <code>x</code> and <code>y</code> with
+            the position of the mouse after the start, so it stays there.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Use a keyboard shortcut to undo those last two changes. Do you remember the shortcut for <em>undo</em>?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- HINT -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="hintcontent">
+          <h6 class="hintheader">
+            Hover for a while to reveal a hint
+          </h6>
+          <h5>
+            <strong>Ctrl-Z</strong> on Windows ( <strong>Cmd-Z</strong> on macOS)
+          </h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            We need to update <code>x</code> and <code>y</code> in the function that refreshes every frame.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Go to the bottom of the body of our <em>draw()</em>, just after the <em>print()</em> has been commented out, and set <code>x</code> and <code>y</code> to the mouse variables, and run the code.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Be sure that you are within the curly brackets for the body of <em>draw()</em> and each line ends in a semicolon.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L03/xMouseXyMouseYdraw.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            You should be able to move the smiley with the cursor now. In fact, that cursor is kind of in the way. Let&rsquo;s get rid of it.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Put the function <em>noCursor()</em> in the body of <em>setup()</em>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L03/noCursor.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            While it will work anywhere in <em>setup()</em>, I like to put it with <em>createCanvas()</em> and <em>angleMode()</em> because it also changes the properties of the environment.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            For one final trick, what happens when you set <code>w</code> to <code>mouseY</code> instead of <code>300</code>?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- LARGE HEADING -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h4 class="largeheading">
+          Time to Tinker
+        </h4>
+      </div>
+    </div>>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            What a bit of code does is not always straight-forward, so it&rsquo;s recommended to add comments that allow you to see what a block of code does instead of trying to remember. Do you remember how to add comments to your code?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- HINT -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="hintcontent">
+          <h6 class="hintheader">
+            Hover for a while to reveal a hint
+          </h6>
+          <h5>
+            Use <code>//</code> and then write your comment after it. If you want to comment an entire line or set of lines, you can select a part of it and use the shortcut <strong>Ctrl+/</strong> ( <strong>Cmd+/</strong> )
+          </h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            By selectively commenting out lines of code, can you identify the code for the eyes and mouth, adding comments telling the next programmer what they are?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Can you adjust the size of the eyes?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            What about turning it into a winking face?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Or adding some corner creases to the smile?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            How about playing with the transparency of the background by adding a fourth value in the definition of <em>skyblue</em>, or commenting out <em>background()</em> in <em>draw()</em> and adding it to <em>setup()</em>?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            What does the code for <em>print()</em> tell you? What if you set <code>x</code> to <code>mouseY</code> and <code>y</code> to <code>mouseX</code>?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            In addition to <em>translate()</em>, there are other new functions in this code. Can you use the <a href="https://p5js.org/reference/">reference</a> to figure out what <em>push()</em>, <em>scale()</em>, and <em>pop()</em> do.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!--end contentwidth-->
+
+
+  <!--Project Complete Banner-->
+  <div class="row blue white-text">
+    <div class="col s4 offset-s4">
+      <h5 style="text-align:center;">Congrats! Project complete!</h5>
+    </div>
+  </div>
+
+  <!--Card: Prompt - Find Another Project-->
+  <div class="contentwidth">
+    <div class="row">
+      <div class="col s2 offset-s2">
+        <div class="card findanotherproject2">
+          <div class="card-content">
+            <div class="cardDescription">
+              <br>
+              <h6>Find another project?</h6>
+              <div class="browse">
+                <a href="p5js.html">
+                  <button>Browse all projects</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end contentwidth-->
+</body>
+
+</html>
