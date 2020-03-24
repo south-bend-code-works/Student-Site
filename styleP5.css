@@ -1910,6 +1910,15 @@ details summary::-webkit-details-marker {
   display: none;
 }
 
+.bannercontainer {
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  grid-template-rows: auto;
+  grid-template-areas: 'last complete next';
+  justify-items: center;
+  padding-bottom: 8px;
+}
+
 /* ========================================================================= */
 /* ============================= other stuff =============================== */
 /* ========================================================================= */

@@ -37,7 +37,7 @@
     <li><a href="../techimmersion.html">Ages 13-18</a></li>
   </ul>
 
-  <div class="maxwidth">
+  <div class="contentwidth">
 
     <!-- THE FUN IN FUNCTIONS -->
     <div class="row">
@@ -60,18 +60,18 @@
         <!-- WHERE WE LEFT OFF -->
         <h4 class="projectTitle">Where We Left Off</h4>
         <p>
-          <a href="p5js-lesson-4-conditional-love.html">Last lesson</a>, we learned about conditionals that give our program the logic to take different actions depending on where our smiley and sunglasses are. We took these conditions to make
+          <a href="p5js-lesson-4-conditional-love.html" target="_blank" style="target-new: tab;">Last lesson</a>, we learned about conditionals that give our program the logic to take different actions depending on where our smiley and sunglasses are. We took these conditions to make
           smiley bounce around the canvas. We also used conditions to get the state of the left mouse button and spacebar for some user interaction.
         </p>
 
         <!-- HELPFUL LINKS -->
         <h4 class="projectTitle">Helpful Links</h4>
         <p>
-          <a href="https://editor.p5js.org/">Editor</a>: the online p5.js editor
+          <a href="https://editor.p5js.org/" target="_blank" style="target-new: tab;">Editor</a>: the online p5.js editor
           <br>
-          <a href="https://p5js.org/reference/">Reference</a>: documentation for all things in p5.js
+          <a href="https://p5js.org/reference/" target="_blank" style="target-new: tab;">Reference</a>: documentation for all things in p5.js
           <br>
-          <a href="http://bit.ly/p5jsLesson5">Lesson 5 starter</a>: the code from the end of Lesson 4
+          <a href="http://bit.ly/p5jsLesson5" target="_blank" style="target-new: tab;">Lesson 5 starter</a>: the code from the end of Lesson 4
         </p>
       </div>
     </div>
@@ -102,7 +102,7 @@
       <div class="col s8">
         <div class="stepcontent">
           <h6>
-            This time, we will begin with the <a href="http://bit.ly/p5jsLesson5">starter code</a> because it has been minimally commented to tell us about what each part of the code does.
+            This time, we will begin with the <a href="http://bit.ly/p5jsLesson5" target="_blank" style="target-new: tab;">starter code</a> because it has been minimally commented to tell us about what each part of the code does.
           </h6>
           <h6>
             If you have made modifications to your character that you want to bring forward, you&rsquo;ll have opportunity to paste that code in at the end of the next lesson.
@@ -216,13 +216,13 @@
         <div class="stepcontent">
           <h6>
             The <strong>signature</strong> of <em>constrain()</em> looks like this:
-            <pre>
-function constrain(valueToConstrain, lowerBound, upperBound) {
+            <pre><code>
+function constrain(value, lowerBound, upperBound) {
   // perform some magic
   return constrainedValue
 }
 
-</pre>
+</code></pre>
             It takes three <strong>parameters</strong> and <strong>returns a value</strong> based on them after they have been put through some mathematical magic.
           </h6>
         </div>
@@ -242,12 +242,24 @@ function constrain(valueToConstrain, lowerBound, upperBound) {
       </div>
     </div>
 
-    <!-- EXPLANATORY STEP -->
+    <!-- CHECKBOX STEP -->
     <div class="row">
-      <div class="col s8 offset-s2">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
         <div class="stepcontent">
           <h5>
-            What do we mean by <strong>return</strong>?
+            What do we mean by <em>return</em>?
           </h5>
           <h6>
             Generally speaking, there are two kinds of functions: those that just do something, also called <strong>procedures</strong> or <strong>subroutines</strong>, and those that take some value and transform it, giving a value in turn &mdash;
@@ -266,9 +278,7 @@ function constrain(valueToConstrain, lowerBound, upperBound) {
       <div class="col s8 offset-s2">
         <div class="stepcontent">
           <h6>
-            Since it gives us a value back, we need a variable to catch it. That just means setting a variable to its result. That variable can be a new one, preserving the value of the one used as a <strong>parameter</strong>, or as it will be in
-            this case, the
-            same variable, clobbering the previous value.
+            Since it gives us a value back, we need a variable to catch it. That just means setting a variable to its result. That variable can be a new one, preserving the value of the one used as a parameter, or as it will be in this case, the same variable, clobbering the previous value.
           </h6>
         </div>
       </div>
@@ -303,7 +313,7 @@ function constrain(valueToConstrain, lowerBound, upperBound) {
         <div class="stepcontent">
           <h6>
             Find the following lines in your code:
-            <pre>
+            <pre><code>
   // keep smiley in bounds
   if (x - rad < 0) {
     x = 0 + rad;
@@ -316,7 +326,7 @@ function constrain(valueToConstrain, lowerBound, upperBound) {
     y = height - rad;
   } // end of bounds
 
-</pre>
+</code></pre>
           </h6>
         </div>
       </div>
@@ -340,13 +350,13 @@ function constrain(valueToConstrain, lowerBound, upperBound) {
         <div class="stepcontent">
           <h6>
             Now replace those lines with this code:
-            <pre>
+            <pre><code>
   // keep smiley in bounds
   x = constrain(x,rad,width-rad);
   y = constrain(y,rad,height-rad);
   // end of bounds
 
-</pre>
+</code></pre>
           </h6>
           <h6>
             Uncomment the lines that set <code>x</code> and <code>y</code> to the mouse and test it. <strong>Make sure it works.</strong>
@@ -526,7 +536,7 @@ function constrain(valueToConstrain, lowerBound, upperBound) {
       <div class="col s8 offset-s2">
         <div class="stepcontent">
           <h6>
-            We need a block of code to put our implementation in. Unlike a variable where we don&rsquo;t have to assign it to anything when we declare it, we need to give a function a block of code.
+            Unlike a variable where we don&rsquo;t have to assign it to anything when we declare it, we need to give a function a block of code to put our logic in, even if that block is empty.
           </h6>
         </div>
       </div>
@@ -719,6 +729,19 @@ function constrain(valueToConstrain, lowerBound, upperBound) {
       </div>
     </div>
 
+    <!-- INFO -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="infocontent">
+          <h6>
+            <strong>Refactoring code</strong> is an often maligned but necessary part of the programming process. Writing code is often an adventure into the unknown. You may not know a good way to solve whatever new problems you encounter, let alone the <em>best way</em>. But the <em>only way</em> to start such an adventure is <em>to start</em>, try out ideas, solve problems, and then spend the time to clean up your code and write comments about what it does.
+          </h6>
+          <h6>
+            You may find better solutions through this process, or you may not, but one thing is certain: Your future self and anyone else who has to deal with your code will thank you.
+          </h6>
+        </div>
+      </div>
+    </div>
 
     <!-- EXPLANATORY STEP -->
     <div class="row">
@@ -893,7 +916,7 @@ function constrain(valueToConstrain, lowerBound, upperBound) {
             different.
           </h6>
           <h6>
-            A function that changes how another function is going to act can lead to very hours of rooting out errors.
+            A function that changes how another function is going to act can lead to many hours rooting out errors.
           </h6>
         </div>
       </div>
@@ -926,7 +949,7 @@ function constrain(valueToConstrain, lowerBound, upperBound) {
       <div class="col s8 offset-s2">
         <div class="stepcontent">
           <h6>
-            But as programs get more complex and debugging consumes more and more time, having functions that you don&rsquo;t have to look into to understand what they do to the state of your variables is a really good idea.
+            But as programs get more complex and debugging consumes more and more time, it&rsquo;s a really good idea to have functions that you don&rsquo;t have to look inside of to understand what they might affect the state of your variables.
           </h6>
         </div>
       </div>
@@ -1003,7 +1026,7 @@ function constrain(valueToConstrain, lowerBound, upperBound) {
         <div class="stepcontent">
           <h6>
             Add the following function to your code. I put mine after <em>drawSunglasses()</em>. Remember that you can copy and paste.
-            <pre>
+            <pre><code>
 function drawAwesome() {
   push();
   translate(x, y);
@@ -1043,7 +1066,7 @@ function drawAwesome() {
   pop();
 }
 
-</pre>
+</code></pre>
 
           </h6>
         </div>
@@ -1179,7 +1202,7 @@ function drawAwesome() {
             Just like last lesson, we have covered a lot in here, so it&rsquo;s possible that not all of it works exactly as you would hope.
           </h6>
           <h6>
-            For this reason, <strong>here is <a href="http://bit.ly/p5jsLesson6">the code</a> that ends this lesson and begins the next.</strong> You can open it in a new window and compare it to yours.
+            For this reason, <strong>here is <a href="http://bit.ly/p5jsLesson6" target="_blank" style="target-new: tab;">the code</a> that ends this lesson and begins the next.</strong> You can open it in a new window and compare it to yours.
           </h6>
           <h6>
             And don&rsquo;t forget to tinker&hellip;
@@ -1238,19 +1261,34 @@ function drawAwesome() {
       <div class="col s8">
         <div class="stepcontent">
           <h6>
-            As you comment your code, check out the <a href="https://p5js.org/reference/">reference</a> for any functions you are unfamiliar with to get an idea of how they work.
+            As you comment your code, check out the <a href="https://p5js.org/reference/" target="_blank" style="target-new: tab;">reference</a> for any functions you are unfamiliar with to get an idea of how they work.
           </h6>
         </div>
       </div>
     </div>
-
   </div>
   <!--end contentwidth-->
 
   <!--Project Complete Banner-->
-  <div class="row blue white-text">
-    <div class="col s4 offset-s4">
-      <h5 style="text-align:center;">Congrats! Project complete!</h5>
+  <div class="bannercontainer blue white-text">
+    <div class="last">
+      <h5>
+        <a href="p5js-lesson-4-conditional-love.html" style="color:white; font-variant: small-caps">
+          last
+        </a>
+      </h5>
+    </div>
+    <div class="complete">
+      <h5>
+          Lesson complete!
+      </h5>
+    </div>
+    <div class="next">
+      <!-- <h5>
+        <a href="p5js-lesson-6-parameterize-me.html" style="color:white; font-variant: small-caps">
+          next
+        </a>
+      </h5> -->
     </div>
   </div>
 
