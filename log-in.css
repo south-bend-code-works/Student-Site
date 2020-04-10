@@ -1,0 +1,18 @@
+html , body{
+  height: 100%;
+}
+
+.container{
+  min-height: 100%;
+  display: grid;
+}
+
+form{
+  align-self: center;
+  justify-self: center;
+}
+
+input{
+  width: 20em !important;
+  margin-bottom: 3em;
+}
