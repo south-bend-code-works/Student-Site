@@ -62,9 +62,7 @@
         <!-- BACKGROUND INFO -->
         <h4 class="projectTitle">Background Info</h4>
         <p>
-          Processing &mdash; the parent of p5.js &mdash; is a coding environment designed for artists and musicians with little to no experience programming. p5.js is the JavaScript version with the added benefit of running natively in the browser.
-          The online
-          editor is easy to use right in the browser with nothing to install. If you are new to writing code, we&rsquo;ll get you making something awesome by the end of these lessons.
+          Processing &mdash; the parent of p5.js &mdash; is a coding environment designed for artists and musicians with little to no experience programming. p5.js is the JavaScript version with the added benefit of running natively in the browser. The online editor is easy to use right in the browser with nothing to install. If you are new to writing code, we&rsquo;ll get you making something awesome by the end of these lessons.
         </p>
 
         <!-- HELPFUL LINKS -->
@@ -138,14 +136,14 @@
       <div class="col s8">
         <div class="stepcontent">
           <h6>
-            There are a couple <strong>functions</strong> defined in the middle on the left and a preview window on the right that looks pretty empty to me.
+            There are a couple <strong>functions</strong> defined in the middle on the left and a preview window on the right that looks pretty empty.
           </h6>
           <h5>
             Let&rsquo;s change that.
           </h5>
           <h6>
             In the upper left is a play button that will run the code. Click it.
-            Did anything change?
+            Does anything change?
           </h6>
         </div>
       </div>
@@ -171,7 +169,7 @@
     <div class="row">
       <div class="col s8 offset-s2">
         <div class="stepcontent">
-          <h6>In the area beneath the play button, we see numbers along the left side telling us which line we are on, and those two groups of code beginning with <code>function</code> starting on lines 1 and 5, respectively.
+          <h6>In the area beneath the play button, we see numbers along the left side telling us which line we are on, and two groups of code beginning with <code>function</code> starting on lines 1 and 5, respectively.
           </h6>
         </div>
       </div>
@@ -211,22 +209,14 @@
     </div>
 
     <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-            <p>
-              <label>
-                <input type="checkbox" />
-                <span></span>
-              </label>
-            </p>
-          </form>
-        </div>
-      </div>
-      <div class="col s8">
+      <div class="col s8 offset-s2">
         <div class="stepcontent">
-          <h6>The first one called <em>setup()</em> does what it says on the tin: <em>sets up the scene</em>. This is where we put the code that needs to happen at the beginning. It will only run one time. The last thing on line 1 and the only thing
-            on line 3 are the <em>curly brackets</em> <code>{</code> <code>}</code> (aka <em>braces</em> or <em>curlies</em>). These enclose the body of the function. Everything inside is run when the function is called.</h6>
+          <h6>
+            The first one called <em>setup()</em> does what it says on the tin: <em>sets up the scene</em>. This is where we put the code that needs to happen at the beginning. It will only run one time.
+          </h6>
+          <h6>
+            The last thing on line 1 and the only thing on line 3 are the <strong>curly brackets</strong> <code>{</code> <code>}</code> (aka <strong>braces</strong> or <strong>curlies</strong>). These enclose the body of the function. Everything inside is run when the function is called.
+          </h6>
         </div>
       </div>
     </div>
@@ -255,8 +245,21 @@
       </div>
       <div class="col s8">
         <div class="stepcontent">
-          <h6>What do you think <code>createCanvas(400,400)</code> does?
-            Try changing the first number to <code>600</code>. What happened?</h6>
+          <h6>What do you think <code>createCanvas(400,400)</code> does? Try changing the first number to <code>600</code>. What happens?</h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- HINT -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="hintcontent">
+          <h6 class="hintheader">
+            Hover for a while to reveal a hint
+          </h6>
+          <h5>
+            With <code>background(600,400);</code>, the grey background gets wider.
+          </h5>
         </div>
       </div>
     </div>
@@ -277,8 +280,7 @@
       <div class="col s8">
         <div class="stepcontent">
           <h6>
-            Now we get to break something. Select all of line 2 and cut it by holding down <strong>Control</strong> and pressing <strong>X</strong> ( <strong>Command+X</strong> on macOS) and paste it with <strong>Ctrl+V</strong> ( <strong>Cmd+V</strong>
-            ) on line 4.
+            Now we get to break something. Select all of line 2 and cut it by holding down <strong>Control</strong> and pressing <strong>X</strong> (<strong>Command+X</strong> on macOS) and paste it with <strong>Ctrl+V</strong> (<strong>Cmd+V</strong>) on line 4.
           </h6>
         </div>
       </div>
@@ -300,7 +302,7 @@
             CONGRATULATIONS! You just created an Uncaught ReferenceError! And it highlighted the line in pink!
           </h5>
           <h6>
-            The truth is, making mistakes is part of learning how to make things. So when the pink highlights come, be encouraged, because you can fix these kinds of mistakes.
+            Making mistakes is part of learning how to make things, so when the pink highlights come, be encouraged, because we can fix these kinds of mistakes.
           </h6>
         </div>
       </div>
@@ -322,7 +324,10 @@
       <div class="col s8">
         <div class="stepcontent">
           <h6>
-            You can start by fixing this one. Use the shortcut for <em>undo</em>. Try hitting <strong>Ctrl+Z</strong> and then press <strong>play</strong>. Do this until it works again.
+            We&rsquo;ll start by fixing this one. Use the shortcut for <strong>undo</strong>.
+          </h6>
+          <h6>
+            Try hitting <strong>Ctrl+Z</strong> (<strong>Cmd+Z</strong>) and then press <strong>play</strong>. Do this until it works again.
           </h6>
         </div>
       </div>
@@ -344,9 +349,73 @@
       <div class="col s8">
         <div class="stepcontent">
           <h6>
-            Try calling <em>createCanvas()</em> without a comma separating the <strong>parameters</strong>, the values inside the parentheses. Try calling it with just one number in the <strong>parameter list</strong>. Try calling it with three
-            numbers. Every error is slightly
-            different. Read the messages. And then undo them to get it running again.
+            There are different kinds of errors we can make. Do the following steps and read the messages in the console, using <em>undo</em> to return it to a running state each time.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Call <em>createCanvas()</em> without a comma separating the <strong>parameters</strong>, the values inside the parentheses.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Now call it with just one number in the <strong>parameter list</strong>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            What about calling it with three numbers?
           </h6>
         </div>
       </div>
@@ -356,7 +425,7 @@
       <div class="col s8 offset-s2">
         <div class="infocontent">
           <h6>
-            <strong>Parameters</strong> are the inputs to a function. Sometimes a function takes no parameters. Sometimes it takes many. However many parameters there are is the <strong>parameter list</strong>, the value of each separated by commas.
+            <strong>Parameters</strong> are the inputs to a function. Sometimes a function takes no parameters. Sometimes it takes many. However many parameters there are is the <strong>parameter list</strong> between the parentheses, the value of each separated by commas.
           </h6>
         </div>
       </div>
@@ -378,9 +447,10 @@
       <div class="col s8">
         <div class="stepcontent">
           <h6>
-            You&rsquo;ve probably figured out what <em>createCanvas()</em> does. So what do you think might happen if we commented it out &mdash; that is, made it so that the environment ignores it when run? Click anywhere in line 2 and press
-            <strong>Ctrl+/</strong>
-            ( <strong>Cmd+/</strong> ).
+            You&rsquo;ve probably figured out what <em>createCanvas()</em> does. So what do you think might happen if we prevented it from being called?
+          </h6>
+          <h6>
+            Click anywhere in line 2 and press <strong>Ctrl+/</strong> (<strong>Cmd+/</strong>).
           </h6>
         </div>
       </div>
@@ -411,29 +481,23 @@
       <div class="col s8">
         <div class="stepcontent">
           <h6>
-            Notice how two slashes appear at the beginning of the line and the color changed to a faded grey. Run it and observe what happens. Then uncomment the line by placing the cursor back in line 2 and pressing <strong>Ctrl+/</strong> again.
+            Notice how two slashes appear at the beginning of the line and the color changed to a faded grey. We have just turned the line into a <strong>comment</strong>.
+          </h6>
+          <h6>
+            Run it and observe what happens. Then enable the line by placing the cursor back in line 2 and pressing <strong>Ctrl+/</strong> again.
           </h6>
         </div>
       </div>
     </div>
 
     <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-            <p>
-              <label>
-                <input type="checkbox" />
-                <span></span>
-              </label>
-            </p>
-          </form>
-        </div>
-      </div>
-      <div class="col s8">
-        <div class="stepcontent">
+      <div class="col s8 offset-s2">
+        <div class="infocontent">
           <h6>
-            This may seem a bit silly, but quickly commenting sections of code is a great way to test different scenarios while not deleting code entirely.
+            <strong>Comments</strong> are a tool used to detail what some bit of code does. Think of it as instructions for a future version of you or someone like you.
+          </h6>
+          <h6>
+            In addition to description, quickly <strong>commenting out</strong> sections of code is a great way to test different scenarios while not deleting code. When we want to reenable the code, we just <strong>uncomment</strong> by removing the two slashes from the beginning.
           </h6>
         </div>
       </div>
@@ -462,7 +526,10 @@
       <div class="col s8">
         <div class="stepcontent">
           <h6>
-            Guess what the second function definition called <em>draw()</em> does. Yeah, it <em>draws</em> stuff on the canvas, usually 60 times a second.
+            Guess what the second function definition called <em>draw()</em> does.
+          </h6>
+          <h6>
+            Yeah, it <em>draws</em> stuff on the canvas, usually 60 times a second.
           </h6>
         </div>
       </div>
@@ -484,7 +551,7 @@
       <div class="col s8">
         <div class="stepcontent">
           <h6>
-            We will demonstrate that in a bit, but for now, let&rsquo;s focus on the <strong>body</strong> of <em>draw()</em>, the part in the curly braces. We see exactly one function being called inside draw(). One guess what it does?
+            We will demonstrate that in a bit, but for now, let&rsquo;s focus on the <strong>body</strong> of <em>draw()</em>, the part in the curly braces. We see exactly one function being called inside <em>draw()</em>. One guess what it does?
           </h6>
         </div>
       </div>
@@ -517,7 +584,10 @@
       <div class="col s8">
         <div class="stepcontent">
           <h6>
-            Catching on to the naming scheme? This function fills the <strong>background</strong> with a color of our choice. And our choice is <code>220</code>, apparently. I don&rsquo;t really care for this choice. Let&rsquo;s try a smaller
+            Catching on to the naming scheme? This function fills the <strong>background</strong> with a color of our choice. And our choice is <code>220</code>, apparently.
+          </h6>
+          <h6>
+            Let&rsquo;s try a smaller
             number, like <code>24</code>.
           </h6>
         </div>
@@ -600,8 +670,7 @@
       <div class="col s8 offset-s2">
         <div class="infocontent">
           <h6>
-            There are exactly 256 possible values (<code>1</code> through <code>255</code> plus one more for <code>0</code>) for this parameter. Anything bigger gets set to <code>255</code>, anything smaller to <code>0</code>. And with only one
-            value, it&rsquo;s always black, white, or grey.
+            There are exactly 256 possible values for this parameter, <code>1</code> through <code>255</code> plus one more for <code>0</code>. Anything bigger gets set to <code>255</code>. Anything smaller, to <code>0</code>. And with only one value, it&rsquo;s always black, white, or grey.
           </h6>
         </div>
       </div>
@@ -654,7 +723,7 @@
       <div class="col s8">
         <div class="stepcontent">
           <h6>
-            That&rsquo;s a nice sky blue there. Did you try different values? What happens if all three values are the same? What happens if two values are <code>0</code> and the other <code>255</code> and vice versa?
+            That&rsquo;s a nice sky blue there. Try it with different values. What happens if all three values are the same? What happens if two values are <code>0</code> and the other <code>255</code> and vice versa?
           </h6>
         </div>
       </div>
@@ -671,7 +740,29 @@
       <div class="col s8 offset-s2">
         <div class="stepcontent">
           <h6>
-            Maybe you have seen <strong>Hex color codes</strong> on the web, something that looked like this: <code>#64c8fa</code>. Kind of weird. Why are numbers cavorting with letters like that 🤭
+            Maybe you have seen <strong>hex color codes</strong> or <strong>hex values</strong> on the web, something that looked like this: <code>#64c8fa</code>. Kind of weird. Why are numbers cavorting with letters like that!?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Try putting <code>"#64c8fa"</code> the only parameter for <em>background()</em>. What does that do?
           </h6>
         </div>
       </div>
@@ -1186,11 +1277,16 @@
   <!--Project Complete Banner-->
   <div class="bannercontainer blue white-text">
     <div class="last">
-      <h5>
-        <a href="p5js-lesson-0-setup.html" style="color:white; font-variant: small-caps">
-          last
-        </a>
-      </h5>
+      <a href="p5js-lesson-0-setup.html">
+        <button>
+          <div class="arrowleft"></div>
+          <div class="arrowlefttext">
+            last
+            <br>
+            lesson
+          </div>
+        </button>
+      </a>
     </div>
     <div class="complete">
       <h5>
@@ -1198,11 +1294,16 @@
       </h5>
     </div>
     <div class="next">
-      <h5>
-        <a href="p5js-lesson-2-functions-of-form.html" style="color:white; font-variant: small-caps">
-          next
-        </a>
-      </h5>
+      <a href="p5js-lesson-2-functions-of-form.html">
+        <button>
+          <div class="arrowrighttext">
+            next
+            <br>
+            lesson
+          </div>
+          <div class="arrowright"></div>
+        </button>
+      </a>
     </div>
   </div>
 

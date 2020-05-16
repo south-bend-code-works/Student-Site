@@ -1916,7 +1916,69 @@ details summary::-webkit-details-marker {
   grid-template-rows: auto;
   grid-template-areas: 'last complete next';
   justify-items: center;
-  padding-bottom: 8px;
+  align-items: center;
+}
+
+:root {
+  --borderheight: 1.6em;
+  --arrowtextsize: 1.7em;
+}
+.arrowleft {
+  display: block;
+  float: left;
+  width: 0;
+  height: 0;
+  margin: 15px;
+  border-top: var(--borderheight) solid transparent;
+  border-bottom: var(--borderheight) solid transparent;
+  border-right:15px solid white;
+}
+
+.arrowlefttext {
+  display: block;
+  float: right;
+  margin: 10px;
+  margin-left: 0px;
+  padding-top: 3px;
+  text-align: left;
+  color: white;
+  font-variant: small-caps;
+  font-size: var(--arrowtextsize);
+  line-height: 1em;
+}
+
+.arrowright {
+  display: block;
+  float: right;
+  width: 0;
+  height: 0;
+  margin: 15px;
+  border-top: var(--borderheight) solid transparent;
+  border-bottom: var(--borderheight) solid transparent;
+  border-left:15px solid white;
+}
+
+.arrowrighttext {
+  display: block;
+  float: left;
+  margin: 10px;
+  margin-right: 0px;
+  padding-top: 3px;
+  text-align: right;
+  color: white;
+  font-variant: small-caps;
+  font-size: var(--arrowtextsize);
+  line-height: 1em;
+}
+
+.bannercontainer button {
+  background-color: #fff0;
+  border-color: #fff0;
+  cursor: pointer;
+}
+
+.complete {
+  margin-bottom: 8px;
 }
 
 /* ========================================================================= */
