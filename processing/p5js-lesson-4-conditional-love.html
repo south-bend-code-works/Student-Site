@@ -1,0 +1,1742 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <link rel="stylesheet" href="../styleP5.css">
+  <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script src="../main.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="../SBCS_favicon.png">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Conditional Love</title>
+</head>
+
+<body>
+  <!--Nav bar  -->
+  <nav class="light-blue lighten-1">
+    <div class="nav-wrapper">
+      <a href="#!"></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="hide-on-med-and-down">
+        <li><a href="../home.html">Home</a></li>
+        <li><a href="../scratch/scratch.html">Ages 7-12</a></li>
+        <li><a href="../techimmersion.html">Ages 13-18</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="../home.html">Home</a></li>
+    <li><a href="../scratch/scratch.html">Ages 7-12</a></li>
+    <li><a href="../techimmersion.html">Ages 13-18</a></li>
+  </ul>
+
+  <div class="contentwidth">
+
+    <!-- CONDITIONAL LOVE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h3 class="maintitle">Conditional Love</h3>
+        <h5 class="p5header">&nbsp; p5.js &nbsp; LESSON 4</h5>
+      </div>
+    </div>
+
+    <!-- LESSON 4 -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <h6>In this lesson you will:</h6>
+        <ol>
+          <li>Learn how to make different blocks of code execute depending on whether something is true</li>
+          <li>Keep the smiley face in the bounds of the canvas</li>
+          <li>Use the mouse and keyboard to do sonething cool</li>
+          <li>Go bouncing off the walls</li>
+        </ol>
+
+        <!-- WHERE WE LEFT OFF -->
+        <h4 class="projectTitle">Where We Left Off</h4>
+        <p>
+          <a href="p5js-lesson-3-very-varied-variables.html" target="_blank" style="target-new: tab;">Last lesson</a>, we learned about environment variables that allowed us to know about the size of the canvas and the location of the mouse pointer. We also made our own variables to hold
+          size, position, and color.
+        </p>
+
+        <!-- HELPFUL LINKS -->
+        <h4 class="projectTitle">Helpful Links</h4>
+        <p>
+          <a href="https://editor.p5js.org/" target="_blank" style="target-new: tab;">Editor</a>: the online p5.js editor
+          <br>
+          <a href="https://p5js.org/reference/" target="_blank" style="target-new: tab;">Reference</a>: documentation for all things in p5.js
+          <br>
+          <a href="http://bit.ly/p5jsLesson4" target="_blank" style="target-new: tab;">Lesson 4 starter</a>: the code from the end of Lesson 3
+        </p>
+      </div>
+    </div>
+
+    <!-- GETTING STARTED -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h4 class="largeheading">
+          Getting Started
+        </h4>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Let&rsquo;s begin with the code that we had last time. If for whatever reason you don&rsquo;t have the code from the end of Lesson 3 or you fear you&rsquo;ve changed it too much, you can use the Lesson 4 starter code linked above.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Since we are starting a new lesson, let&rsquo;s duplicate this sketch so we have a snapshot of known working code. Go up to <em>File &mdash;> Duplicate</em> and you should end up with <em>Lesson 3 copy</em> (if you named it Lesson 3).
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="p5images/L04/fileDuplicate.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            This way, the Lesson 3 sketch remains unchanged, and at the very least, we have our starting point saved. Let&rsquo;s rename this <em>Lesson 4</em>.
+          </h6>
+          <h6>
+            If you don&rsquo;t remember how, look for the pencil.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- INFO -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="infocontent">
+          <h6>
+            This is an elementary kind of <strong>versioning</strong> &mdash; something that developers need when working on projects, especially as they grow in size. New code may have introduced new bugs, even if that code was meant to fix other bugs.
+          </h6>
+          <h6>
+            Having previous versions as a backup is always good practice. Most programmers these days use <a href="https://git-scm.com/" target="_blank" style="target-new: tab;">Git</a> or another <strong>version control system</strong> to keep track of their changes so they don&rsquo;t need to have entire
+            prior versions saved. You can learn more about it by following <a href="https://south-bend-code-school.github.io/Student-Site/git/github-intro.html target="_blank" style="target-new: tab;"">our lesson</a> getting you up and running with Git and Github.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- SMALL HEADING -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h5 class="smallheading">
+          So Much Depends upon&hellip;
+        </h5>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Notice that our smiley can easily go half-way off-screen. How can we fix this?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            We need to check whether the circle that is our smiley face touches the bounds of the canvas. Something like <em>if the smiley is touching the wall, then bounce off it</em>. In that italicized sentence, what would you say is the <strong>condition</strong>
+            the bouncing depends on?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- HINT -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="hintcontent">
+          <h6 class="hintheader">
+            Hover for a while to reveal a hint
+          </h6>
+          <h5>
+            The condition is <em>the smiley is touching the wall</em>
+          </h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            A <strong>condition</strong> is a statement that has a <strong>truth value</strong> &mdash; it&rsquo;s <em>true</em> or <em>not true</em>, also known as <em>false</em>. These are known as <strong>Boolean expressions</strong>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- INFO -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="infocontent">
+          <h6>
+            <strong>George Boole</strong>, one of the <em>grandfathers</em> of computing, was a logician and philosopher in 1800s who came up with a way to manipulate things which are true or false as if they were numbers, giving us <em>conjunction</em> &mdash; AND &mdash; which is
+            kind of like multiplication, <em>disjunction</em> &mdash; OR &mdash; which is kind of like addition, and <em>negation</em> &mdash; NOT &mdash; which is kind of like, well, negation. This logic, now known as Boolean Algebra, is one of the foundational elements of computers
+            that use <em>true</em> or <em>false</em>, <em>yes</em> or <em>no</em>, <em>on</em> or <em>off</em>, <em>0</em> or <em>1</em>.
+          </h6>
+          <h6>
+            Note that <em>binary</em> is not the same as <em>Boolean</em>, it&rsquo;s a way of representing numbers as a series of yeses and noes.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Consider these two sentences:
+            <ul style="padding-left: 30px">
+              <li>This is the same as that.</li>
+              <li>This is different from that.</li>
+            </ul>
+          </h6>
+          <h6>
+            One of them is guaranteed to be true and the other is guaranteed to be false &mdash; as long as we are judging both by the same criteria.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            In Javascript, we can express those sentences like so:
+            <ul style="padding-left: 30px">
+              <li></code>This == that</code> where <code>==</code> means <em>is equal to</em></li>
+              <li></code>This != that</code> where <code>!=</code> means <em>is not equal to</em></li>
+            </ul>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Now if I told you <em>red is the same as green</em>, would you agree? What if I said, <em>if red is the same as green, I&rsquo;ll eat my hat</em>. Am I eating my hat right now?
+          </h6>
+          <h6>
+            (You would be incredulous if I told you it was tasty.)
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            That sentence is a <strong>conditional</strong>: a set of actions that depend on a <strong>condition</strong> being true.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            In Javascript, we write a <strong>conditional</strong> like this:
+            <pre><code>
+  if ( /* condition */ ) {
+      /* a set of actions */
+  }
+
+</code></pre>
+            <pre><code>
+  if (red == green) {
+      eat(hat);
+  }
+
+</code></pre>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Getting back to the task at hand, we want code that is something like:
+            <pre><code>
+  if (smiley.isTouching(wall) ) {
+      smiley.stopAt(wall);
+  }
+
+</code></pre>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            One day, we will be able to write that exact code. But today, we are going to have to check the position of the smiley relative to each wall to see if the mouse cursor is trying to move smiley past it.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Let&rsquo;s try using our variables <code>x</code> and <code>y</code> in relation to the environment variables <code>width</code> and <code>height</code> as well as <code>0</code> .
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Since we have four sides of the canvas, we can check each side, but there are some relationships to think about. If our smiley is touching the right side, can it also be touching the left side without changing its size?
+          </h6>
+          <h6>
+            Try it.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            What about right and top?
+          </h6>
+          <h6>
+            The right and bottom?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            When we are touching the right side of the canvas, we can&rsquo;t also be touching the left side unless we change the size of our smiley dude.
+          </h6>
+          <h6>
+            That means we can use <code>if</code> and <code>else if</code> for checking the left and right sides of the canvas like so:
+            <pre><code>
+  if (x < 0) {
+      x = 0;
+  }
+  else if (x > width) {
+      x = width;
+  }
+
+</code></pre>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            If we put that code in, not much will change with respect to the left and right walls. So let&rsquo;s hold off on the top and bottom until we fix it.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            We need to account for the size of our smiley. For a circle defined from the center, that means we need to add its <em>radius</em> to our condition on one side and subtract it from the other.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Take a moment to think about which side we&rsquo;ll add to and which we&rsquo;ll subtract from.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- HINT -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="hintcontent">
+          <h6 class="hintheader">
+            Hover for a while to reveal a hint
+          </h6>
+          <h5>
+            Add to the right and subtract from the left.
+          </h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Did you notice that we have an unused variable <code>h</code>. We can make use of it.
+          </h6>
+          <h6>
+            However, because we use <code>h</code> to be the <em>height</em> of our objects, let&rsquo;s change it so something more meaningful, like <code>rad</code> for <em>radius</em>.
+          </h6>
+          <p>
+            (If you didn&rsquo;t have that unused variable, you can go ahead and declare <code>rad</code> with the others.)
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            The radius is half the width of the circle, so we can give it a value that is the width divided by two: <code>rad = w/2;</code>.
+          </h6>
+          <h6>
+            But we aren&rsquo;t going to put this in <em>setup()</em> like we did with the others. You can delete that line from <em>setup()</em>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            If <code>w</code> changes, we also want <code>rad</code> to change. So place that line just after we update <code>x</code> and <code>y</code>:
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L04/setRad.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            You may think <em>why don&rsquo;t I just use <code>w/2</code> ?</em> And you have a point. But is it easier to do that mental arithmetic every time? If it is, then do it that way.
+          </h6>
+          <h5>
+            <em>There is no one way to program</em>.
+          </h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Can you add <code>rad</code> or <code>w/2</code> to your conditions?
+          </h6>
+          <h6>
+            Test it to make sure it works.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- HINT -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="hintcontent">
+          <h6 class="hintheader">
+            Hover for a while to reveal a hint
+          </h6>
+          <h5>
+            The condition for the left side should be <code>(x - rad < 0)</code> , and the right, <code>(x + rad > width)</code> .
+          </h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Now copy and paste that code below itself.
+          </h6>
+          <h6>
+            Remember to use the keyboard shortcuts for copy and paste: <strong>Ctrl+C</strong> and <strong>Ctrl+V</strong> ( <strong>Cmd+C</strong> and <strong>Cmd+V</strong> on macOS)
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Can you change some of the variables of the copied code to detect the top and bottom?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- HINT -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="hintcontent">
+          <h6 class="hintheader">
+            Hover for a while to reveal a hint
+          </h6>
+          <h5>
+            Change <code>x</code> to <code>y</code> and <code>width</code> to <code>height</code>.
+          </h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Does it work? Test all four sides to make sure.
+          </h6>
+          <h6>
+            <strong>Don&rsquo;t go on until it does what you expect it should do.</strong>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L04/testBounds.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Now what if we were to update <code>w</code> so that it changed with <code>mouseY</code> right after we set <code>y</code> to <code>mouseY</code>?
+          </h6>
+          <h6>
+            Do you think it will still work?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L04/wMouseY.gif">
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h5>
+            <strong>This is why we use variables.</strong>
+          </h5>
+          <h6>
+            They give us flexibility that makes our code robust. If we had used a literal number in our code instead of a variable, we would have to change it by hand every place we used it.
+          </h6>
+          <h5>
+            Good programming is about being lazy in ways that make things easier to deal with.
+          </h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- SMALL HEADING -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h5 class="smallheading">
+          Deal with It
+        </h5>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Smiley is fine and all, but not really cool. Let&rsquo;s fix it so that when we hold the mouse button down, that changes.
+          </h6>
+          <h6>
+            First, we need some spectacles that guard against UV rays.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Copy and paste this code before we set <code>x</code> and <code>y</code> to the mouse position but after we draw the face:
+            <pre><code>
+  push();
+  translate(x, y - offset);
+  scale(w * 2 / 300);
+
+  strokeWeight(0);
+  fill(black);
+  arc(-30, -20, 58, 68, 0, 180, CHORD);
+  arc(30, -20, 58, 68, 0, 180, CHORD);
+  rectMode(CENTER);
+  rect(0, -19, 128, 8);
+  fill(100);
+
+  arc(-30, -20, 52, 63, 0, 180, CHORD);
+  arc(30, -20, 52, 63, 0, 180, CHORD);
+  pop();
+
+</code></pre>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L04/pasteCool.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            (Note that your line numbers do not need to be exactly the same as the ones here.)
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Now where we declared our variables, add <code>offset</code> and in <em>setup()</em>, place this line of code: <code>offset = height;</code>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L04/addOffset.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Once you have it running, do you see any change? Because you shouldn&rsquo;t.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            For this last bit, we need to check to see if a few conditions are true at the same time. We can do this a couple different ways: the first by nesting <code>if</code> statements, the second by chaining conditions with Boolean operations like
+            <strong>AND</strong> <code>&&</code> , <strong>OR</strong> <code>||</code> , and <strong>NOT</strong> <code>!</code> .
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Both are demonstrated in this code:
+            <pre><code>
+  if (mouseIsPressed) {
+    if (mouseButton == LEFT) {
+      if (offset > 0) {
+        offset -= 2;
+      }
+    }
+  }
+  if (keyIsPressed && key == ' ' && offset < height) {
+    offset += 2;
+  }
+
+</code></pre>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Copy and paste the above and place it just before the end of <em>draw()</em>:
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L04/pasteMousePressed.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            What does this code do? Read it. Play around with it. See if you can get something cool happening.
+            <h5>
+              Be sure to wait for it.
+            </h5>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- HINT -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="hintcontent">
+          <h6 class="hintheader">
+            Hover for a while to reveal a hint
+          </h6>
+          <h5>
+            If there are Boolean variables called <code>mouseIsPressed</code> and <code>keyIsPressed</code>, what action can you take to make them true? Would clicking the right mouse button make <code>mouseButton == LEFT</code> true? Which <code>key</code> is being checked?
+          </h5>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Once you find out what it does, can you turn the nested style into the chained style and vice versa?
+          </h6>
+          <h6>
+            (Copy the code and comment out the parts you are duplicating.)
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Which one do you think is better?
+          </h6>
+          <h6>
+            What if we added code for another button or key, which one would be better?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            In this case, both will work just fine.
+          </h6>
+          <h6>
+            In fact, the machine code they get turned into is likely identical. The first one has a bunch of unnecessary curlies that may look foreboding; the second one has a line that runs a little long for my taste; there is a third way that
+            combines the two, and a fourth, fifth, and sixth way that eliminates the curly brackets from the first three.
+          </h6>
+          <h6>
+            But as soon as we add other conditions, like another key or button to be pressed with other statements to be executed &mdash; the nested way with the curlies wins out. Nesting gives you a huge amount of flexibility and the curly brackets make
+            sure that new lines you add <em>won&rsquo;t mess up your code</em>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            So let&rsquo;s keep the nested style code and comment out the chained one.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- SMALL HEADING -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h5 class="smallheading">
+          Bouncin&rsquo; &rsquo;round the Room
+        </h5>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            For our last trick, instead of using the mouse to move our cool dude around, let&rsquo;s have him animate and bounce around the canvas.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            To do this, comment out the code that sets the position of our guy to the mouse.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- HINT -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="hintcontent">
+          <h6 class="hintheader">
+            Hover for a while to reveal a hint
+          </h6>
+          <h5>
+            It should look something like this:
+          </h5>
+          <div class="hintinline">
+            <a href="p5images/L04/commentOutMouseControl.png" target="_blank" style="target-new: tab;">
+              <img src="p5images/L04/commentOutMouseControl.png">
+            </a>
+            <p>
+              <br>
+            </p>
+          </div>
+          <p class="hintheader">
+            Click when image appears to open in a new tab
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Now we need to change our position every frame. That means we can add a speed value to each of our position directions and watch him run to the lower right of the screen.
+          </h6>
+          <h6>
+            Do that at the very bottom of <em>draw()</em>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L04/incrementXY.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Change <code>w</code> in <em>setup()</em> to something smaller, like <code>50</code>, so that it looks like this after it stops:
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L04/runLowerRight.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            To get this guy to bounce, we need to change the speed that each direction is moving. So, for this to work, we need our speed to be a variable.
+          </h6>
+          <h6>
+            After we declared <code>offset</code>, add <code>xSpeed</code> and <code>ySpeed</code>, capitalizing the <code>S</code>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- INFO -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="infocontent">
+          <h6>
+            This is called <strong>camel case</strong>, so named because it has humps, like a camel. If the first letter is capitalized, it&rsquo;s known as <strong>UpperCamelCase</strong> or <strong>PascalCase</strong>. If the first letter is lowercase, <strong>lowerCamelCase</strong> or
+            <strong>dromedaryCase</strong>. (A <em>dromedary</em> is a camel with one hump.)
+          </h6>
+          <h6>
+            Camel case is the style that p5 uses, and to write clean and readable code, it&rsquo;s best to adopt the style of the language or framework we are using.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Be sure to capitalize the <code>S</code> in <em>speed</em> everywhere, because <code>xSpeed</code> is not the same as <code>xspeed</code>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Now in <em>setup()</em>, set the values of these variables to one.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Last, we need to change those constant values added to our position variables to <code>xSpeed</code> and <code>ySpeed</code>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Run your code to make sure our guy still runs to the lower right of the canvas.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Because the detection of the walls are mutually exclusive and we want <em>the same thing to happen</em>, we&rsquo;ll chain these conditions together.
+          </h6>
+          <h6>
+            Below the code that keeps our guy in bounds, paste this:
+            <pre><code>
+  if (x + xSpeed - rad < 0 ||
+      x + xSpeed + rad > width) {
+    xSpeed *= -1;
+  }
+  if (y + ySpeed - rad < 0 ||
+      y + ySpeed + rad > height) {
+    ySpeed *= -1;
+  }
+
+</code></pre>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Notice how it&rsquo;s similar to the code to keep our guy from leaving the canvas? What is different about the conditions?
+          </h6>
+          <h6>
+            Why do you think that is?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Since a bounce is a <em>reflection</em>, we multiply the speeds by the inverse, <code>-1</code>, so that instead of adding one, we subtract from our position, making our guy go left and up, respectively, then flip the other way when it hits another wall.
+          </h6>
+          <h5>
+            That&rsquo;s pretty cool.
+          </h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- INFO -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="infocontent">
+          <h6>
+            We have covered a lot in this lesson, so it&rsquo;s possible that not all of it works exactly as you would hope.
+          </h6>
+          <h6>
+            For this reason, <strong>here is <a href="http://bit.ly/p5jsLesson5" target="_blank" style="target-new: tab;">the code</a> that ends this lesson and begins the next.</strong> You can open it in a new window and compare it to yours.
+          </h6>
+          <h6>
+            And don&rsquo;t forget to tinker&hellip;
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- TIME TO TINKER -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h4 style="font-weight:bold">Time to Tinker</h4>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            As you play around with this code, can you add comments above the different conditional blocks that tell us what they do? What about the <em>push()-pop()</em> pairs?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Try setting the speed variables to different values at the beginning.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Can you make the speed double with each reflection? After a few bounces, what happens? How might you set a limit on the number of times it doubles?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Can you add conditionals that change the speed when you press a key?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            If code is printed in magenta, what does that mean in p5?
+          </h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end contentwidth-->
+
+  <!--Project Complete Banner-->
+  <div class="bannercontainer blue white-text">
+    <div class="last">
+      <a href="p5js-lesson-3-very-varied-variables.html">
+        <button>
+          <div class="arrowleft"></div>
+          <div class="arrowlefttext">
+            last
+            <br>
+            lesson
+          </div>
+        </button>
+      </a>
+    </div>
+    <div class="complete">
+      <h5>
+        Lesson complete!
+      </h5>
+    </div>
+    <div class="next">
+      <a href="p5js-lesson-5-fun-in-functions.html">
+        <button>
+          <div class="arrowrighttext">
+            next
+            <br>
+            lesson
+          </div>
+          <div class="arrowright"></div>
+        </button>
+      </a>
+    </div>
+  </div>
+
+
+  <!--Card: Prompt - Find Another Project-->
+  <div class="contentwidth">
+    <div class="row">
+      <div class="col s2 offset-s2">
+        <div class="card findanotherproject2">
+          <div class="card-content">
+            <div class="cardDescription">
+              <br>
+              <h6>
+                Find another project?
+              </h6>
+              <div class="browse">
+                <a href="p5js.html">
+                  <button>
+                    Browse all projects
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end contentwidth-->
+</body>
+
+</html>

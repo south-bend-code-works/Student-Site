@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <link rel="stylesheet" href="../styleP5.css">
+  <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script src="../main.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="../SBCS_favicon.png">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>The Functions of Form</title>
+</head>
+
+<body>
+  <!--Nav bar  -->
+  <nav class="light-blue lighten-1">
+    <div class="nav-wrapper">
+      <a href="#!"></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="hide-on-med-and-down">
+        <li><a href="../home.html">Home</a></li>
+        <li><a href="../scratch/scratch.html">Ages 7-12</a></li>
+        <li><a href="../techimmersion.html">Ages 13-18</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="../home.html">Home</a></li>
+    <li><a href="../scratch/scratch.html">Ages 7-12</a></li>
+    <li><a href="../techimmersion.html">Ages 13-18</a></li>
+  </ul>
+
+
+  <div class="contentwidth">
+
+    <!-- THE FUNCTIONS OF FORM -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h3 class="maintitle">The Functions of Form</h3>
+        <h5 class="p5header">&nbsp; p5.js &nbsp; LESSON 2</h5>
+      </div>
+    </div>
+
+    <!-- LESSON 2 -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <h6>
+          In this lesson you will:
+        </h6>
+        <ol>
+          <li>Explore the basic shapes that are built in</li>
+          <li>Learn about the coordinate system</li>
+          <li>See how the order of statements affects what things look like</li>
+        </ol>
+
+        <!-- WHERE WE LEFT OFF -->
+        <h4 class="projectTitle">Where We Left Off</h4>
+        <p>
+          <a href="p5js-lesson-1-shape-of-color.html" target="_blank" style="target-new: tab;">Last lesson</a>, we learned about the <em>setup()</em> and <em>draw()</em> functions, and how to call the <em>background()</em>, <em>fill()</em>, and <em>stroke()</em> functions to change
+          their color.
+        </p>
+
+        <!-- HELPFUL LINKS -->
+        <h4 class="projectTitle">
+          Helpful Links
+        </h4>
+        <p>
+          <a href="https://editor.p5js.org/" target="_blank" style="target-new: tab;">Editor</a>: the online p5.js editor
+          <br>
+          <a href="https://p5js.org/reference/" target="_blank" style="target-new: tab;">Reference</a>: documentation for all things in p5.js
+        </p>
+      </div>
+    </div>
+
+    <!-- GETTING STARTED -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h4 class="largeheading">Getting Started</h4>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Let&rsquo;s start with a clean slate. When you first navigate to the editor, it should start you with the default code, but if you still have the first lesson up, you can go to <em>File &mdash;> New</em> to get it.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="p5images/L02/fileNew.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Now we can click on the randomly generated name to give it a more inspiring name, like say <em>Lesson 2</em>. You don&rsquo;t <em>have</em> to rename it, but this is more informative than the likes of <em>Pickled behavior</em> or <em>High
+              cotton</em>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineexamples">
+          <img src="p5images/L02/renameLesson2.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            From here on out, we will zoom into the code under <strong>sketch.js</strong> as below rather than showing the entire window as above.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L02/zoomIntoCode.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Recall that <em>setup()</em> sets up the display and <em>draw()</em> draws each frame. Use what you learned in Lesson 1 to change the color of the background to something you like.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- SMALL HEADING -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h5 class="smallheading">
+          Shape Up
+        </h5>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            What would you say are the three most basic shapes? They are <em>circles</em>, <em>triangles</em>, and <em>squares</em>, right? We have already seen <em>circle()</em>, which takes 3 parameters. But we never said what those numbers in the
+            parentheses <em>mean</em>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            The first two tell us the position, one for along the left-right axis, <em>x</em>, the next for along the up-down axis, <em>y</em>. The third number is the diameter here, but we can think of it as the <em>size</em> or <em>width</em>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Try putting <code>circle(100,100,50);</code> on a new line beneath <em>background()</em> in the body of <em>draw()</em> &mdash; that is, in the curly braces. That draws a 50-pixel-wide white circle with a black outline centered at
+            (100,100).
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L02/addCircle.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- INFO -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="infocontent">
+          <h6>
+            If your formatting goes a bit awry, hold down <strong>Shift</strong> and press <strong>Tab</strong> to <em>beautify</em> it.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Go ahead and change the fill and stroke to something that you like. Put those functions after <em>circle()</em>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L02/addFillAndStroke.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L02/smallYellowCircle.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Take a moment to ponder a few questions given the code above: Why is the circle drawn in the upper left instead of the lower left or somewhere to the right of center? Why is the stroke so thin and dark? Why is the fill a yellow
+            color?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Now place <em>noLoop()</em> in <em>setup()</em> like we did in the previous lesson.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L02/noLoop.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L02/smallWhiteCircle.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Something changed. What happened to the color? Let&rsquo;s draw another shape to get a handle on these unanswered questions.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Can you guess what the function is to draw a square?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- HINT -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="hintcontent">
+          <h6 class="hintheader">
+            Hover for a while to reveal a hint
+          </h6>
+          <h5>
+            It&rsquo;s called <em>square()</em>
+          </h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Try drawing it with the same parameters as <em>circle()</em> below everything else in the body of <em>draw()</em>. It should look like it&rsquo;s hanging off to the lower right even though its position is exactly the same as the circle,
+            like in
+            the following preview. And notice its color has changed.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L02/addSquare.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L02/yellowSquareWhiteCircle.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- SUB HEADING -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h5 class="subheading">
+          Squaring the Circle
+        </h5>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h5>
+            Let&rsquo;s address the color first.
+          </h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Comment out <em>noLoop()</em> using <strong>Ctrl+/</strong> ( <strong>Cmd+/</strong> on macOS), both the circle and the square have the same color. But not at first.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            The very first two frames have the default fill and stroke values: <code>fill(255);</code> and <code>stroke(0);</code>. But each frame after the first two is drawn with the values we set.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Let&rsquo;s change the frame rate so that it isn&rsquo;t drawing so fast we can&rsquo;t see it change. Comment out <em>noLoop()</em> and place <code>frameRate(1);</code> in the body of <em>setup()</em>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L02/framerate1.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            This makes the code update one time per second. Notice how the first frame drew nothing, not even the background, the next drew the <em>noLoop()</em> scenario, and the next drew both shapes with the same color.
+          </h6>
+          <h6>
+            Once <em>fill()</em> and <em>stroke()</em> have been set, p5.js remembers those values as the new default. If we wanted two different colors for our different shapes, we have to specify them <em>before</em> we draw our shapes.
+          </h6>
+          <h6>
+            Imagine you are coloring with markers. You first have to choose the color you are going to use. If you want to change colors, you have to pick up a different marker.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Add the default fill and stroke values before calling the function <em>circle()</em>. It&rsquo;s not a bad idea to give yourself an empty line to separate the different shapes in the code window.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L02/copyFillAndStroke.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            As for the square hanging to the lower right, rectangles are drawn from the <em>corner</em> by default whereas circles are drawn from the <em>center</em>. A square, after all, is just a special kind of rectangle.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Try placing <code>rectMode(CENTER);</code> in <em>setup()</em>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L02/rectModeCenter.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h5>
+            Where did the circle go?
+          </h5>
+          <h6>
+            Let&rsquo;s switch the order in which the circle and square are called.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Select the code for one of the shapes and use the shortcut commands for <em>cut</em> ( <strong>Ctrl+X</strong> or <strong>Cmd+X</strong> ) and <em>paste</em> ( <strong>Ctrl+V</strong> or <strong>Cmd+V</strong> ). We don&rsquo;t need to <em>copy</em>
+            ( <strong>Ctrl+C</strong> or <strong>Cmd+C</strong> ) here.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L02/moveCircleAfterSquare.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L02/whiteCircleYellowSquare.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Notice how both shapes have the same width and height and location, but now the circle is placed <em>on top of</em> the square because it&rsquo;s drawn <em>after</em> the square. Before, the square completely covered the circle so we could not
+            see it. With
+            programming, <strong>order matters</strong>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Let&rsquo;s turn to why <code>(100,100)</code> is in the upper left of a 400 by 400 canvas. Increasing the value of <em>x</em>, the first number in that ordered pair, moves an object to the right. Decreasing it moves it to the left. That&rsquo;s how
+            it works in
+            pretty much every graph you have ever seen.
+          </h6>
+          <h6>
+            The <em>y</em> value, however, is different. You would assume that positive <em>y</em> would go <em>up</em> and negative <em>y</em>, <em>down</em>. But it&rsquo;s reversed.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- INFO -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <details>
+          <summary class="infocontent">
+            <h6 style="font-variant: small-caps">
+              <strong>the why of reverse y</strong>
+            </h6>
+            <h6>
+              You wouldn&rsquo;t be out of line to believe the creators of this and just about every computer graphics system are trying to confuse you.
+            </h6>
+            <h6>
+              But really, they were just lazy &mdash; and <em>smart</em> for it.
+            </h6>
+            <p>
+              Click to read more&hellip;
+            </p>
+          </summary>
+          <div class="infocontent">
+            <div class="inlineinfo">
+              <img src="p5images/L02/ASCIIportrait.jpg">
+              <p>
+                An early computer &ldquo;display&rdquo;
+                <br>
+                <a class="source" href="https://commons.wikimedia.org/w/index.php?curid=23023643" target="_blank" style="target-new: tab;">wikimedia commons: foto: jonn leffmann</a>
+              </p>
+            </div>
+            <h6>
+              Consider a book written in English. You start at the top of the page on the left. You look at each word to the right until you run out of room, and then move to the next line. It&rsquo;s natural that we would write in the same direction, and
+              then type in that direction. As you type on an old-timey typewriter, it moves right. When you press return, it moves down a line. The early displays were just glorified typewriters printing out characters. Really. They were known as
+              teleprinters.
+            </h6>
+            <div class="inlineinfo">
+              <img src="p5images/L02/earlyComputers.jpg">
+              <p>
+                At this time, the women in this photograph were also known as computers
+                <br>
+                <a class="source" href="https://commons.wikimedia.org/w/index.php?curid=225986" target="_blank" style="target-new: tab;">wikimedia commons: public domain</a>
+              </p>
+            </div>
+            <h6>
+              There was no screen as we know it. Old-timey televisions similarly scan from left to right at the top, then move down and repeat. Current display technology is built on those conventions.
+            </h6>
+            <h6>
+              Now take a look at the line numbers in the code editor.
+            </h6>
+            <div class="inlineinfo">
+              <img src="p5images/L02/lineNumbersDirection.png">
+              <p>
+                <br>
+              </p>
+            </div>
+            <h6>
+              Which direction do they increase in? It&rsquo;s the same with <em>y</em>.
+            </h6>
+          </div>
+        </details>
+      </div>
+    </div>
+
+    <!-- SMALL HEADING -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h5 class=smallheading>
+          Beyond Circles and Squares
+        </h5>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            You now know how to draw circles and squares of different colors. But what other shapes?
+          </h6>
+          <h6>
+            We already mentioned the triangle, but we will first tackle the rectangle and ellipse. Just as a rectangle is a special kind of square, a circle is a special kind of ellipse.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Change <code>square(100,100,50</code> to <code>rect(100,100,50,50)</code> and <code>circle(100,100,50</code> to <code>ellipse(100,100,50,50)</code>.
+          </h6>
+          <h6>
+            Notice that <em>rect()</em> and <em>ellipse()</em> each has four parameters. Your code changed. But did your drawing?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L02/changeToRectEllipse.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            If we change the third parameter to <code>80</code>, what happens?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L02/changeWidthsTo80.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            For the circle and the square, the third parameter was its width. Is that still true here? What does the fourth parameter do? Play with those values.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            What happens if you call <em>rect()</em> or <em>ellipse()</em> with only 3 parameters?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            What happens if you make them negative?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            In <em>setup()</em>, change <em>rectMode()</em> to <code>rectMode(CORNER);</code>.
+          </h6>
+          <h6>
+            Now what happens when the last two parameters are both positive, both negative, and one of each.
+          </h6>
+          <h6>
+            Can you guess why?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- SMALL HEADING -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h5 class="smallheading">
+          Triangles
+        </h5>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Unlike the shapes we have seen thus far, which can be drawn using just three or four parameters, triangles are specified differently. To understand them, we first need to understand how to draw a <strong>point</strong>.
+          </h6>
+          <h6>
+            A point probably as a position, which is two parameters, but does it have a <em>size</em>? If it has a size, that would be a circle, right?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Add <code>point(100,100);</code> below the code so far. We want it to draw on top of everything so we put it <em>last</em>. At a default outline thickness of one pixel, it&rsquo;s hard to see. Add <code>strokeWeight(4)</code> on the line above
+            <code>point(100,100)</code>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L02/addPoint.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Even though we added the code to change the thickness after the rectangle and the circle, it thickened their outlines too. How would we change that?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            A point takes no fill &mdash; it&rsquo;s all outline. Speaking of lines, what do we need to draw one? Two points, right? Try <code>line(100,100,200,200);</code>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L02/addLine.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            A line is <em>also</em> all outline. This one completely covers up the point. What shape do we get if we add a third point and connect them together?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Finally, our triangle. Put <code>triangle(100,100,200,200,200,100)</code> below <em>line()</em>.
+          </h6>
+          <h6>
+            Notice that with the point, we only need one pair of coordinates <em>(x,y)</em>. With the line, we need two pairs <em>(startX, startY, endX, endY)</em>. With the triangle, we need three pairs <em>(x1, y1, x2, y2, x3, y3)</em>, one for
+            each corner.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L02/addTriangle.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- TIME TO TINKER -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h4 class="largeheading">Time to Tinker</h4>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h5 style="font-weight:bold; font-variant: small-caps">
+            challenge
+          </h5>
+          <h6>
+            Can you add code and rearrange the order of <em>point()</em>, <em>line()</em>, and <em>triangle()</em> to match the following image. Notice that the outline thickness of the ellipse and rectangle are different as well. The exact colors
+            are <em>pure red</em> <code>(255,0,0)</code>, <em>pure green</em> <code>0,255,0)</code>, and <em>pure blue</em> <code>(0,0,255)</code>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L02/challenge.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Once you&rsquo;ve beaten the challenge, try playing around and adding shapes in different ways. Can you draw a house or a car? What about a flower with four elongated petals?
+          </h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end contentwidth-->
+
+  <!--Project Complete Banner-->
+<div class="bannercontainer blue white-text">
+  <div class="last">
+    <a href="p5js-lesson-1-shape-of-color.html">
+      <button>
+        <div class="arrowleft"></div>
+        <div class="arrowlefttext">
+          last
+          <br>
+          lesson
+        </div>
+      </button>
+    </a>
+  </div>
+  <div class="complete">
+    <h5>
+      Lesson complete!
+    </h5>
+  </div>
+  <div class="next">
+    <a href="p5js-lesson-3-very-varied-variables.html">
+      <button>
+        <div class="arrowrighttext">
+          next
+          <br>
+          lesson
+        </div>
+        <div class="arrowright"></div>
+      </button>
+    </a>
+  </div>
+</div>
+
+  <!--Card: Prompt - Find Another Project-->
+  <div class="contentwidth">
+    <div class="row">
+      <div class="col s2 offset-s2">
+        <div class="card findanotherproject2">
+          <div class="card-content">
+            <div class="cardDescription">
+              <br>
+              <h6>Find another project?</h6>
+              <div class="browse">
+                <a href="p5js.html">
+                  <button>Browse all projects</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end contentwidth-->
+</body>
+
+</html>

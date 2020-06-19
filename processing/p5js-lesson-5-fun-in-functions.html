@@ -1,0 +1,1335 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <link rel="stylesheet" href="../styleP5.css">
+  <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script src="../main.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="../SBCS_favicon.png">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Fun in Functions</title>
+</head>
+
+<body>
+  <!--Nav bar  -->
+  <nav class="light-blue lighten-1">
+    <div class="nav-wrapper">
+      <a href="#!"></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="hide-on-med-and-down">
+        <li><a href="../home.html">Home</a></li>
+        <li><a href="../scratch/scratch.html">Ages 7-12</a></li>
+        <li><a href="../techimmersion.html">Ages 13-18</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="../home.html">Home</a></li>
+    <li><a href="../scratch/scratch.html">Ages 7-12</a></li>
+    <li><a href="../techimmersion.html">Ages 13-18</a></li>
+  </ul>
+
+  <div class="contentwidth">
+
+    <!-- THE FUN IN FUNCTIONS -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h3 class="maintitle">The Fun in Functions</h3>
+        <h5 class="p5header">&nbsp; p5.js &nbsp; LESSON 5</h5>
+      </div>
+    </div>
+
+    <!-- LESSON 5 -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <h6>In this lesson you will:</h6>
+        <ol>
+          <li>Consolidate code into smaller and more manageable pieces</li>
+          <li>Learn about the difference between true functions and procedures</li>
+          <li>Make your own procedures and call them</li>
+        </ol>
+
+        <!-- WHERE WE LEFT OFF -->
+        <h4 class="projectTitle">Where We Left Off</h4>
+        <p>
+          <a href="p5js-lesson-4-conditional-love.html" target="_blank" style="target-new: tab;">Last lesson</a>, we learned about conditionals that give our program the logic to take different actions depending on where our smiley and sunglasses are. We took these conditions to make
+          smiley bounce around the canvas. We also used conditions to get the state of the left mouse button and spacebar for some user interaction.
+        </p>
+
+        <!-- HELPFUL LINKS -->
+        <h4 class="projectTitle">Helpful Links</h4>
+        <p>
+          <a href="https://editor.p5js.org/" target="_blank" style="target-new: tab;">Editor</a>: the online p5.js editor
+          <br>
+          <a href="https://p5js.org/reference/" target="_blank" style="target-new: tab;">Reference</a>: documentation for all things in p5.js
+          <br>
+          <a href="http://bit.ly/p5jsLesson5" target="_blank" style="target-new: tab;">Lesson 5 starter</a>: the code from the end of Lesson 4
+        </p>
+      </div>
+    </div>
+
+    <!-- GETTING STARTED -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h4 class="largeheading">
+          Getting Started
+        </h4>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            This time, we will begin with the <a href="http://bit.ly/p5jsLesson5" target="_blank" style="target-new: tab;">starter code</a> because it has been minimally commented to tell us about what each part of the code does.
+          </h6>
+          <h6>
+            If you have made modifications to your character that you want to bring forward, you&rsquo;ll have opportunity to paste that code in at the end of the next lesson.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- SIMPLICITY IS BLISS -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h4 class="largeheading">
+          Simplicity Is Bliss
+        </h4>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            We are going to use functions to make our code more functional from a development perspective.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            First, let&rsquo;s see if we can simplify our code in <em>draw()</em>. We have a lot of things happening that are drawing complex shapes and updating variables.
+          </h6>
+          <h6>
+            Do we need to <em>see</em> all of this?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L05/draw1.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L05/draw2.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Find the conditional statements that keep smiley in bounds.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Here we can streamline our code by using a built-in function called <em>constrain()</em>. What it does is take a value in a variable and check to see if it is within the bounds we have given it and then <strong>returns</strong> a value
+            within that range.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            The <strong>signature</strong> of <em>constrain()</em> looks like this:
+            <pre><code>
+function constrain(value, lowerBound, upperBound) {
+  // perform some magic
+  return constrainedValue
+}
+
+</code></pre>
+            It takes three <strong>parameters</strong> and <strong>returns a value</strong> based on them after they have been put through some mathematical magic.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- INFO -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="infocontent">
+          <h6>
+            A <strong>function signature</strong> is the name of the function, the types of parameters it takes, and what kind of value it returns when it finishes, including not returning anything. Most C-based languages have very informative
+            signatures, but
+            Javascript, like most popular scripting languages, doesn&rsquo;t tell you what kind of values it takes or returns in its signature.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h5>
+            What do we mean by <em>return</em>?
+          </h5>
+          <h6>
+            Generally speaking, there are two kinds of functions: those that just do something, also called <strong>procedures</strong> or <strong>subroutines</strong>, and those that take some value and transform it, giving a value in turn &mdash;
+            the classic mathematical notion
+            of <em>function</em> which take inputs and give outputs.
+          </h6>
+          <h6>
+            This second one is what <em>constrain()</em> is &mdash; we give the function something and it gives us a value <em>in return</em>. We give it values as <strong>parameters</strong> and it gives us a <strong>return value</strong>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Since it gives us a value back, we need a variable to catch it. That just means setting a variable to its result. That variable can be a new one, preserving the value of the one used as a parameter, or as it will be in this case, the same variable, clobbering the previous value.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- INFO -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="infocontent">
+          <h6>
+            Believe or not, <strong>clobbering</strong> is the technical term for <em>overwriting contents of memory</em>, often unintentionally. It is usually followed by some form of <strong>facepalming</strong> and <strong>headdesking</strong>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Find the following lines in your code:
+            <pre><code>
+  // keep smiley in bounds
+  if (x - rad < 0) {
+    x = 0 + rad;
+  } else if (x + rad > width) {
+    x = width - rad;
+  }
+  if (y - rad < 0) {
+    y = 0 + rad;
+  } else if (y + rad > height) {
+    y = height - rad;
+  } // end of bounds
+
+</code></pre>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Now replace those lines with this code:
+            <pre><code>
+  // keep smiley in bounds
+  x = constrain(x,rad,width-rad);
+  y = constrain(y,rad,height-rad);
+  // end of bounds
+
+</code></pre>
+          </h6>
+          <h6>
+            Uncomment the lines that set <code>x</code> and <code>y</code> to the mouse and test it. <strong>Make sure it works.</strong>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- SMALL HEADING -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h5 class="smallheading">
+          Roll Your Own Functions
+        </h5>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            That was a function that was given to us, but the real power comes from making our own functions.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Take a look at the comments that have been added to the code. Focus on the code between the <em>push()-pop()</em> pairs. One of them draws the smiley, the other, the sunglasses.
+          </h6>
+          <h5>
+            Let&rsquo;s turn them into functions.
+          </h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            When defining a function in Javascript, we start by declaring it a function and giving it a name followed by parentheses, like so:
+            <br>
+            <code>function charlie()</code> or <code>function tango()</code>
+          </h6>
+          <h6>
+            Usually, when naming a function, we call it something more descriptive.
+          </h6>
+          <h6>
+            For the smiley, how about <em>drawSmiley()</em>?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            If we put <code>function drawSmiley()</code> on a line at the very end of our code (after the last <code>}</code>). Does it run?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L05/errorEOF.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Clearly, we are missing something. In Lesson 1, we saw two functions right away. One of them is <em>setup()</em>. What&rsquo;s the other one?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- HINT -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="hintcontent">
+          <h6 class="hintheader">
+            Hover for a while to reveal a hint
+          </h6>
+          <h5>
+            The other one is <em>draw()</em>
+          </h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            What comes immediately after the paranthese we declare these functions? Take a look at <em>setup()</em>. Don&rsquo;t overthink it.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L05/curliesEncloseBlock.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Unlike a variable where we don&rsquo;t have to assign it to anything when we declare it, we need to give a function a block of code to put our logic in, even if that block is empty.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            So what pair of characters enclose a block of code?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- HINT -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="hintcontent">
+          <h6 class="hintheader">
+            Hover for a while to reveal a hint
+          </h6>
+          <h5>
+            The curly brackets <code>{ }</code>
+          </h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Add them onto the end of our declaration with nothing in it. It should run now.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Now cut the code for the smiley out of <em>draw()</em> and put it between the curlies for <em>drawSmiley()</em>. Move the comments outside of the code.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L05/drawSmiley.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            If we run it now, it looks like nothing will happen. But hold down the left mouse button. Solitary sunglasses bouncing around, while cool and all, is not what we&rsquo;re looking for.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            The smiley is not being drawn. We are forgetting to call our new function. Oops. How do we call a function? Where should we be calling it?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- HINT -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="hintcontent">
+          <h6 class="hintheader">
+            Hover for a while to reveal a hint
+          </h6>
+          <h5>
+            Put <code>drawSmiley()</code> where we cut out the previous code in <em>draw()</em>. That&rsquo;s just after setting <em>background()</em> and just before drawing the sunglasses.
+          </h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            If you have done it right, it should look exactly as it did before we moved the code.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Congratulations &mdash; you just refactored code. You have changed it and rearranged it to be easier to understand. But you&rsquo;re not done yet.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- INFO -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="infocontent">
+          <h6>
+            <strong>Refactoring code</strong> is an often maligned but necessary part of the programming process. Writing code is often an adventure into the unknown. You may not know a good way to solve whatever new problems you encounter, let alone the <em>best way</em>. But the <em>only way</em> to start such an adventure is <em>to start</em>, try out ideas, solve problems, and then spend the time to clean up your code and write comments about what it does.
+          </h6>
+          <h6>
+            You may find better solutions through this process, or you may not, but one thing is certain: Your future self and anyone else who has to deal with your code will thank you.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            The goal of consolidating everything is to have <em>draw()</em> look something like this:
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L05/easyToReadDraw.png">
+        </div>
+      </div>
+    </div>
+
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            That looks like it&rsquo;s really easy to read. At a glance we can see all of the things with code does, as well as a few things it doesn&rsquo;t &mdash; which have been commented out here.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Can you put each distinct part of <em>draw()</em> into its own function?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Be sure to test each one after moving it to make sure it works, including the ones that have been commented out. That way, if your code stops working, you can undo your way to something that does.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- SUB HEADING -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h5 class="subheading">
+          Form Follows Procedure
+        </h5>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            The functions we have demonstrate the <strong>procedural programming</strong> style. Even though most languages today don&rsquo;t distinguish between pure functions and procedures &mdash; they are all lumped under <strong>function</strong>
+            &mdash; we can and should note the
+            difference.
+          </h6>
+          <h6>
+            Not only do none of the above <strong>return</strong> a value, they don&rsquo;t even have <strong>parameters</strong> that could tell us what they <em>might</em> be changing. And crucially, all of them manipulate the <strong>global
+              variables</strong> defined at the beginning. Look up
+            <em>procedure</em> in the dictionary, and you&rsquo;ll find the spitting image of these guys.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h5>
+            Why does this matter?
+          </h5>
+          <h6>
+            Notice that separate blocks of code use <code>rad</code>, but you will only need to define it in the first function that uses it. This should make you a little uneasy.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            What happens if you define it only in the function that comes second? Try it.
+          </h6>
+          <h6>
+            Did you expect that?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- SUB HEADING -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h5 class="subheading">
+          Functionally Functional Functions
+        </h5>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            This kind of code where one function changes the way another function behaves is called <em>side effects</em> by proponents of <strong>functional programming</strong>. Side effects usually aren&rsquo;t good, and this case is no
+            different.
+          </h6>
+          <h6>
+            A function that changes how another function is going to act can lead to many hours rooting out errors.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            For a small program like this, side effects aren&rsquo;t much of an issue. Changing a small set of global variables with functions that don&rsquo;t <em>tell</em> you they are changing them isn&rsquo;t a big deal.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            In fact, because it is easy to keep most of this stuff in mind, procedural programming is kind of great. How simple was it to just cut and paste into the function body and then just call it?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            But as programs get more complex and debugging consumes more and more time, it&rsquo;s a really good idea to have functions that you don&rsquo;t have to look inside of to understand what they might affect the state of your variables.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- SMALL HEADING -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h5 class="smallheading">
+          Happy. Cool. Awesome.
+        </h5>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            We&rsquo;ve put on a smile. We&rsquo;ve dealt with it. It&rsquo;s time for wonder and amazement.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            First, we&rsquo;ll need some more colors. Add <em>white</em>, <em>plum</em>, and <em>pink</em> to the color variables:
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L05/addColors.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Add the following function to your code. I put mine after <em>drawSunglasses()</em>. Remember that you can copy and paste.
+            <pre><code>
+function drawAwesome() {
+  push();
+  translate(x, y);
+  scale(w / 300);
+
+  strokeWeight(4);
+  stroke(black);
+  fill(yellow);
+  circle(0, 0, 300);
+
+  fill(white);
+  arc(-80, -25, 88, 100, 157.5, 22.5, CHORD);
+  arc(40, -28, 100, 100, 157.5, 22.5, CHORD);
+
+  fill(black);
+  circle(-62, -52, 30);
+  circle(64, -52, 30);
+
+  noStroke();
+  fill(white);
+  circle(-70, -60, 10);
+  circle(56, -60, 10);
+
+  fill(plum);
+  arc(-6, 24, 200, 200, 0, 180, CHORD);
+
+  fill(pink);
+  beginShape();
+  vertex(62, 96);
+  bezierVertex(42, 68, -16, 80, -5, 123);
+  bezierVertex(17, 123, 42, 114, 62, 96);
+  endShape();
+
+  stroke(black);
+  noFill();
+  arc(-6, 24, 200, 200, 0, 180, CHORD);
+  pop();
+}
+
+</code></pre>
+
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Once you get that running without errors, call the function in <em>draw()</em> after <em>drawSunglasses()</em>:
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L05/callDrawAwesome.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Test it and make sure that it works.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Once you have it up and running, try bringing down the sunglasses over this new face. Notice that they end up hidden by the new face. Why is this happening?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- HINT -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="hintcontent">
+          <h6 class="hintheader">
+            Hover for a while to reveal a hint
+          </h6>
+          <h5>
+            The awesome face is is being drawn <em>over</em> the sunglasses because that code is being drawn <em>after</em>.
+          </h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Now what if we wanted both smiley and awesome at the same time, what do we need to do?
+          </h6>
+          <h6>
+            Try uncommenting <em>drawSmiley()</em>. Can you see the smiley?
+          </h6>
+          <h6>
+            Why do you think that&rsquo;s the case? We will get to that in the next lesson&hellip;
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- INFO -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="infocontent">
+          <h6>
+            Just like last lesson, we have covered a lot in here, so it&rsquo;s possible that not all of it works exactly as you would hope.
+          </h6>
+          <h6>
+            For this reason, <strong>here is <a href="http://bit.ly/p5jsLesson6" target="_blank" style="target-new: tab;">the code</a> that ends this lesson and begins the next.</strong> You can open it in a new window and compare it to yours.
+          </h6>
+          <h6>
+            And don&rsquo;t forget to tinker&hellip;
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- TIME TO TINKER -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h4 class="largeheading">Time to Tinker</h4>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            None of the code within <em>drawSmiley()</em>, <em>drawSunglasses()</em>, or <em>drawAwesome()</em> is commented.
+          </h6>
+          <h6>
+            Documentation is key to understanding what a program does. Try selectively commenting out chunks of code to see what they do. (You can make it easier on yourself by keeping the faces from moving around by commenting out <em>animateSmiley()</em> in <em>draw()</em>.)
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            As you comment your code, check out the <a href="https://p5js.org/reference/" target="_blank" style="target-new: tab;">reference</a> for any functions you are unfamiliar with to get an idea of how they work.
+          </h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end contentwidth-->
+
+  <!--Project Complete Banner-->
+  <div class="bannercontainer blue white-text">
+    <div class="last">
+      <a href="p5js-lesson-4-conditional-love.html">
+        <button>
+          <div class="arrowleft"></div>
+          <div class="arrowlefttext">
+            last
+            <br>
+            lesson
+          </div>
+        </button>
+      </a>
+    </div>
+    <div class="complete">
+      <h5>
+        Lesson complete!
+      </h5>
+    </div>
+    <div class="next">
+      <a href="p5js-lesson-6-parameterize-me.html">
+        <button>
+          <div class="arrowrighttext">
+            next
+            <br>
+            lesson
+          </div>
+          <div class="arrowright"></div>
+        </button>
+      </a>
+    </div>
+  </div>
+
+  <!--Card: Prompt - Find Another Project-->
+  <div class="contentwidth">
+    <div class="row">
+      <div class="col s2 offset-s2">
+        <div class="card findanotherproject2">
+          <div class="card-content">
+            <div class="cardDescription">
+              <br>
+              <h6>
+                Find another project?
+              </h6>
+              <div class="browse">
+                <a href="p5js.html">
+                  <button>
+                    Browse all projects
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end contentwidth-->
+</body>
+
+</html>
