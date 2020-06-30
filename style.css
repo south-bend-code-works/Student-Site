@@ -1081,6 +1081,30 @@ input[type='checkbox'] {
   background-image: url('./git/git-images/github-logo.png');
 }
 
+/* AR Images */
+#arsetupBG{
+  background-image: url('./ar/ar-images/google-arcore.svg');
+  background-size: contain;
+}
+
+#arplacementBG{
+  background-image: url('./ar/ar-images/arobjectplacement.jpg');
+}
+
+#arcoreelementsBG{
+  background-image: url('./ar/ar-images/arcoreelements.png');
+  background-size: contain;
+}
+
+#arimagesBG{
+  background-image: url('./ar/ar-images/augmentedimage.jpg');
+}
+
+#arfacesBG{
+  background-image: url('./ar/ar-images/augmentedface.jpg');
+  background-size: contain;
+}
+
 /* =================================================================================================================================HOME PAGE CARD============================================================ */
 .agesHeading {
   text-align: center;
