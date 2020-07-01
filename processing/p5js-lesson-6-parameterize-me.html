@@ -15,7 +15,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="../SBCS_favicon.png">
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Shape of Color</title>
+  <title>Parameterize Me</title>
 </head>
 
 <body>
@@ -31,46 +31,48 @@
       </ul>
     </div>
   </nav>
-
   <ul class="sidenav" id="mobile-demo">
     <li><a href="../home.html">Home</a></li>
     <li><a href="../scratch/scratch.html">Ages 7-12</a></li>
     <li><a href="../techimmersion.html">Ages 13-18</a></li>
   </ul>
 
-
   <div class="contentwidth">
 
-    <!-- SETUP THE P5 ENVIRONMENT -->
+    <!-- PARAMETERIZE ME -->
     <div class="row">
       <div class="col s8 offset-s1">
-        <h3 class="maintitle">Setup the p5 environment</h3>
-        <h5 class="p5header">&nbsp; p5.js &nbsp; LESSON 0</h5>
+        <h3 class="maintitle">
+          Parameterize Me
+        </h3>
+        <h5 class="p5header">
+          &nbsp; p5.js &nbsp; LESSON 6
+        </h5>
       </div>
     </div>
 
-    <!-- LESSON 1 -->
+    <!-- LESSON 6 -->
     <div class="row">
       <div class="col s8 offset-s2">
         <h6>In this lesson you will:</h6>
         <ol>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>Learn more about the different kinds of functions and programming</li>
+          <li>Add parameters our procedures so we can call them with different variables</li>
+          <li>Create simple JavaScript objects to fake other languages&rsquo; reference variables</li>
+          <li>Nest functions inside each other</li>
         </ol>
 
         <!-- BACKGROUND INFO -->
-        <h4 class="projectTitle">Background Info</h4>
+        <h4 class="projectTitle">Where We Left Off</h4>
         <p>
-          Processing &mdash; the parent of p5.js &mdash; is a coding environment designed for artists and musicians with little to no experience programming. p5.js is the JavaScript version with the added benefit of running natively in the browser. The online editor is easy to use right in the browser with nothing to install. If you are new to writing code, we&rsquo;ll get you making something awesome by the end of these lessons.
+          Last lesson, learned about procedures, a type of function. Then we consolidated our code into smaller and more manageable pieces, simplifying <em>draw()</em> by offloading sections of code into their own procedures.
         </p>
 
         <!-- HELPFUL LINKS -->
         <h4 class="projectTitle">Helpful Links</h4>
         <p>
-          <a href="https://editor.p5js.org/" target="_blank" style="target-new: tab;">Editor</a>: the online p5.js editor
-          <br>
-          <a href="https://p5js.org/reference/" target="_blank" style="target-new: tab;">Reference</a>: documentation for all things in p5.js
+          <a href="https://editor.p5js.org/" target="_blank" style="target-new: tab;">Editor</a>: the online p5.js editor <br>
+          <a href="https://p5js.org/reference/" target="_blank" style="target-new: tab;">Reference</a>: documentation for all things in p5.js <a href="http://bit.ly/p5jsLesson6" target="_blank">Lesson 6 starter</a>: the code from the end of Lesson 5
         </p>
       </div>
     </div>
@@ -78,10 +80,13 @@
     <!-- GETTING STARTED -->
     <div class="row">
       <div class="col s8 offset-s1">
-        <h4 class="largeheading">Getting Started</h4>
+        <h4 class="largeheading">
+          Getting Started
+        </h4>
       </div>
     </div>
 
+    <!-- CHECKBOX STEP -->
     <div class="row">
       <div class="col s1 offset-s1">
         <div class="checkbox">
@@ -98,17 +103,85 @@
       <div class="col s8">
         <div class="stepcontent">
           <h6>
-            checkbox
+            As before, we will begin with the <a href="http://bit.ly/p5jsLesson6" target="_blank">starter code</a> for this lesson just so we are on the same page. You&rsquo;ll have opportunity to add any modifications you made that you like in later lessons.
           </h6>
         </div>
       </div>
     </div>
 
+    <!-- PARING PROCEDURES WITH PARAMETERS -->
     <div class="row">
-      <div class="col s8 offset-s2">
+      <div class="col s8 offset-s1">
+        <h4 class="largeheading">
+          Pairing Procedures with Parameters
+        </h4>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
         <div class="stepcontent">
           <h6>
-            explanatory
+            At the end of last lesson, we left you with a riddle: Why is it when both the smiley and the awesome face are being drawn, only <em>one</em> shows up?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Remember how we created variables so that we didn&rsquo;t have to change <em>every single instance of a value</em> any time we wanted to update it? We can do something similar regarding <em>changing</em> the input of a function.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            We have already been doing this. That&rsquo;s the <em>function</em> of <strong>parameters</strong>. Look through the code and on a scrap piece of paper or a scratch text file write down the functions that have parameters.
           </h6>
         </div>
       </div>
@@ -117,8 +190,686 @@
     <!-- IMAGE -->
     <div class="row">
       <div class="col s8 offset-s1">
-        <div>
-          <img class="inlineexamples" src="p5images/L00/.png">
+        <div class="inlineshadow">
+          <img src="p5images/L06/functionsWithParams.png" alt="functions with parameters">
+          <p>All of the functions in this image have parameters.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SUB HEADING -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h5 class="subheading">
+          Variable Parameters
+        </h5>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="projectsection1">
+          <h6>
+            Let&rsquo;s take <em>circle()</em> as an example. It has three parameters: <em>x position</em>, <em>y position</em>, <em>diameter/width</em>. Our characters <em>are</em> circles. We can add the same parameters to our functions.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="projectsection1">
+          <h6>
+            We have used three global variables, <code>x,y,w</code> to define each face&rsquo;s position and size, but no <em>circle()</em> inside either face takes those parameters. What gives?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="projectsection1">
+          <h6>
+            Through the magic of using built-in functions, we don&rsquo;t need to make every detail in the drawing depend on those variables. Instead, we have put our <code>x,y</code> and <code>w</code> in <em>translate()</em> and <em>scale()</em>, turning our <em>absolute</em> coordinates and sizes of every aspect of each face into <em>relative</em> ones.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Take a look at this function implemetation with the original values:
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L06/translateScale.png" alt="drawAwesome() highlighting traslate() and scale()">
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="projectsection1">
+          <h6>
+            We have moved the center of the canvas with <em>translate()</em>. That moves the origin <code>(0,0)</code> to the coordinates <code>(x,y)</code>. We have also changed the zoom of the canvas using <em>scale()</em>. Since the original face was drawn 300 pixels wide, the scale factor <code>w</code> divided by that original size <code>300</code> keeps everything in proportion.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="projectsection1">
+          <h6>
+            The <em>push()-pop()</em> pair keeps <em>traslate()</em> and <em>scale()</em> from affecting any of the other drawings we may have.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent"> Now can you an you find the original <em>circle()</em> in both face-drawing procedures?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- HINT IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="hintcontent">
+          <h6 class="hintheader">
+            Hover for a while to reveal a hint
+          </h6>
+          <h5>
+            It&rsquo;s <code>circle(0,0,300)</code> in each function:
+          </h5>
+          <div class="hintinline">
+            <a href="p5images/L06/circleSmiley.png" target="_blank" style="target-new: tab;">
+              <img src="p5images/L06/circleSmiley.png" alt="the first *circle()* in *drawSmiley*">
+            </a>
+            <p>
+              <br>
+            </p>
+          </div>
+          <p class="hintheader">
+            Click when image appears to open in a new tab
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            We <em>could have</em> made every parameter inside each function depend on <code>x,y,w</code>, writing <code>circle(x,y,w)</code> and then having <code>ellipse(x-50, y-15, 30*w/300, 40*w/300);</code> below that instead of <code>ellipse(-50, -15, 30, 40);</code>. Notice how much more complicated that is. You can imagine how tedious that would get.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- INFO -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="infocontent">
+          <h6>
+            The very observant of you may have noticed <code>scale(w * 2 / 300)</code> in <em>drawSunglasses()</em> where we are doubling the width before dividing by 300. That was an error in calculating the values initially. But, as you see, the fix was way easier than recalculating every parameter. This is another advantage of using functions like <em>scale()</em>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- PARAMETER VARIABLES -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h5 class="subheading">
+          Parameter Variables
+        </h5>
+      </div>
+    </div>
+
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            We have been talking about parameters &mdash; the stuff inside the parentheses &mdash; of these built-in functions. Now that we know what changes the position and size of our procedures, how can we parameterize them? Can it be as easy as putting <code>x,y,w</code> inside the parentheses like <code>drawSmiley(x,y,w)</code>? Try it with <em>drawSmiley()</em>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Something subtle happens to the syntax highlighting in the implementation &mdash; <code>x</code>, <code>y</code>, and <code>w</code> each turned black. If we just put <code>x</code>, <code>y</code> and <code>w</code> remain blue.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L06/blackXParameter.png" alt="the *x* parameter turned black in implemetation">
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            When we change them all, they are all black.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L06/blackXYWParameters.png" alt="all three parameters turned black in implemetation">
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Now the variables <code>x,y,w</code> have <em>nothing</em> to do with the parameters <code>x,y,w</code>. When you run it, the smiley is stuck in the upper left while awesome face bounces around &mdash; being, you know, <em>awesome</em>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L06/smileyStuck.png" alt="smiley is stuck while awesome bounces around">
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Take a look at the console. You should see this alert popping up every frame:
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L06/expectingAtLeast1.png" alt="*translate()* received 0 arguments">
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            We never gave our parameters <code>x,y,w</code> any values while our variables <code>x,y,w</code> carry on their merry way.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            So let&rsquo;s fix that. In <em>draw()</em> put <code>x,y,w*2</code> in the parentheses of <em>drawSmiley()</em>. Run it.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L06/doubleSmileyW.png" alt="double smiley size">
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            We made the width double the size so we can see that both are being drawn, they are just drawn from the same place. They are dependent on the <em>same</em> variables. Though when it bounces, it bounces off the awesome face, not the smiley.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Now let&rsquo;s go ahead and add that set of variables <code>x2,y2,w2</code>. Set the second set to other different values that fit on the canvas. Call <em>drawSmiley()</em> with them. (Don&rsquo;t bother multiplying the <code>w2</code> by 2.) What happens?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L06/x2y2w2.png" alt="declare and init second set of variables">
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L06/motionlessSmiley.gif" alt="smiley doesn&rsquo;t move">
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            We have successfully disentangled smiley and awesome, but smiley doesn&rsquo;t move anymore. We are not changing its coordinates every frame like we are with the awesome face.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            To do that, the quick and dirty way is just to add more variables like <code>x2Speed</code> and <code>y2Speed</code> and then add them to our <em>animate()</em> function as parameters with our position and then change the position. It seems like that would work, but there is something funny about the parameters that are plain number values &mdash; known as <strong>primitives</strong>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- INFO -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="infocontent">
+          <h6>
+            A <strong>primitive</strong> is simple data type like Booleans (true/false), integers (whole numbers), and floating point numbers (decimal fractions). They don&rsquo;t have any extra data attached to them, so they&rsquo;re very small in size and easier for the computer to copy into faster memory rather than use it in place.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOR LACK OF A REFERENCE PARAMETER -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h4 class="largeheading">
+          For Lack of a Reference Parameter
+        </h4>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Sometimes when programming, things are easy &mdash; they just kind of work &mdash; and we don&rsquo;t really ask questions. And then there are times like this. In C-based languages, parameters come in two varieties: <strong>pass-by-value</strong> and <strong>pass-by-reference</strong>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Rather than explain the difference, how about story time?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            <blockquote>
+              <p>
+                <strong>A Tale of Two Burritos</strong>
+              </p>
+              <p>
+                It was the best of times. I sat down at the Flying Burrito Monster, ready to dig into an artisanally crafted feast for the senses, when a shadow darkened my meal. &ldquo;What kind of burrito is that?&rdquo; It was my older brother. &ldquo;Beans and rice,&rdquo; I said. &ldquo;Looks good. I&rsquo;ll go order one,&rdquo; he said.
+              </p>
+              <p>
+                It was the worst of times. I sat down at the Flying Burrito Monster, ready to dig into an artisanally crafted feast for the senses, when a shadow darkened my meal. &ldquo;What kind of burrito is that?&rdquo; It was my older brother. Before I could stop him, he snatched the burrito off my plate and took a big bite. &ldquo;Beans and rice,&rdquo; he mumbled. &ldquo;Tastes good. You should order one.&rdquo;
+              </p>
+            </blockquote>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            In the best of times, dear brother got the answer to his question without having to consume the burrito. That&rsquo;s <strong>pass-by-value</strong> &mdash; a copy of the variable is used. He went and got his own version of the burrito and didn&rsquo;t touch mine.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            In the worst of times, dear brother got the answer <em>by consuming the burrito</em>. When he finished, the burrito was irreparably changed. That&rsquo;s <strong>pass-by-reference</strong> &mdash; the variable <em>itself</em> is changed.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Do you see where this is going? We want <code>brotherChecks(myBurrito)</code> in <em>the worst of times</em>. But in JavaScript, we have <code>brotherChecks(myBurrito)</code> in <em>the best of times</em> whenever the variable is one of these primitives. We need <em>brotherChecks()</em> to change <code>myburrito</code>, but all brothers are really nice when given simple value variables in JavaScript.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            We have two options: turn <code>myBurrito</code> into a JavaScript object or use the <em>functional programming style</em> to explicitly reassign the values. With one exception, we will do the first.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- OBJECTIVELY SIMPLE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h5 class="smallheading">
+          Objectively Simple
+        </h5>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            In most programming languages, simple variables will be pass-by-value by default while larger data structures like objects and arrays which can hold millions of properties and elements are pass-by-reference. The reason for this is pretty straight-forward: Copying a single value costs nothing but a tiny bit of space; copying millions of values costs millions of times more.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Since JavaScript has no way to make primitives pass-by-reference, we can use the native JavaScript object which is pass-by-reference.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            It looks something like this:
+            <pre><code>objName = {
+  key1: value1,
+  key2: value2,
+  key3: value3
+}
+</code></pre>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            The <strong>keys</strong> are the names of the <strong>properties</strong> aka <strong>attributes</strong> aka <strong>fields</strong> aka <strong>member variables</strong>. (We&rsquo;ll stick with properties for JavaScript.) They are just variables with fancy names that cannot be used on their own. Simply putting <code>key1</code> will <em>not</em> give us the property up there. To address it, we have to call it by its full name: <code>objName.key1</code>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>So with smiley and awe it can look like this:
+            <pre><code>// smiley/sunglasses attributes
+  let smiley = {
+    x: 100,
+    y: 100,
+    w: 100,
+    xSpeed: 3,
+    ySpeed: 4,
+    offset: 400
+  }
+  // awesome face attributes
+  let awe = {
+    x: 300,
+    y: 300,
+    w: 100,
+    xSpeed: -5,
+    ySpeed: 2
+  }
+</code></pre>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Instead of having to put the arbitrary <code>x1</code> and <code>x2</code> or the more-descriptive-but-still-arbitrary <code>smileyX</code> and <code>aweX</code> or whatever naming convention we choose, we have these variables literally attached to the objects that use them. Pretty convenient. What is awe&rsquo;s position? <code>(awe.x,awe.y)</code>. What&rsquo;s smiley&rsquo;s width? <code>smiley.w</code> Makes sense, right?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Replace the previous list of variables with these JS Objects, leaving the colors, of course.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L06/smileyAweObjects.png" alt="smiley and awe objects">
         </div>
       </div>
     </div>
@@ -126,49 +877,867 @@
     <!-- LARGE HEADING -->
     <div class="row">
       <div class="col s8 offset-s1">
-        <h4 class="largeheading">largeheading</h4>
+        <h4 class="largeheading">
+          One Parameter to Rule Them All
+        </h4>
       </div>
     </div>
 
-    <!-- SMALL HEADING -->
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            We have taken a bit of a journey, but it&rsquo;s time to get back to the task at hand. We can keep having to call every function with individual variables &mdash; our properties attached to their objects &mdash; ending up with a rather crazy amount of parameters, but since our variables <em>are</em> attached to our new fangled objects, why don&rsquo;t we just call the functions with the <em>objects</em> themselves?
+            <pre><code>drawsmiley(x,y,w);
+drawSmiley(object);
+</code></pre>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            And then instead of just <code>x</code> inside the function, we can add <code>object.</code> in front of it: <code>object.x</code>. Because it can get tedious to write out <code>object</code> all the time, we&rsquo;ll just call it <code>ob</code>.</p>
+            <pre><code>function drawSmiley(ob) {
+  push();
+  translate(ob.x, ob.y);
+  scale(ob.w / 300);
+
+  strokeWeight(4);
+  stroke(black);
+  fill(yellow);
+  circle(0, 0, 300);
+
+  fill(black);
+  ellipse(-50, -15, 30, 40);
+  ellipse(50, -15, 30, 40);
+
+  arc(0, 20, 200, 150, 20, 160);
+  fill(yellow);
+  arc(0, 15, 220, 130, 19, 161);
+  pop();
+} // end of drawSmiley()
+</code></pre>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            That&rsquo;s pretty cool. However, this is going to get tedious to replace everything in some of the other functions &mdash; <code>bounceOffWalls(ob)</code> &mdash; I am looking at you.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            The great thing about variables is that you can assign them to other variables, like so:
+            <pre><code>function bounceOffWalls(ob) {
+  // set the properties to local variables
+  let x = ob.x;
+  let y = ob.y;
+  let xSpeed = ob.xSpeed;
+  let ySpeed = ob.ySpeed;
+  let rad = ob.w/2;
+
+  if (x + xSpeed - rad &lt; 0 ||
+    x + xSpeed + rad &gt; width) {
+    xSpeed *= -1;
+  }
+  if (y + ySpeed - rad &lt; 0 ||
+    y + ySpeed + rad &gt; height) {
+    ySpeed *= -1;
+  }
+
+  // change the speed properties
+  ob.xSpeed = xSpeed;
+  ob.ySpeed = ySpeed;
+} // end of boundOffWalls()
+</code></pre>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            As long as the values we want to change are reassigned like we&rsquo;ve done with the speeds, it will work as intended.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            It may occur to you that this bit of laziness might be wasteful and slow things down. Eventually, that may be true &mdash; but now is not the time for <em>optimizing</em> our code. First we get it working. We may be accruing some <strong>technical debt</strong>, but we also have to get the job done.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- INFO -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="infocontent">
+          <h6>
+            info: <strong>Technical debt</strong> is used to describe the refactoring and rewriting of code that may need to happen in the future. But at this point, we still don&rsquo;t which functions will be necessary for our final program. As the legendary Donald Knuth popularized: <em>Premature optimization is the root of all evil.</em> Though they often don&rsquo;t add the part where that&rsquo;s only true about 97% of the time. We won&rsquo;t worry about the other 3%.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Your task now is to use the ideas from the examples above to convert all of our existing functions except for the animation ones to take a single object parameter.
+          </h6>
+          <h5>
+            <strong>Be sure to test after changing each individual function.</strong>
+          </h5>
+          <h6>
+            For the time being, test with only one of the objects. You may need to comment and uncomment some lines in <em>draw()</em>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IN ANIMATE OBJECTS -->
     <div class="row">
       <div class="col s8 offset-s1">
-        <h5 class="smallheading">smallheading</h5>
+        <h5 class="smallheading">
+          In Animate Objects
+        </h5>
       </div>
     </div>
 
-    <!-- SUB HEADING -->
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Let&rsquo;s take care of the animation functions. First off, <em>animateSmiley()</em> really needs a rename because we aern&rsquo;t <em>just</em> animating the smiley anymore. Change it&rsquo;s name to <em>animate()</em> and give it the same treatment as the others.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            To make sure that it works with both objects independently, we need to call it twice with <code>awe</code> and <code>smiley</code> as paramters: <code>animate(awe)</code> and <code>animate(smiley)</code>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Now they both should move, but one runs off screen. In fact, if we updated <em>printPosition()</em> properly, we can see that is is still moving:
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
     <div class="row">
       <div class="col s8 offset-s1">
-        <h5 class="subheading">subheading</h5>
+        <div class="inlineshadow">
+          <img src="p5images/L06/stillMoving.png" alt="awe is still moving">
+        </div>
       </div>
     </div>
 
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            This should be expected. Can you see why? </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- HINT -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="hintcontent">
+          <h6 class="hintheader">
+            Hover for a while to reveal a hint
+          </h6>
+          <h5>
+            Only one of the objects is detecting the walls and changing its direction. We would have to call <em>bounceOffWalls()</em> with the other face as well.
+          </h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            We will fix that in a little bit. We have to take care of some other things first.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            In <em>animateShades()</em>, we are doing something a little different. We&rsquo;ll give the function one parameter and instead of changing the parameter, we return a value can &ldquo;catch&rdquo; it with the variable we want to change, which in this case is the same as the parameter.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Give <em>animateShades()</em> a single parameter called <code>offset</code>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Tossing a value back is simple &mdash; we just return the offset after the <em>if-statments</em> as the last line in the body using <code>return</code>.</p>
+            <pre><code>  } // end of last if
+  return offset;
+} // end of animateShades()
+</code></pre>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L06/returnOffset.png" alt="return the offset">
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6> When we call it, we can put <code>smiley.offset</code> as the parameter <em>and</em> the variable that will catch the returned value:</p>
+            <pre><code>smiley.offset = animateShades(smiley.offset);
+  </code></pre>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            This is the <em>functional programming style</em> where we know we are reassigning the value of <code>smiley.offset</code> because that&rsquo;s what we wanted. The main idea behind this style is that nothing is changed without the programmer wanting it to change explicitly using the assignment operator <code>=</code>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Your code may look something like this:
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L06/manyFunctions.png" alt="many functions in draw()">
+        </div>
+      </div>
+    </div>
+
+
+    <!-- FUNCTIONS ALL THE WAY DOWN -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h4 class="largeheading">
+          Functions All the Way Down
+        </h4>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            For our last trick, you may have noticed that many of these functions are related &mdash; there is a precise order they must be called in. If we were to call <em>drawSunglasses()</em> before our <em>drawSmiley()</em>, the sunglasses would disappear behind the smiley.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            So what would happen if we just put <em>drawSunglasses()</em> as the last thing inside <em>drawSmiley()</em> so that it&rsquo;s <em>always</em> after the code that actually draws smiley. Try it.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            When we do this, we have to change <code>smiley.offset</code> to <code>ob.offset</code> inside <em>drawSmiley()</em>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="smileyToOb.png" alt="change smiley to ob">
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>Now we can comment out <em>drawSunglasses()</em> in <em>draw()</em>. Test it to make sure it still works. When it does, we can delete the commented out line if we like.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L06/commentOutDrawSunglasses.png" alt="commented out draw sunglasses">
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            In fact, we&rsquo;ll be able to get rid of most of the function calls in <em>draw()</em>, ending up with this:</p>
+            <p>function draw() {<br> background(skyblue);</p>
+            <pre><code>drawSmiley(smiley);
+  drawAwesome(awe);
+
+  animate(smiley);
+  animate(awe);
+  </code></pre>
+            <p>} // end of draw()</p>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            That&rsquo;s one clean machine. We draw. Then we animate. (Though we could animate and then draw. The difference is slight in this instance.)
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            First things first &mdash; we don&rsquo;t have a plain <em>animate()</em> function. Recall that <em>animateSmiley()</em> was using the
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Let&rsquo;s take a look at how we can implement <em>animate()</em> to accomplish this:</p>
+            <pre><code>function animate(ob) {
+  // move shades (functional style)
+  ob.offset = animateShades(ob.offset);
+  // change direction if at a wall
+  bounceOffWalls(ob);
+  // add speed to x and y
+  ob.x += ob.xSpeed;
+  ob.y += ob.ySpeed;
+  // prevent glitching at the edge
+  keepInBounds(ob);
+} // end of animateSmiley()
+</code></pre>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            In addition to the original job of adding the speed to the positions for <em>animate()</em>, we have <em>animateShades()</em>, <em>bounceOffWalls()</em>, and <em>keepInBounds()</em> being called. The function is now more complex, but they are all related to animating the characters on the canvas. They belong together.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- INFO -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="infocontent">
+          <h6>
+            Note that we are taking advantage of JavaScripts permissiveness &mdash; even though <em>awe</em> doesn&rsquo;t have an <em>offset</em> and this would be an error in most other languages, but since we don&rsquo;t try to read any properties of <em>offset</em> &mdash; it&rsquo;s a primitive, after all &mdash; JS effectively ignores it and moves on. Later on we&rsquo;ll see that we must check whether an object exists, but we don&rsquo;t need to get into that now.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Go ahead and update your <em>animate()</em> to match this one.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Once that as been done, change the code in <em>draw()</em> to be that streamlined version above. <strong>And test, test, test!</strong>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- OUTRO -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="infocontent">
+          <h6>
+            Well done. You have made it to the end of another lesson. Give yourself a high-five. Don&rsquo;t get discouraged if not all of it works exactly as you would hope.
+          </h6>
+          <h6>
+            <strong>Here is <a href="http://bit.ly/p5jsLesson7" target="_blank">the code</a> that ends this lesson and begins the next.</strong> You can open it in a new window and compare it to yours.
+          </h6>
+          <h6>
+            And don&rsquo;t forget to tinker&hellip;
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- TIME TO TINKER -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h4 class="largeheading">
+          Time to Tinker
+        </h4>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Now is a good time to start looking playing with the many <a href="https://p5js.org/examples/" target="_blank">examples</a> in p5. Some of them are really awesome, others are really useful.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Maybe you could add one of the faces to the movers <a href="https://p5js.org/examples/simulate-forces.html" target="_blank">in this example</a> (Look in the display function <code>Mover.prototype.display</code>.)
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Or maybe you just play the <a href="https://p5js.org/examples/interaction-snake-game.html" target="
+            ">snake game</a> for hours. Up to you.
+          </h6>
+        </div>
+      </div>
+    </div>
 
   </div>
   <!--end contentwidth-->
-
   <!--Project Complete Banner-->
-    <div class="bannercontainer blue white-text">
-      <div class="last">
-        <a href="p5js-lesson-5-fun-in-functions.html">
-          <button>
-            <div class="arrowleft"></div>
-            <div class="arrowlefttext">
-              last
-              <br>
-              lesson
-            </div>
-          </button>
-        </a>
-      </div>
-      <div class="complete">
-        <h5>
-          Lesson complete!
-        </h5>
-      </div>
-      <div class="next">
-        <!-- <a href="">
+  <div class="bannercontainer blue white-text">
+    <div class="last">
+      <a href="p5js-lesson-5-fun-in-functions.html">
+        <button>
+          <div class="arrowleft"></div>
+          <div class="arrowlefttext"> last <br> lesson </div>
+        </button>
+      </a>
+    </div>
+    <div class="complete">
+      <h5> Lesson complete! </h5>
+    </div>
+    <div class="next">
+      <a href="p5js-lesson-7-stay-classy.html">
           <button>
             <div class="arrowrighttext">
               next
@@ -177,11 +1746,9 @@
             </div>
             <div class="arrowright"></div>
           </button>
-        </a> -->
-      </div>
+        </a>
     </div>
-
-
+  </div>
   <!--Card: Prompt - Find Another Project-->
   <div class="contentwidth">
     <div class="row">

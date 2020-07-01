@@ -1,0 +1,251 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lesson 8</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="get-loopy">Get Loopy</h1>
+<p>In this lesson, you will:</p>
+<ol>
+<li>Learn about arrays and how to access them</li>
+<li>See how we can repeat things over and over</li>
+<li>Get to know the different kinds of loops in JavaScript</li>
+<li>Use repetition to automate accessing arrays</li>
+</ol>
+<h2 id="where-we-left-off">Where We Left Off</h2>
+<p>Last lesson, we learned a little about object-oriented programming and then made a couple classes that create bouncing balls and faces.</p>
+<h2 id="helpful-links">Helpful Links</h2>
+<p><a href="http://editor.p5js.org">Editor</a>: the online p5.js editor<br>
+<a href="http://reference.p5js.org">Reference</a>: documentation for all things in p5.js<br>
+<a href="http://bit.ly/p5jsLesson8">Lesson 8 starter</a>: the updated code from the end of Lesson 7</p>
+<h2 id="getting-started">Getting Started</h2>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Once again, open the <a href="https://bit.ly/p5jsLesson8">starter code</a> and let’s take it for a spin. You’ll notice that all of the procedures/functions have been changed to methods. It actually isn’t that much different from what we had that the end of <a href="https://bit.ly/p5jsLesson7final">last lesson</a> before tinkering — mostly just a lot of <code>this</code> in place of <code>ob</code> and added before calling the functions inside the classes. You can use these as a reference for changing procedures into methods.</li>
+</ul>
+<h2 id="repeat-after-me">Repeat after Me</h2>
+<p>What is the thing that computers do best? What is the thing that computers do best? What is the thing that computers do best? What is the thing that computers do best? What is the thing…</p>
+<p>That’s exhausting. But computers don’t mind. Last lesson, we asked about having a thousand smiley faces bouncing around. And then we got mired in making objects. Well all that work we did then will pay off here.</p>
+<p>The first thing that we need to do is automate creating all of the objects that we want. Then we need to draw them and move them around the canvas.</p>
+<p>When you think of automation, what comes to mind? An assmebly line? Preprogrammed robots? Scripts that execute the same thing every time? You press a button and a lot of tedious and repetitive stuff gets done? Sounds about right.</p>
+<p>In order to set off this repetition, we need some kind of sequential structure that we can count through. All the way back at the very beginning of these lessons, we started using them. We’ve used them <em>every lesson since</em> — so much that you probably stopped seeing them.</p>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Here is a hint: What is the difference between <code>black</code> and <code>yellow</code> in our code?</li>
+</ul>
+<blockquote>
+<p>hint: <code>black</code> has one value while <code>yellow</code> has three.</p>
+</blockquote>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Does anything enclose the value for <code>black</code>? What about the values for <code>yellow</code>?</li>
+</ul>
+<blockquote>
+<p>hint: Nothing encloses <code>black</code> , but <code>yellow</code> is enclosed by square brackets: <code>[ ]</code>.</p>
+</blockquote>
+<h2 id="a-ray-of-hope">A Ray of Hope</h2>
+<p>Let’s get to know our friend in automation: the <strong>array</strong> — what <code>yellow</code>  and <code>pink</code> and <code>skyblue</code> actually are.</p>
+<p>Arrays are that ordered kind of data. A good way to think of an array is as a residential street with house numbers that start at zero and count up one-by-one.</p>
+<p>We can declare an empty array by giving it a name and assigning it empty square brackets like so: <code>let arrayName = [];</code></p>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Go ahead and put <code>let faces = [];</code> where we declared <code>smiley</code> and <code>awe</code>. We’ll comment out those others.</li>
+</ul>
+<p><img src="declareFaces.png" alt="declare faces array"></p>
+<ul>
+<li class="task-list-item">
+<p><input type="checkbox" class="task-list-item-checkbox" disabled=""> We can also give it initial values like we’ve already done with those colors. Let’s make another one right now. Put <code>let flip = [-1, 1];</code> after the colors. This array may seem a little silly, but it’ll come in handy almost right away.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" class="task-list-item-checkbox" disabled=""> Let’s do it again, only this time we will put strings and colors in it. A name that would be good is something like <em>looks</em>. Just above the <em>flip</em> array, put <code>let looks = ["awe", "smiley", pink, "pink", "#fab", "#ffacee"];</code>. The values after the faces show different kinds of pinks in four different ways. (Note that we cannot use any of p5’s built-in color functions until inside <em>setup()</em>.)</p>
+</li>
+</ul>
+<p><img src="declareLooks.png" alt="declare looks array"></p>
+<ul>
+<li class="task-list-item">
+<p><input type="checkbox" class="task-list-item-checkbox" disabled=""> So we have this array of faces with no faces in it. We can solve that pretty easily by just <em>pushing</em> a new face onto the array. In place of the line <code>smiley = new Face(</code> in <em>setup()</em>, put <code>faces.push(new Face(</code>. Then add another parentheses just before the semicolon at the end.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" class="task-list-item-checkbox" disabled=""> Do the same thing for <em>awe</em>.</p>
+</li>
+</ul>
+<p><img src="pushFaces.png" alt="push faces onto the array"></p>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Now we can replace <code>smiley</code> and <code>awe</code> in <em>draw()</em> with <code>faces[0]</code> and <code>faces[1]</code>.</li>
+</ul>
+<p><img src="facesElements.png" alt="replace smiley and awe with faces elements"></p>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Run the code to make sure that it works exactly like what we had at the beginning of the lesson.</li>
+</ul>
+<p><code>faces[0]</code> is an <strong>element</strong> of the array. It acts just like regular variables except that there may be other variables around it, like <code>faces[1]</code>. The number in brackets after the array name is the <strong>index</strong> which tells us the number of spots we have to travel to get to that element — zero spots to get to the first one because we are already there.</p>
+<p>Many get confused by these details at first, so let’s take a look at it as a street address like <em>123 Main Street</em>. The index is like the house number. The street name is the name of the array. Writing this address as an array would look something like <em>mainStreet[123]</em> or <em>main[123]</em>. What would be the house in this metaphor?</p>
+<blockquote>
+<p>hint: The house is the element of the array.</p>
+</blockquote>
+<p>Similarly, who lives at <em>1 Faces Avenue</em>?</p>
+<blockquote>
+<p>hint: Somebody awesome, of course.</p>
+</blockquote>
+<blockquote>
+<p>info: <em>Element 0</em> is the <em>first</em> element in a array, though some people will say <em>zeroth</em> element — ordinal numbers don’t work like that, but whatever. There is a rational reason for starting from 0 instead of 1: It makes the math stupid simple.</p>
+<p>In C, an array is just a contiguous chunk of memory broken up into evenly spaced parts. The start of the array is a memory address, and a spot in the array is found by multiplying the <em>index</em> by the <em>size</em> of each part and adding it to the starting address.</p>
+<p>Stupid simple, though not exactly great for humans. There are compelling arguments for starting with 1, but the entrenchment of C-based languages makes it in the minority. Just assume that all arrays start at index 0 to avoid confusion.</p>
+</blockquote>
+<p>So far we don’t have anything much different than just calling them <em>face1</em> and <em>face2</em>. It’s time to unlock the power of the array.</p>
+<h2 id="spinning-in-circles">Spinning in Circles</h2>
+<p>What is the thing that computers do best? What is the thing that computers do best? What is the thing that computers do best? What is the thing that computers do best? What is the thing that computers do…</p>
+<p>Sorry. Broken record. Sometimes things just get stuck in a loop, you know? Sometimes things just get stuck in a loop. If only there were a way to get a computer stuck in loop so it could just <em>do</em> something <em>for</em> a <em>while</em>.</p>
+<p>What is the thing that computers do best? Repetition.</p>
+<p>And the way that we control that repetition is with <strong>loops</strong>. There are three kinds that we will look at here — <em>while</em>, <em>do-while</em>, and <em>for</em>, the “classics” — and an additional one we’ll see later called <em>for-of</em>.</p>
+<p>The <em>while</em> loop is the simplest to explain and the easiest to get into an infinite loop.</p>
+<p>Speaking of infinite loops — computers are so good at repetitive tasks that they may do them to the exclusion of everything else — which means they can lock up the browser requiring you to refresh the page or restart the browser. So if you don’t have <em>autosave</em> on, better turn it on so you don’t lose what you’ve done. #experience</p>
+<p><img src="clickGear.png" alt="click the gear icon"><br>
+<img src="enableAutosave.png" alt="enable autosave feature"></p>
+<p>A <em>while</em> statement is just an <em>if</em> statement that you repeat until it’s no longer true. That’s it. You don’t have to worry about <em>else-ifs</em> and <em>elses</em>, all those <em>compound conditionals</em>, just the singular <em>if</em>.</p>
+<pre><code>if (condition == true) {
+  do(something);
+}
+while (condition == true) {
+  do(something(manyTimes));
+}
+</code></pre>
+<ul>
+<li class="task-list-item">
+<p><input type="checkbox" class="task-list-item-checkbox" disabled=""> Can you see how easy it is to get stuck in an infinite loop? Consider when the condition is false: Neither the <em>if</em> nor the <em>while</em> branches are taken. No chance of an infinite loop.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" class="task-list-item-checkbox" disabled=""> But what if the condition is true? The <em>if</em> branch is executed, then the <em>while</em> branch is executed, then the <em>while</em> branch is executed, then the <em>while</em> branch is executed, then the <em>while</em> branch is executed, then the <em>while</em> branch is executed, then the <em>while</em> branch is executed, then the <em>while</em> branch is executed, then the <em>while</em> branch…</p>
+</li>
+</ul>
+<p><strong>What is the thing that computers do best?</strong></p>
+<p>When a <em>while</em> is true, we need to either update the condition in the body of the <em>while</em> or interrupt it somehow externally. When your <em>while</em> becomes a runaway train in p5, the external interrupt can be fun things like reloading the page, force-quitting the browser, or even a hard power-off of the computer, though sometimes pressing <strong>stop</strong> actually works.</p>
+<blockquote>
+<p>info: There are places where infinite loops are used — though maybe we should call them <em>indefinite</em> loops. Any kind of event listener or user interface or game loop may have the equivalent of <code>while (true)</code> if not <em>exactly</em> that. Your operating system definitely does. But these are controlled loops that don’t turn computers into rocketships turning your lap or desk into a scorched launchpad. These loops will have a way to break out of them, even if it’s something like <em>exit game</em>. The autosave feature and the event handler for <strong>stop</strong> and <strong>play</strong> are other relevant examples.</p>
+</blockquote>
+<p>So how do we prevent loops that propel us to infinity and beyond? Lots of care. These three classic loops require three specific things: an <em>initial condition</em>, an <em>ending condition</em>, and an <em>update to the initial condition that brings us to the ending condition</em>. To put it simply: a <em>start</em>, a <em>stop</em>, and a <em>way to get from start to stop</em>. As long as you check for these three things, you should be alright.</p>
+<p>For the <em>while</em> loop, it might look something like one of these:</p>
+<pre><code>let i = 0; // start at 0
+// end when i &gt;= 10
+while (i &lt; 10) {
+  doSomething(); // happens ten times
+  i++; //increment i until 10
+}
+
+// start hidden in boolean function
+// end when no longer isTrue()
+while (isTrue()) {
+  doSomething();
+  // way to get from start to stop
+  // also hidden in boolean function
+}
+
+let loop = true; // start true
+...
+// end when loop is false
+while (loop) {
+  doSomething();
+  // way to end in doSomething()
+}
+...
+function doSomething() {
+  doOtherStuff();
+  loop = isThereMoreLoopingNeeded();
+  // way to end
+}
+</code></pre>
+<p>Typically a <em>while</em> is chosen when the number of times it will be executed is not known, and we don’t want it to execute at all when the condition is false. The first example violates this rule. It’s not wrong, but there is a special loop for this exact purpose that we’ll introduce in a moment.</p>
+<p>Before we get to that, let’s look at a favorite for dealing with user input and other interface functions, the <em>do-while</em> loop. The only difference between this and the regular <em>while</em> is that the <em>do-while</em> gets executed <em>at least</em> once.</p>
+<pre><code>let input;
+do {
+  input = fromUser(); // start and way to end
+} while (isNotValid(input)); // end when valid
+</code></pre>
+<p>Variations of the non-definite <em>while</em> loops above may also be <em>do-while</em> loops.</p>
+<p>Finally, we come to the most important loop for arrays: the <em>for</em> loop, the best to use when we know how many times we want it to loop. This loop is just a glorified <em>while</em> with the three necessary ingredients to avoid infinite loops <em>on the same line</em>.</p>
+<pre><code>let end = 10;
+// start; stop when start &gt;= end;
+// increment start to end
+for (let start = 0; start &lt; end; start++) {
+  doSomething(endTimes); // the end is nigh
+}
+</code></pre>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Let’s use this loop. First, we should make a variable to tell us how many faces, something like <code>nFaces</code>. Declare it above the <code>faces</code> declaration and set it equal to 10 for now.</li>
+</ul>
+<p><img src="declareNFaces.png" alt="declare nFaces"></p>
+<ul>
+<li class="task-list-item">
+<p><input type="checkbox" class="task-list-item-checkbox" disabled=""> Next we are going to write a <em>for</em> loop with <code>i</code> as our iterator inside <em>setup()</em>. Comment out the previous pushes and then put the following: <code>for (let i = 0; i &lt; nFaces; i++) {}</code>.</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" class="task-list-item-checkbox" disabled=""> Inside the braces, put the following:</p>
+<p>faces.push(<br>
+new Face(<br>
+looks[i % looks.length],<br>
+createVector(<br>
+random(100, width - 100),<br>
+random(100, height - 100)<br>
+),<br>
+random(50,100),<br>
+createVector(<br>
+random(2, 8) * random(flip),<br>
+random(2, 8) * random(flip)<br>
+)<br>
+)<br>
+);</p>
+</li>
+</ul>
+<p><img src="facesForLoop.png" alt="faces pushed in for-loop"></p>
+<p>There are a couple things special happening here. The first is that instead of writing <code>"smiley"</code> or <code>pink</code> for the look, we are using our iterator <code>i</code> to go through our <em>looks</em> array, and then to prevent going off the end of the array, we have used the modulo operator <code>%</code>, usually pronounced <em>mod</em>, to give us the remainder after dividing <code>i</code> by <code>looks.length</code>. This just starts it over at the beginning of <em>looks</em>.</p>
+<blockquote>
+<p>info: The <strong>modulo operation</strong> is used all over in computer science. It allows us to turn the whole number line into a circle, exactly like how a clock does but with 0 where the 12 is. For positive numbers, the <strong>modulus</strong> is just where you end up after walking clockwise around the circle some number of steps, which ends up being exactly the same as the remainder of <strong>integer division</strong> — the first division you probably learned in school. For negative numbers, it’s different from the remainder. In fact, some languages allow you to access the last index in an array by putting <code>-1</code> as the index, which is the last number when walking around the circle before getting back to 0 in modular arithmetic.</p>
+<p>By using the modulo of our array length, we are effectively turning our into a circular array that has no beginning or end so we can never fall off the edge.</p>
+</blockquote>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Is your <em>looks</em> array 10 elements or more because you added colors? In that case, the precaution taken here won’t matter, so add another <em>0</em> to <em>nFaces</em> to make it matter: <code>let nFaces = 100;</code>.</li>
+</ul>
+<p>If we didn’t want to cycle through <em>looks</em> in order, we could <em>random()</em> our <em>looks</em> array as a parameter, and it will choose one of the elements <em>randomly</em>.</p>
+<p>We have done just that in <em>speed</em> with our <em>flip</em> array as a parameter for <em>random()</em>. That value is multplied by that random value in the 2–8 range. We could have just put <code>random(-8, 8);</code>, but that leaves a one in sixteen chance of a slow-moving character with a speed less than 2 in both <em>x</em> and <em>y</em>.</p>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> After all that explanation, run the code. Does it look the same as it did before? If so, why?</li>
+</ul>
+<blockquote>
+<p>hint: We are still only drawing and animating the first two elements of our <em>faces</em> array.</p>
+</blockquote>
+<h2 id="a-loop-for-this-century">A Loop for This Century</h2>
+<p>Those classic loops out of the way, let’s look at a more recent style of loop for iterating through arrays in JavaScript: the <em>for-of</em> loop. It looks like this:</p>
+<pre><code>for (let thing of things) {
+  doSome(thing);
+  thing.do(somethingElse);
+}
+</code></pre>
+<p>We don’t need to worry about <em>start</em> and <em>stop</em> and <em>start-to-stop</em>. It’s just going to iterate through once and thats that.</p>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Because our <em>faces</em> array has already been populated with faces, it has a length, so we can use <em>for-of</em> in <em>draw()</em>. Comment out the previous <em>draw()</em> and <em>animate()</em> method calls.</li>
+</ul>
+<pre><code>for (let face of faces) {
+  face.draw();
+  face.animate();
+}
+</code></pre>
+<p><img src="forOfFaces.png" alt="faces elements called in for-of loop"></p>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled=""> Once you get that working, try changing <code>nFaces</code> to different values. How big can you make it until it starts lagging?</li>
+</ul>
+<blockquote>
+<p>info: You made it to the bottom of the lesson yet again! Seriously, that effort and dedication are already paying off. <strong>Here is  <a href="http://bit.ly/p5jsLesson8final">the code</a> that ends this lesson.</strong> You can open it in a new window and compare it to yours.</p>
+</blockquote>
+<h1 id="time-to-tinker">Time to Tinker</h1>
+<ul>
+<li class="task-list-item">
+<p><input type="checkbox" class="task-list-item-checkbox" disabled=""> Just for practice, can you turn the <em>for-of</em> loop into a regular old <em>for</em> loop? What about the first <em>for</em> loop into a <em>while</em> loop?</p>
+</li>
+<li class="task-list-item">
+<p><input type="checkbox" class="task-list-item-checkbox" disabled=""> Link to sketch to play with loops.</p>
+</li>
+</ul>
+</div>
+</body>
+
+</html>
