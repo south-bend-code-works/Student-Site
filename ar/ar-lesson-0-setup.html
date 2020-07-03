@@ -1,0 +1,1387 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <link rel="stylesheet" href="../styleP5.css">
+  <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script src="../main.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="../SBCS_favicon.png">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AR Setup</title>
+</head>
+
+<body>
+  <!--Nav bar  -->
+  <nav class="light-blue lighten-1">
+    <div class="nav-wrapper">
+      <a href="#!"></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="hide-on-med-and-down">
+        <li><a href="../home.html">Home</a></li>
+        <li><a href="../scratch/scratch.html">Ages 7-12</a></li>
+        <li><a href="../techimmersion.html">Ages 13-18</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="../home.html">Home</a></li>
+    <li><a href="../scratch/scratch.html">Ages 7-12</a></li>
+    <li><a href="../techimmersion.html">Ages 13-18</a></li>
+  </ul>
+
+
+  <div class="contentwidth">
+
+    <!-- SETUP THE P5 ENVIRONMENT -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h3 class="maintitle">Setup the AR environment</h3>
+        <h5 class="p5header">&nbsp;AR&nbsp; Lesson 0</h5>
+      </div>
+    </div>
+
+    <!-- LESSON 1 -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <h6>In this lesson you will:</h6>
+        <ol>
+          <li>Setup Unity to create mobile AR apps.</li>
+          <li>Learn about ARCore, the SDK for Android AR Development.</li>
+          <li>Make your first AR app for Android!</li>
+        </ol>
+
+        <!-- BACKGROUND INFO -->
+        <h4 class="projectTitle">Background Info</h4>
+        <p>
+          AR works by detecting planes and other identifiable points/objects in reality, and then allowing the user to create virtual objects and place them in relation to the real objects. 
+        </p>
+
+        <!-- HELPFUL LINKS -->
+        <h4 class="projectTitle">Helpful Links</h4>
+        <p>
+          <a href="https://developers.google.com/ar/reference" target="_blank" style="target-new: tab;">Docs</a>: AR Core documentation.
+        </p>
+      </div>
+    </div>
+
+    <!-- GETTING STARTED -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h4 class="largeheading">Project Setup</h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Download <a href="https://github.com/google-ar/arcore-unity-sdk/releases">ARCore SDK </a>from GitHub.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Scroll down to Assets, download the unitypackage.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/setup/arcoredownload.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Open a new Unity 3D project.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/setup/newproject.PNG">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Import ARCore SDK into project as a new package.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Assets -> Import Package -> Custom Package
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/setup/importnewasset.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Find the unitypackage you just downloaded.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Select all, then press import.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/setup/importall.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Inside Window -> Package Manager, install Multiplayer HLAPI and XR Legacy Input Helpers (install the latest versions - which may be newer than those pictured).
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/setup/packagemanager.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/setup/multiplayerhlapi.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/setup/xrlegacyhelper.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Create an empty game object called ARCore Device. Reset the transform to 0,0,0.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/setup/createemptygameobject.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Add the script AR Core Session to ARCore Device.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/setup/arcoresession.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Find the Session Config and Camera Config Filter inside Assets -> GoogleARCore -> Configurations.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/setup/configurations.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Open the Session Config by double clicking, and set the Camera Focus Mode to Auto Focus.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/setup/autofocus.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Drag the Session Config and Camera Config Filter to their respective boxes on the ARCore Session.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/setup/sessioncameraconfig.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Make sure the camera is set to Back Facing.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Drag Main Camera to be a child of ARCore Device.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/setup/maincamera.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Set the transform for MainCamera to be 0,0,0.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/setup/maincameratransform.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Set the Clear Flags to be Solid Color.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/setup/clearflagssolidcolor.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Add a Tracked Pose Driver script to the MainCamera.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/setup/trackedposedriver.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Set the Pose Source to Color Camera.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Set the Update Type to Update.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Enable Use Relative Transform.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/setup/trackedposesettings.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Add an AR Core Background Renderer to the MainCamera.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/setup/backgroundrenderer.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Set the Background Material to ARBackground Material (from Assets -> GoogleARCore -> SDK -> Materials).
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/setup/backgroundmaterialpath.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/setup/backgroundrenderermaterial.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h4 class="largeheading">Building to Android Device</h4>
+      </div>
+    </div>
+
+    <!-- LARGE HEADING -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h4 class="largeheading">Computer Steps</h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            In Unity, open Build settings.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/setup/buildsettings.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Add Open Scenes to Scenes in Build.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/setup/addopenscenes.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Select Android Platform and click Switch Platform (this will take a few minutes).
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/setup/androidplatform.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Open Player Settings.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/setup/playersettings.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Set the Company and Product names to whatever you’d like them to be.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Open Other Settings.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/setup/othersettings.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Enable Auto Graphics API (this will take a few minutes).
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/setup/autographicsapi.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Disable Multi-thread Rendering.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/setup/multithreadrendering.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Set the minimum API level to Android 7.0 (SDK 24).
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/setup/minimumapilevel.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Open XR Settings.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/setup/xrsettings.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Enable ARCore Supported.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/setup/arcoresupported.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- LARGE HEADING -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h4 class="largeheading">Android Device Steps</h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Enable Developer Settings (should already be done).
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            <a href = "https://www.howtogeek.com/129728/how-to-access-the-developer-options-menu-and-enable-usb-debugging-on-android-4.2/#:~:text=To%20enable%20Developer%20Options%2C%20open,times%20to%20enable%20Developer%20Options.">Enable USB Debugging</a> (should already be done).
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- LARGE HEADING -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h4 class="largeheading">Computer Steps</h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Plug in Android via USB.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            On the tablet, allow the computer to access data.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Close Player settings
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Click Build and Run in the Build Settings dialog.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/setup/buildandrun.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Choose where to save the .apk and name it appropriately.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            The location is not very important. You can leave it in your Unity project folder.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            You may need to allow data to be transferred from the Android to the computer when the dialog box appears.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            The app will take a few minutes to build and run.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- LARGE HEADING -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h4 class="largeheading">Android Steps</h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Test your app.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Click to allow the app to record pictures and videos.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Right now you should just see the camera when you open the app.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <!--end contentwidth-->
+
+  <!--Project Complete Banner-->
+  <div class="bannercontainer blue white-text">
+    <div class="last">
+      <!-- <a href="">
+        <button>
+          <div class="arrowleft"></div>
+          <div class="arrowlefttext">
+            last
+            <br>
+            lesson
+          </div>
+        </button>
+      </a> -->
+    </div>
+    <div class="complete">
+      <h5>
+        Lesson complete! Good job!
+      </h5>
+    </div>
+    <div class="next">
+      <a href="ar-lesson-1-object-placement.html">
+        <button>
+          <div class="arrowrighttext">
+            next
+            <br>
+            lesson
+          </div>
+          <div class="arrowright"></div>
+        </button>
+      </a>
+    </div>
+  </div>
+
+  <!--Card: Prompt - Find Another Project-->
+  <div class="contentwidth">
+    <div class="row">
+      <div class="col s2 offset-s2">
+        <div class="card findanotherproject2">
+          <div class="card-content">
+            <div class="cardDescription">
+              <br>
+              <h6>Find another project?</h6>
+              <div class="browse">
+                <a href="ar.html">
+                  <button>Browse all projects</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end contentwidth-->
+</body>
+
+</html>

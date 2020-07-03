@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <link rel="stylesheet" href="../styleP5.css">
+  <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script src="../main.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="../SBCS_favicon.png">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exploring ARCore Elements</title>
+</head>
+
+<body>
+  <!--Nav bar  -->
+  <nav class="light-blue lighten-1">
+    <div class="nav-wrapper">
+      <a href="#!"></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="hide-on-med-and-down">
+        <li><a href="../home.html">Home</a></li>
+        <li><a href="../scratch/scratch.html">Ages 7-12</a></li>
+        <li><a href="../techimmersion.html">Ages 13-18</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="../home.html">Home</a></li>
+    <li><a href="../scratch/scratch.html">Ages 7-12</a></li>
+    <li><a href="../techimmersion.html">Ages 13-18</a></li>
+  </ul>
+
+
+  <div class="contentwidth">
+
+    <!-- SETUP THE P5 ENVIRONMENT -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h3 class="maintitle">Exploring ARCore Elements</h3>
+        <h5 class="p5header">&nbsp;AR&nbsp; Lesson 2</h5>
+      </div>
+    </div>
+
+    <!-- LESSON 1 -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <h6>In this lesson you will:</h6>
+        <ol>
+          <li>Explore the fundamental elements of AR.</li>
+          <li>Learn about best practices of developing for AR.</li>
+        </ol>
+
+        <!-- BACKGROUND INFO -->
+        <h4 class="projectTitle">Background Info</h4>
+        <p>
+          There are some fundamental rules and ideas about how to make good AR apps. These include things like sizing, navigation, interfaces, and the like.
+        </p>
+
+        <!-- HELPFUL LINKS -->
+        <h4 class="projectTitle">Helpful Links</h4>
+        <p>
+          <a href="https://developers.google.com/ar/reference" target="_blank" style="target-new: tab;">Docs</a>: AR Core documentation.
+          <br>
+          <a href="https://play.google.com/store/apps/details?id=com.google.ar.unity.ddelements&hl=en_US" target="_blank" style="target-new: tab;">ARCore Elements</a>: ARCore Elements page.
+        </p>
+      </div>
+    </div>
+
+    <!-- GETTING STARTED -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h4 class="largeheading">Project Setup</h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            If the AR Elements app is not already on your device, download it from the Play Store.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Open the AR Elements app and navigate through each island and topic.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h4 class="largeheading">User Environment Island</h4>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Experience size
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Multiple surfaces
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Go big
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Lighting
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Light triggers
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Multiplayer pairing
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h4 class="largeheading">User Movement Island</h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Encourage exploration
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Ease of access
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            User path
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Inside objects
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h4 class="largeheading">User Interface Island</h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Offscreen marker
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Pop ups
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Target size
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Screen UI
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h4 class="largeheading">Object Manipulation Island</h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Touch interaction
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Screen gallery
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Reticle interaction
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Precise selection
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Virtual Weight
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h4 class="largeheading">Wrap Up</h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            What did you learn while exploring this app? Write about it below.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <input type="text">
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <!--end contentwidth-->
+
+  <!--Project Complete Banner-->
+  <div class="bannercontainer blue white-text">
+    <div class="last">
+      <a href="ar-lesson-1-object-placement.html">
+        <button>
+          <div class="arrowleft"></div>
+          <div class="arrowlefttext">
+            last
+            <br>
+            lesson
+          </div>
+        </button>
+      </a>
+    </div>
+    <div class="complete">
+      <h5>
+        Lesson complete! Good job!
+      </h5>
+    </div>
+    <div class="next">
+      <a href="ar-lesson-3-augmented-images.html">
+        <button>
+          <div class="arrowrighttext">
+            next
+            <br>
+            lesson
+          </div>
+          <div class="arrowright"></div>
+        </button>
+      </a>
+    </div>
+  </div>
+
+  <!--Card: Prompt - Find Another Project-->
+  <div class="contentwidth">
+    <div class="row">
+      <div class="col s2 offset-s2">
+        <div class="card findanotherproject2">
+          <div class="card-content">
+            <div class="cardDescription">
+              <br>
+              <h6>Find another project?</h6>
+              <div class="browse">
+                <a href="ar.html">
+                  <button>Browse all projects</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end contentwidth-->
+</body>
+
+</html>

@@ -1,0 +1,1742 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <link rel="stylesheet" href="../styleP5.css">
+  <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script src="../main.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="../SBCS_favicon.png">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AR Augmented Faces</title>
+</head>
+
+<body>
+  <!--Nav bar  -->
+  <nav class="light-blue lighten-1">
+    <div class="nav-wrapper">
+      <a href="#!"></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="hide-on-med-and-down">
+        <li><a href="../home.html">Home</a></li>
+        <li><a href="../scratch/scratch.html">Ages 7-12</a></li>
+        <li><a href="../techimmersion.html">Ages 13-18</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="../home.html">Home</a></li>
+    <li><a href="../scratch/scratch.html">Ages 7-12</a></li>
+    <li><a href="../techimmersion.html">Ages 13-18</a></li>
+  </ul>
+
+
+  <div class="contentwidth">
+
+    <!-- SETUP THE P5 ENVIRONMENT -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h3 class="maintitle">Augmented Faces</h3>
+        <h5 class="p5header">&nbsp;AR&nbsp; Lesson 4</h5>
+      </div>
+    </div>
+
+    <!-- LESSON 1 -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <h6>In this lesson you will:</h6>
+        <ol>
+          <li>Detect faces in Augmented Reality space.</li>
+          <li>Place masks on faces in Augmented Reality space.</li>
+          <li>Use AR Foundation.</li>
+        </ol>
+
+        <!-- BACKGROUND INFO -->
+        <h4 class="projectTitle">Background Info</h4>
+        <p>
+          Augmented Reality uses face detection to allow users to add textures and materials to faces to create filters and masks.
+        </p>
+
+        <!-- HELPFUL LINKS -->
+        <h4 class="projectTitle">Helpful Links</h4>
+        <p>
+          <a href="https://developers.google.com/ar/reference" target="_blank" style="target-new: tab;">Docs</a>: AR Core documentation.
+          <br>
+          <a href="https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@2.2/manual/index.html
+" target="_blank" style="target-new: tab;">AR Foundation</a>: AR Foundation Unity documentation.
+          <br>
+          <a href="https://drive.google.com/drive/folders/1OyE-VTaz69qU00BRFFjEqHGXmNfjX36B?usp=sharing" target="_blank" style="target-new: tab;">Sample Images</a>: Feel free to use these images for your filters.
+        </p>
+      </div>
+    </div>
+
+    <!-- GETTING STARTED -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h4 class="largeheading">Project Setup</h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Create a new 3D Project in Unity.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Open Build Settings, select Android, and click Switch Platform.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Open the Package Manager. Window -> Package Manager.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Install the latest version of AR Foundation Package. (may be newer than pictured)
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-faces/arfoundation.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Install the latest version of AR Core XR Package. (may be newer than pictured)
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-faces/arcorexr.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Open Player Settings from Build Settings.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Adjust the Company and Product name to what you want.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Under Other Settings, enable Auto Graphics API.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Disable Multithreaded Rendering.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Set the Minimum API level to API 24.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Select AR Core Build Settings under the XR Menu.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-faces/Arcorebuildsettings.png">
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Click Create, and store the build settings in the Assets folder.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Select XR Plugin Management.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-faces/xrpluginmanagement.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Click the + under the Plugin Providers List.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Select AR Core Loader.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-faces/arcoreloader.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h4 class="largeheading">Making Face Filters</h4>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Right click in the Hierarchy, and select XR -> AR Session.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-faces/arsession.png">
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Right click in the Hierarchy, and select XR -> AR Session Origin.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-faces/arsessionorigin.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Add AR Face Manager to Session Origin.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-faces/arfacemanager.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Right click in the Hierarchy and select XR -> AR Default Face.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-faces/ardefaultface.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Create folders inside Assets named Prefabs, Materials, Textures.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-faces/newfolders.png">
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Drag the images you want to use for masks into the Textures folder.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-faces/imagetextures.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Inside the Materials folder, create a new material with desired texture.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-faces/creatematerial.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Click the circle next to albedo and select the image you want to use as the texture.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-faces/selecttexture.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Adjust metallic and smoothness level to get the desired look.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Select the AR Default face in the hierarchy.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Drag and drop the facematerial to Element 0 in the Mesh Renderer component of AR Default face.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-faces/ardefaultfacematerial.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Make prefab out of the AR default face.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Drag and drop AR Default Face into the Prefabs folder.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-faces/arfaceprefab.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Rename the prefab to something useful.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Delete the AR Default face from the hierarchy.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Select the AR Session Origin in the hierarchy.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Drag the face prefab to the AR Face Manager component’s Face Prefab box.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-faces/arfacemanagerprefab.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- LARGE HEADING -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h4 class="largeheading">Build and Run</h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            In the file menu, select Build Settings. Add the open scene to the build, then Build and Run.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- LARGE HEADING -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h4 class="largeheading">Add Multiple Filters</h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Add a Button to the screen. Right click in the hierarchy and select UI -> Button.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Anchor it to a corner by selecting the anchor button, then pressing shift + alt while selecting a corner.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-faces/buttonanchor.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Make a few more materials using other images (follow the steps from above).
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Store all materials in the Materials folder.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            On the AR Session Origin, create a new script called Face Controller.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Add the following code under the <code>using UnityEngine;</code>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            <code>
+            using UnityEngine.UI;
+            <br>
+            using UnityEngine.XR.ARFoundation;
+          </code>
+          </h6>
+        </div>
+      </div>
+    </div>
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-faces/facecontrollerusing.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Add a require component for ARFaceManager just before the class definition.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            <code>
+              [RequireComponent(typeof(ARFaceManager))]
+          </code>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-faces/facecontrollerrequire.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Add a [SerializeField] and then create a new private button.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            <code>
+              [SerializeField]
+              <br>
+              private Button swapFacesToggle;
+          </code>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Add a private ARFaceManager called arFaceManager.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            <code>
+              private ARFaceManager arFaceManager;
+          </code>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Add a private integer swapCount, set it to 0.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            <code>
+              private int swapCount = 0;
+          </code>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Add a [SerializeField] and then create a new array for FaceMaterials
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            <code>
+              [SerializeField]
+              public FaceMaterial[] materials;
+          </code>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-faces/facecontrollervariables.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Create a void Awake method.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            <code>
+              void Awake()
+              <br>
+                  {<br>
+                      arFaceManager = GetComponent&lt;ARFaceManager&gt;();
+                        <br>
+                      swapFacesToggle.onClick.AddListener(SwapFaces);
+                      <br>
+                      <br>
+                      arFaceManager.facePrefab.GetComponent&lt;MeshRenderer&gt;().material = materials[0].Material;
+                        <br>
+                  }
+          </code>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-faces/facecontrollerawake.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Create a void SwapFaces() method to switch between faces.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            <code>
+              void SwapFaces()
+              <br>
+                  {<br>
+                      if (swapCount == materials.Length - 1)
+                      <br>
+                      {<br>
+                          swapCount = 0;
+                          <br>
+                      }<br>
+                      else
+                      <br>
+                      {<br>
+                          swapCount++;
+                          <br>
+                      }<br>
+                      <br>
+
+                      foreach (ARFace face in arFaceManager.trackables)
+                      <br>
+                      {<br>
+                          face.GetComponent&lt;MeshRenderer&gt;().material = materials[swapCount].Material;
+                            <br>
+                      }<br>
+                      <br>
+
+                      swapFacesToggle.GetComponentInChildren&lt;Text&gt;().text = $"Face Material ({materials[swapCount].Name})";
+                        <br>
+                  }
+          </code>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-faces/facecontrollerswapfaces.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            After the closing <code>}</code> for the class, create a new class.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            <code>
+              [System.Serializable]
+              <br>
+              public class FaceMaterial
+              <br>
+              {<br>
+                  public Material Material;
+                  <br>
+                  public string Name;
+                  <br>
+              }
+          </code>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-faces/facecontrollerfacematerial.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Save the script.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Back in Unity, open the AR Session Origin.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Drag your button into the button box on the FaceController script.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-faces/swapfacestogglebutton.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Type in the number of materials you have in the Materials Size box.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Drag each material to a box and give each material a name.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-faces/facecontrollermaterial.png">
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Build and Test!
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <!--end contentwidth-->
+
+  <!--Project Complete Banner-->
+  <div class="bannercontainer blue white-text">
+    <div class="last">
+      <a href="ar-lesson-3-augmented-images.html">
+        <button>
+          <div class="arrowleft"></div>
+          <div class="arrowlefttext">
+            last
+            <br>
+            lesson
+          </div>
+        </button>
+      </a>
+    </div>
+    <div class="complete">
+      <h5>
+        Lesson complete! Good job!
+      </h5>
+    </div>
+    <div class="next">
+      <!-- <a href="ar-lesson-4-augmented-faces.html">
+        <button>
+          <div class="arrowrighttext">
+            next
+            <br>
+            lesson
+          </div>
+          <div class="arrowright"></div>
+        </button>
+      </a> -->
+    </div>
+  </div>
+
+  <!--Card: Prompt - Find Another Project-->
+  <div class="contentwidth">
+    <div class="row">
+      <div class="col s2 offset-s2">
+        <div class="card findanotherproject2">
+          <div class="card-content">
+            <div class="cardDescription">
+              <br>
+              <h6>Find another project?</h6>
+              <div class="browse">
+                <a href="ar.html">
+                  <button>Browse all projects</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end contentwidth-->
+</body>
+
+</html>

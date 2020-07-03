@@ -1,0 +1,1479 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <link rel="stylesheet" href="../styleP5.css">
+  <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script src="../main.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="../SBCS_favicon.png">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AR Augmented Images</title>
+</head>
+
+<body>
+  <!--Nav bar  -->
+  <nav class="light-blue lighten-1">
+    <div class="nav-wrapper">
+      <a href="#!"></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="hide-on-med-and-down">
+        <li><a href="../home.html">Home</a></li>
+        <li><a href="../scratch/scratch.html">Ages 7-12</a></li>
+        <li><a href="../techimmersion.html">Ages 13-18</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="../home.html">Home</a></li>
+    <li><a href="../scratch/scratch.html">Ages 7-12</a></li>
+    <li><a href="../techimmersion.html">Ages 13-18</a></li>
+  </ul>
+
+
+  <div class="contentwidth">
+
+    <!-- SETUP THE P5 ENVIRONMENT -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h3 class="maintitle">Augmented Images</h3>
+        <h5 class="p5header">&nbsp;AR&nbsp; Lesson 3</h5>
+      </div>
+    </div>
+
+    <!-- LESSON 1 -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <h6>In this lesson you will:</h6>
+        <ol>
+          <li>Detect images in Augmented Reality space.</li>
+          <li>Place objects on images in Augmented Reality space.</li>
+          <li>Use ARCore, the SDK for Android AR Development.</li>
+        </ol>
+
+        <!-- BACKGROUND INFO -->
+        <h4 class="projectTitle">Background Info</h4>
+        <p>
+          Augmented Reality uses image detection and recognition to allow the user to create a virtual object on top of only specific objects in the real world.
+        </p>
+
+        <!-- HELPFUL LINKS -->
+        <h4 class="projectTitle">Helpful Links</h4>
+        <p>
+          <a href="https://developers.google.com/ar/reference" target="_blank" style="target-new: tab;">Docs</a>: AR Core documentation.
+          <br>
+          <a href="https://developers.google.com/ar/develop/unity/augmented-images/guide
+" target="_blank" style="target-new: tab;">Augmented Images</a>: AR Core Augmented Images documentation.
+          <br>
+          <a href="https://drive.google.com/file/d/1hHpVNaHKWwVSm6wWVwPvqJgWbt8FnD1u/view?usp=sharing" target="_blank" style="target-new: tab;">Image to scan</a>: Download this image to use in your project.
+        </p>
+      </div>
+    </div>
+
+    <!-- GETTING STARTED -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h4 class="largeheading">Project Setup</h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Create a new app by following the instructions in Lesson 0 - Setup.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Import the image(s) you want your app to recognize into the project by dragging them into the Assets folder.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-images/addimage.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Select the image(s), then right click and select Create -> Google ARCore -> Augmented Image Database.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-images/createimagedatabase.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Rename the database something like Augmented Images DB.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-images/renamedb.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Open up the DefaultSessionConfig by going to the ARCore Device and double clicking DefaultSessionConfig.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Under Augmented Images, add the AugmentedImagesDB you just created in the Augmented Image Database slot.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-images/sessionconfig.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Add an Augmented Image Example Controller script to the ARCore Device.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-images/augmentedimagesexamplecontroller.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            In the Augmented Image Visualizer Prefab box add the prefab found in Assets -> Google ARCore -> Examples -> AugmentedImages -> Prefabs.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-images/augmentedimageprefab.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-images/augmentedimagecontrollerprefab.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Add a new empty game object named EventSystem.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-images/eventsystem.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Add an Event System Script to EventSystem.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Set the drag threshold to 5.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-images/eventsystemscript.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Add a Standalone Input Module to EventSystem.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-images/standaloneinputmodule.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h4 class="largeheading">Build and Test</h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Build and Run your app.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Test the app using the photo(s) you added to the Image Database.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            You may need to move the camera close to the image, and then further away to see the prefab show up.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-images/arimageprefab.jpg">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h4 class="largeheading">Adding a Different Prefab</h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Create an Empty Game Object called Pawn.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-images/pawn.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Add a new C# script to this called AugmentedImagePawn.cs.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-images/augmentedimagepawn.png">
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            In this script add the following code.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            <code>
+            using System;
+            <br>
+            using System.Runtime.InteropServices;
+            <br>
+            using GoogleARCore;
+            <br>
+            using GoogleARCoreInternal;
+            <br>
+          </code>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-images/augmentedpawnusing.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Add the following two variables.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            <code>
+            public AugmentedImage Image;
+            <br>
+            public GameObject Object;
+          </code>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-images/augmentedpawnvariables.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Remove the start function.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            In the Update function add the following code.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            <code>
+              if (Image == null || Image.TrackingState != TrackingState.Tracking)
+              <br>
+              {
+                <br>
+              Object.SetActive(false);
+              <br>
+              return;
+              <br>
+              }
+              <br>
+              Object.transform.localPosition = new Vector3();
+              <br>
+              Object.SetActive(true);
+          </code>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-images/augmentedpawnupdate.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Add a Pawn from Assets -> GoogleARCore -> Examples -> Common -> Materials as a child of the Pawn GameObject.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-images/arcorepawnlocation.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-images/pawnchild.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Drag that child into the Object box on the AugmentedImagePawn script on Pawn.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-images/augmentedimagepawnobject.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Drag the Pawn object into the Assets folder to make a prefab, and then delete the object still in the Hierarchy.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-images/pawnprefab.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Create a new script called Augmented Image Controller. Right click in the Assets folder and select Create -> C# Script.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-images/createscript.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Add the following code to the new script.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            <code>
+              using System.Runtime.InteropServices;
+              <br>
+              using GoogleARCore;
+              <br>
+              using UnityEngine.UI;
+
+          </code>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-images/augmentedimagecontrollerusing.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Add a public variable as shown below.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            <code>
+              public AugmentedImagePawn AugmentedImagePrefab;
+          </code>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Add two private variables as shown below.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            <code>
+              private Dictionary&lt;int, AugmentedImagePawn&gt; m_Visualizers = new Dictionary&lt;int, AugmentedImagePawn&gt;();
+              <br>
+              private List&lt;AugmentedImage&gt; m_TempAugmentedImages = new List&lt;AugmentedImage&gt;();
+          </code>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-images/augmentedimagecontrollervariables.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Delete the start method.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Add a public void Awake method.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            <code>
+              public void Awake()
+              <br>
+              {
+                <br>
+                Application.targetFrameRate = 60;
+                <br>
+              }
+          </code>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-images/augmentedimagecontrollerawake.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            In the Update method, add the following code.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            <code>
+              if (Input.GetKey(KeyCode.Escape))
+              <br>{
+                <br>
+              Application.Quit();
+              <br>
+            } <br>
+              if (Session.Status != SessionStatus.Tracking)
+              <br>{
+                <br>
+              Screen.sleepTimeout = SleepTimeout.SystemSetting;
+              <br>
+            }<br>
+              else
+              <br>{
+                <br>
+              Screen.sleepTimeout = SleepTimeout.NeverSleep;
+              <br>
+            }<br>
+            <br>
+              Session.GetTrackables&lt;AugmentedImage&gt;(m_TempAugmentedImages, TrackableQueryFilter.Updated);
+                <br>
+              foreach (var image in m_TempAugmentedImages)
+              <br>{
+                <br>
+              AugmentedImagePawn visualizer = null;
+              <br>
+              m_Visualizers.TryGetValue(image.DatabaseIndex, out visualizer);
+              <br>
+              if (image.TrackingState == TrackingState.Tracking && visualizer == null)
+              <br>{
+                <br>
+              Anchor anchor = image.CreateAnchor(image.CenterPose);
+              <br>
+              Visualizer = (AugmentedImagePawn)Instantiate(AugmentedImagePrefab, anchor.transform);
+              <br>
+              visualizer.Image = image;
+              <br>
+              m_Visualizers.Add(image.DatabaseIndex, visualizer);
+              <br>
+            }<br>
+              else if (image.TrackingState == TrackingState.Stopped && visualizer != null)
+              <br>{
+                <br>
+              m_Visualizers.Remove(image.DatabaseIndex);
+              <br>
+              GameObject.Destroy(visualizer.gameObject);
+              <br>
+            } <br>
+          } <br>
+
+          </code>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-images/augmentedimagecontrollerupdate.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Create a new empty game object called GameController.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-images/gamecontroller.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Add the Augmented Image Controller script to the GameController.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-images/gamecontrollerwithscript.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Drag the Pawn prefab into the Augmented Image Prefab box on the Augmented Image Controller Script.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-images/gamecontrollerwithpawn.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- LARGE HEADING -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h4 class="largeheading">Build and Run</h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Run your app and test to make sure that it recognizes your image and generates the prefab.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Turn off the original prefab by deactivating the Augmented Image Example Controller on the ARCore Device.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-images/deactivateexamplecontroller.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            You may also want to resize the pawn.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Double click the pawn prefab to open it, then adjust the scale of the pawn model.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div>
+          <img class="inlineexamples" src="ar-images/augmented-images/resizepawn.png">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Run your app and test until the size is what you want it to be.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!--end contentwidth-->
+
+  <!--Project Complete Banner-->
+  <div class="bannercontainer blue white-text">
+    <div class="last">
+      <a href="ar-lesson-2-exploring-ar-elements.html">
+        <button>
+          <div class="arrowleft"></div>
+          <div class="arrowlefttext">
+            last
+            <br>
+            lesson
+          </div>
+        </button>
+      </a>
+    </div>
+    <div class="complete">
+      <h5>
+        Lesson complete! Good job!
+      </h5>
+    </div>
+    <div class="next">
+      <a href="ar-lesson-4-augmented-faces.html">
+        <button>
+          <div class="arrowrighttext">
+            next
+            <br>
+            lesson
+          </div>
+          <div class="arrowright"></div>
+        </button>
+      </a>
+    </div>
+  </div>
+
+  <!--Card: Prompt - Find Another Project-->
+  <div class="contentwidth">
+    <div class="row">
+      <div class="col s2 offset-s2">
+        <div class="card findanotherproject2">
+          <div class="card-content">
+            <div class="cardDescription">
+              <br>
+              <h6>Find another project?</h6>
+              <div class="browse">
+                <a href="ar.html">
+                  <button>Browse all projects</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end contentwidth-->
+</body>
+
+</html>
