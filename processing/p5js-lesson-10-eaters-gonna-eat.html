@@ -1,0 +1,2767 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <!-- Compiled and minified CSS -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <link rel="stylesheet" href="../styleP5.css">
+  <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script src="../main.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="../SBCS_favicon.png">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eaters Gonna Eat</title>
+</head>
+<body>
+
+  <!--Nav bar  -->
+  <nav class="light-blue lighten-1">
+    <div class="nav-wrapper">
+      <a href="#!"></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="hide-on-med-and-down">
+        <li><a href="../home.html">Home</a></li>
+        <li><a href="../scratch/scratch.html">Ages 7-12</a></li>
+        <li><a href="../techimmersion.html">Ages 13-18</a></li>
+      </ul>
+    </div>
+  </nav>
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="../home.html">Home</a></li>
+    <li><a href="../scratch/scratch.html">Ages 7-12</a></li>
+    <li><a href="../techimmersion.html">Ages 13-18</a></li>
+  </ul>
+
+  <div class="contentwidth">
+
+    <!-- Eaters Gonna Eat -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h3 class="maintitle">
+          Eaters Gonna Eat
+        </h3>
+        <h5 class="p5header">
+          &nbsp; p5.js &nbsp; LESSON 10
+        </h5>
+      </div>
+    </div>
+
+    <!-- LESSON 9 -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <h6>In this lesson you will:</h6>
+        <ol>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ol>
+
+        <!-- BACKGROUND INFO -->
+        <h4 class="projectTitle">Where We Left Off</h4>
+        <p>
+          Fill in
+        </p>
+
+        <!-- HELPFUL LINKS -->
+        <h4 class="projectTitle">Helpful Links</h4>
+        <p>
+          <a href="https://editor.p5js.org/" target="_blank" style="target-new: tab;">Editor</a>: the online p5.js editor <br>
+          <a href="https://p5js.org/reference/" target="_blank" style="target-new: tab;">Reference</a>: documentation for all things in p5.js
+          <br>
+          <a href="http://bit.ly/p5jsLesson10" target="_blank">Lesson 10 starter</a>: A rather heavily modified continuation of Lesson 9.
+        </p>
+      </div>
+    </div>
+
+    <!-- GETTING STARTED -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h4 class="largeheading">
+          Getting Started
+        </h4>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            We start again with some updated starter code. As you peruse the code, you’ll notice a new file called <em>environment.js</em> that has a new class in it called <em>Pointer</em>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Take a look at this class. See how we have extended <em>Ball</em> to take advantage of <em>Ball.moveWithMouse()</em>? We have a custom <em>constructor()</em> and <em>draw()</em> method to give us the behavior we want.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            We are also <em>translating</em> the origin (0,0) to the center of the canvas requiring a bit of acrobatics to get right but will really pay off.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            If you look in <em>sketch.js</em>, you’ll see that instead of moving toward the mouse pointer <code>player.aim = createVector(mouseX,mouseY);</code>, we are moving toward the position of <em>pointer</em> <code>pointer.pos</code>, though we have to offset it by our translation, so we are making a new vector. This keeps our ghostly pointer on the canvas at all times so our character doesn’t suddenly stop moving if we move too far.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L10/translateInDraw.png" alt="translate function and player.aim in draw()">
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            When you run this code, you’ll see the bouncing faces have been taken out to eliminate distraction. The code to bounce them around the canvas has also been removed, and since our bounds will extend past the edges of the screen, the <em>keepInBounds()</em> method in <em>Ball</em> has been renamed <em>keepOnCanvas()</em>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Finally, the biggest difference is that a <em>momentum</em> vector has been added that makes our guy slide around in a more fluid way.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            All that out of the way, let’s get to adding some code instead of discussing what’s already there.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- Spawn of Seitan -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h4 class="largeheading">
+          Spawn of Seitan
+        </h4>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            In order to make this something like [Agar.io](agar.io), we need to have some bits of food we can eat and some bad guys who can eat us. We’ll begin with some palatable pellets that will make our player grow in size.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Switch to <em>agents.js</em>. After the <em>Player</em> class is a <em>Pellet</em> class header. Declare a <em>Pellet</em> class that extends <em>Ball</em> beneath it.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- HINT -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="hintcontent">
+          <h6 class="hintheader">
+            Hover for a while to reveal a hint
+          </h6>
+          <h5>
+            Put <code>class Pellet extends Ball {}</code>
+          </h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Add the <em>constructor()</em> as the first thing in the body. Give it no parameters.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- HINT -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="hintcontent">
+          <h6 class="hintheader">
+            Hover for a while to reveal a hint
+          </h6>
+          <h5>
+            Put <code>constructor() {}</code>
+          </h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Like we have done with <em>Player</em> and <em>Pointer</em>, we are customizing the constructor to make it easier for us to declare them. We are again taking advantage of object-oriented programming (OOP) by exposing what we want to expose and hiding what we don’t.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Now call the parent constructor.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- HINT -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="hintcontent">
+          <h6 class="hintheader">
+            Hover for a while to reveal a hint
+          </h6>
+          <h5>
+            The parent class is the superclass, so we call <em>super()</em> which gives us <em>Ball()</em>. Put <code>super();</code> in <em>constructor()</em>.
+          </h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            We need <em>look</em>, <em>position</em>, <em>size</em>, and <em>speed</em> for the parent constructor, but we are going to want our pellets to respawn after being eaten. If we made a <em>spawn()</em> method that we could call to initialize each pellet and then call it again once eaten — that cuts down on the amount of duplicate code we have to write.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            We can call <em>super()</em> with empty values and <em>then</em> call <em>spawn()</em> to fill them. Put <code>super();</code>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- INFO -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="infocontent">
+          <h6>
+            For this to work, check out the <em>constructor()</em> for <em>Ball</em>. The parameters that are expected to be vectors have been wrapped in an <em>if</em> statement to check to see if they are indeed <em>instances of</em> p5.Vector. If it is true, they will have <em>x</em> and <em>y</em> attributes and <em>copy()</em> methods that we can call. Otherwise, it leaves them undefined.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Let’s make a <em>spawn()</em> method for our pellets. Write <code>this.spawn();</code> in the <em>constructor()</em>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Then put <code>spawn() {}</code> below the constructor.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            On the first line in <em>spawn()</em>, we can give an array of <em>colors</em> that we then choose at <em>random()</em> when spawning our pellet. Put <code>this.look = random(PELLET_COLORS);</code>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- INFO -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="infocontent">
+          <h6>
+            <code>PELLET_COLORS</code> is an array that has been defined in <em>environment.js</em>. We have created this array as a constant, but it should be noted that within this more complicated structure, we can change the values of the elements inside. It’s another one of JavaScript’s oddities that doesn’t impact us because we won’t even attempt to change it, but it’s worth knowing about. All of our SCREAMING_SNAKE_CASE constants, whether quasi-constant arrays or definitely constant primitives, have been defined in <em>environment.js</em>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Next we set the size to one of our new constants, PELLET_SIZE, like so: <code>this.size = PELLET_SIZE;</code>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Your partially completed <em>Pellet</em> class should look something like this:
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L10/partialPelletClass.png" alt="the partially implemented Pellet class">
+        </div>
+      </div>
+    </div>
+
+    <!-- A Little Help from My Friends -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h5 class="subheading">
+          A Little Help from My Friends
+        </h5>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            For the position of our pellet, we are going to use a <strong>helper function</strong> to give us a random position. Put <code>this.pos = createRandVector(CANVAS_SIZE - this.size);</code> on the next line. This <em>createRandVector()</em> function is not built-in. We have to make it.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- INFO -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="infocontent">
+          <h6>
+            Whenever we are going to use the same bit of code more than once, especially if it’s a bit tricky, we can write a small function that does the trick, making our lives easier in the process. <strong>Helper functions</strong> are these little utilities that take the tricky out of trick. They <em>help</em> us do little things like calculating the area of a circle, filling an array with values, or as we need in this case, generating a random vector.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Take a look at <em>environment.js</em>. Under the banner <em>Helper Functions</em>, <em>createRandVector()</em> has been declared with no implementation. It won’t do us any good if we don’t complete it.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            To get a random vector, we need to know the range of values that we will give it. Because our range is going to end up being square and we are setting the center of this square at <em>(0,0)</em>, we only need one value to pass in. Put <code>range</code> in the parentheses for the parameter.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Let’s assume that range is the entire width of the area, so we need to cut it in two like we do the radius. Write that on the first line.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- HINT -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="hintcontent">
+          <h6 class="hintheader">
+            Hover for a while to reveal a hint
+          </h6>
+          <h5>
+            Put <code>range = range / 2;</code>.
+          </h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Now we must create a vector and return it. Usually we declare a variable to catch any vector we create, but in this case, we can just return what we get from <em>createVector()</em>. Place <code>return createVector(randomX, randomY);</code> on the next line.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Note that <code>randomX</code> and <code>randomY</code> are just placeholders. What were are going to replace them with is long, so put them on their own lines.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L10/partialCreateRandVector.png" alt="partially implemented createRandVector() helper function">
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Now all we need is to is get a random value from <code>-range</code> up to <code>range</code>. Substitute <code>randomX</code> and <code>randomY</code> each with the code that does that.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- HINT IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="hintcontent">
+          <h6 class="hintheader">
+            Hover for a while to reveal a hint
+          </h6>
+          <h5>
+            <code>random(-range, range)</code>
+          </h5>
+          <div class="hintinline">
+            <a href="p5images/L10/createRandVector.png" target="_blank" style="target-new: tab;">
+              <img src="p5images/L10/createRandVector.png" alt="completed createRandVector() helper function">
+            </a>
+            <p>
+              <br>
+            </p>
+          </div>
+          <p class="hintheader">
+            Click when image appears to open in a new tab
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            To wrap up the <em>spawn()</em> method back in <em>agents.js</em>, let’s give our pellets a speed of zero: <code>this.speed = createVector(0,0);</code>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L10/spawnMethod.png" alt="implemented spawn() method">
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            We gotta make sure it shows up. In <em>sketch.js</em> declare a variable <code>pellet</code> and then make it an instance of <em>Pellet</em> by putting <code>pellet = new Pellet();</code> in <em>setup()</em>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Next put <code>pellet.draw()</code> before we draw the player in <em>draw()</em>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- HINT IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="hintcontent">
+          <h6 class="hintheader">
+            Hover for a while to reveal a hint
+          </h6>
+          <h5>
+
+          </h5>
+          <div class="hintinline">
+            <a href="p5images/L10/pelletSetupDraw.png" target="_blank" style="target-new: tab;">
+              <img src="p5images/L10/pelletSetupDraw.png" alt="pellet in setup() and draw()">
+            </a>
+            <p>
+              <br>
+            </p>
+          </div>
+          <p class="hintheader">
+            Click when image appears to open in a new tab
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Run it a few times to make sure it shows up in different places.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tasty Morsels -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h4 class="largeheading">
+          Tasty Morsels
+        </h4>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Now that we have a bit of food, let’s have a meal. We need to know when our player is grabbing a snack on the go — when it collides with a pellet. For a collision to happen, they need to touch, right?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Since everything here is a circle, let’s think about how we can tell when two circles are touching. The definition of a circle is just a continuous curve drawn at precisely one distance from a single point — that distance we call the <em>radius</em>, that point, the <em>center</em>. Our circle positions are the center. So no matter the sizes of the circles in question, if we add the radius of each one together and find that it’s greater than the distance from their centers, the circles must be overlapping.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            What is the method we used last lesson that can tell us the distance between the two vectors? Pythagoras had something to do with it.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- HINT -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="hintcontent">
+          <h6 class="hintheader">
+            Hover for a while to reveal a hint
+          </h6>
+          <h5>
+            It’s <em>p5.Vector.dist()</em> which we can call like so <code>distanceBetweenVectors = someVector.dist(otherVector)</code>.
+          </h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Before we get to using this method, we need a new method to use it, one to detect a collision between the food pellet and the player. Since this will be useful for any ball and face, let’s put it in <em>Ball</em>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Go to <em>shapes.js</em> and put <code>isCollision(other) {}</code> at the end of the <em>Ball</em> class.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Notice how we put <em>is</em> in the name of the method. This method is going to check whether it has collided with the other and just return a <em>boolean</em> value — <em>true</em> or <em>false</em>. Putting that <em>is</em> making it sound like a question in broken English is often how we name boolean functions.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            So let’s return a value. We could check a condition to see if they are touching then return <em>true</em> if true, otherwise return <em>false</em>. But what if we just returned the result of the condition? In the body of <em>isCollision()</em>, put <code>return condition;</code>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Now we need to see if the distance between the centers is less than the sum of the two radiuses, which can get by adding sizes and dividing by two. In place of <code>condition</code> put the following:
+            <pre><code>
+                  this.pos.dist(other.pos) <
+                    (this.size + other.size) / 2;
+                    </code></pre>
+            (This is broken into two lines so it doesn’t have a hard-to-read line break.)
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L10/isCollision.png" alt="result in isCollision()">
+        </div>
+      </div>
+    </div>
+
+    <!-- INFO -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="infocontent">
+          <h6>
+            In computer programming, you’ll often hear of a <em>wrapper function</em> where the purpose of a function is just make another function easier to deal with without changing any calculations within it — kind of like a wrapper encloses a piece of candy. The candy is the same either way, but the one without the wrapper is often pretty gross. We can broaden that definition to think of this method as a wrapper around our candy condition.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Now that we have our condition, let’s do something when they collide. Declare a new method called <em>collidesWith()</em> in <em>Ball</em> right beneath <em>isCollision()</em> and give it the parameter <em>other</em>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- HINT -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="hintcontent">
+          <h6 class="hintheader">
+            Hover for a while to reveal a hint
+          </h6>
+          <h5>
+            Put <code>collidesWith(other) {}</code>.
+          </h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            In this method, we check to if they collide using the boolean method we just wrote: <code>if (this.isCollision(other)) {}</code>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Inside the body of this <em>if</em> is where all the magic will happen. We don’t need an <em>else</em> because there is nothing we want to do when there is no collision — the method will just end.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Now we need to check to see which one is bigger. Put the following in the <em>if</em> we just made:
+
+                  if (this.area > other.area * 1.5) {
+                    this.consumes(other);
+                  } else if (other.area > this.area * 1.5) {
+                    other.consumes(this);
+                  }
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sizing Up the Area -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h5 class="subheading">
+          Sizing Up the Area
+        </h5>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Did you notice that an <em>area</em> property appeared in <em>Ball</em>? That was one of the nips and tucks. But right now we don’t have a way to calculate the area. It’s time to fill out a few more <em>helper functions</em>. Switch over to <em>environment.js</em>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            We have two functions here: one to convert from a circle’s size to an area and another to do the reverse. We just need to implement them.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            The formula for calculating the area of a circle is:
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L10/areaFormula.png" alt="circle size to area formula">
+        </div>
+      </div>
+    </div>
+
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            In p5, this would be <code>area = PI * r * r</code>.  (<code>PI</code> is a built-in constant.)
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Since <em>r</em> is half of the <em>size</em>, put the following in the body <em>circleSizeToArea</em>:
+            <pre><code>
+                  let r = size / 2;
+                  return PI * r * r;
+            </code></pre>
+            To go from <em>area</em> to <em>size</em> is a little trickier. First we need to find <em>r</em> by doing rearranging our formula. Divide <em>A</em> by <em>π</em>:
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L10/divideByPi.png" alt="divide area formula by pi">
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Then we take the square root of both sides giving us a plain old <em>r</em> which we flip to the left side:
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L10/sizeFormula.png" alt="circle area to size formula">
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            In p5, this is <code>r = sqrt(area / PI)</code>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            And then we double it to get the size, returning it like so:
+            <pre><code>
+                  let r = sqrt(area / PI);
+                  return r * 2;
+                  </code></pre>
+            Now that we have these helper functions, we can calculate how much we change the size rather easily.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Due to a peculiar bug encountered in the implementation of this game, calculating the area in the constructor did not work as expected. It’s rather vexing, but these things happen.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            For this reason, there is a <em>setArea()</em> method in <em>Ball</em> that we need to call in <em>sketch.js</em>. Put <code>player.setArea();</code> and <code>pellet.setArea();</code> in <em>setup()</em> after we call their constructors. Sometimes you just have to hack around obstacles.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L10/setArea.png" alt="set the area of player and pellet in setup()">
+        </div>
+      </div>
+    </div>
+
+    <!-- Conspicuous Consumption -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h5 class="subheading">
+          Conspicuous Consumption
+        </h5>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            That takes care of the area, but what about this <em>consumes()</em> method: <code>this.consumes(other)</code> and <code>other.consumes(this)</code>? It also needs to be implemented.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Declare a new <em>consumes()</em> method in <em>Ball</em> right beneath <em>collidesWith()</em>. Give it one parameter called <em>other</em>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            In the body of the method, copy and paste this code:
+            <pre><code>
+            let diffArea = this.area - other.area;
+            diffArea = min(diffArea, other.area);
+
+            this.area += diffArea;
+            other.area -= diffArea;
+
+            this.size = circleAreaToSize(this.area);
+            other.size = circleAreaToSize(other.area);
+                  </code></pre>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L10/consumesMethod.png" alt="consumes() method implementation">
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            All that this code does is find the difference in sizes, checking with <em>min()</em> that the difference is not greater than the one being eaten, and adding it to the eater.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Back in <em>sketch.js</em>, we need to check if the player collides with the pellet. Put <code>player.collidesWith(pellet);</code> after we move but before we draw, then run it.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L10/playerCollides.png" alt="player collides with pellet">
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Does the player eat the pellet?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Next step is to respawn our pellet when it is eaten. We can do this by checking the size of the pellet. If it is zero, we call our <em>spawn()</em> and <em>setArea()</em> methods.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Because we are drawing every frame, we can create a <em>draw()</em> method in <em>Pellet</em> that does this check and then calls <em>super.draw()</em>. Give it a shot.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Test your attempt. If it doesn’t work, try a few other things before looking at the hint.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- HINT -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="hintcontent">
+          <h6 class="hintheader">
+            Hover for a while to reveal a hint
+          </h6>
+          <h5>
+            <pre><code>
+            draw()
+            {
+              if (this.size == 0)
+              {
+                this.spawn();
+                this.setArea();
+              }
+              super.draw();
+            }
+            </code></pre>
+          </h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- See an Enemy, Sea Anemone -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h4 class="largeheading">
+          See an Enemy, Sea Anemone
+        </h4>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Eating is no fun without friends. So let’s get one. Copy the entire <em>Pellet</em> class and paste it beneath. We will turn this into our “friends”.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Rename the class <em>Enemy</em>, and instead of <em>Ball</em>, have it inherit from <em>Face</em>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L10/enemyCopy.png" alt="Enemy copy of Pellet">
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            In <em>Enemy.spawn()</em>, set the look to random <code>ENEMY_LOOKS</code>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Let’s set the size to a random value based on the player’s size. Fortunately, there is a constant  <code>PLAYER_SIZE</code> specifically for this purpose. Try a third the size to one-and-a-half times larger.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- HINT -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="hintcontent">
+          <h6 class="hintheader">
+            Hover for a while to reveal a hint
+          </h6>
+          <h5>
+            Put <code>this.size = random(PLAYER_SIZE / 3, PLAYER_SIZE * 1.5);</code>
+          </h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            For our enemy position, this one is a bit trickier than just choosing a random location. Put    <code>this.pos = spawnPosition(this.size, PLAYER_SIZE * 2);</code> to finish up <em>Enemy.spawn()</em>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Now all that’s left is implementing that last helper function in <em>environment.js</em> called <em>spawnPosition()</em>. It starts off like so:
+            <pre><code>
+                function spawnPosition(
+                  size,
+                  spawnDist = PLAYER_SIZE * 1.5,
+                  range = CANVAS_SIZE,
+                  center = createVector(0, 0)
+                ) {}
+                </code></pre>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            We have four parameters, three of which have defaults that we’ll use.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            On the first line in implementation, declare a variable called <code>pos</code> for the vector we’ll create.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- HINT -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="hintcontent">
+          <h6 class="hintheader">
+            Hover for a while to reveal a hint
+          </h6>
+          <h5>
+            Put <code>let pos;</code> on its own line just after the opening curly.
+          </h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            We eventually want to return this vector. Give yourself a few empty lines and then return <code>pos</code>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- HINT -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="hintcontent">
+          <h6 class="hintheader">
+            Hover for a while to reveal a hint
+          </h6>
+          <h5>
+            It’s literally just <code>return pos;</code>.
+          </h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            What happens on those empty lines will finish up this lesson…
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- Just out of Reach -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h5 class="subheading">
+          Just out of Reach
+        </h5>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            We don’t want the enemies to spawn in right where our character is, so we need to check to see whether the random position we gave it is too close to our guy.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Think about the play area as a dart board — we randomly throw a dart, but unlike darts, we need to avoid the bullseye. It would take a lot of effort to move the dart to just outside the bullseye, so we can just throw another dart.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Something like:
+            <pre><code>
+                if (posTooCloseToCenter) {
+                  pos = newRandomPos;
+                }
+            </code></pre>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Even though <code>posToCloseToCenter</code>, <code>pos</code>, and <code>newRandomPos</code> don’t actually exist, we can put them in as placeholders. So go ahead and copy and paste that bit of code after the parent constructor.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Before we change those into something valid, take a moment to think about what happens if we hit the bullseye twice in a row? Or three times in a row? Or a hundred times in a row? Increasingly unlikely — yes — but not strictly speaking <em>impossible</em>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            What is the name of the kind of statement that repeats an unspecified number of times?
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- HINT -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="hintcontent">
+          <h6 class="hintheader">
+            Hover for a while to reveal a hint
+          </h6>
+          <h5>
+            The kind of statement we are looking for is a <em>loop</em>. The loop that most closely resembles an <em>if</em> is a <em>while-loop</em>.
+          </h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            At this point — be sure save now. Even better may be to turn on the <em>autosave</em> feature found in the gear in the upper right until we get this code functioning properly. This kind of statement can send the browser into an unending loop for a long while — hint, hint — requiring us force-quit the tab and maybe even the browser. <strong>All unsaved data will be lost</strong>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Replace <code>if</code> with the keyword for the statement we want.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- HINT -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="hintcontent">
+          <h6 class="hintheader">
+            Hover for a while to reveal a hint
+          </h6>
+          <h5>
+            Put <code>while</code> in place of <code>if</code>.
+          </h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Now we need <code>v</code> to <em>catch</em> the vector that <em>createRandVector()</em> returns. Put <code>v = createRandVector(range - size)</code>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            That concludes the body of our loop. What about the condition? We can use <em>p5.Vector.dist()</em> attached to <em>this.pos</em> and give it the origin vector <code>(0,0)</code> which will give us the distance from center to center.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Put <code>v.dist(center)</code> inside the parentheses that surround the condition.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Now we need to compare it to see if it is less than some minimum distance we define. Check to see if it is less than <code>spawnDist</code>. If that is the case, we want a new vector for our position which is exactly what the body does.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- HINT -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="hintcontent">
+          <h6 class="hintheader">
+            Hover for a while to reveal a hint
+          </h6>
+          <h5>
+            You’ll end up with <code>v.dist(createVector(0,0)) &lt; spawnDist</code> in the parentheses.
+          </h5>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            No matter what, we need to throw at least <em>one</em> dart at the canvas, right? We don’t want a plain old <em>while-loop</em>. We want a <em>do-loop</em>, also known as a <em>do-while</em>. Put both the <em>while</em> keyword and its condition immediately <em>after</em> the closing brace.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Where those were, put the keyword <em>do</em>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L10/spawnPositionDo.png" alt="spawnPosition() do-loop">
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Let’s check to see that it works. Put <code>print(v);</code> as the last thing in the <em>do-loop</em>. The number of times it prints will be the number of metaphorical darts it threw.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            <strong>Now save your sketch.</strong>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Because you have all the information you need to follow these directions, there won’t be explicit instructions. Just translate the English explanation into code.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            In <em>sketch.js</em>, declare <em>enemy</em> along with <em>player</em>, <em>pellet</em>,  and <em>pointer</em>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Instantiate it with the constructor just like those others.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Again, we must resort to this <em>setArea()</em> method hack with <em>pellet</em> and <em>player</em>.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Now in <em>draw()</em>, call <em>player’s</em> <em>collidesWith()</em> method taking <em>enemy</em> as a parameter.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Finally, just before we draw the player, draw the enemy.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            <strong>Save your sketch again.</strong> Then run the code.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L10/enemyPos1.png" alt="enemy position in console">
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L10/enemyPos2.png" alt="another enemy position in console">
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            If you have errors, fix them. If you don’t see anything in the console and the browser becomes unresponsive and the computer attempts to blast off, try to force quit the tab or the browser. If you don’t see anything and everything goes as expected, review the code in this hint:
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- HINT IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="hintcontent">
+          <h6 class="hintheader">
+            Hover for a while to reveal a hint
+          </h6>
+          <h5>
+
+          </h5>
+          <div class="hintinline">
+            <a href="p5images/L10/enemyClass.png" target="_blank" style="target-new: tab;">
+              <img src="p5images/L10/enemyClass.png" alt="enemy class code">
+            </a>
+            <p>
+              <br>
+            </p>
+          </div>
+          <p class="hintheader">
+            Click when image appears to open in a new tab
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- HINT IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="hintcontent">
+          <h6 class="hintheader">
+            Hover for a while to reveal a hint
+          </h6>
+          <h5>
+
+          </h5>
+          <div class="hintinline">
+            <a href="p5images/L10/enemyDeclaration.png" target="_blank" style="target-new: tab;">
+              <img src="p5images/L10enemyDeclaration.png" alt="enemy declaration">
+            </a>
+            <p>
+              <br>
+            </p>
+          </div>
+          <p class="hintheader">
+            Click when image appears to open in a new tab
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- HINT IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="hintcontent">
+          <h6 class="hintheader">
+            Hover for a while to reveal a hint
+          </h6>
+          <h5>
+
+          </h5>
+          <div class="hintinline">
+            <a href="p5images/L10/enemySetup.png" target="_blank" style="target-new: tab;">
+              <img src="p5images/L10/enemySetup.png" alt="enemy setup() code">
+            </a>
+            <p>
+              <br>
+            </p>
+          </div>
+          <p class="hintheader">
+            Click when image appears to open in a new tab
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            If everything works, comment out the <em>print()</em> statments because of the lag they cause.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPLANATORY STEP -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Now we have an enemy that can consume us and a pellet that we can consume.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- INFO -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="infocontent">
+          <h6>
+            You made it to the end for the penultimate time. You rock! <strong>Here is <a href="http://bit.ly/p5jsLesson10final" target="_blank">the code</a> that ends this lesson.</strong>  Play with it. Make sure yours looks similar.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- Time to Take a Walk -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h4 class="largeheading">
+          Time to Take a Walk
+        </h4>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            We are reaching the end. There is still so much to play with, but your mind likely could use some <em>not coding</em> before then.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            If the weather is nice, take a walk outside, preferably in a wooded area away from the sound of cars and other people.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Doodle, color, draw, or paint, preferably with tangible atoms, but a tablet will do.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Write in a journal various game ideas or things that you want to make.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- CHECKBOX STEP -->
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Read or listen to a good book.
+
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+</div>
+<!--Project Complete Banner-->
+<div class="bannercontainer blue white-text">
+  <div class="last">
+    <a href="p5js-lesson-9-secret-agent-man.html">
+      <button>
+        <div class="arrowleft"></div>
+        <div class="arrowlefttext"> last <br> lesson </div>
+      </button>
+    </a>
+  </div>
+  <div class="complete">
+    <h5> Lesson complete! </h5>
+  </div>
+  <div class="next">
+    <a href="p5js-lesson-11-this-one-goes-to-11.html">
+        <button>
+          <div class="arrowrighttext">
+            next
+            <br>
+            lesson
+          </div>
+          <div class="arrowright"></div>
+        </button>
+      </a>
+  </div>
+</div>
+<!--Card: Prompt - Find Another Project-->
+<div class="contentwidth">
+  <div class="row">
+    <div class="col s2 offset-s2">
+      <div class="card findanotherproject2">
+        <div class="card-content">
+          <div class="cardDescription">
+            <br>
+            <h6>Find another project?</h6>
+            <div class="browse">
+              <a href="p5js.html">
+                <button>Browse all projects</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
