@@ -58,16 +58,16 @@
       <div class="col s8 offset-s2">
         <h6>In this lesson you will:</h6>
         <ol>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>Adjust collision code to make agents bounce off each other.</li>
+          <li>Use linear interpolation to make the gameplay smoother.</li>
+          <li>Speed up game play by adjusting what all is drawn during gameplay.</li>
+          <li>Finish up the game!</li>
         </ol>
 
         <!-- BACKGROUND INFO -->
         <h4 class="projectTitle">Where We Left Off</h4>
         <p>
-          Fill in
+          Last time we added enemies and food to the game, and wrote code to manage agent interactions. 
         </p>
 
         <!-- HELPFUL LINKS -->
@@ -783,6 +783,8 @@ let distance = this.pos.dist(other.pos);
       </div>
     </div>
 
+
+
     <!-- CHECKBOX STEP -->
     <div class="row">
       <div class="col s1 offset-s1">
@@ -913,6 +915,15 @@ let distance = this.pos.dist(other.pos);
           <h6>
             When you have it all done, hit that <em>run</em> button, and give it another whirl!
           </h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L11/obstructCode.png" alt="code for the obstruct method">
         </div>
       </div>
     </div>
@@ -1214,10 +1225,10 @@ for(let i = 0; i < nEnemies - 1; i++) {
           <h6>
             In the ordered pairs above, <code>i</code> is the <em>first</em> number. We are going to need <em>another</em> loop for the second number we’ll call <code>j</code>:</p>
             <pre><code>
-              for (let j = ?; j &lt; nEnemies; j++)
-              {
-              // we check collisions here
-            }
+for (let j = ?; j &lt; nEnemies; j++)
+  {
+// we check collisions here
+  }
             </code></pre>
             Put this for loop inside the first for loop.
           </h6>
@@ -1281,7 +1292,7 @@ for(let i = 0; i < nEnemies - 1; i++) {
           <h6>
             Now all that we need to do is check for collisions at element <code>i</code> with element <code>j</code>:
             <pre><code>
-    enemies[i].collideWith(enemies[j]);
+enemies[i].collideWith(enemies[j]);
             </code></pre>
           </h6>
         </div>
@@ -1353,7 +1364,7 @@ for(let i = 0; i < nEnemies - 1; i++) {
           <h6>
             Now just after we check the collision, put:
             <pre><code>
-              nAlive -= countStats(enemies[i], enemies[j]);
+nAlive -= countStats(enemies[i], enemies[j]);
             </code></pre>
           </h6>
         </div>
@@ -1438,15 +1449,15 @@ for(let i = 0; i < nEnemies - 1; i++) {
           <h6>
             A similar set of loops happens with <em>reactTo()</em>. Go ahead and put this in its spot in the <em>action()</em> function of <em>sketch.js</em>:
             <pre><code>
-      for (let i = 0; i < nEnemies; i++) {
-       for (let pellet of pellets) {
-         enemies[i].reactTo(pellet);
-       }
-       for (let j = i + 1; j < nEnemies; j++) {
-         enemies[i].reactTo(enemies[j]);
-       }
-       enemies[i].reactTo(player);
-     }
+for (let i = 0; i < nEnemies; i++) {
+  for (let pellet of pellets) {
+   enemies[i].reactTo(pellet);
+ }
+ for (let j = i + 1; j < nEnemies; j++) {
+   enemies[i].reactTo(enemies[j]);
+ }
+ enemies[i].reactTo(player);
+}
 
             </code></pre>
           </h6>
@@ -1725,6 +1736,16 @@ else {
       </div>
     </div>
 
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L11/pursueCode.png" alt="pursue code">
+        </div>
+      </div>
+    </div>
+
+
     <!-- CHECKBOX STEP -->
     <div class="row">
       <div class="col s1 offset-s1">
@@ -1788,6 +1809,16 @@ if (this.pos.dist(pred.pos) <
         </div>
       </div>
     </div>
+
+    <!-- IMAGE -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <div class="inlineshadow">
+          <img src="p5images/L11/escapeCode.png" alt="escape code">
+        </div>
+      </div>
+    </div>
+
 
     <!-- To Draw, or not to Draw -->
     <div class="row">
