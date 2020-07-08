@@ -1105,6 +1105,56 @@ input[type='checkbox'] {
   background-size: contain;
 }
 
+/* Processing p5js Images */
+
+#p5setupBG{
+  background-image: url('./processing/p5images/card-images/setup.png');
+}
+
+#p5lesson1BG{
+  background-image: url('./processing/p5images/card-images/lesson1.png');
+}
+
+#p5lesson2BG{
+  background-image: url('./processing/p5images/card-images/lesson2.png');
+}
+
+#p5lesson3BG{
+  background-image: url('./processing/p5images/card-images/lesson3.png');
+}
+
+#p5lesson4BG{
+  background-image: url('./processing/p5images/card-images/lesson4.gif');
+}
+
+#p5lesson5BG{
+  background-image: url('./processing/p5images/card-images/lesson5.gif');
+}
+
+#p5lesson6BG{
+  background-image: url('./processing/p5images/card-images/lesson6.gif');
+}
+
+#p5lesson7BG{
+  background-image: url('./processing/p5images/card-images/lesson7.gif');
+}
+
+#p5lesson8BG{
+  background-image: url('./processing/p5images/card-images/lesson8.gif');
+}
+
+#p5lesson9BG{
+  background-image: url('./processing/p5images/card-images/lesson9.gif');
+}
+
+#p5lesson10BG{
+  background-image: url('./processing/p5images/card-images/lesson10.png');
+}
+
+#p5lesson11BG{
+  background-image: url('./processing/p5images/card-images/lesson11.png');
+}
+
 /* =================================================================================================================================HOME PAGE CARD============================================================ */
 .agesHeading {
   text-align: center;
