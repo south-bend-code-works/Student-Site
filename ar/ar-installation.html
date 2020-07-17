@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <link rel="stylesheet" href="../styleP5.css">
+  <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script src="../main.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="../SBCS_favicon.png">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AR Installation Instructions</title>
+</head>
+
+<body>
+  <!--Nav bar  -->
+  <nav class="light-blue lighten-1">
+    <div class="nav-wrapper">
+      <a href="#!"></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="hide-on-med-and-down">
+        <li><a href="../home.html">Home</a></li>
+        <li><a href="../scratch/scratch.html">Ages 7-12</a></li>
+        <li><a href="../techimmersion.html">Ages 13-18</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="../home.html">Home</a></li>
+    <li><a href="../scratch/scratch.html">Ages 7-12</a></li>
+    <li><a href="../techimmersion.html">Ages 13-18</a></li>
+  </ul>
+
+
+  <div class="contentwidth">
+
+    <!-- SETUP THE P5 ENVIRONMENT -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h3 class="maintitle">Installation Instructions</h3>
+      </div>
+    </div>
+
+    <!-- LESSON 1 -->
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <h6>In this resource you will:</h6>
+        <ol>
+          <li>Install Unity and the necessary packages for AR development.</li>
+          <li>Prepare your mobile device for AR development.</li>
+        </ol>
+
+        <!-- HELPFUL LINKS -->
+        <h4 class="projectTitle">Helpful Links</h4>
+        <p>
+          <a href="https://developers.google.com/ar/discover/supported-devices" target="_blank" style="target-new: tab;">Supported Devices</a>: A list of mobile devices that support ARCore.
+        </p>
+      </div>
+    </div>
+
+    <!-- GETTING STARTED -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h4 class="largeheading">Computer Installation</h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Download <a href="https://unity3d.com/get-unity/download" target="_blank">Unity </a>from Unity. Get version 2019.3.x or later.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Install Unity.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Include Visual Studio Community
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Include Android Build Support
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div class="stepcontent">
+          <h6>
+            Be sure to install the JDK and NDK under Android (click drop down to install both with the Android Build Support)
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Include Universal Windows Platform Build Support.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Include Documentation
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- LARGE HEADING -->
+    <div class="row">
+      <div class="col s8 offset-s1">
+        <h4 class="largeheading">Mobile Setup</h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Make sure your mobile device is on the list of <a href="https://developers.google.com/ar/discover/supported-devices" target="_blank">supported devices</a> for ARCore.
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            On your mobile device, enable <a href="https://developer.android.com/studio/debug/dev-options" target="_blank">developer options.</a>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Enable <a href="https://www.howtogeek.com/129728/how-to-access-the-developer-options-menu-and-enable-usb-debugging-on-android-4.2/#:~:text=To%20enable%20Developer%20Options%2C%20open,times%20to%20enable%20Developer%20Options" target="_blank">USB debugging.</a>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="col s8">
+        <div class="stepcontent">
+          <h6>
+            Get started with <a href="./ar-lesson-0-setup.html">Lesson 0.</a>
+          </h6>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <!--end contentwidth-->
+
+  <!--Project Complete Banner-->
+  <div class="bannercontainer blue white-text">
+    <div class="last">
+      <!-- <a href="">
+        <button>
+          <div class="arrowleft"></div>
+          <div class="arrowlefttext">
+            last
+            <br>
+            lesson
+          </div>
+        </button>
+      </a> -->
+    </div>
+    <div class="complete">
+      <h5>
+        Lesson complete! Good job!
+      </h5>
+    </div>
+    <!-- <div class="next">
+      <a href="ar-lesson-1-object-placement.html">
+        <button>
+          <div class="arrowrighttext">
+            next
+            <br>
+            lesson
+          </div>
+          <div class="arrowright"></div>
+        </button>
+      </a>
+    </div> -->
+  </div>
+
+  <!--Card: Prompt - Find Another Project-->
+  <div class="contentwidth">
+    <div class="row">
+      <div class="col s2 offset-s2">
+        <div class="card findanotherproject2">
+          <div class="card-content">
+            <div class="cardDescription">
+              <br>
+              <h6>Find another project?</h6>
+              <div class="browse">
+                <a href="ar.html">
+                  <button>Browse all projects</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end contentwidth-->
+</body>
+
+</html>
