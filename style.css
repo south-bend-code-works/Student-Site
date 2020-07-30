@@ -275,6 +275,14 @@ input[type='checkbox'] {
   background-image: url('./scratch/scratch-images/functions-how-to.png');
 }
 
+#variables-scratchBG{
+  background-image: url('./scratch/scratch-images/variableHowToBG.png');
+}
+
+#lists-scratchBG{
+  background-image: url('./scratch/scratch-images/listHowToBG.png');
+}
+
 #aboutMeBG {
   background-image: url('./scratch/scratch-images/aboutme.gif');
 }
