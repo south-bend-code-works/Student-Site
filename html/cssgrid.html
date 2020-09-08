@@ -16,7 +16,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="../SBCS_favicon.png">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Friend-O-Gram</title>
+    <title>Intro to CSS Grid</title>
   </head>
 
   <body>
@@ -41,7 +41,7 @@
 
     <div class="row">
       <div class="col s6 offset-s3">
-        <h4 style="font-weight:bold;"><center>Friend-o-gram</center></h4>
+        <h4 style="font-weight:bold;"><center>Intro to CSS Grid</center></h4>
       </div>
     </div>
 
@@ -49,16 +49,88 @@
       <div class="col s6 offset-s2">
         <h6>In this lesson you will:</h6>
         <ol>
-          <li>Make your own collage of your friends and things you like!</li>
+          <li>Learn to use CSS Grid.</li>
+          <li>Arrange divs on your page using a grid.</li>
+          <li>Finally solve the frustrating problem of placing items next to each other on a web page.</li>
         </ol>
         <h4 class="projectTitle">What You Will Make</h4>
-        <iframe allowtransparency="true" width="705" height="602" src="https://s3-us-west-2.amazonaws.com/southbendcodeschool.com/student_sites/Legion/Jahleel/grid/index+(6).html" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://Monopoly.kristenhaubold.repl.co" width="50%" height="400px"></iframe>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 style="font-weight:bold;">Get Started!</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>If you are using repl.it, make a new repl.</h6>
+          </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Head over to <a href="https://css-tricks.com/snippets/css/css-grid-starter-layouts/" target="_blank">CSS-Tricks</a> to see some basic CSS Grid layouts.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>The basic idea we need to understand is that a grid is made of rows and columns.</h6>
+          <h6>Think of a chess/checkers board. It has 8 rows (horizontal) and 8 columns (vertical).</h6>
+          <h6>CSS Grid uses a grid to organize items on a web page.</h6>
+        </div>
       </div>
     </div>
 
     <div class="row">
       <div class="col s6 offset-s1">
-        <h5 style="font-weight:bold;">Brainstorm</h5>
+        <h5 style="font-weight:bold;">HTML</h5>
       </div>
     </div>
 
@@ -77,35 +149,7 @@
         </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h6>Pick out 6 photos of you and your friends.</h6>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s6 offset-s1">
-        <h5 style="font-weight:bold;">Your Coding Environment</h5>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-        </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h6>Make a new folder in the code folder on your computer.</h6>
-          <br>
-          <h6>Name the folder <span style="font-weight:bold;">"YourFirstName_Friendogram"</span></h6>
+          <h6>Inside your repl, open up the index.html file.</h6>
         </div>
       </div>
     </div>
@@ -125,7 +169,25 @@
         </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h6>Create a HTML file.</h6>
+          <h6>Copy and paste the following code inside the body of your page.</h6>
+        <em>  &lt;div class="board"&gt; <br>
+  &lt;div class="square"&gt;1&lt;/div&gt; <br>
+  &lt;div class="square"&gt;2&lt;/div&gt; <br>
+  &lt;div class="square"&gt;3&lt;/div&gt; <br>
+  &lt;div class="square"&gt;4&lt;/div&gt; <br>
+  &lt;div class="square"&gt;5&lt;/div&gt; <br>
+  &lt;div class="square"&gt;6&lt;/div&gt; <br>
+  &lt;div class="square"&gt;7&lt;/div&gt; <br>
+  &lt;div class="square"&gt;8&lt;/div&gt; <br>
+  &lt;div class="square"&gt;9&lt;/div&gt; <br>
+  &lt;div class="square"&gt;10&lt;/div&gt; <br>
+  &lt;div class="square"&gt;11&lt;/div&gt; <br>
+  &lt;div class="square"&gt;12&lt;/div&gt; <br>
+  &lt;div class="square"&gt;13&lt;/div&gt; <br>
+  &lt;div class="square"&gt;14&lt;/div&gt; <br>
+  &lt;div class="square"&gt;15&lt;/div&gt; <br>
+  &lt;div class="square"&gt;16&lt;/div&gt; <br>
+&lt;/div&gt; </em>
         </div>
       </div>
     </div>
@@ -145,7 +207,9 @@
         </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h6>Name the HTML file "index.html"</h6>
+          <h6>Each of these divs will become a box on our monopoly board. </h6>
+
+          </div>
         </div>
       </div>
     </div>
@@ -165,240 +229,11 @@
         </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h6>Set up your HTML file (doctype, html, head, title, body)</h6>
+          <h6>Once we see our webpage, we will replace the numbers with our own property names for our monopoly board.</h6>
         </div>
       </div>
     </div>
 
-    <!--Collapsible-->
-    <div class="row">
-      <div class="col s6 offset-s2">
-        <ul class="collapsible">
-         <li>
-           <div class="collapsible-header"><i class="material-icons orange-text infosection">info</i>I need a hint</div>
-           <div class="collapsible-body"><span>&lt;!DOCTYPE html&gt;
-             <br>
-             &lt;html&gt;
-             <br>
-             <span style="padding-left:5%;">&lt;head&gt;</span>
-             <br>
-             <span style="padding-left:7%;">&lt;title&gt;</span>
-             <br>
-             <span style="padding-left:7%;">&lt;/title&gt;</span>
-             <br>
-             <span style="padding-left:5%;">&lt;/head&gt;</span>
-             <br>
-             <span style="padding-left:5%;">&lt;body&gt;</span>
-             <br>
-             <span style="padding-left:5%;">&lt;/body&gt;</span>
-             <br>
-             &lt;/html&gt;
-           </span></div>
-         </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-        </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h6>Create a CSS file.</h6>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-        </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h6>Name the CSS file "style.css".</h6>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col s1 offset-s1">
-        <div class="checkbox">
-          <form action="#">
-              <p>
-                <label>
-                  <input type="checkbox" />
-                  <span></span>
-                </label>
-              </p>
-            </form>
-          </div>
-        </div>
-      <div class="col s6">
-        <div class="projectsection1">
-          <h6>Link your CSS file to your HTML file.</h6>
-        </div>
-      </div>
-    </div>
-
-    <!--Collapsible-->
-    <div class="row">
-      <div class="col s6 offset-s2">
-        <ul class="collapsible">
-         <li>
-           <div class="collapsible-header"><i class="material-icons orange-text infosection">info</i>I need a hint</div>
-           <div class="collapsible-body"><span><img style="width:60%; height:60%;" src="./html-images/linkcss.png"></span></div>
-         </li>
-        </ul>
-      </div>
-    </div>
-
-  <div class="row">
-    <div class="col s6 offset-s1">
-      <h5 style="font-weight:bold;">Divs</h5>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-            <p>
-              <label>
-                <input type="checkbox" />
-                <span></span>
-              </label>
-            </p>
-          </form>
-        </div>
-      </div>
-    <div class="col s6">
-      <div class="projectsection1">
-        <h6>Use the &lt;div&gt; tag to divide your website into six squares.</h6>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s6 offset-s2">
-      <img style="width:60%; height:60%;" src="./html-images/boxes.png">
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-            <p>
-              <label>
-                <input type="checkbox" />
-                <span></span>
-              </label>
-            </p>
-          </form>
-        </div>
-      </div>
-    <div class="col s6">
-      <div class="projectsection1">
-        <h6>The grid is made up of 2 rows and 3 columns.</h6>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-            <p>
-              <label>
-                <input type="checkbox" />
-                <span></span>
-              </label>
-            </p>
-          </form>
-        </div>
-      </div>
-    <div class="col s6">
-      <div class="projectsection1">
-        <h6>Create 2 divs. <br><br>Give them a class.<br><br> Name the classes "row".</h6>
-        <br>
-        <h6 style="font-weight:bold;">&lt;div class "row"&gt; &lt;/div&gt;</h6>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-            <p>
-              <label>
-                <input type="checkbox" />
-                <span></span>
-              </label>
-            </p>
-          </form>
-        </div>
-      </div>
-    <div class="col s6">
-      <div class="projectsection1">
-        <h6>Inside each row &lt;div&gt; there are three boxes.</h6>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-            <p>
-              <label>
-                <input type="checkbox" />
-                <span></span>
-              </label>
-            </p>
-          </form>
-        </div>
-      </div>
-    <div class="col s6">
-      <div class="projectsection1">
-        <h6>Create three divs, <span style="font-weight:bold;">each with a different #id</span>, inside of each row &lt;div&gt;</h6>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s6 offset-s2">
-      <img style="width:40%; height:40%;" src="./html-images/divboxes.png">
-    </div>
-  </div>
-
-
-  <div class="row">
-    <div class="col s6 offset-s2 projectsection1">
-      <h6>Your code should look like this:</h6>
-      <br>
-      <img style="width:50%; height:50%;padding-left:4%;" src="./html-images/sixboxes.png">
-    </div>
-  </div>
 
   <div class="row">
     <div class="col s6 offset-s1">
@@ -421,7 +256,7 @@
       </div>
     <div class="col s6">
       <div class="projectsection1">
-        <h6>You'll notice that our grid should have a border.</h6>
+        <h6>Open up style.css.</h6>
       </div>
     </div>
   </div>
@@ -441,25 +276,269 @@
       </div>
     <div class="col s6">
       <div class="projectsection1">
-        <h6>Add a border to each #id.</h6>
+        <h6>Add the following code to your css file.</h6>
+        <h6><em>.board { <br>
+  display: grid; <br>
+  justify-content: center; <br>
+  align-content: center; <br>
+  grid-gap: 1rem; <br>
+  grid-template-columns: repeat(5, 10vw); <br>
+  grid-template-rows: repeat(5, 10vw);</em> <br>
+}</h6>
       </div>
     </div>
   </div>
 
-  <!--Collapsible Div-->
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>This code for the board class implements CSS Grid.</h6>
+        <h6>It is using 5 rows and 5 columns to make a simple grid.</h6>
+        <h6>Which part of the code indicates the number of rows and columns?</h6>
+      </div>
+    </div>
+  </div>
+
+
   <div class="row">
     <div class="col s6 offset-s2">
       <ul class="collapsible">
          <li>
-           <div class="collapsible-header"><i class="material-icons orange-text">help</i>
-             I need a hint</div>
-           <div class="collapsible-body"><span>To learn how to make borders, <a href="https://www.w3schools.com/css/css_border.asp"><span style="color:#00BFFF">click here</span></a></span></div>
+           <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>Hint</div>
+           <div class="collapsible-body"> <em>grid-template-rows</em> and <em>grid-template-columns</em> </div>
+         </li>
+      </ul>
+    </div>
+  </div>
+
+
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Let's style our divs a bit more. Add the following code:</h6>
+        <h6><em>.square { <br>
+  background: #bfdbae; <br>
+  text-align: center; <br>
+  display: flex; <br>
+  align-items: center; <br>
+  justify-content: center; </em><br>
+}</h6>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>This colors our divs, and centers the text in each div. </h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Now we need to arrange our properties in a square around the edge of the page. </h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Add this code:</h6>
+        <h6><em>.square:nth-child(1) { <br>
+  grid-row: 1; <br>
+  grid-column: 1; <br>
+  border: black 5px dashed;</em><br>
+}</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>This code styles the 1st child of square. I.e. the first div with the class square. </h6>
+        <h6>That div is put in row 1 and column 1.</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Save the code and run to see what it looks like.</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>The second child of square will be similar, try adding the following code:</h6>
+        <h6><em>.square:nth-child(2) { <br>
+  grid-row: 1; <br>
+  grid-column: 2;</em> <br>
+}<br></h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Finish adding code for each square, indicating which row and column it should be in.</h6>
+        <h6>Look at the finished product above if you need a hint.</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <ul class="collapsible">
+         <li>
+           <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>Hint</div>
+           <div class="collapsible-body"> You will use the following row and column pairs: <br>
+           Row 1, Column 1 <br>
+         Row 1, Column 2 <br>
+       Row 1, Column 3 <br>
+     Row 1, Column 4 <br>
+   Row 1, Column 5 <br>
+ Row 2, Column 5 <br>
+Row 3, Column 5 <br>
+Row 4, Column 5 <br>
+Row 5, Column 5 <br>
+Row 5, Column 4 <br>
+Row 5, Column 3 <br>
+Row 5, Column 2 <br>
+Row 5, Column 1 <br>
+Row 4, Column 1 <br>
+Row 3, Column 1 <br>
+Row 2, Column 1 <br> </div>
          </li>
       </ul>
     </div>
   </div>
 
   <div class="row">
+    <div class="col s6 offset-s1">
+      <h5 style="font-weight:bold;">Customizing the Properties</h5>
+    </div>
+  </div>
+
+  <div class="row">
     <div class="col s1 offset-s1">
       <div class="checkbox">
         <form action="#">
@@ -474,7 +553,7 @@
       </div>
     <div class="col s6">
       <div class="projectsection1">
-        <h6>Each box needs a width and height.</h6>
+        <h6>Now let's customize our monopoly properties!</h6>
       </div>
     </div>
   </div>
@@ -494,7 +573,7 @@
       </div>
     <div class="col s6">
       <div class="projectsection1">
-        <h6>Use CSS to add width and height to the class="row".</h6>
+        <h6>Inside index.html, replace the numbers in each div with the monopoly property name you'd like to use.</h6>
       </div>
     </div>
   </div>
@@ -514,21 +593,8 @@
       </div>
     <div class="col s6">
       <div class="projectsection1">
-        <h6>Use CSS to add width and height to each box's #id.</h6>
+        <h6>Now head back to style.css, and let's add some property colors.</h6>
       </div>
-    </div>
-  </div>
-
-  <!--Collapsible Div-->
-  <div class="row">
-    <div class="col s6 offset-s2">
-      <ul class="collapsible">
-         <li>
-           <div class="collapsible-header"><i class="material-icons orange-text">help</i>
-             I need a hint</div>
-           <div class="collapsible-body"><span><img style="width:70%; height:70%;" src="./html-images/divsidsclasses.png"></span></div>
-         </li>
-      </ul>
     </div>
   </div>
 
@@ -547,15 +613,77 @@
       </div>
     <div class="col s6">
       <div class="projectsection1">
-        <h6>To line all of the boxes next to each other, you’ll need a new bit of code.</h6>
-        <h6> Add this code to each #id in CSS <br><br> <span style="font-weight:bold; padding-left:2%;">display: {inline-block;}</span></h6>
+        <h6>To add a colored bar like at the top of a monopoly property, we will use a border.</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Try adding the following code inside one of your squares:</h6>
+        <h6><em>border-bottom: blue 10px solid;</em></h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6><em>border-bottom</em> adds a border at the bottom of a div.</h6>
+        <h6><em>border-top</em> adds a border at the top.</h6>
+        <h6> <em>border-left</em> and <em>border-right</em> add borders on the left and right sides of a div. </h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Use borders to add colored bars like the monopoly properties to your board.</h6>
       </div>
     </div>
   </div>
 
   <div class="row">
     <div class="col s6 offset-s1">
-      <h5 style="font-weight:bold;">Add Photos</h5>
+      <h5 style="font-weight:bold;">Just for fun!</h5>
     </div>
   </div>
 
@@ -574,55 +702,7 @@
       </div>
     <div class="col s6">
       <div class="projectsection1">
-        <h6>Finally, you can add an image to each square with background-images.</h6>
-      </div>
-    </div>
-  </div>
-
-  <!--Collapsible Div-->
-  <div class="row">
-    <div class="col s6 offset-s2">
-      <ul class="collapsible">
-         <li>
-           <div class="collapsible-header"><i class="material-icons orange-text">help</i>
-             I need a hint</div>
-           <div class="collapsible-body"><span><img style="width:100%; height:100%;" src="./html-images/backgroundstylecss.png"></span></div>
-         </li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s6 offset-s1">
-      <h5 style="font-weight:bold;">Hover Effect</h5>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-            <p>
-              <label>
-                <input type="checkbox" />
-                <span></span>
-              </label>
-            </p>
-          </form>
-        </div>
-      </div>
-    <div class="col s6">
-      <div class="projectsection1">
-        <h6>Find the div that you want to add a hover effect to.</h6>
-        <br>
-        <h6>Let’s say that you want to add a hover effect to id <span style="font-weight:bold;">#box1</span>:</h6>
-        <br>
-        <h6>#box1 {</h6>
-        <h6>background-color: black;</h6>
-        <h6>color: white;</h6>
-        <h6>padding: 20px;</h6>
-        <h6>border: 2px solid green;</h6>
-        <h6>width: 100%;}</h6>
+        <h6>Can you add a div in the center of the board that says Monopoly?</h6>
       </div>
     </div>
   </div>
@@ -642,21 +722,7 @@
       </div>
     <div class="col s6">
       <div class="projectsection1">
-        <h6>Make a Copy of that #id so that there are two in CSS</h6>
-        <br>
-        <h6>#box1 {</h6>
-        <h6>background-color: black;</h6>
-        <h6>color: white;</h6>
-        <h6>padding: 20px;</h6>
-        <h6>border: 2px solid green;</h6>
-        <h6>width: 100%;}</h6>
-        <br>
-        <h6>#box1 {</h6>
-        <h6>background-color: black;</h6>
-        <h6>color: white;</h6>
-        <h6>padding: 20px;</h6>
-        <h6>border: 2px solid green;</h6>
-        <h6>width: 100%;}</h6>
+        <h6>Can you add a background image to the GO square?.</h6>
       </div>
     </div>
   </div>
@@ -676,95 +742,12 @@
       </div>
     <div class="col s6">
       <div class="projectsection1">
-        <h6>Change the characteristics of 1 of the #ids</h6>
-        <br>
-        <h6>#box1 {</h6>
-        <h6>background-color: black;</h6>
-        <h6>color: white;</h6>
-        <h6>padding: 20px;</h6>
-        <h6>border: 2px solid green;</h6>
-        <h6>width: 100%;}</h6>
-        <br>
-        <h6 style="color:limegreen;">#box1 {</h6>
-        <h6 style="color:limegreen;">background-color: red;</h6>
-        <h6 style="color:limegreen;">color: blue;</h6>
-        <h6 style="color:limegreen;">padding: 20px;</h6>
-        <h6 style="color:limegreen;">border: 2px solid green;</h6>
-        <h6 style="color:limegreen;">width: 80%;}</h6>
+        <h6>Can you make your board bigger than 5 x 5?</h6>
       </div>
     </div>
   </div>
 
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-            <p>
-              <label>
-                <input type="checkbox" />
-                <span></span>
-              </label>
-            </p>
-          </form>
-        </div>
-      </div>
-    <div class="col s6">
-      <div class="projectsection1">
-        <h6>Add <span style="font-weight:bold;">:hover</span> to the #id that you want to change when you hover over the square</h6>
-        <br>
-        <h6>#box1 {</h6>
-        <h6>background-color: black;</h6>
-        <h6>color: white;</h6>
-        <h6>padding: 20px;</h6>
-        <h6>border: 2px solid green;</h6>
-        <h6>width: 100%;}</h6>
-        <br>
-        <h6 style="color:limegreen;">#box1<span style="font-weight:bold;">:hover</span> {</h6>
-        <h6 style="color:limegreen;">background-color: red;</h6>
-        <h6 style="color:limegreen;">color: blue;</h6>
-        <h6 style="color:limegreen;">padding: 20px;</h6>
-        <h6 style="color:limegreen;">border: 2px solid green;</h6>
-        <h6 style="color:limegreen;">width: 80%;}</h6>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-            <p>
-              <label>
-                <input type="checkbox" />
-                <span></span>
-              </label>
-            </p>
-          </form>
-        </div>
-      </div>
-    <div class="col s6">
-      <div class="projectsection1">
-        <h6>If the change happens too quickly, you can add <span style="font-weight:bold;">transition time</span></h6>
-        <br>
-        <h6>#box1 {</h6>
-        <h6>background-color: black;</h6>
-        <h6>color: white;</h6>
-        <h6>padding: 20px;</h6>
-        <h6>border: 2px solid green;</h6>
-        <h6>width: 100%;</h6>
-        <h6 style="color:limegreen;">transition: 2s;}</h6>
-        <br>
-        <h6>#box1<span style="font-weight:bold;">:hover</span> {</h6>
-        <h6>background-color: red;</h6>
-        <h6>color: blue;</h6>
-        <h6>padding: 20px;</h6>
-        <h6>border: 2px solid green;</h6>
-        <h6>width: 80%;}</h6>
-      </div>
-    </div>
-  </div>
-
-  <br>
+<br>
 
   <div class="row blue white-text">
     <div class="col s4 offset-s4">
@@ -791,6 +774,11 @@
         </div>
       </div>
     </div>
+
+
+
+
+
 
   </body>
 </html>
