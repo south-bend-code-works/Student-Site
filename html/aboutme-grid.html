@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="../main.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="../SBCS_favicon.png">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>About Me with Grid</title>
+  </head>
+
+  <body>
+    <!--Nav bar  -->
+    <nav class="light-blue lighten-1">
+      <div class="nav-wrapper">
+        <a href="#!"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="hide-on-med-and-down">
+          <li><a href="../home.html">Home</a></li>
+          <li><a href="../scratch/scratch.html">Ages 7-12</a></li>
+          <li><a href="../techimmersion.html">Ages 13-18</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="../home.html">Home</a></li>
+      <li><a href="../scratch/scratch.html">Ages 7-12</a></li>
+      <li><a href="../techimmersion.html">Ages 13-18</a></li>
+    </ul>
+
+    <div class="row">
+      <div class="col s6 offset-s3">
+        <h4 style="font-weight:bold;"><center>About Me with Grid</center></h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <h6>In this lesson you will:</h6>
+        <ol>
+          <li>Learn to use CSS Grid.</li>
+          <li>Arrange divs on your page using a grid.</li>
+          <li>Revise your About Me page to use CSS Grid.</li>
+        </ol>
+        <h4 class="projectTitle">What You Will Make</h4>
+        <iframe src="https://About-Me-with-Grid.kristenhaubold.repl.co" width="100%" height="500px"></iframe>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 style="font-weight:bold;">Get Started!</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>If you are using repl.it, make a new repl.</h6>
+          </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Head over to <a href="https://css-tricks.com/snippets/css/css-grid-starter-layouts/" target="_blank">CSS-Tricks</a> to see some basic CSS Grid layouts.</h6>
+          <h6>In this example, we are using the Flexible 2 Column Layout with Header and Footer.</h6>
+          <h6>You can use a different layout if you'd like.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>The basic idea we need to understand is that a grid is made of rows and columns.</h6>
+          <h6>Think of a chess/checkers board. It has 8 rows (horizontal) and 8 columns (vertical).</h6>
+          <h6>CSS Grid uses a grid to organize items on a web page.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Our grid for this project will just have three rows and two columns.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 style="font-weight:bold;">HTML</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Inside your repl, open up the index.html file.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Copy and paste the following code inside the body of your page.</h6>
+        <em>  &lt;header&gt; <br>
+  Header <br>
+&lt;/header&gt; <br>
+&lt;main&gt; <br>
+  Main <br>
+&lt;/main&gt; <br>
+&lt;aside&gt; <br>
+  Sidebar <br>
+&lt;/aside&gt; <br>
+&lt;footer&gt; <br>
+  Footer <br>
+&lt;/footer&gt; <br>
+</em>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>These sections will make up our page. </h6>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>You will transfer your information from your old About Me page into this one.</h6>
+        </div>
+      </div>
+    </div>
+
+
+  <div class="row">
+    <div class="col s6 offset-s1">
+      <h5 style="font-weight:bold;">CSS</h5>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Open up style.css.</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Add the following code to your css file.</h6>
+        <h6><em>
+          body { <br>
+            display: grid; <br>
+            grid-template-columns: 75% 25%; /* adjust column size here */ <br>
+            grid-template-rows: 10vw 30vw 10vw; /* adjust row height here */ <br>
+            grid-gap: 1em; <br>
+            font-family: Arial, Helvetica, sans-serif; <br>
+          } <br>
+</em></h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>This code sets up our grid using two columns and three rows.</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Now we will make our header and footer extend across both columns.</h6>
+        <h6><em>header, <br>
+footer { <br>
+  grid-column: 1 / span 2; <br>
+}</em><br>
+</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <ul class="collapsible">
+         <li>
+           <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>Hint</div>
+           <div class="collapsible-body"> <em>grid-column: 1 / span 2;</em> tells the header and footer to start in column 1 and span across two columns. </div>
+         </li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Now let's add some colors and spacing. Put the following code inside style.css. </h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6> <em>
+          header, <br>
+  main, <br>
+  aside, <br>
+  footer { <br>
+    background: #6babe0; <br>
+    display: flex; <br>
+    align-items: center; <br>
+    justify-content: center; <br>
+  } <br>
+</em> </h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>This gives our sections a background color, and sets the alignment and justification of content.</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Feel free to adjust the colors, and add any <em>padding</em> or <em>margins</em> to the sections as you see fit.</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Save the code and run to see what it looks like.</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Now add your content to the page! Start with your name in the header.</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Maybe add an image of yourself in the aside.</h6>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col s6 offset-s1">
+      <h5 style="font-weight:bold;">Style it up!</h5>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Dive into the CSS and style your page as you'd like it!</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>You can use different colors, fonts, etc...</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Try adding lists and links inside the index.html file.</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Embed some videos into the main section.</h6>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Adjust your content and styling until it's just how you want it!</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s6 offset-s1">
+      <h5 style="font-weight:bold;">Just for fun!</h5>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Try adding another row into your page.</h6>
+        <h6>Add another two sections in HTML, and then change the number of rows in CSS.</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Try adding a background image to one section.</h6>
+      </div>
+    </div>
+  </div>
+
+
+<br>
+
+  <div class="row blue white-text">
+    <div class="col s4 offset-s4">
+      <h5 style="text-align:center;">Congrats! Project complete!</h5>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--card 1 -->
+    <div class="col s4 offset-s4">
+      <div class="card findanotherproject">
+        <div class="card-content">
+          <div class="cardDescription">
+            <h6>Find another project?</h6>
+            <a href="techimmersion.html">
+            <div class="browse">
+              <br>
+              <a href="techimmersion.html">
+                <button>Browse all projects</button>
+              </a>
+            </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+  </body>
+</html>
