@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="../main.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="../SBCS_favicon.png">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Friend-O-Gram with Grid</title>
+  </head>
+
+  <body>
+    <!--Nav bar  -->
+    <nav class="light-blue lighten-1">
+      <div class="nav-wrapper">
+        <a href="#!"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="hide-on-med-and-down">
+          <li><a href="../home.html">Home</a></li>
+          <li><a href="../scratch/scratch.html">Ages 7-12</a></li>
+          <li><a href="../techimmersion.html">Ages 13-18</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="../home.html">Home</a></li>
+      <li><a href="../scratch/scratch.html">Ages 7-12</a></li>
+      <li><a href="../techimmersion.html">Ages 13-18</a></li>
+    </ul>
+
+    <div class="row">
+      <div class="col s6 offset-s3">
+        <h4 style="font-weight:bold;"><center>Friend-o-gram with Grid</center></h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <h6>In this lesson you will:</h6>
+        <ol>
+          <li>Make your own collage of your friends and things you like!</li>
+          <li>Use CSS Grid to arrange your images.</li>
+        </ol>
+        <h4 class="projectTitle">What You Will Make</h4>
+        <iframe allowtransparency="true" width="705" height="602" src="https://s3-us-west-2.amazonaws.com/southbendcodeschool.com/student_sites/Legion/Jahleel/grid/index+(6).html" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 style="font-weight:bold;">Brainstorm</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Pick out 6 photos of you and your friends.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 style="font-weight:bold;">Your Coding Environment</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Create a new repl.it workspace for HTML, CSS, JS.</h6>
+        </div>
+      </div>
+    </div>
+
+
+  <div class="row">
+    <div class="col s6 offset-s1">
+      <h5 style="font-weight:bold;">Divs</h5>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Use the &lt;div&gt; tag to make one div, with the class name "wrapper".</h6>
+      </div>
+    </div>
+  </div>
+
+  <!--Collapsible Div-->
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <ul class="collapsible">
+         <li>
+           <div class="collapsible-header"><i class="material-icons orange-text">help</i>
+             I need a hint</div>
+           <div class="collapsible-body"> &lt;div class="wrapper"&gt; &lt;/div&gt; </div>
+         </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Inside the wrapper div, use the &lt;div&gt; tag to divide your website into six divs.</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <img style="width:60%; height:60%;" src="./html-images/boxes.png">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Our grid is made up of 2 rows and 3 columns.</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Give each div a unique id, like "one", "two", "three", etc...</h6>
+      </div>
+    </div>
+  </div>
+
+  <!--Collapsible Div-->
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <ul class="collapsible">
+         <li>
+           <div class="collapsible-header"><i class="material-icons orange-text">help</i>
+             I need a hint</div>
+           <div class="collapsible-body"> &lt;div id="one"&gt; &lt;/div&gt; </div>
+         </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s6 offset-s1">
+      <h5 style="font-weight:bold;">CSS</h5>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Head over to the style.css page.</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Add the wrapper class to the css file by using <em>.wrapper{ }</em> </h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Turn on CSS grid by using <em>display: grid;</em>, and set the number of rows and columns using <em>grid-template-rows</em> and <em>grid-template-columns</em> </h6>
+      </div>
+    </div>
+  </div>
+
+  <!--Collapsible Div-->
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <ul class="collapsible">
+         <li>
+           <div class="collapsible-header"><i class="material-icons orange-text">help</i>
+             I need a hint</div>
+           <div class="collapsible-body"><em>.wrapper{ <br>
+             display: grid; <br>
+             grid-template-rows: 30vw 30vw; <br>
+             grid-template-columns: repeat(3, 1fr); <br>
+           }</em></div>
+         </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Add a <em>grid-gap</em> of your choosing.</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Add a css selector for each id.</h6>
+        <h6>#one{ }</h6>
+        <h6>#two{ }</h6>
+        <h6>etc...</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Set the row and column value for each id.</h6>
+        <h6> <em>grid-column: 1; <br>
+        grid-row: 1; </em> </h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s6 offset-s1">
+      <h5 style="font-weight:bold;">Add Photos</h5>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>To set the background images, use the background-image property and give each div a background image.</h6>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!--Collapsible Div-->
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <ul class="collapsible">
+         <li>
+           <div class="collapsible-header"><i class="material-icons orange-text">help</i>
+             I need a hint</div>
+           <div class="collapsible-body"><span><img style="width:100%; height:100%;" src="./html-images/backgroundstylecss.png"></span></div>
+         </li>
+      </ul>
+    </div>
+  </div>
+
+  <!--Collapsible Div-->
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <ul class="collapsible">
+         <li>
+           <div class="collapsible-header"><i class="material-icons orange-text">help</i>
+             I need a hint</div>
+           <div class="collapsible-body"><em>#one{ <br>
+             grid-row: 1; <br>
+             grid-column: 1; <br>
+             background-image: url('yourImagePath.png'); <br>
+             background-size: cover; <br>
+           }</em></div>
+         </li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col s6 offset-s1">
+      <h5 style="font-weight:bold;">Hover Effect</h5>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Find the div that you want to add a hover effect to.</h6>
+        <br>
+        <h6>Let’s say that you want to add a hover effect to id <span style="font-weight:bold;">#box1</span>:</h6>
+        <br>
+        <h6>#box1 {</h6>
+        <h6>background-color: black;</h6>
+        <h6>color: white;</h6>
+        <h6>padding: 20px;</h6>
+        <h6>border: 2px solid green;</h6>
+        <h6>width: 100%;}</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Make a Copy of that #id so that there are two in CSS</h6>
+        <br>
+        <h6>#box1 {</h6>
+        <h6>background-color: black;</h6>
+        <h6>color: white;</h6>
+        <h6>padding: 20px;</h6>
+        <h6>border: 2px solid green;</h6>
+        <h6>width: 100%;}</h6>
+        <br>
+        <h6>#box1 {</h6>
+        <h6>background-color: black;</h6>
+        <h6>color: white;</h6>
+        <h6>padding: 20px;</h6>
+        <h6>border: 2px solid green;</h6>
+        <h6>width: 100%;}</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Change the characteristics of 1 of the #ids</h6>
+        <br>
+        <h6>#box1 {</h6>
+        <h6>background-color: black;</h6>
+        <h6>color: white;</h6>
+        <h6>padding: 20px;</h6>
+        <h6>border: 2px solid green;</h6>
+        <h6>width: 100%;}</h6>
+        <br>
+        <h6 style="color:limegreen;">#box1 {</h6>
+        <h6 style="color:limegreen;">background-color: red;</h6>
+        <h6 style="color:limegreen;">color: blue;</h6>
+        <h6 style="color:limegreen;">padding: 20px;</h6>
+        <h6 style="color:limegreen;">border: 2px solid green;</h6>
+        <h6 style="color:limegreen;">width: 80%;}</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Add <span style="font-weight:bold;">:hover</span> to the #id that you want to change when you hover over the square</h6>
+        <br>
+        <h6>#box1 {</h6>
+        <h6>background-color: black;</h6>
+        <h6>color: white;</h6>
+        <h6>padding: 20px;</h6>
+        <h6>border: 2px solid green;</h6>
+        <h6>width: 100%;}</h6>
+        <br>
+        <h6 style="color:limegreen;">#box1<span style="font-weight:bold;">:hover</span> {</h6>
+        <h6 style="color:limegreen;">background-color: red;</h6>
+        <h6 style="color:limegreen;">color: blue;</h6>
+        <h6 style="color:limegreen;">padding: 20px;</h6>
+        <h6 style="color:limegreen;">border: 2px solid green;</h6>
+        <h6 style="color:limegreen;">width: 80%;}</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>If the change happens too quickly, you can add <span style="font-weight:bold;">transition time</span></h6>
+        <br>
+        <h6>#box1 {</h6>
+        <h6>background-color: black;</h6>
+        <h6>color: white;</h6>
+        <h6>padding: 20px;</h6>
+        <h6>border: 2px solid green;</h6>
+        <h6>width: 100%;</h6>
+        <h6 style="color:limegreen;">transition: 2s;}</h6>
+        <br>
+        <h6>#box1<span style="font-weight:bold;">:hover</span> {</h6>
+        <h6>background-color: red;</h6>
+        <h6>color: blue;</h6>
+        <h6>padding: 20px;</h6>
+        <h6>border: 2px solid green;</h6>
+        <h6>width: 80%;}</h6>
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="row blue white-text">
+    <div class="col s4 offset-s4">
+      <h5 style="text-align:center;">Congrats! Project complete!</h5>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--card 1 -->
+    <div class="col s4 offset-s4">
+      <div class="card findanotherproject">
+        <div class="card-content">
+          <div class="cardDescription">
+            <h6>Find another project?</h6>
+            <a href="techimmersion.html">
+            <div class="browse">
+              <br>
+              <a href="techimmersion.html">
+                <button>Browse all projects</button>
+              </a>
+            </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
