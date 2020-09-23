@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="../main.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="../SBCS_favicon.png">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Calendar with CSS Grid</title>
+  </head>
+
+  <body>
+    <!--Nav bar  -->
+    <nav class="light-blue lighten-1">
+      <div class="nav-wrapper">
+        <a href="#!"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="hide-on-med-and-down">
+          <li><a href="../home.html">Home</a></li>
+          <li><a href="../scratch/scratch.html">Ages 7-12</a></li>
+          <li><a href="../techimmersion.html">Ages 13-18</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="../home.html">Home</a></li>
+      <li><a href="../scratch/scratch.html">Ages 7-12</a></li>
+      <li><a href="../techimmersion.html">Ages 13-18</a></li>
+    </ul>
+
+    <div class="row">
+      <div class="col s6 offset-s3">
+        <h4 style="font-weight:bold;"><center>Calendar with CSS Grid</center></h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <h6>In this lesson you will:</h6>
+        <ol>
+          <li>Create a calendar using CSS Grid.</li>
+          <li>Adjust grid spacing based on viewport size.</li>
+          <li>Add hover animations to your calendar.</li>
+        </ol>
+        <h4 class="projectTitle">What You Will Make</h4>
+        <iframe src="https://calendar.kristenhaubold.repl.co/" width="50%" height="400px"></iframe>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 style="font-weight:bold;">Get Started!</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>If you are using repl.it, make a new repl.</h6>
+          </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>For this project we will be making a calendar.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>The basic idea we need to understand is that a grid is made of rows and columns.</h6>
+          <h6>Our grid will have 7 columns (one for each day), and 5 or 6 rows (based on how many days are in the month).</h6>
+          <h6>CSS Grid uses a grid to organize items on a web page.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 style="font-weight:bold;">HTML</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Inside your repl, open up the index.html file.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Start by adding a div with the class "calendar".</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Inside the calendar div, add a header tag, with the month name inside it, using h1. </h6>
+          <em>&lt;header&gt; <br>
+          &lt;h1&gt;October 2020&lt;/h1&gt; <br>
+        &lt;/header&gt; </em>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Now let's add an unordered list with the class "weekdays". </h6>
+          <em>&lt;ul class = "weekdays"&gt; <br>
+          &lt;/ul&gt;</em>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Inside the unordered list, we need to add seven list items, one for each day of the week. </h6>
+          <em>&lt;ul class = "weekdays"&gt; <br>
+            &lt;li&gt; <br>
+            &lt;/li&gt; <br>
+            . <br>
+            . <br>
+            . <br>
+          &lt;/ul&gt;</em>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Inside each list item, we will add an abbreviation tag, one for each day:</h6>
+          <em>&lt;li&gt; <br>
+            &lt;abbr title="S"&gt;Sunday&lt;/abbr&gt; <br>
+          &lt;/li&gt;</em>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Now we need another unordered list, this one for our days. Give it a class "day-grid". </h6>
+          <em>&lt;ul class = "day-grid"&gt; <br>
+          &lt;/ul&gt;</em>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Inside the day-grid unordered list, we need a list item for every day of the month (31 days in October). </h6>
+          <em>&lt;ul class = "day-grid"&gt; <br>
+            &lt;li&gt;1&lt;/li&gt; <br>
+            &lt;li&gt;2&lt;/li&gt; <br>
+            . <br>
+            . <br>
+            . <br>
+          &lt;/ul&gt;</em>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>In addition to the days in this month, we need a list item for each day in the previous month that shows up in the first week of this month. We will give these the class "month-prev".</h6>
+          <em>&lt;ul class = "day-grid"&gt; <br>
+            &lt;li class="month-prev"&gt;29&lt;/li&gt; <br>
+            &lt;li class="month-prev"&gt;30&lt;/li&gt; <br>
+            &lt;li&gt;1&lt;/li&gt; <br>
+            &lt;li&gt;2&lt;/li&gt; <br>
+            . <br>
+            . <br>
+            . <br>
+          &lt;/ul&gt;</em>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Finally, we need list items for the days of the next month that show up in the last week of this month. We will give these the class "month-next".</h6>
+          <em>&lt;ul class = "day-grid"&gt; <br>
+            &lt;li class="month-prev"&gt;29&lt;/li&gt; <br>
+            &lt;li class="month-prev"&gt;30&lt;/li&gt; <br>
+            &lt;li&gt;1&lt;/li&gt; <br>
+            &lt;li&gt;2&lt;/li&gt; <br>
+            . <br>
+            . <br>
+            . <br>
+            &lt;li&gt;30&lt;/li&gt; <br>
+            &lt;li&gt;31&lt;/li&gt; <br>
+            &lt;li class="month-next"&gt;1&lt;/li&gt; <br>
+            &lt;li class="month-next"&gt;2&lt;/li&gt; <br>
+          &lt;/ul&gt;</em>
+        </div>
+      </div>
+    </div>
+
+  <div class="row">
+    <div class="col s6 offset-s1">
+      <h5 style="font-weight:bold;">CSS</h5>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Open up style.css.</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Start with the header selector. Add a header selector, and adjust the following properties:</h6>
+        <h6> <em>display: flex; <br>
+        align-items: center; <br>
+      justify-content: center; <br>
+    background: PICK A COLOR; <br>
+  color: PICK A COLOR; <br>
+text-align: center; </em></h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Now let's make the font size responsive to the window size. Use the calculation below for font-size.</h6>
+        <h6> <em>font-size: calc(16px + 10 * ((100vw - 320px) / 680));</em> </h6>
+        <h6>To learn about fluid typography, head over <a href="https://css-tricks.com/snippets/css/fluid-typography/">here</a>.</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Now let's make our calendar into a grid!</h6>
+        <h6>Add a selector for ul and use the following properties:</h6>
+        <h6><em>
+  display: grid; <br>
+  grid-template-columns: repeat(7, 1fr); <br>
+  grid-gap: 1em; <br>
+  padding: 0; <br>
+   </em><br>
+</h6>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Now add a selector for li, with the following properties: </h6>
+        <h6> <em> display: flex; <br>
+  align-items: center; <br>
+  justify-content: center; <br>
+  list-style: none; <br>
+  margin-left: 0; <br>
+  font-size: calc(16px + 5 * ((100vw - 300px) / (1600 - 300))); <br> </em> </h6>
+  <h6>We are using a similar calculation to make the font size responsive to window size.</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Let's add some color! </h6>
+        <h6>Add a selector for list items inside unordered lists with the class "day-grid".</h6>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <ul class="collapsible">
+         <li>
+           <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>I Need a Hint</div>
+           <div class="collapsible-body">
+             <h6>ul.day-grid li{ }</h6>
+           </div>
+         </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Add these properties:</h6>
+        <h6><em>background-color: #eaeaea; <br>
+  border: 1px solid #eaeaea; <br>
+  height: 12vw; <br>
+  max-height: 125px; <br>
+  </em>
+</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Now we will style the days of the week. </h6>
+        <h6> <em>ul.weekdays abbr[title] { <br>
+  border: none; <br>
+  font-weight: 800; <br>
+  text-decoration: none; <br>
+}</em> </h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Save the code and run to see what it looks like.</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>We want only the days this month to be gray, and the ones from last month and next month to be white, or a different color.</h6>
+        <h6>To select them, use the following selectors (update the nth child numbers appropriately to match your calendar):</h6>
+        <h6> <em>ul.day-grid li:nth-child(1), <br>
+        ul.day-grid li:nth-child(2), <br>
+        ul.day-grid li:nth-child(34) { <br>
+          background-color: #fff; <br>
+        }</em> </h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Now we need to make our site responsive. We will use a media query to specifiy the style when the screen is narrower than 800px.</h6>
+        <h6>Add the following code:</h6>
+        <h6> <em>
+          @media all and (max-width: 800px) { <br>
+    ul { <br>
+      grid-gap: .25em; <br>
+    } <br>
+     <br>
+    ul.weekdays li { <br>
+      font-size: 0; <br>
+    } <br>
+     <br>
+    ul.weekdays > li abbr:after { <br>
+        content: attr(title); <br>
+        font-size: calc(16px + 10 * ((100vw - 300px) / (1600 - 300))); <br>
+      text-align: center; <br>
+    } <br>
+  } <br>
+</em> </h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Try resizing the window, and see how your calendar responds!</h6>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col s6 offset-s1">
+      <h5 style="font-weight:bold;">Hover Animation</h5>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Now let's add a hover animation when the user hovers over a date.</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Add one more selector in CSS. This one for hovering over list items in the unordered list with the class day-grid.</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <ul class="collapsible">
+         <li>
+           <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>I Need a Hint</div>
+           <div class="collapsible-body">
+             <h6> ul.day-grid li:hover</h6>
+           </div>
+         </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Set a new background-color, a border, a bigger font size (use the calculation from earlier, just increase the base font size from 16 to something like 32).</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <ul class="collapsible">
+         <li>
+           <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>I Need a Hint</div>
+           <div class="collapsible-body">
+             <h6> background-color: blue; <br>
+                  border: 1px solid blue; <br>
+                  font-size: calc(32px + 10 * ((100vw - 300px) / (1600 - 300))); <br>
+</h6>
+           </div>
+         </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>You can also add transition time to make it smoother.</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <ul class="collapsible">
+         <li>
+           <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>I Need a Hint</div>
+           <div class="collapsible-body">
+             <h6> transition: 1s;</h6>
+           </div>
+         </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Test out your work!</h6>
+      </div>
+    </div>
+  </div>
+
+
+
+<br>
+
+  <div class="row blue white-text">
+    <div class="col s4 offset-s4">
+      <h5 style="text-align:center;">Congrats! Project complete!</h5>
+    </div>
+  </div>
+
+  <div class="row">
+    <!--card 1 -->
+    <div class="col s4 offset-s4">
+      <div class="card findanotherproject">
+        <div class="card-content">
+          <div class="cardDescription">
+            <h6>Find another project?</h6>
+            <a href="techimmersion.html">
+            <div class="browse">
+              <br>
+              <a href="techimmersion.html">
+                <button>Browse all projects</button>
+              </a>
+            </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+  </body>
+</html>
