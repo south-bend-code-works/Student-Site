@@ -16,7 +16,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="../SBCS_favicon.png">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Intro to CSS Grid</title>
+    <title>Collage with CSS Grid</title>
   </head>
 
   <body>
@@ -41,7 +41,7 @@
 
     <div class="row">
       <div class="col s6 offset-s3">
-        <h4 style="font-weight:bold;"><center>Intro to CSS Grid</center></h4>
+        <h4 style="font-weight:bold;"><center>Collage with CSS Grid</center></h4>
       </div>
     </div>
 
@@ -49,12 +49,12 @@
       <div class="col s6 offset-s2">
         <h6>In this lesson you will:</h6>
         <ol>
-          <li>Learn to use CSS Grid.</li>
-          <li>Arrange divs on your page using a grid.</li>
-          <li>Finally solve the frustrating problem of placing items next to each other on a web page.</li>
+          <li>Create an image collage using CSS Grid.</li>
+          <li>Adjust grid spacing based on viewport size.</li>
+          <li>Make your site responsive to window size changes.</li>
         </ol>
         <h4 class="projectTitle">What You Will Make</h4>
-        <iframe src="https://Monopoly.kristenhaubold.repl.co" width="50%" height="400px"></iframe>
+        <iframe src="https://collage.kristenhaubold.repl.co/" width="50%" height="400px"></iframe>
       </div>
     </div>
 
@@ -101,7 +101,7 @@
         </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h6>Head over to <a href="https://css-tricks.com/snippets/css/css-grid-starter-layouts/" target="_blank">CSS-Tricks</a> to see some basic CSS Grid layouts.</h6>
+          <h6>For this project we will be making an image collage.</h6>
         </div>
       </div>
     </div>
@@ -122,9 +122,54 @@
       <div class="col s6">
         <div class="projectsection1">
           <h6>The basic idea we need to understand is that a grid is made of rows and columns.</h6>
-          <h6>Think of a chess/checkers board. It has 8 rows (horizontal) and 8 columns (vertical).</h6>
-          <h6>CSS Grid uses a grid to organize items on a web page.</h6>
+          <h6>Our grid will have 5 columns and 10 rows. You can change these numbers as necessary.</h6>
         </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Gather the images you want to put in your collage. For our tree collage, we used 8 images. You can use more or less than that, but use at least 5 images.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>On a piece of paper, sketch out the arrangement you'd like your images to be in. Make a plan for which ones will go where, and how big the different images should be.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <img style="width:60%; height:60%;" src="https://i.pinimg.com/originals/3e/6d/97/3e6d97122f4583f181c891b9d1c22972.jpg">
       </div>
     </div>
 
@@ -169,25 +214,7 @@
         </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h6>Copy and paste the following code inside the body of your page.</h6>
-        <em>  &lt;div class="board"&gt; <br>
-  &lt;div class="square"&gt;1&lt;/div&gt; <br>
-  &lt;div class="square"&gt;2&lt;/div&gt; <br>
-  &lt;div class="square"&gt;3&lt;/div&gt; <br>
-  &lt;div class="square"&gt;4&lt;/div&gt; <br>
-  &lt;div class="square"&gt;5&lt;/div&gt; <br>
-  &lt;div class="square"&gt;6&lt;/div&gt; <br>
-  &lt;div class="square"&gt;7&lt;/div&gt; <br>
-  &lt;div class="square"&gt;8&lt;/div&gt; <br>
-  &lt;div class="square"&gt;9&lt;/div&gt; <br>
-  &lt;div class="square"&gt;10&lt;/div&gt; <br>
-  &lt;div class="square"&gt;11&lt;/div&gt; <br>
-  &lt;div class="square"&gt;12&lt;/div&gt; <br>
-  &lt;div class="square"&gt;13&lt;/div&gt; <br>
-  &lt;div class="square"&gt;14&lt;/div&gt; <br>
-  &lt;div class="square"&gt;15&lt;/div&gt; <br>
-  &lt;div class="square"&gt;16&lt;/div&gt; <br>
-&lt;/div&gt; </em>
+          <h6>Start by adding a div with the class "container".</h6>
         </div>
       </div>
     </div>
@@ -207,7 +234,8 @@
         </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h6>Each of these divs will become a box on our monopoly board. </h6>
+          <h6>Above the container div, add a h1 tag, with the name of your collage inside it. </h6>
+          <h6><em>&lt;h1&gt;Trees&lt;/h1&gt; </em><br> </h6>
 
           </div>
         </div>
@@ -229,7 +257,49 @@
         </div>
       <div class="col s6">
         <div class="projectsection1">
-          <h6>Once we see our webpage, we will replace the numbers with our own property names for our monopoly board.</h6>
+          <h6>Now let's add image tags for each of your images. </h6>
+          <h6><em>&lt;img src="SOURCE HERE" class = "images" id="image1" alt="ALT TEXT HERE"&gt; <br>
+          &lt;/img&gt;</em> </h6>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Add the source, alt text, image class, and a unique id for each image. </h6>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Save your work and take a look. All your images will be showing up one after another on the page. Next we will arrange and size them using our grid.</h6>
         </div>
       </div>
     </div>
@@ -276,15 +346,12 @@
       </div>
     <div class="col s6">
       <div class="projectsection1">
-        <h6>Add the following code to your css file.</h6>
-        <h6><em>.board { <br>
-  display: grid; <br>
-  justify-content: center; <br>
-  align-content: center; <br>
-  grid-gap: 1rem; <br>
-  grid-template-columns: repeat(5, 10vw); <br>
-  grid-template-rows: repeat(5, 10vw);</em> <br>
-}</h6>
+        <h6>Start with the container selector. Add a container selector, and adjust the following properties:</h6>
+        <h6> <em>  display:grid; <br>
+  grid-template-rows: repeat(10, 5vw); <br>
+  grid-template-columns: repeat(5, 1fr); <br>
+  grid-gap: 1em;</em></h6>
+  <h6>You can adjust the grid-gap to change the spacing between your images.</h6>
       </div>
     </div>
   </div>
@@ -304,22 +371,44 @@
       </div>
     <div class="col s6">
       <div class="projectsection1">
-        <h6>This code for the board class implements CSS Grid.</h6>
-        <h6>It is using 5 rows and 5 columns to make a simple grid.</h6>
-        <h6>Which part of the code indicates the number of rows and columns?</h6>
+        <h6>Before we make our image grid, let's setup the h1 heading. Using the h1 selector, we will make the font size responsive to the window size. Set the following properties, and use the calculation below for font-size.</h6>
+        <h6> <em>  h1 { <br>
+          text-align: center; <br>
+  font-family: Arial, Helvetica, sans-serif; <br>
+  font-size: calc(32px + 6 * ((100vw - 320px) / 680)); <br>
+} <br></em> </h6>
+        <h6>To learn about fluid typography, head over <a href="https://css-tricks.com/snippets/css/fluid-typography/">here</a>.</h6>
       </div>
     </div>
   </div>
 
-
   <div class="row">
-    <div class="col s6 offset-s2">
-      <ul class="collapsible">
-         <li>
-           <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>Hint</div>
-           <div class="collapsible-body"> <em>grid-template-rows</em> and <em>grid-template-columns</em> </div>
-         </li>
-      </ul>
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Now let's set up our image class.</h6>
+        <h6>Add a selector for .image and use the following properties:</h6>
+        <h6><em>
+          .images { <br>
+          width: 100%; <br>
+          height: 100%; <br>
+          object-fit: cover; <br>
+        }
+   </em><br>
+</h6>
+<h6>Setting the width and height to 100%, and the object-fit to cover allow us to resize the images with the page. Be sure that you don't set the image height and width in HTML.</h6>
+      </div>
     </div>
   </div>
 
@@ -340,201 +429,155 @@
       </div>
     <div class="col s6">
       <div class="projectsection1">
-        <h6>Let's style our divs a bit more. Add the following code:</h6>
-        <h6><em>.square { <br>
-  background: #bfdbae; <br>
-  text-align: center; <br>
-  display: flex; <br>
-  align-items: center; <br>
-  justify-content: center; </em><br>
-}</h6>
-      </div>
-    </div>
-  </div>
-
-
-
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-            <p>
-              <label>
-                <input type="checkbox" />
-                <span></span>
-              </label>
-            </p>
-          </form>
-        </div>
-      </div>
-    <div class="col s6">
-      <div class="projectsection1">
-        <h6>This colors our divs, and centers the text in each div. </h6>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-            <p>
-              <label>
-                <input type="checkbox" />
-                <span></span>
-              </label>
-            </p>
-          </form>
-        </div>
-      </div>
-    <div class="col s6">
-      <div class="projectsection1">
-        <h6>Now we need to arrange our properties in a square around the edge of the page. </h6>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-            <p>
-              <label>
-                <input type="checkbox" />
-                <span></span>
-              </label>
-            </p>
-          </form>
-        </div>
-      </div>
-    <div class="col s6">
-      <div class="projectsection1">
-        <h6>Add this code:</h6>
-        <h6><em>.square:nth-child(1) { <br>
-  grid-row: 1; <br>
-  grid-column: 1; <br>
-  border: black 5px dashed;</em><br>
-}</h6>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-            <p>
-              <label>
-                <input type="checkbox" />
-                <span></span>
-              </label>
-            </p>
-          </form>
-        </div>
-      </div>
-    <div class="col s6">
-      <div class="projectsection1">
-        <h6>This code styles the 1st child of square. I.e. the first div with the class square. </h6>
-        <h6>That div is put in row 1 and column 1.</h6>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-            <p>
-              <label>
-                <input type="checkbox" />
-                <span></span>
-              </label>
-            </p>
-          </form>
-        </div>
-      </div>
-    <div class="col s6">
-      <div class="projectsection1">
-        <h6>Save the code and run to see what it looks like.</h6>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-            <p>
-              <label>
-                <input type="checkbox" />
-                <span></span>
-              </label>
-            </p>
-          </form>
-        </div>
-      </div>
-    <div class="col s6">
-      <div class="projectsection1">
-        <h6>The second child of square will be similar, try adding the following code:</h6>
-        <h6><em>.square:nth-child(2) { <br>
-  grid-row: 1; <br>
-  grid-column: 2;</em> <br>
-}<br></h6>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-            <p>
-              <label>
-                <input type="checkbox" />
-                <span></span>
-              </label>
-            </p>
-          </form>
-        </div>
-      </div>
-    <div class="col s6">
-      <div class="projectsection1">
-        <h6>Finish adding code for each square, indicating which row and column it should be in.</h6>
-        <h6>Look at the finished product above if you need a hint.</h6>
+        <h6>We're ready to arrange our collage.</h6>
+        <h6>Right now your images should all be showing up in a grid, but not sized properly.</h6>
       </div>
     </div>
   </div>
 
   <div class="row">
     <div class="col s6 offset-s2">
-      <ul class="collapsible">
-         <li>
-           <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>Hint</div>
-           <div class="collapsible-body"> You will use the following row and column pairs: <br>
-           Row 1, Column 1 <br>
-         Row 1, Column 2 <br>
-       Row 1, Column 3 <br>
-     Row 1, Column 4 <br>
-   Row 1, Column 5 <br>
- Row 2, Column 5 <br>
-Row 3, Column 5 <br>
-Row 4, Column 5 <br>
-Row 5, Column 5 <br>
-Row 5, Column 4 <br>
-Row 5, Column 3 <br>
-Row 5, Column 2 <br>
-Row 5, Column 1 <br>
-Row 4, Column 1 <br>
-Row 3, Column 1 <br>
-Row 2, Column 1 <br> </div>
-         </li>
-      </ul>
+      <img style="width:60%; height:60%;" src="./html-images/collage-grid-no-arrange.png">
     </div>
   </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Grab your layout sketch again. </h6>
+        <h6>Try to draw a grid lightly over your desired arrangement. See example below.</h6>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <img style="width:80%; height:80%;" src="./html-images/collage-grid-sketch.png">
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Start with image1, note what rows and columns it spans. Our first tree image spans rows 1 through 4 and column 1 through 4.</h6>
+        <h6><em>#image1{ <br>
+  grid-row: 1 / 4; <br>
+  grid-column: 1 / 4; <br>
+}
+  </em>
+</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <img style="width:80%; height:80%;" src="./html-images/collage-grid-image1-position.png">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Then move on to image2. </h6>
+        <h6> <em>#image2{ <br>
+  grid-row: 1 / 5; <br>
+  grid-column: 4 / 6; <br>
+}
+</em> </h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <img style="width:80%; height:80%;" src="./html-images/collage-grid-image2-position.png">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Adjust the row and column spacing for each image, one at a time, to match your grid sketch.</h6>
+        <h6>If you need to adjust the number of rows and columns in the grid, just go back to the container selector, and adjust the repeat numbers to change how many rows and columns are in the grid.</h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Work slowly, and test after each change to see how your collage looks.</h6>
+      </div>
+    </div>
+  </div>
+
 
   <div class="row">
     <div class="col s6 offset-s1">
-      <h5 style="font-weight:bold;">Customizing the Properties</h5>
+      <h5 style="font-weight:bold;">Make It Pretty</h5>
     </div>
   </div>
 
@@ -553,27 +596,7 @@ Row 2, Column 1 <br> </div>
       </div>
     <div class="col s6">
       <div class="projectsection1">
-        <h6>Now let's customize our monopoly properties!</h6>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-            <p>
-              <label>
-                <input type="checkbox" />
-                <span></span>
-              </label>
-            </p>
-          </form>
-        </div>
-      </div>
-    <div class="col s6">
-      <div class="projectsection1">
-        <h6>Inside index.html, replace the numbers in each div with the monopoly property name you'd like to use.</h6>
+        <h6>Add a background color! Use the body selector to set a background color.</h6>
       </div>
     </div>
   </div>
@@ -593,7 +616,28 @@ Row 2, Column 1 <br> </div>
       </div>
     <div class="col s6">
       <div class="projectsection1">
-        <h6>Now head back to style.css, and let's add some property colors.</h6>
+        <h6>Try adding a border to your images. Use the border property in the .image class.</h6>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Try adjusting the border-radius property to soften the corners of your images.</h6>
       </div>
     </div>
   </div>
@@ -613,10 +657,11 @@ Row 2, Column 1 <br> </div>
       </div>
     <div class="col s6">
       <div class="projectsection1">
-        <h6>To add a colored bar like at the top of a monopoly property, we will use a border.</h6>
+        <h6>Add a footer with your name and copyright.</h6>
       </div>
     </div>
   </div>
+
 
   <div class="row">
     <div class="col s1 offset-s1">
@@ -633,119 +678,12 @@ Row 2, Column 1 <br> </div>
       </div>
     <div class="col s6">
       <div class="projectsection1">
-        <h6>Try adding the following code inside one of your squares:</h6>
-        <h6><em>border-bottom: blue 10px solid;</em></h6>
+        <h6>Test out your work! Open the site in a new window, and resize the window to be sure your images and header resize properly.</h6>
       </div>
     </div>
   </div>
 
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-            <p>
-              <label>
-                <input type="checkbox" />
-                <span></span>
-              </label>
-            </p>
-          </form>
-        </div>
-      </div>
-    <div class="col s6">
-      <div class="projectsection1">
-        <h6><em>border-bottom</em> adds a border at the bottom of a div.</h6>
-        <h6><em>border-top</em> adds a border at the top.</h6>
-        <h6> <em>border-left</em> and <em>border-right</em> add borders on the left and right sides of a div. </h6>
-      </div>
-    </div>
-  </div>
 
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-            <p>
-              <label>
-                <input type="checkbox" />
-                <span></span>
-              </label>
-            </p>
-          </form>
-        </div>
-      </div>
-    <div class="col s6">
-      <div class="projectsection1">
-        <h6>Use borders to add colored bars like the monopoly properties to your board.</h6>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s6 offset-s1">
-      <h5 style="font-weight:bold;">Just for fun!</h5>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-            <p>
-              <label>
-                <input type="checkbox" />
-                <span></span>
-              </label>
-            </p>
-          </form>
-        </div>
-      </div>
-    <div class="col s6">
-      <div class="projectsection1">
-        <h6>Can you add a div in the center of the board that says Monopoly?</h6>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-            <p>
-              <label>
-                <input type="checkbox" />
-                <span></span>
-              </label>
-            </p>
-          </form>
-        </div>
-      </div>
-    <div class="col s6">
-      <div class="projectsection1">
-        <h6>Can you add a background image to the GO square?.</h6>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col s1 offset-s1">
-      <div class="checkbox">
-        <form action="#">
-            <p>
-              <label>
-                <input type="checkbox" />
-                <span></span>
-              </label>
-            </p>
-          </form>
-        </div>
-      </div>
-    <div class="col s6">
-      <div class="projectsection1">
-        <h6>Can you make your board bigger than 5 x 5?</h6>
-      </div>
-    </div>
-  </div>
 
 <br>
 
@@ -774,11 +712,6 @@ Row 2, Column 1 <br> </div>
         </div>
       </div>
     </div>
-
-
-
-
-
 
   </body>
 </html>
