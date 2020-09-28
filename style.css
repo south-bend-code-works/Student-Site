@@ -596,23 +596,23 @@ input[type='checkbox'] {
 
 /*Graphic Design background Images*/
 #glossaryBG {
-  background-image: url('./graphicdesign/glossaryBG.jpg');
+  background-image: url('./graphicdesign/graphicdesign-images/glossaryBG.jpg');
 }
 
 #gimpBG {
-  background-image: url('./graphicdesign/gimpBG.jpg');
+  background-image: url('./graphicdesign/graphicdesign-images/gimpBG.jpg');
 }
 
 #typographicposterBG {
-  background-image: url('./graphicdesign/typographicposterBG.jpg');
+  background-image: url('./graphicdesign/graphicdesign-images/typographicposterBG.jpg');
 }
 
 #photomanipulationBG {
-  background-image: url('./graphicdesign/photomanipulationBG.gif');
+  background-image: url('./graphicdesign/graphicdesign-images/photomanipulationBG.gif');
 }
 
 #splashpageBG {
-  background-image: url('./graphicdesign/splashpageBG.jpg');
+  background-image: url('./graphicdesign/graphicdesign-images/splashpageBG.jpg');
 }
 
 #gifBG {
@@ -620,11 +620,11 @@ input[type='checkbox'] {
 }
 
 #infographicBG {
-  background-image: url('./graphicdesign/infographicBG.jpg');
+  background-image: url('./graphicdesign/graphicdesign-images/infographicBG.jpg');
 }
 
 #interactiveBG {
-  background-image: url('./graphicdesign/interactiveBG.jpg');
+  background-image: url('./graphicdesign/graphicdesign-images/interactiveBG.jpg');
 }
 
 #geometricBG {
@@ -632,39 +632,39 @@ input[type='checkbox'] {
 }
 
 #uiuxBG {
-  background-image: url('./graphicdesign/uiuxBG.jpg');
+  background-image: url('./graphicdesign/graphicdesign-images/uiuxBG.jpg');
 }
 
 #colortheoryBG {
-  background-image: url('./graphicdesign/colortheoryBG.gif');
+  background-image: url('./graphicdesign/graphicdesign-images/colortheoryBG.gif');
 }
 
 #imagesBG {
-  background-image: url('./graphicdesign/imagesBG.jpg');
+  background-image: url('./graphicdesign/graphicdesign-images/imagesBG.jpg');
 }
 
 #twoddesignBG {
-  background-image: url('./graphicdesign/twoddesignBG.png');
+  background-image: url('./graphicdesign/graphicdesign-images/twoddesignBG.png');
 }
 
 #designprocessBG {
-  background-image: url('./graphicdesign/designprocessBG.jpg');
+  background-image: url('./graphicdesign/graphicdesign-images/designprocessBG.jpg');
 }
 
 #gdintroBG {
-  background-image: url('./graphicdesign/gdintroBG.png');
+  background-image: url('./graphicdesign/graphicdesign-images/gdintroBG.png');
 }
 
 #resourcesBG {
-  background-image: url('./graphicdesign/resourcesBG.jpg');
+  background-image: url('./graphicdesign/graphicdesign-images/resourcesBG.jpg');
 }
 
 #topofpage {
-  background-image: url('./graphicdesign/topofpage.gif');
+  background-image: url('./graphicdesign/graphicdesign-images/topofpage.gif');
 }
 
 #brandingBG {
-  background-image: url('./graphicdesign/brandingBG.jpg');
+  background-image: url('./graphicdesign/graphicdesign-images/brandingBG.jpg');
 }
 
 #vectorrasterBG {
@@ -672,75 +672,75 @@ input[type='checkbox'] {
 }
 
 #colorBG {
-  background-image: url('./graphicdesign/colorBG.jpg');
+  background-image: url('./graphicdesign/graphicdesign-images/colorBG.jpg');
 }
 
 #colorizeBG {
-  background-image: url('./graphicdesign/colorizeBG.jpg');
+  background-image: url('./graphicdesign/graphicdesign-images/colorizeBG.jpg');
 }
 
 #copyrightBG {
-  background-image: url('./graphicdesign/copyrightBG.jpg');
+  background-image: url('./graphicdesign/graphicdesign-images/copyrightBG.jpg');
 }
 
 #moodboardBG {
-  background-image: url('./graphicdesign/moodboardBG.jpg');
+  background-image: url('./graphicdesign/graphicdesign-images/moodboardBG.jpg');
 }
 
 #cymkrgbBG {
-  background-image: url('./graphicdesign/cymkrgbBG.jpg');
+  background-image: url('./graphicdesign/graphicdesign-images/cymkrgbBG.jpg');
 }
 
 #popartBG {
-  background-image: url('./graphicdesign/popartBG.jpg');
+  background-image: url('./graphicdesign/graphicdesign-images/popartBG.jpg');
 }
 
 #layoutcompBG {
-  background-image: url('./graphicdesign/layoutcompBG.jpg');
+  background-image: url('./graphicdesign/graphicdesign-images/layoutcompBG.jpg');
 }
 
 #patternrepetitionBG {
-  background-image: url('./graphicdesign/patternrepetitionBG.jpg');
+  background-image: url('./graphicdesign/graphicdesign-images/patternrepetitionBG.jpg');
 }
 
 #behanceBG {
-  background-image: url('./graphicdesign/behanceBG.gif');
+  background-image: url('./graphicdesign/graphicdesign-images/behanceBG.gif');
 }
 
 #socialmediaBG {
-  background-image: url('./graphicdesign/socialmediaBG.jpg');
+  background-image: url('./graphicdesign/graphicdesign-images/socialmediaBG.jpg');
 }
 
 #curvesBG {
-  background-image: url('./graphicdesign/curvesBG.jpg');
+  background-image: url('./graphicdesign/graphicdesign-images/curvesBG.jpg');
 }
 
 #negspaceBG {
-  background-image: url('./graphicdesign/negspaceBG.jpg');
+  background-image: url('./graphicdesign/graphicdesign-images/negspaceBG.jpg');
 }
 
 #rulesBG {
-  background-image: url('./graphicdesign/rulesBG.jpg');
+  background-image: url('./graphicdesign/graphicdesign-images/rulesBG.jpg');
 }
 
 #gridsBG {
-  background-image: url('./graphicdesign/gridsBG.jpg');
+  background-image: url('./graphicdesign/graphicdesign-images/gridsBG.jpg');
 }
 
 #typographyBG {
-  background-image: url('./graphicdesign/typographyBG.png');
+  background-image: url('./graphicdesign/graphicdesign-images/typographyBG.png');
 }
 
 #badfontBG {
-  background-image: url('./graphicdesign/badfontBG.jpg');
+  background-image: url('./graphicdesign/graphicdesign-images/badfontBG.jpg');
 }
 
 #typographyposterBG {
-  background-image: url('./graphicdesign/typographyposterBG.jpg');
+  background-image: url('./graphicdesign/graphicdesign-images/typographyposterBG.jpg');
 }
 
 #designyourownBG {
-  background-image: url('./graphicdesign/designyourownBG.gif');
+  background-image: url('./graphicdesign/graphicdesign-images/designyourownBG.gif');
 }
 
 /*2d/3d animation background images*/
