@@ -406,7 +406,7 @@ input[type='checkbox'] {
 }
 
 #kahootBG {
-  background-image: url('../kahoot.jpeg');
+  background-image: url('./images/kahoot.jpeg');
 }
 
 #gothedistanceBG {
@@ -430,7 +430,7 @@ input[type='checkbox'] {
 }
 
 .kahootBG {
-  background-image: url('./kahoot.jpeg');
+  background-image: url('./images/kahoot.jpeg');
 }
 
 /* HTML CSS background images */
@@ -491,7 +491,7 @@ input[type='checkbox'] {
 }
 
 #passionBG {
-  background-image: url('passionProject.jpg');
+  background-image: url('./images/passionProject.jpg');
 }
 
 #materializeBG {
@@ -570,28 +570,28 @@ input[type='checkbox'] {
 }
 
 .challenge1 {
-  background-image: url('codingchallenge1.jpg');
+  background-image: url('./images/codingchallenge1.jpg');
 }
 
 .challenge2 {
-  background-image: url('codingchallenge2.jpg');
+  background-image: url('./images/codingchallenge2.jpg');
 }
 
 .challenge3 {
-  background-image: url('codingchallenge3.jpg');
+  background-image: url('./images/codingchallenge3.jpg');
 }
 
 /*Not used right now*/
 #wantedBG {
-  background-image: url('wanted.png');
+  background-image: url('./images/wanted.png');
 }
 
 #wrapupBG {
-  background-image: url('wrapup.jpg');
+  background-image: url('./images/wrapup.jpg');
 }
 
 #bdayBG {
-  background-image: url('bday.jpg');
+  background-image: url('./images/bday.jpg');
 }
 
 /*Graphic Design background Images*/
@@ -795,7 +795,7 @@ input[type='checkbox'] {
 }
 
 #webdevBG {
-  background-image: url('computer.gif');
+  background-image: url('./images/computer.gif');
   background-position: center;
   background-size: contain;
 }
@@ -807,7 +807,7 @@ input[type='checkbox'] {
 }
 
 #patternBG {
-  background-image: url('striped.gif');
+  background-image: url('./images/striped.gif');
 }
 
 /*Unity images */
@@ -1654,14 +1654,14 @@ span {
 .pattern1 {
   width: 100%;
   height: 40px;
-  background-image: url('bigbanganimation.gif');
+  background-image: url('./html/html-images/bigbanganimation.gif');
   animation: background-ScrollLeft 8s linear infinite;
 }
 
 .pattern2 {
   width: 100%;
   height: 40px;
-  background-image: url('snowpattern.gif');
+  background-image: url('.html/html-images/snowpattern.gif');
   animation: background-ScrollRight 8s linear infinite;
 }
 
