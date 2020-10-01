@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="../main.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="SBCS_favicon.png">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Feed the Turtle</title>
+  </head>
+
+<body>
+
+  <!--Nav bar  -->
+  <nav class="light-blue lighten-1">
+    <div class="nav-wrapper">
+      <a href="#!"></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="hide-on-med-and-down">
+        <li><a href="../home.html">Home</a></li>
+        <li><a href="../scratch/scratch.html">Ages 7-12</a></li>
+        <li><a href="../techimmersion.html">Ages 13-18</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="../home.html">Home</a></li>
+    <li><a href="../scratch/scratch.html">Ages 7-12</a></li>
+    <li><a href="../techimmersion.html">Ages 13-18</a></li>
+  </ul>
+
+  <div class="row">
+    <div class="col s6 offset-s3">
+      <h4 style="font-weight:bold;"><center>Feed the Turtle</center></h4>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s6 offset-s2">
+      <h6>In this lesson you will:</h6>
+      <ol>
+        <li>Create an interactive game about feeding a turtle.</li>
+        <li>Incorporate a score feature.</li>
+        <li>Add an enemy turtle!</li>
+      </ol>
+      <h5>Background Info</h5>
+      <p>We can use multiple turtles in a single project, each one doing a different job. In this project, we will use four different turtles for different things!</p>
+      <h5 style="font-weight:bold;">Helpful Links</h5>
+      <p><a href="https://repl.it" target="_blank">repl.it</a> - an online interpreter that we will use for writing our Python code.</p>
+    </div>
+  </div>
+
+      <!--html Lesson: Directions Start Here-->
+      <div class="row">
+          <div class="col s6 offset-s1">
+            <h5 style="font-weight:bold;">Let's get started!</h5>
+          </div>
+        </div>
+
+        <div class="row">
+            <!--Lesson Checkbox Div-->
+            <div class="col s1 offset-s1">
+              <div class="checkbox">
+                <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </p>
+                </form>
+              </div>
+            </div>
+            <!--Instruction Div-->
+            <div class="col s6">
+              <div class="projectsection1">
+                      <h6>First steps</h6>
+                      <p>Open <a href="https://repl.it" target="_blank">repl.it</a></p>
+                      <p>Name it <strong>FeedTheTurtle</strong></p>
+                      <p>Make sure you create this new Repl using Python (with Turtle)
+              </div>
+          </div>
+        </div>
+
+          <div class="row">
+            <!--Lesson Checkbox Div-->
+            <div class="col s1 offset-s1">
+              <div class="checkbox">
+                <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </p>
+                </form>
+              </div>
+            </div>
+            <!--Instruction Div-->
+            <div class="col s6">
+              <div class="projectsection1">
+                  <h6>Import turtle</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <!--Lesson Checkbox Div-->
+            <div class="col s1 offset-s1">
+              <div class="checkbox">
+                <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </p>
+                </form>
+              </div>
+            </div>
+            <!--Instruction Div-->
+            <div class="col s6">
+              <div class="projectsection1">
+                  <h6>Let’s make a turtle for the player. Call it <strong>player</strong>.</h6>
+              </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s6 offset-s2">
+            <img src="./python-images/feedtheturtle/playerturtle.png" width="300px">
+          </div>
+        </div>
+
+        <div class="row">
+              <!--Lesson Checkbox Div-->
+              <div class="col s1 offset-s1">
+                <div class="checkbox">
+                  <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span></span>
+                      </label>
+                    </p>
+                  </form>
+                </div>
+              </div>
+              <!--Instruction Div-->
+              <div class="col s6">
+                <div class="projectsection1">
+                    <h6>Make the player turtle a fun color and shape!</h6>
+                </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col s6 offset-s2">
+              <img src="./python-images/feedtheturtle/playerturtleshapecolor.png" width="300px">
+            </div>
+          </div>
+
+          <div class="row">
+              <!--Lesson Checkbox Div-->
+              <div class="col s1 offset-s1">
+                <div class="checkbox">
+                  <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span></span>
+                      </label>
+                    </p>
+                  </form>
+                </div>
+              </div>
+              <!--Instruction Div-->
+              <div class="col s6">
+                <div class="projectsection1">
+                    <h6>Use <strong>player.showturtle()</strong> to make the turtle show up when the program starts.</h6>
+                </div>
+            </div>
+          </div>
+
+        <!--html Lesson: Directions Start Here-->
+          <div class="row">
+            <div class="col s6 offset-s1">
+              <h5 style="font-weight:bold;">Moving the Turtle</h5>
+            </div>
+          </div>
+
+          <div class="row">
+              <!--Lesson Checkbox Div-->
+              <div class="col s1 offset-s1">
+                <div class="checkbox">
+                  <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span></span>
+                      </label>
+                    </p>
+                  </form>
+                </div>
+              </div>
+              <!--Instruction Div-->
+              <div class="col s6">
+                <div class="projectsection1">
+                    <h6>We want the player turtle to be controlled using the arrow keys.</h6>
+                    <h6>We will need to make a screen object, and have a mainloop.</h6>
+                </div>
+            </div>
+          </div>
+
+          <div class="row">
+              <!--Lesson Checkbox Div-->
+              <div class="col s1 offset-s1">
+                <div class="checkbox">
+                  <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span></span>
+                      </label>
+                    </p>
+                  </form>
+                </div>
+              </div>
+              <!--Instruction Div-->
+              <div class="col s6">
+                <div class="projectsection1">
+                    <h6>We want the player turtle to be controlled using the arrow keys.</h6>
+                    <h6>We will need to make a screen object, and have a mainloop.</h6>
+                </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col s6 offset-s2">
+              <img src="./python-images/feedtheturtle/windowscreen.png" width="300px">
+            </div>
+          </div>
+
+          <div class="row">
+              <!--Lesson Checkbox Div-->
+              <div class="col s1 offset-s1">
+                <div class="checkbox">
+                  <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span></span>
+                      </label>
+                    </p>
+                  </form>
+                </div>
+              </div>
+              <!--Instruction Div-->
+              <div class="col s6">
+                <div class="projectsection1">
+                    <h6>We need to make movement functions for the player turtle.</h6>
+                </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <!--Lesson Checkbox Div-->
+            <div class="col s1 offset-s1">
+              <div class="checkbox">
+                <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </p>
+                </form>
+              </div>
+            </div>
+            <!--Instruction Div-->
+            <div class="col s6">
+              <div class="projectsection1">
+                  <h6>Define functions called <strong>up</strong>, <strong>down</strong>, <strong>turn_left</strong>, and <strong>turn_right</strong>.</h6>
+                  <h6>Each function should <em>setheading</em> for the turtle and make it move <em>forward</em>. </h6>
+                </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s6 offset-s2">
+            <img src="./python-images/feedtheturtle/upfunction.png" width="300px">
+          </div>
+        </div>
+
+        <div class="row">
+          <!--Lesson Checkbox Div-->
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+              </form>
+            </div>
+          </div>
+          <!--Instruction Div-->
+          <div class="col s6">
+            <div class="projectsection1">
+                <h6>Now we need to bind each function to the keypress of the screen.</h6>
+                <h6>We will also add a call to <em>window.listen()</em>, and <em>window.mainloop()</em>. </h6>
+              </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s6 offset-s2">
+          <img src="./python-images/feedtheturtle/keypressbind.png" width="300px">
+        </div>
+      </div>
+
+      <div class="row">
+          <!--Lesson Checkbox Div-->
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+              </form>
+            </div>
+          </div>
+          <!--Instruction Div-->
+          <div class="col s6">
+            <div class="projectsection1">
+                <h6><strong>Challenge</strong>: Try it out!</h6>
+              </div>
+        </div>
+      </div>
+
+      <div class="row">
+          <!--Lesson Checkbox Div-->
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+              </form>
+            </div>
+          </div>
+          <!--Instruction Div-->
+          <div class="col s6">
+            <div class="projectsection1">
+                <h6>Wait… the turtle is drawing lines all over the place! Let’s fix that by telling player to pick the pen up.</h6>
+              </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+              <h6>It also takes a bit for the turtle to spin in the right direction, let's fix that by setting the player <em>speed</em> to 0. </h6>
+            </div>
+      </div>
+    </div>
+
+    <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+              <h6>By now, our player turtle should be able to move around the screen using the arrow keys.</h6>
+              <h6>Good job!</h6>
+            </div>
+      </div>
+    </div>
+
+
+      <!--html Lesson: Directions Start Here-->
+      <div class="row">
+          <div class="col s6 offset-s1">
+            <h5 style="font-weight:bold;">Food Turtle</h5>
+          </div>
+        </div>
+
+        <div class="row">
+                <!--Lesson Checkbox Div-->
+                <div class="col s1 offset-s1">
+                  <div class="checkbox">
+                    <form action="#">
+                      <p>
+                        <label>
+                          <input type="checkbox" />
+                          <span></span>
+                        </label>
+                      </p>
+                    </form>
+                  </div>
+                </div>
+                <!--Instruction Div-->
+                <div class="col s6">
+                  <div class="projectsection1">
+                      <h6>Let’s make another turtle to act as the food our player turtle will eat. Call this turtle food.</h6>
+                    </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col s6 offset-s2">
+                <img src="./python-images/feedtheturtle/foodturtle.png" width="300px">
+              </div>
+            </div>
+
+            <div class="row">
+                <!--Lesson Checkbox Div-->
+                <div class="col s1 offset-s1">
+                  <div class="checkbox">
+                    <form action="#">
+                      <p>
+                        <label>
+                          <input type="checkbox" />
+                          <span></span>
+                        </label>
+                      </p>
+                    </form>
+                  </div>
+                </div>
+                <!--Instruction Div-->
+                <div class="col s6">
+                  <div class="projectsection1">
+                      <h6>Adjust the food turtle's shape and color, pick its pen up, and set its speed to 0.</h6>
+                    </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col s6 offset-s2">
+                <img src="./python-images/feedtheturtle/foodturtlesettings.png" width="300px">
+              </div>
+            </div>
+
+            <div class="row">
+                <!--Lesson Checkbox Div-->
+                <div class="col s1 offset-s1">
+                  <div class="checkbox">
+                    <form action="#">
+                      <p>
+                        <label>
+                          <input type="checkbox" />
+                          <span></span>
+                        </label>
+                      </p>
+                    </form>
+                  </div>
+                </div>
+                <!--Instruction Div-->
+                <div class="col s6">
+                  <div class="projectsection1">
+                      <h6>We want our food turtle to go to random places on the screen every time it is eaten. Let's define a function called randomPosition.</h6>
+                    </div>
+              </div>
+            </div>
+
+            <div class="row">
+                <!--Lesson Checkbox Div-->
+                <div class="col s1 offset-s1">
+                  <div class="checkbox">
+                    <form action="#">
+                      <p>
+                        <label>
+                          <input type="checkbox" />
+                          <span></span>
+                        </label>
+                      </p>
+                    </form>
+                  </div>
+                </div>
+                <!--Instruction Div-->
+                <div class="col s6">
+                  <div class="projectsection1">
+                      <h6>In this function, the food turtle should <em>hide</em>, <em>goto</em> a <em>random.randint()</em> between -200 and 200, and then <em>show</em>. </h6>
+                      <h6>You'll also need to <em>import random</em> at the beginning of the code.</h6>
+                    </div>
+              </div>
+            </div>
+
+            <div class="row">
+                    <!--Lesson Checkbox Div-->
+                    <div class="col s1 offset-s1">
+                      <div class="checkbox">
+                        <form action="#">
+                          <p>
+                            <label>
+                              <input type="checkbox" />
+                              <span></span>
+                            </label>
+                          </p>
+                        </form>
+                      </div>
+                    </div>
+                    <!--Instruction Div-->
+                    <div class="col s6">
+                      <div class="projectsection1">
+                          <h6>We will call this function every time the player turtle touches the food turtle.</h6>
+                        </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col s6 offset-s2">
+                    <img src="./python-images/feedtheturtle/randomPosition.png" width="600px">
+                  </div>
+                </div>
+
+
+                <div class="row">
+                    <!--Lesson Checkbox Div-->
+                    <div class="col s1 offset-s1">
+                      <div class="checkbox">
+                        <form action="#">
+                          <p>
+                            <label>
+                              <input type="checkbox" />
+                              <span></span>
+                            </label>
+                          </p>
+                        </form>
+                      </div>
+                    </div>
+                    <!--Instruction Div-->
+                    <div class="col s6">
+                      <div class="projectsection1">
+                          <h6>We need another function that will check to see if the player turtle is touching the food turtle. Let's call it <strong>checkFood()</strong>.</h6>
+                        </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                        <!--Lesson Checkbox Div-->
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                              <p>
+                                <label>
+                                  <input type="checkbox" />
+                                  <span></span>
+                                </label>
+                              </p>
+                            </form>
+                          </div>
+                        </div>
+                        <!--Instruction Div-->
+                        <div class="col s6">
+                          <div class="projectsection1">
+                              <h6>Inside this function, we will ask <em>if player.distance(food) < 20:</em> </h6>
+                              <h6>Then, we will call <em>randomPosition()</em>. </h6>
+                            </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                            <!--Lesson Checkbox Div-->
+                            <div class="col s1 offset-s1">
+                              <div class="checkbox">
+                                <form action="#">
+                                  <p>
+                                    <label>
+                                      <input type="checkbox" />
+                                      <span></span>
+                                    </label>
+                                  </p>
+                                </form>
+                              </div>
+                            </div>
+                            <!--Instruction Div-->
+                            <div class="col s6">
+                              <div class="projectsection1">
+                                  <h6>Now call <em>checkFood()</em> inside each of the movement functions, after telling the turtle to move.</h6>
+                                </div>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col s6 offset-s2">
+                            <img src="./python-images/feedtheturtle/checkFood.png" width="300px">
+                          </div>
+                        </div>
+
+                        <div class="row">
+                                <!--Lesson Checkbox Div-->
+                                <div class="col s1 offset-s1">
+                                  <div class="checkbox">
+                                    <form action="#">
+                                      <p>
+                                        <label>
+                                          <input type="checkbox" />
+                                          <span></span>
+                                        </label>
+                                      </p>
+                                    </form>
+                                  </div>
+                                </div>
+                                <!--Instruction Div-->
+                                <div class="col s6">
+                                  <div class="projectsection1">
+                                      <h6><strong>Challenge</strong>: Try it out.</h6>
+                                    </div>
+                              </div>
+                            </div>
+
+
+                            <div class="row">
+                                    <!--Lesson Checkbox Div-->
+                                    <div class="col s1 offset-s1">
+                                      <div class="checkbox">
+                                        <form action="#">
+                                          <p>
+                                            <label>
+                                              <input type="checkbox" />
+                                              <span></span>
+                                            </label>
+                                          </p>
+                                        </form>
+                                      </div>
+                                    </div>
+                                    <!--Instruction Div-->
+                                    <div class="col s6">
+                                      <div class="projectsection1">
+                                          <h6>At this point, the food should move everytime the player turtle touches it!</h6>
+                                        </div>
+                                  </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col s6 offset-s1">
+                                      <h5 style="font-weight:bold;">Keeping Score</h5>
+                                    </div>
+                                  </div>
+
+
+
+                                <div class="row">
+                                        <!--Lesson Checkbox Div-->
+                                        <div class="col s1 offset-s1">
+                                          <div class="checkbox">
+                                            <form action="#">
+                                              <p>
+                                                <label>
+                                                  <input type="checkbox" />
+                                                  <span></span>
+                                                </label>
+                                              </p>
+                                            </form>
+                                          </div>
+                                        </div>
+                                        <!--Instruction Div-->
+                                        <div class="col s6">
+                                          <div class="projectsection1">
+                                              <h6>Let's add another turtle, and a variable to keep score.</h6>
+                                            </div>
+                                      </div>
+                                    </div>
+
+                                    <div class="row">
+                                            <!--Lesson Checkbox Div-->
+                                            <div class="col s1 offset-s1">
+                                              <div class="checkbox">
+                                                <form action="#">
+                                                  <p>
+                                                    <label>
+                                                      <input type="checkbox" />
+                                                      <span></span>
+                                                    </label>
+                                                  </p>
+                                                </form>
+                                              </div>
+                                            </div>
+                                            <!--Instruction Div-->
+                                            <div class="col s6">
+                                              <div class="projectsection1">
+                                                  <h6>Name the turtle <em>scoreWriter</em>, and the variable <em>score</em>.</h6>
+                                                </div>
+                                          </div>
+                                        </div>
+
+                                    <div class="row">
+                                      <div class="col s6 offset-s2">
+                                        <img src="./python-images/feedtheturtle/score.png" width="300px">
+                                      </div>
+                                    </div>
+
+                                    <div class="row">
+                                            <!--Lesson Checkbox Div-->
+                                            <div class="col s1 offset-s1">
+                                              <div class="checkbox">
+                                                <form action="#">
+                                                  <p>
+                                                    <label>
+                                                      <input type="checkbox" />
+                                                      <span></span>
+                                                    </label>
+                                                  </p>
+                                                </form>
+                                              </div>
+                                            </div>
+                                            <!--Instruction Div-->
+                                            <div class="col s6">
+                                              <div class="projectsection1">
+                                                  <h6>Go ahead and setup the scoreWriter to pick its penup, set the speed to 0, and hide the turtle.</h6>
+                                                </div>
+                                          </div>
+                                        </div>
+
+                                        <div class="row">
+                                          <div class="col s6 offset-s2">
+                                            <img src="./python-images/feedtheturtle/scoresetup.png" width="300px">
+                                          </div>
+                                        </div>
+
+                                        <div class="row">
+                                                <!--Lesson Checkbox Div-->
+                                                <div class="col s1 offset-s1">
+                                                  <div class="checkbox">
+                                                    <form action="#">
+                                                      <p>
+                                                        <label>
+                                                          <input type="checkbox" />
+                                                          <span></span>
+                                                        </label>
+                                                      </p>
+                                                    </form>
+                                                  </div>
+                                                </div>
+                                                <!--Instruction Div-->
+                                                <div class="col s6">
+                                                  <div class="projectsection1">
+                                                      <h6>Let's move the scoreWriter turtle into position, and have it display the word "Score:", and the current score in the score variable.</h6>
+                                                      <h6>Tell the scoreWriter to <em>goto</em> a corner, and <em>write</em> "Score: " + score. </h6>
+                                                    </div>
+                                              </div>
+                                            </div>
+
+                                            <div class="row">
+                                              <div class="col s6 offset-s2">
+                                                <img src="./python-images/feedtheturtle/scoregoto.png" width="600px">
+                                              </div>
+                                            </div>
+
+                                            <div class="row">
+                                                    <!--Lesson Checkbox Div-->
+                                                    <div class="col s1 offset-s1">
+                                                      <div class="checkbox">
+                                                        <form action="#">
+                                                          <p>
+                                                            <label>
+                                                              <input type="checkbox" />
+                                                              <span></span>
+                                                            </label>
+                                                          </p>
+                                                        </form>
+                                                      </div>
+                                                    </div>
+                                                    <!--Instruction Div-->
+                                                    <div class="col s6">
+                                                      <div class="projectsection1">
+                                                          <h6>Now we need a function to update the score anytime the player turtle eats the food. Define a function called <strong>updateScore()</strong>.</h6>
+                                                        </div>
+                                                  </div>
+                                                </div>
+
+                                                <div class="row">
+                                                        <!--Lesson Checkbox Div-->
+                                                        <div class="col s1 offset-s1">
+                                                          <div class="checkbox">
+                                                            <form action="#">
+                                                              <p>
+                                                                <label>
+                                                                  <input type="checkbox" />
+                                                                  <span></span>
+                                                                </label>
+                                                              </p>
+                                                            </form>
+                                                          </div>
+                                                        </div>
+                                                        <!--Instruction Div-->
+                                                        <div class="col s6">
+                                                          <div class="projectsection1">
+                                                              <h6>This function should call <em>global score</em>, <em>add one to score</em>, and tell the scoreWriter to <em>write</em> the new score.</h6>
+                                                            </div>
+                                                      </div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                      <div class="col s6 offset-s2">
+                                                        <img src="./python-images/feedtheturtle/updateScore.png" width="600px">
+                                                      </div>
+                                                    </div>
+
+                                                    <div class="row">
+                                                            <!--Lesson Checkbox Div-->
+                                                            <div class="col s1 offset-s1">
+                                                              <div class="checkbox">
+                                                                <form action="#">
+                                                                  <p>
+                                                                    <label>
+                                                                      <input type="checkbox" />
+                                                                      <span></span>
+                                                                    </label>
+                                                                  </p>
+                                                                </form>
+                                                              </div>
+                                                            </div>
+                                                            <!--Instruction Div-->
+                                                            <div class="col s6">
+                                                              <div class="projectsection1">
+                                                                  <h6>We will call updateScore inside of the checkFood function.</h6>
+                                                                </div>
+                                                          </div>
+                                                        </div>
+
+                                                        <div class="row">
+                                                                <!--Lesson Checkbox Div-->
+                                                                <div class="col s1 offset-s1">
+                                                                  <div class="checkbox">
+                                                                    <form action="#">
+                                                                      <p>
+                                                                        <label>
+                                                                          <input type="checkbox" />
+                                                                          <span></span>
+                                                                        </label>
+                                                                      </p>
+                                                                    </form>
+                                                                  </div>
+                                                                </div>
+                                                                <!--Instruction Div-->
+                                                                <div class="col s6">
+                                                                  <div class="projectsection1">
+                                                                      <h6>This function should call <em>global score</em>, <em>add one to score</em>, and tell the scoreWriter to <em>write</em> the new score.</h6>
+                                                                    </div>
+                                                              </div>
+                                                            </div>
+
+                                    <div class="row">
+                                            <!--Lesson Checkbox Div-->
+                                            <div class="col s1 offset-s1">
+                                              <div class="checkbox">
+                                                <form action="#">
+                                                  <p>
+                                                    <label>
+                                                      <input type="checkbox" />
+                                                      <span></span>
+                                                    </label>
+                                                  </p>
+                                                </form>
+                                              </div>
+                                            </div>
+                                            <!--Instruction Div-->
+                                            <div class="col s6">
+                                              <div class="projectsection1">
+                                                  <h6><strong>Challenge</strong>: Try it out.</h6>
+                                                </div>
+                                          </div>
+                                        </div>
+
+                                        <div class="row">
+                                                <!--Lesson Checkbox Div-->
+                                                <div class="col s1 offset-s1">
+                                                  <div class="checkbox">
+                                                    <form action="#">
+                                                      <p>
+                                                        <label>
+                                                          <input type="checkbox" />
+                                                          <span></span>
+                                                        </label>
+                                                      </p>
+                                                    </form>
+                                                  </div>
+                                                </div>
+                                                <!--Instruction Div-->
+                                                <div class="col s6">
+                                                  <div class="projectsection1">
+                                                      <h6>Now your score should update everytime the player turtle touches the food turtle.</h6>
+                                                    </div>
+                                              </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col s6 offset-s1">
+                                                  <h5 style="font-weight:bold;">Adding an Enemy</h5>
+                                                </div>
+                                              </div>
+                                              <div class="row">
+                                          <!--Lesson Checkbox Div-->
+                                          <div class="col s1 offset-s1">
+                                            <div class="checkbox">
+                                              <form action="#">
+                                                <p>
+                                                  <label>
+                                                    <input type="checkbox" />
+                                                    <span></span>
+                                                  </label>
+                                                </p>
+                                              </form>
+                                            </div>
+                                          </div>
+                                          <!--Instruction Div-->
+                                          <div class="col s6">
+                                            <div class="projectsection1">
+                                                <h6>Begin by adding one more turtle, this one named <strong>enemy</strong>. </h6>
+                                                <h6>Change enemy's settings like we did for food and player. Set the <em>shape, color</em>, set the <em>speed to 0</em>, and pick the <em>pen up</em>.</h6>
+                                                <h6>We also want the enemy to start near the top of the screen. Tell the enemy to <em>goto</em> a place near the top of the window. </h6>
+                                              </div>
+                                        </div>
+                                      </div>
+
+                                      <div class="row">
+                                        <div class="col s6 offset-s2">
+                                          <img src="./python-images/feedtheturtle/enemysetup.png" width="300px">
+                                        </div>
+                                      </div>
+
+                                      <div class="row">
+                                              <!--Lesson Checkbox Div-->
+                                              <div class="col s1 offset-s1">
+                                                <div class="checkbox">
+                                                  <form action="#">
+                                                    <p>
+                                                      <label>
+                                                        <input type="checkbox" />
+                                                        <span></span>
+                                                      </label>
+                                                    </p>
+                                                  </form>
+                                                </div>
+                                              </div>
+                                              <!--Instruction Div-->
+                                              <div class="col s6">
+                                                <div class="projectsection1">
+                                                    <h6>Let's add a function to check and see if the enemy turtle is touching the player turtle. Call this function <strong>checkEnemy()</strong>. </h6>
+                                                  </div>
+                                            </div>
+                                          </div>
+
+                                          <div class="row">
+                                                  <!--Lesson Checkbox Div-->
+                                                  <div class="col s1 offset-s1">
+                                                    <div class="checkbox">
+                                                      <form action="#">
+                                                        <p>
+                                                          <label>
+                                                            <input type="checkbox" />
+                                                            <span></span>
+                                                          </label>
+                                                        </p>
+                                                      </form>
+                                                    </div>
+                                                  </div>
+                                                  <!--Instruction Div-->
+                                                  <div class="col s6">
+                                                    <div class="projectsection1">
+                                                        <h6>This function should call <em>global score</em>, and check <em>if the distance from the player to the enemy is less than 20.</em> Then, <em>Set the score to 0</em>, and tell the scoreWriter to <em>write the new score</em>. </h6>
+                                                      </div>
+                                                </div>
+                                              </div>
+
+                                              <div class="row">
+                                                <div class="col s6 offset-s2">
+                                                  <img src="./python-images/feedtheturtle/checkEnemy.png" width="700px">
+                                                </div>
+                                              </div>
+
+                                              <div class="row">
+                                                      <!--Lesson Checkbox Div-->
+                                                      <div class="col s1 offset-s1">
+                                                        <div class="checkbox">
+                                                          <form action="#">
+                                                            <p>
+                                                              <label>
+                                                                <input type="checkbox" />
+                                                                <span></span>
+                                                              </label>
+                                                            </p>
+                                                          </form>
+                                                        </div>
+                                                      </div>
+                                                      <!--Instruction Div-->
+                                                      <div class="col s6">
+                                                        <div class="projectsection1">
+                                                            <h6>Now we just need the enemy to move on its own. We will define a function for this called <strong>enemyMove()</strong>.</h6>
+                                                          </div>
+                                                    </div>
+                                                  </div>
+
+                                                  <div class="row">
+                                                          <!--Lesson Checkbox Div-->
+                                                          <div class="col s1 offset-s1">
+                                                            <div class="checkbox">
+                                                              <form action="#">
+                                                                <p>
+                                                                  <label>
+                                                                    <input type="checkbox" />
+                                                                    <span></span>
+                                                                  </label>
+                                                                </p>
+                                                              </form>
+                                                            </div>
+                                                          </div>
+                                                          <!--Instruction Div-->
+                                                          <div class="col s6">
+                                                            <div class="projectsection1">
+                                                                <h6>The enemyMove function should have an infinite loop <em>while True:</em> that moves the enemy <em>forward</em>, <em>sets the enemy heading to <strong>enemy.toward(player)</strong> </em>, and calls <em>checkEnemy</em>. </h6>
+                                                              </div>
+                                                        </div>
+                                                      </div>
+
+                                                      <div class="row">
+                                                        <div class="col s6 offset-s2">
+                                                          <img src="./python-images/feedtheturtle/enemyMove.png" width="400px">
+                                                        </div>
+                                                      </div>
+
+                                <div class="row">
+                                      <!--Lesson Checkbox Div-->
+                                      <div class="col s1 offset-s1">
+                                        <div class="checkbox">
+                                          <form action="#">
+                                            <p>
+                                              <label>
+                                                <input type="checkbox" />
+                                                <span></span>
+                                              </label>
+                                            </p>
+                                          </form>
+                                        </div>
+                                      </div>
+                                      <!--Instruction Div-->
+                                      <div class="col s6">
+                                        <div class="projectsection1">
+                                            <h6>Now we just need to tie this function to a keypress. Bind it to the space key.</h6>
+                                          </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="row">
+                                    <div class="col s6 offset-s2">
+                                      <img src="./python-images/feedtheturtle/enemyMoveSpace.png" width="400px">
+                                    </div>
+                                  </div>
+
+                                  <div class="row">
+                                          <!--Lesson Checkbox Div-->
+                                          <div class="col s1 offset-s1">
+                                            <div class="checkbox">
+                                              <form action="#">
+                                                <p>
+                                                  <label>
+                                                    <input type="checkbox" />
+                                                    <span></span>
+                                                  </label>
+                                                </p>
+                                              </form>
+                                            </div>
+                                          </div>
+                                          <!--Instruction Div-->
+                                          <div class="col s6">
+                                            <div class="projectsection1">
+                                                <h6>Now play the game. Press space to activate the enemy!</h6>
+                                              </div>
+                                        </div>
+                                      </div>
+
+                                      <div class="row">
+                                          <div class="col s6 offset-s1">
+                                            <h5 style="font-weight:bold;">Challenges</h5>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+
+                                      <div class="row">
+                                              <!--Lesson Checkbox Div-->
+                                              <div class="col s1 offset-s1">
+                                                <div class="checkbox">
+                                                  <form action="#">
+                                                    <p>
+                                                      <label>
+                                                        <input type="checkbox" />
+                                                        <span></span>
+                                                      </label>
+                                                    </p>
+                                                  </form>
+                                                </div>
+                                              </div>
+                                              <!--Instruction Div-->
+                                              <div class="col s6">
+                                                <div class="projectsection1">
+                                                    <h6>Add code to make the enemy reset its location after it touches the player.</h6>
+                                                  </div>
+                                            </div>
+                                          </div>
+
+                                          <div class="row">
+                                                  <!--Lesson Checkbox Div-->
+                                                  <div class="col s1 offset-s1">
+                                                    <div class="checkbox">
+                                                      <form action="#">
+                                                        <p>
+                                                          <label>
+                                                            <input type="checkbox" />
+                                                            <span></span>
+                                                          </label>
+                                                        </p>
+                                                      </form>
+                                                    </div>
+                                                  </div>
+                                                  <!--Instruction Div-->
+                                                  <div class="col s6">
+                                                    <div class="projectsection1">
+                                                        <h6>Add instructions on the screen. Use the scoreWriter turtle to write these.</h6>
+                                                      </div>
+                                                </div>
+                                              </div>
+
+                                              <div class="row">
+                                                      <!--Lesson Checkbox Div-->
+                                                      <div class="col s1 offset-s1">
+                                                        <div class="checkbox">
+                                                          <form action="#">
+                                                            <p>
+                                                              <label>
+                                                                <input type="checkbox" />
+                                                                <span></span>
+                                                              </label>
+                                                            </p>
+                                                          </form>
+                                                        </div>
+                                                      </div>
+                                                      <!--Instruction Div-->
+                                                      <div class="col s6">
+                                                        <div class="projectsection1">
+                                                            <h6>Hide all the turtles until the game starts.</h6>
+                                                          </div>
+                                                    </div>
+                                                  </div>
+
+                                                  <div class="row">
+                                                          <!--Lesson Checkbox Div-->
+                                                          <div class="col s1 offset-s1">
+                                                            <div class="checkbox">
+                                                              <form action="#">
+                                                                <p>
+                                                                  <label>
+                                                                    <input type="checkbox" />
+                                                                    <span></span>
+                                                                  </label>
+                                                                </p>
+                                                              </form>
+                                                            </div>
+                                                          </div>
+                                                          <!--Instruction Div-->
+                                                          <div class="col s6">
+                                                            <div class="projectsection1">
+                                                                <h6>Add a high score feature.</h6>
+                                                              </div>
+                                                        </div>
+                                                      </div>
+                                <!--Project Complete Banner-->
+                                <div class="row blue white-text">
+                                  <div class="col s4 offset-s4">
+                                    <h5 style="text-align:center;">Turtles, one click at a time.</h5>
+                                  </div>
+                                </div>
+
+        <!--Card: Prompt - Find Another Project-->
+        <div class="row">
+          <div class="col s4 offset-s4">
+            <div class="card findanotherproject">
+              <div class="card-content">
+                <div class="cardDescription">
+                  <h6>Find another project?</h6>
+                  <div class="browse">
+                    <br>
+                    <a href="python.html">
+                      <button>Browse all projects</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </body>
+    </html>
