@@ -2,6 +2,22 @@ body {
   background-color: #F7F7F7;
 }
 
+.copyright{
+  font-size: .8em;
+  text-align: right;
+  margin-top: 4em;
+}
+
+.logo{
+  height: 2em;
+  margin-top: .8em;
+  margin-right: 1em;
+}
+
+.logo-div{
+  text-align: right;
+}
+
 .startButton {
   display: inline-block;
   text-align: center;
@@ -97,7 +113,7 @@ a:visited {
 .card {
   width: 90%;
   margin: .5rem 5% 1rem 5%;
-  height: 410px;
+  height: 32em;
 }
 
 .reviewcard {
