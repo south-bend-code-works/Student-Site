@@ -1,0 +1,1304 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="../main.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="SBCS_favicon.png">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Stopwatch</title>
+  </head>
+  <body>
+    <!--Nav bar  -->
+    <nav class="light-blue lighten-1">
+      <div class="nav-wrapper">
+        <a href="#!"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="hide-on-med-and-down">
+          <li><a href="../home.html">Home</a></li>
+          <li><a href=".././scratch/scratch.html">Ages 7-12</a></li>
+          <li><a href="../techimmersion.html">Ages 13-18</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="../home.html">Home</a></li>
+      <li><a href=".././scratch/scratch.html">Ages 7-12</a></li>
+      <li><a href="../techimmersion.html">Ages 13-18</a></li>
+    </ul>
+
+    <div class="row">
+      <div class="col s6 offset-s3">
+        <h4 style="font-weight:bold;"><center>Stopwatch</center></h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <h6>In this lesson you will:</h6>
+        <ol>
+          <li>Build a website with a simple JS stopwatch.</li>
+          <li>Learn the basics of JavaScript.</li>
+        </ol>
+        <h4 class="projectTitle">What You Will Make</h4>
+        <iframe src="https://Stopwatch-1.kristenhaubold.repl.co" width="500px" height="300px"></iframe>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 style='font-weight:bold'>Getting Started</h5>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+      </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Open up a new repl using HTML, CSS, JS. Or if you're using atom, follow the directions below to set up your coding environment.</h6>
+          </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 style="font-weight:bold;">Your Coding Environment</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Make a new folder in the code folder on your computer.</h6>
+          <br>
+          <h6>Name the folder <span style="font-weight:bold;">"YourFirstName_Stopwatch"</span></h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Create an HTML file.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Name the HTML file <strong>index.html</strong></h6>
+          <p>Save it in your stopwatch folder</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Set up your HTML file (doctype, html, head, title, body)</h6>
+        </div>
+      </div>
+    </div>
+
+    <!--Collapsible-->
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+         <li>
+           <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>I need a hint</div>
+           <div class="collapsible-body"><span>&lt;!DOCTYPE html&gt;
+             <br>
+             &lt;html&gt;
+             <br>
+             <span style="padding-left:5%;">&lt;head&gt;</span>
+             <br>
+             <span style="padding-left:7%;">&lt;title&gt;</span>
+             <br>
+             <span style="padding-left:7%;">&lt;/title&gt;</span>
+             <br>
+             <span style="padding-left:5%;">&lt;/head&gt;</span>
+             <br>
+             <span style="padding-left:5%;">&lt;body&gt;</span>
+             <br>
+             <span style="padding-left:5%;">&lt;/body&gt;</span>
+             <br>
+             &lt;/html&gt;
+           </span></div>
+         </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Create a CSS file.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Name the CSS file <strong>style.css</strong>.</h6>
+          <p>Save it in your stopwatch folder</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Link your CSS file to your HTML file.</h6>
+        </div>
+      </div>
+    </div>
+
+    <!--Collapsible-->
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+         <li>
+           <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>I need a hint</div>
+           <div class="collapsible-body"><span><img style="width:60%; height:60%;" src="../html/html-images/linkcss.png"></span></div>
+         </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Create a JavaScript file.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Name the JavaScript file <strong>script.js</strong>.</h6>
+          <p>Save it in your stopwatch folder</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Link your JavaScript file to your HTML file.</h6>
+        </div>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col s6 offset-s1'>
+        <h5 style='font-weight:bold'>HTML Setup</h5>
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class='col s6'>
+        <div class='projectsection1'>
+          <h6>Inside the body tag of your html file, make a div tag with the class "wrapper".</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class='col s6'>
+        <div class='projectsection1'>
+          <h6>Now add a heading using h1 that gives your page a title. "Stopwatch" would be appropriate.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class='col s6'>
+        <div class='projectsection1'>
+          <h6>We will now add the p tag that will hold our times. </h6>
+          <h6>Add a p tag, with three span tags inside it. Between the spans, add colons. Give each span an id, the first should be minutes, the second should be seconds, and the third should be milliseconds.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <p><img src="./javascript-images/stopwatch_spans.png" width=75%></p>
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class='col s6 offset-s1'>
+        <h5 style='font-weight:bold'>Buttons</h5>
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class='col s6'>
+        <div class='projectsection1'>
+          <h6>Now we can add our start, stop, and reset buttons. Add three button tags below the paragraph and spans. Give each one an id. "start", "stop", and "reset" would work well.  </h6>
+        </div>
+      </div>
+    </div>
+
+    <!--Collapsible-->
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+         <li>
+           <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>I need a hint</div>
+           <div class="collapsible-body"><span><img style="width:60%; height:60%;" src="./javascript-images/stopwatch_buttons.png"></span></div>
+         </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class='col s6 offset-s1'>
+        <h5 style='font-weight:bold'>Jumping into the CSS</h5>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Later on we will be coding our Javascript, but for now, let's give our page some style.</h6>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>You can make your style as simple or classy as you'd like. We will just change some colors, fonts, and padding here.</h6>
+        </div>
+      </div>
+    </div>
+
+        <div class="row">
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </p>
+                </form>
+              </div>
+            </div>
+          <div class="col s6">
+            <div class="projectsection1">
+              <h6>Start with the body selector. In there, add a nice <em>background-color</em>. </h6>
+            </div>
+          </div>
+        </div>
+
+    <div class='row'>
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class='col s6'>
+        <div class='projectsection1'>
+          <h6>Moving on to the .wrapper selector, let's change the <em>font-family</em>, <em>center</em> the text, and change the text <em>color</em>.</h6>
+        </div>
+      </div>
+    </div>
+    <!--Collapsible-->
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+         <li>
+           <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>I need a hint</div>
+           <div class="collapsible-body"><span><img src="./javascript-images/stopwatch_wrapper.png" width=75%></span></div>
+         </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class='col s6'>
+        <div class='projectsection1'>
+          <h6>You can style the headers if you'd like. Try adjusting the <em>font-size</em>, <em>font-weight</em>, and <em>text-transform</em>.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+           <li>
+             <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>I Need a Hint</div>
+             <div class="collapsible-body"><img src="./javascript-images/stopwatch_headers.png" width="75%">
+             </div>
+           </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class='col s6'>
+        <div class='projectsection1'>
+          <h6>Let's make our stopwatch numbers a bit bigger. Style the #minutes, #seconds, and #milliseconds ids to have a <em>font-size</em> that's 2em. </h6>
+        </div>
+      </div>
+    </div>
+
+
+    <div class='row'>
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class='col s6'>
+        <div class='projectsection1'>
+          <h6>Now let's make those buttons a bit more modern. Feel free to using the following settings, or try your own!</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+           <li>
+             <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>I Need a Hint</div>
+             <div class="collapsible-body"><img src="./javascript-images/stopwatch_buttonstyle.png" width="400px">
+             </div>
+           </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class='col s6'>
+        <div class='projectsection1'>
+          <h6>Last but not least, add a <em>button:hover</em> selector to let the user know when they are touching a button. </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+           <li>
+             <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>I Need a Hint</div>
+             <div class="collapsible-body"><img src="./javascript-images/stopwatch_buttonhover.png" width="75%">
+             </div>
+           </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+      <div class='col s6'>
+        <div class='projectsection1'>
+          <h6>Save Your Code</h6>
+          <h6>Take a look! Your stopwatch should look nice, but not do anything yet.</h6>
+        </div>
+      </div>
+    </div>
+
+          <div class='row'>
+            <div class='col s6 offset-s1'>
+              <h5 style='font-weight:bold'>Let's write some Javascript!</h5>
+            </div>
+          </div>
+
+          <div class='row'>
+            <div class="col s1 offset-s1">
+              <div class="checkbox">
+                <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span></span>
+                      </label>
+                    </p>
+                  </form>
+                </div>
+              </div>
+            <div class='col s6'>
+              <div class='projectsection1'>
+                <h6>Head over to your script.js file. </h6>
+              </div>
+            </div>
+          </div>
+
+
+            <div class='row'>
+              <div class="col s1 offset-s1">
+                <div class="checkbox">
+                  <form action="#">
+                      <p>
+                        <label>
+                          <input type="checkbox" />
+                          <span></span>
+                        </label>
+                      </p>
+                    </form>
+                  </div>
+                </div>
+              <div class='col s6'>
+                <div class='projectsection1'>
+                  <h6>We will start with a wrapper function. Add <em>window.onload = function(){ }</em> </h6>
+                </div>
+              </div>
+            </div>
+
+              <div class="row">
+                <div class="col s6 offset-s2">
+                  <ul class="collapsible">
+                     <li>
+                       <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>I Need a Hint</div>
+                       <div class="collapsible-body"><img src="./javascript-images/stopwatch_wrapperfunction.png" width="75%">
+                       </div>
+                     </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class='row'>
+                <div class="col s1 offset-s1">
+                  <div class="checkbox">
+                    <form action="#">
+                        <p>
+                          <label>
+                            <input type="checkbox" />
+                            <span></span>
+                          </label>
+                        </p>
+                      </form>
+                    </div>
+                  </div>
+                <div class='col s6'>
+                  <div class='projectsection1'>
+                    <h6>Let's start with some variables!</h6>
+                    <h6>Define variables for minutes, seconds, and milliseconds.</h6>
+                    <h6> <em>var minutes = 0;</em> <br>
+                      <em>var seconds = 0;</em> <br>
+                      <em>var milliseconds = 0;</em>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+
+                <div class='row'>
+                  <div class="col s1 offset-s1">
+                    <div class="checkbox">
+                      <form action="#">
+                          <p>
+                            <label>
+                              <input type="checkbox" />
+                              <span></span>
+                            </label>
+                          </p>
+                        </form>
+                      </div>
+                    </div>
+                  <div class='col s6'>
+                    <div class='projectsection1'>
+                      <h6>Let's make six more variables, for our document elements.</h6>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col s6 offset-s2">
+                    <img src="./javascript-images/stopwatch_variables.png" width="75%">
+                  </div>
+                </div>
+
+                  <div class='row'>
+                    <div class="col s1 offset-s1">
+                      <div class="checkbox">
+                        <form action="#">
+                            <p>
+                              <label>
+                                <input type="checkbox" />
+                                <span></span>
+                              </label>
+                            </p>
+                          </form>
+                        </div>
+                      </div>
+                    <div class='col s6'>
+                      <div class='projectsection1'>
+                        <h6>Now we need one more variable, this one will help us keep track of time.</h6>
+                        <h6> <em>var Interval;</em> </h6>
+                      </div>
+                    </div>
+                  </div>
+
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>Save Your Code</h6>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class='col s6 offset-s1'>
+                          <h5 style='font-weight:bold'>Adding Functions</h5>
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>We will need three onclick functions to determine what happens when the user clicks the start, stop, and reset buttons.</h6>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>We will start with the stop button, as it has the simplest function.</h6>
+                            <h6>After your variables, add this code:</h6>
+                            <h6> <em>stopbutton.onclick = function(){ <br>
+                              clearInterval(Interval); <br>
+                            }</em> </h6>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>Next let's do the reset button.</h6>
+                            <h6>When we reset, we need the timer to stop, all the time variables to go to 0, and all the displays to update to 00.</h6>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col s6 offset-s2">
+                          <img src="./javascript-images/stopwatch_resetonclick.png" width="75%">
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>Now for the start button.</h6>
+                            <h6>Add code similar to the stop button.</h6>
+                            <h6> <em>  startButton.onclick = function(){ <br>
+                            clearInterval(Interval); <br>
+                            Interval = setInterval(startTimer, 10); <br>
+                          }</em> </h6>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>This time we added the Interval = setInterval(startTimer, 10) line of code.</h6>
+                            <h6>This line tells Javascript to run the startTimer function every 10 milliseconds.</h6>
+                            <h6>For more info about the setInterval function, you can read up <a href="https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval" target="_blank">here</a>. </h6>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>Save Your Code</h6>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class='col s6 offset-s1'>
+                          <h5 style='font-weight:bold'>Clock Logic</h5>
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>The last thing we need to add is the startTimer function. This will keep time and update the screen.</h6>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>Go ahead and define <em>function startTimer(){ }</em></h6>
+
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>Let's start by keeping time in milliseconds.</h6>
+                            <h6>Everytime this function happens (ever 10 milliseconds), we want to add one to the milliseconds variable.</h6>
+                            <h6> <em>milliseconds++;</em> </h6>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>Now we just need some <em>if</em> statements to govern when the seconds and minutes increment.</h6>
+                            <h6>If there are more than 100 milliseconds, we've reached a second. So we need to add one to seconds, and start milliseconds back at 0.</h6>
+                            <h6>Inside that, we need to check <em>if</em> there's more than 60 seconds, because then we need to add one to minutes, and start seconds back at 0.</h6>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col s6 offset-s2">
+                          <img src="./javascript-images/stopwatch_clocklogic.png" width="75%">
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>We've got the variables updating, now we just need to show them on the webpage.</h6>
+                            <h6>We will use innerHTML to update our span tags.</h6>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>We need some more logic also, to add a leading 0 to any numbers smaller than 10.</h6>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col s6 offset-s2">
+                          <img src="./javascript-images/stopwatch_milliseconds.png" width="75%">
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>If we have fewer than 10 milliseconds, we add a 0 before the number. Otherwise, we just add the number of milliseconds.</h6>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>We will add similar code for the seconds and minutes. Inside an else statement for the milliseconds if, we will add code for seconds. </h6>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col s6 offset-s2">
+                          <img src="./javascript-images/stopwatch_seconds.png" width="75%">
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>Lastly, we need to add similar code for minutes. This will go inside the seconds if statement.</h6>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col s6 offset-s2">
+                          <img src="./javascript-images/stopwatch_minutes.png" width="75%">
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>Test out the code. Try the start, stop and reset buttons.</h6>
+                            <h6>Be sure to let the clock run to at least a minute to be sure everything works properly!</h6>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col s6 offset-s2">
+                          <ul class="collapsible">
+                             <li>
+                               <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>I Need a Hint</div>
+                               <div class="collapsible-body"><img src="./javascript-images/stopwatch_starttimer.png" width="75%">
+                               </div>
+                             </li>
+                          </ul>
+                        </div>
+                      </div>
+
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>If you are having trouble with the code. Try adding <em>console.log(); </em> to print the values of your variables.</h6>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class='row'>
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                        <div class='col s6'>
+                          <div class='projectsection1'>
+                            <h6>Test your website</h6>
+                            <p>Does it work?</p>
+                            <p>Great job!</p>
+                          </div>
+                        </div>
+                      </div>
+
+<div class='row'>
+  <div class='col s6 offset-s1'>
+    <h5> Show an instructor your finished website!</h5>
+  </div>
+</div>
+
+<!--Project Complete Banner-->
+<div class="row blue white-text">
+  <div class="col s4 offset-s4">
+    <h5 style="text-align:center;">Congrats! Project complete!</h5>
+  </div>
+</div>
+
+<!--Card: Prompt - Find Another Project-->
+<div class="row">
+  <div class="col s4 offset-s4">
+    <div class="card findanotherproject">
+      <div class="card-content">
+        <div class="cardDescription">
+          <br>
+          <h6>Find another project?</h6>
+          <div class="browse">
+            <br>
+            <a href="javascript.html">
+              <button>Browse all projects</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </body>
+</html>
