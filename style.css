@@ -1041,6 +1041,11 @@ input[type='checkbox'] {
   background-image: url('./javascript/tamagotchi.gif');
 }
 
+#stopwatchBG{
+  background-image: url('./javascript/stopwatch.png');
+  background-size: contain;
+}
+
 #jquerysetupBG {
   background-image: url('./javascript/jquerysetup.png');
 }
