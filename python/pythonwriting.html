@@ -64,6 +64,8 @@
       <h6>In this lesson you will:</h6>
       <ol>
         <li>Create writing with Python turtles!</li>
+        <li>Create a random text generator</li>
+        <li>Make a word cloud</li>
       </ol>
       <h5>Background Info</h5>
       <p>We can have our turtles do more than just draw shapes. Turtles can write text on our screen as well.</p>
@@ -272,7 +274,7 @@
                         <!--Instruction Div-->
                         <div class="col s6">
                           <div class="projectsection1">
-                              <h6>Font needs a triple, as shown below. You need to tell it the font name, font size, and font type.</h6>
+                              <h6>Font needs a tuple, as shown below. You need to tell it the font name, font size, and font type.</h6>
                           </div>
                       </div>
                     </div>
@@ -322,7 +324,7 @@
                     <!--Instruction Div-->
                     <div class="col s6">
                       <div class="projectsection1">
-                          <h6>The fonttype options are <strong>bold</strong>, <strong>italic</strong> and <strong>bold italic</strong>.</h6>
+                          <h6>The font type options are <strong>bold</strong>, <strong>italic</strong> and <strong>bold italic</strong>.</h6>
                       </div>
                   </div>
                 </div>
@@ -405,6 +407,275 @@
                         </div>
                   </div>
                 </div>
+
+        <!--html Lesson: Directions Start Here-->
+        <div class="row">
+            <div class="col s6 offset-s1">
+              <h5 style="font-weight:bold;">Random Word Generator</h5>
+            </div>
+          </div>
+
+          <div class="row">
+                  <!--Lesson Checkbox Div-->
+                  <div class="col s1 offset-s1">
+                    <div class="checkbox">
+                      <form action="#">
+                        <p>
+                          <label>
+                            <input type="checkbox" />
+                            <span></span>
+                          </label>
+                        </p>
+                      </form>
+                    </div>
+                  </div>
+                  <!--Instruction Div-->
+                  <div class="col s6">
+                    <div class="projectsection1">
+                        <h6>Let's start by importing the random module up at the top of our python file.</h6>
+                      </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col s6 offset-s2">
+                  <img src="./python-images/import-random.png">
+                </div>
+              </div>
+
+              <div class="row">
+                      <!--Lesson Checkbox Div-->
+                      <div class="col s1 offset-s1">
+                        <div class="checkbox">
+                          <form action="#">
+                            <p>
+                              <label>
+                                <input type="checkbox" />
+                                <span></span>
+                              </label>
+                            </p>
+                          </form>
+                        </div>
+                      </div>
+                      <!--Instruction Div-->
+                      <div class="col s6">
+                        <div class="projectsection1">
+                            <h6>Now we can define a function to generate random text. Start with <strong>def random_text():</strong>. </h6>
+                          </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                          <!--Lesson Checkbox Div-->
+                          <div class="col s1 offset-s1">
+                            <div class="checkbox">
+                              <form action="#">
+                                <p>
+                                  <label>
+                                    <input type="checkbox" />
+                                    <span></span>
+                                  </label>
+                                </p>
+                              </form>
+                            </div>
+                          </div>
+                          <!--Instruction Div-->
+                          <div class="col s6">
+                            <div class="projectsection1">
+                                <h6>Inside our function, we need to create a string with the alphabet in it, so we can pick random letters.</h6>
+                                <h6> <strong>letters = "abcdefghijklmnopqrstuvwxyz"</strong> </h6>
+                                <h6>Then add the rest of the code as shown below.</h6>
+                              </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col s6 offset-s2">
+                          <img src="./python-images/random-text.png" width="80%">
+                        </div>
+                      </div>
+
+    <div class="row">
+            <!--Lesson Checkbox Div-->
+            <div class="col s1 offset-s1">
+              <div class="checkbox">
+                <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </p>
+                </form>
+              </div>
+            </div>
+            <!--Instruction Div-->
+            <div class="col s6">
+              <div class="projectsection1">
+                  <h6>This function will make a word of random length (between 5 and 10 characters) made of random letters from the alphabet.</h6>
+                </div>
+          </div>
+        </div>
+
+        <div class="row">
+                <!--Lesson Checkbox Div-->
+                <div class="col s1 offset-s1">
+                  <div class="checkbox">
+                    <form action="#">
+                      <p>
+                        <label>
+                          <input type="checkbox" />
+                          <span></span>
+                        </label>
+                      </p>
+                    </form>
+                  </div>
+                </div>
+                <!--Instruction Div-->
+                <div class="col s6">
+                  <div class="projectsection1">
+                      <h6>Let's make our word cloud! Create a for loop as shown below to move the turtle randomly to a new location, and then write a random text.</h6>
+                    </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col s6 offset-s2">
+                <img src="./python-images/random-turtles.png" width="80%">
+              </div>
+            </div>
+            <div class="row">
+                    <!--Lesson Checkbox Div-->
+                    <div class="col s1 offset-s1">
+                      <div class="checkbox">
+                        <form action="#">
+                          <p>
+                            <label>
+                              <input type="checkbox" />
+                              <span></span>
+                            </label>
+                          </p>
+                        </form>
+                      </div>
+                    </div>
+                    <!--Instruction Div-->
+                    <div class="col s6">
+                      <div class="projectsection1">
+                          <h6> Adjust the number in range() to change how many words get written.</h6>
+                        </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s6 offset-s1">
+                      <h5 style="font-weight:bold;">Random Font Generator</h5>
+                    </div>
+                  </div>
+
+    <div class="row">
+            <!--Lesson Checkbox Div-->
+            <div class="col s1 offset-s1">
+              <div class="checkbox">
+                <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </p>
+                </form>
+              </div>
+            </div>
+            <!--Instruction Div-->
+            <div class="col s6">
+              <div class="projectsection1">
+                  <h6>We can also change it up by adjusting the font and size of the text.</h6>
+                </div>
+          </div>
+        </div>
+
+        <div class="row">
+                <!--Lesson Checkbox Div-->
+                <div class="col s1 offset-s1">
+                  <div class="checkbox">
+                    <form action="#">
+                      <p>
+                        <label>
+                          <input type="checkbox" />
+                          <span></span>
+                        </label>
+                      </p>
+                    </form>
+                  </div>
+                </div>
+                <!--Instruction Div-->
+                <div class="col s6">
+                  <div class="projectsection1">
+                      <h6>Add the following code to generate a random font.</h6>
+                    </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col s6 offset-s2">
+                <img src="./python-images/random-font.png" width="80%">
+              </div>
+            </div>
+
+          <div class="row">
+                <!--Lesson Checkbox Div-->
+                <div class="col s1 offset-s1">
+                  <div class="checkbox">
+                    <form action="#">
+                      <p>
+                        <label>
+                          <input type="checkbox" />
+                          <span></span>
+                        </label>
+                      </p>
+                    </form>
+                  </div>
+                </div>
+                <!--Instruction Div-->
+                <div class="col s6">
+                  <div class="projectsection1">
+                      <h6>Now replace the font in your for loop with a call to <strong>random_font()</strong>.</h6>
+                    </div>
+              </div>
+            </div>
+
+                <div class="row">
+                  <div class="col s6 offset-s2">
+                    <img src="./python-images/random-font2.png" width="80%">
+                  </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s6 offset-s1">
+                      <h5 style="font-weight:bold;">Challenge</h5>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                        <!--Lesson Checkbox Div-->
+                        <div class="col s1 offset-s1">
+                          <div class="checkbox">
+                            <form action="#">
+                              <p>
+                                <label>
+                                  <input type="checkbox" />
+                                  <span></span>
+                                </label>
+                              </p>
+                            </form>
+                          </div>
+                        </div>
+                        <!--Instruction Div-->
+                        <div class="col s6">
+                          <div class="projectsection1">
+                              <h6>Can you change the turtle color each time you draw a new word?</h6>
+                            </div>
+                      </div>
+                    </div>
 
     <!--Project Complete Banner-->
     <div class="row blue white-text">
