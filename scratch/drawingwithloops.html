@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="../main.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="../SBCS_favicon.png">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Drawing with Loops</title>
+  </head>
+
+  <body>
+    <!--Nav bar  -->
+    <nav class="light-blue lighten-1">
+      <div class="nav-wrapper">
+        <a href="#!"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="hide-on-med-and-down">
+          <li><a href="../home.html">Home</a></li>
+          <li><a href="scratch.html">Ages 7-12</a></li>
+          <li><a href="../techimmersion.html">Ages 13-18</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="../home.html">Home</a></li>
+      <li><a href="scratch.html">Ages 7-12</a></li>
+      <li><a href="../techimmersion.html">Ages 13-18</a></li>
+    </ul>
+
+    <div class="row">
+      <div class="col s6 offset-s3">
+        <h4 style="font-weight:bold;"><center>Drawing with Loops</center></h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <h6>In this lesson you will:</h6>
+        <ol>
+          <li>Use loops to create a variety of different shapes and designs.</li>
+        </ol>
+        <p>In this project, you will create program that draws different shapes using loops.</p>
+        <p>Use the arrow keys to move the sprite between drawings.</p>
+      </div>
+    </div>
+
+    <!--Scratch Lesson: Embedded Example- iframe -->
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <iframe src="https://scratch.mit.edu/projects/475442680/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!--Scratch Lesson: Directions Start Here-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 class="lessonSubheading">Let's get started!</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Open the <a href="https://scratch.mit.edu/projects/editor/?tutorial=getStarted" class="blueLink" target="_blank">starter project</a>!</h6>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+            <h6> Log into your Scratch account.</h6>
+
+          </div>
+        </div>
+      </div>
+      <!--Collapsible Div-->
+      <div class="row">
+        <div class="col s6 offset-s2">
+          <ul class="collapsible">
+             <li>
+               <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>How to sign in</div>
+               <div class="collapsible-body"><img src="./scratch-images/scratchsignin.png"></div>
+             </li>
+          </ul>
+        </div>
+      </div>
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6> Title your project.</h6>
+        </div>
+      </div>
+    </div>
+
+    <!--Collapsible Div-->
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+           <li>
+             <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>How to add a title</div>
+             <div class="collapsible-body"><span>1. Look at the top of the screen for this text box.<br> <br> <img src="./scratch-images/nameproject.png"> <br> <br> 2. Delete the word "Untitled". <br> <br> 3. Type in a new name for your project.</span></div>
+           </li>
+        </ul>
+      </div>
+    </div>
+
+    <!--Lesson Subheading-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 class="lessonSubheading">Sprites</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>The cat sprite that you can see is the Scratch mascot. Let’s get rid of it, by clicking the blue x in the corner.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <img src="./scratch-images/catdelete.png">
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+            <h6>Pick a small sprite to be our drawing sprite, or draw a new one. </h6>
+          </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <!--Collapsible Div-->
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+           <li>
+             <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>How to add characters</div>
+             <div class="collapsible-body"><span><img src="./scratch-images/howtoaddcharacter.png"></span></div>
+           </li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6 class="infosection">Save your project</h6>
+        </div>
+      </div>
+    </div>
+
+    <!--Collapsible -->
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+           <li>
+             <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>How to save your project</div>
+             <div class="collapsible-body"><span>Click "File" in the top-left corner <br> <br> <img src="./scratch-images/file.png"> <br> <br> Click "Save Now"  <br><br><img src="./scratch-images/savenow.png"> <br><br> Your project is now saved! </span></div>
+           </li>
+        </ul>
+      </div>
+    </div>
+
+    <!--Lesson Subheading-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 class="lessonSubheading">Stage Backdrop</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div -->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Add a backdrop.</h6>
+        </div>
+      </div>
+    </div>
+
+    <!--Collapsible-->
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+         <li>
+           <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>How to add a backdrop</div>
+           <div class="collapsible-body"><span>At the moment, the stage is white, and looks pretty boring! Let’s add a backdrop to the stage, by clicking the blue icon on the right side of the screen.<br> <br> Use the picture below as a reference, if needed. <br> <br> <img src="./scratch-images/stage.png"</span></div>
+         </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div -->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>You can type instructions for the user on the background, or leave it blank.</h6>
+        </div>
+      </div>
+    </div>
+
+    <!--Lesson Subheading-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 class="lessonSubheading">Sprite Control</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div -->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div -->
+      <div class="col s6">
+        <div class="projectsection1">
+            <h6>To start with, let’s make the sprite move with the arrow keys.</h6>
+         </div>
+      </div>
+    </div>
+            <!--Collapsible-->
+
+              <div class="row">
+                  <!--Lesson Checkbox Div -->
+                  <div class="col s1 offset-s1">
+                    <div class="checkbox">
+                      <form action="#">
+                        <p>
+                          <label>
+                            <input type="checkbox" />
+                            <span></span>
+                          </label>
+                        </p>
+                      </form>
+                    </div>
+                  </div>
+                  <!--Instruction Div -->
+                  <div class="col s6">
+                    <div class="projectsection1">
+                        <h6>Use a <span class="events">when flag clicked</span>, <span class="control"> forever loop</span>, four <span class="control">if statements</span>, the <span class="sensing">key __ pressed</span> block, <span class="motion">change x by</span> and <span class="motion">change y by</span> blocks.</h6>
+                     </div>
+                  </div>
+                </div>
+                <!--Collapsible Div-->
+                <div class="row">
+                  <div class="col s6 offset-s2">
+                    <ul class="collapsible">
+                       <li>
+                         <div class="collapsible-header"><i class="material-icons orange-text">help</i>
+                           I need a hint</div>
+
+                         <div class="collapsible-body">
+                          <span>
+                            <img src="./scratch-images/loops-arrow-keys.png" width="50%">
+
+                         </span>
+                       </div>
+                       </li>
+                    </ul>
+                  </div>
+                </div>
+
+
+    <!--Lesson Subheading-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 class="lessonSubheading">Drawing</h5>
+      </div>
+    </div>
+
+    <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+            <h6>We need to add the Pen extension. Click on the add extension button in the bottom left corner.</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s6 offset-s2">
+          <img src="./scratch-images/loops-pen-extension.png">
+        </div>
+      </div>
+
+      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>You should see Drawing as an extension. Click on it to add the Pen blocks to your project.</h6>
+        <br>
+      </div>
+    </div>
+    </div>
+
+
+      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+            <h6>Let's set the pen color and put the pen down when we start.</h6>
+          </div>
+        </div>
+        </div>
+
+
+        <div class="row">
+          <!--Lesson Checkbox Div-->
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+              </form>
+            </div>
+          </div>
+
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Use a <span class="events">when flag clicked</span>, and two pen blocks to <span class="pen">set the color</span> and <span class="pen">put the pen down</span>.</h6>
+      </div>
+    </div>
+    </div>
+
+    <div class="row">
+        <div class="col s6 offset-s2">
+          <ul class="collapsible">
+           <li>
+             <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>I need a hint</div>
+             <div class="collapsible-body"><span>You'll need these blocks.<br><img src="./scratch-images/loops-pen-down.png">
+             </span></div>
+           </li>
+          </ul>
+        </div>
+      </div>
+
+
+
+    <!--Lesson Subheading-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 class="lessonSubheading">Loops</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Now let's add some loops.</h6>
+
+        </div>
+      </div>
+      </div>
+
+
+      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+            <h6>We can start with a simple shape like a square.</h6>
+            <h6>Get a <span class="control">loop</span> that happens 4 times, and inside, tell the sprite to go <span class="motion">forward 50</span> and then <span class="motion">turn 90 degrees</span>.</h6>
+          </div>
+        </div>
+        </div>
+
+
+
+        <div class="row">
+          <!--Lesson Checkbox Div-->
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+              </form>
+            </div>
+          </div>
+
+          <!--Instruction Div-->
+          <div class="col s6">
+            <div class="projectsection1">
+                <h6>Let's connect this loop to a keypress. Add the <span class="events">when __ key pressed</span> event and pick what key you'd like to use.</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s6 offset-s2">
+            <img src="./scratch-images/loops-square.png">
+          </div>
+        </div>
+
+          <div class="row">
+              <!--Lesson Checkbox Div-->
+              <div class="col s1 offset-s1">
+                <div class="checkbox">
+                  <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span></span>
+                      </label>
+                    </p>
+                  </form>
+                </div>
+              </div>
+
+                  <!--Instruction Div-->
+        <div class="col s6">
+            <div class="projectsection1">
+              <h6>Test it out! The square draws really fast!</h6>
+            </div>
+          </div>
+        </div>
+
+
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>We can slow it down by adding a <span class="control">wait</span> block.</h6>
+        </div>
+      </div>
+      </div>
+
+      <div class="row">
+        <div class="col s6 offset-s2">
+          <img src="./scratch-images/loops-square-wait.png">
+        </div>
+      </div>
+
+      <!--Lesson Subheading-->
+      <div class="row">
+        <div class="col s6 offset-s1">
+          <h5 class="lessonSubheading">More Loops</h5>
+        </div>
+      </div>
+
+      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+            <h6>Duplicate the square code, and see if you can change it to draw a triangle.</h6>
+          </div>
+        </div>
+        </div>
+
+
+
+        <div class="row">
+          <!--Lesson Checkbox Div-->
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+              </form>
+            </div>
+          </div>
+
+          <!--Instruction Div-->
+          <div class="col s6">
+            <div class="projectsection1">
+              <h6>How many times should the loop happen? How many degrees does the sprite need to turn?</h6>
+
+            </div>
+          </div>
+          </div>
+            <!--Collapsible-->
+            <div class="row">
+                <div class="col s6 offset-s2">
+                  <ul class="collapsible">
+                   <li>
+                     <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>I need a hint</div>
+                     <div class="collapsible-body">You'll need to loop 3 times, and turn 120 degrees for a triangle.</div>
+                   </li>
+                  </ul>
+                </div>
+              </div>
+
+
+          <div class="row">
+            <!--Lesson Checkbox Div-->
+            <div class="col s1 offset-s1">
+              <div class="checkbox">
+                <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </p>
+                </form>
+              </div>
+            </div>
+
+            <!--Instruction Div-->
+            <div class="col s6">
+              <div class="projectsection1">
+                <h6>What about a pentagon? Try making a pentagon loop and connecting it to another keypress. </h6>
+              </div>
+            </div>
+            </div>
+
+            <!--Collapsible-->
+            <div class="row">
+              <div class="col s6 offset-s2">
+                <ul class="collapsible">
+                 <li>
+                   <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>I need a hint</div>
+                   <div class="collapsible-body">You'll need to loop <strong>5</strong> times and turn <strong>72</strong> degrees.</div>
+                 </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="row">
+              <!--Lesson Checkbox Div-->
+              <div class="col s1 offset-s1">
+                <div class="checkbox">
+                  <form action="#">
+                    <p>
+                      <label>
+                        <input type="checkbox" />
+                        <span></span>
+                      </label>
+                    </p>
+                  </form>
+                </div>
+              </div>
+
+              <!--Instruction Div-->
+              <div class="col s6">
+                <div class="projectsection1">
+                  <h6>What other shapes can you make?</h6>
+
+                </div>
+              </div>
+              </div>
+
+
+              <div class="row">
+                <!--Lesson Checkbox Div-->
+                <div class="col s1 offset-s1">
+                  <div class="checkbox">
+                    <form action="#">
+                      <p>
+                        <label>
+                          <input type="checkbox" />
+                          <span></span>
+                        </label>
+                      </p>
+                    </form>
+                  </div>
+                </div>
+
+                <!--Instruction Div-->
+                <div class="col s6">
+                  <div class="projectsection1">
+                    <h6>How about a star? Try turning <strong>144</strong> degrees <strong>5</strong> times. </h6>
+                  </div>
+                </div>
+                </div>
+
+
+    <!--Lesson Subheading-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 class="lessonSubheading">Tinker Time!</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Can you draw a circle using a loop?</h6>
+        </div>
+      </div>
+      </div>
+
+
+
+      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+              <h6>What other patterns can you come up with?</h6>
+              <h6>Play with different loop numbers and degrees turned to see what all you can do!</h6>
+          </div>
+        </div>
+        </div>
+
+
+        <div class="row">
+          <!--Lesson Checkbox Div-->
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+              </form>
+            </div>
+          </div>
+
+          <!--Instruction Div-->
+          <div class="col s6">
+            <div class="projectsection1">
+              <h6>Try using the <span class="pen">stamp</span> block to spice things up!</h6>
+            </div>
+          </div>
+          </div>
+
+          <div class="row">
+            <!--Lesson Checkbox Div-->
+            <div class="col s1 offset-s1">
+              <div class="checkbox">
+                <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </p>
+                </form>
+              </div>
+            </div>
+
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6 class="infosection">Save your project</h6>
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+
+    <!--Project Complete Banner-->
+    <div class="row blue white-text">
+      <div class="col s4 offset-s4">
+        <h5 style="text-align:center;">Congrats! Project complete!</h5>
+      </div>
+    </div>
+
+    <!--Card: Prompt - Find Another Project-->
+    <div class="row">
+      <div class="col s4 offset-s4">
+        <div class="card findanotherproject">
+          <div class="card-content">
+            <div class="cardDescription">
+              <h6>Find another project?</h6>
+              <div class="browse">
+                <br>
+                <a href="scratch.html">
+                  <button>Browse all projects</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
