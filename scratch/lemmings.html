@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="../main.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="../SBCS_favicon.png">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Lemmings</title>
+  </head>
+
+  <body>
+    <!--Nav bar  -->
+    <nav class="light-blue lighten-1">
+      <div class="nav-wrapper">
+        <a href="#!"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="hide-on-med-and-down">
+          <li><a href="../home.html">Home</a></li>
+          <li><a href="scratch.html">Ages 7-12</a></li>
+          <li><a href="../techimmersion.html">Ages 13-18</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="../home.html">Home</a></li>
+      <li><a href="scratch.html">Ages 7-12</a></li>
+      <li><a href="../techimmersion.html">Ages 13-18</a></li>
+    </ul>
+
+    <div class="row">
+      <div class="col s6 offset-s3">
+        <h4 style="font-weight:bold;"><center>Lemmings - they follow blindly</center></h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <h6>In this lesson you will:</h6>
+        <ol>
+          <li>Create an avoidance game - keep the mice from falling in the hole!</li>
+        </ol>
+        <p>You will draw paths for the mice to travel to avoid hole and get to the door.</p>
+      </div>
+    </div>
+
+    <!--Scratch Lesson: Embedded Example- iframe -->
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/501972894" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!--Scratch Lesson: Directions Start Here-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 class="lessonSubheading">Let's get started!</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Open the <a href="https://scratch.mit.edu/projects/509447956/" class="blueLink" target="_blank">starter project</a>!</h6>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+            <h6> Log into your Scratch account.</h6>
+
+          </div>
+        </div>
+      </div>
+      <!--Collapsible Div-->
+      <div class="row">
+        <div class="col s6 offset-s2">
+          <ul class="collapsible">
+             <li>
+               <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>How to sign in</div>
+               <div class="collapsible-body"><img src="./scratch-images/scratchsignin.png"></div>
+             </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+            </form>
+          </div>
+        </div>
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+            <h6>Remix the starter project.</h6>
+          </div>
+        </div>
+      </div>
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6> Title your project.</h6>
+        </div>
+      </div>
+    </div>
+
+    <!--Collapsible Div-->
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+           <li>
+             <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>How to add a title</div>
+             <div class="collapsible-body"><span>1. Look at the top of the screen for this text box.<br> <br> <img src="./scratch-images/nameproject.png"> <br> <br> 2. Delete the word "Untitled". <br> <br> 3. Type in a new name for your project.</span></div>
+           </li>
+        </ul>
+      </div>
+    </div>
+
+    <!--Lesson Subheading-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 class="lessonSubheading">Drawing</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Add the pen extension by clicking on the extension button and selecting pen.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <img src="./scratch-images/extension.png">
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Click on the pen sprite and add code to <span class="pen">change the pen color</span> <span class="events">when the flag is clicked</span>. Make the color the same blue as the ground. </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Collapsible Div-->
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+           <li>
+             <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>Need a hint?</div>
+             <div class="collapsible-body"><span><img src="./scratch-images/changepencolor.png"></span></div>
+           </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Add code to make the pen follow the mouse pointer. </h6>
+          <p>You'll need a <span class="control">forever loop</span> and a <span class="motion"> go to mouse pointer</span> block.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Add more code to <span class="pen">put the pen down</span> <span class="control">if</span> the <span class="sensing"> mouse is down</span> and <span class="control">else</span> <span class="pen">pick the pen up</span></h6>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Test your code!</h6>
+
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6 class="infosection">Save your project</h6>
+        </div>
+      </div>
+    </div>
+
+    <!--Collapsible -->
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+           <li>
+             <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>How to save your project</div>
+             <div class="collapsible-body"><span>Click "File" in the top-left corner <br> <br> <img src="./scratch-images/file.png"> <br> <br> Click "Save Now"  <br><br><img src="./scratch-images/savenow.png"> <br><br> Your project is now saved! </span></div>
+           </li>
+        </ul>
+      </div>
+    </div>
+
+    <!--Lesson Subheading-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 class="lessonSubheading">Clones</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div -->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Let's add a series of mice that fall and follow each other like lemmings.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div -->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Click on the mouse sprite, and add code to tell the mouse to <span class="looks">hide</span> and then <span class="control"> forever</span> <span class="control">create a clone of myself</span> and <span class="control">wait 3 seconds.</span></h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div -->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Add code to tell the mouse <span class="events">when I start as a clone</span> to <span class="looks">show</span> and <span class="motion"> fall</span> <span class="control">until touching color blue</span></h6>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s6 offset-s2">
+        <img src="./scratch-images/falluntilblue.png">
+      </div>
+    </div>
+
+
+    <div class="row">
+      <!--Lesson Checkbox Div -->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div -->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>At this point, the mice should be falling and piling up on the screen.</h6>
+        </div>
+      </div>
+    </div>
+
+    <!--Lesson Subheading-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 class="lessonSubheading">Mouse Movement</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div -->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div -->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Once the mice hit the blue ground, they should move forward until they hit the door or fall into a hole. </h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Add code to the <span class="events"> when I start as a clone</span> script to <span class="motion">move forward</span> and <span class="looks"> change costumes</span> every 0.1 seconds so that it looks like the mouse is walking.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Repeat all the above code <span class="control">until</span> the <span class="sensing">sprite touches an edge</span></h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Collapsible Div-->
+      <div class="col s6 offset-s2">
+        <ul class="collapsible">
+           <li>
+             <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>Hint</div>
+             <div class="collapsible-body"><span><img src="./scratch-images/fallandmove.png"></span></div>
+           </li>
+        </ul>
+      </div>
+    </div>
+
+    <!--Lesson Subheading-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 class="lessonSubheading">Refining Movement.</h5>
+      </div>
+    </div>
+
+<div class="row">
+    <!--Lesson Checkbox Div-->
+    <div class="col s1 offset-s1">
+      <div class="checkbox">
+        <form action="#">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span></span>
+            </label>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!--Instruction Div-->
+    <div class="col s6">
+      <div class="projectsection1">
+        <h6>Add another <span class="control">loop</span> into the mouse clone script to tell the mouse to tell the mouse to <span class="motion">move up 2</span> <span class="control">until</span> <span class="operators">not</span> <span class="sensing"> touching blue</span>.</h6>
+      </div>
+    </div>
+  </div>
+
+
+<div class="row">
+  <!--Collapsible Div-->
+  <div class="col s6 offset-s2">
+    <ul class="collapsible">
+       <li>
+         <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>Hint</div>
+         <div class="collapsible-body"><span><img src="./scratch-images/moveup.png"></span></div>
+       </li>
+    </ul>
+  </div>
+</div>
+
+<div class="row">
+  <!--Lesson Checkbox Div-->
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span></span>
+          </label>
+        </p>
+      </form>
+    </div>
+  </div>
+  <!--Instruction Div-->
+  <div class="col s6">
+    <div class="projectsection1">
+      <h6>Test out your code!</h6>
+    </div>
+  </div>
+</div>
+
+<!--Lesson Subheading-->
+<div class="row">
+  <div class="col s6 offset-s1">
+    <h5 class="lessonSubheading">Getting to safety.</h5>
+  </div>
+</div>
+
+<div class="row">
+  <!--Lesson Checkbox Div-->
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span></span>
+          </label>
+        </p>
+      </form>
+    </div>
+  </div>
+  <!--Instruction Div-->
+  <div class="col s6">
+    <div class="projectsection1">
+      <h6>Add a <span class="variables">variable called score</span>.</h6>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <!--Lesson Checkbox Div-->
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span></span>
+          </label>
+        </p>
+      </form>
+    </div>
+  </div>
+  <!--Instruction Div-->
+  <div class="col s6">
+    <div class="projectsection1">
+      <h6>Add code to the mouse script that will <span class="variables"> increase the score by 1</span> everytime a clone <span class="sensing"> touches the door</span>.</h6>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <!--Lesson Checkbox Div-->
+  <div class="col s1 offset-s1">
+    <div class="checkbox">
+      <form action="#">
+        <p>
+          <label>
+            <input type="checkbox" />
+            <span></span>
+          </label>
+        </p>
+      </form>
+    </div>
+  </div>
+  <!--Instruction Div-->
+  <div class="col s6">
+    <div class="projectsection1">
+      <h6>Add code to the mouse script that will <span class="variables"> set score to 0</span> when the <span class="events"> green flag is clicked</span>.</h6>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <!--Collapsible Div-->
+  <div class="col s6 offset-s2">
+    <ul class="collapsible">
+       <li>
+         <div class="collapsible-header"><i class="material-icons blue-text infosection">info</i>Hint</div>
+         <div class="collapsible-body"><span><img src="./scratch-images/lemmingsscore.png"></span></div>
+       </li>
+    </ul>
+  </div>
+</div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>Add code to tell the clone to <span class="sound"> play a sound</span> and <span class="control"> delete this clone</span> when it touches the door. </h6>
+        </div>
+      </div>
+      </div>
+
+      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+            <!--Instruction Div-->
+            <div class="col s6">
+              <div class="projectsection1">
+                <h6>Test your project, does it work?</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <!--Lesson Checkbox Div-->
+            <div class="col s1 offset-s1">
+              <div class="checkbox">
+                <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </p>
+                </form>
+              </div>
+            </div>
+            <!--Instruction Div-->
+            <div class="col s6">
+              <div class="projectsection1">
+                <h6 class="infosection">Save your project</h6>
+              </div>
+            </div>
+          </div>
+
+    <!--Lesson Subheading-->
+    <div class="row">
+      <div class="col s6 offset-s1">
+        <h5 class="lessonSubheading">Make it cooler!</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6>What else can you add to make the game better?</h6>
+        </div>
+      </div>
+      </div>
+
+      <div class="row">
+        <!--Lesson Checkbox Div-->
+        <div class="col s1 offset-s1">
+          <div class="checkbox">
+            <form action="#">
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+              </p>
+            </form>
+          </div>
+        </div>
+
+        <!--Instruction Div-->
+        <div class="col s6">
+          <div class="projectsection1">
+            <h6>Can you add another background?</h6>
+          </div>
+        </div>
+        </div>
+
+        <div class="row">
+          <!--Lesson Checkbox Div-->
+          <div class="col s1 offset-s1">
+            <div class="checkbox">
+              <form action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span></span>
+                  </label>
+                </p>
+              </form>
+            </div>
+          </div>
+
+          <!--Instruction Div-->
+          <div class="col s6">
+            <div class="projectsection1">
+              <h6>Add more levels?</h6>
+            </div>
+          </div>
+          </div>
+
+          <div class="row">
+            <!--Lesson Checkbox Div-->
+            <div class="col s1 offset-s1">
+              <div class="checkbox">
+                <form action="#">
+                  <p>
+                    <label>
+                      <input type="checkbox" />
+                      <span></span>
+                    </label>
+                  </p>
+                </form>
+              </div>
+            </div>
+
+            <!--Instruction Div-->
+            <div class="col s6">
+              <div class="projectsection1">
+                <h6>Can you add obstacles for the mice?</h6>
+              </div>
+            </div>
+            </div>
+
+    <div class="row">
+      <!--Lesson Checkbox Div-->
+      <div class="col s1 offset-s1">
+        <div class="checkbox">
+          <form action="#">
+            <p>
+              <label>
+                <input type="checkbox" />
+                <span></span>
+              </label>
+            </p>
+          </form>
+        </div>
+      </div>
+      <!--Instruction Div-->
+      <div class="col s6">
+        <div class="projectsection1">
+          <h6 class="infosection">Save your project</h6>
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+
+    <!--Project Complete Banner-->
+    <div class="row blue white-text">
+      <div class="col s4 offset-s4">
+        <h5 style="text-align:center;">Congrats! Project complete!</h5>
+      </div>
+    </div>
+
+    <!--Card: Prompt - Find Another Project-->
+    <div class="row">
+      <div class="col s4 offset-s4">
+        <div class="card findanotherproject">
+          <div class="card-content">
+            <div class="cardDescription">
+              <h6>Find another project?</h6>
+              <div class="browse">
+                <br>
+                <a href="scratch.html">
+                  <button>Browse all projects</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
