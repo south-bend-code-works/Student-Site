@@ -557,6 +557,22 @@ input[type='checkbox'] {
   background-image: url('./html/html-images/abcs.jpg');
 }
 
+#introBG {
+  background-image: url('./html/html-images/css-grid.png');
+}
+
+#aboutMeBG {
+  background-image: url('./html/html-images/about-me.png');
+}
+
+#friendogramBG {
+  background-image: url('./html/html-images/friendogram-grid.png');
+}
+
+#collageGridBG {
+  background-image: url('./html/html-images/collage-grid.png');
+}
+
 #pattern {
   background-image: url('./html/html-images/pattern.gif');
 }
