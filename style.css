@@ -10,13 +10,13 @@ body {
 }
 
 .logo{
-  height: 2em;
+  height: 5.5vh;
   margin-top: .8em;
-  margin-right: 1em;
+  margin-left: 1em;
 }
 
 .logo-div{
-  text-align: right;
+  text-align: left;
 }
 
 .startButton {
@@ -204,6 +204,34 @@ a:visited {
   flex: 50%
 }
 
+#homeKidsBG {
+  background-image: url('./images/cs-7-12-scratch.png')
+}
+
+#homeTeensBG {
+  background-image: url('./images/cs-7-12-buildwebsite.png');
+}
+
+.rounded {
+  border-radius: 5px;
+}
+
+.rounded .cardDescription {
+  border-width: 0;
+  border-top: 10px solid;
+  -o-border-image: linear-gradient(to right, #F7921E, #B337FF) 10;
+  border-image: linear-gradient(to right, #F7921E, #B337FF) 10;
+  padding: 0 1rem;
+  text-align: left;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+h4 {
+  font-size: 1.1em;
+}
 /*collapsible =================================================================================================================================Scratch Lesson Cards=======================================================*/
 .wrap-collabsible {
   margin-bottom: 1.2rem 0;
