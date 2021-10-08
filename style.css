@@ -64,6 +64,11 @@ body {
   color: black !important;
 }
 
+a.white-text, a.white-text:visited {
+  color: white;
+  text-decoration: underline;
+}
+
 /* =================================================================================================================================Turn all links to black text ==============================================*/
 /*a:link {
   color: black;
