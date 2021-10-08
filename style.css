@@ -225,6 +225,10 @@ a:visited {
   text-align: left;
 }
 
+.rounded .cardbackground {
+  border-radius: 5px 5px 0 0;
+}
+
 .bold {
   font-weight: 800;
 }
