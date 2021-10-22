@@ -1,13 +1,30 @@
 body {
   background-color: #F7F7F7;
   font-size: 16px;
+  height: 100%;
+  min-height: 100vh;
+  max-height: 100vh;
+}
+
+.row.gutter {
+  margin-bottom: 30px;
+}
+
+.copyright-container {
+  display: grid;
+  grid-template-rows: 100%;
+}
+
+.copyright-container .copyright {
+  align-self: end;
+  text-align: unset;
+  margin: 30px 30px 0;
 }
 
 .copyright{
   font-size: .8em;
   text-align: right;
-  margin-top: 4em;
-  margin-left: 30px;
+  margin: 30px;
 }
 
 .logo{
@@ -148,7 +165,7 @@ a:visited {
   text-align: center !important;
   color: black !important;
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
 }
 
 .reviewcard-content {
