@@ -199,9 +199,9 @@ a:visited {
   font-weight: 800;
 }
 
-/* .cardHeading {
-  text-align: center;
-} */
+.cardHeading, .pageTitle {
+  font-family: 'manrope-bold', sans-serif;
+}
 
 h6.cardHeading, h6.heading {
   align-self: center;
