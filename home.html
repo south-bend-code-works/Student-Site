@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147711475-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147711475-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  gtag('config', 'UA-147711475-1');
-</script>
-
+      gtag('config', 'UA-147711475-1');
+    </script>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
     <link rel="stylesheet" href="style.css">
@@ -31,60 +30,59 @@
 
   <body>
     <!--Nav bar  -->
-    <nav class="light-blue lighten-1">
+    <nav class="white">
       <div class="nav-wrapper">
         <a href="#!"></a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        <ul class="hide-on-med-and-down">
-          <li><a href="home.html">Home</a></li>
-          <li><a href="./scratch/scratch.html">Ages 7-12</a></li>
-          <li><a href="techimmersion.html">Ages 13-18</a></li>
-        </ul>
-        <div class="logo-div">
-          <img class="logo" src="./images/logo.png">
-        </div>
+        <a href="./home.html">
+          <div class="logo-div">
+            <img class="logo" src="./images/logo.png">
+          </div>
+        </a>
       </div>
     </nav>
-
     <ul class="sidenav" id="mobile-demo">
       <li><a href="home.html">Home</a></li>
       <li><a href="./scratch/scratch.html">Ages 7-12</a></li>
       <li><a href="techimmersion.html">Ages 13-18</a></li>
     </ul>
-
-    <!--Page Heading: Choose a Course  -->
-    <div id="pageHeading" class="row white">
-      <div class="col s6 offset-s3">
-        <h2 class="pageTitle">Courses</h2>
-        <p class="pageParagraph">Choose a coding course based on your age.</p>
-      </div>
-    </div>
-
-    <div class="row">
-
-      <!--Ages 7-12 Card  -->
-      <div class="col s6 m4 offset-m2">
-        <a href="./scratch/scratch.html"><div class="card">
-          <div class="card-content">
-            <div class="cardDescription">
-              <h6 class="agesHeading">Ages 7-12</h6>
-            </div>
+    <div class="content-container">
+      <div class="row">
+        <div class="col s12">
+          <!--Ages 7-12 Card  -->
+          <div class="col s12 m4 offset-m2">
+            <a href="./scratch/scratch.html">
+              <div class="card rounded">
+                <div id="homeKidsBG" class="card-image cardbackground"></div>
+                <div class="card-content">
+                  <div class="cardDescription">
+                    <h4 class="manrope bold">Scratch</h4>
+                    <p>Learn computer science fundamentals using MIT’s software and game-based learning.</p>
+                  </div>
+                </div>
+              </div>
+            </a>
           </div>
-        </a>
-      </div>
-    </div>
-
-      <!--Ages 13-18 Card-->
-      <div class="col s6 m4">
-        <a href="techimmersion.html"><div class="card">
-          <div class="card-content">
-            <div class="cardDescription">
-              <h6 class="agesHeading">Ages 13-18</h6>
-            </div>
+          <!--Ages 13-18 Card-->
+          <div class="col s12 m4">
+            <a href="./html/htmlandcss.html">
+              <div class="card rounded">
+                <div id="homeTeensBG" class="card-image cardbackground"></div>
+                <div class="card-content">
+                  <div class="cardDescription">
+                    <h4 class="manrope bold">Build Your Own Website</h4>
+                    <p>Design and build web applications and practice key developer techniques.</p>
+                  </div>
+                </div>
+              </div>
+            </a>
           </div>
-        </a>
+        </div>
+      </div>
+      <div class="copyright-container">
+        <span class="copyright col s12">&#169; South Bend Code School, LLC 2020</span>
       </div>
     </div>
   </body>
-  <span class="copyright col s12">	&#169; South Bend Code School, LLC 2020</span>
 </html>
+    

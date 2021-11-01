@@ -1,21 +1,43 @@
 body {
   background-color: #F7F7F7;
+  font-size: 16px;
+  min-height: 100vh;
+  max-height: 100vh;
+}
+
+.content-container {
+  height: calc(100vh - 64px);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: auto;
+  justify-content: space-evenly;
+}
+
+.copyright-container {
+  display: grid;
+}
+
+.copyright-container .copyright {
+  align-self: end;
+  text-align: unset;
+  margin: 30px 30px 0;
 }
 
 .copyright{
   font-size: .8em;
   text-align: right;
-  margin-top: 4em;
+  margin: 30px;
 }
 
 .logo{
-  height: 2em;
+  height: 5.5vh;
   margin-top: .8em;
-  margin-right: 1em;
+  margin-left: 1em;
 }
 
 .logo-div{
-  text-align: right;
+  text-align: left;
 }
 
 .startButton {
@@ -63,6 +85,11 @@ body {
   color: black !important;
 }
 
+a.white-text, a.white-text:visited {
+  color: white;
+  text-decoration: underline;
+}
+
 /* =================================================================================================================================Turn all links to black text ==============================================*/
 /*a:link {
   color: black;
@@ -84,6 +111,16 @@ a:visited {
 .pageParagraph {
   font-size: 17px;
   text-align: center;
+}
+
+@font-face {
+  src: url('./manrope-bold.ttf');
+  font-family: 'manrope-bold';
+}
+
+.manrope {
+  font-family: 'manrope-bold', sans-serif;
+  line-height: normal;
 }
 
 /* =================================================================================================================================ALL CARDS: Card Contents===================================================*/
@@ -112,8 +149,9 @@ a:visited {
 
 .card {
   width: 90%;
-  margin: .5rem 5% 1rem 5%;
-  height: 32em;
+  margin: .5rem 5%;
+  max-height: 32em;
+  border-radius: 5px;
 }
 
 .reviewcard {
@@ -128,10 +166,10 @@ a:visited {
 }
 
 .card-content {
-  text-align: center !important;
+  /* text-align: center !important; */
   color: black !important;
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
 }
 
 .reviewcard-content {
@@ -146,7 +184,8 @@ a:visited {
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 75%;
+  height: 300px;
+  border-radius: 5px 5px 0 0; 
 }
 
 .card .card-content {
@@ -155,11 +194,21 @@ a:visited {
 
 .cardDescription {
   width: 100%;
-  height: 25%;
+  min-height: 25%;
+  display: grid;
 }
 
-.cardHeading {
-  text-align: center;
+.cardDescription h4, .cardDescription h6 {
+  font-weight: 800;
+}
+
+.cardHeading, .pageTitle {
+  font-family: 'manrope-bold', sans-serif;
+}
+
+h6.cardHeading, h6.heading {
+  align-self: center;
+  margin: 1rem ;
 }
 
 .description {
@@ -203,6 +252,39 @@ a:visited {
   flex: 50%
 }
 
+#homeKidsBG {
+  background-image: url('./images/cs-7-12-scratch.png')
+}
+
+#homeTeensBG {
+  background-image: url('./images/cs-7-12-buildwebsite.png');
+}
+
+.rounded {
+  border-radius: 5px;
+}
+
+.cardDescription {
+  border-width: 0;
+  border-top: 10px solid;
+  -o-border-image: linear-gradient(to right, #F7921E, #B337FF) 10;
+  border-image: linear-gradient(to right, #F7921E, #B337FF) 10;
+  padding: 1rem;
+  text-align: left;
+}
+
+.cardDescription h4 {
+  margin-bottom: 0;
+}
+
+
+.bold {
+  font-weight: 800;
+}
+
+h4 {
+  font-size: 1.1em;
+}
 /*collapsible =================================================================================================================================Scratch Lesson Cards=======================================================*/
 .wrap-collabsible {
   margin-bottom: 1.2rem 0;
@@ -323,6 +405,10 @@ input[type='checkbox'] {
   background-image: url('./scratch/scratch-images/makeurownanimation.png');
 }
 
+#draw-with-loopsBG {
+  background-image: url('./scratch/scratch-images/drawwithloops.png');
+}
+
 #imaginatorBG {
   background-image: url('./scratch/scratch-images/imaginator.gif');
 }
@@ -369,6 +455,10 @@ input[type='checkbox'] {
 
 #paintBG {
   background-image: url('./scratch/scratch-images/paint.gif');
+}
+
+#lemmingsBG {
+  background-image: url('./scratch/scratch-images/lemmings.png');
 }
 
 #boatBG {
@@ -518,7 +608,6 @@ input[type='checkbox'] {
   background-image: url('./html/html-images/startup.jpg');
 }
 
-=======
 
 /* HTML CSS background images */
 #htmlcssBG {
@@ -547,6 +636,22 @@ input[type='checkbox'] {
 
 #abcsBG {
   background-image: url('./html/html-images/abcs.jpg');
+}
+
+#introBG {
+  background-image: url('./html/html-images/css-grid.png');
+}
+
+#aboutMeGridBG {
+  background-image: url('./html/html-images/about-me.png');
+}
+
+#friendogramBG {
+  background-image: url('./html/html-images/friendogram-grid.png');
+}
+
+#collageGridBG {
+  background-image: url('./html/html-images/collage-grid.png');
 }
 
 #pattern {
@@ -1708,7 +1813,7 @@ span {
 
 #typinganimation {
   animation: type 7s infinite;
-  white-: nowrap;
+  white-space: nowrap;
   overflow: hidden;
 }
 
